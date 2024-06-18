@@ -1,0 +1,516 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201504 will be lost/reset.
+# Last config file used to build this data file was /home4/seasai10/tmp/awstats/awstats.saiparivarfoundation.org.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2019                
+POS_TIME 2691                
+POS_VISITOR 13915               
+POS_DAY 16051               
+POS_DOMAIN 3533                
+POS_LOGIN 3889                
+POS_ROBOT 4044                
+POS_WORMS 4437                
+POS_EMAILSENDER 4568                
+POS_EMAILRECEIVER 4711                
+POS_SESSION 16827               
+POS_SIDER 17027               
+POS_FILETYPES 4846                
+POS_DOWNLOADS 5046                
+POS_OS 5094                
+POS_BROWSER 5266                
+POS_SCREENSIZE 5767                
+POS_UNKNOWNREFERER 5841                
+POS_UNKNOWNREFERERBROWSER 5985                
+POS_ORIGIN 6249                
+POS_SEREFERRALS 6389                
+POS_PAGEREFS 6564                
+POS_SEARCHWORDS 6737                
+POS_KEYWORDS 6916                
+POS_MISC 2354                
+POS_ERRORS 7002                
+POS_CLUSTER 3745                
+POS_SIDER_404 7129                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20150501022550 1 0 9692677791922
+FirstTime 20150401154445
+LastTime 20150430190558
+LastUpdate 20150502015206 1 0 0 0 0
+TotalVisits 79                  
+TotalUnique 44                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 54                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 38 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 2 37 1451310 6 17 190415
+1 20 173 9077796 19 64 936688
+2 27 206 16116179 18 86 971235
+3 8 113 2196663 20 113 1468387
+4 10 118 8848974 19 64 737401
+5 2 2 17154 18 51 707588
+6 0 33 2230860 6 20 155778
+7 1 1 8639 6 12 100854
+8 19 19 126522 12 43 636478
+9 12 80 4984636 64 119 1470646
+10 6 57 6482723 9 33 290344
+11 2 10 613556 8 16 181077
+12 2 26 606348 12 32 511865
+13 6 173 11795900 9 28 501582
+14 23 151 16499238 19 77 1043933
+15 32 342 30556857 40 175 2091805
+16 12 125 8346557 14 72 996041
+17 21 357 45319993 37 183 2303836
+18 15 162 11252282 17 61 693182
+19 30 216 24938791 25 107 1301296
+20 6 27 2997749 19 32 290567
+21 19 91 6572415 11 36 566993
+22 7 83 4564960 20 98 1269061
+23 16 193 27286551 15 61 874749
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 10
+us 251 2687 237754775
+ru 16 16 120060
+ch 11 11 66554
+sg 6 67 4832369
+ph 5 5 41516
+fr 4 4 34370
+nl 2 2 17216
+ua 1 1 8577
+de 1 1 8639
+ro 1 1 8577
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 7
+bot[\s_+:,\.\;\/\\-] 231 3082442 20150430124024 0
+googlebot 126 1020082 20150430040134 0
+msnbot\-media 20 1239663 20150427053155 0
+robot 5 0 20150427142635 0
+crawl 4 28965 20150413124507 0
+no_user_agent 2 17154 20150426224124 0
+netcraft 1 8639 20150408215521 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 7
+css 373 1294564 0 0
+php 3 1122 0 0
+png 418 1022478 0 0
+html 295 2147752 0 0
+js 612 8405776 0 0
+jpg 1051 229640112 0 0
+gif 43 380849 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 12
+linuxandroid 50
+blackberry 1
+winxp 32
+winlong 16
+winnt 1
+java 16
+winvista 1949
+linux 44
+win7 513
+macosx 150
+winunknown 21
+Unknown 2
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 29
+chrome39.0.2171.93 1
+msie6.0 32
+safari7.0 47
+blackberry 1
+firefox5.0 1
+chrome18.0.1025.308 49
+firefox4.0.1 1
+firefox10.0 2
+chrome41.0.2272.118 430
+chrome39.0.2171.95 16
+msie8.0 15
+nokia 20
+chrome42.0.2311.90 590
+chrome39.0.2171.65 1
+mozilla 929
+firefox37.0 1
+chrome42.0.2311.135 95
+firefox14.0.1 8
+msie10.0 393
+firefox23.0 2
+chrome37.0.2062.120 1
+chrome22.0.1229.94 4
+safari8.0 103
+firefox3.6.3 1
+wget 1
+firefox36.0 1
+Unknown 19
+safari 30
+netscape 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+Mozilla 20150421195859
+Mnogosearch-3.1.21 20150424023747
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 4
+Mnogosearch-3.1.21 20150424023747
+Microsoft_Office_Mobile/15.0 20150414150630
+python-requests/2.6.0_CPython/2.7.8_Linux/3.16.0-30-generic 20150426013224
+Java/1.7.0_09 20150429211721
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 123 124
+From1 0 0
+From2 8 25
+From3 1 1
+From4 166 2645
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 3
+google 5 5
+bing 1 18
+yahoo 2 2
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+http://hvd-store.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+saiparivarfoundation.org 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 1
+saiparivarfoundation.org 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+403 1 18200
+206 1 7964
+406 5 1130
+404 1166 14867562
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 121
+/System/Plugins/elfinder/elfinder.html 1 -
+/sitemap.xml 5 -
+/robots.txt 88 -
+//FCKeditor/editor/filemanager/connectors/test.html 1 -
+/w/elfinder-2.0-rc1/elfinder.html 1 -
+/repository/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/vendor/mihaildev/yii2-elfinder/assets/elfinder.html 1 -
+/public/assets/javascript/ckeditor/ckeditor.js 1 -
+/admin.php 2 -
+//admin/FCKeditor/editor/filemanager/upload/test.html 1 -
+/assets/components/elfinder/elfinder.html 1 -
+/files/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/scripts/elfinder/elfinder.php.html 1 -
+/chat/upload.php 1 -
+/ax/plugins/editor.zoho/class.ZohoEditor.js 1 -
+//admin/editor/editor/filemanager/upload/test.html 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_003.jpg 1 http://saiparivarfoundation.org/events.html
+/js/lib/elfinder/elfinder.html 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_005.jpg 5 http://saiparivarfoundation.org/events.html
+//admin/FCKeditor/editor/filemanager/connectors/test.html 1 -
+//FCKeditor/_samples/default.html 1 -
+/m/ 4 -
+/finder/elfinder.html 1 -
+/bdfiles/elfinder.html 1 -
+/media/js/plugins/elfinder2.0/elfinder.html 1 -
+/browserconfig.xml 6 -
+/js/elfinder/elfinder.html 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_004.JPG 1 http://saiparivarfoundation.org/events.html
+/resources/html_editor/ckfinder/elfinder.html 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_101.JPG 1 http://saiparivarfoundation.org/events.html
+/ckeditor/elfinder/elfinder.html 1 -
+/elfinder/elfinder.html 1 -
+/sites/all/modules/elfinder/elfinder.php.html 1 -
+/en/ckfinder/elfinder.html 1 -
+/blog/elfinder.html 1 -
+/edit/elfinder/elfinder.html 1 -
+/4dm1n/assets/js/ckfinder/elfinder.html 1 -
+/FILE/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/upload/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_006.jpg 5 http://saiparivarfoundation.org/events.html
+/mobile/ 4 -
+//manage/FCKeditor/editor/filemanager/upload/test.html 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_009.jpg 5 http://saiparivarfoundation.org/events.html
+/assets/lib/elfinder/elfinder.html 1 -
+/scripts/elfinder/elfinder.html 1 -
+/images/menu_bg1.png 271 http://saiparivarfoundation.org/about.html
+/modules/tadtools/ckeditor/elFinder/elfinder.html 1 -
+/forum/chat/upload.php 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_008.jpg 5 http://saiparivarfoundation.org/events.html
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_004.jpg 5 http://saiparivarfoundation.org/events.html
+/undefined 178 http://saiparivarfoundation.org/about.html
+/fileshare/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_002.jpg 1 http://saiparivarfoundation.org/events.html
+/js/plugins/elfinder2.0/elfinder.html 1 -
+/lib/elfinder/elfinder.html 1 -
+/public/scripts/elfinder/elfinder.php.html 1 -
+/admin/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_101.jpg 5 http://saiparivarfoundation.org/events.html
+/http%3A%2F%2Fwww%2Esaiparivarfoundation%2Eorg%2F 1 -
+/home/assets/js/ckfinder/elfinder.html 1 -
+/ajax/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/images/btn_bg1.png 88 http://saiparivarfoundation.org/index.html
+/wp-login.php 3 -
+/js/SaiBaba.js 91 http://saiparivarfoundation.org/index.html
+/elfinder.html 1 -
+/assets/lib/elfinder-2.0-rc1/elfinder.html 1 -
+/wp-content/plugins/website-contact-form-with-file-upload/lib/wide-image/VERSION 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_008.JPG 1 http://saiparivarfoundation.org/events.html
+/forums/chat/upload.php 1 -
+/filemanager/public/assets/javascript/ckeditor/ckeditor.js 1 -
+/docs/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_001.JPG 3 http://saiparivarfoundation.org/events.html
+/filemanager/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/sites/all/libraries/elfinder/elfinder.html 1 -
+/http%3A%2F%2Fwww%2Esaiparivarfoundation%2Eorg%2Fabout%2Ehtml 1 -
+/apple-touch-icon.png 7 -
+/projects/public/assets/javascript/ckeditor/ckeditor.js 1 -
+/sites/all/libraries/elfinder/elfinder.php.html 1 -
+/html/lib/elfinder/elfinder.php.html 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_009.JPG 1 http://saiparivarfoundation.org/events.html
+/assets/elfinder/elfinder.html 1 -
+/images/back_all1.jpg 274 http://saiparivarfoundation.org/about.html
+/admin/assets/elfinder/elfinder.html 1 -
+//FCKeditor/editor/filemanager/browser/default/connectors/test.html 1 -
+/clients/public/assets/javascript/ckeditor/ckeditor.js 1 -
+/office/public/assets/javascript/ckeditor/ckeditor.js 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_007.jpg 5 http://saiparivarfoundation.org/events.html
+/components/elfinder/files/elfinder.html 1 -
+/feng/public/assets/javascript/ckeditor/ckeditor.js 1 -
+/xplorer/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/project/public/assets/javascript/ckeditor/ckeditor.js 1 -
+/customers/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/js/elfinder/elfinder.php.html 1 -
+/apple-touch-icon-precomposed.png 7 -
+/administrator/index.php 2 -
+/explorer/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/drupal/sites/all/libraries/elfinder/elfinder.php.html 1 -
+/fengoffice/public/assets/javascript/ckeditor/ckeditor.js 1 -
+//FCKeditor/editor/filemanager/upload/test.html 1 -
+/4_demo/js/lib/elfinder/elfinder.html 1 -
+/admin/elfinder/elfinder.php.html 1 -
+/elfinder/elfinder.php.html 1 -
+/file_server/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/share/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/public/elfinder/elfinder.html 1 -
+/ajaxplorer/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/module-assets/admin/elfinder/elfinder.html 1 -
+/var/ckeditor/elfinder/elfinder.html 1 -
+/ftp/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/filemanager/elfinder.html 1 -
+/finder/elfinder.php.html 1 -
+/sites/all/modules/elfinder/elfinder.html 1 -
+/themes/admin/js/plugins/elfinder/elfinder.html 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_006.JPG 1 http://saiparivarfoundation.org/events.html
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_005.JPG 1 http://saiparivarfoundation.org/events.html
+/core/ckeditor/plugins/elfinder/elfinder.html 1 -
+/components/elfinder/elfinder.html 1 -
+/intranet/plugins/editor.zoho/class.ZohoEditor.js 1 -
+/elfinder.php.html 1 -
+/lib/elfinder/elfinder.php.html 1 -
+/EventImages/Bellevue%20Events/2015/Ramnavami(Mar)/DSC_007.JPG 1 http://saiparivarfoundation.org/events.html
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 54
+76.28.197.166 44 553 70313089 20150427214939
+131.107.174.159 28 338 36924910 20150427174015
+50.135.6.73 22 308 12407244 20150423015450
+167.220.24.19 18 188 20518850 20150430190558
+64.79.100.29 16 16 126898 20150429211721
+64.79.100.53 16 16 123034 20150417024949
+131.107.160.36 15 292 20357939 20150430134237
+188.143.232.19 14 14 102782 20150408141046
+176.10.104.234 11 11 66554 20150411082510
+131.107.147.139 11 112 8585765 20150414151831
+131.107.192.34 9 94 13202779 20150414172207
+69.58.178.56 9 9 68669 20150408192343
+24.16.80.13 8 80 9037766 20150421201024
+70.191.80.253 7 67 4427570 20150401233217
+42.60.210.228 6 67 4832369 20150406093907
+23.239.196.71 4 4 31570 20150429095753
+71.231.176.33 4 100 2262086 20150428021705
+24.130.204.25 4 49 4297667 20150401154630
+131.107.192.14 4 85 9142683 20150416180405
+64.202.161.41 4 4 34556 20150403103931
+50.117.87.207 4 4 31694 20150412101827
+131.107.192.70 4 22 1169960 20150414163001
+65.49.54.70 4 4 31570 20150422201641
+195.154.241.109 3 3 25731 20150422170802
+50.93.249.212 3 32 1462366 20150417181308
+85.113.55.152 1 1 8639 20150410041851
+23.95.43.105 1 1 8639 20150409071935
+24.17.194.249 2 2 8639 20150402015110
+166.216.157.96 2 21 347175 20150414150630
+37.115.187.54 1 1 8577 20150426222724
+144.76.30.242 1 1 8639 20150407093857
+54.198.106.200 1 1 8577 20150423083017
+73.221.252.86 1 18 1995412 20150425163403
+138.128.2.235 1 1 8577 20150430035507
+65.55.210.146 0 33 2231694 
+104.155.30.198 1 1 8577 20150425052949
+199.30.25.193 0 33 2230860 
+85.113.58.36 1 1 8639 20150408122731
+199.30.25.165 0 7 103419 
+199.30.24.18 0 21 2023111 
+173.49.24.119 1 1 8577 20150424023747
+46.229.170.197 2 2 17216 20150427051706
+66.249.90.52 0 1 284129 
+65.55.210.108 0 9 104468 
+104.238.194.164 3 3 24362 20150420204126
+91.121.100.66 1 1 8639 20150403153222
+131.107.147.173 3 89 7975279 20150413173049
+23.99.137.116 1 1 8577 20150426013224
+104.155.44.36 1 1 8577 20150430010831
+199.30.25.101 0 32 2230360 
+107.77.75.111 0 1 172620 
+109.163.234.7 1 1 8577 20150422190146
+199.30.16.174 0 23 1976210 
+199.30.25.38 0 15 1469787 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 29
+20150401 11 122 8656036 2
+20150402 11 12 249928 4
+20150403 3 3 25917 2
+20150404 0 33 2230860 0
+20150406 6 88 6855480 1
+20150407 3 3 24486 2
+20150408 25 93 12600790 4
+20150409 1 24 1984849 1
+20150410 13 103 5958817 4
+20150411 19 126 9701878 2
+20150412 8 61 2596020 3
+20150413 12 215 21738844 2
+20150414 31 335 29082548 8
+20150415 5 30 7373918 3
+20150416 4 88 3033064 3
+20150417 36 210 17960748 5
+20150418 18 252 20802253 5
+20150419 1 28 7585497 1
+20150420 1 16 1478364 1
+20150421 10 129 14537503 2
+20150422 4 4 32939 3
+20150423 21 222 21171520 4
+20150424 3 70 3518961 2
+20150425 2 20 2176609 2
+20150426 2 11 121622 2
+20150427 10 105 11178302 4
+20150428 4 100 2262086 1
+20150429 18 18 142683 2
+20150430 16 274 27810131 4
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+5mn-15mn 9
+0s-30s 52
+15mn-30mn 5
+30s-2mn 7
+2mn-5mn 5
+30mn-1h 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 8
+/ 109 868563 66 32
+/events.html 49 343642 4 12
+/mission.html 32 209550 5 4
+/contacts.html 31 182820 1 12
+/about.html 30 216240 0 12
+/Resources.html 25 162150 0 3
+/guruji.html 19 164787 3 4
+/mail.php 3 1122 0 0
+END_SIDER

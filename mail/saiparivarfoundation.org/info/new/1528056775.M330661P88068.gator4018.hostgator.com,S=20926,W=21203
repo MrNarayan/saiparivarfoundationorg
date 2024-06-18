@@ -1,0 +1,277 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com (Dovecot) with LMTP id odE+E8dLFFsEWAEAUq51WA
+	for <info@saiparivarfoundation.org>; Sun, 03 Jun 2018 15:12:55 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Sun, 03 Jun 2018 15:12:55 -0500
+Received: from mail-pl0-f42.google.com ([209.85.160.42]:46055)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.89_1)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1fPZN1-000NwV-1M
+	for info@saiparivarfoundation.org; Sun, 03 Jun 2018 15:12:55 -0500
+Received: by mail-pl0-f42.google.com with SMTP id c23-v6so7037838plz.12
+        for <info@saiparivarfoundation.org>; Sun, 03 Jun 2018 13:12:49 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:dkim-signature:from
+         :reply-to:to:date:message-id:subject:mime-version;
+        bh=vEYg+G3fO5aW6D2FTvInDCEa7lTL+7u1OvE5FECiI4U=;
+        b=aa1Us6EFBwynetlYbjpLxZUc7TUS2NSalCypo0hiuFEkz5CAxEtuCtMuOgxawApRLy
+         aN0iPotry8JI6aiw9GMNX+yWBxwcs85IoLR3xVN4/lwVoyoU5GnbmxCmE84m9JpxeZCW
+         6VZPwAu723QImI+bSSMA6ghPg31Tnzt+y5dlLm6amIJlYtSJ9cb5Lo+cCtDlpcz0nC9o
+         GgeAx4kxckvVZkKd8dVUXVktuxjs1JdZXfQoJm1EGJoJuhNobPRTuA8y2ixhwIKCMFvw
+         GW0Ao5GWl54h9pN5rhDQG7TG1rTqehpD7Qa3K78qvpO5ZjC4zD9hTP3Ut6b189FKz4SK
+         roKA==
+X-Gm-Message-State: ALKqPwc/N5HopbO0jwUZ9pLkA7SJyEp0UWhK7ZB8xNeY2vctA94MDytu
+	xDzsipdONvmT/YPf9+EMvIrUF/P6Kqif/oDtNe6/GCdP79yzGXY=
+X-Received: by 2002:a17:902:2927:: with SMTP id g36-v6mr18816334plb.303.1528056764304;
+        Sun, 03 Jun 2018 13:12:44 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a17:90a:e48:0:0:0:0 with SMTP id p8-v6csp3289540pja;
+        Sun, 3 Jun 2018 13:12:43 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKLw6pzXlfLdEljgYMHF8gQk5L1LBJgRaydat2tacLToFVoBPJx1Q4L0KL1fIoMAPHvf7mL1
+X-Received: by 2002:a0d:f781:: with SMTP id h123-v6mr9768702ywf.218.1528056763194;
+        Sun, 03 Jun 2018 13:12:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1528056763; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FgTXO6lP7dedNKkfjaKSjdZiAayYGoghTDKXw5amTxml1wRTA5q/pv87/2gX6fkYXx
+         ZahRnUq0reFF7eQsxbfdFhNg6L4irlKf93KDIGCAsEcXayzKly4Zu6/sW1vQjVlTPbBP
+         HGYO01dSCZ3x6DvgjIssZG6ebtk4quAFGOYEwiSyenSjzk59g6HFWbEkAj9HNODe4hgc
+         bb0cfZqVZeqaY0sBHFmRoCVuMw19qqFaQGH5qnRbrNPJolctOxFA2LO70gweyVYeL7uk
+         56p1qLnWTs5k4/boWR/eeo8ZwKuxQXv500X6/kT+BkcB4dCLdS8jmwFcMufqnxv0WI4i
+         ArSA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:message-id:date:to:reply-to:from
+         :dkim-signature:dkim-signature:arc-authentication-results;
+        bh=vEYg+G3fO5aW6D2FTvInDCEa7lTL+7u1OvE5FECiI4U=;
+        b=NwAfNt9P2DzoBJKmlE4cxLHKoopA2188F3ZVWWZwXu+JKMzxljEKL3YcjU6DQ8kIzt
+         QkwfNFte16XMUGqseiqDWqKVMHqQ8wKvLSN85yAe/5IDCWjOPZQToMxzdTn+Eey9Ozmo
+         MRuw5DuWy7YMdYdRdhLA21eixz53eQZsmZD6A+ln4OxJ1BgAMplqr40VfoQKZHBA3d2V
+         /jFbHeUF8+fg3+Sk7H91T0R7nmf6gkdWmxA9Z2O8dj5R2JmJi25Wf5yn9BQTBhUqUFXV
+         gkfoMAR3N7hOTqgcOpblcvSSQozumzM9mLV+3bkOQ0OyF51btBXLJhPd0nBhXaYDnd8R
+         ft/g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mailchimp.com header.s=k1 header.b=mWxxR2sN;
+       dkim=pass header.i=@gmail.mctxapp.net header.s=k1 header.b=nN4VsPeb;
+       spf=pass (google.com: domain of bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net designates 198.2.140.10 as permitted sender) smtp.mailfrom=bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=mailchimp.com
+Received: from mail10.atl161.mctxapp.net (mail10.atl161.mctxapp.net. [198.2.140.10])
+        by mx.google.com with ESMTPS id k4-v6si12061168ywj.536.2018.06.03.13.12.43
+        for <saiparivarfoundation@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 03 Jun 2018 13:12:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net designates 198.2.140.10 as permitted sender) client-ip=198.2.140.10;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mailchimp.com header.s=k1 header.b=mWxxR2sN;
+       dkim=pass header.i=@gmail.mctxapp.net header.s=k1 header.b=nN4VsPeb;
+       spf=pass (google.com: domain of bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net designates 198.2.140.10 as permitted sender) smtp.mailfrom=bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=mailchimp.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=mailchimp.com;
+ h=From:Reply-To:To:Date:Message-ID:Subject:MIME-Version:Content-Type;
+ i=accountservices@mailchimp.com;
+ bh=vEYg+G3fO5aW6D2FTvInDCEa7lTL+7u1OvE5FECiI4U=;
+ b=mWxxR2sNUGNKmgStnQBRW0nTwcdiB1g1akNBGey38otblsGIRnrdp5YkMb51P1k2J3Pw3YLi+n8h
+   oCv7ZW7e8nilsRGcmVoced1gqN0gcGBXKQCGEnhghymEtS6Um+XxzuWd/QL/1qwQ12DtRjh56Ma3
+   6G1M2vRduGZSk3PqDMI=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=gmail.mctxapp.net;
+ h=From:Reply-To:To:Date:Message-ID:Subject:MIME-Version:Content-Type;
+ bh=vEYg+G3fO5aW6D2FTvInDCEa7lTL+7u1OvE5FECiI4U=;
+ b=nN4VsPebR8xlHf5mXq3k46ao/Q2bSs8Z7+qPNF6xkzYZZqYGRs3Jpb3Izyk7AG7QVje+6JqQzctL
+   EM56al5H4MDI4w1bwYIaQNcUz31SKmh1Fb/c/TvCwZTkeseMmC7sbs69yC+exMDtXXcvvhXJB4VS
+   M+xIJxfhEgRuOOGsWpU=
+Received: by mail10.atl161.mctxapp.net id h2h5rm2ddl4p for <saiparivarfoundation@gmail.com>; Sun, 3 Jun 2018 20:12:43 +0000 (envelope-from <bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net>)
+From: =?utf-8?Q?MailChimp=20Account=20Services?= <accountservices@mailchimp.com> 
+Reply-To: =?utf-8?Q?MailChimp=20Account=20Services?= <accountservices@mailchimp.com> 
+To:  <saiparivarfoundation@gmail.com> 
+Date: Sun, 03 Jun 2018 20:12:43 +0000 
+Message-ID: <88028fd5911e23c28ce0a83232cf9fd315e.20180603201243@mail10.atl161.mctxapp.net> 
+X-Mailer: MailChimp Mailer - **CID02cf9fd315e** 
+X-Campaign: mailchimp88028fd5911e23c28ce0a8323.0 
+X-campaignid: mailchimp88028fd5911e23c28ce0a8323.0 
+X-Report-Abuse: Please report abuse for this campaign here: http://www.mailchimp.com/abuse/abuse.phtml?u=88028fd5911e23c28ce0a8323&id=0&e=2cf9fd315e 
+X-MC-User: 88028fd5911e23c28ce0a8323 
+X-Feedback-ID: 69289545:69289545.0:us15:mc 
+X-Auto-Response-Suppress: OOF, AutoReply 
+X-Accounttype: ff 
+Subject: MailChimp List Export Complete 
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_2035980020"
+
+
+--_----------=_MCPart_2035980020
+Content-Type: text/plain; charset="us-ascii"
+
+Your list export has been completed.
+
+The export of your list, Registered for June 3rd, from the account Shirdi Sai Dham was successful. This export was requested by Shirdi Sai Dham  via the (IP: 24.16.1.122 - Issaquah, Wa Usa)
+
+If you want to delete this list, please download the export first; once the list is deleted, both are gone forever.
+
+--------------------
+Download List Data: https://us15.admin.mailchimp.com/lists/members/download-export?id=ae90309690
+--------------------
+
+
+---------------------------------------- 
+http://www.mailchimp.com
+675 Ponce De Leon Ave NE Suite 5000 Atlanta, GA 30308 USA
+
+Contact Us [http://www.mailchimp.com/contact/]
+Terms of Use [http://mailchimp.com/legal/terms/]
+Privacy Policy [http://mailchimp.com/legal/privacy/]
+Log In to MailChimp [https://login.mailchimp.com]
+--_----------=_MCPart_2035980020
+Content-Type: text/html; charset="us-ascii"
+
+<!doctype html>
+<html>
+    <head>
+        <!-- trx_0055 -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MailChimp List Export Complete</title>
+
+        <!--[if!mso]><!-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i" rel="stylesheet">
+        <!--<![endif]-->
+
+        <style type="text/css">
+            /*////// RESET STYLES //////*/
+            p{margin:1em 0;}
+            a{word-wrap:break-word;}
+            table{border-collapse:collapse;}
+            h1, h2, h3, h4, h5, h6{display:block; margin:0; padding:0;}
+            img, a img{border:0; height:auto; outline:none; text-decoration:none;}
+            body, #bodyTable, #bodyCell{height:100%; margin:0; padding:0; width:100%;}
+
+            /*////// CLIENT-SPECIFIC STYLES //////*/
+            #outlook a{padding:0;} /* Force Outlook 2007 and up to provide a "view in browser" message. */
+            @-ms-viewport{width:device-width;} /* Force IE "snap mode" to render widths normally. */
+            img{-ms-interpolation-mode:bicubic;} /* Force IE to smoothly render resized images. */
+            table{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook Desktop. */
+            .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Outlook.com to display emails at full width. */
+            p, a, li, td, blockquote{mso-line-height-rule:exactly;} /* Force Outlook Desktop to render line heights as they're originally set. */
+            a[href^="tel"], a[href^="sms"]{color:inherit; cursor:default; text-decoration:none;} /* Force mobile devices to inherit declared link styles. */
+            p, a, li, td, body, table, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
+            .ExternalClass, .ExternalClass p, .ExternalClass td, .ExternalClass p, .ExternalClass span, .ExternalClass font{line-height:100%;} /* Force Outlook.com to display line heights normally. */
+            a[x-apple-data-detectors]{color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important;} /* Force iOS devices to heed link styles set in CSS. */
+
+            /*////// EMAIL STYLES //////*/
+            #bodyCell{padding-top:20px !important; padding-right:10px !important; padding-bottom:20px !important; padding-left:10px !important;}
+            .emailContainer{max-width:640px;}
+            .footerContent a{color:#373737; font-weight:normal; text-decoration:none;}
+
+            @media screen and (min-width:768px){
+                .emailContainer{width:640px !important;}
+            }
+
+            @media only screen and (max-width:480px){
+                body{width:100% !important; min-width:100% !important;}
+                #bodyCell{padding-top:10px !important; padding-bottom:10px !important;}
+                h1{font-size:26px !important; line-height:28px !important;}
+                .footerContent p{border-bottom:1px solid #E5E5E5; font-size:13px !important; padding-bottom:20px !important;}
+                .utilityLink{border-bottom:1px solid #E5E5E5; display:block; font-size:13px !important; padding-top:15px; padding-bottom:15px;}
+                .mobileHide{display:none; visibility:hidden;}
+            }
+        </style>
+    </head>
+    <body bgcolor="#F2F2F2">
+        <center>
+            <table align="center" bgcolor="#F2F2F2" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+                <tr>
+                    <td align="center" style="padding:10px;" valign="top" id="bodyCell">
+                        <span style="color:#F2F2F2; display:none; font-size:0px; height:0px; visibility:hidden; width:0px;">We&rsquo;ve finished exporting the list, &lsquo;Registered for June 3rd&rsquo;.</span>
+                        <!--[if gte mso 9]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" style="width:640px;" width="640">
+                        <tr>
+                        <td align="center" valign="top">
+                        <![endif]-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width:640px;" width="100%" class="emailContainer">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <!-- BEGIN BODY // -->
+                                    <table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF; border-bottom:2px solid #E5E5E5; border-radius:4px;" width="100%">
+                                    <tr>
+                                        <td align="center" style="padding-right:20px; padding-left:20px;" valign="top">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td align="left" valign="top" style="padding-top:40px; padding-bottom:30px;">
+                                                            <a href="http://www.mailchimp.com/" target="_blank" title="MailChimp" style="text-decoration:none;"><img src="http://cdn-images.mailchimp.com/template_images/logo_newscript_dark.png" alt="MailChimp" width="150" class="logoImage" style="border:0; color:#000000; font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:24px; font-weight:bold; height:auto !important; letter-spacing:-2px; line-height:115%; text-align:center; line-height:100%; outline:none; text-decoration:none;" /></a>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <td style="padding-bottom:20px;" valign="top">
+                                                            <h1 style="color:#606060; font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:28px; font-style:normal; font-weight:600; line-height:36px; letter-spacing:normal; margin:0; padding:0; text-align:left;">Your list export is complete.</h1>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-bottom:20px;" valign="top">
+                                                            <p style="color:#606060; font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; font-weight:400; line-height:24px; padding-top:0; margin-top:0; text-align:left;">The export of your list, <em>Registered for June 3rd</em>, from the account <strong>Shirdi Sai Dham</strong> was successful. This export was requested by Shirdi Sai Dham  via the <strong>(IP: 24.16.1.122 - Issaquah, Wa Usa)</strong></p>
+                                                            <p style="color:#606060; font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; font-weight:400; line-height:24px; padding-top:0; margin-top:0; text-align:left;">If you want to delete this list, please download the export first; once the list is deleted, both are gone forever.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="padding-bottom:60px;" valign="top">
+                                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                                <tr>
+                                                                    <td align="center" valign="middle">
+                                                                        <!--[if gte mso 9]>
+                                                                        <table align="center" border="0" cellspacing="0" cellpadding="0" style="width:250px" width="250">
+                                                                        <tr>
+                                                                        <td align="center" bgcolor="#52BAD5" style="padding:20px;" valign="top">
+                                                                        <![endif]-->
+                                                                        <a href="https://us15.admin.mailchimp.com/lists/members/download-export?id=ae90309690" target="_blank" style="background-color:#52BAD5; border-collapse:separate !important; border-top:20px solid #52BAD5; border-right:20px solid #52BAD5; border-bottom:20px solid #52BAD5; border-left:20px solid #52BAD5; border-radius:3px; color:#FFFFFF; display:inline-block; font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; font-weight:700; text-decoration:none;">Download List Data</a>
+                                                                        <!--[if gte mso 9]>
+                                                                        </td>
+                                                                        </tr>
+                                                                        </table>
+                                                                        <![endif]-->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END BODY -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top">
+                                    <!-- BEGIN FOOTER // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td align="center" valign="top" class="footerContent" style="color:#484848; font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:12px; font-weight:400; line-height:24px; padding-top:40px; padding-bottom:40px; text-align:center;">
+                                                <p style="color:#484848; font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:12px; font-weight:400; line-height:24px; padding-top:0; margin:0; text-align:center;">&copy; 2001-2018 MailChimp<sup>&reg;</sup>, All Rights Reserved.<br />675 Ponce De Leon Ave NE &bull; Suite 5000 &bull; Atlanta, GA 30308 USA</p>
+                                                <a href="http://www.mailchimp.com/contact/" target="_blank" style="color:#373737; text-decoration:underline !important;" class="utilityLink">Contact Us</a><span class="mobileHide">&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><a href="http://mailchimp.com/legal/terms/" target="_blank" style="color:#373737; text-decoration:underline !important;" class="utilityLink">Terms of Use</a><span class="mobileHide">&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><a href="http://mailchimp.com/legal/privacy/" target="_blank" style="color:#373737; text-decoration:underline !important;" class="utilityLink">Privacy Policy</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END FOOTER -->
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if gte mso 9]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
+
+--_----------=_MCPart_2035980020--
+

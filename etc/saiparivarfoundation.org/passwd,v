@@ -1,0 +1,39 @@
+head	1.2;
+access;
+symbols;
+locks
+	seasai10:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2014.11.04.19.16.17;	author seasai10;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2014.11.04.19.16.17;	author seasai10;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@info:x:33308:33310::/home4/seasai10/mail/saiparivarfoundation.org/info:/home4/seasai10
+@
+
+
+1.1
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d1 1
+@

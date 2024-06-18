@@ -1,0 +1,2361 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP id qOP7GAa4Q1vRgAkAUq51WA
+	for <info@saiparivarfoundation.org>; Mon, 09 Jul 2018 14:31:18 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Mon, 09 Jul 2018 14:31:18 -0500
+Received: from mail-pf0-f178.google.com ([209.85.192.178]:39335)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1fcbsU-002ojB-0r
+	for info@saiparivarfoundation.org; Mon, 09 Jul 2018 14:31:18 -0500
+Received: by mail-pf0-f178.google.com with SMTP id s21-v6so14364137pfm.6
+        for <info@saiparivarfoundation.org>; Mon, 09 Jul 2018 12:31:12 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:message-id:date:from
+         :reply-to:to:subject:mime-version:list-unsubscribe
+         :list-unsubscribe-post;
+        bh=HDLMYFes97mVbbtzEAlqrdhSc29EEw+HDqeOyCQocxQ=;
+        b=i2lxktgZXKI08mbxyPC63echE/CYlVKCu0UvX7ednDjPBh0K0+vimzU5mc0JQbpMKb
+         zVDf0YTNpW+4qQ6qTQC5m+U4/bMw0PgNByJufGmnMCOkMvnfrmA/R743W66Zz/kOxtFY
+         xy/Tjidus51AU2PQgf98Ox7Wr8b5joTC7cY8eP1YM0hV8i2XXG6Lsj/8IiRmUmkA32AZ
+         Z0TF4U3QUu/6tWafC0m+7CzFwoMc84ewtyTzmQMPYX17girGFw/QMe3az41ayiUX1d0q
+         d7ipCO33yeIRs4mpXC5v5YBiZgQ87RX7jh2KSZ6auxvwZ1FdMckW74VXWd0vRD3cacE9
+         QMwg==
+X-Gm-Message-State: APt69E3SmfrtVxSoXtgxWE3tkLWVfrIH5Pjf5PJEKDI2C9ZitrapyVL1
+	2DeysfyAi6WixRNv8kj43UZ0nvCnWCRdeLqrwCJ01ahayKq6crc=
+X-Received: by 2002:aa7:824d:: with SMTP id e13-v6mr6158919pfn.97.1531164666937;
+        Mon, 09 Jul 2018 12:31:06 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a17:90a:2a81:0:0:0:0 with SMTP id j1-v6csp2966765pjd;
+        Mon, 9 Jul 2018 12:31:05 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpeqBFhlSohkHfg40gXPpG8/WGgoCztlbGZlp6nkSH+0GgGMnw4Q524MwXSk4Wo0wm9Pm1gt
+X-Received: by 2002:ac8:34f:: with SMTP id w15-v6mr20852893qtg.410.1531164664897;
+        Mon, 09 Jul 2018 12:31:04 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1531164664; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CTdwXciOOswBerYwIxIi4sT7dKp1nNAXzD19BJ3nWMMktcdlYZwoElhWiXoP9Bqi5p
+         /YjhDBYmj/51lag/zLsyWug3hb2dgXMjG2oaNM7yM1ce+5buvzvEFLaThfY7KMuzLTv8
+         oAD+omPvQEOhJ5qLiSc45IZbq5l9TEbfTpfdD2n/o8NIGnWOJcgzXdb2iYO35XLtIisM
+         lXzIPE2mpUH48QF8mt2OFKc17p/nfxCG8yPgQzoMGBedIGzqVYDHaIpT3RKFssiWegjj
+         W1vWS29z+SAW56sEUVY/aR0nu7400HpjTAKbI5V8unwTxlBfTFU+IHBdommfnYltxKHS
+         44HQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe-post:list-unsubscribe:mime-version:subject:to
+         :reply-to:from:date:message-id:dkim-signature
+         :arc-authentication-results;
+        bh=HDLMYFes97mVbbtzEAlqrdhSc29EEw+HDqeOyCQocxQ=;
+        b=BeeGvndTEHMS1JIt/M65nf7yxo/AkUyVkzwvMRpgY5/9AqI99hy6sGdZuG+SejswvZ
+         ruEhNpelu/aaQFYrIuUzYXPnxdp/h7Mhm7OKFxn67UM/hJqNHuQ9Vh1uOJvWEiDkPI6I
+         VzOBTo1E2HneMoM03IP00RAsbBnJC7CQoOlF48sDAf4BlOUqiaNdUqwUO519vTYvyoj4
+         P+C7LV2plfuBOPn/mLH13zWVvVK8ekh0i2adxzzwbNRvybyRd0oPZaCYZK8ql/5q7tRf
+         XI/MTmg7siF9Wnm0etrGQut1D/VSo5kaKDV+YWjJsGL8GT3YJ0g0PLoGldcCywaw/XWt
+         gqAA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@auth.ccsend.com header.s=1000073432 header.b=SEBnMhjW;
+       spf=pass (google.com: domain of aksyuexutthqfjkp9gc9kia==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.146 as permitted sender) smtp.mailfrom="AksYUexuTTHqFJKp9gC9kIA==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com"
+Received: from ccm146.constantcontact.com (ccm146.constantcontact.com. [208.75.123.146])
+        by mx.google.com with ESMTPS id q19-v6si2529609qkh.271.2018.07.09.12.31.04
+        for <SaiParivarFoundation@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 09 Jul 2018 12:31:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of aksyuexutthqfjkp9gc9kia==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.146 as permitted sender) client-ip=208.75.123.146;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@auth.ccsend.com header.s=1000073432 header.b=SEBnMhjW;
+       spf=pass (google.com: domain of aksyuexutthqfjkp9gc9kia==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.146 as permitted sender) smtp.mailfrom="AksYUexuTTHqFJKp9gC9kIA==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com"
+Received: from [10.252.1.139] ([10.252.1.139:55944] helo=p2-jbemailsyndicator31.ctct.net)
+	by 10.249.246.20 (envelope-from <AksYUexuTTHqFJKp9gC9kIA==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com>)
+	(ecelerity 4.2.1.52273 r(Core:4.2.1.11)) with ESMTP
+	id 9D/DC-48604-DE7B34B5; Mon, 09 Jul 2018 15:30:53 -0400
+DKIM-Signature: v=1; q=dns/txt; a=rsa-sha256; c=relaxed/relaxed; s=1000073432; d=auth.ccsend.com; h=date:mime-version:subject:X-Feedback-ID:message-id:from:reply-to:list-unsubscribe:list-unsubscribe-post:to; bh=HDLMYFes97mVbbtzEAlqrdhSc29EEw+HDqeOyCQocxQ=; b=SEBnMhjWSOs+Li4D+FcHxRhW61dj7RJlVnHy73mC3itkF0Okol2sB6C63IagkGjkmxbxZJIdkBWlIH5JpTwtmU3XcWNUrpiRCI8dLL4N41BOmWqUcCqFrDgPkAh3Y1LFsUjcYR2E8siDzmJfvYYjKAimbaiqnOvGRn3c9KIX1AA=
+Message-ID: <1130867605752.1103573720993.1659182514.0.761530JL.1002@scheduler.constantcontact.com>
+Date: Mon, 9 Jul 2018 15:30:53 -0400 (EDT)
+From: The Sophia Way <events@sophiaway.org>
+Reply-To: events@sophiaway.org
+To: SaiParivarFoundation@gmail.com
+Subject: The Sophia Way - July 2018 Newsletter
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_369637517_598406542.1531164653122"
+List-Unsubscribe: <https://visitor.constantcontact.com/do?p=un&m=001CLN_S13g0et-LAh2PzLdPA%3D%3D&se=001sdyEB58gEl5pHBscD5_RCQ%3D%3D&t=001EkZLEx15CcE%3D&llr=b6h6bzdab>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Campaign-Activity-ID: 92c6147b-1b93-4c7a-8524-aa7d802f6420
+X-Channel-ID: df87a940-3fe5-11e7-be45-d4ae52843dc7
+X-Mailer: Roving Constant Contact 2012 (http://www.constantcontact.com)
+X-Return-Path-Hint: AksYUexuTTHqFJKp9gC9kIA==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com
+X-Roving-Campaignid: 1130867605752
+X-Roving-Id: 1103573720993.1659182514
+X-Feedback-ID: df87a940-3fe5-11e7-be45-d4ae52843dc7:92c6147b-1b93-4c7a-8524-aa7d802f6420:1103573720993:CTCT
+X-CTCT-ID: df3c9680-3fe5-11e7-be45-d4ae52843dc7
+
+------=_Part_369637517_598406542.1531164653122
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+#OurWayHome SAVE THE DATE! Please join us for a unique experience at our An=
+nual Luncheon on October 11.   Join our community in laughter and in celebr=
+ation of the strength and resilience of women, and be a part of reframing t=
+he story of homelessness. Our Key Facilitator is Ashley Nicole Black, an Em=
+my award-winning comedian, actress, and writer and writer and correspondent=
+ on TBS=E2=80=99 Full Frontal with Samantha Bee. Outside of her work in com=
+edy, she is a passionate supporter of animal rights and social justice move=
+ments. Our Co-facilitator is our very own John Keister and our Partner-In-L=
+aughter is The Syndrome Magazine Thursday, October 11, 2018 | Noon =E2=80=
+=93 1:15 pm | Meydenbauer Center, Bellevue Register Now | Donate Sponsor Ou=
+r Luncheon | Register To Be A Table Host =EF=BB=BF Symetra Steps In In June=
+ 2018, Symetra made a gift of $100,000 to The Sophia Way, enabling us to ke=
+ep our emergency shelter open from June to September. Read more Also, on Ju=
+ly 5, KING 5's Vanessa Misciagna published a report on our Emergency Shelte=
+r and Symetra's donation. View video =EF=BB=BF From Uncertainty To Security=
+! The most gratifying moment for us at The Sophia Way is when we can move w=
+omen into housing. Both, the woman and her case manager at The Sophia Way, =
+share in the sheer joy and relief. Recently, Luciana* moved into her apartm=
+ent. Read about her journey from homelessness to housing that she shares in=
+ a conversation with Dietra Clayton, Lead Housing Case Manager at The Sophi=
+a Way. Read more=EF=BB=BF =EF=BB=BF On The Job With Tara Noyes =E2=80=9CWha=
+t I love most about my job is the work that The Sophia Way does and the peo=
+ple that I get to do it with. Each of my coworkers and all of our volunteer=
+s are some of the kindest, smartest, strongest, and most inspiring people I=
+'ve met." Tara Noyes is the Operations Manager and Volunteer Coordinator at=
+ The Sophia=E2=80=99s Way. Read more =EF=BB=BF An Inspiring Project Emi Tak=
+ayama is a young student who, as part of a school project, explored over 30=
+ days what life is like for a woman experiencing homelessness and the chall=
+enges she faces daily.  Her passion and strength is an inspiration to all. =
+Read more The Queen of Wash & Fold "I=E2=80=99ve never been one who enjoys =
+doing laundry, but I have to admit that I enjoy folding things like towels,=
+ sheets, and blankets because they=E2=80=99re easy, square, and appeal to m=
+y compulsive side when I create a perfect stack! If this is something you a=
+lso like to do, you=E2=80=99re going to love this story." Linda Benson, Dir=
+ector of Community Development at The Sophia Way, writes about her experien=
+ce of taking a load of more than 70 blankets from our Emergency Shelter to =
+a laundromat and getting them back clean and folded. Read more =EF=BB=BF Up=
+coming Events Volunteer Appreciation Picnic July 12, 5:00pm - 7:00pm: Volun=
+teer Appreciation Picnic at Crossroads Park, Bellevue. Whether you're a lon=
+g-time, regular volunteer, an occasional volunteer, or interested in volunt=
+eering in the future, we appreciate you! Join us for an evening of sunshine=
+, food, and fun! Register here =EF=BB=BF Movie Night August 28, 7:00pm: Dow=
+ntown Movies in the Park at Downtown Park, Bellevue. =EF=BB=BFJoin The Soph=
+ia Way for a fun and family-friendly outdoor showing of Ghostbusters. We wi=
+ll be serving the free popcorn! Our Office The Sophia Way 11061 NE 2nd Stre=
+et, Suite 223 Bellevue, WA 98004 Ph: 425-463-6285 Fax: 425-455-8607 Our She=
+lter Sophia=E2=80=99s Place 3032 Bellevue Way NE Bellevue, WA 98004 Ph: 425=
+-896-7385 Bus Route: 249 Donate Now Visit our website to know more about ou=
+r work. =E2=80=8C =E2=80=8C =E2=80=8C The Sophia Way | 11061 NE 2nd St., Su=
+ite 223, Bellevue, WA 98004 Unsubscribe SaiParivarFoundation@gmail.com Upda=
+te Profile | About our service provider Sent by events@sophiaway.org in col=
+laboration with Try it free today
+------=_Part_369637517_598406542.1531164653122
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type">
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"viewpor=
+t">
+<meta charset=3D"UTF-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1,=
+ maximum-scale=3D1">
+<!--[if gte mso 9]>
+<style id=3D"ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]-->
+<style id=3D"template-styles-head" data-premailer=3D"ignore">
+.footer-main-width {
+width: 612px!important;
+max-width: 612px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D
+CLIENT/BROWSER SPECIFIC OVERRIDES
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+ */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 612px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base=
+ div, [office365] .editor-image div { display: block !important; }
+</style>
+<style type=3D"text/css">
+@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !i=
+mportant;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.editor-divider {
+padding: 10px 0px 10px 0px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.editor-spacer td.spacer-height {
+padding-bottom: 9px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+td.editor-col .block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.column .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.split.column-right {
+margin-top: 10px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+</style>
+</head>
+<body class=3D"body" align=3D"center" style=3D"-ms-text-size-adjust: 100%; =
+-webkit-text-size-adjust: 100%; background: #F6F6F6; margin: 0px; min-width=
+: 100%; padding: 0px; width: 100%;" bgcolor=3D"#F6F6F6">
+<table class=3D"template-body" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"min-width: 100%; text-align: center;" width=3D"100%">
+<tr>
+<td class=3D"preheader-container">
+<div>
+<div id=3D"preheader" style=3D"color: transparent; display: none; font-size=
+: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overf=
+low: hidden;">
+<span data-entity-ref=3D"preheader"> </span>
+</div>
+<img src=3D"http://r20.rs6.net/on.jsp?ca=3D92c6147b-1b93-4c7a-8524-aa7d802f=
+6420&a=3D1103573720993&c=3Ddf3c9680-3fe5-11e7-be45-d4ae52843dc7&ch=3Ddf87a9=
+40-3fe5-11e7-be45-d4ae52843dc7" />
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"template-shell-container" align=3D"center">
+<div class=3D"bgcolor" style=3D"background: #F6F6F6;">
+<!--[if gte mso 9]>
+<v:background xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"t">
+<v:fill type=3D"tile" src=3D"https://imgssl.constantcontact.com/letters/ima=
+ges/backgrounds/citygrid.png" color=3D"#F6F6F6" ></v:fill>
+</v:background>
+<![endif]-->
+<table class=3D"bgimage" width=3D"100%" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"background: url('https://imgssl.constantcontact.com/=
+letters/images/backgrounds/citygrid.png') repeat top left;" background=3D"h=
+ttps://imgssl.constantcontact.com/letters/images/backgrounds/citygrid.png">
+<tbody>
+<tr>
+<td align=3D"center">
+<table class=3D"main-width" width=3D"612" align=3D"center" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"width: 612px;">
+<tbody>
+<tr>
+<td class=3D"layout" align=3D"center" valign=3D"top" style=3D"padding: 15px=
+ 5px;">
+<table width=3D"100%" align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0">
+<tbody>
+<tr>
+<td class=3D"layout-container-border" align=3D"center" valign=3D"top" style=
+=3D"background: #EDEDED; padding: 1px;" bgcolor=3D"#EDEDED">
+<table width=3D"100%" align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"background: #EDEDED;" bgcolor=3D"#EDEDED">
+<tbody>
+<tr>
+<td class=3D"layout-container" align=3D"center" valign=3D"top" style=3D"bac=
+kground: #ffffff; padding: 0px;" bgcolor=3D"#ffffff">
+<div class=3D"">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top" style=3D"background: rgb(94, 129, 202);" bgcolor=3D"rgb(94, 129, 2=
+02)">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table width=3D"100%" class=3D"galileo-ap-content-editor" style=3D"cursor: =
+default; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" width=3D"100%" align=3D"center" va=
+lign=3D"top" style=3D"padding: 0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"height: 1px; min-width: 100%; width: 100%;">
+<tbody>
+<tr>
+<td height=3D"1" align=3D"center" style=3D"background: rgb(41, 75, 147); bo=
+rder-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 2px=
+;" bgcolor=3D"rgb(41, 75, 147)">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image editor-image  editor-image-vspace-on" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-bottom: 10px; padding-=
+top: 10px;">
+<div class=3D"publish-container">
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRd_daD6OTbcAIieRzhrfTCv6eZhXvDK5ETJ5G8Umwaf1WDSYJx-5h1=
+-qUPc5a1D0xOnxofyR3NDMjLEPbYP2u_iJYAkHD8EO9g=3D=3D&c=3DHrtX_KS3dQKSiULI7_XH=
+k0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzC=
+TWjZi_mDeKUzpjeeZA9Unqeag=3D=3D">
+<img alt=3D"" class=3D"" style=3D"display: block; height: auto !important; =
+max-width: 100% !important;" width=3D"575" border=3D"0" hspace=3D"0" vspace=
+=3D"0" src=3D"https://files.constantcontact.com/1af9e12f001/7fb7034d-f962-4=
+100-8074-c640cfd4e4de.png">
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-spacer">
+<table class=3D"editor-spacer" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"spacer-base" width=3D"100%" align=3D"center" valign=3D"top" st=
+yle=3D"height: 1px; line-height: 1px; padding-bottom: 10px;">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-spacer">
+<table class=3D"editor-spacer" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"spacer-base" width=3D"100%" align=3D"center" valign=3D"top" st=
+yle=3D"height: 1px; line-height: 1px; padding-bottom: 12px;">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"section-headline editor-col OneColumnMobile" width=3D"100%" al=
+ign=3D"left" valign=3D"top" style=3D"background: rgb(94, 129, 202);" bgcolo=
+r=3D"rgb(94, 129, 202)">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text section-headline-text" align=3D"left" valign=3D"to=
+p" style=3D"color: #ffffff; display: block; font-family: Arial, Verdana, He=
+lvetica, sans-serif; font-size: 24px; font-weight: bold; padding: 10px 20px=
+; text-align: center; word-wrap: break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div><span sty=
+le=3D"font-family: Calibri, Helvetica, Arial, sans-serif; font-size: 26px; =
+font-weight: bold;">#OurWayHome</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top" style=3D"background: rgb(255, 255, 255);" bgcolor=3D"rgb(255, 255,=
+ 255)">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"color: #525252; display: block; font-family: Arial, Verdana, Helvetica,=
+ sans-serif; font-size: 14px; padding: 10px 20px; text-align: left; word-wr=
+ap: break-word;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" align=3D"right" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+">
+<tbody>
+<tr>
+<td class=3D"mobile-hidden" width=3D"15" height=3D"1" align=3D"center" vali=
+gn=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"15" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D=
+"0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"image-cell " align=3D"center" valign=3D"top" style=3D"padding:=
+ 0px;">
+<div class=3D"publish-container">
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRVMmiv4Ued9YExNTs1wDXv6Z6VUEcniQYchIErJasQyTr94eXcZqJ2=
+Fw_3r8YAjtCaeHgebktTQn8eCU8sVL9nLWMCl3WL9PrFZpcXwj9beJzcYsvZJ1uKw=3D&c=3DHr=
+tX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBBRK8Ew=
+BIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" style=3D"color: #60AAC7;=
+ font-style: normal; font-weight: bold; text-decoration: none;">
+<img alt=3D"" class=3D"" style=3D"display: block; height: auto !important; =
+max-width: 100% !important;" width=3D"324" border=3D"0" hspace=3D"0" vspace=
+=3D"0" src=3D"http://files.constantcontact.com/1af9e12f001/2138c54a-a4bc-4e=
+88-9e1e-fb11aa5e45d5.jpg">
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" width=3D"5" height=3D"5" align=3D"center" valig=
+n=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" height=3D"5" align=3D"center" valign=3D"top" st=
+yle=3D"height: 5px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"1" height=3D"5" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 16px; font-weight: bold;">SAVE THE DATE!</sp=
+an></div>
+<div><br></div>
+<div><span style=3D"font-size: 16px; font-weight: bold;">Please join us for=
+ a unique experience at our Annual Luncheon on October 11.</span></div>
+<div>&#xa0;</div>
+<div>Join our community in laughter and in celebration of the strength and =
+resilience of women, and be a part of reframing the story of homelessness.<=
+/div>
+<div><br></div>
+<div>Our Key Facilitator is <a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101j=
+Y7cQihAvZhNJYF08Rp_FmKZXtPp6wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgCMgxeAfdgUhU5m=
+vcHkRYdHYvq3CuVsPlTInSYuMtF1V5D4ZTMKPKIhU64zuQMgjzBGzOjCqBdtk8BORmBc-hK7ufP=
+2mC7kh530vDoKgTDLwqfcllHTFfO8dPcJZlILK0HP6tXZ_aw1fb6hy96oMN7R3G1VeMVvkfp97K=
+MOSVFD5xFhAOHD8Q3KmrtYrQ9qMowwoyd5iLvAs=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwR=
+GGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mD=
+eKUzpjeeZA9Unqeag=3D=3D" target=3D"_blank" style=3D"color: #60AAC7; font-st=
+yle: normal; font-weight: bold; text-decoration: none;">Ashley Nicole Black=
+</a>, an Emmy award-winning comedian, actress, and writer and writer and co=
+rrespondent on TBS&#x2019; Full Frontal with Samantha Bee. Outside of her w=
+ork in comedy, she is a passionate supporter of animal rights and social ju=
+stice movements.</div>
+<div><br></div>
+<div>Our Co-facilitator is our very own <a href=3D"http://r20.rs6.net/tn.js=
+p?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgmO=
+HcPGeIPQOdbieAch18LQzTcgkvyjY3qj9KhXbcQfspyw7-TX5vRJusiQcQanlegFi_BzMRZuzsL=
+7m8wk_6eeyKDBGiHoOF&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5=
+E-Q=3D=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D=
+" target=3D"_blank" style=3D"color: #60AAC7; font-style: normal; font-weigh=
+t: bold; text-decoration: none;">John Keister</a> and our Partner-In-Laught=
+er is <a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmK=
+ZXtPp6wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgWE6RDzNu-yAsCbzioZYGGKt899smpErNjq-T=
+0zy7DHhK0dvnkSEWI6BDj2-4PsBVnAj5fRQmxc4-uXkK_Le2aw=3D=3D&c=3DHrtX_KS3dQKSiU=
+LI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO3=
+GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" target=3D"_blank" style=3D"color: #6=
+0AAC7; font-style: normal; font-weight: bold; text-decoration: none;">The S=
+yndrome Magazine</a>
+</div>
+<div><br></div>
+<div><span style=3D"font-weight: bold;">Thursday, October 11, 2018 | Noon &=
+#x2013; 1:15 pm | Meydenbauer Center, Bellevue</span></div>
+<div><br></div>
+<div>
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRQzUgnCcKtHgc-6GFFKvXYqjZ-mDVjn4YarVAWA6uJ2byOWVue186q=
+pqLujk_r4ESGIoHgTrDcZ7J0iuE2YxOhdy4ZIJ2rypcj1xAkEuBsTmWtB4qqQm9_RbZvFkYzpeD=
+KMGYliYtHqyyMNEHEVnYCfAVgzMCYn9pg=3D=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGg=
+wquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKU=
+zpjeeZA9Unqeag=3D=3D" target=3D"_blank" style=3D"color: rgb(69, 179, 202); =
+font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 16px; font-s=
+tyle: normal; font-weight: bold; text-decoration: underline;">Register Now<=
+/a> | <a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmK=
+ZXtPp6wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWggHdHC5IJQuOhvaDn6dlUS6tZ3Acojb55iR5L=
+SzoHC2vQp_EJB-NCYhrqIFA2q95tYGp1mjDutNAHCrQhBUpV5YIhD5fOPiH89C2Nlez83SsqXQV=
+-tKRk_xeiaz_cT8Jq5vYkdJyAi2VsiUbGSkA9xA=3D=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvE=
+KwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi=
+_mDeKUzpjeeZA9Unqeag=3D=3D" target=3D"_blank" style=3D"color: rgb(69, 179, =
+202); font-size: 16px; font-style: normal; font-weight: bold; text-decorati=
+on: underline;">Donate</a>
+</div>
+<div><br></div>
+<div>
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgk2pDAvrdqe5l4bkTv2Wg_85LmnVP9p0PIjWAAaHciH=
+X0jI7lX_9Z37c6_W7ZJjzg5z6GOMgf2g6jWLFcS21uTftjlxRAS1BSxPEeaAru5D68ldzbz7SA6=
+RGbI3w6hWUtZSbhc3tezAy8Q50ruAdXV8ZnlvcN4RKUcgcsOsVifM3kSD3kRG5eGg=3D=3D&c=
+=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBB=
+RK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" target=3D"_blank" s=
+tyle=3D"color: rgb(69, 179, 202); font-size: 16px; font-style: normal; font=
+-weight: bold; text-decoration: underline;">Sponsor Our Luncheon</a> | <a h=
+ref=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6wesy=
+U6Ws3bKXfw4jDNwcZRX_6l61u5SWgNUcpfrg_3F-aEV1kpnpxFKRicYAekcPxQ3cJ-ZuX7-ZSxC=
+MiItxUdJHdgbHpxlTfx5JleLKga-CWTAWIfSJLMUb7XZ5e0gnXZwimkyiBMVSRYPLGLlfdEw=3D=
+=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3Dp=
+Z0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" target=3D"_bla=
+nk" style=3D"color: rgb(69, 179, 202); font-size: 16px; font-style: normal;=
+ font-weight: bold; text-decoration: underline;">Register To Be A Table Hos=
+t</a>
+</div>
+<div><span style=3D"color: rgb(69, 179, 202); font-family: Arial, Verdana, =
+Helvetica, sans-serif; font-size: 16px; font-weight: bold; text-decoration:=
+ underline;">&#xfeff;</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"section-headline editor-col OneColumnMobile" width=3D"100%" al=
+ign=3D"left" valign=3D"top" style=3D"background: rgb(94, 129, 202);" bgcolo=
+r=3D"rgb(94, 129, 202)">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text section-headline-text" align=3D"left" valign=3D"to=
+p" style=3D"color: #ffffff; display: block; font-family: Arial, Verdana, He=
+lvetica, sans-serif; font-size: 24px; font-weight: bold; padding: 10px 20px=
+; text-align: center; word-wrap: break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div><span sty=
+le=3D"font-family: Calibri, Helvetica, Arial, sans-serif; font-size: 26px;"=
+>Symetra Steps In</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"color: #525252; display: block; font-family: Arial, Verdana, Helvetica,=
+ sans-serif; font-size: 14px; padding: 10px 20px; text-align: left; word-wr=
+ap: break-word;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" align=3D"right" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+">
+<tbody>
+<tr>
+<td class=3D"mobile-hidden" width=3D"15" height=3D"1" align=3D"center" vali=
+gn=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"15" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D=
+"0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"image-cell " align=3D"center" valign=3D"top" style=3D"padding:=
+ 0px;">
+<div class=3D"publish-container">
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgvehAQ7saC9SqwihL9YK1qRASrlCKKbCWtzqM4dXjEj=
+OEYxqG3bigP-YDzaODEURHZC8tj6ajzVAiNc0OEmXtATQ3kcBx7niWeUDXgvhPRHXZoWbi0eO13=
+dtAPy3IT_VTvcVzS-c23HJfEeshyaYkvkEGBbaEMkzb6V8y3BwIUoo=3D&c=3DHrtX_KS3dQKSi=
+ULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO=
+3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" style=3D"color: #60AAC7; font-style=
+: normal; font-weight: bold; text-decoration: none;">
+<img alt=3D"" class=3D"" style=3D"display: block; height: auto !important; =
+max-width: 100% !important;" width=3D"277" border=3D"0" hspace=3D"0" vspace=
+=3D"0" src=3D"http://files.constantcontact.com/1af9e12f001/1af93f47-0d5a-49=
+d3-8f0b-ebeee9d0ff00.png">
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" width=3D"5" height=3D"5" align=3D"center" valig=
+n=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" height=3D"5" align=3D"center" valign=3D"top" st=
+yle=3D"height: 5px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"1" height=3D"5" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div>In June 2018, Symetra made a gift of $100,000 to The Sophia Way, enabl=
+ing us to keep our emergency shelter open from June to September.</div>
+<div><br></div>
+<div><a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZ=
+XtPp6wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgcUxPd_NRGjEthBX2mAWa3hO_z_5eeWEXVXp6h=
+2hmuyVRB1v1CHYeGDL4luXCfXFDq-AVL0larVErlRFDNxp5K2sMqOh3vhHT2X2pHKjSYb0=3D&c=
+=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBB=
+RK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" target=3D"_blank" s=
+tyle=3D"color: rgb(69, 179, 202); font-size: 16px; font-style: normal; font=
+-weight: bold; text-decoration: underline;">Read more</a></div>
+<div><br></div>
+<div><span style=3D"font-weight: bold;">Also, on July 5, KING 5's Vanessa M=
+isciagna published a report on our Emergency Shelter and Symetra's donation=
+.</span></div>
+<div><a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZ=
+XtPp6wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgvehAQ7saC9SqwihL9YK1qRASrlCKKbCWtzqM4=
+dXjEjOEYxqG3bigP-YDzaODEURHZC8tj6ajzVAiNc0OEmXtATQ3kcBx7niWeUDXgvhPRHXZoWbi=
+0eO13dtAPy3IT_VTvcVzS-c23HJfEeshyaYkvkEGBbaEMkzb6V8y3BwIUoo=3D&c=3DHrtX_KS3=
+dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBBRK8EwBIK7WP=
+53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" target=3D"_blank" style=3D"col=
+or: rgb(69, 179, 202); font-size: 16px; font-style: normal; font-weight: bo=
+ld; text-decoration: underline;">View video</a></div>
+<div><span style=3D"color: rgb(33, 33, 33); font-weight: bold;">&#xfeff;</s=
+pan></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"section-headline editor-col OneColumnMobile" width=3D"100%" al=
+ign=3D"left" valign=3D"top" style=3D"background: rgb(94, 129, 202);" bgcolo=
+r=3D"rgb(94, 129, 202)">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text section-headline-text" align=3D"left" valign=3D"to=
+p" style=3D"color: #ffffff; display: block; font-family: Arial, Verdana, He=
+lvetica, sans-serif; font-size: 24px; font-weight: bold; padding: 10px 20px=
+; text-align: center; word-wrap: break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div><span sty=
+le=3D"font-size: 26px;">From Uncertainty To Security!</span></div></div></d=
+iv>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"color: #525252; display: block; font-family: Arial, Verdana, Helvetica,=
+ sans-serif; font-size: 14px; padding: 10px 20px; text-align: left; word-wr=
+ap: break-word;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" align=3D"right" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+">
+<tbody>
+<tr>
+<td class=3D"mobile-hidden" width=3D"15" height=3D"1" align=3D"center" vali=
+gn=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"15" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D=
+"0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"image-cell " align=3D"center" valign=3D"top" style=3D"padding:=
+ 0px;">
+<div class=3D"publish-container">
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgtvsMZSXOyr4hnPibHmfOr_UXmm20L-PGRCQO2xxJAE=
+EpRFy79MFueIhE_9b0FgriJndSM6d8YYVakBgfcEKbacmfpczR8f7CSz_k4zSRjEQsEw0Td4dC9=
+A=3D=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=
+=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" style=3D"c=
+olor: #60AAC7; font-style: normal; font-weight: bold; text-decoration: none=
+;">
+<img alt=3D"" class=3D"" style=3D"display: block; height: auto !important; =
+max-width: 100% !important;" width=3D"244" border=3D"0" hspace=3D"0" vspace=
+=3D"0" src=3D"http://files.constantcontact.com/1af9e12f001/1e70ef3d-8d52-43=
+a7-864a-b68043ddfb4c.jpg">
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" width=3D"5" height=3D"5" align=3D"center" valig=
+n=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" height=3D"5" align=3D"center" valign=3D"top" st=
+yle=3D"height: 5px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"1" height=3D"5" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div>The most gratifying moment for us at The Sophia Way is when we can mov=
+e women into housing. Both, the woman and her case manager at The Sophia Wa=
+y, share in the sheer joy and relief.</div>
+<div><br></div>
+<div>Recently, Luciana* moved into her apartment. Read about her journey fr=
+om homelessness to housing that she shares in a conversation with Dietra Cl=
+ayton, Lead Housing Case Manager at The Sophia Way.</div>
+<div><br></div>
+<div>
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgtvsMZSXOyr4hnPibHmfOr_UXmm20L-PGRCQO2xxJAE=
+EpRFy79MFueIhE_9b0FgriJndSM6d8YYVakBgfcEKbacmfpczR8f7CSz_k4zSRjEQsEw0Td4dC9=
+A=3D=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=
+=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" target=3D"=
+_blank" style=3D"color: #60AAC7; font-size: 16px; font-style: normal; font-=
+weight: bold; text-decoration: underline;">Read more</a><span style=3D"colo=
+r: rgb(235, 76, 57);">&#xfeff;</span>
+</div>
+<div><span style=3D"color: rgb(235, 76, 57);">&#xfeff;</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"section-headline editor-col OneColumnMobile" width=3D"100%" al=
+ign=3D"left" valign=3D"top" style=3D"background: rgb(94, 129, 202);" bgcolo=
+r=3D"rgb(94, 129, 202)">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text section-headline-text" align=3D"left" valign=3D"to=
+p" style=3D"color: #ffffff; display: block; font-family: Arial, Verdana, He=
+lvetica, sans-serif; font-size: 24px; font-weight: bold; padding: 10px 20px=
+; text-align: center; word-wrap: break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div><span sty=
+le=3D"font-family: Calibri, Helvetica, Arial, sans-serif; font-size: 26px;"=
+>On The Job With Tara Noyes</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top" style=3D"background: rgb(255, 255, 255);" bgcolor=3D"rgb(255, 255,=
+ 255)">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"color: #525252; display: block; font-family: Arial, Verdana, Helvetica,=
+ sans-serif; font-size: 14px; padding: 10px 20px; text-align: left; word-wr=
+ap: break-word;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" align=3D"right" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+">
+<tbody>
+<tr>
+<td class=3D"mobile-hidden" width=3D"15" height=3D"1" align=3D"center" vali=
+gn=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"15" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D=
+"0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"image-cell " align=3D"center" valign=3D"top" style=3D"padding:=
+ 0px;">
+<div class=3D"publish-container">
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgZDZLFdTY2Tj9WAYtaEifmRN1bHcQ4XA7AKyek8yUg9=
+-W-MV0x_iKd1DvTiCGbRWpcWzcxOgO562ZRJFBDtoG6Fap0DGNr3T48xL1K96QXnOsRGviwmr2C=
+A=3D=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=
+=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" style=3D"c=
+olor: #60AAC7; font-style: normal; font-weight: bold; text-decoration: none=
+;">
+<img alt=3D"" class=3D"" style=3D"display: block; height: auto !important; =
+max-width: 100% !important;" width=3D"244" border=3D"0" hspace=3D"0" vspace=
+=3D"0" src=3D"http://files.constantcontact.com/1af9e12f001/c7bb471f-7936-40=
+d2-8b88-698efc1fc24b.jpg">
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" width=3D"5" height=3D"5" align=3D"center" valig=
+n=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" height=3D"5" align=3D"center" valign=3D"top" st=
+yle=3D"height: 5px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"1" height=3D"5" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-style: italic;">&#x201c;What I love most about my =
+job is the work that The Sophia Way does and the people that I get to do it=
+ with. Each of my coworkers and all of our volunteers are some of the kinde=
+st, smartest, strongest, and most inspiring people I've met."</span></div>
+<div><br></div>
+<div>Tara Noyes is the Operations Manager and Volunteer Coordinator at The =
+Sophia&#x2019;s Way.</div>
+<div><br></div>
+<div><a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZ=
+XtPp6wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgZDZLFdTY2Tj9WAYtaEifmRN1bHcQ4XA7AKyek=
+8yUg9-W-MV0x_iKd1DvTiCGbRWpcWzcxOgO562ZRJFBDtoG6Fap0DGNr3T48xL1K96QXnOsRGvi=
+wmr2CA=3D=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=
+=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" targ=
+et=3D"_blank" style=3D"color: #60AAC7; font-size: 16px; font-style: normal;=
+ font-weight: bold; text-decoration: underline;">Read more</a></div>
+<div><span style=3D"color: rgb(235, 76, 57);">&#xfeff;</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"section-headline editor-col OneColumnMobile" width=3D"100%" al=
+ign=3D"left" valign=3D"top" style=3D"background: rgb(94, 129, 202);" bgcolo=
+r=3D"rgb(94, 129, 202)">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text section-headline-text" align=3D"left" valign=3D"to=
+p" style=3D"color: #ffffff; display: block; font-family: Arial, Verdana, He=
+lvetica, sans-serif; font-size: 24px; font-weight: bold; padding: 10px 20px=
+; text-align: center; word-wrap: break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div><span sty=
+le=3D"font-family: Calibri, Helvetica, Arial, sans-serif; font-size: 26px;"=
+>An Inspiring Project</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"color: #525252; display: block; font-family: Arial, Verdana, Helvetica,=
+ sans-serif; font-size: 14px; padding: 10px 20px; text-align: left; word-wr=
+ap: break-word;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" align=3D"right" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+">
+<tbody>
+<tr>
+<td class=3D"mobile-hidden" width=3D"15" height=3D"1" align=3D"center" vali=
+gn=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"15" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D=
+"0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"image-cell " align=3D"center" valign=3D"top" style=3D"padding:=
+ 0px;">
+<div class=3D"publish-container">
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgKPflggSYxbntu7gXyyvbX8OrY7wUnL4tjj_Dc1lGu4=
+wklfNtoACU7REulaL5tJ2x0lE5JP_Mvkz6Nb7S4m1IMKQSJFELohmYPmGSDKzoi5I=3D&c=3DHr=
+tX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBBRK8Ew=
+BIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" style=3D"color: #60AAC7;=
+ font-style: normal; font-weight: bold; text-decoration: none;">
+<img alt=3D"" class=3D"" style=3D"display: block; height: auto !important; =
+max-width: 100% !important;" width=3D"212" border=3D"0" hspace=3D"0" vspace=
+=3D"0" src=3D"http://files.constantcontact.com/1af9e12f001/53f4403e-57ca-41=
+6b-ab01-b7ddf9c18d19.jpg">
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" width=3D"5" height=3D"5" align=3D"center" valig=
+n=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" height=3D"5" align=3D"center" valign=3D"top" st=
+yle=3D"height: 5px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"1" height=3D"5" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div>Emi Takayama is a young student who, as part of a school project, expl=
+ored over 30 days what life is like for a woman experiencing homelessness a=
+nd the challenges she faces daily.&#xa0;</div>
+<div><br></div>
+<div>Her passion and strength is an inspiration to all.</div>
+<div><br></div>
+<div><a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZ=
+XtPp6wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgKPflggSYxbntu7gXyyvbX8OrY7wUnL4tjj_Dc=
+1lGu4wklfNtoACU7REulaL5tJ2x0lE5JP_Mvkz6Nb7S4m1IMKQSJFELohmYPmGSDKzoi5I=3D&c=
+=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBB=
+RK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" target=3D"_blank" s=
+tyle=3D"color: #60AAC7; font-size: 16px; font-style: normal; font-weight: b=
+old; text-decoration: underline;">Read more</a></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"section-headline editor-col OneColumnMobile" width=3D"100%" al=
+ign=3D"left" valign=3D"top" style=3D"background: rgb(94, 129, 202);" bgcolo=
+r=3D"rgb(94, 129, 202)">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text section-headline-text" align=3D"left" valign=3D"to=
+p" style=3D"color: #ffffff; display: block; font-family: Arial, Verdana, He=
+lvetica, sans-serif; font-size: 24px; font-weight: bold; padding: 10px 20px=
+; text-align: center; word-wrap: break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div>The Queen=
+ of Wash &amp; Fold</div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"color: #525252; display: block; font-family: Arial, Verdana, Helvetica,=
+ sans-serif; font-size: 14px; padding: 10px 20px; text-align: left; word-wr=
+ap: break-word;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" align=3D"right" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+">
+<tbody>
+<tr>
+<td class=3D"mobile-hidden" width=3D"15" height=3D"1" align=3D"center" vali=
+gn=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"15" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D=
+"0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"image-cell " align=3D"center" valign=3D"top" style=3D"padding:=
+ 0px;">
+<div class=3D"publish-container">
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgHc9Xm5ZJWq2M8nFuybsbsyaqV4El_DqDEnMoX5F13E=
+BjojhNj1NXOW9uf3fPcoO_W-nF5vfZE_OMfz1OpUBL61wEUEfi7qm_avyJcHlZ1DiiYmLGRs-if=
+w=3D=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=
+=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" style=3D"c=
+olor: #60AAC7; font-style: normal; font-weight: bold; text-decoration: none=
+;">
+<img alt=3D"" class=3D"" style=3D"display: block; height: auto !important; =
+max-width: 100% !important;" width=3D"145" border=3D"0" hspace=3D"0" vspace=
+=3D"0" src=3D"http://files.constantcontact.com/1af9e12f001/d580d101-ae68-40=
+13-bf1a-26897d48c139.jpg">
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" width=3D"5" height=3D"5" align=3D"center" valig=
+n=3D"top" style=3D"height: 1px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" height=3D"5" align=3D"center" valign=3D"top" st=
+yle=3D"height: 5px; line-height: 1px; padding: 0px;">
+<img alt=3D"" width=3D"1" height=3D"5" border=3D"0" hspace=3D"0" vspace=3D"=
+0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-style: italic;">"I&#x2019;ve never been one who en=
+joys doing laundry, but I have to admit that I enjoy folding things like to=
+wels, sheets, and blankets because they&#x2019;re easy, square, and appeal =
+to my compulsive side when I create a perfect stack! If this is something y=
+ou also like to do, you&#x2019;re going to love this story."</span></div>
+<div><br></div>
+<div>Linda Benson, Director of Community Development at The Sophia Way, wri=
+tes about her experience of taking a load of more than 70 blankets from our=
+ Emergency Shelter to a laundromat and getting them back clean and folded.<=
+/div>
+<div><br></div>
+<div><a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZ=
+XtPp6wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgHc9Xm5ZJWq2M8nFuybsbsyaqV4El_DqDEnMoX=
+5F13EBjojhNj1NXOW9uf3fPcoO_W-nF5vfZE_OMfz1OpUBL61wEUEfi7qm_avyJcHlZ1DiiYmLG=
+Rs-ifw=3D=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=
+=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" targ=
+et=3D"_blank" style=3D"color: #60AAC7; font-size: 16px; font-style: normal;=
+ font-weight: bold; text-decoration: underline;">Read more</a></div>
+<div><span style=3D"font-size: 16px; font-weight: bold; text-decoration: un=
+derline;">&#xfeff;</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"section-headline editor-col OneColumnMobile" width=3D"100%" al=
+ign=3D"left" valign=3D"top" style=3D"background: rgb(94, 129, 202);" bgcolo=
+r=3D"rgb(94, 129, 202)">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text section-headline-text" align=3D"left" valign=3D"to=
+p" style=3D"color: #ffffff; display: block; font-family: Arial, Verdana, He=
+lvetica, sans-serif; font-size: 24px; font-weight: bold; padding: 10px 20px=
+; text-align: center; word-wrap: break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div><span sty=
+le=3D"font-family: Calibri, Helvetica, Arial, sans-serif; font-size: 26px;"=
+>Upcoming Events</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table width=3D"100%" class=3D"galileo-ap-content-editor" style=3D"cursor: =
+default; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" width=3D"100%" align=3D"center" va=
+lign=3D"top" style=3D"padding: 9px 0;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"height: 1px; min-width: 93%; width: 93%;">
+<tbody>
+<tr>
+<td height=3D"1" align=3D"center" style=3D"background: #EDEDED; border-bott=
+om-style: none; height: 1px; line-height: 1px; padding-bottom: 0px;" bgcolo=
+r=3D"#EDEDED">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"two-column editor-col OneColumnMobile" width=3D"50%" align=3D"=
+left" valign=3D"top">
+<div><div class=3D"column-resize-bar">
+<span class=3D"line"></span>
+<span class=3D"grabber"></span>
+</div></div>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text " align=3D"left" valign=3D"top" style=3D"color: #5=
+25252; display: block; font-family: Arial, Verdana, Helvetica, sans-serif; =
+font-size: 14px; padding: 10px 10px 10px 20px; text-align: left; word-wrap:=
+ break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div><span sty=
+le=3D"font-family: Calibri, Helvetica, Arial, sans-serif; font-size: 18px; =
+font-weight: bold;">Volunteer Appreciation Picnic</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image content-image editor-image-vspace-on editor-im=
+age-hspace-on" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding: 10px 10px 10px 20px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" width=3D"270" border=3D"0" hspace=
+=3D"0" vspace=3D"0" src=3D"http://files.constantcontact.com/1af9e12f001/9c7=
+3000f-5109-426c-a3f2-0dd961da724e.jpg">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text two-column-text" align=3D"left" valign=3D"top" sty=
+le=3D"color: #525252; display: block; font-family: Arial, Verdana, Helvetic=
+a, sans-serif; font-size: 14px; padding: 10px 10px 10px 20px; text-align: l=
+eft; word-wrap: break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div>
+<span style=3D"color: rgb(34, 34, 34); font-weight: bold;">July 12, 5:00pm =
+- 7:00pm</span><span style=3D"color: rgb(34, 34, 34);">: </span>
+</div>
+<div><span style=3D"color: rgb(34, 34, 34);">Volunteer Appreciation Picnic =
+at Crossroads Park, Bellevue. </span></div>
+<div><br></div>
+<div>
+<span style=3D"color: rgb(34, 34, 34);">Whether you're a long-time, regular=
+ volunteer, an occasional volunteer, or interested in volunteering in the f=
+uture, we appreciate you! </span><span style=3D"color: rgb(0, 0, 0);">Join =
+us for an evening of sunshine, food, and fun!</span>
+</div>
+<div><br></div>
+<div><a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZ=
+XtPp6wesyU6Ws3bKXfw4jDNwcZRX_6l61u5SWgW6XiBrPCLfvE7g1ueoXmVBRG6l8iPxiKqE4lZ=
+m1Y3TOtKhOVbtLEKaury8P7TkKQFljrtyEwn0_ThPz_rwKlGQvIe4QEmjpO7dXnj_p0oYT_tM-X=
+G2QkgAXbLqZ3_I1jOJ-qknYBhtE4aC3z4knlIg9ki5aXB40ijRJgeei6_khyCrHmNUFuhQ=3D=
+=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3Dp=
+Z0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" target=3D"_bla=
+nk" style=3D"color: #60AAC7; font-style: normal; font-weight: bold; text-de=
+coration: none;">Register here</a></div>
+<div><span style=3D"font-weight: bold;">&#xfeff;</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=3D"two-column editor-col OneColumnMobile" width=3D"50%" align=3D"=
+left" valign=3D"top">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text " align=3D"left" valign=3D"top" style=3D"color: #5=
+25252; display: block; font-family: Arial, Verdana, Helvetica, sans-serif; =
+font-size: 14px; padding: 10px 20px 10px 10px; text-align: left; word-wrap:=
+ break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div><span sty=
+le=3D"font-family: Calibri, Helvetica, Arial, sans-serif; font-size: 18px; =
+font-weight: bold;">Movie Night</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image content-image editor-image-vspace-on editor-im=
+age-hspace-on" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0">
+<tbody>
+<tr>
+<td align=3D"right" valign=3D"top" style=3D"padding: 10px 20px 10px 10px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" width=3D"270" border=3D"0" hspace=
+=3D"0" vspace=3D"0" src=3D"http://files.constantcontact.com/1af9e12f001/4c1=
+f2e3e-8259-40a8-a86f-3e1313f2a0a0.png">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text two-column-text" align=3D"left" valign=3D"top" sty=
+le=3D"color: #525252; display: block; font-family: Arial, Verdana, Helvetic=
+a, sans-serif; font-size: 14px; padding: 10px 20px 10px 10px; text-align: l=
+eft; word-wrap: break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div>
+<span style=3D"color: rgb(34, 34, 34); font-weight: bold;">August 28, 7:00p=
+m</span><span style=3D"color: rgb(34, 34, 34);">:</span>
+</div>
+<div><span style=3D"color: rgb(34, 34, 34);">Downtown Movies in the Park at=
+ Downtown Park, Bellevue.</span></div>
+<div>
+<span style=3D"color: rgb(34, 34, 34);">&#xfeff;Join The Sophia Way for a f=
+un and family-friendly outdoor showing of&#xa0;</span><span style=3D"color:=
+ rgb(34, 34, 34); font-style: italic;">Ghostbusters. </span><span style=3D"=
+color: rgb(34, 34, 34);">We will be serving the free popcorn!</span>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top" style=3D"background: rgb(94, 129, 202);" bgcolor=3D"rgb(94, 129, 2=
+02)">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table width=3D"100%" class=3D"galileo-ap-content-editor" style=3D"cursor: =
+default; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" width=3D"100%" align=3D"center" va=
+lign=3D"top" style=3D"padding: 9px 0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"height: 1px; min-width: 93%; width: 93%;">
+<tbody>
+<tr>
+<td height=3D"1" align=3D"center" style=3D"background: rgb(94, 129, 202); b=
+order-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0p=
+x;" bgcolor=3D"rgb(94, 129, 202)">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"50%" align=3D"" valign=
+=3D"top">
+<div><div class=3D"column-resize-bar">
+<span class=3D"line"></span>
+<span class=3D"grabber"></span>
+</div></div>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"color: #525252; display: block; font-family: Arial, Verdana, Helvetica,=
+ sans-serif; font-size: 14px; padding: 10px 10px 10px 20px; text-align: lef=
+t; word-wrap: break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"font-siz=
+e: 18px; font-weight: bold;">Our Office</span></div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"font-wei=
+ght: bold;">The Sophia Way</span></div>
+<div style=3D"text-align: center;" align=3D"center">11061 NE 2nd Street, Su=
+ite 223</div>
+<div style=3D"text-align: center;" align=3D"center">Bellevue, WA 98004</div=
+>
+<div style=3D"text-align: center;" align=3D"center">Ph: 425-463-6285</div>
+<div style=3D"text-align: center;" align=3D"center">Fax: 425-455-8607</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=3D" editor-col OneColumnMobile" width=3D"50%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"color: #525252; display: block; font-family: Arial, Verdana, Helvetica,=
+ sans-serif; font-size: 14px; padding: 10px 20px 10px 10px; text-align: lef=
+t; word-wrap: break-word;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"font-siz=
+e: 18px; font-weight: bold;">Our Shelter</span></div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"font-wei=
+ght: bold;">Sophia&#x2019;s Place</span></div>
+<div style=3D"text-align: center;" align=3D"center">3032 Bellevue Way NE</d=
+iv>
+<div style=3D"text-align: center;" align=3D"center">Bellevue, WA 98004</div=
+>
+<div style=3D"text-align: center;" align=3D"center">Ph: 425-896-7385</div>
+<div style=3D"text-align: center;" align=3D"center">Bus Route: 249</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top" style=3D"background: rgb(94, 129, 202);" bgcolor=3D"rgb(94, 129, 2=
+02)">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table width=3D"100%" class=3D"galileo-ap-content-editor" style=3D"cursor: =
+default; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" width=3D"100%" align=3D"center" va=
+lign=3D"top" style=3D"padding: 9px 0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"height: 1px; min-width: 93%; width: 93%;">
+<tbody>
+<tr>
+<td height=3D"1" align=3D"center" style=3D"background: rgb(94, 129, 202); b=
+order-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0p=
+x;" bgcolor=3D"rgb(94, 129, 202)">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-button">
+<table class=3D"editor-button" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"min-width: 100%; width: 100%;">
+<tbody>
+<tr>
+<td class=3D"editor-button-container " style=3D"color: #FFFFFF; font-family=
+: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: norm=
+al; padding: 10px 20px; text-decoration: none;">
+<table class=3D"galileo-ap-content-editor" style=3D"min-width: 100%; width:=
+ 100%;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" class=3D"MainTextFullWidthTD" style=3D"=
+color: #FFFFFF; font-family: Arial, Verdana, Helvetica, sans-serif; font-si=
+ze: 14px; font-weight: normal; padding: 0px; text-decoration: none;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background=
+: rgb(70, 108, 180); border-radius: 5px; border-spacing: 0; border: none; m=
+in-width: initial; moz-border-radius: 5px; padding: 0; width: initial;" bgc=
+olor=3D"rgb(70, 108, 180)">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" class=3D"MainTextFullWidthTD" style=3D"=
+color: #FFFFFF; font-family: Arial, Verdana, Helvetica, sans-serif; font-si=
+ze: 14px; font-weight: normal; padding: 9px 15px 10px; text-decoration: non=
+e;">
+<div>
+<div class=3D"MainTextFullWidth"><a href=3D"http://r20.rs6.net/tn.jsp?f=3D0=
+0101jY7cQihAvZhNJYF08Rp_FmKZXtPp6wesyU6Ws3bKXfw4jDNwcZRVsmzI5RMEwNt3iV70IVW=
+w1ZLSdEcf-gwoj5YlwULqSE8ETGTxd861S0jSOnNJxizbifGIkEHcp4ymkou-lOFH1PaJ3WJqp_=
+32edmCG2aL0lomyW-aF3hoFOuJVqO2Dr-S3UtX5pRMp13PuMW3plwQaUlgnZwg_qXw=3D=3D&c=
+=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBB=
+RK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" style=3D"color: #FF=
+FFFF; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 16px; =
+font-weight: bold; text-decoration: none;">Donate Now</a></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"section-headline editor-col OneColumnMobile" width=3D"100%" al=
+ign=3D"left" valign=3D"top" style=3D"background: rgb(94, 129, 202);" bgcolo=
+r=3D"rgb(94, 129, 202)">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text " align=3D"left" valign=3D"top" style=3D"color: #5=
+25252; display: block; font-family: Arial, Verdana, Helvetica, sans-serif; =
+font-size: 14px; padding: 10px 20px; text-align: left; word-wrap: break-wor=
+d;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div style=3D"=
+text-align: center;" align=3D"center"><a href=3D"http://r20.rs6.net/tn.jsp?=
+f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6wesyU6Ws3bKXfw4jDNwcZRd_daD6OTbcAIieR=
+zhrfTCv6eZhXvDK5ETJ5G8Umwaf1WDSYJx-5h1-qUPc5a1D0xOnxofyR3NDMjLEPbYP2u_iJYAk=
+HD8EO9g=3D=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=
+=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" targ=
+et=3D"_blank" style=3D"color: rgb(255, 255, 255); font-size: 16px; font-sty=
+le: normal; font-weight: bold; text-decoration: none;">Visit our website to=
+ know more about our work.</a></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image editor-image" width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-bottom: 0px; padding-t=
+op: 0px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto !important; max-width: 100% !important;" width=3D"60=
+0" border=3D"0" hspace=3D"0" vspace=3D"0" src=3D"https://files.constantcont=
+act.com/1af9e12f001/01b04520-cc7a-4d39-98a1-de621d7a435f.png">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-spacer">
+<table class=3D"editor-spacer" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"spacer-base" width=3D"100%" align=3D"center" valign=3D"top" st=
+yle=3D"height: 1px; line-height: 1px; padding-bottom: 10px;">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-social-button">
+<table class=3D"editor-social" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"min-width: 100%; width: 100%;">
+<tbody>
+<tr>
+<td class=3D" social-container" align=3D"center" style=3D"padding: 0px 20px=
+ 10px;">
+<div class=3D"galileo-ap-content-editor">
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRbky-TweZZwVgziQK1BvobdF1ekLfpgGm-jiV93IyJk46Ly4MkWGcD=
+w8RTRKTecFPNpuQtEXOgQWd-fYwspKU4D52_1YZcDbfOVgp3oW2ywV&c=3DHrtX_KS3dQKSiULI=
+7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO3Gm=
+wIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" style=3D"display: inline-block; text-d=
+ecoration: none;">
+<img alt=3D"Facebook" width=3D"32" border=3D"0" src=3D"https://imgssl.const=
+antcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-=
+default.png" style=3D"display: inline-block; margin: 0; padding: 0;"> &#x20=
+0c;
+</a>
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRX_3t_YfyISOll3jaBjxs_mw2hNNVJLRyPspH0Ps_TE44YRlxuG8dr=
+p09nVhIvQcjQwQdcOq1qq_uPxpBRgRoD4MxsJHA5vrZMCdi6vSNStw&c=3DHrtX_KS3dQKSiULI=
+7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=3DpZ0WBBRK8EwBIK7WP53QaO3Gm=
+wIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" style=3D"display: inline-block; text-d=
+ecoration: none;">
+<img alt=3D"Twitter" width=3D"32" border=3D"0" src=3D"https://imgssl.consta=
+ntcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-de=
+fault.png" style=3D"display: inline-block; margin: 0; padding: 0;"> &#x200c=
+;
+</a>
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D00101jY7cQihAvZhNJYF08Rp_FmKZXtPp6=
+wesyU6Ws3bKXfw4jDNwcZRUIHv_vRkf9_8WHkKBaWxnN-HJ9Kbn6iStZuqQ4RVUz-nwI1b1dt4b=
+tNt6HpzWfsKRRkurjxlFG0CzlJaAUR3f00oIUcqvKMBtBNjetqDZQBlJxwGVGf30KKrf-3p7oOL=
+w=3D=3D&c=3DHrtX_KS3dQKSiULI7_XHk0lvEKwRGGgwquxTIFBHjgZK_TLCEI5E-Q=3D=3D&ch=
+=3DpZ0WBBRK8EwBIK7WP53QaO3GmwIzCTWjZi_mDeKUzpjeeZA9Unqeag=3D=3D" style=3D"d=
+isplay: inline-block; text-decoration: none;">
+<img alt=3D"LinkedIn" width=3D"32" border=3D"0" src=3D"https://imgssl.const=
+antcontact.com/galileo/images/templates/Galileo-SocialMedia/linkedin-visit-=
+default.png" style=3D"display: inline-block; margin: 0; padding: 0;"> &#x20=
+0c;
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<table class=3D"footer-container" width=3D"100%" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0" style=3D"background: #ffffff; margin-left: auto; mar=
+gin-right: auto; table-layout: auto !important" bgcolor=3D"#ffffff">
+  <tr>
+    <td width=3D"100%" align=3D"center" valign=3D"top" style=3D"width: 100%=
+;">
+      <div class=3D"footer-max-main-width" align=3D"center" style=3D"margin=
+-left: auto; margin-right: auto; max-width: 100%;">
+        <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0">
+          <tr>
+            <td class=3D"footer-layout" align=3D"center" valign=3D"top" sty=
+le=3D"padding: 16px 0px;">
+              <table class=3D"footer-main-width" style=3D"width: 580px;" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                <tr>
+                  <td class=3D"footer-text" align=3D"center" valign=3D"top"=
+ style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size=
+: 12px; padding: 4px 0px;">
+                   =20
+                    <span class=3D"footer-column">The Sophia Way<span class=
+=3D"footer-mobile-hidden"> | </span></span><span class=3D"footer-column">11=
+061 NE 2nd St.<span class=3D"footer-mobile-hidden">, </span></span><span cl=
+ass=3D"footer-column">Suite 223<span class=3D"footer-mobile-hidden">, </spa=
+n></span><span class=3D"footer-column"></span><span class=3D"footer-column"=
+>Bellevue, WA 98004</span><span class=3D"footer-column"></span>
+                   =20
+                  </td>
+                </tr>
+                <tr>
+                  <td class=3D"footer-row" align=3D"center" valign=3D"top" =
+style=3D"padding: 10px 0px;">
+                    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+>
+                      <tr>
+                        <td class=3D"footer-text" align=3D"center" valign=
+=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; f=
+ont-size: 12px; padding: 4px 0px;">
+                          <a href=3D"https://visitor.constantcontact.com/do=
+?p=3Dun&m=3D001CLN_S13g0et-LAh2PzLdPA%3D&ch=3Ddf87a940-3fe5-11e7-be45-d4ae5=
+2843dc7&ca=3D92c6147b-1b93-4c7a-8524-aa7d802f6420" style=3D"color: #5d5d5d"=
+>Unsubscribe SaiParivarFoundation@gmail.com</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class=3D"footer-text" align=3D"center" valign=
+=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; f=
+ont-size: 12px; padding: 4px 0px;">
+                          <a href=3D"https://visitor.constantcontact.com/do=
+?p=3Doo&m=3D001CLN_S13g0et-LAh2PzLdPA%3D&ch=3Ddf87a940-3fe5-11e7-be45-d4ae5=
+2843dc7&ca=3D92c6147b-1b93-4c7a-8524-aa7d802f6420" style=3D"color: #5d5d5d"=
+>Update Profile</a> |
+                          <a href=3D"http://www.constantcontact.com/legal/s=
+ervice-provider?cc=3Dabout-service-provider" style=3D"color: #5d5d5d">About=
+ our service provider</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class=3D"footer-text" align=3D"center" valign=
+=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; f=
+ont-size: 12px; padding: 4px 0px;">
+                          Sent by
+                         =20
+                          <a href=3D"mailto:events@sophiaway.org" style=3D"=
+color: #5d5d5d; text-decoration: none">events@sophiaway.org</a>
+                         =20
+
+                         =20
+                         =20
+                          <span class=3D"footer-column">in collaboration wi=
+th</span>
+                         =20
+                         =20
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class=3D"footer-text" align=3D"center" valign=3D"top"=
+ style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size=
+: 12px; padding: 4px 0px;">
+                   =20
+                   =20
+                    <table width=3D"220" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+                      <tr>
+                        <td align=3D"center" valign=3D"top">
+                          <a href=3D"http://www.constantcontact.com/index.j=
+sp?cc=3Dnge" style=3D"color: #5d5d5d; text-decoration: none">
+                            <img alt=3D"Trusted Email from Constant Contact=
+ - Try it FREE today." width=3D"211" border=3D"0" hspace=3D"0" vspace=3D"0"=
+ src=3D"https://imgssl.constantcontact.com/ui/images1/logo_ctct_2x.png">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class=3D"footer-cta-text" align=3D"left" valign=
+=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; f=
+ont-size: 12px; padding-left: 52px;">
+                          <a href=3D"http://www.constantcontact.com/index.j=
+sp?cc=3Dnge" style=3D"color: #5d5d5d; text-decoration: none">Try it free to=
+day</a>
+                        </td>
+                      </tr>
+                    </table>
+                   =20
+                   =20
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table></body>
+</html>
+
+------=_Part_369637517_598406542.1531164653122--

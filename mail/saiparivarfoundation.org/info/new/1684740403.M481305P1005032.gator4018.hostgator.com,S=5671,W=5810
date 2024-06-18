@@ -1,0 +1,139 @@
+Return-Path: <helpdesk@itrade.ph>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id aAQJHDMZa2ToVQ8AUq51WA
+	(envelope-from <helpdesk@itrade.ph>)
+	for <info@saiparivarfoundation.org>; Mon, 22 May 2023 02:26:43 -0500
+Return-path: <helpdesk@itrade.ph>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Mon, 22 May 2023 02:26:43 -0500
+Received: from mail-qt1-f195.google.com ([209.85.160.195]:56457)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <helpdesk@itrade.ph>)
+	id 1q0zwJ-004Gty-Bq
+	for info@saiparivarfoundation.org;
+	Mon, 22 May 2023 02:26:43 -0500
+Received: by mail-qt1-f195.google.com with SMTP id d75a77b69052e-3f475746ae0so30617511cf.0
+        for <info@saiparivarfoundation.org>; Mon, 22 May 2023 00:26:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=itrade-ph.20221208.gappssmtp.com; s=20221208; t=1684740392; x=1687332392;
+        h=content-transfer-encoding:mime-version:message-id:subject:reply-to
+         :to:date:from:from:to:cc:subject:date:message-id:reply-to;
+        bh=TD9QYlhm8wt3M72xaR3XrJvUJWwI6Jf8sBw8df+B2ow=;
+        b=RUT1piNNXnqbIdeYSReo+sfVJ/mn6+NZrC9vFbN1Ncwk18fT4j2RMsAiB6Eq2Jl8TJ
+         7kuN9zVyZPcxqq7rPiiE/+IJ5Xq8w+y4yYJJxQQOUyhXjAZRtooEAs3qzLkof0DXHFxO
+         3G+m7MR9xGYc59IwRxG3jQeYuOdPcOTL9MU0b+KM2WyN/JQQslTDbsc+p/8QruVngf5n
+         PgXjTMM430upjqkMAkpd/C5u7TgfWY1YdTtj5qh0UGOMj9bhOb1xhDUryO1UWjZECCho
+         OeYFG8lYLYo9wkVKmy4k7Hk5Zjw/uv1NNuH36o7uMieMIqR5rlsUaE9Kmhn3pxBhH3ov
+         483Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1684740392; x=1687332392;
+        h=content-transfer-encoding:mime-version:message-id:subject:reply-to
+         :to:date:from:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=TD9QYlhm8wt3M72xaR3XrJvUJWwI6Jf8sBw8df+B2ow=;
+        b=dZvOEZERHQ1FkBgRmjKEbaVgsBgCr2v1qmBhjcbhVbp4oA2F1RCGcxfyiz52QaIA0Z
+         lWItWDww8ViZFhkpCHvNQIrt05DbFzm4mhT77KYkklUGmhkUeu5+GjufgGKbUzdlmdg8
+         8kxvl0Vy7Vq18VUOrPtCXA+Um83SSSm7uhDRFqNKyw2sPlbuIMp3iZzxp0EZ/E49xSDn
+         9r9JK0znhzHSRURFYtTflm0sqxx/JJHvj9G2qwWz1R228wylXA2XCtT4Ewd2QaJZhpRc
+         tBJ4jgL9QH5R7bp9uiZKZcp7zOrHnbvm60DdWJvfkMXV6aXDra4NkLohETauqRlqfecK
+         TgxQ==
+X-Gm-Message-State: AC+VfDyNrqPIQjLOK9vVErmI5Vr+RpLcFGi5ULs4YF5WItIm6RGLppJJ
+	xAcFinyoEIl64LiA9zCfTm4RiA==
+X-Google-Smtp-Source: ACHHUZ5xXDz/nTqKBF0RcYY64wuxPl1QGHxr5RPPxrFx8NHgIcaZpaBve9oqXa0eGI2gHJgUcrybHw==
+X-Received: by 2002:ac8:7d42:0:b0:3ee:1771:fc9f with SMTP id h2-20020ac87d42000000b003ee1771fc9fmr17646789qtb.56.1684740392632;
+        Mon, 22 May 2023 00:26:32 -0700 (PDT)
+Received: from 127.0.0.1 ([20.85.218.121])
+        by smtp.gmail.com with ESMTPSA id v21-20020ae9e315000000b007594229600csm1545030qkf.81.2023.05.22.00.26.31
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 22 May 2023 00:26:32 -0700 (PDT)
+From: Office Contact <helpdesk@itrade.ph>
+X-Google-Original-From: Office Contact <miller@live.com>
+Date: Mon, 22 May 2023 09:25:54 +0200
+To: undisclosed-recipients:;
+Reply-To: miller@rbsctuk.com
+Subject: Re: 05/22/2023 09:26:28 am Can we discuss?
+Message-ID: <a1f7288f939ba3455cae0ee34164f2cd@live.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="1757d2942e4271d48033aaa8d9ccac649"
+Content-Transfer-Encoding: 8bit
+
+This is a multi-part message in MIME format.
+
+--1757d2942e4271d48033aaa8d9ccac649
+Content-Type: text/plain; charset=us-ascii
+
+
+
+
+
+
+
+New Page 1
+
+
+
+
+Hello
+
+I want to discuss a business with you. I got your email address on my search for 
+a business partner online at google business search.
+I am into contract with my government here in South Africa. I have approved 
+payment of $35,000,000.00 Million to receive but i need to be sure on where to 
+invest it on please. i am willing to invest $35 Million in area of Investment 
+interest: Oil &amp; Gas, Agriculture, Aviation, Tourism, Retail, Real Estate &amp; 
+Construction, IT &amp; Communications, Engineering, Utilities, Telecoms, Mining, 
+Maritime Sector and Entertainment industries.
+I will give you 40% of the total funds while i have 60%. can we discuss more? i 
+wait to hear from you. if you have whatsapp number,kindly send to me for easy 
+communication.
+Thanks
+Miller
+Tel:+1 404 596 &amp;532
+
+
+
+
+
+--1757d2942e4271d48033aaa8d9ccac649
+Content-Type: text/html; charset=us-ascii
+
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+</head>
+
+<body>
+
+<p>Hello<br>
+<br>
+I want to discuss a business with you. I got your email address on my search for 
+a business partner online at google business search.<br>
+I am into contract with my government here in South Africa. I have approved 
+payment of $35,000,000.00 Million to receive but i need to be sure on where to 
+invest it on please. i am willing to invest $35 Million in area of Investment 
+interest: Oil &amp; Gas, Agriculture, Aviation, Tourism, Retail, Real Estate &amp; 
+Construction, IT &amp; Communications, Engineering, Utilities, Telecoms, Mining, 
+Maritime Sector and Entertainment industries.<br>
+I will give you 40% of the total funds while i have 60%. can we discuss more? i 
+wait to hear from you. if you have whatsapp number,kindly send to me for easy 
+communication.<br>
+Thanks<br>
+Miller<br>
+Tel:+1 404 596 &amp;532</p>
+
+</body>
+
+</html>
+
+
+
+--1757d2942e4271d48033aaa8d9ccac649--
+

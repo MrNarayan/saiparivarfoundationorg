@@ -1,0 +1,430 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201501 will be lost/reset.
+# Last config file used to build this data file was /home4/seasai10/tmp/awstats/awstats.saiparivarfoundation.org.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2019                
+POS_TIME 2685                
+POS_VISITOR 8818                
+POS_DAY 10683               
+POS_DOMAIN 3472                
+POS_LOGIN 3847                
+POS_ROBOT 4002                
+POS_WORMS 4287                
+POS_EMAILSENDER 4418                
+POS_EMAILRECEIVER 4561                
+POS_SESSION 11457               
+POS_SIDER 11657               
+POS_FILETYPES 4696                
+POS_DOWNLOADS 4878                
+POS_OS 4926                
+POS_BROWSER 5061                
+POS_SCREENSIZE 5671                
+POS_UNKNOWNREFERER 5745                
+POS_UNKNOWNREFERERBROWSER 6118                
+POS_ORIGIN 6414                
+POS_SEREFERRALS 6551                
+POS_PAGEREFS 6715                
+POS_SEARCHWORDS 6863                
+POS_KEYWORDS 7040                
+POS_MISC 2348                
+POS_ERRORS 7128                
+POS_CLUSTER 3703                
+POS_SIDER_404 7242                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20150201020605 55 13957 4257161763851
+FirstTime 0
+LastTime 20150131200202
+LastUpdate 20150201064317 55 0 54 0 0
+TotalVisits 65                  
+TotalUnique 35                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 49                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 16 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 8 138 10533966 19 71 807125
+1 18 87 6401640 14 56 524422
+2 26 162 15281646 16 62 732457
+3 2 16 528266 11 30 312825
+4 0 0 0 14 15 81952
+5 2 22 469402 14 23 188095
+6 1 1 10549 18 20 134923
+7 1 1 10549 12 12 58077
+8 5 46 4824693 13 21 139318
+9 16 78 18537914 15 28 253777
+10 3 40 3494478 12 21 178081
+11 2 28 742332 8 17 130504
+12 7 43 1914123 17 65 713935
+13 6 129 2928759 16 32 280218
+14 0 0 0 9 18 107314
+15 2 2 17757 8 17 96239
+16 8 56 5064112 16 43 461245
+17 1 41 10131231 10 22 215252
+18 9 107 8509246 12 30 259634
+19 3 19 28004 16 25 242856
+20 5 31 770638 8 14 83947
+21 2 18 527159 16 24 169125
+22 24 201 22664203 34 107 1254917
+23 4 4 32345 8 31 417483
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 11
+us 114 1144 91771732
+fr 11 11 89334
+il 10 41 16383261
+ru 9 9 68236
+ca 6 6 53271
+ua 1 1 10549
+kr 1 1 10549
+nl 1 1 10549
+in 1 42 4789179
+gb 1 1 10549
+fi 0 13 225803
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+googlebot 262 1399738 20150131113326 0
+bot[\s_+:,\.\;\/\\-] 94 1005212 20150129181514 0
+robot 3 21098 20150131211821 0
+netcraft 1 10549 20150108101439 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 6
+css 187 616130 0 0
+png 128 215556 0 0
+html 155 1249373 0 0
+jpg 487 106982855 0 0
+js 291 4173318 0 0
+gif 22 185780 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 9
+blackberry 1
+winxp 19
+winlong 22
+winnt 13
+winvista 589
+linux 115
+win7 168
+macosx 321
+Unknown 22
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 35
+msie6.0 15
+safari7.0 154
+firefox5.0 1
+chrome40.0.2214.91 128
+chrome32.0.1700.72 1
+chrome34.0.1847.137 1
+firefox26.0 8
+chrome11.0.696.77 99
+chrome32.0.1700.41 2
+chrome31.0.1650.57 3
+chrome31.0.1650.63 8
+safari5.0.2 27
+msie8.0 25
+chrome39.0.2171.65 1
+msie7.0 1
+safari8.0 130
+msie9.0 2
+chrome30.0.1599.101 1
+Unknown 5
+blackberry 1
+chrome32.0.1700.68 1
+libwww 16
+msie5.5 13
+safari6.0.5 1
+firefox33.0 1
+mozilla 488
+firefox25.0 5
+firefox14.0.1 8
+msie10.0 1
+chrome25.0.1364.172 2
+firefox6.0 1
+chrome39.0.2171.99 68
+firefox3.6.3 1
+safari6.1.1 1
+chrome40.0.2214.93 50
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 5
+Mechanize/2.7.2_Ruby/1.9.3p551_(http://github.com/sparklemotion/mechanize/) 20150106201118
+libwww-perl/6.04 20150131020431
+Mnogosearch-3.1.21 20150113225026
+facebookexternalhit/1.1_(_http://www.facebook.com/externalhit_uatext.php) 20150129211805
+Mozilla/6.0_(compatible) 20150104090410
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 3
+Mechanize/2.7.2_Ruby/1.9.3p551_(http://github.com/sparklemotion/mechanize/) 20150106201118
+Mnogosearch-3.1.21 20150113225026
+facebookexternalhit/1.1_(_http://www.facebook.com/externalhit_uatext.php) 20150129211805
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 87 127
+From1 1 1
+From2 4 4
+From3 0 0
+From4 63 1138
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+google 3 3
+bing 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+sai+parivar+foundation 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 3
+parivar 1
+foundation 1
+sai 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+206 3 26227
+406 6 1356
+404 419 5379541
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 38
+/images/prev_next.png 1 -
+/images/prevnext_bg.html 1 -
+/drupal 1 http://saiparivarfoundation.org/drupal
+/robots.txt 62 -
+/images/prev.html 1 -
+/apple-touch-icon.png 3 -
+/admin.php 1 -
+/forum/modcp/index.php 1 -
+/images/back_all1.jpg 97 http://saiparivarfoundation.org/
+/wordpress/wp-login.php 1 -
+/bugtrack/login_page.php 1 -
+/wp-admin/admin-ajax.php 1 -
+/mantis/login_page.php 1 -
+/joomla 1 http://saiparivarfoundation.org/joomla
+/wordpress 1 http://saiparivarfoundation.org/wordpress
+/images/blank.html 1 -
+/blog 1 http://saiparivarfoundation.org/blog
+/browserconfig.xml 1 -
+/domainsigma_removal_40b713d38a3cd560261462f1349d8a373f1e5191.html 1 -
+/wp/wp-login.php 1 -
+/bt/login_page.php 1 -
+/nyet.gif 1 -
+//index.php 1 -
+/community/modcp/index.php 1 -
+/images/comment.png 1 -
+/forums/modcp/index.php 1 -
+/images/menu_bg1.png 96 http://saiparivarfoundation.org/
+/vbulletin/modcp/index.php 1 -
+/wp 1 http://saiparivarfoundation.org/wp
+/administrator/ 1 -
+/undefined 62 http://www.saiparivarfoundation.org/events.html
+/blog/wp-login.php 1 -
+/Saiimages/background3.jpg 1 -
+/wp-login.php 2 -
+/images/btn_bg1.png 31 http://saiparivarfoundation.org/
+/js/SaiBaba.js 36 http://saiparivarfoundation.org/
+/images/next.html 1 -
+/admin/ 1 http://saiparivarfoundation.org/admin/
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 49
+24.17.194.249 22 185 10894544 20150129221122
+74.52.220.2 16 16 168784 20150131020431
+69.58.178.57 9 9 68236 20150109010756
+50.117.87.207 8 8 71028 20150131200202
+82.80.249.156 8 15 87010 20150104090410
+70.191.80.253 8 88 11926564 20150112223646
+131.107.192.161 8 56 5064112 20150123163108
+71.231.176.33 7 149 4357557 20150131104636
+71.231.182.72 7 43 1914123 20150130124813
+195.154.181.152 7 7 47138 20150117012340
+93.92.217.228 7 7 47138 20150125092733
+172.246.147.196 6 6 53271 20150124184239
+50.135.6.73 6 136 16002075 20150129230038
+131.107.147.139 5 75 2927274 20150128190401
+195.154.226.90 4 4 42196 20150125214344
+65.49.54.70 4 4 35514 20150127155207
+98.247.171.24 3 139 21309119 20150118025044
+62.219.8.233 2 2 21098 20150105012520
+54.197.127.254 2 28 742332 20150106201118
+50.135.7.44 1 21 458853 20150125050033
+173.49.24.118 1 1 10549 20150113225026
+173.199.124.98 1 1 10549 20150109024442
+46.118.113.31 1 1 10549 20150126103604
+112.171.9.47 1 1 10549 20150121191419
+5.61.35.38 1 1 10549 20150104234512
+199.30.24.80 0 14 507168 
+199.30.25.74 0 14 1658714 
+199.30.24.113 0 44 5542815 
+82.80.234.142 0 3 90298 
+173.252.102.115 0 1 136790 
+131.107.192.139 1 27 731783 20150113112845
+192.99.40.137 0 13 225803 
+46.158.134.228 1 1 10549 20150120050758
+117.194.119.80 1 42 4789179 20150120082835
+192.114.71.13 0 18 15919018 
+216.155.129.61 1 1 10549 20150124073003
+46.229.170.197 1 1 10549 20150125033342
+173.252.102.117 0 1 6678 
+199.30.24.2 0 5 386000 
+195.191.41.174 1 1 10549 20150104113356
+54.154.150.149 1 1 10549 20150105132523
+82.80.249.164 0 1 123587 
+68.225.211.143 1 26 732902 20150102013949
+82.80.244.52 0 2 142250 
+173.252.101.112 0 1 136790 
+54.226.157.203 1 1 10549 20150112062612
+65.55.210.69 0 4 385868 
+54.175.206.85 1 1 10549 20150115001144
+199.30.24.239 0 44 5542815 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20150101 1 45 5553364 1
+20150102 1 26 732902 1
+20150103 2 2 21098 2
+20150104 12 43 16401018 4
+20150105 5 5 49404 4
+20150106 2 28 742332 1
+20150107 1 1 10549 1
+20150108 2 2 17757 1
+20150109 11 11 89334 3
+20150110 1 1 10549 1
+20150111 3 3 28306 2
+20150112 9 89 11937113 2
+20150113 3 29 752881 3
+20150114 1 32 2128613 1
+20150115 2 2 21098 2
+20150116 2 2 17757 1
+20150117 9 53 5611051 3
+20150118 3 143 16731252 1
+20150119 1 15 1669263 1
+20150120 4 45 4817485 3
+20150121 2 7 407098 2
+20150122 1 1 10549 1
+20150123 16 104 8999086 3
+20150124 4 18 546023 3
+20150125 23 273 16512418 7
+20150126 1 1 10549 1
+20150127 3 3 28306 2
+20150128 5 75 2927274 1
+20150129 13 126 11212225 3
+20150130 7 43 1914123 1
+20150131 5 42 3512235 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+5mn-15mn 2
+2mn-5mn 1
+30s-2mn 3
+0s-30s 55
+15mn-30mn 2
+30mn-1h 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 7
+/ 74 759528 60 43
+/about.html 18 129744 2 9
+/events.html 17 101896 1 4
+/guruji.html 13 104076 2 2
+/Resources.html 12 48468 0 4
+/mission.html 11 65021 0 1
+/contacts.html 10 40640 0 2
+END_SIDER

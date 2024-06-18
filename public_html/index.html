@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Sai Parivar Foundation</title>
+     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/autoscroll.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/script.js"></script> 
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/site.tree.js"></script>
+    <script src="js/SaiBaba.js"></script>
+     <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="js/jquery.mobile.customized.min.js"></script>
+     <!--<![endif]-->
+     <script>
+     
+     
+  $(document).ready(function(){
+      jQuery('#camera_wrap').camera({
+        loader: false,
+        pagination: true ,
+        thumbnails: false,
+        height: '322',
+        caption: false,
+        navigation: true,
+        hover: false,
+        portrait: true,
+        fx: 'mosaic',
+        time: '5000'
+      });   
+    });
+    
+     $(document).ready(function(){
+      $().UItoTop({ easingType: 'easeOutQuart' });
+     });
+     
+     $(document).ready(function () {
+         var i = 0;
+         $(".marqueeElement").last().addClass("last");
+         $(".marqueeElement").each(function () {
+             var $this = $(this);
+             $this.css("top", i);
+             i += $this.height();
+             doScroll($this);
+         });
+     });
+
+     function doScroll($ele) {
+         var top = parseInt($ele.css("top"));
+         if (top < -80) { //bit arbitrary!
+             var $lastEle = $(".last");
+             $lastEle.removeClass("last");
+             $ele.addClass("last");
+             var top = (parseInt($lastEle.css("top")) + $lastEle.height());
+             $ele.css("top", top);
+         }
+         $ele.animate({ top: (parseInt(top) - 60) }, 5000, 'linear', function () { doScroll($(this)); });
+     }
+     </script>
+
+     </head>
+     <body class="page1">
+<!--==============================header=================================-->
+ <header> 
+     <div class="h_top">
+         <div class="container_12">
+             <div class="grid_12" >
+                 <div class="header1">
+                     <!--<img src="images/Project11-005_resize.jpg" width="100%" height="100%"/>-->
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <div class="container_12">
+         <div class="grid_12">
+             <div class="menu_block">
+                 <nav class="">
+                     <ul class="sf-menu">
+                         
+                           <li  class="current "><a href="index.html">Home</a></li>
+                            <li><a href="about.html">Sai Baba</a></li>
+                            <li><a href="guruji.html">Guruji</a></li>
+                            <li><a href="mission.html">About us</a></li>
+                            <li><a href="pictures.html">Events</a></li>
+                            <li><a href="Resources.html">Resources<img src="images/Project11-005_resize.jpg" width="100%" height="100%" alt=""/></a></li>
+                            <li><a href="contacts.html">Contact us</a></li>
+                     </ul>
+                 </nav>
+                 <div class="clear"></div>
+             </div>
+         </div>
+    </div>
+
+</header>
+        
+<div class="container_12">
+    <div class="grid_3">
+        <div class="box">
+            <img src="Saiimages/Sai4.jpg" alt="">
+            <div class="pad1">
+                <div class="title">Shirdi Sai Baba</div>
+                Shri Sai Baba is revered as one of the greatest saints ever seen in India, endowed with unprecedented powers, and is worshipped as a God incarnate. (SAI meaning Sakshaat Ishwar) - GOD THE ABSOLUTE ...
+            </div>
+            <a href="about.html" class="btn">Details</a>
+        </div>
+    </div>
+    <div class="grid_6">
+        <div class="slider_wrapper">
+            <div id="camera_wrap" class="">
+                <div data-src="RotatingImages/1.JPG"></div>
+                <div data-src="RotatingImages/2.JPG"></div>
+                <div data-src="RotatingImages/3.JPG"></div>
+                <div data-src="RotatingImages/4.JPG"></div>
+                <div data-src="RotatingImages/5.JPG"></div>
+                <div data-src="RotatingImages/6.jpeg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="grid_3">
+        <div class="box">
+            <img src="Saiimages/guruji.jpg" alt="">
+            <div class="pad1">
+                <div class="title">Guruji</div>
+                Dr. Chandra Bhanu Satpathy is a noted scholar, spiritual thinker, author and a humanitarian. He is an impeccable personification of the noble principles of life such as love, empathy,...<a href="guruji.html" style="text-decoration: underline;">read more</a>
+            </div>
+            <br />
+            <a href="http://www.cbsatpathy.com" class="btn">Guruji's website</a>
+
+        </div>
+    </div>
+</div>
+
+<div class="container_12">
+    <div class="grid_3">
+        <div class="box maxheight">
+
+            <div class="pad1">
+		<div class="title">Opening Hours</div>
+		<div class="pad13">
+                        <ul class="b">
+                            <li>Every day from 6 PM to 9 PM</li>
+                            <li>6:30 PM - Dhoop Aarati</li>
+                            <li>8:30 PM - Seja Aarati</li>
+                            <li>
+				Sai Sandhya on every Thursday and Saturday 6:30 PM
+
+				<ul class="b">
+					<li>Sandhya Aarati</li>
+		                        <li>Meditation for 15 minutes</li>
+	                                <li>Recital of Sai Satcharita</li>
+	                                <li>Bhajans (group music)</li>
+	                                <li>Prasadam</li>
+				</ul>
+
+</li>
+                        </ul>
+                </div>
+                <br />
+                <div class="title">Temple Address</div>
+                <br />
+		1805 136th place NE Suite 101<br/>
+		Bellevue, WA 98005<br/><br />
+                
+            </div>
+         </div>      
+    </div>
+    <div class="grid_6">
+
+        <div class="box maxheight">
+
+            <div class="pad1">
+
+               <div class="title">Guruji's Messages</div>
+                <div class="pad10">
+                    <div>"In happiness one should not be so absorbed that he does not notice the suffering of the less fortunate and the miserable fellow beings. The saints forget their own suffering by enjoying the happiness that they give to their devotees"<br /><br /></div>
+                    <div>"Every shock in life makes one stronger if he does not breakdown. A wise man turns suffering to creativity and  the unwise one to morbidity. Why channelise the impact of pain to morbidity? Why not to creativity? The Spiritual Masters teach the art of creativity to their disciples."<br /><br /></div>
+                    <div>"The little lamps that has been kindled in us by the Lord is for lighting other lamps. None on this earth received enlightenment who had not been taught the lesson to distribute it's energy among others. We should pray for being taught the lesson to enkindle others before we wish to be kindled. This path is easier."</div>
+                </div>
+
+
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="grid_3">
+        <div class="box maxheight">
+
+            <div class="pad1">
+
+                <div class="title">Upcoming community service events</div>
+                <br />
+                <ul class="b">
+                <li>25th Feb - Sandwich Seva for the homeless at Tent city</li>
+                <li>March/April - Blood drive</li>
+                </ul>
+                <br />
+                <br />
+                <a href="mission.html#whycharity" class="btn">Why we do it</a>
+                <br />
+                <br />
+                <br />
+                <div class="title">Upcoming cultural events</div>
+                <br />
+                <br />
+                <ul class="b">
+                <!--<li>Check back soon!</li>-->
+                <a href="MahaShivaratri.jpg"><li style="text-decoration: underline;">Maha Shivaratri and Akhand Parayan (24th Feb)</li></a>
+                </ul>
+                <br />
+                <br />
+                <a href="pictures.html" class="btn">Previous Events</a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+             
+
+             <!--=======content================================-->
+
+
+
+
+
+
+
+
+
+
+             <div class="content page1">
+
+             </div>
+
+
+             <div style="height: 100px">
+
+             </div>
+             <!--==============================footer=================================-->
+
+             <footer>
+                 <div class="container_12">
+                     <h2>Jai Shri Sai</h2>
+                     <!--<p>&copy; 2014 | <a href="www">Sai Parivar Foundation</a></p>-->
+                 </div>
+             </footer>
+
+</body>
+
+</html>

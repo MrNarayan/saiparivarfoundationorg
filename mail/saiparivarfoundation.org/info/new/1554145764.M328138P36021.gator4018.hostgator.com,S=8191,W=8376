@@ -1,0 +1,185 @@
+Return-Path: <prvs=5994648058=jenn.stahl@pse.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP id EL6WCeRholy1jAAAUq51WA
+	for <info@saiparivarfoundation.org>; Mon, 01 Apr 2019 14:09:24 -0500
+Return-path: <prvs=5994648058=jenn.stahl@pse.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Mon, 01 Apr 2019 14:09:24 -0500
+Received: from mx0a-00086101.pphosted.com ([148.163.150.94]:40456)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.91)
+	(envelope-from <prvs=5994648058=jenn.stahl@pse.com>)
+	id 1hB2J9-000HeM-TE
+	for info@saiparivarfoundation.org; Mon, 01 Apr 2019 14:09:24 -0500
+Received: from pps.filterd (m0117357.ppops.net [127.0.0.1])
+	by mx0a-00086101.pphosted.com (8.16.0.27/8.16.0.27) with SMTP id x31J43wg014058;
+	Mon, 1 Apr 2019 12:07:20 -0700
+Received: from sqewpexch01v02.puget.com ([204.61.63.76])
+	by mx0a-00086101.pphosted.com with ESMTP id 2rkfuf1e5u-2
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128 verify=NOT);
+	Mon, 01 Apr 2019 12:07:20 -0700
+Received: from sqewpexch01v01.puget.com (10.141.32.10) by
+ sqewpexch01v02.puget.com (10.141.32.11) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.1466.3; Mon, 1 Apr 2019 12:07:07 -0700
+Received: from sqewpexch01v01.puget.com ([fe80::64d4:2ec3:e46a:f51f]) by
+ sqewpexch01v01.puget.com ([fe80::64d4:2ec3:e46a:f51f%4]) with mapi id
+ 15.01.1466.003; Mon, 1 Apr 2019 12:07:07 -0700
+From: "Stahl, Jenn" <Jenn.Stahl@pse.com>
+To: "Grenner, Joshua" <Joshua.Grenner@pse.com>
+Subject: Upcoming Sound Transit work that may result in planned power outages
+Thread-Topic: Upcoming Sound Transit work that may result in planned power
+ outages
+Thread-Index: AdTovhmC9/UMgmeEQSq8+xMo8B8SjA==
+Importance: high
+X-Priority: 1
+Disposition-Notification-To: "Stahl, Jenn" <Jenn.Stahl@pse.com>
+Return-Receipt-To: <Jenn.Stahl@pse.com>
+Date: Mon, 1 Apr 2019 19:07:07 +0000
+Message-ID: <9eb4244f637c46f3bafc4e2bf14e594b@pse.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.141.104.10]
+Content-Type: multipart/alternative;
+	boundary="_000_9eb4244f637c46f3bafc4e2bf14e594bpsecom_"
+MIME-Version: 1.0
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:,, definitions=2019-04-01_06:,,
+ signatures=0
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 priorityscore=1501
+ malwarescore=0 suspectscore=0 phishscore=0 bulkscore=0 spamscore=0
+ clxscore=1011 lowpriorityscore=0 mlxscore=0 impostorscore=0
+ mlxlogscore=648 adultscore=0 classifier=spam adjust=0 reason=mlx
+ scancount=1 engine=8.0.1-1810050000 definitions=main-1904010122
+
+--_000_9eb4244f637c46f3bafc4e2bf14e594bpsecom_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello everyone,
+
+We wanted to keep you up-to-date in regards to the work Sound Transit is do=
+ing and its impacts to our electric system in your area. Sound Transit is c=
+oming to a point in their work where they may need our electric lines to be=
+ de-energized for their crews to safely perform their work. Also, some of y=
+ou currently have temporary service lines and we will need to re-connect yo=
+u permanently to the electric system once Sound Transit crews have complete=
+d their work in your area.
+
+What this means to you is that some customers may experience a planned powe=
+r outage, or possibly two, over the next few months; just as before, we wil=
+l work to give you as much advance notification as possible so proper arran=
+gements can be made and also work around your business hours. We understand=
+ being without power is inconvenient and we are coordinating with Sound Tra=
+nsit to lessen these impacts as much as possible.
+
+Thank you again for your patience, understanding and assistance as we work =
+with Sound Transit to complete this work as quickly and safely as possible.=
+ If there should be any questions regarding PSE's portion of this work, ple=
+ase contact the PSE project manager, Josh Grenner, at 425-457-4542 or joshu=
+a.grenner@pse.com.
+
+Sincerely,
+
+Jennifer Bauman | Customer Outreach Coordinator
+Communications Initiatives | PUGET SOUND ENERGY
+Office: 425-424-6432 | Email: jennifer.stahl@pse.com
+http://pse.com
+
+
+--_000_9eb4244f637c46f3bafc4e2bf14e594bpsecom_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hello everyone,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">We wanted to keep you up-to-date in regards to the w=
+ork Sound Transit is doing and its impacts to our electric system in your a=
+rea. Sound Transit is coming to a point in their work where they may need o=
+ur electric lines to be de-energized
+ for their crews to safely perform their work. Also, some of you currently =
+have temporary service lines and we will need to re-connect you permanently=
+ to the electric system once Sound Transit crews have completed their work =
+in your area.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">What this means to you is that some customers may ex=
+perience a planned power outage, or possibly two, over the next few months;=
+ just as before, we will work to give you as much advance notification as p=
+ossible so proper arrangements can
+ be made and also work around your business hours. We understand being with=
+out power is inconvenient and we are coordinating with Sound Transit to les=
+sen these impacts as much as possible.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank you again for your patience, understanding and=
+ assistance as we work with Sound Transit to complete this work as quickly =
+and safely as possible. If there should be any questions regarding PSE&#821=
+7;s portion of this work, please contact
+ the PSE project manager, Josh Grenner, at 425-457-4542 or joshua.grenner@p=
+se.com.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Sincerely, <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><i><span style=3D"font-size:12.0pt">Jennifer Baum=
+an</span></i></b> | Customer Outreach Coordinator<o:p></o:p></p>
+<p class=3D"MsoNormal">Communications Initiatives | PUGET SOUND ENERGY<o:p>=
+</o:p></p>
+<p class=3D"MsoNormal">Office: 425-424-6432 | Email: jennifer.stahl@pse.com=
+ <o:p></o:p></p>
+<p class=3D"MsoNormal">http://pse.com <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_9eb4244f637c46f3bafc4e2bf14e594bpsecom_--

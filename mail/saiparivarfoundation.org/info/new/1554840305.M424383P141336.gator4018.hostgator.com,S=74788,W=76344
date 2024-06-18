@@ -1,0 +1,1556 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP id qAN6EfH6rFwYKAIAUq51WA
+	for <info@saiparivarfoundation.org>; Tue, 09 Apr 2019 15:05:05 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Tue, 09 Apr 2019 15:05:05 -0500
+Received: from mail-pl1-f182.google.com ([209.85.214.182]:38750)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1hDwzQ-000sKQ-TX
+	for info@saiparivarfoundation.org; Tue, 09 Apr 2019 15:05:05 -0500
+Received: by mail-pl1-f182.google.com with SMTP id f36so5578839plb.5
+        for <info@saiparivarfoundation.org>; Tue, 09 Apr 2019 13:04:59 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:dkim-signature
+         :subject:from:reply-to:to:date:message-id:feedback-id:list-id
+         :list-unsubscribe:list-unsubscribe-post:mime-version;
+        bh=V8s0k/W5LFiAEy134j/aOLybU6I260nuwv4TKe35ysU=;
+        b=VhxfRbMxxWxjhUpH3DIspAP+xvOE19EP6DWNigWHzgXhzOxCj+I9xBMmvHUSNTU8VR
+         BErlKghFUY7U6LTxL/O9NXp7d3490jYQ69rYI9eVQ/zmZQjKr1lawLU3RuJg+xBsBNxA
+         o5mKUg9w/7VR/1+NOh4orfi8m/hGwp3j/1fCol3AQUesxz+jI74AQiiAfhfPaWUYtV6e
+         9JGhBgqRhxwYLTShBNwyXq3WYAK/H/1b3VVr/JcmOfoGT8ckZka7W+YR/ojc0/S4pqH4
+         eAcXsh3rmkyxuAgcdxP1gYeQq1GiGJd0n7wp5hnbgLdFxbAQcPvdMu3BJwxYEz5/zSCi
+         Saow==
+X-Gm-Message-State: APjAAAUb6lT/ylTIP27YAeNkiTsCojHRlPW5EWykC5C7SvexXr1KUSki
+	/N/pxyLn2FecDGL47JWARNlzui6Ockn5/aD6/Sd6XDEoBxeLy6s=
+X-Received: by 2002:a17:902:7589:: with SMTP id j9mr13513463pll.287.1554840293515;
+        Tue, 09 Apr 2019 13:04:53 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a17:90a:9281:0:0:0:0 with SMTP id n1csp5194855pjo;
+        Tue, 9 Apr 2019 13:04:52 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqw3BTpEi+ikE4jH1sAqJfW8KUdDxaM4Cy7GkCwP7eEo7NMLuB0vLCvuWcBfy/KHZxLKy0i3
+X-Received: by 2002:a25:2a57:: with SMTP id q84mr31567160ybq.72.1554840292110;
+        Tue, 09 Apr 2019 13:04:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1554840292; cv=none;
+        d=google.com; s=arc-20160816;
+        b=t4OB1Om0ojFUp7wY4SqPDPPBAzqgGahxruVG5Zk7IpYvRCBONb1xxoYZFrJ6Xap9zT
+         Qg0aheeUe5RtX5KaqDXztxPGVhlMFDAxp5zjOU/qt7XnhW3Dotar6vTNnZf43BQ5AcpQ
+         zuTpn+AvaQUT85PiY9te+ALz719qW9vrQQrLypf1jq1unre4Tcx7NJC92ibu7/vwh/9x
+         VMbkpQRfRK4OdRpbleQvnqaGwuy5PJDTa+WpVjQfnQsZ+1NkVl0BHOb2nPu4IFrCCZIL
+         RXsUEVyCQ3SSwQvjPBBz0UKOh2WBoHgzmTN//k4i0990GuGXleMQwijcq33zE+XgJYwg
+         E8YA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:list-unsubscribe-post:list-unsubscribe:list-id
+         :feedback-id:message-id:date:to:reply-to:from:subject:dkim-signature
+         :dkim-signature;
+        bh=V8s0k/W5LFiAEy134j/aOLybU6I260nuwv4TKe35ysU=;
+        b=mcblIsGkDA4OuuLT2ujTjEVatYkiSLiqqC31k69y+StYm7SzLUBCAU8QmUT8nmpjEl
+         eOJRP+GGcsgLonDmvqlS50bZpw8LSKODMrbjP9HGvj2rvGjqVFw2RQhxsO9TBdYHE5ny
+         oaazhBekRj9aUrOLCAWb+jPIsWzQKsqvHYjHN4SiYd6JZZrwcYsPl1/nPgkZA0B/2tfZ
+         DHGsQEJ/DW/Yi77LmIjmRlRc1ArRGwJQD3O+59q1Exg+Zl9bnq0TctPe+j8DQNkzeKII
+         CzK6rJTFi/jTTLhpSkdSNg3Owiy7Vu0dSk1nxOKMzqGdm8KzMRrU37Md1uZHMThrI2C2
+         vx+g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mailchimp.com header.s=k1 header.b=eiXwRKvW;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k1 header.b=CsvhIeX6;
+       spf=pass (google.com: domain of bounce-mc.us1_7612.858509-saiparivarfoundation=gmail.com@mail19.mailchimp.com designates 198.2.182.115 as permitted sender) smtp.mailfrom="bounce-mc.us1_7612.858509-saiparivarfoundation=gmail.com@mail19.mailchimp.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mailchimp.com
+Received: from mail19.mailchimp.com (mail19.mailchimp.com. [198.2.182.115])
+        by mx.google.com with ESMTPS id u77si21501038ywu.452.2019.04.09.13.04.51
+        for <saiparivarfoundation@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 09 Apr 2019 13:04:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-mc.us1_7612.858509-saiparivarfoundation=gmail.com@mail19.mailchimp.com designates 198.2.182.115 as permitted sender) client-ip=198.2.182.115;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mailchimp.com header.s=k1 header.b=eiXwRKvW;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k1 header.b=CsvhIeX6;
+       spf=pass (google.com: domain of bounce-mc.us1_7612.858509-saiparivarfoundation=gmail.com@mail19.mailchimp.com designates 198.2.182.115 as permitted sender) smtp.mailfrom="bounce-mc.us1_7612.858509-saiparivarfoundation=gmail.com@mail19.mailchimp.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mailchimp.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=mailchimp.com;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+ Content-Type:MIME-Version; i=hello@mailchimp.com;
+ bh=V8s0k/W5LFiAEy134j/aOLybU6I260nuwv4TKe35ysU=;
+ b=eiXwRKvWQTVEMbT5C56Pe9Laeivcfm2yIui00JQdSGXfLFDfcsb45/DrYmPxTeoM9EVNUgnYh+eT
+   0yoz7YNFScRtrDhwwfO1iARPEHnO8tSTxce6LdV1+saI9POzGWgk3ZZ/nrf/dSEQTd/90aqpSj3x
+   lr0GJIvDqRW7fLoeRi8=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=gmail.mcsv.net;
+ h=Subject:From:Reply-To:To:Date:Message-ID:Feedback-ID:List-ID:
+ List-Unsubscribe:Content-Type:MIME-Version;
+ bh=V8s0k/W5LFiAEy134j/aOLybU6I260nuwv4TKe35ysU=;
+ b=CsvhIeX6+66yY/95kv5t/UwhTyjgOKiw9t2DnTfO4T8huiMgibPTZka+5rH3dJpsoCo4XzbLFI45
+   ETtT3C4Kfk3ANfnvu4tviStCKZY4NUn8ORY6SLeLYxtUuiDxvoX9f3ozPMeNSw9KQFF9TuDfSQYo
+   G5CftvrjXh48Vy/yUPs=
+Received: from (127.0.0.1) by mail19.mailchimp.com id hljte82ddl4v for <saiparivarfoundation@gmail.com>; Tue, 9 Apr 2019 20:03:57 +0000 (envelope-from <bounce-mc.us1_7612.858509-saiparivarfoundation=gmail.com@mail19.mailchimp.com>)
+Subject: =?utf-8?Q?What=20can=20you=20do=20with=20a=20landing=20page=3F?=
+From: =?utf-8?Q?Mailchimp?= <hello@mailchimp.com>
+Reply-To: =?utf-8?Q?Mailchimp?= <hello@mailchimp.com>
+To: <saiparivarfoundation@gmail.com>
+Date: Tue, 9 Apr 2019 20:03:57 +0000
+Message-ID: <f7b9ee22124ff6454424dc10c.d3db7b354c.20190409200322.30ba37509f.f68d5534@mail19.mailchimp.com>
+X-Mailer: MailChimp Mailer - **CID30ba37509fd3db7b354c**
+X-Campaign: mailchimpf7b9ee22124ff6454424dc10c.30ba37509f
+X-campaignid: mailchimpf7b9ee22124ff6454424dc10c.30ba37509f
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=f7b9ee22124ff6454424dc10c&id=30ba37509f&e=d3db7b354c
+X-MC-User: f7b9ee22124ff6454424dc10c
+Feedback-ID: 7612:7612.858509:us1:mc
+List-ID: f7b9ee22124ff6454424dc10cmc list <f7b9ee22124ff6454424dc10c.86054.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <https://mailchimp.us1.list-manage.com/unsubscribe?u=f7b9ee22124ff6454424dc10c&id=21eda42079&e=d3db7b354c&c=30ba37509f>, <mailto:unsubscribe-mc.us1_f7b9ee22124ff6454424dc10c.30ba37509f-d3db7b354c@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1920624625"
+MIME-Version: 1.0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1920624625
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+We=E2=80=99ve got a few ideas to inspire you
+
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C  =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C  =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C  =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C  =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C  =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C  =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C  =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C  =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C  =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C  =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C  =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C  =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C
+http://mailchimp.com?utm_source=3Demail&utm_medium=3Demail&utm_campaign=3D=
+product-1-active-without-lp&utm_content=3Dmailchimp-homepage&mc_cid=3D30ba=
+37509f&mc_eid=3D[UNIQID]
+
+
+** 5 campaigns you can run with a landing page
+------------------------------------------------------------
+https://mailchimp.com/features/landing-pages/?utm_source=3Demail&utm_mediu=
+m=3Demail&utm_campaign=3Dproduct-1-active-without-lp&utm_content=3Dlanding=
+-pages-feature-page&mc_cid=3D30ba37509f&mc_eid=3D[UNIQID]
+Still not sure what to do with a landing page? The short answer: A landing=
+ page (https://mailchimp.com/features/landing-pages/?utm_source=3Demail&ut=
+m_medium=3Demail&utm_campaign=3Dproduct-1-active-without-lp&utm_content=3D=
+landing-pages-feature-page&mc_cid=3D30ba37509f&mc_eid=3D[UNIQID])  with a=
+ clear call to action is a great way to accomplish short-term goals and ge=
+t quick conversions.
+
+We=E2=80=99ve got a few campaign ideas to help you figure out what=E2=80=
+=99s right for your business goals.
+
+1. Let=E2=80=99s say you want to get more people talking about and using y=
+our apps. Simply include a signup form on your landing page to build an in=
+terested audience=2C so you can offer them a free download.
+
+2. Create a landing page to promote an exclusive pre-sale or offer=2C then=
+ share your page=E2=80=99s URL in an email to your VIPs and best customers=
+=2E
+
+3. Our Square payments block (https://mailchimp.com/help/use-payment-conte=
+nt-block/?utm_source=3Demail&utm_medium=3Demail&utm_campaign=3Dproduct-1-a=
+ctive-without-lp&utm_content=3Dpayment-block-help-page&mc_cid=3D30ba37509f=
+&mc_eid=3D[UNIQID]) simplifies the shopping experience for your customers=
+ by letting them learn about and buy your product without leaving your lan=
+ding page. And if you sign up for Square (https://squareup.com/t/f_partner=
+ships/d_partnerships/p_mailchimp/c_general/o_free_processing/u_email/l_us?=
+route=3Dsignup%3Fsignup_token%3D14E8891A74&mc_cid=3D30ba37509f&mc_eid=3D[=
+UNIQID]) today=2C you can get free processing on up to $5=2C000 in credit=
+ card transactions.
+
+4. Maybe you=E2=80=99ve got a top seller you=E2=80=99d like to show off in=
+ more places or a new collection you want to highlight. A landing page mak=
+es this easy: choose from the product imagery we pull in from your site=2C=
+ add the product name and price=2C and use a call to action that brings pe=
+ople back to your store.
+
+5. Looking to run a giveaway for your travel agency or blog? Use the headl=
+ine=2C =E2=80=9CEnter for a chance to win=E2=80=9D and collect visitors=E2=
+=80=99 email addresses to notify them later.
+
+Got an idea for a landing page campaign you=E2=80=99re ready to run?
+Start Building (https://admin.mailchimp.com/jump/create-campaign/landing-p=
+age?mc_cid=3D30ba37509f&mc_eid=3D[UNIQID])
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Mailchimp
+=C2=A92019 Mailchimp
+** 675 Ponce De Leon Ave NE=2C Suite 5000=2C Atlanta=2C GA 30308 (https://=
+mailchimp.com/contact/?mc_cid=3D30ba37509f&mc_eid=3D[UNIQID])
+| ** mailchimp.com (http://mailchimp.com?mc_cid=3D30ba37509f&mc_eid=3D[UN=
+IQID])
+
+** Unsubscribe (https://mailchimp.us1.list-manage.com/unsubscribe?u=3Df7b9=
+ee22124ff6454424dc10c&id=3D21eda42079&e=3Dd3db7b354c&c=3D30ba37509f)
+=E2=80=A2 ** View in Browser (https://mailchi.mp/mailchimp.com/what-can-yo=
+u-do-with-a-landing-page?e=3Dd3db7b354c)
+=E2=80=A2 ** Terms of Use (https://mailchimp.com/legal/terms/?mc_cid=3D30b=
+a37509f&mc_eid=3D[UNIQID])
+=E2=80=A2 ** Privacy Policy (https://mailchimp.com/legal/privacy/?mc_cid=
+=3D30ba37509f&mc_eid=3D[UNIQID])
+** FB (https://www.facebook.com/mailchimp?mc_cid=3D30ba37509f&mc_eid=3D[U=
+NIQID])
+** TW (https://twitter.com/mailchimp/?mc_cid=3D30ba37509f&mc_eid=3D[UNIQI=
+D])
+** IG (https://www.instagram.com/mailchimp?mc_cid=3D30ba37509f&mc_eid=3D[=
+UNIQID])
+** LI (https://www.linkedin.com/company/mailchimp?mc_cid=3D30ba37509f&mc_e=
+id=3D[UNIQID])
+** Download on Google Play (https://play.google.com/store/apps/details?id=
+=3Dcom.mailchimp.mailchimp&mc_cid=3D30ba37509f&mc_eid=3D[UNIQID])
+** Download on the App Store (https://itunes.apple.com/us/app/mailchimp-em=
+ail-marketing-automation/id366794783?mt=3D8&mc_cid=3D30ba37509f&mc_eid=3D[=
+UNIQID])
+
+Mailchimp is a registered trademark of The Rocket Science Group. Apple and=
+ the Apple logo are trademarks of Apple Inc.=2C registered in the U.S. and=
+ other countries. Mac App Store is a service mark of Apple Inc. Google Pla=
+y and the Google Play logo are trademarks of Google Inc.
+--_----------=_MCPart_1920624625
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-micros=
+oft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+    <head>
+        <!-- NAME: SELL PRODUCTS -->
+        <!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+        <meta charset=3D"UTF-8">
+        <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial=
+-scale=3D1">
+        <title>What can you do with a landing page?</title>
+
+    <style type=3D"text/css">
+=09=09p{
+=09=09=09margin:10px 0;
+=09=09=09padding:0;
+=09=09}
+=09=09table{
+=09=09=09border-collapse:collapse;
+=09=09}
+=09=09h1=2Ch2=2Ch3=2Ch4=2Ch5=2Ch6{
+=09=09=09display:block;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09}
+=09=09img=2Ca img{
+=09=09=09border:0;
+=09=09=09height:auto;
+=09=09=09outline:none;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09body=2C#bodyTable=2C#bodyCell{
+=09=09=09height:100%;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09=09width:100%;
+=09=09}
+=09=09.mcnPreviewText{
+=09=09=09display:none !important;
+=09=09}
+=09=09#outlook a{
+=09=09=09padding:0;
+=09=09}
+=09=09img{
+=09=09=09-ms-interpolation-mode:bicubic;
+=09=09}
+=09=09table{
+=09=09=09mso-table-lspace:0pt;
+=09=09=09mso-table-rspace:0pt;
+=09=09}
+=09=09.ReadMsgBody{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass{
+=09=09=09width:100%;
+=09=09}
+=09=09p=2Ca=2Cli=2Ctd=2Cblockquote{
+=09=09=09mso-line-height-rule:exactly;
+=09=09}
+=09=09a[href^=3Dtel]=2Ca[href^=3Dsms]{
+=09=09=09color:inherit;
+=09=09=09cursor:default;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09p=2Ca=2Cli=2Ctd=2Cbody=2Ctable=2Cblockquote{
+=09=09=09-ms-text-size-adjust:100%;
+=09=09=09-webkit-text-size-adjust:100%;
+=09=09}
+=09=09.ExternalClass=2C.ExternalClass p=2C.ExternalClass td=2C.ExternalCla=
+ss div=2C.ExternalClass span=2C.ExternalClass font{
+=09=09=09line-height:100%;
+=09=09}
+=09=09a[x-apple-data-detectors]{
+=09=09=09color:inherit !important;
+=09=09=09text-decoration:none !important;
+=09=09=09font-size:inherit !important;
+=09=09=09font-family:inherit !important;
+=09=09=09font-weight:inherit !important;
+=09=09=09line-height:inherit !important;
+=09=09}
+=09=09.templateContainer{
+=09=09=09max-width:600px !important;
+=09=09}
+=09=09a.mcnButton{
+=09=09=09display:block;
+=09=09}
+=09=09.mcnImage=2C.mcnRetinaImage{
+=09=09=09vertical-align:bottom;
+=09=09}
+=09=09.mcnTextContent{
+=09=09=09word-break:break-word;
+=09=09}
+=09=09.mcnTextContent img{
+=09=09=09height:auto !important;
+=09=09}
+=09=09.mcnDividerBlock{
+=09=09=09table-layout:fixed !important;
+=09=09}
+=09=09h1{
+=09=09=09color:#241c15;
+=09=09=09font-family:Georgia=2C Times=2C 'Times New Roman'=2C serif;
+=09=09=09font-size:36px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:normal;
+=09=09=09line-height:150%;
+=09=09=09letter-spacing:normal;
+=09=09=09text-align:left;
+=09=09}
+=09=09h2{
+=09=09=09color:#241c15;
+=09=09=09font-family:Georgia=2C Times=2C 'Times New Roman'=2C serif;
+=09=09=09font-size:17px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:normal;
+=09=09=09line-height:150%;
+=09=09=09letter-spacing:normal;
+=09=09=09text-align:left;
+=09=09}
+=09=09h3{
+=09=09=09color:#241c15;
+=09=09=09font-family:Georgia=2C Times=2C 'Times New Roman'=2C serif;
+=09=09=09font-size:20px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:normal;
+=09=09=09line-height:150%;
+=09=09=09letter-spacing:normal;
+=09=09=09text-align:left;
+=09=09}
+=09=09h4{
+=09=09=09color:#241c15;
+=09=09=09font-family:Georgia;
+=09=09=09font-size:17px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:normal;
+=09=09=09line-height:150%;
+=09=09=09letter-spacing:normal;
+=09=09=09text-align:left;
+=09=09}
+=09=09#templateHeader{
+=09=09=09background-color:#ffffff;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:0px;
+=09=09=09padding-bottom:0px;
+=09=09}
+=09=09.headerContainer{
+=09=09=09background-color:transparent;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:0;
+=09=09=09padding-bottom:0;
+=09=09}
+=09=09.headerContainer .mcnTextContent=2C.headerContainer .mcnTextContent=
+ p{
+=09=09=09color:#757575;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:16px;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.headerContainer .mcnTextContent a=2C.headerContainer .mcnTextConten=
+t p a{
+=09=09=09color:#007C89;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateBody{
+=09=09=09background-color:#ffffff;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:0px;
+=09=09=09padding-bottom:0px;
+=09=09}
+=09=09.bodyContainer{
+=09=09=09background-color:#transparent;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:0;
+=09=09=09padding-bottom:0;
+=09=09}
+=09=09.bodyContainer .mcnTextContent=2C.bodyContainer .mcnTextContent p{
+=09=09=09color:#241c15;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:16px;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.bodyContainer .mcnTextContent a=2C.bodyContainer .mcnTextContent p=
+ a{
+=09=09=09color:#007c89;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateFooter{
+=09=09=09background-color:#ffe01b;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:0px;
+=09=09=09padding-bottom:0px;
+=09=09}
+=09=09.footerContainer{
+=09=09=09background-color:#transparent;
+=09=09=09background-image:none;
+=09=09=09background-repeat:no-repeat;
+=09=09=09background-position:center;
+=09=09=09background-size:cover;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09=09padding-top:0;
+=09=09=09padding-bottom:0;
+=09=09}
+=09=09.footerContainer .mcnTextContent=2C.footerContainer .mcnTextContent=
+ p{
+=09=09=09color:#FFFFFF;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:12px;
+=09=09=09line-height:150%;
+=09=09=09text-align:center;
+=09=09}
+=09=09.footerContainer .mcnTextContent a=2C.footerContainer .mcnTextConten=
+t p a{
+=09=09=09color:#FFFFFF;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09@media only screen and (min-width:768px){
+=09=09.templateContainer{
+=09=09=09width:600px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body=2Ctable=2Ctd=2Cp=2Ca=2Cli=2Cblockquote{
+=09=09=09-webkit-text-size-adjust:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body{
+=09=09=09width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnRetinaImage{
+=09=09=09max-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImage{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnCartContainer=2C.mcnCaptionTopContent=2C.mcnRecContentContainer=
+=2C.mcnCaptionBottomContent=2C.mcnTextContentContainer=2C.mcnBoxedTextCont=
+entContainer=2C.mcnImageGroupContentContainer=2C.mcnCaptionLeftTextContent=
+Container=2C.mcnCaptionRightTextContentContainer=2C.mcnCaptionLeftImageCon=
+tentContainer=2C.mcnCaptionRightImageContentContainer=2C.mcnImageCardLeftT=
+extContentContainer=2C.mcnImageCardRightTextContentContainer=2C.mcnImageCa=
+rdLeftImageContentContainer=2C.mcnImageCardRightImageContentContainer{
+=09=09=09max-width:100% !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnBoxedTextContentContainer{
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupContent{
+=09=09=09padding:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnCaptionLeftContentOuter .mcnTextContent=2C.mcnCaptionRightConten=
+tOuter .mcnTextContent{
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardTopImageContent=2C.mcnCaptionBottomContent:last-child .=
+mcnCaptionBottomImageContent=2C.mcnCaptionBlockInner .mcnCaptionTopContent=
+:last-child .mcnTextContent{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardBottomImageContent{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupBlockInner{
+=09=09=09padding-top:0 !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupBlockOuter{
+=09=09=09padding-top:9px !important;
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnTextContent=2C.mcnBoxedTextContentColumn{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardLeftImageContent=2C.mcnImageCardRightImageContent{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcpreview-image-uploader{
+=09=09=09display:none !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h1{
+=09=09=09font-size:30px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h2{
+=09=09=09font-size:26px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h3{
+=09=09=09font-size:20px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h4{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnBoxedTextContentContainer .mcnTextContent=2C.mcnBoxedTextContent=
+Container .mcnTextContent p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.headerContainer .mcnTextContent=2C.headerContainer .mcnTextContent=
+ p{
+=09=09=09font-size:16px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.bodyContainer .mcnTextContent=2C.bodyContainer .mcnTextContent p{
+=09=09=09font-size:16px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.footerContainer .mcnTextContent=2C.footerContainer .mcnTextContent=
+ p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:150% !important;
+=09=09}
+
+}</style></head>
+    <body style=3D"height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+        <!--
+-->
+        <!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=
+=3D"display:none; font-size:0px; line-height:0px; max-height:0px; max-widt=
+h:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">We=E2=
+=80=99ve got a few ideas to inspire you</span><!--<![endif]-->
+        <!--
+-->
+        <center>
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border=
+-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-s=
+ize-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;pad=
+ding: 0;width: 100%;">
+                <tr>
+                    <td align=3D"center" valign=3D"top" id=3D"bodyCell" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;">
+                        <!-- BEGIN TEMPLATE // -->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" style=3D"border-collapse: collapse;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+                            <tr>
+                                <td align=3D"center" valign=3D"top" id=3D"=
+templateHeader" data-template-container=3D"" style=3D"background:#ffffff n=
+one no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adj=
+ust: 100%;-webkit-text-size-adjust: 100%;background-color: #ffffff;backgro=
+und-image: none;background-repeat: no-repeat;background-position: center;b=
+ackground-size: cover;border-top: 0;border-bottom: 0;padding-top: 0px;padd=
+ing-bottom: 0px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wi=
+dth=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContain=
+er" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rsp=
+ace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-wid=
+th: 600px !important;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"he=
+aderContainer" style=3D"background:transparent none no-repeat center/cover=
+;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;background-color: transparent;background-image: none;backgr=
+ound-repeat: no-repeat;background-position: center;background-size: cover;=
+border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mc=
+nCodeBlock" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-t=
+able-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-li=
+ne-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+
+<div style=3D"display: none; max-height: 0px; overflow: hidden;">
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&n=
+bsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&=
+nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp=
+;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&n=
+bsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&=
+nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp=
+;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&n=
+bsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&=
+nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp=
+;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&n=
+bsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&=
+nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp=
+;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbs=
+p;=E2=80=8C&nbsp;=E2=80=8C&nbsp;&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=
+=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=
+=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;
+</div>
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnCodeBlock" style=3D"border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-li=
+ne-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+                <style data-ignore-inlining=3D"">@media print{ #_t { backg=
+round-image: url('https://omsji1l9.emltrk.com/omsji1l9?p&d=3D=
+saiparivarfoundation@gmail.com');}} div.OutlookMessageHeader {background-image:url('https://omsji1l9.=
+emltrk.com/omsji1l9?f&d=3Dsaiparivarfoundation@gmail.com')} table.moz-email-headers-tabl=
+e {background-image:url('https://omsji1l9.emltrk.com/omsji1l9?f&d=3D=
+saiparivarfoundation@gmail.com')} blockquote #_t {background-image:url('https://omsji1l9.emltr=
+k.com/omsji1l9?f&d=3Dsaiparivarfoundation@gmail.com')} #MailContainerBody #_t {backgroun=
+d-image:url('https://omsji1l9.emltrk.com/omsji1l9?f&d=3Dsaiparivarfoundation@gmail.com')=
+}</style><div id=3D"_t"></div>
+<img src=3D"https://omsji1l9.emltrk.com/omsji1l9?d=3Dsaiparivarfoundation@gmail.com" wid=
+th=3D"1" height=3D"1" border=3D"0" alt=3D"" style=3D"border: 0;height: aut=
+o;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;">
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: c=
+ollapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pa=
+dding: 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-c=
+ollapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;=
+">
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-col=
+or:none; border-left-color:none; border-right-color:none; border-bottom-wi=
+dth:0; border-left-width:0; border-right-width:0; margin-top:0; margin-rig=
+ht:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnImageBlock" style=3D"min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-line-height-r=
+ule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=
+=3D"min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-ta=
+ble-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" s=
+tyle=3D"padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom=
+: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;">
+
+                                    <a href=3D"https://mailchimp.us1.list-=
+manage.com/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3D09d04d2688&e=3D=
+d3db7b354c" title=3D"" class=3D"" target=3D"_blank" style=3D"mso-line-heig=
+ht-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;">
+                                        <img align=3D"left" alt=3D"Mailchi=
+mp" src=3D"https://gallery.mailchimp.com/f7b9ee22124ff6454424dc10c/images/=
+a0e00b83-a7ae-4d86-87c3-a8840c6c60a1.png" width=3D"185" style=3D"max-width=
+: 370px;padding-bottom: 0;display: inline !important;vertical-align: botto=
+m;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpola=
+tion-mode: bicubic;" class=3D"mcnRetinaImage">
+                                    </a>
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;word-break: break-word;color: #757575;font-family: Helve=
+tica;font-size: 16px;line-height: 150%;text-align: left;">
+
+                            <h1 class=3D"null" style=3D"display: block;mar=
+gin: 0;padding: 0;color: #241c15;font-family: Georgia=2C Times=2C 'Times N=
+ew Roman'=2C serif;font-size: 36px;font-style: normal;font-weight: normal;=
+line-height: 150%;letter-spacing: normal;text-align: left;">5 campaigns yo=
+u can run with a landing page</h1>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: c=
+ollapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pa=
+dding: 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-c=
+ollapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;=
+">
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-col=
+or:none; border-left-color:none; border-right-color:none; border-bottom-wi=
+dth:0; border-left-width:0; border-right-width:0; margin-top:0; margin-rig=
+ht:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnImageBlock" style=3D"min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-line-height-r=
+ule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=
+=3D"min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-ta=
+ble-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" s=
+tyle=3D"padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom=
+: 0;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;">
+
+                                    <a href=3D"https://mailchimp.us1.list-=
+manage.com/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3Dbd828b4a75&e=3D=
+d3db7b354c" title=3D"" class=3D"" target=3D"_blank" style=3D"mso-line-heig=
+ht-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;">
+                                        <img align=3D"center" alt=3D"Landi=
+ng Pages" src=3D"https://gallery.mailchimp.com/f7b9ee22124ff6454424dc10c/i=
+mages/7c608c48-39fa-432d-88e9-a1e955b93b0b.jpg" width=3D"448" style=3D"max=
+-width: 896px;padding-bottom: 0;display: inline !important;vertical-align:=
+ bottom;border: 0;height: auto;outline: none;text-decoration: none;-ms-int=
+erpolation-mode: bicubic;" class=3D"mcnRetinaImage">
+                                    </a>
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: c=
+ollapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pa=
+dding: 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-c=
+ollapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;=
+">
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-col=
+or:none; border-left-color:none; border-right-color:none; border-bottom-wi=
+dth:0; border-left-width:0; border-right-width:0; margin-top:0; margin-rig=
+ht:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" id=3D"=
+templateBody" data-template-container=3D"" style=3D"background:#ffffff non=
+e no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;background-color: #ffffff;backgroun=
+d-image: none;background-repeat: no-repeat;background-position: center;bac=
+kground-size: cover;border-top: 0;border-bottom: 0;padding-top: 0px;paddin=
+g-bottom: 0px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wi=
+dth=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContain=
+er" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rsp=
+ace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-wid=
+th: 600px !important;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"bo=
+dyContainer" style=3D"background:#transparent none no-repeat center/cover;=
+mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size=
+-adjust: 100%;background-color: #transparent;background-image: none;backgr=
+ound-repeat: no-repeat;background-position: center;background-size: cover;=
+border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mc=
+nTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;word-break: break-word;color: #241c15;font-family: Helve=
+tica;font-size: 16px;line-height: 150%;text-align: left;">
+
+                            Still not sure what to do with a landing page?=
+ The short answer: A <a href=3D"https://mailchimp.us1.list-manage.com/trac=
+k/click?u=3Df7b9ee22124ff6454424dc10c&id=3D7c69fd5f1f&e=3Dd3db7b354c" sty=
+le=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;color: #007c89;font-weight: normal;text-decoration: un=
+derline;">landing page</a>&nbsp;with a clear call to action is a great way=
+ to accomplish short-term goals and get quick conversions.<br>
+<br>
+We=E2=80=99ve got a few campaign ideas to help you figure out what=E2=80=
+=99s right for your business goals.<br>
+<br>
+1. <strong>Let=E2=80=99s say you want to get more people </strong>talking=
+ about and using your apps. Simply include a signup form on your landing p=
+age to build an interested audience=2C so you can offer them a free downlo=
+ad.<br>
+<br>
+2. <strong>Create a landing page to promote</strong> an exclusive pre-sale=
+ or offer=2C then share your page=E2=80=99s URL in an email to your VIPs a=
+nd best customers.<br>
+<br>
+3. <strong>Our Square <a href=3D"https://mailchimp.us1.list-manage.com/tra=
+ck/click?u=3Df7b9ee22124ff6454424dc10c&id=3Dea760a3493&e=3Dd3db7b354c" st=
+yle=3D"mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;color: #007c89;font-weight: normal;text-decoration: u=
+nderline;">payments block</a> simplifies</strong> the shopping experience=
+ for your customers by letting them learn about and buy your product witho=
+ut leaving your landing page. And if you <a href=3D"https://mailchimp.us1.=
+list-manage.com/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3D189f406a96&=
+e=3Dd3db7b354c" style=3D"mso-line-height-rule: exactly;-ms-text-size-adju=
+st: 100%;-webkit-text-size-adjust: 100%;color: #007c89;font-weight: normal=
+;text-decoration: underline;">sign up for Square</a> today=2C you can get=
+ free processing on up to $5=2C000 in credit card transactions.<br>
+<br>
+4. <strong>Maybe you=E2=80=99ve got a top seller</strong> you=E2=80=99d li=
+ke to show off in more places or a new collection you want to highlight. A=
+ landing page makes this easy: choose from the product imagery we pull in=
+ from your site=2C add the product name and price=2C and use a call to act=
+ion that brings people back to your store.<br>
+<br>
+5. <strong>Looking to run a giveaway</strong> for your travel agency or bl=
+og? Use the headline=2C =E2=80=9CEnter for a chance to win=E2=80=9D and co=
+llect visitors=E2=80=99 email addresses to notify them later.<br>
+<br>
+Got an idea for a landing page campaign you=E2=80=99re ready to run?
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: c=
+ollapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pa=
+dding: 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-c=
+ollapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;=
+">
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-col=
+or:none; border-left-color:none; border-right-color:none; border-bottom-wi=
+dth:0; border-left-width:0; border-right-width:0; margin-top:0; margin-rig=
+ht:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnButtonBlock" style=3D"min-width: 100%;border-collapse: co=
+llapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top: 0;padding-right: 18px;padding-bottom=
+: 18px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adju=
+st: 100%;-webkit-text-size-adjust: 100%;" valign=3D"top" align=3D"left" cl=
+ass=3D"mcnButtonBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"mcnButtonContentContainer" style=3D"border-collapse: separate !impo=
+rtant;border-radius: 3px;background-color: #007C89;mso-table-lspace: 0pt;m=
+so-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=
+=3D"mcnButtonContent" style=3D"font-family: Arial;font-size: 16px;padding:=
+ 15px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;">
+                                <a class=3D"mcnButton " title=3D"Start Bui=
+lding" href=3D"https://mailchimp.us1.list-manage.com/track/click?u=3Df7b9e=
+e22124ff6454424dc10c&id=3De54fbe632e&e=3Dd3db7b354c" target=3D"_blank" st=
+yle=3D"font-weight: bold;letter-spacing: normal;line-height: 100%;text-ali=
+gn: center;text-decoration: none;color: #FFFFFF;mso-line-height-rule: exac=
+tly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: blo=
+ck;">Start Building</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: c=
+ollapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pa=
+dding: 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-c=
+ollapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;=
+">
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-col=
+or:none; border-left-color:none; border-right-color:none; border-bottom-wi=
+dth:0; border-left-width:0; border-right-width:0; margin-top:0; margin-rig=
+ht:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnDividerBlock" style=3D"min-width: 100%;border-collapse: c=
+ollapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%;pa=
+dding: 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-c=
+ollapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+                        <td style=3D"mso-line-height-rule: exactly;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;=
+">
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-col=
+or:none; border-left-color:none; border-right-color:none; border-bottom-wi=
+dth:0; border-left-width:0; border-right-width:0; margin-top:0; margin-rig=
+ht:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" id=3D"=
+templateFooter" data-template-container=3D"" style=3D"background:#ffe01b n=
+one no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adj=
+ust: 100%;-webkit-text-size-adjust: 100%;background-color: #ffe01b;backgro=
+und-image: none;background-repeat: no-repeat;background-position: center;b=
+ackground-size: cover;border-top: 0;border-bottom: 0;padding-top: 0px;padd=
+ing-bottom: 0px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wi=
+dth=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContain=
+er" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rsp=
+ace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-wid=
+th: 600px !important;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"fo=
+oterContainer" style=3D"background:#transparent none no-repeat center/cove=
+r;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;background-color: #transparent;background-image: none;back=
+ground-repeat: no-repeat;background-position: center;background-size: cove=
+r;border-top: 0;border-bottom: 0;padding-top: 0;padding-bottom: 0;"><table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"=
+mcnCodeBlock" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso=
+-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 10=
+0%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-li=
+ne-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+
+<!-- BEGIN FOOTER SECTION -->
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody><tr>
+        <td align=3D"center" valign=3D"top" style=3D"mso-line-height-rule:=
+ exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" style=3D"width:565px;" width=3D"565">
+            <tr>
+            <td align=3D"center" valign=3D"top">
+            <![endif]-->
+                <table align=3D"center" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" style=3D"max-width: 565px;width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng: 24px 0 6px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;">
+                            <img alt=3D"Mailchimp" src=3D"https://gallery.=
+mailchimp.com/f7b9ee22124ff6454424dc10c/images/a0e00b83-a7ae-4d86-87c3-a88=
+40c6c60a1.png" style=3D"color: #241C15;font-family: 'Helvetica Neue'=2CHel=
+vetica=2CArial=2CVerdana=2Csans-serif;font-size: 14px;padding: 0;width: 18=
+5px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpo=
+lation-mode: bicubic;" width=3D"185">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"color=
+: #241C15;font-family: 'Helvetica Neue'=2CHelvetica=2CArial=2CVerdana=2Csa=
+ns-serif;font-size: 12px;padding: 18px 0;line-height: 1.5;mso-line-height-=
+rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <strong>=C2=A92019 Mailchimp</strong><br>
+                            <a href=3D"https://mailchimp.us1.list-manage.c=
+om/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3D42ad36de9e&e=3D=
+d3db7b354c" target=3D"_blank" style=3D"color: #241C15;text-decoration: none;mso-li=
+ne-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+                                675 Ponce De Leon Ave NE=2C Suite 5000=2C=
+ Atlanta=2C GA 30308
+                            </a>
+                            |
+                            <a href=3D"https://mailchimp.us1.list-manage.c=
+om/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3D41f530dbe0&e=3D=
+d3db7b354c" target=3D"_blank" style=3D"color: #241C15;text-decoration: none;mso-li=
+ne-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+                                mailchimp.com
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng: 4px 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit=
+-text-size-adjust: 100%;">
+                            <p style=3D"color: #241C15;font-family: 'Helve=
+tica Neue'=2CHelvetica=2CArial=2CVerdana=2Csans-serif;font-size: 12px;marg=
+in: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;">
+                                <a href=3D"https://mailchimp.us1.list-mana=
+ge.com/unsubscribe?u=3Df7b9ee22124ff6454424dc10c&id=3D21eda42079&e=3D=
+d3db7b354c&c=3D30ba37509f" target=3D"_blank" style=3D"color: #241C15;text-decorat=
+ion: underline;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;">
+                                    Unsubscribe
+                                </a>
+                                 =E2=80=A2
+                                <a href=3D"https://mailchi.mp/mailchimp.co=
+m/what-can-you-do-with-a-landing-page?e=3Dd3db7b354c" target=3D"_blank" styl=
+e=3D"color: #241C15;text-decoration: underline;mso-line-height-rule: exact=
+ly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    View in Browser
+                                </a>
+                                 =E2=80=A2
+                                <a href=3D"https://mailchimp.us1.list-mana=
+ge.com/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3D30a06cdb43&e=3D=
+d3db7b354c" target=3D"_blank" style=3D"color: #241C15;text-decoration: underli=
+ne;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+                                    Terms of Use
+                                </a>
+                                 =E2=80=A2
+                                <a href=3D"https://mailchimp.us1.list-mana=
+ge.com/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3Dd354344e88&e=3D=
+d3db7b354c" target=3D"_blank" style=3D"color: #241C15;text-decoration: underli=
+ne;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+                                    Privacy Policy
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng: 12px 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;">
+                            <table style=3D"border-collapse: collapse;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit=
+-text-size-adjust: 100%;">
+                                <tbody><tr>
+                                    <td valign=3D"top" style=3D"padding: 0=
+ 10px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;">
+                                        <a href=3D"https://mailchimp.us1.l=
+ist-manage.com/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3D1125d57f22&e=
+=3Dd3db7b354c" target=3D"_blank" style=3D"text-decoration: none;mso-line-=
+height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+                                            <img alt=3D"FB" src=3D"https:/=
+/gallery.mailchimp.com/f7b9ee22124ff6454424dc10c/images/9790414f-1298-4ae2=
+-99f7-25cbab030143.png" style=3D"color: #241C15;font-family: 'Helvetica Ne=
+ue'=2CHelvetica=2CArial=2CVerdana=2Csans-serif;font-size: 12px;padding: 0;=
+width: 20px;border: 0;height: auto;outline: none;text-decoration: none;-ms=
+-interpolation-mode: bicubic;" width=3D"20">
+                                        </a>
+                                    </td>
+                                    <td valign=3D"top" style=3D"padding: 0=
+ 10px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;">
+                                        <a href=3D"https://mailchimp.us1.l=
+ist-manage.com/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3D5e67f42388&e=
+=3Dd3db7b354c" target=3D"_blank" style=3D"text-decoration: none;mso-line-=
+height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+                                            <img alt=3D"TW" src=3D"https:/=
+/gallery.mailchimp.com/f7b9ee22124ff6454424dc10c/images/97ae22fa-ca64-4026=
+-95ec-3db01663e282.png" style=3D"color: #241C15;font-family: 'Helvetica Ne=
+ue'=2CHelvetica=2CArial=2CVerdana=2Csans-serif;font-size: 12px;padding: 0;=
+width: 20px;border: 0;height: auto;outline: none;text-decoration: none;-ms=
+-interpolation-mode: bicubic;" width=3D"20">
+                                        </a>
+                                    </td>
+                                    <td valign=3D"top" style=3D"padding: 0=
+ 10px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;">
+                                        <a href=3D"https://mailchimp.us1.l=
+ist-manage.com/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3D1f8d971d0f&e=
+=3Dd3db7b354c" target=3D"_blank" style=3D"text-decoration: none;mso-line-=
+height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+                                            <img alt=3D"IG" src=3D"https:/=
+/gallery.mailchimp.com/f7b9ee22124ff6454424dc10c/images/e1998093-89f9-445e=
+-8197-bd7c9235d177.png" style=3D"color: #241C15;font-family: 'Helvetica Ne=
+ue'=2CHelvetica=2CArial=2CVerdana=2Csans-serif;font-size: 12px;padding: 0;=
+width: 20px;border: 0;height: auto;outline: none;text-decoration: none;-ms=
+-interpolation-mode: bicubic;" width=3D"20">
+                                        </a>
+                                    </td>
+                                    <td valign=3D"top" style=3D"padding: 0=
+ 10px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;">
+                                        <a href=3D"https://mailchimp.us1.l=
+ist-manage.com/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3D279a8b2c89&e=
+=3Dd3db7b354c" target=3D"_blank" style=3D"text-decoration: none;mso-line-=
+height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+                                            <img alt=3D"LI" src=3D"https:/=
+/gallery.mailchimp.com/f7b9ee22124ff6454424dc10c/images/6fff3fe3-b3ce-4c19=
+-ac82-23bf53aaa67c.png" style=3D"color: #241C15;font-family: 'Helvetica Ne=
+ue'=2CHelvetica=2CArial=2CVerdana=2Csans-serif;font-size: 12px;padding: 0;=
+width: 20px;border: 0;height: auto;outline: none;text-decoration: none;-ms=
+-interpolation-mode: bicubic;" width=3D"20">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng: 14px 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;">
+                            <table style=3D"border-collapse: collapse;mso-=
+table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit=
+-text-size-adjust: 100%;">
+                                <tbody><tr>
+                                    <td valign=3D"top" style=3D"padding: 0=
+ 12px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;">
+                                        <a href=3D"https://mailchimp.us1.l=
+ist-manage.com/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3D9d4daee199&e=
+=3Dd3db7b354c" target=3D"_blank" style=3D"mso-line-height-rule: exactly;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                            <img alt=3D"Download on Google=
+ Play" src=3D"http://cdn-images.mailchimp.com/template_images/ob_googlepla=
+y.png" style=3D"color: #241C15;font-family: 'Helvetica Neue'=2CHelvetica=
+=2CArial=2CVerdana=2Csans-serif;font-size: 12px;width: 120px;border: 0;hei=
+ght: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicu=
+bic;" width=3D"120">
+                                        </a>
+                                    </td>
+                                    <td valign=3D"top" style=3D"padding: 0=
+ 12px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-tex=
+t-size-adjust: 100%;">
+                                        <a href=3D"https://mailchimp.us1.l=
+ist-manage.com/track/click?u=3Df7b9ee22124ff6454424dc10c&id=3D9f5618a512&e=
+=3Dd3db7b354c" target=3D"_blank" style=3D"mso-line-height-rule: exactly;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                            <img alt=3D"Download on the Ap=
+p Store" src=3D"http://cdn-images.mailchimp.com/template_images/ob_appstor=
+e.png" style=3D"color: #241C15;font-family: 'Helvetica Neue'=2CHelvetica=
+=2CArial=2CVerdana=2Csans-serif;font-size: 12px;width: 120px;border: 0;hei=
+ght: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicu=
+bic;" width=3D"120">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng: 4px 0;padding-left: 10px;padding-right: 10px;mso-line-height-rule: exa=
+ctly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <p class=3D"disclaimer" style=3D"color: #241C1=
+5;font-family: 'Helvetica Neue'=2CHelvetica=2CArial=2CVerdana=2Csans-serif=
+;font-size: 9px;margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-m=
+s-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                Mailchimp is a registered trademark of The=
+ Rocket Science Group. Apple and the Apple logo are trademarks of Apple In=
+c.=2C registered in the U.S. and other countries. Mac App Store is a servi=
+ce mark of Apple Inc. Google Play and the Google Play logo are trademarks=
+ of Google Inc.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody></table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+</tbody></table>
+<!-- END FOOTER SECTION -->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    <img src=3D"https://mailchimp.us1.list-manage.com/track/open.php?u=3Df=
+7b9ee22124ff6454424dc10c&id=3D30ba37509f&e=3Dd3db7b354c" height=3D"1" wid=
+th=3D"1"></body>
+</html>
+--_----------=_MCPart_1920624625--

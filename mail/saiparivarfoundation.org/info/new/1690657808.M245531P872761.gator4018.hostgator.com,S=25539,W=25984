@@ -1,0 +1,445 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id COn7DRBkxWQ5UQ0AUq51WA
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	for <info@saiparivarfoundation.org>; Sat, 29 Jul 2023 14:10:08 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Sat, 29 Jul 2023 14:10:08 -0500
+Received: from mail-yw1-f170.google.com ([209.85.128.170]:44440)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1qPpKK-003jwG-0O
+	for info@saiparivarfoundation.org;
+	Sat, 29 Jul 2023 14:10:08 -0500
+Received: by mail-yw1-f170.google.com with SMTP id 00721157ae682-57a6df91b1eso36505217b3.1
+        for <info@saiparivarfoundation.org>; Sat, 29 Jul 2023 12:10:02 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1690657797; x=1691262597;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :dkim-signature:delivered-to:x-forwarded-for:x-forwarded-to
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=jEKBKEhBUq72hlo8ZZOB60t5aEu2mJh8a/J2skHliJg=;
+        b=QAHv3scq+hHS9xTuu8PnSF102CJd5zomY3v0S3O6qxgCdsNfVAaeQVWyd6NfbREtR2
+         xMzhJgtuXhIlAp25ena4G2VqSyKwBuv67aYD00t1Ke07ZAi2Y8c4fwGNONXIebd44Bui
+         RUH/3T2pCeeBdXCWx5VVGhhEXxx3l1mMMJX9TdB+k1Egk5evR3z3uk7o4YW5gr9uTueu
+         s6u1RraDiKLZDpUrHwJhiOJkm7fzcBvgKereSn6NNh3OUhh/dMQcfXg1jknHpbd8/AdH
+         RI+jHMVxeqE2gQU6+V26Yo+Qd+XSr5LzERqJvIcjUjYA4bFjVcpy9uBPswVoRbg3cGMe
+         VEOw==
+X-Gm-Message-State: ABy/qLbXOI6gmeQMptNoLljjA9nV16aC+fy7H/Ugd7t/DunXFeIweL8h
+	TmnyY1RQQM9FPuZ1uSplSJ9xTrSg60v8QHPOQxMezQbVpR0omFpqtg==
+X-Received: by 2002:a81:4e56:0:b0:57a:f72:ebf8 with SMTP id c83-20020a814e56000000b0057a0f72ebf8mr6539616ywb.28.1690657797574;
+        Sat, 29 Jul 2023 12:09:57 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a05:7000:9ac9:b0:4fd:3ee8:8ace with SMTP id m9csp1139589maw;
+        Sat, 29 Jul 2023 12:09:56 -0700 (PDT)
+X-Received: by 2002:a05:6870:e2d3:b0:1b0:653a:af92 with SMTP id w19-20020a056870e2d300b001b0653aaf92mr6203467oad.8.1690657796157;
+        Sat, 29 Jul 2023 12:09:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1690657796; cv=none;
+        d=google.com; s=arc-20160816;
+        b=G++3djFl/pFI1YwzL1bravdmHk6Hr823Tb9HDCRQpq3Wsi21n1DjI1HuNYxf5kC7T7
+         3zzDr0fFcB/t1WsVo4XbJEwICwlEJGXfSOD5GIbFntND0WzmecYlzILd6RTl2qB+C74b
+         hYfjANhQ1f/CqoVR3QHbZdQPjI6bZksAb8bBcypy9lRLfbrIfls1i7CAlZhLHKdt6K5t
+         3NuJcayOUOkp3pMQbDGZq+49BZAKqER1DKzLc/TfczNW8VEG3XmPTlem/TBM63kRycpf
+         cjb8hVSF403V6H4Aq7TEjHRqjmw29SyP9l7yrGmQyuTjZlEZJQS3gCDTchLpuGpPkSeA
+         wGPw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :dkim-signature;
+        bh=jEKBKEhBUq72hlo8ZZOB60t5aEu2mJh8a/J2skHliJg=;
+        fh=r46+GiZDSTWHyTSORCEjTRhUxIj9CxwGH8fYjWU8rGc=;
+        b=K4shmYG/kkZ/2qlhXC5YIKzwSWJz4pBvrBgBfMolVf9vU4VvppEsBB4Uwknc0994PI
+         Q06378DjtX3IwgCxuQbNHJQMiILEFD68+OsK0VhyePqSQ16BLPAD9sab1rQcKpKbUgGS
+         KHQwMFrECdc58xd/amp+/lfq6YxfdbJG9DHYKl2d6mZr9uu5c+Z0fQkiGpR8WwC4ULyQ
+         1EMyshLH9k2TgXo1VagP8afUu9hk12aaEHn+bmIU0mXpwdYOSLr6qPtO+Xyd/GnleckO
+         8doZHccCTIHqjzh0mtyQW2SIOsAw1btUAl8oRVohj94BE6ZC7ML0U8sLo3P4aPhGuceF
+         VCzA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@google.com header.s=20221208 header.b="x/ufuLqm";
+       spf=pass (google.com: domain of 3a2tfza0kaa4qz28r-125s3zcu22uzs.q20@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3A2TFZA0KAA4qz28r-125s3zCu22uzs.q20@scoutcamp.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id ed42-20020a056870b7aa00b001b376e43647sor6019162oab.12.2023.07.29.12.09.55
+        for <saiparivarfoundation@gmail.com>
+        (Google Transport Security);
+        Sat, 29 Jul 2023 12:09:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3a2tfza0kaa4qz28r-125s3zcu22uzs.q20@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@google.com header.s=20221208 header.b="x/ufuLqm";
+       spf=pass (google.com: domain of 3a2tfza0kaa4qz28r-125s3zcu22uzs.q20@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3A2TFZA0KAA4qz28r-125s3zCu22uzs.q20@scoutcamp.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20221208; t=1690657795; x=1691262595;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=jEKBKEhBUq72hlo8ZZOB60t5aEu2mJh8a/J2skHliJg=;
+        b=x/ufuLqm5MXeq1sHNGMhesdCTEvB/HrnvN3nH43q9fs0Nk/IoSdUmezBMgEnBM3Fti
+         On8gF/OeZoLLlyqBV7GBeIGlGr2kshfl2upCyIe9jDroBvaGKh9n5/psn9plD1BYUfrh
+         Dmsntr5jQlTiGu8D9ni9kgjIP/aBNbNDY4H24BVnNrul8cfXHtxb/UOVw7gOjipU/74c
+         nwSfCBIW4Mn9Uxa4z5zAPZ/M/MvHoePrkf2c1Tz+WEAPqSF6O1nOi/FMmRoHQuBuPC9t
+         qkJJ1Fa5lCJrqrI1lnwvLdw3nv2cAY73z9XvW/RCToTpskQp8bzkZJUpvi+EJ/HcCHNv
+         +Icw==
+X-Google-Smtp-Source: APBJJlHNJNE8ZwYxig+qpLoctGzzg2lestW8RpdhjNfM8Ch1pEQWs7l9KFSkdQrtDR5gdFzcxzRPFHw=
+MIME-Version: 1.0
+X-Received: by 2002:a05:6870:1a88:b0:1bb:c397:ed98 with SMTP id
+ ef8-20020a0568701a8800b001bbc397ed98mr7076859oab.3.1690657795753; Sat, 29 Jul
+ 2023 12:09:55 -0700 (PDT)
+Date: Sat, 29 Jul 2023 12:09:55 -0700
+Reply-To: The Google Cloud Team <cloud-noreply@google.com>
+X-Google-Id: 4198012
+Feedback-ID: P-10-0:C20226036:M110590031-en:gamma
+X-Notifications: GAMMA:<da79e5830f822d8a3eacf3ab987ba5b848689575-20226036-111192358@google.com>
+X-Notifications-Bounce-Info: AayBb5Mn6IIO2xtC2FNF6yi0PH745qymxqFnP6JNhPvKPP_59yFXf-vb_L-rcAUhhcbCDtZ5tZYiIsSYfzom5jaP54BnCKPsQVVuF_Ixiy1cAx-SS4pjGA1cUbcEWP7sdTV_EPKr7PGKKe4VWAJo61v85q70rT_TKW0FVNlcvfTx6p1x0ReD5PlGu_llY5j_RWsnsIohHp0WTUPwapjRPtvBA8gyz0lKEiL2Rfc-KRo4s8x2vEa-lX4cCfcg7QLCw5fDL3xVnOrcfK1B5vN2J_SC5ej6Up5HYXIPj94YDzgWDQew4MKbZM3isLh_rXPaFIjtygFPLqVRDV8qaaSVUSEOu3medal1TIku6M00IALqMchUyBw5fGZBmw-XGfyneYNv6scrHpuqhLA7545snUQ4aZbPKvK34T3GVbMuN58jAbTvJsaCWjJwukWCrgYrwK_39qVoaUNPEt9iGS7v5SGXGHcNjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <da79e5830f822d8a3eacf3ab987ba5b848689575-20226036-111192358@google.com>
+Subject: Secure your Google Admin account with these best practices
+From: The Google Cloud Team <cloud-noreply@google.com>
+To: saiparivarfoundation@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000005a48930601a4f10b"
+
+--0000000000005a48930601a4f10b
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+From: "The Google Cloud Team" <cloud-noreply@google.com>
+Subject:  Secure your Google Workspace account with these best practices
+
+
+
+Tips to secure your Google Workspace account
+
+## Secure your Google Workspace account with these best practices
+
+Hello customer,
+
+Here are a few simple tips to keep your Google Workspace account secure:
+
+
+
+
+**Require admins and key users to provide additional proof of who they are**
+
+We recommend that everyone in your business use 2-step verification (2SV),  
+but it's especially important for admins and users who work with sensitive  
+data such as financial records and employee information. If someone steals  
+a password, 2SV can prevent them from accessing your account.
+
+With 2SV, users need to verify their identity through something they know  
+(their password) plus something they have (such as a physical key or access  
+code). You should enforce 2SV for admins and key users, where possible with  
+a FIDO compliant security key.
+
+
+Protect your business with 2-Step Verification  
+(https://support.google.com/a/answer/175197) | Deploy 2-Step verification  
+(https://support.google.com/a/answer/9176657?hl=en&ref_topic=2759193)
+
+
+**Create an additional super admin account**
+
+A business should have more than one super administrator account, each  
+managed by a different person. If your primary super admin account is lost  
+or compromised, the backup super admin can perform critical tasks while the  
+primary account is recovered. You can create another super admin by  
+assigning the super admin role to another user.
+
+Assign administrator roles to a user  
+(https://support.google.com/a/answer/172176)
+
+
+**Super admins shouldn't remain signed in to their account**
+
+Super admins should sign in as needed to do specific tasks and then sign  
+out. Staying signed in to a super admin account when not performing  
+specific administrative tasks can increase exposure to malicious activity.
+
+Daily administrative tasks should be done using an account with limited  
+admin roles.
+
+Pre-built administrator roles (https://support.google.com/a/answer/2405986)  
+| Security best practices for administrator accounts  
+(https://support.google.com/a/answer/9011373)
+
+To learn more about security best practices for your Google Workspace  
+account, review our security checklists  
+(https://support.google.com/a/answer/9184226).
+
+Sincerely,
+
+The Google Workspace Team
+
+
+(C) 2023  Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043 *   
+Google Asia Pacific Pte. Ltd., 8 Marina View, #30-01, Asia Square 1,  
+Singapore 018960  *  Google Cloud EMEA Ltd., 70 Sir John Rogerson's Quay,  
+Dublin 2, Ireland.
+
+You're receiving this mandatory email service announcement to update you  
+about important changes to your Google Workspace product or account.
+
+
+--0000000000005a48930601a4f10b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div>
+  <html xmlns:v=3Durn:schemas-microsoft-com:vml dir=3Dltr lang=3Den style=
+=3D"margin:0; padding:0">
+    <meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8">
+    <meta name=3Dviewport content=3Dwidth=3Ddevice-width>
+    <style>@media only screen{html{min-height:100%;background:#fafafa}}@med=
+ia only screen and (max-width:640px){.small-float-center{margin:0 auto!impo=
+rtant;float:none!important;text-align:center!important}}@media only screen =
+and (max-width:640px){table.body img{width:auto;height:auto}table.body cent=
+er{min-width:0!important}table.body .container{width:344px!important}table.=
+body .columns{height:auto!important;-moz-box-sizing:border-box;-webkit-box-=
+sizing:border-box;box-sizing:border-box;padding-left:40px!important;padding=
+-right:40px!important}table.body .columns .columns{padding-left:0!important=
+;padding-right:0!important}table.body .collapse .columns{padding-left:0!imp=
+ortant;padding-right:0!important}th.small-1{display:inline-block!important;=
+width:8.33333%!important}th.small-3{display:inline-block!important;width:25=
+%!important}th.small-4{display:inline-block!important;width:33.33333%!impor=
+tant}th.small-6{display:inline-block!important;width:50%!important}th.small=
+-8{display:inline-block!important;width:66.66667%!important}th.small-9{disp=
+lay:inline-block!important;width:75%!important}th.small-12{display:inline-b=
+lock!important;width:100%!important}.columns th.small-12{display:block!impo=
+rtant;width:100%!important}table.menu{width:100%!important}table.menu td,ta=
+ble.menu th{width:auto!important;display:inline-block!important}table.menu.=
+vertical td,table.menu.vertical th{display:block!important}table.menu[align=
+=3Dcenter]{width:auto!important}}</style>
+    <span class=3Dpreheader style=3Dcolor:#fafafa;display:none!important;fo=
+nt-size:1px;line-height:1px;max-height:0;max-width:0;mso-hide:all!important=
+;opacity:0;overflow:hidden;visibility:hidden></span>
+    <table class=3Dbody style=3DMargin:0;background:#F8F9FA!important;borde=
+r-collapse:collapse;border-spacing:0;color:#3C4043;font-family:Roboto,Helve=
+tica,Arial,sans-serif;font-size:14px;font-weight:400;height:100%;line-heigh=
+t:inherit;margin:0;padding:0;vertical-align:top;width:100%;text-align:left>
+      <tr style=3Dpadding:0;vertical-align:top>
+        <td class=3Dcenter align=3Dcenter valign=3Dtop style=3D-moz-hyphens=
+:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!important;colo=
+r:#3C4043;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font=
+-weight:400;hyphens:none;line-height:inherit;margin:0;padding:0;vertical-al=
+ign:top;word-wrap:keep-all>
+          <center data-parsed=3D"" style=3Dmin-width:600px;width:100%>
+
+            <table align=3Dcenter class=3D"container float-center" style=3D=
+"Margin:0 auto;background:#fafafa;border-collapse:collapse;border-spacing:0=
+;float:none;margin:0 auto;padding:0;text-align:left;vertical-align:top;widt=
+h:600px"><tbody><tr style=3Dpadding:0;vertical-align:top><td style=3D-moz-h=
+yphens:none;-webkit-hyphens:none;Margin:0;border-collapse:collapse!importan=
+t;color:#3C4043;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14p=
+x;font-weight:400;hyphens:none;line-height:inherit;margin:0;padding:0;verti=
+cal-align:top;word-wrap:keep-all>
+              <table class=3D"row header" style=3Dbackground:#F8F9FA;border=
+-collapse:collapse;border-spacing:0;display:table;font-size:12px;padding:0;=
+position:relative;vertical-align:top;width:100%><tbody><tr style=3Dpadding:=
+0;vertical-align:top>
+                <th class=3D"small-12 large-12 columns first last" style=3D=
+"Margin:0 auto;color:#3C4043;font-family:Roboto,Helvetica,Arial,sans-serif;=
+font-size:14px;font-weight:400;line-height:inherit;margin:0 auto;padding:0;=
+padding-bottom:24px;padding-left:40px;padding-right:40px;padding-top:12px;w=
+idth:560px"><table style=3Dborder-collapse:collapse;border-spacing:0;margin=
+-bottom:0;padding:0;vertical-align:top;width:100%><tr style=3Dpadding:0;ver=
+tical-align:top><th style=3DMargin:0;color:#3C4043;font-family:Roboto,Helve=
+tica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:inherit;ma=
+rgin:0;padding:0;text-align:left>
+
+                  <img src=3Dhttps://storage.googleapis.com/support-kms-pro=
+d/Eft9z9eRxsO0lygmCjmL53ewJDonixbl4EDd alt=3DGoogle height=3D30 style=3D-ms=
+-interpolation-mode:bicubic;clear:both;display:block;margin-top:24px;max-he=
+ight:30px;max-width:100%;outline:0;text-decoration:none;width:auto>
+
+                </th>
+<th class=3Dexpander style=3DMargin:0;color:#3C4043;font-family:Roboto,Helv=
+etica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:inherit;m=
+argin:0;padding:0!important;visibility:hidden;width:0></th></tr></table></t=
+h>
+              </tr></tbody></table>
+
+              <table class=3D"row info" style=3Dalign-items:center;backgrou=
+nd:#fff;border-collapse:collapse;border-color:#E8EAED;border-spacing:0;bord=
+er-style:solid;border-width:1px;display:table;padding:0;position:relative;v=
+ertical-align:top;width:100%><tbody><tr style=3Dpadding:0;vertical-align:to=
+p>
+                <th class=3D"small-12 large-12 columns first last" style=3D=
+"Margin:0 auto;color:#3C4043;font-family:Roboto,Helvetica,Arial,sans-serif;=
+font-size:14px;font-weight:400;line-height:inherit;margin:0 auto;padding:0;=
+padding-bottom:0;padding-left:40px;padding-right:40px;width:560px"><table s=
+tyle=3Dborder-collapse:collapse;border-spacing:0;padding:0;vertical-align:t=
+op;width:100%><tr style=3Dpadding:0;vertical-align:top><th style=3D"Margin:=
+0;color:#3C4043;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14p=
+x;font-weight:400;line-height:inherit;margin:0;padding:0 0 24px;text-align:=
+left">
+
+<title>Tips to secure your Google account</title>
+<h2 style=3D"Margin:0;Margin-bottom:8px;color:#3C4043;font-family:Google Sa=
+ns,Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;line-height:30=
+px!important;margin:0;margin-bottom:24px;margin-top:24px;padding:0;word-wra=
+p:normal">Secure your Google Admin account with these best practices</h2>
+
+<p style=3D"color:#3C4043; font-family:Roboto,Helvetica,Arial,sans-serif; f=
+ont-size:14px; font-weight:400; line-height:24px; margin:0; margin-bottom:1=
+6px; padding:0;">Hello customer,</p>
+
+<p style=3DMargin:0;Margin-bottom:16px;color:#3C4043;font-family:Roboto,Hel=
+vetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:24px;mar=
+gin:0;margin-bottom:16px;padding:0>Here are a few access control and securi=
+ty features we recommend to keep your Google Admin account secure:</p>
+<p>
+   =20
+</p>
+  </li>
+<li style=3D"color:#3C4043; background:#f3f3f3; font-family:Roboto,Helvetic=
+a,Arial,sans-serif; font-size:14px; line-height:24px;"><strong>Require admi=
+ns and key users to provide additional proof of who they are</strong>
+
+<p style=3DMargin:0;Margin-bottom:16px;color:#3C4043;font-family:Roboto,Hel=
+vetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:24px;mar=
+gin:0;margin-bottom:16px;padding:0>We recommend that everyone in your busin=
+ess use 2-Step Verification (2SV), but it=E2=80=99s especially important fo=
+r admins and users who work with sensitive data such as financial records a=
+nd employee information. If someone steals a password, 2SV can prevent them=
+ from accessing your account.</p>
+<p>With 2SV, users need to verify their identity through something they kno=
+w (their password) plus something they have (such as a physical key or acce=
+ss code). You should enforce 2SV for admins and key users, where possible w=
+ith a FIDO compliant security key. </p>
+
+
+
+<p><a href=3Dhttps://notifications.google.com/g/p/ADa0GC_SNAqJYX_VI5tEbLC2t=
+ieEEm-sZkDxoV-8wK8hanYARIHIythbOyDctQAbV1woEmXZfIJSWlTReug5Z4nuZCLQ6fNd_l4x=
+0j9ofmEF5ZpZJmEOs2Ja73tlwrJwlkYU1h1YCfksYkQFFhfD42wePgII-lGwH8VAhglPGG4uyrX=
+MypMMEURrFRaQgWf-aU9IZ9sLY-2t-TYO rel=3Dnoopener>Protect your business with=
+ 2-Step Verification</a> | <a href=3Dhttps://notifications.google.com/g/p/A=
+Da0GC97RLzvmPD6-3sSlulWTY-Ez6X6cvx37xPpWj2o5mMJPpmtDwad8sgabk0m2JGMlSjWT0VT=
+0bwr-bz-kunVTMQl42P8EvziPfC3td7BojkvrGd61cLFtaTae7NLoi40UvHZokd4GBYxpZ8zrRJ=
+NRpSgWd0ff1gT9IZ0Di7kRPde9fCczX4vqNzbhF17ytDvQyk8HKlH2Ipm2xUapeIBUl7pB2GZh6=
+ev-se-HFFqD15jGA rel=3Dnoopener>Deploy 2-Step Verification</a></p>
+</li>
+<li style=3D"color:#3C4043; font-family:Roboto,Helvetica,Arial,sans-serif; =
+font-size:14px; line-height:24px;"><strong>Create an additional super admin=
+ account</strong>
+
+<p style=3DMargin:0;Margin-bottom:16px;color:#3C4043;font-family:Roboto,Hel=
+vetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:24px;mar=
+gin:0;margin-bottom:16px;padding:0>A business should have more than one sup=
+er admin account, each managed by a different person. If your primary super=
+ admin account is lost or compromised, the backup super admin can perform c=
+ritical tasks while the primary account is recovered. You can create anothe=
+r super admin by assigning the super admin role to another user.</p>
+
+<p><a href=3Dhttps://notifications.google.com/g/p/ADa0GC9Y7rEuSt-zD9LXUQGh8=
+BOr61n_z5yPazFtIzpX-0uEMXuuPhoUUw1Rsz2tGDVbjtoY1DLGTstx9aMm-mcK0CPS8KHC9OKR=
+DjgYOspgU48vwYK7Xn2XRlw9WfZWBShxQX_F2Zasu42HEdunbPY7DHbpIZ49GQiwq5BoxBVFJ47=
+rwdbfbmI7e7xRK-nFNmsaY1vQ6xHfSWhQ rel=3Dnoopener>Assign administrator roles=
+ to a user</a></p>
+  </li>
+<li style=3D"color:#3C4043; background:#f3f3f3; font-family:Roboto,Helvetic=
+a,Arial,sans-serif; font-size:14px; line-height:24px;"><strong>Super admins=
+ shouldn=E2=80=99t remain signed in to their account</strong>
+
+<p style=3DMargin:0;Margin-bottom:16px;color:#3C4043;font-family:Roboto,Hel=
+vetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:24px;mar=
+gin:0;margin-bottom:16px;padding:0>Super admins should sign in as needed to=
+ do specific tasks and then sign out. Staying signed in to a super admin ac=
+count when not performing specific administrative tasks can increase exposu=
+re to malicious activity.</p>
+
+<p style=3DMargin:0;Margin-bottom:16px;color:#3C4043;font-family:Roboto,Hel=
+vetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:24px;mar=
+gin:0;margin-bottom:16px;padding:0>Daily administrative tasks should be don=
+e using an account with limited admin roles.</p>
+
+  <p style=3DMargin:0;Margin-bottom:16px;color:#3C4043;font-family:Roboto,H=
+elvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:24px;m=
+argin:0;margin-bottom:16px;padding:0><a href=3Dhttps://notifications.google=
+.com/g/p/ADa0GC-T_YkiByQdtLzl3Vpqjyvu9sdDoQhcGmp7sSuJJwvGC9pdhnvTL1kRtDk4Rl=
+NbpU-IXTGDGZLP9Tcbp13-A1ossYleFaxVNwGmWJSjfhYrSjNwGnDTSDnFtC9vEk4JjpF8NMMg-=
+JxwEBzROJxmaQwDIUnuF0LRTJQ8-WlMiU271gbm4pMPafMYOzsvY6AOEixcX_nNL3f62Q rel=
+=3Dnoopener>Pre-built administrator roles</a> | <a href=3Dhttps://notificat=
+ions.google.com/g/p/ADa0GC8IomAf_hJ0K58PRxgq__33k0qwmjX8d68EqplJkQYDC299bPI=
+mNvkoYKV8GkR6zO2oyfhX1AmJr5lC-fulCbN0Ug01TqZYplqNr2SjezKtaNE6HSxL8M4ucBU0S6=
+lYba3wC3o1iC8E6-VXzGA9SV91a7W4G6K7NabIJWIBSXDRDElBEGfc-y6u9xL6vWxZ66RhL5D9Q=
+wkKpw rel=3Dnoopener>Security best practices for administrator accounts</a>=
+</p></li>
+</ul>
+<p style=3DMargin:0;Margin-bottom:16px;color:#3C4043;font-family:Roboto,Hel=
+vetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:24px;mar=
+gin:0;margin-bottom:16px;padding:0>To learn more about security best practi=
+ces for your Google account, review our <a href=3Dhttps://notifications.goo=
+gle.com/g/p/ADa0GC_CIZ2Gb14y-mbpnD5mqf0FdtcU0-PFl-O4LkXikXc8mwJ4leUT0IyjzY0=
+47V97pyJYuEvDPbOHpz7lHn0fwi4UBKjh1bD4K6U4kLCfip8-nf1_y5eCdotBo_9nJjAb0tux-B=
+cOEoEJQFECl9ICyqOj7Yp02YqrBIiQgumNSnd6BClhAFLC8_O6qwUTEhDI_bWpZkC6qDCuAA re=
+l=3Dnoopener>security checklists</a>.</p>
+
+<p style=3D"color:#3C4043; font-family:Google Sans,Helvetica,Arial,sans-ser=
+if; font-size:14px; font-weight:700; line-height:24px; margin:0; margin-bot=
+tom:0px!important; margin-top:8px; padding:0;">Sincerely,</p>
+
+<p style=3D"color:#3C4043; font-family:Google Sans,Helvetica,Arial,sans-ser=
+if; font-size:14px; font-weight:700; line-height:24px; margin:0; margin-bot=
+tom:0px!important; padding:0;">The Google Team</p>
+            </th></tr></table></th>
+            </tr></tbody></table>
+
+            <table class=3D"row footer" role=3Dpresentation style=3Dbackgro=
+und:#F8F9FA;border-collapse:collapse;border-spacing:0;display:table;margin-=
+top:0;padding:0;position:relative;vertical-align:top;width:100%><tbody><tr =
+style=3Dpadding:0;vertical-align:top>
+              <th class=3D"small-12 large-12 columns first last" style=3D"M=
+argin:0 auto;color:#3C4043;font-family:Roboto,Helvetica,Arial,sans-serif;fo=
+nt-size:14px;font-weight:400;line-height:inherit;margin:0 auto;padding:0;pa=
+dding-bottom:0;padding-left:40px;padding-right:40px;width:560px"><table sty=
+le=3Dborder-collapse:collapse;border-spacing:0;padding:0;vertical-align:top=
+;width:100%><tr style=3Dpadding:0;vertical-align:top><th style=3DMargin:0;c=
+olor:#3C4043;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;f=
+ont-weight:400;line-height:inherit;margin:0;padding:24px;text-align:left>
+
+                <img src=3Dhttps://storage.googleapis.com/support-kms-prod/=
+Eft9z9eRxsO0lygmCjmL53ewJDonixbl4EDd alt=3DGoogle height=3D30 style=3D-ms-i=
+nterpolation-mode:bicubic;clear:both;display:block;margin-bottom:14px;max-w=
+idth:100%;max-height:30px;outline:0;text-decoration:none;width:auto>
+                <p style=3DMargin:0;Margin-bottom:16px;color:#6C737F;font-f=
+amily:Roboto,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line=
+-height:16px;margin:0;margin-bottom:14px;padding:0>
+            =C2=A9 2023  Google LLC=C2=A01600 Amphitheatre Parkway, Mountai=
+n View, CA 94043
+                </p>
+                <p style=3DMargin:0;Margin-bottom:16px;color:#6C737F;font-f=
+amily:Roboto,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line=
+-height:16px;margin:0;margin-bottom:14px;padding:0>
+            <em>You=E2=80=99re receiving this mandatory email service annou=
+ncement to update you about important changes to your Google account. This =
+message has been sent to all user admins to inform them of access controls =
+and security best practices.</em>
+            </p>
+            </th>
+<th class=3Dexpander style=3DMargin:0;color:#3C4043;font-family:Roboto,Helv=
+etica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:inherit;m=
+argin:0;padding:0!important;visibility:hidden;width:0></th></tr></table></t=
+h>
+            </tr></tbody></table>
+            </td></tr></tbody></table>
+
+          </center>
+        </td>
+      </tr>
+    </table>
+    <!-- prevent Gmail on iOS font size manipulation -->
+   <div style=3D"display:none;white-space:nowrap;font:15px courier;line-hei=
+ght:0"> =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </div=
+>
+
+<img alt=3D"" height=3D1 width=3D3 src=3Dhttps://notifications.google.com/g=
+/img/ADa0GC_wg0kiSLmoEkEAPwFcjFJJgwuyxPash-4UE23-K6LSJVeJN-FYf3QpHiokT8Qi79=
+_TuhDVHhAwV4u2JbkczI0fRorGLvvOPYfhlkmFmn8zLOCb6V8o4aVJdMjlf92BS8Gz_fz6BXTa6=
+GEW5w.gif></html>
+</div>
+
+--0000000000005a48930601a4f10b--

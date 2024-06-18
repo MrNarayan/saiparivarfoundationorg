@@ -1,0 +1,69 @@
+Return-Path: <tuyentmai@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP id GApmOyURrlxkAwcAUq51WA
+	for <info@saiparivarfoundation.org>; Wed, 10 Apr 2019 10:52:05 -0500
+Return-path: <tuyentmai@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Wed, 10 Apr 2019 10:52:05 -0500
+Received: from mail-lf1-f50.google.com ([209.85.167.50]:41718)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <tuyentmai@gmail.com>)
+	id 1hEFW9-002FqT-Lg
+	for info@saiparivarfoundation.org; Wed, 10 Apr 2019 10:52:05 -0500
+Received: by mail-lf1-f50.google.com with SMTP id t30so2214841lfd.8
+        for <info@saiparivarfoundation.org>; Wed, 10 Apr 2019 08:52:00 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=AdToaJr0FwF5hoCTCy6729j0EvKeUEb4aj/vmsf7m08=;
+        b=SjrYdMtRxW3/6lyUPWoy2+N6cQP83J2FjpfJhfWdbOnZEQSecjTkEtyeFdWDn/e18i
+         wCLP7QKikFkMidaXLIK0n1LzEi5AMQ1jwS6lid4fLLYptqodN9ZbwwcFDOBRTPSqffdw
+         PAywpRX+VX/fidnFaycWtneykQt5Cp4g4veLIIegSUFMS7ILyUqZWSS69K4mKxpSFdRg
+         rUOzQWSdVEXrSNMFUtCGy/0EFuhViH9X/koYsjiA4P1wYgkewpg/ElmDGPV/JBI706Lf
+         ZWI5NRMqLg0/4Y/hD26OIyrqbxzq2foH84aYdbvgjC4dOoekBGdGrHeP2E2Q6jcyqiiw
+         QvdA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=AdToaJr0FwF5hoCTCy6729j0EvKeUEb4aj/vmsf7m08=;
+        b=icHo7ioieT8BSeCDb2qRuoAJhK/reqGe8GuMQuML7h7zudHwSkdpjBmJ1bU+Y5x5W6
+         HIllerBAtktvqvHvDGdm+Ibvst2oTH1Wd3U625DtWAQTtBxTF8FNIcQU4cLCRDfWUbLK
+         VypjdR6lsPdYeVgdft38qn7TVKZpfU6YC9h0EZpQT/9di4FNlJLkuCWlg6pIR2WiqaI1
+         dqYN5mM8tLH8zEqDWVMbAVFY5W8djywjuvjNR03VIuuTm3vvsrjiecIrPeeSB4O1n2H9
+         dKR9v4TVUEYMBVTBOWJo7uBaEQXm52ELVxKm6d/7Ucic6+U4TLNqqX0TaN/XCEypLBZR
+         sBMA==
+X-Gm-Message-State: APjAAAVeIxlHQq728uoadPq06JkcqjyN7iAysTFH1i1ilj04yGecpmZp
+	9bMIfi4u5Wq4NATA3Bf3re58ZRzMfknO0a2j3HcwEg==
+X-Google-Smtp-Source: APXvYqyeNq01CTXZKVO3J2Nvov54O49VMu8hw7MyCZU82lAaeLyhSmV+EAEkmtXO1Gl/vZ9R9NFVn4kWkfpvPlWGauo=
+X-Received: by 2002:a19:f013:: with SMTP id p19mr17823163lfc.36.1554911513366;
+ Wed, 10 Apr 2019 08:51:53 -0700 (PDT)
+MIME-Version: 1.0
+From: Tuyen Mai <tuyentmai@gmail.com>
+Date: Wed, 10 Apr 2019 08:51:42 -0700
+Message-ID: <CAAgEmzGFMZoLT0EadOWLQ1sbA+24CU43y66oiKoch2eFii235w@mail.gmail.com>
+Subject: Wedding Ceremony Info/inury
+To: info@saiparivarfoundation.org
+Content-Type: multipart/alternative; boundary="00000000000069544b05862f0ca5"
+
+--00000000000069544b05862f0ca5
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+
+We are interested in having a wedding at your temple. We were wondering if
+this possible and what is the process like?  Thank you for your help.
+
+-Tuyen
+
+--00000000000069544b05862f0ca5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hello,=C2=A0<div><br></div><div>We are interested in havin=
+g a wedding at your temple. We were wondering if this possible and what is =
+the process like?=C2=A0 Thank you for your help.=C2=A0</div><div><br></div>=
+<div>-Tuyen</div></div>
+
+--00000000000069544b05862f0ca5--

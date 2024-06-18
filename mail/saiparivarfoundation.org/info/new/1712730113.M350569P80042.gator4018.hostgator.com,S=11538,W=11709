@@ -1,0 +1,171 @@
+Return-Path: <buildinghinduism@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id ULcHFAEwFmaqOAEAUq51WA
+	(envelope-from <buildinghinduism@gmail.com>)
+	for <info@saiparivarfoundation.org>; Wed, 10 Apr 2024 01:21:53 -0500
+Return-path: <buildinghinduism@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Wed, 10 Apr 2024 01:21:53 -0500
+Received: from mail-ej1-f47.google.com ([209.85.218.47]:60704)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <buildinghinduism@gmail.com>)
+	id 1ruRLF-000tJy-0I
+	for info@saiparivarfoundation.org;
+	Wed, 10 Apr 2024 01:21:53 -0500
+Received: by mail-ej1-f47.google.com with SMTP id a640c23a62f3a-a51beae2f13so432680366b.1
+        for <info@saiparivarfoundation.org>; Tue, 09 Apr 2024 23:21:47 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1712730101; x=1713334901; darn=saiparivarfoundation.org;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=joS68aVENQdn0iIjw7rb3AVK+xOYby1q6CtpnSBUoDA=;
+        b=c9EDjXTVuWhnh4GhmPyI/R26pM3QpMBk6Kj/hHPYmyK82vJEdmWOzjd6qcvmD8aWOt
+         DXBnXXga4sNGedDn8CCRxkjYT5KtpPgxgsdC4SJFw14yrjO4DFiBKaIDUHKqBvYuPG/Q
+         44Gkmlm5zHM8ZiHNgMoodmIgGoIsovWVdmn1Q6EHTRhEmBf+zgGrSomrivpQ0W7XJPBm
+         /jKrBa2re4L+tP5HsDwNK1MuL4MuPK7NXvHRfs1L22p5+tqgmg3BW4nKXKbO/4wDzKk8
+         is21Br6sVA0NbHKiiJrE9iv18zEq/dI232MxM1fwX0xdT8YXCtWroo50SmkJJ+ORwlI2
+         xC5A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1712730101; x=1713334901;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=joS68aVENQdn0iIjw7rb3AVK+xOYby1q6CtpnSBUoDA=;
+        b=wAyXU6gXoBULaWMcalurxfdMDCBfyvCqfuh9dvY9xOQ0YAhRkEb+PwQA9UHZcJz9i+
+         J4OuYcZT1PSuKfiEZlri2PXMMlszYAvSiHfkBnAGHKexO9V76CKzv/Q4a3RcoRAB/Po8
+         HWFEYavm701bBUrWl3suY4FV+Q47kIOBvf7AzpoWB1X7TV/e14ttWrSGdU3KZzCp624q
+         kio5ikhxsrw2iql5Gx3r97qlOPt4VgenN3hABRxpK92SnC+vJeMzG9NnkuhVEVoyJtbf
+         crdKEg4TUqDVJuvZ0XSqiygYKOz+itxI3qK3mAmJWL7nEbDPX2HLWXPeBTlhRHD0XKVo
+         lqDA==
+X-Forwarded-Encrypted: i=1; AJvYcCUvrTWtOLRGbpf3o6wzlWh1c8o1HVc/t9nATDCWQ5fBI77bB2haWObxCmlYGDKMuTbyeuVyeGnFR3fmvd6hCL5A2l5P4dgh69a2YPjlAA==
+X-Gm-Message-State: AOJu0YzwEX8R2eRpdgag6vBI0HggrjQ8BHdAqcrdn7z14vIrZWCEa5JC
+	RWwc7mBaUphASu65EGMc46rgqwesuYIa1/tnRWa+W5beJeGpd2wjOqKzZEBRtq5XnnIHD1Cg2u0
+	dq+3ymuWAyCwJNa3zFPO7Plf1WQ==
+X-Google-Smtp-Source: AGHT+IFtOlEoQaOdAbkdz4TZP8edZ+/j8oag+JODQpYRzhWZHosDEORc3rMBU6wSgdHierSWSLPqM61ORahqdIPljR0=
+X-Received: by 2002:a17:906:cb9a:b0:a51:dd18:bd1f with SMTP id
+ mf26-20020a170906cb9a00b00a51dd18bd1fmr957045ejb.13.1712730101388; Tue, 09
+ Apr 2024 23:21:41 -0700 (PDT)
+MIME-Version: 1.0
+From: Hinduism Future of Humanity <buildinghinduism@gmail.com>
+Date: Wed, 10 Apr 2024 11:51:33 +0530
+Message-ID: <CAL+7fDJv4pQFUQmdL6GGJ8451STJ2-Sxxknz_wg0iBHkRvUVVg@mail.gmail.com>
+Subject: Shri Krishna's message in Shrimad Bhagwad Gita for the protection of religion
+To: Hinduism Future of Humanity <buildinghinduism@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000004a1b3e0615b80d0e"
+Bcc: info@saiparivarfoundation.org
+
+--0000000000004a1b3e0615b80d0e
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+KuCkr+CkpuCkviDgpK/gpKbgpL4g4KS54KS/IOCkp+CksOCljeCkruCkuOCljeCkryDgpJfgpY3g
+pLLgpL7gpKjgpL/gpLDgpY3gpK3gpLXgpKTgpL8g4KSt4KS+4KSw4KSkIOClpOCkheCkreCljeCk
+r+ClgeCkpOCljeCkpeCkvuCkqOCkruCkp+CksOCljeCkruCkuOCljeCkryDgpKTgpKbgpL7gpKTg
+pY3gpK7gpL7gpKjgpIINCuCkuOClg+CknOCkvuCkruCljeCkr+CkueCkruCljSDgpaUgKOClrSng
+pKrgpLDgpL/gpKTgpY3gpLDgpL7gpKPgpL7gpK8g4KS44KS+4KSn4KWC4KSo4KS+4KSCIOCkteCk
+v+CkqOCkvuCktuCkvuCkryDgpJog4KSm4KWB4KS34KWN4KSV4KWD4KSk4KS+4KSu4KWNIOClpOCk
+p+CksOCljeCkruCkuOCkguCkuOCljeCkpeCkvuCkquCkqOCkvuCksOCljeCkpeCkvuCkrw0K4KS4
+4KSu4KWN4KSt4KS14KS+4KSu4KS/IOCkr+ClgeCkl+ClhyDgpK/gpYHgpJfgpYcg4KWlICjgpa4p
+Kg0KKijgpK3gpJfgpLXgpKbgpY3gpJfgpYDgpKTgpL4sIOCkheCkp+CljeCkr+CkvuCkry3gpaos
+IOCktuCljeCksuCli+CklS3gpa0g4KSU4KSwIOClrikqDQoNCioiSSBtYW5pZmVzdCBNeXNlbGYg
+aW4gZXZlcnkgYWdlIHRvIHByb3RlY3QgdGhlIGdvb2QgcGVvcGxlIGFuZCB0byBkZXN0cm95DQp0
+aG9zZSB3aG8gY29tbWl0IGV2aWwgYWN0cyBhbmQgdG8gcmUtZXN0YWJsaXNoIHJlbGlnaW9uLCIg
+c2F5cyBMb3JkDQpLcmlzaG5hLioNCg0KU2hyaSBLcmlzaG5hIGV4cGxhaW5zLCAiTyBBcmp1biwg
+d2hlbmV2ZXIgcmlnaHRlb3VzbmVzcyBkZWNsaW5lcyBhbmQNCnVucmlnaHRlb3VzbmVzcyBpbmNy
+ZWFzZXMsIHRoZW4gSSByZXZlYWwgbXlzZWxmLiINCg0KVGhpcyB0ZWFjaGluZyBvZiB0aGUgKlNy
+aW1hZCBCaGFnYXZhZCBHaXRhKiB3YXMgaW1wYXJ0ZWQgYnkgU2hyaSBLcmlzaG5hIHRvDQpBcmp1
+biB3aGVuIEFyanVuIGJlY2FtZSBlbnRhbmdsZWQgaW4gdGhlIGNvbXBsZXhpdGllcyBvZiB0aGUg
+TWFoYWJoYXJhdGENCndhciwgdG9ybiBiZXR3ZWVuIGhpcyBvd24gYW5kIG90aGVycycgaW50ZXJl
+c3RzLCBhbmQgaXQgd2FzIHRoZW4gdGhhdCBTaHJpDQpLcmlzaG5hIGJlc3Rvd2VkIHRoaXMgd2lz
+ZG9tIHVwb24gaGltIG9uIHRoZSBiYXR0bGVmaWVsZCBvZiBLdXJ1a3NoZXRyYS4NCg0KSWYgdGhl
+cmUgaXMgc2luLCBpbmp1c3RpY2UsIGFuZCBvcHByZXNzaW9uLCB0aGVuIGVyYWRpY2F0aW5nIGl0
+IGJlY29tZXMgdGhlDQpkdXR5IG9mIHNhZmVndWFyZGluZyBzb2NpZXR5LiBXaGlsZSBpdCBtaWdo
+dCBiZSBjb25zaWRlcmVkIG5vYmxlIGZvciBhbg0KaW5kaXZpZHVhbCB0byBsZWF2ZSB0aGUgY29u
+c2VxdWVuY2VzIG9mIGluanVzdGljZSBhbmQgb3BwcmVzc2lvbiBpbmZsaWN0ZWQNCnVwb24gdGhl
+bSB0byBHb2QsIGlmIHRoZSB1bmp1c3Qgb3BwcmVzc29yIHNob3dzIG5vIHJlbW9yc2UsIHRoZW4g
+ZnJvbSBhDQpzb2NpZXRhbCBwZXJzcGVjdGl2ZSwgdGhlaXIgaW5hY3Rpb24gaXMgYWtpbiB0byBp
+bmdyYXRpdHVkZSBmb3IgdGhlIGZhdm9ycw0KYmVzdG93ZWQgdXBvbiB0aGVtLiBGYWlsaW5nIHRv
+IHJlY2lwcm9jYXRlIGlzIGFuIGFjdCBvZiBpbmdyYXRpdHVkZS4NCg0KVXBvbiByZWFkaW5nIHRo
+ZSBTcmltYWQgQmhhZ2F2YWQgR2l0YSwgaXQgYmVjb21lcyBldmlkZW50IGZyb20gdGhlDQphZm9y
+ZW1lbnRpb25lZCB0ZWFjaGluZ3Mgd2hhdCB0aGUgZm91bmRhdGlvbiBvZiBodW1hbiBkZXZvdGlv
+biBlbnRhaWxzLg0KDQpIdW1hbml0eSBpcyBidXQgYSBzbWFsbCBmcmFjdGlvbiBvZiB0aGUgdW5p
+dmVyc2UsIGVuY29tcGFzc2luZyBib3RoDQpyaWdodGVvdXMgYW5kIHVucmlnaHRlb3VzIHRlbmRl
+bmNpZXMuIFNvbWV0aW1lcyByaWdodGVvdXNuZXNzIGZsb3VyaXNoZXMNCndpdGhpbiwgd2hpbGUg
+YXQgb3RoZXIgdGltZXMsIHVucmlnaHRlb3VzbmVzcyB0YWtlcyBob2xkLiBPY2Nhc2lvbmFsbHks
+IG91cg0KYWN0aW9ucyByZWZsZWN0IHJpZ2h0ZW91c25lc3MsIHdoaWxlIGF0IG90aGVyIHRpbWVz
+LCB0aGV5IGVtYm9keQ0KaXJyZWxpZ2lvbi4gSG93ZXZlciwgd2hlbiBhbiBpbmRpdmlkdWFsIGlz
+IGNvbnN1bWVkIGJ5IGZlZWxpbmdzIG9mDQp1bnJpZ2h0ZW91c25lc3MsIGEgd2F2ZSBvZiByZXNp
+c3RhbmNlIGFnYWluc3QgY29tbWl0dGluZyBzdWNoIGFjdHMNCmludmFyaWFibHkgYXJpc2VzIHdp
+dGhpbiB0aGVtLiBEZXNwaXRlIHBlb3BsZSBvZnRlbiBkaXNyZWdhcmRpbmcgdGhpcyBpbm5lcg0K
+dm9pY2UgYW5kIHN1Y2N1bWJpbmcgdG8gdW5yaWdodGVvdXNuZXNzLCBpdCBpcyBub3RoaW5nIGJ1
+dCB0aGUgZGl2aW5lDQppbnNwaXJhdGlvbiBvZiBMb3JkIEtyaXNobmEgcGVybWVhdGluZyBvdXIg
+Y29uc2Npb3VzbmVzcywgcGVycGV0dWFsbHkNCnVyZ2luZyB1cyB0byByZWZyYWluIGZyb20gd3Jv
+bmdkb2luZy4gVGhpcyBpcyBwcmVjaXNlbHkgd2hhdCB0aGUgTG9yZA0KY29udmV5cyB3aGVuIGhl
+IGRlY2xhcmVzIHRoYXQgd2hlbmV2ZXIgcmlnaHRlb3VzbmVzcyB3YW5lcyBhbmQNCnVucmlnaHRl
+b3VzbmVzcyBwcmV2YWlscywgaGUgc2hhbGwgbWFuaWZlc3QgaGltc2VsZi4gVGhpcyBjeWNsaWNh
+bCBwcm9jZXNzDQpvZiBtYW5pZmVzdGF0aW9uIGNvbnRpbnVlcyBhcyBoZSBjb25zaXN0ZW50bHkg
+Z3VpZGVzIGluZGl2aWR1YWxzIHRocm91Z2gNCmhpcyBkaXZpbmUgaW5zcGlyYXRpb25zLg0KDQoq
+VGhhbmtzICYgUmVnYXJkcyoNCipEci4gQXJjaGFuYSBCaGFyYXR2YW5zaGkqDQo=
+--0000000000004a1b3e0615b80d0e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><font face=3D"georgia, serif"><b>=E0=A4=AF=E0=A4=A6=E0=A4=
+=BE =E0=A4=AF=E0=A4=A6=E0=A4=BE =E0=A4=B9=E0=A4=BF =E0=A4=A7=E0=A4=B0=E0=A5=
+=8D=E0=A4=AE=E0=A4=B8=E0=A5=8D=E0=A4=AF =E0=A4=97=E0=A5=8D=E0=A4=B2=E0=A4=
+=BE=E0=A4=A8=E0=A4=BF=E0=A4=B0=E0=A5=8D=E0=A4=AD=E0=A4=B5=E0=A4=A4=E0=A4=BF=
+ =E0=A4=AD=E0=A4=BE=E0=A4=B0=E0=A4=A4 =E0=A5=A4<br>=E0=A4=85=E0=A4=AD=E0=A5=
+=8D=E0=A4=AF=E0=A5=81=E0=A4=A4=E0=A5=8D=E0=A4=A5=E0=A4=BE=E0=A4=A8=E0=A4=AE=
+=E0=A4=A7=E0=A4=B0=E0=A5=8D=E0=A4=AE=E0=A4=B8=E0=A5=8D=E0=A4=AF =E0=A4=A4=
+=E0=A4=A6=E0=A4=BE=E0=A4=A4=E0=A5=8D=E0=A4=AE=E0=A4=BE=E0=A4=A8=E0=A4=82 =
+=E0=A4=B8=E0=A5=83=E0=A4=9C=E0=A4=BE=E0=A4=AE=E0=A5=8D=E0=A4=AF=E0=A4=B9=E0=
+=A4=AE=E0=A5=8D =E0=A5=A5 (=E0=A5=AD)<br>=E0=A4=AA=E0=A4=B0=E0=A4=BF=E0=A4=
+=A4=E0=A5=8D=E0=A4=B0=E0=A4=BE=E0=A4=A3=E0=A4=BE=E0=A4=AF =E0=A4=B8=E0=A4=
+=BE=E0=A4=A7=E0=A5=82=E0=A4=A8=E0=A4=BE=E0=A4=82 =E0=A4=B5=E0=A4=BF=E0=A4=
+=A8=E0=A4=BE=E0=A4=B6=E0=A4=BE=E0=A4=AF =E0=A4=9A =E0=A4=A6=E0=A5=81=E0=A4=
+=B7=E0=A5=8D=E0=A4=95=E0=A5=83=E0=A4=A4=E0=A4=BE=E0=A4=AE=E0=A5=8D =E0=A5=
+=A4<br>=E0=A4=A7=E0=A4=B0=E0=A5=8D=E0=A4=AE=E0=A4=B8=E0=A4=82=E0=A4=B8=E0=
+=A5=8D=E0=A4=A5=E0=A4=BE=E0=A4=AA=E0=A4=A8=E0=A4=BE=E0=A4=B0=E0=A5=8D=E0=A4=
+=A5=E0=A4=BE=E0=A4=AF =E0=A4=B8=E0=A4=AE=E0=A5=8D=E0=A4=AD=E0=A4=B5=E0=A4=
+=BE=E0=A4=AE=E0=A4=BF =E0=A4=AF=E0=A5=81=E0=A4=97=E0=A5=87 =E0=A4=AF=E0=A5=
+=81=E0=A4=97=E0=A5=87 =E0=A5=A5 (=E0=A5=AE)</b><br><i>(=E0=A4=AD=E0=A4=97=
+=E0=A4=B5=E0=A4=A6=E0=A5=8D=E0=A4=97=E0=A5=80=E0=A4=A4=E0=A4=BE, =E0=A4=85=
+=E0=A4=A7=E0=A5=8D=E0=A4=AF=E0=A4=BE=E0=A4=AF-=E0=A5=AA, =E0=A4=B6=E0=A5=8D=
+=E0=A4=B2=E0=A5=8B=E0=A4=95-=E0=A5=AD =E0=A4=94=E0=A4=B0 =E0=A5=AE)</i><br>=
+<br><b>&quot;I manifest Myself in every age to protect the good people and =
+to destroy those who commit evil acts and to re-establish religion,&quot; s=
+ays Lord Krishna.</b><br><br>Shri Krishna explains, &quot;O Arjun, whenever=
+ righteousness declines and unrighteousness increases, then I reveal myself=
+.&quot;<br><br>This teaching of the=C2=A0<b>Srimad Bhagavad Gita</b>=C2=A0w=
+as imparted by Shri Krishna to Arjun when Arjun became entangled in the com=
+plexities of the Mahabharata war, torn between his own and others&#39; inte=
+rests, and it was then that Shri Krishna bestowed this wisdom upon him on t=
+he battlefield of Kurukshetra.<br><br>If there is sin, injustice, and oppre=
+ssion, then eradicating it becomes the duty of safeguarding society. While =
+it might be considered noble for an individual to leave the consequences of=
+ injustice and oppression inflicted upon them to God, if the unjust oppress=
+or shows no remorse, then from a societal perspective, their inaction is ak=
+in to ingratitude for the favors bestowed upon them. Failing to reciprocate=
+ is an act of ingratitude.<br><br>Upon reading the Srimad Bhagavad Gita, it=
+ becomes evident from the aforementioned teachings what the foundation of h=
+uman devotion entails.<br><br>Humanity is but a small fraction of the unive=
+rse, encompassing both righteous and unrighteous tendencies. Sometimes righ=
+teousness flourishes within, while at other times, unrighteousness takes ho=
+ld. Occasionally, our actions reflect righteousness, while at other times, =
+they embody irreligion. However, when an individual is consumed by feelings=
+ of unrighteousness, a wave of resistance against committing such acts inva=
+riably arises within them. Despite people often disregarding this inner voi=
+ce and succumbing to unrighteousness, it is nothing but the divine inspirat=
+ion of Lord Krishna permeating our consciousness, perpetually urging us to =
+refrain from wrongdoing. This is precisely what the Lord conveys when he de=
+clares that whenever righteousness wanes and unrighteousness prevails, he s=
+hall manifest himself. This cyclical process of manifestation continues as =
+he consistently guides individuals through his divine inspirations.</font><=
+br><div><font face=3D"georgia, serif"><br></font></div><div><div><font face=
+=3D"georgia, serif" color=3D"#134f5c"><b>Thanks &amp; Regards</b></font></d=
+iv><div><font face=3D"georgia, serif" color=3D"#134f5c"><b>Dr. Archana Bhar=
+atvanshi</b></font></div></div></div>
+
+--0000000000004a1b3e0615b80d0e--

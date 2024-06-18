@@ -1,0 +1,411 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201412 will be lost/reset.
+# Last config file used to build this data file was /home4/seasai10/tmp/awstats/awstats.saiparivarfoundation.org.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2019                
+POS_TIME 2684                
+POS_VISITOR 8350                
+POS_DAY 10286               
+POS_DOMAIN 3489                
+POS_LOGIN 3894                
+POS_ROBOT 4049                
+POS_WORMS 4309                
+POS_EMAILSENDER 4440                
+POS_EMAILRECEIVER 4583                
+POS_SESSION 10997               
+POS_SIDER 11191               
+POS_FILETYPES 4718                
+POS_DOWNLOADS 4901                
+POS_OS 4949                
+POS_BROWSER 5102                
+POS_SCREENSIZE 5525                
+POS_UNKNOWNREFERER 5599                
+POS_UNKNOWNREFERERBROWSER 5890                
+POS_ORIGIN 6173                
+POS_SEREFERRALS 6309                
+POS_PAGEREFS 6464                
+POS_SEARCHWORDS 6636                
+POS_KEYWORDS 6819                
+POS_MISC 2347                
+POS_ERRORS 6915                
+POS_CLUSTER 3750                
+POS_SIDER_404 7018                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20150101001518 33 5236 9590583457976
+FirstTime 0
+LastTime 20141231084450
+LastUpdate 20150101005127 33 0 32 0 0
+TotalVisits 77                  
+TotalUnique 45                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 46                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 31 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 6 124 854544 15 28 162185
+1 1 1 10549 10 19 134863
+2 7 80 293031 12 16 59777
+3 12 12 126588 23 35 268697
+4 0 0 0 14 26 247585
+5 1 26 244767 20 31 158297
+6 2 27 255316 14 18 75660
+7 1 26 363854 8 14 98487
+8 2 2 21098 9 9 34217
+9 3 28 265865 41 56 502698
+10 3 52 260107 11 16 67455
+11 22 156 14551107 16 66 732965
+12 5 53 42894 10 16 84362
+13 5 34 1125988 11 40 575901
+14 13 311 22215682 18 76 793631
+15 9 183 19205496 13 48 465381
+16 9 112 16961750 31 82 784977
+17 13 159 6864523 15 54 899114
+18 26 406 22433176 40 139 1663903
+19 11 144 10018815 20 71 824555
+20 19 147 8162725 22 73 771624
+21 5 111 12875287 16 43 406678
+22 3 53 381715 16 36 157536
+23 1 23 938513 18 34 223307
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 14
+us 157 2157 127309246
+in 5 76 10562853
+ru 2 2 14613
+cz 2 2 11272
+nl 2 2 21098
+fi 2 2 21098
+de 2 2 21098
+ua 1 1 10549
+ph 1 1 10549
+es 1 1 10549
+pl 1 1 10549
+zz 1 21 459367
+fr 1 1 10549
+eu 1 1 0
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 3
+googlebot 310 1328973 20141231230758 0
+bot[\s_+:,\.\;\/\\-] 102 1554097 20141231163530 0
+no_user_agent 1 10549 20141201002244 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 6
+css 367 1025334 0 0
+png 126 163727 0 0
+html 179 1390447 0 0
+js 938 7909434 0 0
+jpg 638 127817246 0 0
+gif 22 167202 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 10
+blackberry 1
+linuxandroid 163
+winxp 24
+java 4
+win2000 1
+linuxubuntu 1
+winvista 726
+linux 823
+win7 507
+Unknown 20
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 25
+firefox28.0 2
+chrome39.0.2171.93 21
+msie6.0 3
+blackberry 1
+firefox3.8 1
+android 76
+libwww 15
+chrome28.0.1500.94 65
+samsung 1
+firefox4.0 3
+chrome39.0.2171.95 171
+firefox2.0.0.13 1
+msie8.0 2
+mozilla 759
+chrome39.0.2171.65 32
+firefox14.0.1 8
+msie10.0 259
+firefox23.0 1
+firefox6.0 4
+chrome41.0.2228.0 1
+Unknown 9
+firefox27.0 1
+safari 812
+firefox15.0.1 1
+chrome39.0.2171.71 21
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 4
+libwww-perl/6.04 20141230030922
+Mnogosearch-3.1.21 20141212025539
+Python-urllib/1.17 20141210173428
+CATExplorador/1.0beta_(sistemes_at_domini_dot_cat;_http://domini.cat/catexplorador.html) 20141221201456
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 4
+Mnogosearch-3.1.21 20141212025539
+Python-urllib/1.17 20141210173428
+CATExplorador/1.0beta_(sistemes_at_domini_dot_cat;_http://domini.cat/catexplorador.html) 20141221201456
+Java/1.6.0_33 20141222144144
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 93 98
+From1 1 1
+From2 3 3
+From3 1 1
+From4 81 2167
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 3 3
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+http://saknepal.org 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 1
+shirdi+sai+global+foundation 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 4
+global 1
+foundation 1
+shirdi 1
+sai 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+406 34 7684
+404 568 7292552
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 32
+/robots.txt 76 -
+/editor/fckeditor/editor/ 1 -
+/admin.php 1 -
+/common/fckeditor/editor/ 1 -
+/inc/fckeditor/editor/ 1 -
+/Fckeditor/editor/ 1 -
+/images/back_all1.jpg 136 http://saiparivarfoundation.org/styles.css
+/editor/editor/ 1 -
+/system/fckeditor/editor/ 2 -
+/Fckeditornew/editor/ 1 -
+/fck/editor/ 1 -
+/browserconfig.xml 1 -
+/sysadmin/fckeditor/editor/ 1 -
+/scripts/fckeditor/editor/ 1 -
+/includes/fckeditor/editor/ 1 -
+/ckeditor/editor/ 1 -
+/FCKeditor/editor/ 1 -
+/js/fckeditor/editor/ 1 -
+/fckeditor/editor/ 1 -
+/manage/fckeditor/editor/ 1 -
+/images/menu_bg1.png 136 http://saiparivarfoundation.org/css/superfish.css
+/include/fckeditor/editor/ 1 -
+/editor1/editor/ 1 -
+/undefined 94 http://saiparivarfoundation.org/events.html
+/administrator/ 1 -
+/editorold/editor/ 1 -
+/index.php 1 SAIPARIVARFOUNDATION.ORG/index.php
+/Fckeditorold/editor/ 1 -
+/images/btn_bg1.png 40 http://saiparivarfoundation.org/index.html
+/wp-login.php 1 -
+/js/SaiBaba.js 59 http://saiparivarfoundation.org/index.html
+/admin/fckeditor/editor/ 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 46
+74.52.220.2 15 15 158235 20141230030922
+38.99.82.191 15 382 2229014 20141222194648
+71.231.176.33 12 104 10844548 20141230200348
+131.107.147.218 12 298 6811680 20141230192931
+131.107.174.172 11 185 29231011 20141230185208
+76.28.197.166 11 116 8083916 20141220212922
+69.58.178.56 9 9 66274 20141209115758
+107.77.75.117 8 66 6892482 20141214182128
+174.21.130.116 8 86 11907089 20141227210043
+50.135.6.73 6 100 16032673 20141228161237
+131.107.160.20 6 38 1639314 20141201172202
+112.79.38.74 5 76 10562853 20141222115326
+167.220.24.19 5 56 1360893 20141210143242
+38.99.82.219 5 126 497120 20141218021816
+38.99.82.215 4 102 390929 20141218003123
+131.107.174.145 4 53 6114325 20141211183119
+38.99.82.193 4 102 621740 20141217220134
+66.249.84.241 3 3 31647 20141203224608
+131.107.147.139 3 78 12943799 20141210142420
+131.107.160.76 3 48 5690853 20141230160049
+38.99.82.218 3 78 730419 20141217224101
+46.229.167.149 2 2 21098 20141221205841
+192.99.40.137 2 2 21098 20141206092854
+93.92.217.228 2 2 14613 20141230202343
+104.245.38.144 1 1 10549 20141207034433
+199.30.16.175 0 37 3800756 
+131.107.192.252 1 21 458853 20141216185231
+5.56.63.53 1 1 10549 20141221201456
+173.49.24.118 1 1 10549 20141212025539
+31.148.246.200 1 1 4064 20141228110027
+172.56.32.121 1 21 459367 20141226233208
+95.160.19.111 1 1 10549 20141212110919
+216.218.216.219 1 1 10549 20141210173428
+195.154.235.55 1 1 10549 20141221121507
+37.57.231.125 1 1 10549 20141220183400
+204.124.183.98 1 1 6694 20141229001322
+66.249.84.229 1 1 10549 20141202121353
+38.99.82.241 1 26 244767 20141219140838
+5.9.11.122 1 1 10549 20141214105227
+76.164.223.119 1 1 10549 20141209170145
+185.72.244.38 1 1 0 20141221144137
+130.211.85.67 1 1 10549 20141215163835
+198.204.253.101 1 1 10549 20141231084450
+50.141.67.10 1 21 456921 20141202000116
+46.252.24.141 1 1 10549 20141207035011
+146.120.166.170 1 1 7208 20141228110027
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 28
+20141201 7 39 1649863 2
+20141202 4 61 4289324 4
+20141203 1 1 10549 1
+20141204 1 1 10549 1
+20141205 2 31 1250426 1
+20141206 3 3 31647 2
+20141207 2 2 21098 2
+20141208 1 1 10549 1
+20141209 13 54 4438406 3
+20141210 14 179 18220038 5
+20141211 4 53 6114325 2
+20141212 3 3 31647 3
+20141214 18 121 11618457 5
+20141215 1 1 10549 1
+20141216 2 22 469402 2
+20141217 9 230 1598444 5
+20141218 9 180 662862 4
+20141219 1 26 244767 1
+20141220 3 34 2149711 3
+20141221 6 31 286963 5
+20141222 20 433 12557649 7
+20141224 1 1 10549 1
+20141226 2 22 469916 2
+20141227 8 86 11907089 1
+20141228 9 103 16054494 4
+20141229 1 1 6694 1
+20141230 33 550 44336874 7
+20141231 1 1 10549 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+1h+ 2
+5mn-15mn 4
+0s-30s 55
+30s-2mn 7
+2mn-5mn 5
+30mn-1h 4
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 7
+/ 79 801724 58 48
+/events.html 26 151050 5 8
+/about.html 17 122536 4 5
+/contacts.html 16 65024 5 6
+/Resources.html 15 60534 4 2
+/mission.html 13 76843 1 2
+/guruji.html 13 112736 0 6
+END_SIDER

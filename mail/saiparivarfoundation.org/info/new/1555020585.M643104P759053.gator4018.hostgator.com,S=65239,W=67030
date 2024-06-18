@@ -1,0 +1,1791 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP id OCcZIym7r1wNlQsAUq51WA
+	for <info@saiparivarfoundation.org>; Thu, 11 Apr 2019 17:09:45 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Thu, 11 Apr 2019 17:09:45 -0500
+Received: from mail-pl1-f169.google.com ([209.85.214.169]:33264)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1hEhtB-003G38-7n
+	for info@saiparivarfoundation.org; Thu, 11 Apr 2019 17:09:45 -0500
+Received: by mail-pl1-f169.google.com with SMTP id t16so4072165plo.0
+        for <info@saiparivarfoundation.org>; Thu, 11 Apr 2019 15:09:40 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:message-id:date:from
+         :reply-to:to:subject:mime-version:list-unsubscribe
+         :list-unsubscribe-post;
+        bh=hF1S836sOEUy7k1SsXMBr8wv80s8s/IHNqJVUI0nSEM=;
+        b=sLrRr80vZwVeP3g0Yy0Y9pGDDsPgEVp62AhHryx+UW6h84VMfJ6U96wBPz822njzLW
+         BNYoWLfBL3Fl7RPT3LVk5y6IxjK+So4TsFEJ9Pz4jnqZUFiI8HlSkF2loBrdLnhDp+rp
+         gaT5zq/cnntA5eL8c3MMoj97XuHlwcZCmfLFMlws/ZfhLoSxhcfx2czFJKNfU3c/U2el
+         bFWYI47ta2AQcU+0NztIxDJkWsG/hH6mHxIhkAbBhZsWb1dmvO5f13jxFiEBcWNgjH8n
+         hkozf+JjImZn+DGxFEA1hiKlBS4n7Ro5oeVNhhVvrH9USZOdOPDNPVdSFcnoqYMXYWy1
+         2Usw==
+X-Gm-Message-State: APjAAAVzS3L8CRFBJNkUsfHp+7vgIhnsk/XxDqJ5l1ZL/ReuxY5sbOQx
+	h4M4Hao1AxhT0SUY5qdihGWtHlJJeVtW+0Igc34svM89kQ2I9cA=
+X-Received: by 2002:a17:902:9004:: with SMTP id a4mr53767234plp.223.1555020573974;
+        Thu, 11 Apr 2019 15:09:33 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a17:90a:9281:0:0:0:0 with SMTP id n1csp7699428pjo;
+        Thu, 11 Apr 2019 15:09:32 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzPurAxDF230L0RWZLqu/JmFXW/bxHrx5gKnsY+/13IQGPyigU9FxxIGaAGUzuoowvnZ7tr
+X-Received: by 2002:a25:a341:: with SMTP id d59mr43916747ybi.426.1555020572158;
+        Thu, 11 Apr 2019 15:09:32 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1555020572; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Fc/mFB+pjv+9i2SRwXCmA8T1Io7HWIyTVtCXPGhaVoyW70YvnEIxjB+1XB8JOzM4At
+         RjPoY0p2rNk6pDvogMXKnUtGQAUr8LjlDxfgwWcz9Jj/2FNWTUTWzyM9rEM7bW5RMwl8
+         fEGEMNUyFi0nbvO0IEPTUenMANDFgMbQqfbHnXyoIF6OqmJgXwIEKsOlLI8rx6C5ChSO
+         ZuT+N17fn1aaZYobhAB0BkbbgXvjrWL5MAmffH2QHKGKmEj0Ih9no1jBwWhtVFloK5+n
+         dUvEW4NyYkRqWoOjYEqvjl5tGh17sJ1i/0p2VILUwZaUmYyGnqJ+sMxbHa8qGiekORBL
+         vOWg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe-post:list-unsubscribe:mime-version:subject:to
+         :reply-to:from:date:message-id:dkim-signature;
+        bh=hF1S836sOEUy7k1SsXMBr8wv80s8s/IHNqJVUI0nSEM=;
+        b=GjxCwiSxIgNYDgFPmNbBHvW9bZ1vm8FXEOywUEiX3kXtLqGLWuOxwbncI3wFttey4B
+         eLoWpZSBfFn8UF3zLPikd7zYU30MoPWAv5/G3mjG9toHY8mi7YJatvD5fvkzY6WV8B5t
+         gDFq0thEJSlACfr+q+I9LBEsN6C5G3OfA25AKLbC13gr22Je1D8Fpv0t7gYHQ2UlxZWh
+         9dgr/GuMNopzHi5rKeEpK7uWTVfddlUaMta8pSBIp6RDNnYZgEcFLQt7PQBiEA9/nukJ
+         erqGbw8Uuot0DiTBVPXBRpgqQ/C0QxwRbIceffCVJwo/crPfc2LcSaBgN18cSQkfbaj2
+         V8Aw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@auth.ccsend.com header.s=1000073432 header.b=Mspix+nm;
+       spf=pass (google.com: domain of aczd1noy5rnahaundhphn4g==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.145 as permitted sender) smtp.mailfrom="AcZD1noy5RNaHaUNdHPHn4g==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com"
+Received: from ccm145.constantcontact.com (ccm145.constantcontact.com. [208.75.123.145])
+        by mx.google.com with ESMTPS id q66si10533312ywq.142.2019.04.11.15.09.31
+        for <SaiParivarFoundation@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 11 Apr 2019 15:09:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of aczd1noy5rnahaundhphn4g==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.145 as permitted sender) client-ip=208.75.123.145;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@auth.ccsend.com header.s=1000073432 header.b=Mspix+nm;
+       spf=pass (google.com: domain of aczd1noy5rnahaundhphn4g==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.145 as permitted sender) smtp.mailfrom="AcZD1noy5RNaHaUNdHPHn4g==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com"
+Received: from [10.252.0.104] ([10.252.0.104:40417] helo=p2-jbemailsyndicator34.ctct.net)
+	by 10.249.249.20 (envelope-from <AcZD1noy5RNaHaUNdHPHn4g==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com>)
+	(ecelerity 4.2.1.52273 r(Core:4.2.1.11)) with ESMTP
+	id 5A/8E-13989-B1BBFAC5; Thu, 11 Apr 2019 18:09:31 -0400
+DKIM-Signature: v=1; q=dns/txt; a=rsa-sha256; c=relaxed/relaxed; s=1000073432; d=auth.ccsend.com; h=date:mime-version:subject:X-Feedback-ID:message-id:from:reply-to:list-unsubscribe:list-unsubscribe-post:to; bh=hF1S836sOEUy7k1SsXMBr8wv80s8s/IHNqJVUI0nSEM=; b=Mspix+nmNxyMrucLJDixpP+Aw8GLz03UK6Fxe5RgaTUMEXneF4QnZCIPXDokpr7e7Z4EOCLJSGhz0pG2Z1VbzEXHcxiVP1Rh0yrnnNVfTugha10JlIIq06MWi+zm8DggN0L0qk7AJUvReToZrRmo41Vdz7P+sIYn6hOCx4JO16U=
+Message-ID: <1132469968717.1103573720993.1659182514.0.531809JL.2002@scheduler.constantcontact.com>
+Date: Thu, 11 Apr 2019 18:09:31 -0400 (EDT)
+From: The Sophia Way <events@sophiaway.org>
+Reply-To: events@sophiaway.org
+To: SaiParivarFoundation@gmail.com
+Subject: A Day of Celebration!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_373775016_2112826466.1555020571160"
+List-Unsubscribe: <https://visitor.constantcontact.com/do?p=un&m=001CLN_S13g0et-LAh2PzLdPA%3D%3D&se=001sdyEB58gEl5pHBscD5_RCQ%3D%3D&t=001EkZLEx15CcE%3D&llr=b6h6bzdab>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Campaign-Activity-ID: 7190f59e-8cb9-44d6-8769-435d1cf1e7e2
+X-Channel-ID: df87a940-3fe5-11e7-be45-d4ae52843dc7
+X-Mailer: Roving Constant Contact 2012 (http://www.constantcontact.com)
+X-Return-Path-Hint: AcZD1noy5RNaHaUNdHPHn4g==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com
+X-Roving-Campaignid: 1132469968717
+X-Roving-Id: 1103573720993.1659182514
+X-Feedback-ID: df87a940-3fe5-11e7-be45-d4ae52843dc7:7190f59e-8cb9-44d6-8769-435d1cf1e7e2:1103573720993:CTCT
+X-CTCT-ID: df3c9680-3fe5-11e7-be45-d4ae52843dc7
+
+------=_Part_373775016_2112826466.1555020571160
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+The Community Comes Together  A NEW BEGINNING A NEW PERMANENT SHELTER It wa=
+s a community gathering that uplifted our hearts. County and City officials=
+, faith communities and individuals, gathered together to break ground for =
+the new shelter that will support women and families with children experien=
+cing homelessness. Read the story of the journey to build this shelter. Wat=
+ch the video of the event. =EF=BB=BFShelter Facts Breaking Ground From left=
+ to right: Kurt Triplett (Kirkland City Manager), Pastor Sara Wolbrecht (Sa=
+lt House Church), Fr. Gary Zender (St. Louise Catholic Church), Dow Constan=
+tine (Executive of King County), Penny Sweet (Mayor of Kirkland), Fr. Kurt =
+Nagel (Holy Family Parish), Rob Whitman (Deacon Construction), Grant Linacr=
+e (Emerald Heights Executive Director), Karina O' Malley (The Sophia Way Bo=
+ard Member), Linda De Boldt (New Bethlehem Project Steering Committee Chair=
+), Klaas Nijhuis (ARCH Sr. Housing Planner).  =E2=80=9CThe shelter, a colla=
+borative effort, will provide the foundation of a strong community, a place=
+ to land when times are hard, a lighthouse in the storm of difficult circum=
+stances. The Sophia Way will be able to bring all its emergency services to=
+gether in one place, and serve women in crisis with dignity and respect." -=
+ Karina O' Malley Aleta Blakely, who came to The Sophia Way in 2016 and lat=
+er found housing shared her story. "I found a home base that helped me real=
+ign my life. They made me feel safe and warm. I had a supportive place to b=
+e. As I began to heal and feel my foundation returning, amazing things bega=
+n to happen." "The City of Kirkland is proud to be a part of the collaborat=
+ive effort to bring this shelter to our community. This shelter will be a s=
+ignificant resource for families and women in our region." - Penny Sweet, M=
+ayor of Kirkland  =E2=80=9CToday we are breaking ground for a new permanent=
+ location, which is cause for a real celebration and we're also celebrating=
+ the community collaboration that is making this possible.=E2=80=9D - Dow C=
+onstantine, King County Executive The Sophia Way Team and Supporters (from =
+left to right): Christine Miles, Linda Benson, Alisa Chatinsky, Sujata Agra=
+wal, Danielle Porter, Maya Subramanian, Grant Linacre, Shelley Benson, Diet=
+ra Clayton, Karina O' Malley, and Joani Wolfe All photo credits: Michelle A=
+hearn Photography Partners in Collaboration We are seeking support for the =
+final dollars to complete our capital campaign. Your support can help us re=
+ach that goal. Donate To Our Capital Campaign Our Office The Sophia Way 110=
+61 NE 2nd Street, Suite 223 Bellevue, WA 98004 Ph: 425-463-6285 Email: info=
+@sophiaway.org Our Shelter Sophia=E2=80=99s Place 3032 Bellevue Way NE Bell=
+evue, WA 98004 Ph: 425-896-7385 Bus Route: 249 FOLLOW. LIKE. TAG. SHARE. =
+=E2=80=8C =E2=80=8C =E2=80=8C The Sophia Way | 11061 NE 2nd St., Suite 223,=
+ Bellevue, WA 98004 Unsubscribe SaiParivarFoundation@gmail.com Update Profi=
+le | About our service provider Sent by events@sophiaway.org in collaborati=
+on with Try it free today
+------=_Part_373775016_2112826466.1555020571160
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type">
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"viewpor=
+t">
+<meta charset=3D"UTF-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1,=
+ maximum-scale=3D1">
+<!--[if gte mso 9]>
+<style id=3D"ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]-->
+<style id=3D"template-styles-head" data-premailer=3D"ignore">
+.footer-main-width {
+width: 630px!important;
+max-width: 630px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D
+CLIENT/BROWSER SPECIFIC OVERRIDES
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+ */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 630px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base=
+ div, [office365] .editor-image div { display: block !important; }
+</style>
+<style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 0px 0px 0px 0px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !i=
+mportant;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.two-column.editor-col.OneColumnMobile ~ td.two-column.editor-col.OneColu=
+mnMobile {
+border-left: 0px;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #486CB4 !important; border-bottom: 1px solid #486CB=
+4 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: local(=
+'Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.=
+com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2'); u=
+nicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2=
+000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style>
+</head>
+<body class=3D"body" align=3D"center" style=3D"width: 100%; min-width: 100%=
+; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-co=
+lor: #D1D9E3; margin: 0px; padding: 0px;" bgcolor=3D"#D1D9E3">
+<table class=3D"template-body" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"text-align: center; min-width: 100%;" width=3D"100%">
+<tr>
+<td class=3D"preheader-container">
+<div>
+<div id=3D"preheader" style=3D"display: none; font-size: 1px; color: transp=
+arent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overf=
+low: hidden;">
+<span data-entity-ref=3D"preheader">The Community Comes Together</span>
+</div>
+<img src=3D"http://r20.rs6.net/on.jsp?ca=3D7190f59e-8cb9-44d6-8769-435d1cf1=
+e7e2&a=3D1103573720993&c=3Ddf3c9680-3fe5-11e7-be45-d4ae52843dc7&ch=3Ddf87a9=
+40-3fe5-11e7-be45-d4ae52843dc7" / alt=3D"">
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"template-shell-container" align=3D"center">
+<div class=3D"bgcolor" style=3D"background-color: #D1D9E3;">
+<table class=3D"bgimage" width=3D"100%" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"background-color: #D1D9E3;" bgcolor=3D"#D1D9E3">
+<tbody>
+<tr>
+<td align=3D"center">
+<table class=3D"main-width" width=3D"630" align=3D"center" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"width: 630px;">
+<tbody>
+<tr>
+<td class=3D"layout" align=3D"center" valign=3D"top" style=3D"padding: 15px=
+ 5px;">
+<table width=3D"100%" align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0">
+<tbody>
+<tr>
+<td class=3D"layout-container-border" align=3D"center" valign=3D"top" style=
+=3D"background-color: #486CB4; padding: 0px;" bgcolor=3D"#486CB4">
+<table width=3D"100%" align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"background-color: #486CB4;" bgcolor=3D"#486CB4">
+<tbody>
+<tr>
+<td class=3D"layout-container" align=3D"center" valign=3D"top" style=3D"bac=
+kground-color: #FFFFFF; padding: 0;" bgcolor=3D"#FFFFFF">
+<div class=3D"">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table width=3D"100%" class=3D"galileo-ap-content-editor" style=3D"cursor: =
+default; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" width=3D"100%" align=3D"center" va=
+lign=3D"top" style=3D"padding: 10px 0px 9px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"width: 94%; min-width: 94%; height: 1px;">
+<tbody>
+<tr>
+<td height=3D"1" align=3D"center" style=3D"padding-bottom: 2px; border-bott=
+om-style: none; height: 1px; line-height: 1px; background-color: #486CB4;" =
+bgcolor=3D"#486CB4">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image editor-image" width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-top: 0px; padding-bott=
+om: 0px;">
+<div class=3D"publish-container">
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D001_uNimdvdEUdcdQmuF3ZRLp9ArmWkDhI=
+h3k4VrWSASMED3zau3hLGsI_oafFWGfl-FDvZ0CB08CfwEdRgTCQV-dVzvvpwkU-PnvaEKXCIcE=
+IXdaolbXLPfL1rqtyrfT-sjlYQht30OZ47-1mAla9t1Q=3D=3D&c=3DzQ9ILDP-exkLu7tPOlNR=
+EuwrOAYRGplClrIHkEPi3hzLhlbC9xOvVA=3D=3D&ch=3D86F-JTmJBxs57N5gjfGMj--_KQHrg=
+3buBBv3QxX1vBE5Ctzrc0WmeA=3D=3D">
+<img alt=3D"" class=3D"" style=3D"display: block; height: auto !important; =
+max-width: 100% !important;" width=3D"620" border=3D"0" hspace=3D"0" vspace=
+=3D"0" src=3D"https://files.constantcontact.com/1af9e12f001/5bd4a2c6-762b-4=
+7dd-a9bc-c6033798b7c9.png">
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table width=3D"100%" class=3D"galileo-ap-content-editor" style=3D"cursor: =
+default; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" width=3D"100%" align=3D"center" va=
+lign=3D"top" style=3D"padding: 10px 0px 9px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"width: 94%; min-width: 94%; height: 1px;">
+<tbody>
+<tr>
+<td height=3D"1" align=3D"center" style=3D"padding-bottom: 2px; border-bott=
+om-style: none; height: 1px; line-height: 1px; background-color: #486CB4;" =
+bgcolor=3D"#486CB4">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"headline editor-col OneColumnMobile" width=3D"100%" align=3D"l=
+eft" valign=3D"top">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text headline-text" align=3D"left" valign=3D"top" style=
+=3D"font-family: Open Sans,sans-serif; font-size: 24px; color: #002E64; tex=
+t-align: center; display: block; word-wrap: break-word; line-height: 1.2; f=
+ont-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div>A NEW BEGINNING</div>
+<div>A NEW PERMANENT SHELTER</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top" style=3D"background-color: rgb(245, 245, 245);" bgcolor=3D"F5F5F5"=
+>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; tex=
+t-align: left; display: block; word-wrap: break-word; line-height: 1.2; pad=
+ding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; color: rgb(29, 33, 41);">It was a comm=
+unity gathering that uplifted our hearts. County and City officials, faith =
+communities and individuals, gathered together to break ground for the new =
+shelter that will support women and families with children experiencing hom=
+elessness. </span></div>
+<div><br></div>
+<div>
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D001_uNimdvdEUdcdQmuF3ZRLp9ArmWkDhI=
+h3k4VrWSASMED3zau3hLGsNOHh_YmmACdt2UMQCBXuSOg1--2cAIU8WEjNgI4iFb7EBMQ12CENA=
+AThg5XOGS9sgVQlNA8dblJBnGRUmGFbnBFjurTcb42aMuZyWzYlCt1SqekRj8-mLkL3xhXZlWjg=
+Cg-6pPSa852ioi8XSR93r4=3D&c=3DzQ9ILDP-exkLu7tPOlNREuwrOAYRGplClrIHkEPi3hzLh=
+lbC9xOvVA=3D=3D&ch=3D86F-JTmJBxs57N5gjfGMj--_KQHrg3buBBv3QxX1vBE5Ctzrc0WmeA=
+=3D=3D" target=3D"_blank" style=3D"font-size: 14px; font-weight: bold; colo=
+r: #486CB4; font-style: normal; text-decoration: none;">Read</a><span style=
+=3D"font-size: 14px;"> the story of the journey to build this shelter. </sp=
+an><a href=3D"http://r20.rs6.net/tn.jsp?f=3D001_uNimdvdEUdcdQmuF3ZRLp9ArmWk=
+DhIh3k4VrWSASMED3zau3hLGsNOHh_YmmACdwoh9oVaWJNK4PverCUjd_l_PP5UeaWnkjhqiRaa=
+nwT58Yq3gkgMQq1Grp2GBhmNyqyj21I8EcOSijFQ0qzIIP3oAyiE2s0HyrxaREv3SDchRHkSrLg=
+o5BYYprfkTPdW-f4PLv4vBDSD8PT8irjIczjGcFZfaZAT_9_rFc07zSxesiQd9qfpMP6-MIUdv9=
+lHiAZB7YLmBtlmFRspSP2sFPw=3D=3D&c=3DzQ9ILDP-exkLu7tPOlNREuwrOAYRGplClrIHkEP=
+i3hzLhlbC9xOvVA=3D=3D&ch=3D86F-JTmJBxs57N5gjfGMj--_KQHrg3buBBv3QxX1vBE5Ctzr=
+c0WmeA=3D=3D" target=3D"_blank" style=3D"font-size: 14px; color: #486CB4; f=
+ont-weight: bold; font-style: normal; text-decoration: none;">Watch</a><spa=
+n style=3D"font-size: 14px;"> the video of the event. </span>
+</div>
+<div><a href=3D"http://r20.rs6.net/tn.jsp?f=3D001_uNimdvdEUdcdQmuF3ZRLp9Arm=
+WkDhIh3k4VrWSASMED3zau3hLGsNOHh_YmmACdCx_VfLkuVN4tN8_8B2oqc13bukpZ6o1I3zVFy=
+LXOhmgZApP0DGCEm8CyJSn0geksy83zWLKwuN01N0wF9KmnRLiVudZPH2yLvFS5SQM4Phg=3D&c=
+=3DzQ9ILDP-exkLu7tPOlNREuwrOAYRGplClrIHkEPi3hzLhlbC9xOvVA=3D=3D&ch=3D86F-JT=
+mJBxs57N5gjfGMj--_KQHrg3buBBv3QxX1vBE5Ctzrc0WmeA=3D=3D" target=3D"_blank" s=
+tyle=3D"font-size: 14px; color: #486CB4; font-weight: bold; font-style: nor=
+mal; text-decoration: none;">&#xfeff;Shelter Facts</a></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table width=3D"100%" class=3D"galileo-ap-content-editor" style=3D"cursor: =
+default; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" width=3D"100%" align=3D"center" va=
+lign=3D"top" style=3D"padding: 9px 0;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"height: 1px; width: 94%; min-width: 94%;">
+<tbody>
+<tr>
+<td height=3D"1" align=3D"center" style=3D"border-bottom-style: none; heigh=
+t: 1px; line-height: 1px; padding-bottom: 0px; background-color: #486CB4;" =
+bgcolor=3D"#486CB4">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; tex=
+t-align: left; display: block; word-wrap: break-word; line-height: 1.2; pad=
+ding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div style=3D"=
+text-align: center;" align=3D"center"><span style=3D"font-size: 24px; color=
+: rgb(0, 46, 100); font-weight: bold;">Breaking Ground</span></div></div></=
+div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image editor-image  editor-image-vspace-on" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-top: 10px; padding-bot=
+tom: 10px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto !important; max-width: 100% !important;" width=3D"61=
+8" border=3D"0" hspace=3D"0" vspace=3D"0" src=3D"https://files.constantcont=
+act.com/1af9e12f001/ad8a2520-89ac-48f6-b980-14dc4f4b636d.jpg">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top" style=3D"background-color: rgb(245, 245, 245);" bgcolor=3D"F5F5F5"=
+>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; tex=
+t-align: left; display: block; word-wrap: break-word; line-height: 1.2; pad=
+ding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div>
+<span style=3D"font-size: 12px; color: rgb(29, 33, 41);">From left to right=
+: </span><span style=3D"font-size: 12px;">Kurt Triplett (Kirkland City Mana=
+ger), Pastor Sara Wolbrecht (Salt House Church), Fr. Gary Zender (St. Louis=
+e Catholic Church), Dow Constantine (Executive of King County), Penny Sweet=
+ (Mayor of Kirkland), Fr. Kurt Nagel (Holy Family Parish), Rob Whitman (Dea=
+con Construction), Grant Linacre (Emerald Heights Executive Director), Kari=
+na O' Malley (The Sophia Way Board Member), Linda De Boldt (New Bethlehem P=
+roject Steering Committee Chair), Klaas Nijhuis (ARCH Sr. Housing Planner).=
+ </span>
+</div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table width=3D"100%" class=3D"galileo-ap-content-editor" style=3D"cursor: =
+default; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" width=3D"100%" align=3D"center" va=
+lign=3D"top" style=3D"padding: 9px 0;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"height: 1px; width: 94%; min-width: 94%;">
+<tbody>
+<tr>
+<td height=3D"1" align=3D"center" style=3D"border-bottom-style: none; heigh=
+t: 1px; line-height: 1px; padding-bottom: 0px; background-color: #486CB4;" =
+bgcolor=3D"#486CB4">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"spacer editor-col OneColumnMobile" width=3D"100%" align=3D"lef=
+t" valign=3D"top">
+<div class=3D"gl-contains-spacer">
+<table class=3D"editor-spacer" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"spacer-container" align=3D"center" valign=3D"top">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"spacer-base" style=3D"padding-bottom: 21px; height: 1px; line-=
+height: 1px;" width=3D"100%" align=3D"center" valign=3D"top">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/sys/S.gif"=
+ style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"two-column editor-col OneColumnMobile" width=3D"50%" align=3D"=
+left" valign=3D"top">
+<div><div class=3D"column-resize-bar">
+<span class=3D"line"></span>
+<span class=3D"grabber"></span>
+</div></div>
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image content-image editor-image-vspace-on editor-im=
+age-hspace-on" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding: 10px 10px 10px 20px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" width=3D"280" border=3D"0" hspace=
+=3D"0" vspace=3D"0" src=3D"https://files.constantcontact.com/1af9e12f001/16=
+3f976b-2762-4cb8-9018-13a9638ef9bf.jpg">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text two-column-text" align=3D"left" valign=3D"top" sty=
+le=3D"font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; t=
+ext-align: left; display: block; word-wrap: break-word; line-height: 1.2; p=
+adding: 10px 10px 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; font-style: italic;">&#xa0;&#x201c;The=
+ shelter, a collaborative effort, will provide the foundation of a strong c=
+ommunity, a place to land when times are hard, a lighthouse in the storm of=
+ difficult circumstances.&#xa0;The Sophia Way will be able to bring all its=
+ emergency services together in one place, and serve women in crisis with d=
+ignity and respect."</span></div>
+<div>
+<span style=3D"font-size: 14px; font-style: italic;"> - </span><span style=
+=3D"font-size: 14px;">Karina O' Malley</span>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=3D"two-column editor-col OneColumnMobile" width=3D"50%" align=3D"=
+left" valign=3D"top">
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image content-image editor-image-vspace-on editor-im=
+age-hspace-on" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0">
+<tbody>
+<tr>
+<td align=3D"right" valign=3D"top" style=3D"padding: 10px 20px 10px 10px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" width=3D"280" border=3D"0" hspace=
+=3D"0" vspace=3D"0" src=3D"https://files.constantcontact.com/1af9e12f001/c0=
+2d1ddb-fad7-4181-b071-2cbc635c9551.jpg">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text two-column-text" align=3D"left" valign=3D"top" sty=
+le=3D"font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; t=
+ext-align: left; display: block; word-wrap: break-word; line-height: 1.2; p=
+adding: 10px 20px 10px 10px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; color: rgb(48, 48, 48);">Aleta Blakely=
+, who came to The Sophia Way in 2016 and later found housing shared her sto=
+ry. </span></div>
+<div>
+<span style=3D"font-size: 14px; color: rgb(48, 48, 48); font-style: italic;=
+">"I found a </span><span style=3D"font-size: 14px; color: rgb(38, 38, 38);=
+ font-style: italic;">home base that helped me realign my life. They made m=
+e feel safe and warm. I had a supportive place to be. As I began to heal an=
+d feel my foundation returning, amazing things began to happen."</span>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"two-column editor-col OneColumnMobile" width=3D"50%" align=3D"=
+left" valign=3D"top">
+<div><div class=3D"column-resize-bar">
+<span class=3D"line"></span>
+<span class=3D"grabber"></span>
+</div></div>
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image content-image editor-image-vspace-on editor-im=
+age-hspace-on" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding: 10px 10px 10px 20px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" width=3D"280" border=3D"0" hspace=
+=3D"0" vspace=3D"0" src=3D"https://files.constantcontact.com/1af9e12f001/cd=
+39bfcf-4a7f-4ddc-8c75-ec660db3fc3d.jpg">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text two-column-text" align=3D"left" valign=3D"top" sty=
+le=3D"font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; t=
+ext-align: left; display: block; word-wrap: break-word; line-height: 1.2; p=
+adding: 10px 10px 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; font-style: italic;">"The City of Kirk=
+land is proud to be a part of the collaborative effort to bring this shelte=
+r to our community. This shelter will be a significant resource for familie=
+s and women in our region."</span></div>
+<div><span style=3D"font-size: 14px;">- Penny Sweet, Mayor of Kirkland&#xa0=
+;</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=3D"two-column editor-col OneColumnMobile" width=3D"50%" align=3D"=
+left" valign=3D"top">
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image content-image editor-image-vspace-on editor-im=
+age-hspace-on" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0">
+<tbody>
+<tr>
+<td align=3D"right" valign=3D"top" style=3D"padding: 10px 20px 10px 10px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" width=3D"280" border=3D"0" hspace=
+=3D"0" vspace=3D"0" src=3D"https://files.constantcontact.com/1af9e12f001/53=
+437071-ddb0-4754-a8ac-c54f2c216a0e.jpg">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text two-column-text" align=3D"left" valign=3D"top" sty=
+le=3D"font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; t=
+ext-align: left; display: block; word-wrap: break-word; line-height: 1.2; p=
+adding: 10px 20px 10px 10px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; font-style: italic;">&#x201c;Today we =
+are breaking ground for a new permanent location, which is cause for a real=
+ celebration and we're also celebrating the community collaboration that is=
+ making this possible.&#x201d;</span></div>
+<div><span style=3D"font-size: 14px;">- Dow Constantine, King County Execut=
+ive</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"65%" align=3D"" valign=
+=3D"top">
+<div><div class=3D"column-resize-bar">
+<span class=3D"line"></span>
+<span class=3D"grabber"></span>
+</div></div>
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image editor-image  editor-image-vspace-on" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-top: 10px; padding-bot=
+tom: 10px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto !important; max-width: 100% !important;" width=3D"40=
+3" border=3D"0" hspace=3D"0" vspace=3D"0" src=3D"https://files.constantcont=
+act.com/1af9e12f001/dd98e28a-8a59-41fe-ac8b-bc97ee6fd31c.jpg">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=3D" editor-col OneColumnMobile" width=3D"35%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text " align=3D"left" valign=3D"top" style=3D"font-fami=
+ly: Open Sans,sans-serif; font-size: 16px; color: #000000; text-align: left=
+; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20=
+px 10px 10px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div><span sty=
+le=3D"font-size: 12px;">The Sophia Way Team and Supporters (from left to ri=
+ght): Christine Miles, Linda Benson, Alisa Chatinsky, Sujata Agrawal, Danie=
+lle Porter, Maya Subramanian, Grant Linacre, Shelley Benson, Dietra Clayton=
+, Karina O' Malley, and Joani Wolfe</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; tex=
+t-align: left; display: block; word-wrap: break-word; line-height: 1.2; pad=
+ding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div style=3D"=
+text-align: right;" align=3D"right"><span style=3D"font-size: 12px;">All ph=
+oto credits: Michelle Ahearn Photography</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table width=3D"100%" class=3D"galileo-ap-content-editor" style=3D"cursor: =
+default; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" width=3D"100%" align=3D"center" va=
+lign=3D"top" style=3D"padding: 10px 0px 9px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"width: 94%; min-width: 94%; height: 1px;">
+<tbody>
+<tr>
+<td height=3D"1" align=3D"center" style=3D"padding-bottom: 2px; border-bott=
+om-style: none; height: 1px; line-height: 1px; background-color: #486CB4;" =
+bgcolor=3D"#486CB4">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; tex=
+t-align: left; display: block; word-wrap: break-word; line-height: 1.2; pad=
+ding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div style=3D"=
+text-align: center;" align=3D"center"><span style=3D"font-size: 24px; color=
+: rgb(0, 46, 100);">Partners in Collaboration</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image editor-image  editor-image-vspace-on" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding-top: 10px; padding-bot=
+tom: 10px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto !important; max-width: 100% !important;" width=3D"39=
+6" border=3D"0" hspace=3D"0" vspace=3D"0" src=3D"https://files.constantcont=
+act.com/1af9e12f001/45af8eeb-ec5a-4481-9cb7-4a0e3a5c1067.png">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table width=3D"100%" class=3D"galileo-ap-content-editor" style=3D"cursor: =
+default; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" width=3D"100%" align=3D"center" va=
+lign=3D"top" style=3D"padding: 10px 0px 9px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"width: 94%; min-width: 94%; height: 1px;">
+<tbody>
+<tr>
+<td height=3D"1" align=3D"center" style=3D"padding-bottom: 2px; border-bott=
+om-style: none; height: 1px; line-height: 1px; background-color: #486CB4;" =
+bgcolor=3D"#486CB4">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top" style=3D"background-color: rgb(255, 255, 255);" bgcolor=3D"FFFFFF"=
+>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " align=3D"left" valign=3D"top" style=
+=3D"font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; tex=
+t-align: left; display: block; word-wrap: break-word; line-height: 1.2; pad=
+ding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div style=3D"=
+text-align: center;" align=3D"center"><span style=3D"font-style: italic;">W=
+e are seeking support for the final dollars to complete our capital campaig=
+n. Your support can help us reach that goal. </span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top" style=3D"background-color: rgb(255, 255, 255);" bgcolor=3D"FFFFFF"=
+>
+<div class=3D"gl-contains-button">
+<table class=3D"editor-button" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"editor-button-container " style=3D"font-family: Arial, Verdana=
+, Helvetica, sans-serif; font-size: 14px; font-weight: bold; display: block=
+; color: #FFFFFF; text-decoration: none; padding: 10px 20px;">
+<table class=3D"galileo-ap-content-editor" style=3D"width: 100%; min-width:=
+ 100%;">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" class=3D"MainTextFullWidthTD" style=3D"=
+font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-w=
+eight: bold; display: block; color: #FFFFFF; text-decoration: none; padding=
+: 0px;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: ini=
+tial; moz-border-radius: 0px; border-radius: 0px; border-spacing: 0; backgr=
+ound-color: #486CB4; min-width: initial; padding: 0; border: none;" bgcolor=
+=3D"#486CB4">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" class=3D"MainTextFullWidthTD" style=3D"=
+font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-w=
+eight: bold; display: block; color: #FFFFFF; text-decoration: none; padding=
+: 9px 15px 10px;">
+<div>
+<div class=3D"MainTextFullWidth"><a href=3D"http://r20.rs6.net/tn.jsp?f=3D0=
+01_uNimdvdEUdcdQmuF3ZRLp9ArmWkDhIh3k4VrWSASMED3zau3hLGsNOHh_YmmACd8Vg8Xnmuv=
+9ULNB4P3EUSWvmA5GtP3QI5FL8_niE1Jkw19L1GwEXizMvd_wTbQ0xuTJgZ6kzVyCvFzDi28ogf=
+wG2pcfnej2NE&c=3DzQ9ILDP-exkLu7tPOlNREuwrOAYRGplClrIHkEPi3hzLhlbC9xOvVA=3D=
+=3D&ch=3D86F-JTmJBxs57N5gjfGMj--_KQHrg3buBBv3QxX1vBE5Ctzrc0WmeA=3D=3D" styl=
+e=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; f=
+ont-weight: bold; display: block; color: #FFFFFF; text-decoration: none;">D=
+onate To Our Capital Campaign</a></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" align=3D"" valign=
+=3D"top" style=3D"background-color: rgb(255, 255, 255);" bgcolor=3D"FFFFFF"=
+>
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" align=3D"center" valign=3D"top">
+<table width=3D"100%" class=3D"galileo-ap-content-editor" style=3D"cursor: =
+default; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" width=3D"100%" align=3D"center" va=
+lign=3D"top" style=3D"padding: 9px 0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"width: 80%; min-width: 80%; height: 1px;">
+<tbody>
+<tr>
+<td height=3D"1" align=3D"center" style=3D"padding-bottom: 0px; border-bott=
+om-style: none; height: 1px; line-height: 1px; background-color: #486CB4;" =
+bgcolor=3D"#486CB4">
+<div><img alt=3D"" width=3D"5" height=3D"1" border=3D"0" hspace=3D"0" vspac=
+e=3D"0" src=3D"https://imgssl.constantcontact.com/letters/images/1101116784=
+221/S.gif" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"content editor-col OneColumnMobile" width=3D"50%" align=3D"lef=
+t" valign=3D"top" style=3D"background-color: rgb(255, 255, 255);" bgcolor=
+=3D"FFFFFF">
+<div><div class=3D"column-resize-bar">
+<span class=3D"line"></span>
+<span class=3D"grabber"></span>
+</div></div>
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text " align=3D"left" valign=3D"top" style=3D"font-fami=
+ly: Open Sans,sans-serif; font-size: 16px; color: #000000; text-align: left=
+; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10=
+px 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; font-weight: bold;">Our Office</span><=
+/div>
+<div><span style=3D"font-size: 14px;">The Sophia Way</span></div>
+<div><span style=3D"font-size: 14px;">11061 NE 2nd Street, Suite 223</span>=
+</div>
+<div><span style=3D"font-size: 14px;">Bellevue, WA 98004</span></div>
+<div><span style=3D"font-size: 14px;">Ph: 425-463-6285</span></div>
+<div>
+<span style=3D"font-size: 14px;">Email: </span><a href=3D"mailto:info@sophi=
+away.org" target=3D"_blank" style=3D"font-size: 14px; color: #486CB4; font-=
+weight: bold; font-style: normal; text-decoration: none;">info@sophiaway.or=
+g</a>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=3D"content editor-col OneColumnMobile" width=3D"50%" align=3D"lef=
+t" valign=3D"top" style=3D"background-color: rgb(255, 255, 255);" bgcolor=
+=3D"FFFFFF">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text " align=3D"left" valign=3D"top" style=3D"font-fami=
+ly: Open Sans,sans-serif; font-size: 16px; color: #000000; text-align: left=
+; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20=
+px 10px 10px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; font-weight: bold;">Our Shelter</span>=
+</div>
+<div><span style=3D"font-size: 14px;">Sophia&#x2019;s Place</span></div>
+<div><span style=3D"font-size: 14px;">3032 Bellevue Way NE</span></div>
+<div><span style=3D"font-size: 14px;">Bellevue, WA 98004</span></div>
+<div><span style=3D"font-size: 14px;">Ph: 425-896-7385</span></div>
+<div><span style=3D"font-size: 14px;">Bus Route: 249</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" clas=
+s=3D"galileo-ap-layout-editor" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"content editor-col OneColumnMobile" width=3D"100%" align=3D"le=
+ft" valign=3D"top" style=3D"background-color: rgb(255, 255, 255);" bgcolor=
+=3D"FFFFFF">
+<div class=3D"gl-contains-text">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text center-text" align=3D"left" valign=3D"top" style=
+=3D"font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; tex=
+t-align: center; display: block; word-wrap: break-word; line-height: 1.2; p=
+adding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div>FOLLOW. L=
+IKE. TAG. SHARE.</div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"gl-contains-social-button">
+<table class=3D"editor-social" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" social-container social-container" align=3D"center" style=3D"=
+padding: 0px 20px 10px;">
+<div class=3D"galileo-ap-content-editor">
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D001_uNimdvdEUdcdQmuF3ZRLp9ArmWkDhI=
+h3k4VrWSASMED3zau3hLGsOckwConQGzQ83G-EUWYJjBicCDiKtmIiDrSa0Ae3TAy1aShNjDJt9=
+KbJD45oLiy6fwUAtu6sPT-iB2TGXjV9fLvtFFFa2Vg8hyexEqU6ifD&c=3DzQ9ILDP-exkLu7tP=
+OlNREuwrOAYRGplClrIHkEPi3hzLhlbC9xOvVA=3D=3D&ch=3D86F-JTmJBxs57N5gjfGMj--_K=
+QHrg3buBBv3QxX1vBE5Ctzrc0WmeA=3D=3D" style=3D"display: inline-block; text-d=
+ecoration: none;">
+<img alt=3D"Facebook" width=3D"32" border=3D"0" src=3D"https://imgssl.const=
+antcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-=
+default-circle.png" style=3D"display: inline-block; margin: 0; padding: 0;"=
+> &#x200c;
+</a>
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D001_uNimdvdEUdcdQmuF3ZRLp9ArmWkDhI=
+h3k4VrWSASMED3zau3hLGsGvs8qpOePmAt7HX8KC4IpfPzPE6l1G3U4HS4XBcOHp55WJJ9e4GK0=
+HFj3CmDyfNtUR0xRYquWvl--paIR_np0xouDxpmEgqDfhiqiWptXfI&c=3DzQ9ILDP-exkLu7tP=
+OlNREuwrOAYRGplClrIHkEPi3hzLhlbC9xOvVA=3D=3D&ch=3D86F-JTmJBxs57N5gjfGMj--_K=
+QHrg3buBBv3QxX1vBE5Ctzrc0WmeA=3D=3D" style=3D"display: inline-block; text-d=
+ecoration: none;">
+<img alt=3D"Twitter" width=3D"32" border=3D"0" src=3D"https://imgssl.consta=
+ntcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-de=
+fault-circle.png" style=3D"display: inline-block; margin: 0; padding: 0;"> =
+&#x200c;
+</a>
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D001_uNimdvdEUdcdQmuF3ZRLp9ArmWkDhI=
+h3k4VrWSASMED3zau3hLGsL7DAksQvkzmLb4G4v3RguYjYt3Wht8D6WzHL0bKALSByvmfR-uWdK=
+kjlDWjzuDDUZe1EPzmgPpP6hOYiLEHm3D2wmfnJgDVzPn_12qxH1ZClac6tdn3T4o=3D&c=3DzQ=
+9ILDP-exkLu7tPOlNREuwrOAYRGplClrIHkEPi3hzLhlbC9xOvVA=3D=3D&ch=3D86F-JTmJBxs=
+57N5gjfGMj--_KQHrg3buBBv3QxX1vBE5Ctzrc0WmeA=3D=3D" style=3D"display: inline=
+-block; text-decoration: none;">
+<img alt=3D"Instagram" width=3D"32" border=3D"0" src=3D"https://imgssl.cons=
+tantcontact.com/galileo/images/templates/Galileo-SocialMedia/instagram-visi=
+t-default-circle.png" style=3D"display: inline-block; margin: 0; padding: 0=
+;"> &#x200c;
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<table class=3D"footer-container" width=3D"100%" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0" style=3D"background: #ffffff; margin-left: auto; mar=
+gin-right: auto; table-layout: auto !important" bgcolor=3D"#ffffff">
+  <tr>
+    <td width=3D"100%" align=3D"center" valign=3D"top" style=3D"width: 100%=
+;">
+      <div class=3D"footer-max-main-width" align=3D"center" style=3D"margin=
+-left: auto; margin-right: auto; max-width: 100%;">
+        <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0">
+          <tr>
+            <td class=3D"footer-layout" align=3D"center" valign=3D"top" sty=
+le=3D"padding: 16px 0px;">
+              <table class=3D"footer-main-width" style=3D"width: 580px;" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                <tr>
+                  <td class=3D"footer-text" align=3D"center" valign=3D"top"=
+ style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size=
+: 12px; padding: 4px 0px;">
+                   =20
+                    <span class=3D"footer-column">The Sophia Way<span class=
+=3D"footer-mobile-hidden"> | </span></span><span class=3D"footer-column">11=
+061 NE 2nd St.<span class=3D"footer-mobile-hidden">, </span></span><span cl=
+ass=3D"footer-column">Suite 223<span class=3D"footer-mobile-hidden">, </spa=
+n></span><span class=3D"footer-column"></span><span class=3D"footer-column"=
+>Bellevue, WA 98004</span><span class=3D"footer-column"></span>
+                   =20
+                  </td>
+                </tr>
+                <tr>
+                  <td class=3D"footer-row" align=3D"center" valign=3D"top" =
+style=3D"padding: 10px 0px;">
+                    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+>
+                      <tr>
+                        <td class=3D"footer-text" align=3D"center" valign=
+=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; f=
+ont-size: 12px; padding: 4px 0px;">
+                          <a href=3D"https://visitor.constantcontact.com/do=
+?p=3Dun&m=3D001CLN_S13g0et-LAh2PzLdPA%3D&ch=3Ddf87a940-3fe5-11e7-be45-d4ae5=
+2843dc7&ca=3D7190f59e-8cb9-44d6-8769-435d1cf1e7e2" style=3D"color: #5d5d5d"=
+>Unsubscribe SaiParivarFoundation@gmail.com</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class=3D"footer-text" align=3D"center" valign=
+=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; f=
+ont-size: 12px; padding: 4px 0px;">
+                          <a href=3D"https://visitor.constantcontact.com/do=
+?p=3Doo&m=3D001CLN_S13g0et-LAh2PzLdPA%3D&ch=3Ddf87a940-3fe5-11e7-be45-d4ae5=
+2843dc7&ca=3D7190f59e-8cb9-44d6-8769-435d1cf1e7e2" style=3D"color: #5d5d5d"=
+>Update Profile</a> |
+                         =20
+                          <a class=3D"footer-about-provider" href=3D"http:/=
+/www.constantcontact.com/legal/service-provider?cc=3Dabout-service-provider=
+" style=3D"color: #5d5d5d">About our service provider</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class=3D"footer-text" align=3D"center" valign=
+=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; f=
+ont-size: 12px; padding: 4px 0px;">
+                          Sent by
+                         =20
+                          <a href=3D"mailto:events@sophiaway.org" style=3D"=
+color: #5d5d5d; text-decoration: none">events@sophiaway.org</a>
+                         =20
+
+                         =20
+                         =20
+                          <span class=3D"footer-column">in collaboration wi=
+th</span>
+                         =20
+                         =20
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class=3D"footer-text" align=3D"center" valign=3D"top"=
+ style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size=
+: 12px; padding: 4px 0px;">
+                   =20
+                   =20
+                    <table width=3D"220" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+                      <tr>
+                        <td align=3D"center" valign=3D"top">
+                          <a href=3D"http://www.constantcontact.com/index.j=
+sp?cc=3Dnge" style=3D"color: #5d5d5d; text-decoration: none">
+                            <img alt=3D"Trusted Email from Constant Contact=
+ - Try it FREE today." width=3D"211" border=3D"0" hspace=3D"0" vspace=3D"0"=
+ src=3D"https://imgssl.constantcontact.com/ui/images1/logo_ctct_2x.png">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class=3D"footer-cta-text" align=3D"left" valign=
+=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; f=
+ont-size: 12px; padding-left: 52px;">
+                          <a href=3D"http://www.constantcontact.com/index.j=
+sp?cc=3Dnge" style=3D"color: #5d5d5d; text-decoration: none">Try it free to=
+day</a>
+                        </td>
+                      </tr>
+                    </table>
+                   =20
+                   =20
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table></body>
+</html>
+
+------=_Part_373775016_2112826466.1555020571160--

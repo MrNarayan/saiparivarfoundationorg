@@ -1,0 +1,76 @@
+Return-Path: <official.dilsy.dorin.adsagent@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id yMILDyw6WmMyhgwAUq51WA
+	(envelope-from <official.dilsy.dorin.adsagent@gmail.com>)
+	for <info@saiparivarfoundation.org>; Thu, 27 Oct 2022 02:58:36 -0500
+Return-path: <official.dilsy.dorin.adsagent@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Thu, 27 Oct 2022 02:58:36 -0500
+Received: from mail-yb1-f178.google.com ([209.85.219.178]:44688)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <official.dilsy.dorin.adsagent@gmail.com>)
+	id 1onxme-004CQZ-2Q
+	for info@saiparivarfoundation.org;
+	Thu, 27 Oct 2022 02:58:36 -0500
+Received: by mail-yb1-f178.google.com with SMTP id i127so876374ybc.11
+        for <info@saiparivarfoundation.org>; Thu, 27 Oct 2022 00:58:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=eaye8+fqAAhfjFacAP+eLQBbmbDO290Bj3Ja0ASdf3w=;
+        b=X3YZres1FqTBimkkJ3HMLAkL8DGiHSWVMhuBARBj26e0KtrpXQwM1c0Ac823038qn5
+         sO3PvcS25xSDmAE1QnDoQG7o6DnS2GY0B5n3TEPRGFvCKq23fuY7WwYWcVY6HuR3u8cU
+         4qyMEVGiaxGeiagtGTWZcDPk5/JN42yOR0kZpZKJbFNYwDsUAnqXUfMZvOeoQf3vfr/G
+         4hkI1SPdqBqugKqUbFlCNQXfSyTyh1DhEbJava9RE0SfkFNheVJGzTSI6V+33mpUt6i6
+         IWW0s53ePQfnb9rzkeQJIUugpIPDDqjE1RKmfBUyDcudYqfUh18iRE/BmONFbn0tIBRH
+         uf1Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=eaye8+fqAAhfjFacAP+eLQBbmbDO290Bj3Ja0ASdf3w=;
+        b=O26L+cjE2UcpaXF68no3peqhBI6SS0TMtYeulAFliGSNWRpS01XMNAmouTkvdNwARe
+         1Be2mvhUgBcumvd6L6P+VGdpMPbxT2D34ilkdn0l+iLZ4l1q2PYIGgx5RGvZaF7iGONb
+         24/u174NpHVnLa7OdqlfdE2q0U0hs5/YFE530u5vv7fBBsxhH7V79TENJ04RQPUD6JwW
+         xkWqf2RLf/U7d96umsxXRiesnxugoUtubr+aTFCq0dKoC3cnR4piN61clcR3BurP0yq7
+         FROj0ydnyxiNQap14rRD7EHqlmIsJ1XsqJDqq6KTwb+/0o1+dLB37sWvaCYpuaMl9O+/
+         P2eQ==
+X-Gm-Message-State: ACrzQf1rgLZGlyC0jU5f06KibDBH3vhANlUIYsZRrrzTvSsTP+zqPBtV
+	FX41fLeudN8DFhqcTX3KxlXrZonRtAUII4I5WbF5fpsjCV7fag==
+X-Google-Smtp-Source: AMsMyM5/4Tccg7UvRdcwM+/L6Wq/NNpGgxw/Vmpl2D9txGB8RcQ5sU+fr8W5NOA/SrmaEs5/DXIvrkc+M4vsZLFzWoU=
+X-Received: by 2002:a25:3bc9:0:b0:6cb:a119:cdc7 with SMTP id
+ i192-20020a253bc9000000b006cba119cdc7mr6402355yba.528.1666857505546; Thu, 27
+ Oct 2022 00:58:25 -0700 (PDT)
+MIME-Version: 1.0
+From: Dorin Dilsy <official.dilsy.dorin.adsagent@gmail.com>
+Date: Thu, 27 Oct 2022 12:58:14 +0500
+Message-ID: <CA+GjqAt5pB74LSmsshfbSwaGcsudQphgZ1dFfnneRLJ3vu6N-A@mail.gmail.com>
+Subject: Paid Promotion
+To: info@saiparivarfoundation.org
+Content-Type: multipart/alternative; boundary="00000000000082666105ebff8174"
+
+--00000000000082666105ebff8174
+Content-Type: text/plain; charset="UTF-8"
+
+Hello,
+We are interested to pay you for placing our contents on your page,
+Our brands are Nike, Puma, Pepsi, Amazon affiliate ads etc.
+You will be paid $5000 USD per week.
+If you're interested kindly reply us.
+Thanks
+
+--00000000000082666105ebff8174
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Hello,<div dir=3D"auto">We are interested to pay you for =
+placing our contents on your page,</div><div dir=3D"auto">Our brands are Ni=
+ke, Puma, Pepsi, Amazon affiliate ads etc.</div><div dir=3D"auto">You will =
+be paid $5000 USD per week.</div><div dir=3D"auto">If you&#39;re interested=
+ kindly reply us.</div><div dir=3D"auto">Thanks</div></div>
+
+--00000000000082666105ebff8174--

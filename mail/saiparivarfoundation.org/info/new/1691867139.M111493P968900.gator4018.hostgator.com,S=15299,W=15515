@@ -1,0 +1,216 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id ELQDBgPY12TEyA4AUq51WA
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	for <info@saiparivarfoundation.org>; Sat, 12 Aug 2023 14:05:39 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Sat, 12 Aug 2023 14:05:39 -0500
+Received: from mail-yb1-f176.google.com ([209.85.219.176]:55504)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1qUtvf-0048ls-01
+	for info@saiparivarfoundation.org;
+	Sat, 12 Aug 2023 14:05:39 -0500
+Received: by mail-yb1-f176.google.com with SMTP id 3f1490d57ef6-d35e565071aso2772266276.2
+        for <info@saiparivarfoundation.org>; Sat, 12 Aug 2023 12:05:33 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1691867128; x=1692471928;
+        h=to:from:subject:message-id:reachouttracker:feedback-id:date
+         :mime-version:dkim-signature:delivered-to:x-forwarded-for
+         :x-forwarded-to:x-gm-message-state:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=THnktWoRJO40p6VoY5+kxKW5WFQ8WeM1G5SY9cT0HaM=;
+        b=c3bXBk4VS3oUgC1FUnmoG9rEYXh9Y3Qv2Td6kXEO8lAONkpYPowlNIm5lmVN9Irk2C
+         FvUtB4TrTBJ7Xm++XYFLUk/OLhskagVQ0AIFj+DBiWm5FiZIVfuGZBH7y0Ss4x4rIZBy
+         rAx9fio/sBhLjI3lKbktDvpLIlCQJ4Eawg+aMX1nEcbYMXtvWYDhfEmAhN1QteAsorHW
+         lhYTySoUqMC3a4eu9CWGq3rC4ziUq9OcwdxFAqtaZO0aZnmo90yifwjxQmurApSZiO7m
+         WmbfGf9cZ/Mj77jpQs5NUXmFSXkzRREMR4MuyEXjAW0uSFNkfHB8C+zIITNaMJWQ8od4
+         oeMA==
+X-Gm-Message-State: AOJu0YwR58lX+ndtW/SJrv6FCjdIwzPz/5eMEgFnNGb8Bpf7x8iGR7K/
+	myelQFqoiTCqWcT1JzSHSqAlk2Cn+vRA0JkHyBYrxMjpTvJghjISYQ==
+X-Received: by 2002:a81:65c6:0:b0:577:606c:284b with SMTP id z189-20020a8165c6000000b00577606c284bmr6256854ywb.16.1691867128432;
+        Sat, 12 Aug 2023 12:05:28 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a05:7000:2984:b0:4fe:c416:bd6e with SMTP id f4csp1895277max;
+        Sat, 12 Aug 2023 12:05:27 -0700 (PDT)
+X-Received: by 2002:a17:902:ce8f:b0:1b8:971c:b7b7 with SMTP id f15-20020a170902ce8f00b001b8971cb7b7mr6092270plg.56.1691867127028;
+        Sat, 12 Aug 2023 12:05:27 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1691867127; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Rryun3rlB2jN2uRcJbnMyLzqSgJwa1OZEC77HFDF5d2ZjUajffcaFcfyB2To4LC7QS
+         CHXpb2JI0snx7ZSA/lS6CAo6tM+H0y7PByL5gVOJRaWn+8TmN1ja+Ryo/b3nBdEgnCmN
+         nykwtgfcW8COjsDcp2FjlSWq8nfc1F/O3XBRgSn5xvL0oqPrdcJe3+ezqNAlC2KJ9mIr
+         qMzCqzMWyQIzJ6RhCscegDE5XRf34MOXHGxmJA01OQm1yAb3RDS1fHkBxOvtHtUE0ryj
+         yCBSSjz8P2saOmcGZUYBf7S2xTnbYKEylLSInr3/k1llisJjdA3Zz0Gt8c5DqmPjfPkr
+         IXFg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:reachouttracker:feedback-id:date
+         :mime-version:dkim-signature;
+        bh=THnktWoRJO40p6VoY5+kxKW5WFQ8WeM1G5SY9cT0HaM=;
+        fh=LmmFdd+7aI/g2UJQFJuKe5BVQz6SBbkOfTcmioIKmqI=;
+        b=kdT4BMr6O/6qrL9h4GAgybdbJvGU7Cnh8jTM4PUrf6MfnGLZisTSw8wv/k+IJnhPNp
+         7KUZXVTAEnqmmtoiyFysH+skxkDCaozPh9uiq4VSmLvLU5EgHKNZAld/qHLT7gGxkUup
+         WJtx55gSPmS+y67/tLq3uVxjHjru7TJ5Ykcaz1qXtMCA54DBjnGdMgB2uRRibpHmQnnT
+         YXT+wvdW7D/c2B1Ap6RsJuVbGM+ewl20nP+/6OZ6m0u9Pju4P2mkVRRtr3lOH5K1PvWt
+         ZPoHZbxCo3dEn5goNADtg0ByQg14XTaxCBjDNiEzQtohgOMXFSQR/vu7dPoX1b5dp/Ia
+         6Y3Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20221208 header.b=hDY2WYPg;
+       spf=pass (google.com: domain of 39tfxzagtadmcd-gteanprrdjcih.vddvat.rdb@identity-reachout.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=39tfXZAgTADMcd-gTeanPRRdjcih.VddVaT.Rdb@identity-reachout.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id a6-20020a17090a8c0600b0026b49c1aa4fsor181354pjo.3.2023.08.12.12.05.26
+        for <saiparivarfoundation@gmail.com>
+        (Google Transport Security);
+        Sat, 12 Aug 2023 12:05:27 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 39tfxzagtadmcd-gteanprrdjcih.vddvat.rdb@identity-reachout.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20221208 header.b=hDY2WYPg;
+       spf=pass (google.com: domain of 39tfxzagtadmcd-gteanprrdjcih.vddvat.rdb@identity-reachout.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=39tfXZAgTADMcd-gTeanPRRdjcih.VddVaT.Rdb@identity-reachout.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=accounts.google.com; s=20221208; t=1691867126; x=1692471926;
+        h=to:from:subject:message-id:reachouttracker:feedback-id:date
+         :mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=THnktWoRJO40p6VoY5+kxKW5WFQ8WeM1G5SY9cT0HaM=;
+        b=hDY2WYPg1qDnN9upelQZ4x5LdaWG1hV3vLcQo1Scx0Mvt8i+VQ185CIY26VTIiJDFr
+         /MpAAj9pZ4Rex75ug/XFrzm8onAhBYZWCexWEIAd/AvZ7ZWcp0TSkjKVhgTyFhtRzNtL
+         QpFdTE0Cekm0VfPyG1oJ4oNSpoJuy/yACfPVtNXY5IvOv+nXamxPQMb5UBAAvVPZPFfI
+         9ny2AHYdWNJ3+cj0A3sNUJSTEV8SKZApSK9DL1Li3pnoi2RLRiz3weExXXSNZx/P/qFR
+         pzA3Y6ERNieVwgPf9fyFSZph06iQw4D70RHbtkXhek7p0Y1GdKiFMQn90mbrLqXdtgYw
+         IMwQ==
+X-Google-Smtp-Source: AGHT+IE/werhwtVmUTVLWi6Gsbf5DrUrcDtxOTSDrplemTqlcm3Cx1Z8iAh6Z/QCxPXODaZP6UMvzctG4QnOok2Mnt6gTOXEOk24IReQlsEuFiE=
+MIME-Version: 1.0
+X-Received: by 2002:a17:90a:3e4c:b0:268:efe:5e53 with SMTP id
+ t12-20020a17090a3e4c00b002680efe5e53mr3566434pjm.21.1691867126522; Sat, 12
+ Aug 2023 12:05:26 -0700 (PDT)
+Date: Sat, 12 Aug 2023 19:05:26 GMT
+X-Account-Notification-Type: 325-RECOVERY
+Feedback-ID: 325-RECOVERY:account-notifier
+ReachoutTracker: ARhJSxwHcOWnQhdhwEGQKkqDJdPMBgmun9JLUeniC3L20aQCE1jJtdQrM2dFEnMCECBuJ+wf2eexhHHtjcPeZNz4OOrytUDAyw==
+X-Notifications: 9aab6e0c86240000
+X-Notifications-Bounce-Info: AYb2H10pt2otHVEEQKar1lr3Dde1O8CB6bAa0-AzWCwcbE8BfruJmy1eTIZJOZwiwf_VbgXmZQQZVbUb9b9rl1wYCNh3r3_Ji1mEXOQidA5yVFqsoL1ky2OwtESxATQR4e8MHo5tlZpzFYq-g-jTVMJMc0icXj_AwRRsUvuUJA6WraasOLxmX7baFjpkcrX60a9zf1iMpCfEplj3e48ZMwNjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <r-Mz6z2Gc_A7rF8ffBVURw@notifications.google.com>
+Subject: Security alert for info@shirdisaidham.org
+From: Google <no-reply@accounts.google.com>
+To: saiparivarfoundation@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000001566510602be839b"
+
+--0000000000001566510602be839b
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+VGhpcyBpcyBhIGNvcHkgb2YgYSBzZWN1cml0eSBhbGVydCBzZW50IHRvIGluZm9Ac2hpcmRpc2Fp
+ZGhhbS5vcmcuDQpzYWlwYXJpdmFyZm91bmRhdGlvbkBnbWFpbC5jb20gaXMgdGhlIHJlY292ZXJ5
+IGVtYWlsIGZvciB0aGlzIGFjY291bnQuIElmDQp5b3UgZG9uJ3QgcmVjb2duaXplIHRoaXMgYWNj
+b3VudCwgcmVtb3ZlDQo8aHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL0FjY291bnREaXNhdm93
+P2FkdD1BT1g4a2lxcTFKTXJXTXd0bnJIeWtnUmJMUmtMd3hONXN2dGR2Xy0yLVpmZk1rRUMzamVH
+YnRSMGFYNU01ZGt5cllJcFNQY3dqdXFtTy1nJnJmbj0zMjU+DQppdC4NCltpbWFnZTogR29vZ2xl
+XQ0KQSBuZXcgc2lnbi1pbiBvbiBQaXhlbCA2IFBybw0KDQoNCmluZm9Ac2hpcmRpc2FpZGhhbS5v
+cmcNCldlIG5vdGljZWQgYSBuZXcgc2lnbi1pbiB0byB5b3VyIEdvb2dsZSBBY2NvdW50IG9uIGEg
+UGl4ZWwgNiBQcm8gZGV2aWNlLiBJZg0KdGhpcyB3YXMgeW91LCB5b3UgZG9u4oCZdCBuZWVkIHRv
+IGRvIGFueXRoaW5nLiBJZiBub3QsIHdl4oCZbGwgaGVscCB5b3Ugc2VjdXJlDQp5b3VyIGFjY291
+bnQuDQpDaGVjayBhY3Rpdml0eQ0KPGh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50
+Q2hvb3Nlcj9FbWFpbD1pbmZvQHNoaXJkaXNhaWRoYW0ub3JnJmNvbnRpbnVlPWh0dHBzOi8vbXlh
+Y2NvdW50Lmdvb2dsZS5jb20vYWxlcnQvbnQvMTY5MTg2NzEyNjAwMD9yZm4lM0QzMjUlMjZyZm5j
+JTNEMSUyNmVpZCUzRDYwNTcwODk0OTUyMjk3MzU0MjklMjZldCUzRDE+DQpZb3UgY2FuIGFsc28g
+c2VlIHNlY3VyaXR5IGFjdGl2aXR5IGF0DQpodHRwczovL215YWNjb3VudC5nb29nbGUuY29tL25v
+dGlmaWNhdGlvbnMNCllvdSByZWNlaXZlZCB0aGlzIGVtYWlsIHRvIGxldCB5b3Uga25vdyBhYm91
+dCBpbXBvcnRhbnQgY2hhbmdlcyB0byB5b3VyDQpHb29nbGUgQWNjb3VudCBhbmQgc2VydmljZXMu
+DQrCqSAyMDIzIEdvb2dsZSBMTEMsIDE2MDAgQW1waGl0aGVhdHJlIFBhcmt3YXksIE1vdW50YWlu
+IFZpZXcsIENBIDk0MDQzLCBVU0ENCg==
+--0000000000001566510602be839b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"en"><head><meta name=3D"format-detection" cont=
+ent=3D"email=3Dno"/><meta name=3D"format-detection" content=3D"date=3Dno"/>=
+<style nonce=3D"jsgpeY9uSP2R4bYEQ5PMtQ">.awl a {color: #FFFFFF; text-decora=
+tion: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,=
+Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color=
+: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; tex=
+t-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: =
+6px 30px 0px;} .v2rsp {padding: 0px 10px;}} @media screen and (min-width: 6=
+00px) {.mdv2rw {padding: 40px 40px;}} </style><link href=3D"//fonts.googlea=
+pis.com/css?family=3DGoogle+Sans" rel=3D"stylesheet" type=3D"text/css" nonc=
+e=3D"jsgpeY9uSP2R4bYEQ5PMtQ"/></head><body style=3D"margin: 0; padding: 0;"=
+ bgcolor=3D"#FFFFFF"><table width=3D"100%" height=3D"100%" style=3D"min-wid=
+th: 348px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" lang=3D"en"><t=
+r height=3D"32" style=3D"height: 32px;"><td></td></tr><tr align=3D"center">=
+<td><div itemscope itemtype=3D"//schema.org/EmailMessage"><div itemprop=3D"=
+action" itemscope itemtype=3D"//schema.org/ViewAction"><link itemprop=3D"ur=
+l" href=3D"https://accounts.google.com/AccountChooser?Email=3Dinfo@shirdisa=
+idham.org&amp;continue=3Dhttps://myaccount.google.com/alert/nt/169186712600=
+0?rfn%3D325%26rfnc%3D1%26eid%3D6057089495229735429%26et%3D1"/><meta itempro=
+p=3D"name" content=3D"Review Activity"/></div></div><table border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" style=3D"padding-bottom: 20px; max-width: =
+516px; min-width: 220px;"><tr><td width=3D"8" style=3D"width: 8px;"></td><t=
+d><div style=3D"background-color: #F5F5F5; direction: ltr; padding: 16px;ma=
+rgin-bottom: 6px;"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0"><tbody><tr><td style=3D"vertical-align: top;"><img height=3D=
+"20" src=3D"https://www.gstatic.com/accountalerts/email/Icon_recovery_x2_20=
+_20.png"></td><td width=3D"13" style=3D"width: 13px;"></td><td style=3D"dir=
+ection: ltr;"><span style=3D"font-family: Roboto-Regular,Helvetica,Arial,sa=
+ns-serif; font-size: 13px; color: rgba(0,0,0,0.87); line-height: 1.6; color=
+: rgba(0,0,0,0.54);">This is a copy of a security alert sent to <a style=3D=
+"text-decoration: none; color: rgba(0,0,0,0.87);">info@shirdisaidham.org</a=
+>. <a style=3D"text-decoration: none; color: rgba(0,0,0,0.87);">saiparivarf=
+oundation@gmail.com</a> is the recovery email for this account.</span> <spa=
+n><span style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif; fo=
+nt-size: 13px; color: rgba(0,0,0,0.87); line-height: 1.6; color: rgba(0,0,0=
+,0.54);">If you don't recognize this account, <a href=3D"https://accounts.g=
+oogle.com/AccountDisavow?adt=3DAOX8kiqq1JMrWMwtnrHykgRbLRkLwxN5svtdv_-2-Zff=
+MkEC3jeGbtR0aX5M5dkyrYIpSPcwjuqmO-g&amp;rfn=3D325" data-meta-key=3D"disavow=
+" style=3D"text-decoration: none; color: #4285F4;" target=3D"_blank">remove=
+</a> it.</span></span></td></tr></tbody></table></div><div style=3D"border-=
+style: solid; border-width: thin; border-color:#dadce0; border-radius: 8px;=
+ padding: 40px 20px;" align=3D"center" class=3D"mdv2rw"><img src=3D"https:/=
+/www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_74x24dp.png=
+" width=3D"74" height=3D"24" aria-hidden=3D"true" style=3D"margin-bottom: 1=
+6px;" alt=3D"Google"><div style=3D"font-family: &#39;Google Sans&#39;,Robot=
+o,RobotoDraft,Helvetica,Arial,sans-serif;border-bottom: thin solid #dadce0;=
+ color: rgba(0,0,0,0.87); line-height: 32px; padding-bottom: 24px;text-alig=
+n: center; word-break: break-word;"><div style=3D"font-size: 24px;">A new s=
+ign-in on Pixel 6 Pro </div><table align=3D"center" style=3D"margin-top:8px=
+;"><tr style=3D"line-height: normal;"><td align=3D"right" style=3D"padding-=
+right:8px;"><img width=3D"20" height=3D"20" style=3D"width: 20px; height: 2=
+0px; vertical-align: sub; border-radius: 50%;;" src=3D"https://lh3.googleus=
+ercontent.com/a/AAcHTtel1F15dA-njTqGQl0Wvv0dyrA6sokn51mtMdkfx1yA=3Ds96-c" a=
+lt=3D""></td><td><a style=3D"font-family: &#39;Google Sans&#39;,Roboto,Robo=
+toDraft,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.87); font-size: 14px=
+; line-height: 20px;">info@shirdisaidham.org</a></td></tr></table> </div><d=
+iv style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-si=
+ze: 14px; color: rgba(0,0,0,0.87); line-height: 20px;padding-top: 20px; tex=
+t-align: center;">We noticed a new sign-in to your Google Account on a Pixe=
+l 6 Pro device. If this was you, you don=E2=80=99t need to do anything. If =
+not, we=E2=80=99ll help you secure your account.<div style=3D"padding-top: =
+32px; text-align: center;"><a href=3D"https://accounts.google.com/AccountCh=
+ooser?Email=3Dinfo@shirdisaidham.org&amp;continue=3Dhttps://myaccount.googl=
+e.com/alert/nt/1691867126000?rfn%3D325%26rfnc%3D1%26eid%3D60570894952297354=
+29%26et%3D1" target=3D"_blank" link-id=3D"main-button-link" style=3D"font-f=
+amily: &#39;Google Sans&#39;,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;=
+ line-height: 16px; color: #ffffff; font-weight: 400; text-decoration: none=
+;font-size: 14px;display:inline-block;padding: 10px 24px;background-color: =
+#4184F3; border-radius: 5px; min-width: 90px;">Check activity</a></div></di=
+v><div style=3D"padding-top: 20px; font-size: 12px; line-height: 16px; colo=
+r: #5f6368; letter-spacing: 0.3px; text-align: center">You can also see sec=
+urity activity at<br><a style=3D"color: rgba(0, 0, 0, 0.87);text-decoration=
+: inherit;">https://myaccount.google.com/notifications</a></div></div><div =
+style=3D"text-align: left;"><div style=3D"font-family: Roboto-Regular,Helve=
+tica,Arial,sans-serif;color: rgba(0,0,0,0.54); font-size: 11px; line-height=
+: 18px; padding-top: 12px; text-align: center;"><div>You received this emai=
+l to let you know about important changes to your Google Account and servic=
+es.</div><div style=3D"direction: ltr;">&copy; 2023 Google LLC, <a class=3D=
+"afal" style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif;colo=
+r: rgba(0,0,0,0.54); font-size: 11px; line-height: 18px; padding-top: 12px;=
+ text-align: center;">1600 Amphitheatre Parkway, Mountain View, CA 94043, U=
+SA</a></div></div></div></td><td width=3D"8" style=3D"width: 8px;"></td></t=
+r></table></td></tr><tr height=3D"32" style=3D"height: 32px;"><td></td></tr=
+></table></body></html>
+--0000000000001566510602be839b--

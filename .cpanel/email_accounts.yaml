@@ -1,0 +1,11 @@
+--- 
+__version: '2.1'
+saiparivarfoundation.org: 
+  account_count: 1
+  accounts: 
+    info: 
+      disk_mtime: '1415479380'
+      diskquota: 0
+      diskused: 3810
+  passwd_mtime: '1429771671'
+  quota_mtime: '1429771671'

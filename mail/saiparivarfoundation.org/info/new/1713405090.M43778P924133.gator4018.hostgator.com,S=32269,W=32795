@@ -1,0 +1,526 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id WD/uAaJ8IGblGQ4AUq51WA
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	for <info@saiparivarfoundation.org>; Wed, 17 Apr 2024 20:51:30 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Wed, 17 Apr 2024 20:51:30 -0500
+Received: from mail-yb1-f171.google.com ([209.85.219.171]:42034)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1rxGvx-0046QB-31
+	for info@saiparivarfoundation.org;
+	Wed, 17 Apr 2024 20:51:29 -0500
+Received: by mail-yb1-f171.google.com with SMTP id 3f1490d57ef6-dcc6fc978ddso352770276.0
+        for <info@saiparivarfoundation.org>; Wed, 17 Apr 2024 18:51:24 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1713405079; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=Qb/TgYLAos97qcU6aNkp/Y2jcJmVuQoM0/el45kn5MJUH4Jq0S0HFHvvZwP3Yk607R
+         s7gFivhojR75FdETvZI+/rSMfnT+OsiNnau/3NaIyV9iLsFvjNKeBk4rv5sUNtw1p4Gh
+         vQA4pO8WXqsKyJ3FOtc56VoRB83+KWNbTbyue1pHu11oJM9h5VL4nCYfainTQ1bYfDKS
+         nHFpUZ8UZxg4iZBJR4DaxyzOmjpcUNZEjfORMMRCKvNPE7DchkjvzTKhRePpO+TaS3DT
+         dzBEOE4u7QMd+6AbPgA+V9t6b01AoOEE6K1AtmN8f7jywrSq67IdusfmulwDh78XGCN1
+         ZXjg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :dkim-signature:delivered-to;
+        bh=et/1S8MvbUtgGYLNXDhUE/vB1G7jAP10i35RA6c8LJM=;
+        fh=QIT4TTNNZWXhIR+RN72/kRLQtgNhRc44LiSVlxGptKM=;
+        b=Zoe8asqMuAxd2+SAEwVCHbTyxvNMq4PaGmVHtdyZFev7Ub+QXOkMdDKchkiBbKmjp4
+         f61EHVwWLtjl0pLnA141i/OrPE0uYrMZvu2JevZEsTmNjk9M3J+JSg5mjW92ApHqKVMZ
+         +ZUlY1a7fNiTdCt2na6+i4bX6VJjptXChKcxlk6jHY0W8Yn+JlIRkdN7YPg63PZKsO1d
+         d+m4D0tEW0+roCFtQV8pHx4MV/hlRRxiwvsDgd16tyilqsRHtOV8ItQ+6iGT41V1gpoo
+         jB9r0yNUxJBdfif+aOk9vbyPjt7F2b+k7h9daXhm9NTqmXhQzxP5WQeEfST7hSkV3+s1
+         VkXg==;
+        darn=saiparivarfoundation.org
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@google.com header.s=20230601 header.b=FVGkRsv7;
+       spf=pass (google.com: domain of 3jnwgzggtaeeqr-uhso1dffrxqwv.jrrjoh.frp@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3jnwgZggTAEEqr-uhso1dffrxqwv.jrrjoh.frp@scoutcamp.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1713405079; x=1714009879;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :dkim-signature:delivered-to:x-forwarded-for:x-forwarded-to
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=et/1S8MvbUtgGYLNXDhUE/vB1G7jAP10i35RA6c8LJM=;
+        b=JPHO2TVhvSpmQlWEFvIkYSJt/xMgguxIca56BmCV/yMudBEQt9YFCwA1kAjHTLjNwy
+         H09yz7jYXXvpHju5KS8IzvW29+V8DyX9kG+ZjtkKDHOgQ3FvCsWkeA3nRKlt/dLVnmCm
+         b9PKxY2KAYmbA2+NMrYxhhj23tb/AXHfm9OwP0091vszDNjfHIYY7EstsoHAo4llsvfj
+         njIXNNSH/12fQUEtdgwO/icAp9Bd1DQcw6ZjWu9LFPCOdRVgXieZPZz99lFlfFkXblHr
+         35OlKEt40IrWpa9I6SbdH2JuWqtfuj91Jopd0rt9v4YYNBvIi5VJVAk81N1BOyZL+VHf
+         qpRQ==
+X-Forwarded-Encrypted: i=2; AJvYcCWRT/7g5q3YAGSArCpDuinL+y7PxV6xcIhILRrUFhZ5VuQkgbYdQ1qZzIurqkZdIkm4T9SiVrUXIZx3N1lz9YI85SKFbCRxr4NQRKzU1w==
+X-Gm-Message-State: AOJu0YyCZQ2PLkmZnm19rqUxjyYNUkTzpDfGnXDYt0AbXXDBPEiaFUug
+	t/9tMrF2HbUxTBVOcgEoRA2ftJAsBvHi73H3fh+9GCxE1Jb1tC0NlA5QtN5+EGyjvOA5bQhM8sy
+	gDxJKzvAP4ae61bWNJQwRJKCp93pf9q675BFF/tvmjT7pxpGytVsgmuFo8A==
+X-Received: by 2002:a25:b183:0:b0:dc2:3a05:489 with SMTP id h3-20020a25b183000000b00dc23a050489mr776419ybj.14.1713405079391;
+        Wed, 17 Apr 2024 18:51:19 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a05:7000:6b0:b0:56d:54c4:256b with SMTP id i16csp420526maw;
+        Wed, 17 Apr 2024 18:51:11 -0700 (PDT)
+X-Received: by 2002:a67:b404:0:b0:47b:bda4:c30d with SMTP id x4-20020a67b404000000b0047bbda4c30dmr32201vsl.3.1713405071050;
+        Wed, 17 Apr 2024 18:51:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1713405071; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VMye4SLKv/G8GJJ7Zfz9Ik9ZIUaoXBtLDt9UFSe+qVO9YFXuo5XNI6DVN7Yd3afbJz
+         8g/f9AFGtpLT0iw7Nc+cCI3d3c/j4OLdyDOXMcxHW6GyOOKlTtdIdPgVX7uU6Jz9sYBg
+         7zJ1GK3ALxb55WkYSQqoeGEBycJiASqs0enJorMbRYXCSGGIc6pUALSv5yQJHv89pUyK
+         bRmey3aNm99u9UDZbT9NaAPig0vX+ueaEakO2AzGudnqqpuFVdqvPIt3AQI7SK9ZVHM0
+         zwRXbUdtJV6O6Fxi4VRPG8WytlzG98/ZyV4Nq4faLJH/pcbYtWUB3/bsej78IVK6iCLC
+         dyZw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :dkim-signature;
+        bh=et/1S8MvbUtgGYLNXDhUE/vB1G7jAP10i35RA6c8LJM=;
+        fh=cPg2ad81m/u8Ud/JnNVbrpl47F1V5Ef6l3ky5EZpxHo=;
+        b=Y9lPEJE2TQIf8Zpgzsrm4+ARZ4alXbAgq0laGteNK4hP19HXK6Prua1myUSm5Gc3sq
+         wcK3gXXxNbURDVh1MeBdcSEjvyfRv7lMpp71GgdhzO8DmEqN1w9Fim0h+Dx98U8xyEb1
+         Uu6nDQndlGT9W0rpjeLzrdq64VTRBeCfN9vVBXFGfm8XSj5a0EBSzjXE3hUceg9SBiQr
+         TB8rF0UUfroJmlE8wwXbRB+572AEjud2Cx491gPKeVuJ1CA6Ej4+XNQaY5YwzqxDuFUj
+         uJQesjB7hNiSk9XuMh+FamUVM4/Q8o57qXrY5j6kc7KkBPJH3UiaRajw7uZhMuRUMGvI
+         aqBg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@google.com header.s=20230601 header.b=FVGkRsv7;
+       spf=pass (google.com: domain of 3jnwgzggtaeeqr-uhso1dffrxqwv.jrrjoh.frp@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3jnwgZggTAEEqr-uhso1dffrxqwv.jrrjoh.frp@scoutcamp.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id be6-20020a0561023be600b0046d350684a5sor1072209vsb.4.2024.04.17.18.51.10
+        for <saiparivarfoundation@gmail.com>
+        (Google Transport Security);
+        Wed, 17 Apr 2024 18:51:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3jnwgzggtaeeqr-uhso1dffrxqwv.jrrjoh.frp@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@google.com header.s=20230601 header.b=FVGkRsv7;
+       spf=pass (google.com: domain of 3jnwgzggtaeeqr-uhso1dffrxqwv.jrrjoh.frp@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3jnwgZggTAEEqr-uhso1dffrxqwv.jrrjoh.frp@scoutcamp.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20230601; t=1713405070; x=1714009870; dara=google.com;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=et/1S8MvbUtgGYLNXDhUE/vB1G7jAP10i35RA6c8LJM=;
+        b=FVGkRsv7U7Wcu9JWIcl1aJyd2n0QZug7uWVh5BUaiy6F+oSDXEB57LnnAHgR1n/mxr
+         iDA0bL6jCgNhbS6XJd4KNjlODQf5Xekgjrbn84/wYvLBDE6NWUzLfN+SlUwNi6Vm94BE
+         0Ic66LUJoaHTefVJoBSl0Z0foR19RDM0AxIz+Ix0ZnaD9XTTo4sY0arG+cxb6eaYajIM
+         lDYGpCmEKtupLfsyJkY661laCRDlADVUxDE/Fwa2fJSmFtaHHSWYXeMfv55GdJnoySAj
+         bK4Y73z/CmSP+6BsaLALx+je882ZHdzuUCP6epXF2nuEPjsU2BDp9WUXfBUFTb2hFXhN
+         Nwbg==
+X-Google-Smtp-Source: AGHT+IGK3KHp4QKbKht/rI8EGiCKgoPkpXhAPhEeK1tvOfW/mJn6GHM/9AQJbemsHYUxTYd5SUP6vuw=
+MIME-Version: 1.0
+X-Received: by 2002:a67:ce06:0:b0:47b:ab4c:ae0c with SMTP id
+ s6-20020a67ce06000000b0047bab4cae0cmr1366402vsl.13.1713405070690; Wed, 17 Apr
+ 2024 18:51:10 -0700 (PDT)
+Date: Wed, 17 Apr 2024 18:51:10 -0700
+Reply-To: Google <no-reply@accounts.google.com>
+Feedback-ID: P2725-0:C20305066:M110796698-en:gamma
+X-Notifications: 65cb9186526c0000
+X-Notifications-Bounce-Info: AaJ7rEp9k4DwfHqTuDIZf429ZPRDhEAKhoBvnUFvYL4kzd-Y8UGJ0xN24GQNP7DD9viSWO0awOy9LP3i30CQhEw_0HCiHVUW-DHWyTXg8us1t_nzCF3QZin7GwvZF08_w5h42lmzQJE3a_VPheWkJrCab4I5hCx460nE2ugT2rzg4-ef9ebvWQcAaaxtn5I7gK_272c-YCPEZbcSjHx9erW3_r9rp12Mrbq6jVQMFRfNIleIb0hI3Gp0LTxo8aQ2hBw8re0om_G2f0JudMCi6C2hYQqB0ERaX3kagzLAG1EDoPBv9nehS2Es4pbwmXrujCZkyI6p6Ib9LVOfy_1Yw8ceaOSKLLHKsrFmZ6ec3xSe4p-c-jfK4dfgLmn0gsaOXkGJeOt-2tRC0nuyuZb_-NI7RyEvRcRbu9DybbjCVH38VLMY-yg0tSfKJasAUXtdlV-g91LELugWaMlY6rCvn3cFIS_02MRIfLdd1qrUcgPI3ANjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <39b560bd895b6162192e8a63476d9106641352ea-20305066-111481340@google.com>
+Subject: Learn more about our updated Terms of Service
+From: Google <no-reply@accounts.google.com>
+To: saiparivarfoundation@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000984ac80616553415"
+
+--000000000000984ac80616553415
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+c2FpcGFyaXZhcmZvdW5kYXRpb25AZ21haWwuY29tDQo8aHR0cHM6Ly9hY2NvdW50cy5nb29nbGUu
+Y29tL0FjY291bnRDaG9vc2VyP0VtYWlsPXNhaXBhcml2YXJmb3VuZGF0aW9uJTQwZ21haWwuY29t
+JmNvbnRpbnVlPWh0dHBzJTNBJTJGJTJGcG9saWNpZXMuZ29vZ2xlLmNvbSUyRnRlcm1zJTJGdXBk
+YXRlJTNGdXRtX3NvdXJjZSUzRHRvczIwMjQtZW1haWwlMjZ1dG1fbWVkaXVtJTNEZW1haWw+DQoN
+Cldl4oCZcmUgdXBkYXRpbmcgb3VyIFRlcm1zIG9mIFNlcnZpY2Ugb24gTWF5IDIyLCAyMDI0LCBz
+byB3ZSB3YW50ZWQgdG8gbGV0DQp5b3Uga25vdyBhaGVhZCBvZiB0aW1lLg0KDQpUaGVzZSBjaGFu
+Z2VzIHdvbuKAmXQgYWZmZWN0IHRoZSB3YXkgeW91IHVzZSBvdXIgc2VydmljZXMNCjxodHRwczov
+L2FjY291bnRzLmdvb2dsZS5jb20vQWNjb3VudENob29zZXI/RW1haWw9c2FpcGFyaXZhcmZvdW5k
+YXRpb24lNDBnbWFpbC5jb20mY29udGludWU9aHR0cHMlM0ElMkYlMkZwb2xpY2llcy5nb29nbGUu
+Y29tJTJGdGVybXMlMkZzZXJ2aWNlLXNwZWNpZmljJTNGdXRtX3NvdXJjZSUzRHRvczIwMjQtZW1h
+aWwlMjZ1dG1fbWVkaXVtJTNEZW1haWw+LA0KYnV0IHRoZXkgc2hvdWxkIGhlbHAgbWFrZSBpdCBl
+YXNpZXIgZm9yIHlvdSB0byB1bmRlcnN0YW5kIHdoYXQgdG8gZXhwZWN0DQpmcm9tIEdvb2dsZSDi
+gJQgYW5kIHdoYXQgd2UgZXhwZWN0IGZyb20geW91IOKAlCBhcyB5b3UgdXNlIG91ciBzZXJ2aWNl
+cy4NCg0KWW91IGNhbiBzZWUgdGhlIG5ldyB0ZXJtcyBoZXJlDQo8aHR0cHM6Ly9hY2NvdW50cy5n
+b29nbGUuY29tL0FjY291bnRDaG9vc2VyP0VtYWlsPXNhaXBhcml2YXJmb3VuZGF0aW9uJTQwZ21h
+aWwuY29tJmNvbnRpbnVlPWh0dHBzJTNBJTJGJTJGcG9saWNpZXMuZ29vZ2xlLmNvbSUyRnRlcm1z
+JTJGdXBkYXRlJTNGdXRtX3NvdXJjZSUzRHRvczIwMjQtZW1haWwlMjZ1dG1fbWVkaXVtJTNEZW1h
+aWw+Lg0KV2UgYWxzbyBzdW1tYXJpemVkIHRoZSBjaGFuZ2VzIGF0IHRoZSBib3R0b20gb2YgdGhp
+cyBlbWFpbC4NCg0KKldoYXQgZG8gSSBuZWVkIHRvIGRvPyoNCg0KICAgIC0gKklmIHlvdeKAmXJl
+IHVuZGVyIHRoZSBhZ2UgcmVxdWlyZWQgdG8gbWFuYWdlIHlvdXIgb3duIEdvb2dsZSBBY2NvdW50
+DQogICAgIA0KPGh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50Q2hvb3Nlcj9FbWFp
+bD1zYWlwYXJpdmFyZm91bmRhdGlvbiU0MGdtYWlsLmNvbSZjb250aW51ZT1odHRwcyUzQSUyRiUy
+RnN1cHBvcnQuZ29vZ2xlLmNvbSUyRmFjY291bnRzJTJGYW5zd2VyJTJGMTM1MDQwOSUzRnV0bV9z
+b3VyY2UlM0R0b3MyMDI0LWVtYWlsJTI2dXRtX21lZGl1bSUzRGVtYWlsPjoqDQogICAgICAgLSBX
+ZSBzZW50IHRoaXMgZW1haWwgdG8geW91ciBwYXJlbnQgb3IgZ3VhcmRpYW4gc28gdGhhdCB0aGV5
+IGNhbiBoZWxwDQogICAgICAgeW91IHVuZGVyc3RhbmQgb3VyIHVwZGF0ZXMgYmV0dGVyLg0KICAg
+ICAgIC0gUGxlYXNlIGRpc2N1c3MgdGhpcyBlbWFpbCB3aXRoIHlvdXIgcGFyZW50IG9yIGd1YXJk
+aWFuIHRvIGRlY2lkZSBpZg0KICAgICAgIHlvdSBuZWVkIHRvIGRvIGFueXRoaW5nIGRpZmZlcmVu
+dCB3aXRoIHlvdXIgYWNjb3VudC4NCiAgICAtICogSWYgeW914oCZcmUgYSBwYXJlbnQgb3IgZ3Vh
+cmRpYW4sIGFuZCB5b3UgYWxsb3cgeW91ciBjaGlsZCB0byB1c2UgdGhlDQogICAgc2VydmljZXM6
+Kg0KICAgICAgIC0gUGxlYXNlIHJldmlldyB0aGUgdXBkYXRlcyB0byBvdXIgdGVybXMgd2l0aCB5
+b3VyIGNoaWxkIGFuZCBoZWxwDQogICAgICAgdGhlbSBkZWNpZGUgd2hldGhlciB0aGV5IG5lZWQg
+dG8gbWFrZSBhbnkgY2hhbmdlcyB0byB0aGVpciBhY2NvdW50Lg0KICAgICAgIC0gUGxlYXNlIHJl
+bWVtYmVyIHRoYXQgdGhlc2UgdGVybXMgYXBwbHkgdG8geW91IGFuZCB5b3XigJlyZQ0KICAgICAg
+IHJlc3BvbnNpYmxlIGZvciB5b3VyIGNoaWxk4oCZcyBhY3Rpdml0eSBvbiB0aGUgc2VydmljZXMu
+DQogICAgLSAqSWYgeW914oCZcmUgdGhlIGFkbWluaXN0cmF0b3Igb2YgYSBHb29nbGUgV29ya3Nw
+YWNlIGNvcnBvcmF0ZSBvcg0KICAgIGVkdWNhdGlvbmFsIGFjY291bnQgYW5kIHlvdeKAmXZlIGVu
+YWJsZWQgeW91ciB1c2VycyB0byBhY2Nlc3MgR29vZ2xlDQogICAgQWRkaXRpb25hbCBTZXJ2aWNl
+cw0KICAgICANCjxodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vQWNjb3VudENob29zZXI/RW1h
+aWw9c2FpcGFyaXZhcmZvdW5kYXRpb24lNDBnbWFpbC5jb20mY29udGludWU9aHR0cHMlM0ElMkYl
+MkZzdXBwb3J0Lmdvb2dsZS5jb20lMkZhJTJGYW5zd2VyJTJGMTgxODY1JTNGdXRtX3NvdXJjZSUz
+RHRvczIwMjQtZW1haWwlMjZ1dG1fbWVkaXVtJTNEZW1haWw+Og0KICAgICoNCiAgICAgICAtIE91
+ciBuZXcgVGVybXMgb2YgU2VydmljZSB3b27igJl0IGFmZmVjdCB0aGUgR29vZ2xlIFdvcmtzcGFj
+ZQ0KICAgICAgIGFncmVlbWVudCBiZXR3ZWVuIEdvb2dsZSBhbmQgeW91ciBvcmdhbml6YXRpb24u
+IFRoZXNlIG5ldyB0ZXJtcyB3aWxsICANCm9ubHkNCiAgICAgICBhcHBseSB0byB0aG9zZSB1c2Vy
+cyB0byB3aG9tIHlvdeKAmXZlIGdpdmVuIGFjY2VzcyB0byBHb29nbGUgQWRkaXRpb25hbA0KICAg
+ICAgIFNlcnZpY2VzDQogICAgICAgIA0KPGh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2Nv
+dW50Q2hvb3Nlcj9FbWFpbD1zYWlwYXJpdmFyZm91bmRhdGlvbiU0MGdtYWlsLmNvbSZjb250aW51
+ZT1odHRwcyUzQSUyRiUyRnN1cHBvcnQuZ29vZ2xlLmNvbSUyRmElMkZhbnN3ZXIlMkYxODE4NjUl
+M0Z1dG1fc291cmNlJTNEdG9zMjAyNC1lbWFpbCUyNnV0bV9tZWRpdW0lM0RlbWFpbD4uDQogICAg
+ICAgWW91IGNhbiBhbHdheXMgbWFuYWdlIHdoZXRoZXIgeW91ciB1c2VycyBoYXZlIGFjY2VzcyB0
+byBHb29nbGUgIA0KQWRkaXRpb25hbA0KICAgICAgIFNlcnZpY2VzLCBhbmQgd2hpY2ggb25lcywg
+aW4geW91ciBBZG1pbiBjb25zb2xlLg0KICAgIC0gKklmIHlvdeKAmXJlIGEgR29vZ2xlIFdvcmtz
+cGFjZSByZXNlbGxlciB3aG9zZSBjdXN0b21lcnMgaGF2ZSBlbmFibGVkDQogICAgdGhlaXIgdXNl
+cnMgdG8gYWNjZXNzIEdvb2dsZSBBZGRpdGlvbmFsIFNlcnZpY2VzDQogICAgIA0KPGh0dHBzOi8v
+YWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50Q2hvb3Nlcj9FbWFpbD1zYWlwYXJpdmFyZm91bmRh
+dGlvbiU0MGdtYWlsLmNvbSZjb250aW51ZT1odHRwcyUzQSUyRiUyRnN1cHBvcnQuZ29vZ2xlLmNv
+bSUyRmElMkZhbnN3ZXIlMkYxODE4NjUlM0Z1dG1fc291cmNlJTNEdG9zMjAyNC1lbWFpbCUyNnV0
+bV9tZWRpdW0lM0RlbWFpbD46Kg0KICAgICAgIC0gT3VyIG5ldyBUZXJtcyBvZiBTZXJ2aWNlIHdv
+buKAmXQgYWZmZWN0IHlvdXIgR29vZ2xlIFdvcmtzcGFjZQ0KICAgICAgIGFncmVlbWVudCB3aXRo
+IHlvdXIgY3VzdG9tZXJzLiBUaGVzZSBuZXcgdGVybXMgd2lsbCBvbmx5IGFwcGx5IHRvIHlvdXIN
+CiAgICAgICBjdXN0b21lcnPigJkgdXNlcnMgd2hv4oCZdmUgYmVlbiBnaXZlbiBhY2Nlc3MgdG8g
+R29vZ2xlIEFkZGl0aW9uYWwNCiAgICAgICBTZXJ2aWNlcw0KICAgICAgICANCjxodHRwczovL2Fj
+Y291bnRzLmdvb2dsZS5jb20vQWNjb3VudENob29zZXI/RW1haWw9c2FpcGFyaXZhcmZvdW5kYXRp
+b24lNDBnbWFpbC5jb20mY29udGludWU9aHR0cHMlM0ElMkYlMkZzdXBwb3J0Lmdvb2dsZS5jb20l
+MkZhJTJGYW5zd2VyJTJGMTgxODY1JTNGdXRtX3NvdXJjZSUzRHRvczIwMjQtZW1haWwlMjZ1dG1f
+bWVkaXVtJTNEZW1haWw+Lg0KICAgICAgIFlvdXIgY3VzdG9tZXJzIGNhbiBhbHdheXMgbWFuYWdl
+IHdoZXRoZXIgdGhlaXIgdXNlcnMgaGF2ZSBhY2Nlc3MgdG8gIA0KR29vZ2xlDQogICAgICAgQWRk
+aXRpb25hbCBTZXJ2aWNlcywgYW5kIHdoaWNoIG9uZXMsIGluIHRoZWlyIEFkbWluIGNvbnNvbGUu
+DQogICAgLSAqSWYgeW914oCZcmUgYW55IG90aGVyIHVzZXIgb2YgdGhlIHNlcnZpY2VzDQogICAg
+IA0KPGh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50Q2hvb3Nlcj9FbWFpbD1zYWlw
+YXJpdmFyZm91bmRhdGlvbiU0MGdtYWlsLmNvbSZjb250aW51ZT1odHRwcyUzQSUyRiUyRnBvbGlj
+aWVzLmdvb2dsZS5jb20lMkZ0ZXJtcyUyRnNlcnZpY2Utc3BlY2lmaWMlM0Z1dG1fc291cmNlJTNE
+dG9zMjAyNC1lbWFpbCUyNnV0bV9tZWRpdW0lM0RlbWFpbD46DQogICAgKg0KICAgICAgIC0gUGxl
+YXNlIHJlYWQgdGhpcyBlbWFpbCB0byB1bmRlcnN0YW5kIG91ciB1cGRhdGVkIHRlcm1zIGFuZCB5
+b3VyDQogICAgICAgb3B0aW9ucyBmb3IgZnVydGhlciBhY3Rpb24uDQogICAgICAgLSBJZiB5b3Ug
+YWdyZWUgdG8gdGhlIG5ldyB0ZXJtcywgbm8gZnVydGhlciBhY3Rpb24gaXMgbmVlZGVkLg0KDQoq
+V2hhdOKAmXMgY2hhbmdpbmc/Kg0KDQpZb3UgY2FuIHJldmlldyB0aGUgbmV3IEdvb2dsZSBUZXJt
+cyBvZiBTZXJ2aWNlIGhlcmUNCjxodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vQWNjb3VudENo
+b29zZXI/RW1haWw9c2FpcGFyaXZhcmZvdW5kYXRpb24lNDBnbWFpbC5jb20mY29udGludWU9aHR0
+cHMlM0ElMkYlMkZwb2xpY2llcy5nb29nbGUuY29tJTJGdGVybXMlMkZ1cGRhdGUlM0Z1dG1fc291
+cmNlJTNEdG9zMjAyNC1lbWFpbCUyNnV0bV9tZWRpdW0lM0RlbWFpbD4uDQpBdCBhIGdsYW5jZSwg
+aGVyZeKAmXMgd2hhdCB0aGlzIHVwZGF0ZSBjb3ZlcnM6DQoNCiAgICAtICpHZW5lcmF0aXZlIEFJ
+IHRlcm1zLiogV2XigJlyZSBtb3Zpbmcgb3VyIGV4aXN0aW5nIEdlbmVyYXRpdmUgQUkNCiAgICBB
+ZGRpdGlvbmFsIFRlcm1zDQogICAgIA0KPGh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2Nv
+dW50Q2hvb3Nlcj9FbWFpbD1zYWlwYXJpdmFyZm91bmRhdGlvbiU0MGdtYWlsLmNvbSZjb250aW51
+ZT1odHRwcyUzQSUyRiUyRnBvbGljaWVzLmdvb2dsZS5jb20lMkZ0ZXJtcyUyRmdlbmVyYXRpdmUt
+YWklM0Z1dG1fc291cmNlJTNEdG9zMjAyNC1lbWFpbCUyNnV0bV9tZWRpdW0lM0RlbWFpbD4NCiAg
+ICB0byBvdXIgbWFpbiBUZXJtcyBvZiBTZXJ2aWNlIGFuZCBhZGRpbmcgb3RoZXIgQUktcmVsYXRl
+ZCBjbGFyaWZpY2F0aW9ucy4NCiAgICBGb3IgZXhhbXBsZSDigJMgd2Ugd29u4oCZdCBjbGFpbSBv
+d25lcnNoaXAgb3ZlciBvcmlnaW5hbCBjb250ZW50IGdlbmVyYXRlZCBieQ0KICAgIG91ciBBSS1w
+b3dlcmVkIHNlcnZpY2VzLg0KICAgIC0gKk1vcmUgY2xhcml0eSBvbiBhYnVzaXZlIGFjdGl2aXR5
+LiogV2XigJlyZSBwcm92aWRpbmcgbW9yZSBleGFtcGxlcyBhbmQNCiAgICBkZXRhaWxzIGFib3V0
+IGFidXNlIGFuZCBpbnRlcmZlcmVuY2Ugd2l0aCBvdXIgc2VydmljZXMgdGhhdCBpc27igJl0ICAN
+CmFsbG93ZWQuDQogICAgLSAqTW9yZSBkZXRhaWxzIG9uIGxpbWl0YXRpb25zIG9mIGxpYWJpbGl0
+eS4qIEZvciB1c2VycyBvdXRzaWRlIHRoZSBVUywNCiAgICB3ZeKAmXJlIGFkZGluZyBjbGFyaWZp
+Y2F0aW9ucyB0byBvdXIgbGltaXRhdGlvbnMgb2YgbGlhYmlsaXR5IGFuZCBpbmRlbW5pdHkNCiAg
+ICBzZWN0aW9ucyB0byBhdm9pZCBhbnkgbWlzdW5kZXJzdGFuZGluZ3MgaW4gbGlnaHQgb2YgbG9j
+YWwgbGF3cyBvciAgDQpjdXN0b21zLg0KICAgIC0gKk1vcmUgY2xhcml0eSBvbiBkaXNwdXRlcy4q
+IFdl4oCZcmUgY2xhcmlmeWluZyB0aGF0IGlmIHlvdSB2aW9sYXRlIG91cg0KICAgIHRlcm1zLCBv
+dXIgcmVtZWRpZXMgYXJlbuKAmXQgbGltaXRlZCB0byBzdXNwZW5zaW9uIG9yIHRlcm1pbmF0aW9u
+IG9mIHlvdXINCiAgICBhY2Nlc3MgdG8gdGhlIHNlcnZpY2VzLCBidXQgbWF5IGluY2x1ZGUgb3Ro
+ZXIgcmVtZWRpZXMgdW5kZXIgYXBwbGljYWJsZQ0KICAgIGxhdy4gSWYgcHJvYmxlbXMgb3IgZGlz
+cHV0ZXMgYXJpc2UgYmV0d2VlbiB1cyBhYm91dCB0aGVzZSB0ZXJtcywgeW914oCZbGwNCiAgICBo
+YXZlIHRoZSBvcHBvcnR1bml0eSB0byBkZXNjcmliZSB0aGUgaXNzdWVzIGFuZCBhZGRyZXNzIHRo
+ZW0uDQogICAgLSAqVXBkYXRlcyB0byByZWZsZWN0IGhvdyBvdXIgc2VydmljZXMgd29yay4qIFdl
+4oCZcmUgYWRkaW5nIGxhbmd1YWdlDQogICAgYWJvdXQgaG93IG91ciBzZXJ2aWNlcyB3b3JrLCBh
+bmQgdXBkYXRpbmcgY2VydGFpbiBHb29nbGUgc2VydmljZSBicmFuZA0KICAgIG5hbWVzIHRoYXQg
+aGF2ZSBjaGFuZ2VkIG92ZXIgdGltZS4NCiAgICAtICpGb3IgdXNlcnMgYmFzZWQgaW4gdGhlIEV1
+cm9wZWFuIEVjb25vbWljIEFyZWEgKEVFQSkgb25seToqDQogICAgICAgLSBJbiBhZGRpdGlvbiB0
+byB0aGUgY2hhbmdlcyBkZXNjcmliZWQgYWJvdmUsIHdl4oCZcmUgYWRkaW5nIG1vcmUNCiAgICAg
+ICBleHBsYW5hdG9yeSB0ZXh0IHRvIGhlbHAgeW91IHVuZGVyc3RhbmQgdGhlIGxlZ2FsIGNvbmNl
+cHQgb2YgIA0K4oCcZ3VhcmFudGVlc+KAnQ0KICAgICAgIHVuZGVyIEVVIGFuZCBsb2NhbCBsYXcu
+DQogICAgICAgLSBGb3IgbW9yZSBkZXRhaWxzLCBwbGVhc2Ugc2VlIHRoaXMgc3VtbWFyeSBvZiBr
+ZXkgY2hhbmdlcyB0byB0aGUgRUVBDQogICAgICAgdmVyc2lvbnMgb2Ygb3VyIFRlcm1zDQogICAg
+ICAgIA0KPGh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50Q2hvb3Nlcj9FbWFpbD1z
+YWlwYXJpdmFyZm91bmRhdGlvbiU0MGdtYWlsLmNvbSZjb250aW51ZT1odHRwcyUzQSUyRiUyRnBv
+bGljaWVzLmdvb2dsZS5jb20lMkZ0ZXJtcyUyRmNoYW5nZXMlM0Z1dG1fc291cmNlJTNEdG9zMjAy
+NC1lbWFpbCUyNnV0bV9tZWRpdW0lM0RlbWFpbD4NCiAgICAgICAuDQoNCklmIHlvdSBkb27igJl0
+IGFncmVlIHRvIHRoZSBuZXcgdGVybXMsIHlvdSBzaG91bGQgcmVtb3ZlIHlvdXIgY29udGVudA0K
+PGh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50Q2hvb3Nlcj9FbWFpbD1zYWlwYXJp
+dmFyZm91bmRhdGlvbiU0MGdtYWlsLmNvbSZjb250aW51ZT1odHRwcyUzQSUyRiUyRnBvbGljaWVz
+Lmdvb2dsZS5jb20lMkZ0ZXJtcyUyRmRlZmluaXRpb25zJTIzdG9jLXRlcm1zLXlvdXItY29udGVu
+dCUzRnV0bV9zb3VyY2UlM0R0b3MyMDI0LWVtYWlsJTI2dXRtX21lZGl1bSUzRGVtYWlsPg0KYW5k
+IHN0b3AgdXNpbmcgdGhlIHNlcnZpY2VzLiBZb3UgY2FuIGFsc28gZW5kIHlvdXIgcmVsYXRpb25z
+aGlwIHdpdGggdXMgYXQNCmFueSB0aW1lLCB3aXRob3V0IHBlbmFsdHksIGJ5IGNsb3NpbmcgeW91
+ciBHb29nbGUgQWNjb3VudA0KPGh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50Q2hv
+b3Nlcj9FbWFpbD1zYWlwYXJpdmFyZm91bmRhdGlvbiU0MGdtYWlsLmNvbSZjb250aW51ZT1odHRw
+cyUzQSUyRiUyRnN1cHBvcnQuZ29vZ2xlLmNvbSUyRmFjY291bnRzJTJGYW5zd2VyJTJGMzIwNDYl
+M0Z1dG1fc291cmNlJTNEdG9zMjAyNC1lbWFpbCUyNnV0bV9tZWRpdW0lM0RlbWFpbD4NCi4NCg0K
+VGhhbmsgeW91IGZvciB1c2luZyBHb29nbGUgc2VydmljZXMhDQoNCg0KwqkgMjAyNCBHb29nbGUg
+TExDIDE2MDAgQW1waGl0aGVhdHJlIFBhcmt3YXksIE1vdW50YWluIFZpZXcsIENBIDk0MDQzDQpZ
+b3UgaGF2ZSByZWNlaXZlZCB0aGlzIGVtYWlsIHRvIHVwZGF0ZSB5b3UgYWJvdXQgaW1wb3J0YW50
+IGNoYW5nZXMgdG8NCkdvb2dsZeKAmXMgVGVybXMgb2YgU2VydmljZS4NCg==
+--000000000000984ac80616553415
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang=3Den>
+<head>
+<meta name=3Dformat-detection content=3Demail=3Dno>
+<meta name=3Dformat-detection content=3Ddate=3Dno>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8"><sty=
+le type=3Dtext/css>
+body {font-family:Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;colo=
+r:#5f6368;line-height:1.5;font-size:16px} li, p {margin:25px 0}@media scree=
+n and (min-width: 600px) {.v2sp {padding: 6px 30px 0;} .v2rsp {padding: 0 1=
+0px;}} @media screen and (min-width: 600px) {.mdv2rw {padding: 40px 40px;}}=
+=20
+</style>
+<link type=3Dtext/css href=3D//fonts.googleapis.com/css?family=3DGoogle+San=
+s rel=3Dstylesheet>
+<title>Learn more about our updated Terms of Service</title>
+</head>
+<body style=3D"margin: 0; padding: 0;" bgcolor=3D#FAFAFA>
+<table width=3D100% height=3D100% style=3D"min-width: 348px;" border=3D0 ce=
+llspacing=3D0 cellpadding=3D0 lang=3Den bgcolor=3D#FAFAFA role=3Dpresentati=
+on>
+<tr align=3Dcenter>
+<td>
+<table width=3D100% cellspacing=3D0 cellpadding=3D0 bgcolor=3D#FAFAFA style=
+=3Dmax-width:600px role=3Dpresentation>
+<tr>
+<td style=3Dpadding-top:20px;padding-bottom:20px;padding-left:40px;padding-=
+right:40px>
+<table width=3D100% cellspacing=3D0 cellpadding=3D0 role=3Dpresentation>
+<tr>
+<td><img src=3Dhttps://www.gstatic.com/identity/boq/policies/msa/google_log=
+o_full_color-bcd6ef980269fd62476c2931f8d73e8a.png height=3D36px alt=3D"" ti=
+tle=3D""></td>
+<td align=3Dright style=3D"text-align: end;"><a href=3D# style=3Dtext-decor=
+ation:none;color:#5f6368;margin-left:48px>saiparivarfoundation@gmail.com</a=
+></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3Dpadding-left:15px;padding-right:15px>
+<table width=3D100% cellspacing=3D0 cellpadding=3D0 role=3Dpresentation>
+<tr>
+<td bgcolor=3D#ffffff style=3D"padding:35px 35px 10px 35px;border-radius:4p=
+x">
+<table border=3D0 cellspacing=3D0 cellpadding=3D0 role=3Dpresentation style=
+=3D"font-family:Google Sans, Roboto, Helvetica Neue, Helvetica, Arial, sans=
+-serif;color:#3c4043;line-height:1.5;font-size:14px;">
+<tr>
+<td align=3Dcenter><a href=3Dhttps://accounts.google.com/AccountChooser?Ema=
+il=3Dsaiparivarfoundation%40gmail.com&amp;continue=3Dhttps%3A%2F%2Fpolicies=
+.google.com%2Fterms%2Fupdate%3Futm_source%3Dtos2024-email%26utm_medium%3Dem=
+ail><img src=3Dhttps://www.gstatic.com/identity/boq/policies/msa/utos_illus=
+tration-d3cb2a71970d5e9daf2e78a2ee367789.png alt=3D"" width=3D250 title=3D"=
+" role=3Dpresentation></a></td>
+</tr>
+<tr>
+<td>
+<p style=3D"margin:12px 0">We=E2=80=99re updating our Terms of Service on M=
+ay 22, 2024, so we wanted to let you know ahead of time.</p>
+<p style=3D"margin:12px 0">These changes won=E2=80=99t affect the way you u=
+se our <a href=3Dhttps://accounts.google.com/AccountChooser?Email=3Dsaipari=
+varfoundation%40gmail.com&amp;continue=3Dhttps%3A%2F%2Fpolicies.google.com%=
+2Fterms%2Fservice-specific%3Futm_source%3Dtos2024-email%26utm_medium%3Demai=
+l style=3Dcolor:#1967d2>services</a>, but they should help make it easier f=
+or you to understand what to expect from Google =E2=80=94 and what we expec=
+t from you =E2=80=94 as you use our services.</p>
+<p style=3D"margin:12px 0">You can see the <a href=3Dhttps://accounts.googl=
+e.com/AccountChooser?Email=3Dsaiparivarfoundation%40gmail.com&amp;continue=
+=3Dhttps%3A%2F%2Fpolicies.google.com%2Fterms%2Fupdate%3Futm_source%3Dtos202=
+4-email%26utm_medium%3Demail style=3Dcolor:#1967d2>new terms here</a>. We a=
+lso summarized the changes at the bottom of this email.</p>
+<p style=3D"margin:24px 0 0 0;font-size:16px"><b>What do I need to do?</b><=
+/p>
+<ul>
+<li style=3D"margin:12px 0 0 0"><b>If you=E2=80=99re under the <a href=3Dht=
+tps://accounts.google.com/AccountChooser?Email=3Dsaiparivarfoundation%40gma=
+il.com&amp;continue=3Dhttps%3A%2F%2Fsupport.google.com%2Faccounts%2Fanswer%=
+2F1350409%3Futm_source%3Dtos2024-email%26utm_medium%3Demail style=3Dcolor:#=
+1967d2>age required to manage your own Google Account</a>:</b>
+<ul>
+<li style=3D"margin:10px 0 0 0">We sent this email to your parent or guardi=
+an so that they can help you understand our updates better.</li>
+<li style=3D"margin:5px 0 0 0">Please discuss this email with your parent o=
+r guardian to decide if you need to do anything different with your account=
+.</li>
+</ul>
+</li>
+<li style=3D"margin:12px 0 0 0"><b>If you=E2=80=99re a parent or guardian, =
+and you allow your child to use the services:</b>
+<ul>
+<li style=3D"margin:10px 0 0 0">Please review the updates to our terms with=
+ your child and help them decide whether they need to make any changes to t=
+heir account.</li>
+<li style=3D"margin:5px 0 0 0">Please remember that these terms apply to yo=
+u and you=E2=80=99re responsible for your child=E2=80=99s activity on the s=
+ervices.</li>
+</ul>
+</li>
+<li style=3D"margin:12px 0 0 0"><b>If you=E2=80=99re the administrator of a=
+ Google Workspace corporate or educational account and you=E2=80=99ve enabl=
+ed your users to access <a href=3Dhttps://accounts.google.com/AccountChoose=
+r?Email=3Dsaiparivarfoundation%40gmail.com&amp;continue=3Dhttps%3A%2F%2Fsup=
+port.google.com%2Fa%2Fanswer%2F181865%3Futm_source%3Dtos2024-email%26utm_me=
+dium%3Demail style=3Dcolor:#1967d2>Google Additional Services</a>:</b>=20
+<ul>
+<li style=3D"margin:10px 0 0 0">Our new Terms of Service won=E2=80=99t affe=
+ct the Google Workspace agreement between Google and your organization. The=
+se new terms will only apply to those users to whom you=E2=80=99ve given ac=
+cess to <a href=3Dhttps://accounts.google.com/AccountChooser?Email=3Dsaipar=
+ivarfoundation%40gmail.com&amp;continue=3Dhttps%3A%2F%2Fsupport.google.com%=
+2Fa%2Fanswer%2F181865%3Futm_source%3Dtos2024-email%26utm_medium%3Demail sty=
+le=3Dcolor:#1967d2>Google Additional Services</a>. You can always manage wh=
+ether your users have access to Google Additional Services, and which ones,=
+ in your Admin console.</li>
+</ul>
+</li>
+<li style=3D"margin:12px 0 0 0"><b>If you=E2=80=99re a Google Workspace res=
+eller whose customers have enabled their users to access <a href=3Dhttps://=
+accounts.google.com/AccountChooser?Email=3Dsaiparivarfoundation%40gmail.com=
+&amp;continue=3Dhttps%3A%2F%2Fsupport.google.com%2Fa%2Fanswer%2F181865%3Fut=
+m_source%3Dtos2024-email%26utm_medium%3Demail style=3Dcolor:#1967d2>Google =
+Additional Services</a>:</b>
+<ul>
+<li style=3D"margin:10px 0 0 0">Our new Terms of Service won=E2=80=99t affe=
+ct your Google Workspace agreement with your customers. These new terms wil=
+l only apply to your customers=E2=80=99 users who=E2=80=99ve been given acc=
+ess to <a href=3Dhttps://accounts.google.com/AccountChooser?Email=3Dsaipari=
+varfoundation%40gmail.com&amp;continue=3Dhttps%3A%2F%2Fsupport.google.com%2=
+Fa%2Fanswer%2F181865%3Futm_source%3Dtos2024-email%26utm_medium%3Demail styl=
+e=3Dcolor:#1967d2>Google Additional Services</a>. Your customers can always=
+ manage whether their users have access to Google Additional Services, and =
+which ones, in their Admin console.</li>
+</ul>
+</li>
+<li style=3D"margin:12px 0 0 0"><b>If you=E2=80=99re any other user of the =
+<a href=3Dhttps://accounts.google.com/AccountChooser?Email=3Dsaiparivarfoun=
+dation%40gmail.com&amp;continue=3Dhttps%3A%2F%2Fpolicies.google.com%2Fterms=
+%2Fservice-specific%3Futm_source%3Dtos2024-email%26utm_medium%3Demail style=
+=3Dcolor:#1967d2>services</a>:</b>=20
+<ul>
+<li style=3D"margin:10px 0 0 0">Please read this email to understand our up=
+dated terms and your options for further action.</li>
+<li style=3D"margin:5px 0 0 0">If you agree to the new terms, no further ac=
+tion is needed.</li>
+</ul>
+</li>
+</ul>
+<p style=3D"margin:24px 0 0 0;font-size:16px"><b>What=E2=80=99s changing?</=
+b></p>
+<p style=3D"margin:12px 0 0 0">You can review the <a href=3Dhttps://account=
+s.google.com/AccountChooser?Email=3Dsaiparivarfoundation%40gmail.com&amp;co=
+ntinue=3Dhttps%3A%2F%2Fpolicies.google.com%2Fterms%2Fupdate%3Futm_source%3D=
+tos2024-email%26utm_medium%3Demail style=3Dcolor:#1967d2>new Google Terms o=
+f Service here</a>. At a glance, here=E2=80=99s what this update covers:</p=
+>
+<ul>
+<li style=3D"margin:12px 0 0 0"><b>Generative AI terms.</b>&nbsp;We=E2=80=
+=99re moving our existing <a href=3Dhttps://accounts.google.com/AccountChoo=
+ser?Email=3Dsaiparivarfoundation%40gmail.com&amp;continue=3Dhttps%3A%2F%2Fp=
+olicies.google.com%2Fterms%2Fgenerative-ai%3Futm_source%3Dtos2024-email%26u=
+tm_medium%3Demail style=3Dcolor:#1967d2>Generative AI Additional Terms</a> =
+to our main Terms of Service and adding other AI-related clarifications. Fo=
+r example =E2=80=93 we won=E2=80=99t claim ownership over original content =
+generated by our AI-powered services.</li>
+<li style=3D"margin:12px 0 0 0"><b>More clarity on abusive activity.</b>&nb=
+sp;We=E2=80=99re providing more examples and details about abuse and interf=
+erence with our services that isn=E2=80=99t allowed.</li>
+<li style=3D"margin:12px 0 0 0"><b>More details on limitations of liability=
+.</b>&nbsp;For users outside the US, we=E2=80=99re adding clarifications to=
+ our limitations of liability and indemnity sections to avoid any misunders=
+tandings in light of local laws or customs.</li>
+<li style=3D"margin:12px 0 0 0"><b>More clarity on disputes.</b>&nbsp;We=E2=
+=80=99re clarifying that if you violate our terms, our remedies aren=E2=80=
+=99t limited to suspension or termination of your access to the services, b=
+ut may include other remedies under applicable law. If problems or disputes=
+ arise between us about these terms, you=E2=80=99ll have the opportunity to=
+ describe the issues and address them.</li>
+<li style=3D"margin:12px 0 0 0"><b>Updates to reflect how our services work=
+.</b>&nbsp;We=E2=80=99re adding language about how our services work, and u=
+pdating certain Google service brand names that have changed over time.</li=
+>
+<li style=3D"margin:12px 0 0 0"><b>For users based in the European Economic=
+ Area (EEA) only:</b>
+<ul>
+<li style=3D"margin:10px 0 0 0">In addition to the changes described above,=
+ we=E2=80=99re adding more explanatory text to help you understand the lega=
+l concept of =E2=80=9Cguarantees=E2=80=9D under EU and local law.</li>
+<li style=3D"margin:5px 0 0 0">For more details, please see this <a href=3D=
+https://accounts.google.com/AccountChooser?Email=3Dsaiparivarfoundation%40g=
+mail.com&amp;continue=3Dhttps%3A%2F%2Fpolicies.google.com%2Fterms%2Fchanges=
+%3Futm_source%3Dtos2024-email%26utm_medium%3Demail style=3Dcolor:#1967d2>su=
+mmary of key changes to the EEA versions of our Terms</a>.</li>
+</ul>
+</li>
+</ul>
+<p style=3D"margin:36px 0 12px 0">If you don=E2=80=99t agree to the new ter=
+ms, you should remove <a href=3Dhttps://accounts.google.com/AccountChooser?=
+Email=3Dsaiparivarfoundation%40gmail.com&amp;continue=3Dhttps%3A%2F%2Fpolic=
+ies.google.com%2Fterms%2Fdefinitions%23toc-terms-your-content%3Futm_source%=
+3Dtos2024-email%26utm_medium%3Demail style=3Dcolor:#1967d2>your content</a>=
+ and stop using the services. You can also end your relationship with us at=
+ any time, without penalty, by <a href=3Dhttps://accounts.google.com/Accoun=
+tChooser?Email=3Dsaiparivarfoundation%40gmail.com&amp;continue=3Dhttps%3A%2=
+F%2Fsupport.google.com%2Faccounts%2Fanswer%2F32046%3Futm_source%3Dtos2024-e=
+mail%26utm_medium%3Demail style=3Dcolor:#1967d2>closing your Google Account=
+</a>.</p>
+<p style=3D"margin:12px 0 64px 0">Thank you for using Google services!</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3Dpadding:40px>
+<table width=3D100% border=3D0 cellspacing=3D0 cellpadding=3D0 role=3Dprese=
+ntation>
+<tr>
+<td><img src=3Dhttps://www.gstatic.com/identity/boq/policies/msa/google_log=
+o_one_color-9b5a135b1710fb3f8a4c770f01be2e13.png alt=3D"" width=3D100 title=
+=3D""></td>
+</tr>
+<tr>
+<td>
+<p style=3D"margin:25px 0;font-family:Roboto, Helvetica Neue, Helvetica, Ar=
+ial, sans-serif;color:#5f6368;line-height:1.5;font-size:16px"><span style=
+=3Dfont-size:14px;>
+
+      <span style=3D"font-size:inherit; color:inherit; font-weight:inherit;=
+ line-height:inherit; font-family:inherit;">&copy; 2024 Google LLC 1600 Amp=
+hitheatre Parkway, Mountain View, CA 94043</span>
+  =20
+  =20
+</span></p>
+<p style=3D"margin:25px 0;font-family:Roboto, Helvetica Neue, Helvetica, Ar=
+ial, sans-serif;color:#5f6368;line-height:1.5;font-size:16px"><span style=
+=3Dfont-size:14px;>You have received this email to update you about importa=
+nt changes to Google=E2=80=99s Terms of Service.</span></p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
+--000000000000984ac80616553415--

@@ -1,0 +1,535 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 202202 will be lost/reset.
+# Last config file used to build this data file was /home4/seasai10/tmp/awstats/ssl/awstats.saiparivarfoundation.org.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2026                
+POS_TIME 2698                
+POS_VISITOR 11103               
+POS_DAY 15123               
+POS_DOMAIN 3453                
+POS_LOGIN 3867                
+POS_ROBOT 4022                
+POS_WORMS 4527                
+POS_EMAILSENDER 4658                
+POS_EMAILRECEIVER 4801                
+POS_SESSION 15813               
+POS_SIDER 15992               
+POS_FILETYPES 4936                
+POS_DOWNLOADS 5130                
+POS_OS 5178                
+POS_BROWSER 5368                
+POS_SCREENSIZE 6845                
+POS_UNKNOWNREFERER 6919                
+POS_UNKNOWNREFERERBROWSER 7781                
+POS_ORIGIN 8552                
+POS_SEREFERRALS 8689                
+POS_PAGEREFS 8905                
+POS_SEARCHWORDS 9142                
+POS_KEYWORDS 9294                
+POS_MISC 2362                
+POS_ERRORS 9353                
+POS_CLUSTER 3723                
+POS_SIDER_404 9490                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20220301011452 1 0 16553790396780
+FirstTime 20220201055649
+LastTime 20220228075842
+LastUpdate 20220302004328 1 0 0 0 0
+TotalVisits 118                 
+TotalUnique 80                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 113                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+AddToFavourites 0 3 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+TotalMisc 0 0 0
+JavascriptDisabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 3 4 137562 12 17 7871
+1 3 4 127044 3 8 149476
+2 5 6 137415 5 16 4154163
+3 1 1 10518 8 10 54602
+4 25 55 1519320 10 26 9098
+5 7 44 1230173 12 55 177132
+6 3 23 365698 2 6 810
+7 3 5 264606 7 9 5664
+8 11 40 1179525 14 45 4309237
+9 17 47 1214245 6 24 143498
+10 3 3 51260 6 11 2552
+11 6 32 547044 6 55 130852
+12 4 5 151537 33 41 189264
+13 5 47 3431142 8 39 97103
+14 2 3 130501 7 26 4162835
+15 1 1 10518 24 25 3172
+16 3 3 13975 11 33 32575
+17 6 69 2827190 15 40 59244
+18 5 9 173609 10 16 17973
+19 2 31 1404744 18 29 12640
+20 26 49 192132 34 52 12907
+21 24 100 2102052 13 27 4098800
+22 6 7 141019 6 22 26860
+23 8 14 8991796 11 15 9368
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 14
+us 112 328 11815963
+cn 32 137 3963543
+ua 13 13 36450
+gr 10 10 158714
+in 5 94 10040327
+de 4 4 13828
+ru 3 3 10371
+id 0 1 6205
+ng 0 1 123587
+pk 0 1 6205
+hu 0 5 31025
+ao 0 1 6205
+bd 0 3 18615
+my 0 1 123587
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 10
+Googlebot/ 92 257584 20220228172825 0
+bingbot/ 63 17287164 20220228024114 0
+unknown 11 260 20220225164703 11
+YandexBot/ 9 31113 20220222124347 0
+no_user_agent 6 116630 20220220080213 0
+bingpreview 6 16840 20220224145710 0
+bot[\s_+:,\.\;\/\\-] 5 13112 20220228224311 0
+SurdotlyBot/ 2 6914 20220219020830 0
+Konqueror/ 2 3457 20220201055658 0
+Dalvik/ 1 3457 20220214212813 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 7
+jpg 103 23970508 0 0
+html 179 611393 0 0
+png 56 179414 0 0
+js 176 948096 0 0
+jpeg 3 437547 0 0
+gif 10 92890 0 0
+css 75 114777 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 9
+win2000 3 3
+win7 30 10
+macosx 10 9
+win10 211 44
+Unknown 38 38
+linuxandroid 64 10
+linux 131 29
+macosx11 79 35
+ios_iphone 36 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 66
+chrome83.0.4103.97 20 20
+chrome98.0.4758.82 5 0
+msie11.0 20 1
+chrome77.0.1282.27 1 1
+safari14.1 1 0
+chrome88.0.4472.114 1 1
+safari15.2 35 1
+chrome72.0.724.119 1 1
+chrome97.0.4692.99 46 2
+firebird 3 3
+chrome74.0.1058.45 1 1
+chrome94.0.4606.61 1 0
+mozilla 4 4
+chrome71.0.2002.69 1 1
+chrome71.0.3578.98 3 3
+chrome76.0.2114.41 1 1
+chrome97.0.4692.87 1 0
+chrome98.0.4758.80 1 0
+chrome47.0.2526.106 1 1
+chrome98.0.4758.101 45 3
+firefox84.0 4 4
+chrome97.0.4692.98 5 0
+chrome75.0.2525.31 1 1
+chrome70.0.991.42 1 1
+chrome75.0.39.40 1 1
+chrome95.0.4638.69 2 2
+chrome92.0.4515.107 1 1
+android 8 6
+chrome72.0.3317.33 1 1
+chrome94.0.4606.81 49 3
+firefox96.0 30 1
+chrome88.0.4324.190 1 1
+chrome98.0.4758.102 3 0
+chrome87.0.4280.141 1 0
+chrome76.0.3219.12 1 1
+chrome88.0.4324.96 1 1
+chrome69.0.3497.100 89 3
+chrome73.0.2301.75 1 1
+chrome75.0.938.33 1 1
+chrome86.0.4240.75 1 1
+chrome42.0.2311.90 7 7
+chrome78.0.1863.109 1 1
+chrome74.0.1818.25 1 1
+chrome96.0.4664.104 1 0
+Unknown 36 36
+chrome77.0.2166.71 1 1
+chrome78.0.2378.113 1 1
+edge13 4 4
+chrome77.0.1424.1 1 1
+chrome71.0.2541.27 1 1
+chrome43.0.2357.125 1 1
+firefox92.0 57 2
+chrome75.0.3697.62 1 1
+chrome97.0.4692.70 1 0
+chrome76.0.3334.30 1 1
+chrome73.0.477.14 1 1
+chrome91.0.4472.114 4 4
+chrome57.0.2987.133 2 2
+chrome71.0.2792.41 1 1
+chrome74.0.3274.109 1 1
+firefox52.0 78 34
+safari14.1.2 2 1
+chrome75.0.3742.11 1 1
+chrome95.0.4638.50 1 0
+chrome79.0.2911.114 1 1
+chrome78.0.190.16 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 7
+Python/3.10_aiohttp/3.8.1 20220202191439
+NetSystemsResearch_studies_the_availability_of_various_services_across_the_internet._Our_website_is_netsystemsresearch.com 20220228075842
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20220218130132
+Expanse_indexes_the_network_perimeters_of_our_customers._If_you_have_any_questions_or_concerns,_please_reach_out_to:_scaninfo@expanseinc.com 20220207161314
+panscient.com 20220226094635
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20220222123039
+Python/3.8_aiohttp/3.8.1 20220221210948
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 6
+Expanse_indexes_the_network_perimeters_of_our_customers._If_you_have_any_questions_or_concerns,_please_reach_out_to:_scaninfo@expanseinc.com 20220207161314
+NetSystemsResearch_studies_the_availability_of_various_services_across_the_internet._Our_website_is_netsystemsresearch.com 20220228075842
+Python/3.10_aiohttp/3.8.1 20220202191439
+Python/3.8_aiohttp/3.8.1 20220221210948
+panscient.com 20220226094635
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20220222123039
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 165 211
+From1 1 1
+From2 8 42
+From3 2 3
+From4 3 345
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 4
+www_google_com 1 21
+www_google_co_in 0 3
+msn 0 11
+www_google_com_hk 7 7
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 3
+https://www.sitelike.org 1 1
+https://vmware.brightfunds.org 1 1
+https://mungfali.com 0 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+400 93 4836
+406 96 21470
+401 34 1360
+404 208 102912
+409 1 83
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 35
+/js/SaiBaba.js 36 https://saiparivarfoundation.org/
+/guruji.html/js/jquery.ui.totop.js 1 -
+/guruji.html/js/script.js 1 -
+/pictures.html/js/superfish.js 1 -
+/pictures.html/js/site.tree.js 1 -
+/pictures.html/js/script.js 1 -
+/js/testurl 4 -
+/undefined 4 https://saiparivarfoundation.org/about.html
+/mission.html/js/script.js 1 -
+/guruji.html/js/jquery.js 1 -
+/3index.php 1 -
+/pictures.html/js/jquery.equalheights.js 1 -
+/pictures.html/js/jquery-migrate-1.1.1.js 1 -
+/guruji.html/js/superfish.js 1 -
+/robots.txt 94 -
+/images/menu_bg1.png 14 https://saiparivarfoundation.org/css/superfish.css
+/mission.html/js/jquery.ui.totop.js 1 -
+/images/btn_bg1.png 11 https://saiparivarfoundation.org/styles.css
+/a 4 -
+/mission.html/js/jquery.mobile.customized.min.js 1 -
+/pictures.html/js/jquery.ui.totop.js 1 -
+/www 4 -
+/security.txt 1 -
+/guruji.html/js/jquery.mobilemenu.js 1 -
+/.well-known/security.txt 1 -
+/guruji.html/js/jquery.easing.1.3.js 1 -
+/guruji.html/js/camera.js 1 -
+/mission.html/js/jquery-migrate-1.1.1.js 1 -
+/pictures.html/js/jquery.mobilemenu.js 1 -
+/mission.html/js/jquery.js 1 -
+/pictures.html/js/jquery.js 1 -
+/mission.html/js/camera.js 1 -
+/pictures.html/js/jquery.mobile.customized.min.js 1 -
+/images/back_all1.jpg 11 https://saiparivarfoundation.org/styles.css
+/pictures.html/js/camera.js 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 113
+114.119.150.149 21 21 0 20220228003545
+35.190.195.13 20 42 13828 20220221210948
+35.241.146.73 20 42 13828 20220206202809
+37.19.197.145 13 13 36450 20220226094635
+92.118.160.9 5 5 79357 20220228075842
+137.226.113.44 4 4 13828 20220223122049
+20.121.195.65 4 4 13828 20220221081442
+111.193.234.213 3 89 3697086 20220207212538
+114.119.128.202 3 3 10371 20220227162610
+49.37.174.76 3 45 3427685 20220226131003
+204.12.198.244 3 3 10371 20220220025314
+3.144.23.148 2 2 6914 20220226043542
+172.121.209.200 2 2 3457 20220201055658
+103.107.93.95 2 36 845584 20220204054137
+45.5.66.189 2 2 3457 20220216081846
+77.74.177.119 2 2 6914 20220222223501
+114.119.128.27 2 2 6914 20220225063347
+167.220.26.174 2 2 5620 20220218233424
+107.150.57.38 2 2 6914 20220205022646
+92.118.160.57 2 2 47803 20220219113543
+3.135.190.153 2 2 6914 20220226024850
+172.121.222.213 2 2 3457 20220216081851
+54.189.85.25 1 1 3457 20220225041622
+52.12.205.43 1 1 3457 20220212041731
+192.158.230.181 1 1 3457 20220214180401
+119.30.45.180 0 1 6205 
+34.77.162.31 1 1 10518 20220222123039
+34.213.52.162 1 28 803577 20220206092503
+34.211.28.184 1 1 3457 20220204042434
+174.205.37.233 0 1 123587 
+52.34.48.243 1 1 3457 20220218042607
+76.169.166.67 0 1 123587 
+20.116.23.82 1 1 3457 20220204224003
+102.166.108.194 0 1 6205 
+13.53.45.42 1 1 0 20220204131725
+54.185.202.32 1 1 3457 20220225041522
+152.44.98.168 1 2 126505 20220201171625
+37.111.217.186 0 1 6205 
+35.247.14.240 1 1 0 20220202191439
+124.123.166.188 0 1 123587 
+45.72.48.130 1 1 3457 20220217180118
+92.118.160.61 1 1 10518 20220228031812
+197.255.208.148 0 1 123587 
+76.191.127.18 1 30 1404744 20220215192908
+157.47.60.39 0 1 123587 
+223.187.121.197 0 1 123587 
+34.221.251.135 1 1 3457 20220204042824
+117.247.103.44 0 1 123587 
+34.77.162.10 1 1 10518 20220204101002
+103.112.10.246 0 1 123587 
+110.225.148.98 0 1 123587 
+3.110.211.94 1 1 3457 20220211110316
+34.96.130.2 1 1 10518 20220207161314
+59.96.156.168 0 1 123587 
+204.12.198.246 1 1 3457 20220222070801
+13.78.196.99 1 1 3457 20220223233538
+122.171.71.246 0 1 123587 
+34.221.3.115 1 1 3457 20220218042552
+182.68.152.179 0 1 123587 
+106.76.210.9 0 1 123587 
+103.25.251.228 0 1 6205 
+162.142.125.9 1 1 3457 20220203115708
+37.111.232.101 0 1 6205 
+37.111.226.220 0 1 6205 
+61.147.15.67 1 1 3457 20220214212840
+54.203.133.176 1 29 1031739 20220206082154
+107.115.17.9 0 1 123587 
+92.118.160.1 1 1 10518 20220213221851
+54.190.125.253 1 1 3457 20220228041946
+54.184.198.175 1 1 3457 20220228042026
+172.121.222.110 1 1 3457 20220216081837
+45.5.67.81 1 1 3457 20220201055649
+173.63.242.99 0 1 123587 
+221.130.37.173 1 1 10518 20220214041732
+204.12.198.243 1 1 3457 20220209124746
+34.86.35.5 1 1 10518 20220215121448
+37.111.248.51 0 1 6205 
+35.87.49.101 1 1 3457 20220212042406
+18.237.62.130 1 1 3457 20220221042222
+107.77.205.25 1 32 1861770 20220219175519
+157.49.252.180 0 5 4657963 
+103.51.22.18 0 1 123587 
+52.34.124.200 1 1 3457 20220203041114
+60.53.207.27 0 1 123587 
+23.95.55.204 1 19 92089 20220208215927
+35.160.74.124 1 1 3457 20220203040618
+34.77.162.14 1 1 37285 20220204230534
+39.62.164.94 0 1 6205 
+45.5.65.219 1 1 3457 20220216081838
+167.248.133.117 1 1 3457 20220218130132
+192.31.188.252 0 1 106088 
+37.111.236.50 0 1 6205 
+54.245.75.118 1 1 3457 20220216041720
+117.212.218.210 0 1 123587 
+35.87.121.26 1 1 3457 20220202043846
+154.160.9.231 0 1 6205 
+172.121.220.90 1 1 3457 20220201055649
+54.245.150.66 1 1 3457 20220203040643
+92.118.160.37 1 1 10518 20220202001718
+192.171.85.69 1 28 803577 20220201171613
+54.219.174.190 1 1 10518 20220206180743
+103.238.106.223 0 1 4284014 
+54.191.122.225 1 1 3457 20220221042200
+54.201.136.253 1 1 3457 20220223055512
+54.202.86.8 1 1 3457 20220203041146
+103.25.249.246 0 1 6205 
+93.159.230.88 1 1 3457 20220222235802
+34.77.162.1 1 1 10518 20220203185321
+104.237.245.50 1 1 3457 20220206092500
+27.6.140.241 0 1 123587 
+1.57.11.99 1 20 235197 20220225062152
+172.121.218.178 1 1 3457 20220206082151
+35.165.233.154 1 1 3457 20220202043916
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 28
+20220201 8 42 5759288 7
+20220202 6 10 45709 6
+20220203 7 16 318412 7
+20220204 10 45 1030802 9
+20220205 3 3 51260 3
+20220206 28 106 2000681 9
+20220207 4 90 3707604 4
+20220208 2 21 219133 2
+20220209 2 4 4411058 2
+20220210 0 2 247174 0
+20220211 3 4 130501 3
+20220212 4 4 13828 3
+20220213 1 1 10518 1
+20220214 5 6 126977 5
+20220215 2 32 1538849 2
+20220216 8 9 140872 6
+20220217 2 3 127044 2
+20220218 9 10 146492 8
+20220219 4 35 1875745 4
+20220220 3 4 141019 3
+20220221 24 48 274830 4
+20220222 5 5 20889 5
+20220223 5 5 13828 5
+20220224 2 4 247174 2
+20220225 5 24 245568 5
+20220226 20 62 3477963 4
+20220227 2 2 3457 2
+20220228 5 5 27950 5
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+30s-2mn 3
+0s-30s 112
+5mn-15mn 2
+2mn-5mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 7
+/ 139 570384 116 113
+/contacts.html 9 10815 1 3
+/about.html 7 8754 1 1
+/pictures.html 6 6572 0 0
+/Resources.html 6 3748 0 0
+/guruji.html 6 4132 0 0
+/mission.html 6 6988 0 1
+END_SIDER

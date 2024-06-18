@@ -1,0 +1,79 @@
+Return-Path: <>
+Delivered-To: seasai10@gator4018.hostgator.com
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id 2Jl8LzEuKGMsMgIAUq51WA
+	(envelope-from <>)
+	for <seasai10@gator4018.hostgator.com>; Mon, 19 Sep 2022 03:54:09 -0500
+Return-path: <>
+Envelope-to: seasai10@gator4018.hostgator.com
+Delivery-date: Mon, 19 Sep 2022 03:54:09 -0500
+Received: from mailnull by gator4018.hostgator.com with local (Exim 4.95)
+	id 1oaCXZ-001DXs-Ny
+	for seasai10@gator4018.hostgator.com;
+	Mon, 19 Sep 2022 03:54:09 -0500
+X-Failed-Recipients: neelmahapatro@hotmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4018.hostgator.com>
+To: seasai10@gator4018.hostgator.com
+References: <E1oVMMy-003WrJ-Pj@gator4018.hostgator.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1663577649-eximdsn-1777411429
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1oaCXZ-001DXs-Ny@gator4018.hostgator.com>
+Date: Mon, 19 Sep 2022 03:54:09 -0500
+
+--1663577649-eximdsn-1777411429
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  neelmahapatro@hotmail.com
+    (ultimately generated from info@saiparivarfoundation.org)
+    host 34.217.196.71 [34.217.196.71]
+    SMTP error from remote mail server after end of data:
+    421 aCXVoD4OWnQ2aaCXWoa1GS - <seasai10@gator4018.hostgator.com> sender rejected AUP#BL:
+    retry timeout exceeded
+
+--1663577649-eximdsn-1777411429
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4018.hostgator.com
+
+Action: failed
+Final-Recipient: rfc822;info@saiparivarfoundation.org
+Status: 5.0.0
+Remote-MTA: dns; 34.217.196.71
+Diagnostic-Code: smtp; 421 aCXVoD4OWnQ2aaCXWoa1GS - <seasai10@gator4018.hostgator.com> sender rejected AUP#BL: retry timeout exceeded
+
+--1663577649-eximdsn-1777411429
+Content-type: message/rfc822
+
+Return-path: <seasai10@gator4018.hostgator.com>
+Received: from seasai10 by gator4018.hostgator.com with local (Exim 4.95)
+	(envelope-from <seasai10@gator4018.hostgator.com>)
+	id 1oVMMy-003WrJ-Pj
+	for info@saiparivarfoundation.org;
+	Mon, 05 Sep 2022 19:23:12 -0500
+To: info@saiparivarfoundation.org
+Subject: Arati Registration
+X-PHP-Script: saiparivarfoundation.org/mail.php for 191.101.217.15
+X-PHP-Originating-Script: 33308:mail.php
+From: mr_johnson_dube@yahoo.com
+Message-Id: <E1oVMMy-003WrJ-Pj@gator4018.hostgator.com>
+Date: Mon, 05 Sep 2022 19:23:12 -0500
+
+ Hello Administrator, 
+ 
+ You got a new message from SaiParivarFoundation! 
+ 
+
+ From: GradyErolf 
+ Phone: 86792533623 
+ Month: 9 
+ Message: Can Bitcoin Be Trusted http://bitcoin-0211.cutecoke.com/id-6731
+
+--1663577649-eximdsn-1777411429--

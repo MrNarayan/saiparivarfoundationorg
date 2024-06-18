@@ -1,0 +1,79 @@
+Return-Path: <>
+Delivered-To: seasai10@gator4018.hostgator.com
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id KJ52HYlTKGNn9Q4AUq51WA
+	(envelope-from <>)
+	for <seasai10@gator4018.hostgator.com>; Mon, 19 Sep 2022 06:33:29 -0500
+Return-path: <>
+Envelope-to: seasai10@gator4018.hostgator.com
+Delivery-date: Mon, 19 Sep 2022 06:33:29 -0500
+Received: from mailnull by gator4018.hostgator.com with local (Exim 4.95)
+	id 1oaF1l-000PuV-E4
+	for seasai10@gator4018.hostgator.com;
+	Mon, 19 Sep 2022 06:33:29 -0500
+X-Failed-Recipients: neelmahapatro@hotmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4018.hostgator.com>
+To: seasai10@gator4018.hostgator.com
+References: <E1oYEtk-0047SR-HN@gator4018.hostgator.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1663587209-eximdsn-1082422667
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1oaF1l-000PuV-E4@gator4018.hostgator.com>
+Date: Mon, 19 Sep 2022 06:33:29 -0500
+
+--1663587209-eximdsn-1082422667
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  neelmahapatro@hotmail.com
+    (ultimately generated from info@saiparivarfoundation.org)
+    host 34.217.196.71 [34.217.196.71]
+    SMTP error from remote mail server after end of data:
+    421 aF18og8N7C0p6aF19o5pdU - <seasai10@gator4018.hostgator.com> sender rejected AUP#CDRBL:
+    retry timeout exceeded
+
+--1663587209-eximdsn-1082422667
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4018.hostgator.com
+
+Action: failed
+Final-Recipient: rfc822;info@saiparivarfoundation.org
+Status: 5.0.0
+Remote-MTA: dns; 34.217.196.71
+Diagnostic-Code: smtp; 421 aF18og8N7C0p6aF19o5pdU - <seasai10@gator4018.hostgator.com> sender rejected AUP#CDRBL: retry timeout exceeded
+
+--1663587209-eximdsn-1082422667
+Content-type: message/rfc822
+
+Return-path: <seasai10@gator4018.hostgator.com>
+Received: from seasai10 by gator4018.hostgator.com with local (Exim 4.95)
+	(envelope-from <seasai10@gator4018.hostgator.com>)
+	id 1oYEtk-0047SR-HN
+	for info@saiparivarfoundation.org;
+	Tue, 13 Sep 2022 18:00:56 -0500
+To: info@saiparivarfoundation.org
+Subject: Arati Registration
+X-PHP-Script: saiparivarfoundation.org/mail.php for 156.146.63.143
+X-PHP-Originating-Script: 33308:mail.php
+From: aseuniv@arrakis.es
+Message-Id: <E1oYEtk-0047SR-HN@gator4018.hostgator.com>
+Date: Tue, 13 Sep 2022 18:00:56 -0500
+
+ Hello Administrator, 
+ 
+ You got a new message from SaiParivarFoundation! 
+ 
+
+ From: GradyErolf 
+ Phone: 89519163417 
+ Month: 1 
+ Message: Buy Android App Installs - Rank higher in Google Play http://www.lagunabeachplasticsurgeon.com/redir.php?url=https://vk.cc%2FccgQZt
+
+--1663587209-eximdsn-1082422667--

@@ -1,0 +1,145 @@
+Return-Path: <labathej@yahoo.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP id 8DEoJG8CAFxGTAgAUq51WA
+	for <info@saiparivarfoundation.org>; Thu, 29 Nov 2018 09:14:55 -0600
+Return-path: <labathej@yahoo.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Thu, 29 Nov 2018 09:14:55 -0600
+Received: from sonic313-13.consmr.mail.bf2.yahoo.com ([74.6.133.123]:39369)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <labathej@yahoo.com>)
+	id 1gSO1n-002Tra-Cr
+	for info@saiparivarfoundation.org; Thu, 29 Nov 2018 09:14:55 -0600
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1543504484; bh=fCsxb0q4xds5hOOYR5FACQp9lp5d3l5OYF7UG/bQkO4=; h=Date:From:Reply-To:Subject:References:From:Subject; b=Kvtbo5+QbNVqew0+kUPwV+A5moEZnl8FZewmzHqE9vqxXktKBc5CwieCKqlsdMogYuLNbuZlsiXDizcMk7w8wkHB/oUTa3Fd+Nvs4DMCz7iou/bozoIo+w5rcV2nse1j0Os3gJaTzBt7+twXgWL3WoFp548wavXyWbhxvqRhuFg6kcgefCu1ntxDy17yD5+mCTli0TTS8lOqZcef665fb/z5aRpAUM+IqCKCdq21m/MBgGkUPc2qVucLyV8dvRrsW4OBK78WYgPvYqVwTIN+8R0AOs2c+s+iUUJPlbYK/sHa15wWgC1PqFYlFbXUj39g9uIVnBr9zW+urBagt8TawQ==
+X-YMail-OSG: a9h04xcVM1kJa15M9854vfJJTFI5_3Wse_fZ1HcJnPMD_eZlrxvO.VIliAs0zZq
+ yG.tVjhR2meTZRK83AAVLhqYOpoVU2eK2WtLntEbvTZd_aqFEJjwJvMDYe7xfDN_vvYa6dCTQC_B
+ s_KsB7I.aD.V0F.2w6N5rIZQrnpFNg0rmq3uYhPRKKNpgUYsw5LZyty0QZrrFU7GVNuLWihjVwjN
+ AtFyvyx86zYyZKBtGsuzYoZvkhMv2Z2exNJL87WOoOQqqnj18ARO8088VL15VKABupZgEwrsfqVH
+ qKbZW1InH41Ity3fQI5i4lLP8yI9f9wFdwZHIrk1DT2LWL9WW28_sMtF4CLKCMDyCskLkkbYX_YA
+ MV732_s317n4uz2BaGVe_TfsI4cEwVlCI1Z5vZaRApnNmMi21l2GiZYVOloYdL2KjI1TviRtVTTD
+ fnr5eYCMFfmZBZz8ErfXxXqLB7GG8K5Q5nJca5xiYJZq8BkJJl_jP0P_DRGaXm_mbZuEdvYAi6O4
+ M0GUyg.DPWE7PcJiVFPAvXCW0XwnCpuhGZvNjU3K87DZUOMWED6FrjqclaGEHP8Q7QX5M3CEoeA.
+ gpvuHB1MpiBFqqzRfAifRN_.drjIgNQfY_PRc5uY5DVLDq6hCVsnzfDFT_A_1DEnQ32F2CfzB2Wi
+ wZdgpqDhOkRx89UQUVwcVWNrGxwMKVAJjKM_bPxaCxwcq99azjavuSW70qMFfdkGG1OH.5WcC3Sb
+ LNU5fnI280KZbg5UzYco6uMdVNWVCCncJ6OLNYEvHNLfUdilfc4ep5QInhbRpxdU56fhUbZDmnGT
+ 2XR678cdf0p2RiXIafHEWy.SvIiTqhwo0aXsyonjeGNcixB_JNiodYz2rTTgYJWjCkBHVXknRppw
+ ny1gaxvRQHC_wxkNZtEeGU6YR2zwl638M35pPHekRsJN42HGVmJ_EI6rDuRv6Vy6705a92GrWYql
+ lmplR4PKG9b9kidn9StGgeS5T6N.WtNjhRJg_n2fDTcQ_jfyIttCtVkRNQVYYnW_wL8sD23T.bb4
+ mVX3u7BAFhy8.BG_8V0gy2yk97w--
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic313.consmr.mail.bf2.yahoo.com with HTTP; Thu, 29 Nov 2018 15:14:44 +0000
+Date: Thu, 29 Nov 2018 15:14:42 +0000 (UTC)
+From: " Mr.John C. Williams" <labathej@yahoo.com>
+Reply-To: " Mr.John C. Williams" <labathej@yahoo.com>
+Message-ID: <1073302843.8379113.1543504482266@mail.yahoo.com>
+Subject: Good day to you, dear beneficiary
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_8379112_649546174.1543504482264"
+References: <1073302843.8379113.1543504482266.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.12729 YahooMailNeo Mozilla/5.0 (Windows NT 6.1; rv:63.0) Gecko/20100101 Firefox/63.0
+Content-Length: 5802
+
+------=_Part_8379112_649546174.1543504482264
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+=C2=A0Good day to you, dear beneficiary, how are you doing today? I hope al=
+l is well with you? I'm=C2=A0 Mr. John C. Williams, the President and chief=
+ executive officer Federal Reserve Bank here in New York, I am writing in r=
+espect to your fund file which have been here for some time now. Your payme=
+nt files from Central Bank of Nigeria (CBN)=C2=A0 was compiled and submitte=
+d to my desk this morning for review. The total sum owed to you by the plus=
+ accrued interest is US$15,500,000.00 (Fifteen Million Five Hundred Thousan=
+d USD Only)
+
+=C2=A0I want you to know that we the Reserve Bank have been contracted by t=
+he UN UNCLAIMED OVERDUE FUND BOARD to carry out this project to all victims=
+ due to scam and diversion of funds by fraudsters. Your fund sum of $15,500=
+,000.00 USD was forwarded to us due to the trust they have on us and I want=
+ to assure you that you will receive your fund without any stress whatsoeve=
+r because we have mapped out strategies to enable you receive your fund.
+
+=C2=A0NOTE: We do not request for any fee like transfer, charge or delivery=
+ charge as you have three options which you can receive your fund, and thes=
+e options are BANK TRANSFER, CHECK AND ATM CARD so it is now left for you t=
+o make your choice and we will follow up. Meanwhile the only money you will=
+ spend in this transaction is the sum of $367usd and that is for us to obta=
+in the fund origin certificate from Nigeria.
+
+=C2=A0Now, once this fund origin certificate is being obtained and issued t=
+here will be no more fee at all and your fund will get to you through any m=
+eans of your choice because that is the only money needed and the fund orig=
+in certificate will stand as a prove to show where your fund is Originated =
+from and this will make offices like Home Land Security,IRS and other gover=
+nment agency in your country to be aware that your fund is clean and legal.
+
+I urge you to provide the below listed info for verification with file righ=
+t here in my desk:
+
+FULL NAME:
+ADDRESS:
+MOBILE /TELEPHONE:
+SEX:
+AGE:
+NEXT OF KIN:
+SCAN COPY OF YOUR VALID ID:
+
+Also choose mode of payment from the below listed:
+
+BANK TRANSFER, CHECK AND ATM CARD?
+
+Once we receive the requested information and verification is complete we w=
+ould direct you on how to make payment for the fund origin certificate to b=
+e issued for the release of your overdue fund to you.
+
+Contact me through cwilliamsjo@yahoo.com
+
+=C2=A0Thank You,
+=C2=A0Mr.John C. Williams,
+=C2=A0President and chief executive officer Of Federal Reserve Bank NY.
+------=_Part_8379112_649546174.1543504482264
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div style=3D"color:#000; background-color:#fff; f=
+ont-family:Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font=
+-size:13px"><div><span></span></div><div>&nbsp;</div><div class=3D"signatur=
+e" id=3D"yui_3_16_0_ym19_1_1543504433541_7442">Good day to you, dear benefi=
+ciary, how are you doing today? I hope all is well with you? I'm&nbsp; Mr. =
+John C. Williams, the President and chief executive officer Federal Reserve=
+ Bank here in New York, I am writing in respect to your fund file which hav=
+e been here for some time now. Your payment files from Central Bank of Nige=
+ria (CBN)&nbsp; was compiled and submitted to my desk this morning for revi=
+ew. The total sum owed to you by the plus accrued interest is US$15,500,000=
+.00 (Fifteen Million Five Hundred Thousand USD Only)<br><br>&nbsp;I want yo=
+u to know that we the Reserve Bank have been contracted by the UN UNCLAIMED=
+ OVERDUE FUND BOARD to carry out this project to all victims due to scam an=
+d diversion of funds by fraudsters. Your fund sum of $15,500,000.00 USD was=
+ forwarded to us due to the trust they have on us and I want to assure you =
+that you will receive your fund without any stress whatsoever because we ha=
+ve mapped out strategies to enable you receive your fund.<br><br>&nbsp;NOTE=
+: We do not request for any fee like transfer, charge or delivery charge as=
+ you have three options which you can receive your fund, and these options =
+are BANK TRANSFER, CHECK AND ATM CARD so it is now left for you to make you=
+r choice and we will follow up. Meanwhile the only money you will spend in =
+this transaction is the sum of $367usd and that is for us to obtain the fun=
+d origin certificate from Nigeria.<br><br>&nbsp;Now, once this fund origin =
+certificate is being obtained and issued there will be no more fee at all a=
+nd your fund will get to you through any means of your choice because that =
+is the only money needed and the fund origin certificate will stand as a pr=
+ove to show where your fund is Originated from and this will make offices l=
+ike Home Land Security,IRS and other government agency in your country to b=
+e aware that your fund is clean and legal.<br><br>I urge you to provide the=
+ below listed info for verification with file right here in my desk:<br><br=
+>FULL NAME:<br>ADDRESS:<br>MOBILE /TELEPHONE:<br>SEX:<br>AGE:<br>NEXT OF KI=
+N:<br>SCAN COPY OF YOUR VALID ID:<br><br>Also choose mode of payment from t=
+he below listed:<br><br>BANK TRANSFER, CHECK AND ATM CARD?<br><br>Once we r=
+eceive the requested information and verification is complete we would dire=
+ct you on how to make payment for the fund origin certificate to be issued =
+for the release of your overdue fund to you.<br><br>Contact me through cwil=
+liamsjo@yahoo.com<br><br>&nbsp;Thank You,<br>&nbsp;Mr.John C. Williams,<br>=
+&nbsp;President and chief executive officer Of Federal Reserve Bank NY.</di=
+v></div></body></html>
+------=_Part_8379112_649546174.1543504482264--

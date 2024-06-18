@@ -1,0 +1,78 @@
+Return-Path: <>
+Delivered-To: seasai10@gator4018.hostgator.com
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id 6MFLCjq002LmaAsAUq51WA
+	(envelope-from <>)
+	for <seasai10@gator4018.hostgator.com>; Sun, 17 Jul 2022 02:03:22 -0500
+Return-path: <>
+Envelope-to: seasai10@gator4018.hostgator.com
+Delivery-date: Sun, 17 Jul 2022 02:03:22 -0500
+Received: from mailnull by gator4018.hostgator.com with local (Exim 4.95)
+	id 1oCyJG-003BXc-3e
+	for seasai10@gator4018.hostgator.com;
+	Sun, 17 Jul 2022 02:03:22 -0500
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4018.hostgator.com>
+To: seasai10@gator4018.hostgator.com
+References: <E1oC3Po-002qmg-U6@gator4018.hostgator.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1658041402-eximdsn-1990671373
+MIME-Version: 1.0
+Subject: Warning: message 1oC3Po-002qmg-U6 delayed 48 hours
+Message-Id: <E1oCyJG-003BXc-3e@gator4018.hostgator.com>
+Date: Sun, 17 Jul 2022 02:03:22 -0500
+
+--1658041402-eximdsn-1990671373
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+A message that you sent has not yet been delivered to one or more of its
+recipients after more than 48 hours on the queue on gator4018.hostgator.com.
+
+The message identifier is:     1oC3Po-002qmg-U6
+The subject of the message is: Arati Registration
+The date of the message is:    Thu, 14 Jul 2022 13:18:20 -0500
+
+The address to which the message has not yet been delivered is:
+
+  neelmahapatro@hotmail.com
+    (ultimately generated from info@saiparivarfoundation.org)
+    host 34.217.196.71 [34.217.196.71]
+    Delay reason: SMTP error from remote mail server after end of data:
+    421 221.4.61.185 is listed on Cloudmark CSI-Global. Please visit:// https AUP#BL
+
+No action is required on your part. Delivery attempts will continue for
+some time, and this warning may be repeated at intervals if the message
+remains undelivered. Eventually the mail delivery software will give up,
+and when that happens, the message will be returned to you.
+
+--1658041402-eximdsn-1990671373
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4018.hostgator.com
+
+Action: delayed
+Final-Recipient: rfc822;info@saiparivarfoundation.org
+Status: 4.0.0
+Remote-MTA: dns; 34.217.196.71
+Diagnostic-Code: smtp; 421 221.4.61.185 is listed on Cloudmark CSI-Global. Please visit:// https AUP#BL
+
+--1658041402-eximdsn-1990671373
+Content-type: text/rfc822-headers
+
+Return-path: <seasai10@gator4018.hostgator.com>
+Received: from seasai10 by gator4018.hostgator.com with local (Exim 4.95)
+	(envelope-from <seasai10@gator4018.hostgator.com>)
+	id 1oC3Po-002qmg-U6
+	for info@saiparivarfoundation.org;
+	Thu, 14 Jul 2022 13:18:20 -0500
+To: info@saiparivarfoundation.org
+Subject: Arati Registration
+X-PHP-Script: saiparivarfoundation.org/mail.php for 221.4.61.185
+X-PHP-Originating-Script: 33308:mail.php
+From: devanc61u30210b@outlook.com
+Message-Id: <E1oC3Po-002qmg-U6@gator4018.hostgator.com>
+Date: Thu, 14 Jul 2022 13:18:20 -0500
+
+
+--1658041402-eximdsn-1990671373--

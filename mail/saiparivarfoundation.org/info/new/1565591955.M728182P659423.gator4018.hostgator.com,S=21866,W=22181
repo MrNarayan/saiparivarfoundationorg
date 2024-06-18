@@ -1,0 +1,315 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id CMtMK5MJUV3fDwoAUq51WA
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	for <info@saiparivarfoundation.org>; Mon, 12 Aug 2019 01:39:15 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Mon, 12 Aug 2019 01:39:15 -0500
+Received: from mail-pf1-f176.google.com ([209.85.210.176]:45070)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1hx3z9-0032fR-FZ
+	for info@saiparivarfoundation.org; Mon, 12 Aug 2019 01:39:15 -0500
+Received: by mail-pf1-f176.google.com with SMTP id w26so3944912pfq.12
+        for <info@saiparivarfoundation.org>; Sun, 11 Aug 2019 23:39:10 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:dkim-signature:from
+         :reply-to:to:date:message-id:subject:mime-version;
+        bh=RKIxDbpTUeGjyXoDwS297KVdbZGZ6UlvOEJzatUH0Lg=;
+        b=kz2diDos7fT/zq9j1m0qRQQS2iNdunpS+xZdwJ7CGk/LGBI6QInA/AjWlwkDfg/jgf
+         RSLQweE5xuOWmKn/GMCCmt3FNbmlRm0mST/yPbpZXSM3ep74JMXMaMaTT14JlFZDPsTy
+         NG4Vh0tzdcxkzzZG7xpDl9eqs6PJRbrEhX83TGNfv35wlvdu0GPbL0OfbC2tXfEbXzfV
+         Y7hWrSrb9PRt0opNuDTRpXdXwVFjUz9kUGJyfFqEcnUbc7wpDW8kvWvPxZAWnFl4bIpR
+         aM+MStQ11S19p7L5bsp0IWoHj1nQjGSACdhOrDZ2nZ+/6fqBr38kqnqQjCYl0u76PokH
+         PgFQ==
+X-Gm-Message-State: APjAAAUcEk3LMBbw2T9PWHY572l57IS0Lvvv0PD+EwYArVpRujfLFQ0x
+	xjwhLo0fulFyWRRSECtFPoky/pfWdsokFpsLhW3xY4KCueXeuSE=
+X-Received: by 2002:a65:5043:: with SMTP id k3mr29784704pgo.406.1565591944706;
+        Sun, 11 Aug 2019 23:39:04 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a17:90a:e001:0:0:0:0 with SMTP id u1csp4181788pjy;
+        Sun, 11 Aug 2019 23:39:03 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzZMF5NI2CAaKAc9iIadbYni6ks1ZvJEXxz1UANzVmySCQ6JRPtbE07EjiKlVgZcToXgHeZ
+X-Received: by 2002:a25:9706:: with SMTP id d6mr1896781ybo.227.1565591943719;
+        Sun, 11 Aug 2019 23:39:03 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1565591943; cv=none;
+        d=google.com; s=arc-20160816;
+        b=NQkp+xMVmpskDVYw8/YkOo+AhuC30PL8/rrU6l5OcVQI1vKFJCX4Tgmkwt3P/6XqoO
+         Dt1l/eS/OM2/tUy8ECPYPRq4/hyVE+CVEO/ddSNWPAFAB30b/X9k2cYzzsLlqQFDIwlT
+         ONSR9ujovT7SXhuPqP/Tcl6lo6KrTmS9CFB7kXYJVuzmdr1bJnA2xcAGrorRMaxtalnj
+         ObVekxZY7uL678ISPmNHByQ0G72bvXDdwHSHXiMvrWtf46lJJcow59wEl3yWNA09myeF
+         WP0OVp9jKQ4EzFMMBaO3Vbb5RlNQBJTC2R8IGOEXukWzT8+/SBxT/pN7xXQVttEw0CCp
+         j6QQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:message-id:date:to:reply-to:from
+         :dkim-signature:dkim-signature;
+        bh=RKIxDbpTUeGjyXoDwS297KVdbZGZ6UlvOEJzatUH0Lg=;
+        b=cZmxeb4DWZ1L8Jhd8Yri75880e1LClMVk+knHQA4kb/AkeZEVZ9tifuTjKMm8SUgH4
+         kmtxFmXe5Ba+AWU4J2YVblA7vG7ZhYbqJZ/BpfHh8cjf3o8up0otFit9LnUsf7cGZ2S6
+         1kOf2gg7k8jyKyAUKhVs64ClxtKsm4QLTwHw/fDhjFoAXg/BNNbg25DIDq8YbAZr9ubH
+         j5sbksnbmy0X0IGREUT+fDd73DwAUA4rQK/PUttd4k/Mua6Z0RJUvAAuFkREdDANbALE
+         roq6lCpQatyDAUMrvLeh+qPjm3L1JZBibNwQD10Ref51j3Oebk8NprFk+ximDwXm1XfS
+         yyeg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mailchimp.com header.s=k1 header.b=ipxkqkQV;
+       dkim=pass header.i=@gmail.mctxapp.net header.s=k1 header.b=p0HXVjJa;
+       spf=pass (google.com: domain of bounce-mcsys.us15_69289545.48be8224f0-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com designates 198.2.140.10 as permitted sender) smtp.mailfrom="bounce-mcsys.us15_69289545.48be8224f0-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mailchimp.com
+Received: from systemalerts8.mailchimp.com (systemalerts8.mailchimp.com. [198.2.140.10])
+        by mx.google.com with ESMTPS id e184si4525733ywa.452.2019.08.11.23.39.03
+        for <saiparivarfoundation@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 11 Aug 2019 23:39:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-mcsys.us15_69289545.48be8224f0-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com designates 198.2.140.10 as permitted sender) client-ip=198.2.140.10;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mailchimp.com header.s=k1 header.b=ipxkqkQV;
+       dkim=pass header.i=@gmail.mctxapp.net header.s=k1 header.b=p0HXVjJa;
+       spf=pass (google.com: domain of bounce-mcsys.us15_69289545.48be8224f0-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com designates 198.2.140.10 as permitted sender) smtp.mailfrom="bounce-mcsys.us15_69289545.48be8224f0-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mailchimp.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=mailchimp.com;
+ h=From:Reply-To:To:Date:Message-ID:Subject:MIME-Version:Content-Type;
+ i=accountservices@mailchimp.com;
+ bh=RKIxDbpTUeGjyXoDwS297KVdbZGZ6UlvOEJzatUH0Lg=;
+ b=ipxkqkQVMsjM2nTVpwkQ7nGFoAb7yFReVjf1KznaqQ5BvSnSBzaQH3/ftISdM2QHGocAHnkOQfSI
+   BcHiUzD3xnT/LS+YNggUU8OAMK1QglriAtYLnv5C6L0nwZ1oQCaw9uKyRA5PFbV03YdgIsHZSuqG
+   ifCHvmv7hCJwhz1O/nQ=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=gmail.mctxapp.net;
+ h=From:Reply-To:To:Date:Message-ID:Subject:MIME-Version:Content-Type;
+ bh=RKIxDbpTUeGjyXoDwS297KVdbZGZ6UlvOEJzatUH0Lg=;
+ b=p0HXVjJa7ZsLwKP06abgvsAPe0S0gVSaOW+NRbOfYG21PhqdAj9mkvCvngA1lGrWVwW7HZHRZlIh
+   IHaFeWTkbpsC09tqJ0TYsLSdf00Syzr7bjhX1VSb7ez5sEgR0NIsqKOEdcjeGkVgUWknkvZIBKUR
+   /bcj+ooKpt6z9sfp1SY=
+Received: from 127.0.0.1 (127.0.0.1) by systemalerts8.mailchimp.com id ha44oe2ddl4u for <saiparivarfoundation@gmail.com>; Mon, 12 Aug 2019 06:39:03 +0000 (envelope-from <bounce-mcsys.us15_69289545.48be8224f0-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com>)
+From: =?utf-8?Q?Mailchimp=20Account=20Services?= <accountservices@mailchimp.com> 
+Reply-To: =?utf-8?Q?Mailchimp=20Account=20Services?= <accountservices@mailchimp.com> 
+To:  <saiparivarfoundation@gmail.com> 
+Date: Mon, 12 Aug 2019 06:39:03 +0000 
+Message-ID: <88028fd5911e23c28ce0a8323233900f1c0.20190812063903@systemalerts8.mailchimp.com> 
+X-Mailer: MailChimp Mailer - **CID48be8224f0233900f1c0** 
+X-Campaign: mailchimp88028fd5911e23c28ce0a8323.48be8224f0 
+X-campaignid: mailchimp88028fd5911e23c28ce0a8323.48be8224f0 
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=88028fd5911e23c28ce0a8323&id=48be8224f0&e=233900f1c0 
+X-MC-User: 88028fd5911e23c28ce0a8323 
+X-Feedback-ID: 69289545:69289545.48be8224f0:us15:mc 
+X-Auto-Response-Suppress: OOF, AutoReply 
+X-Accounttype: ff 
+Subject: Mailchimp List Export Complete 
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_187296196"
+
+
+--_----------=_MCPart_187296196
+Content-Type: text/plain; charset="us-ascii"
+
+Your list export has been completed.
+
+The export of your list, Shirdi Sai Dham Mailing List, from the account Shirdi Sai Dham was successful. This export was requested by Shirdi Sai Dham  via the (IP: 73.11.216.4 - Redmond, Wa Usa)
+
+If you want to delete this list, please download the export first; once the list is deleted, both are gone forever.
+
+--------------------
+Download List Data: https://us15.mailchimp.com/mctx/click?url=https%3A%2F%2Fus15.admin.mailchimp.com%2Flists%2Fmembers%2Fdownload-export%3Fid%3Dccd0654533&xid=48be8224f0&uid=69289545&pool=user_facing&subject=Mailchimp+List+Export+Complete
+--------------------
+
+
+----------------------------------------
+https://us15.mailchimp.com/mctx/click?url=https%3A%2F%2Fwww.mailchimp.com&xid=48be8224f0&uid=69289545&pool=user_facing&subject=Mailchimp+List+Export+Complete
+675 Ponce De Leon Ave NE Suite 5000 Atlanta, GA 30308 USA
+
+Contact Us [https://www.mailchimp.com/contact/]
+Terms of Use [https://mailchimp.com/legal/terms/]
+Privacy Policy [https://mailchimp.com/legal/privacy/]
+Log In to Mailchimp [https://login.mailchimp.com]
+--_----------=_MCPart_187296196
+Content-Type: text/html; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>=0A<html>=0A    <head>=0A        <!-- trx_0055 -->=0A   =
+     <meta charset=3D"UTF-8">=0A        <meta name=3D"viewport" content=
+=3D"width=3Ddevice-width=2C initial-scale=3D1" />=0A        <meta http-e=
+quiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=0A        <title>Mailchi=
+mp List Export Complete</title>=0A=0A        <style type=3D"text/css">=
+=0A            /*////// RESET STYLES //////*/=0A            p{margin:1em=
+ 0;}=0A            a{word-wrap:break-word;}=0A            table{border-c=
+ollapse:collapse;}=0A            h1=2C h2=2C h3=2C h4=2C h5=2C h6{displa=
+y:block; margin:0; padding:0;}=0A            img=2C a img{border:0; heig=
+ht:auto; outline:none; text-decoration:none;}=0A            body=2C #bod=
+yTable=2C #bodyCell{height:100%; margin:0; padding:0; width:100%;}=0A=0A=
+            /*////// CLIENT-SPECIFIC STYLES //////*/=0A            #outl=
+ook a{padding:0;} /* Force Outlook 2007 and up to provide a "view in bro=
+wser" message. */=0A            @-ms-viewport{width:device-width;} /* Fo=
+rce IE "snap mode" to render widths normally. */=0A            img{-ms-i=
+nterpolation-mode:bicubic;} /* Force IE to smoothly render resized image=
+s. */=0A            table{mso-table-lspace:0pt; mso-table-rspace:0pt;} /=
+* Remove spacing between tables in Outlook Desktop. */=0A            .Re=
+adMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Outlook.com=
+ to display emails at full width. */=0A            p=2C a=2C li=2C td=2C=
+ blockquote{mso-line-height-rule:exactly;} /* Force Outlook Desktop to r=
+ender line heights as they're originally set. */=0A            a[href^=
+=3D"tel"]=2C a[href^=3D"sms"]{color:inherit; cursor:default; text-decora=
+tion:none;} /* Force mobile devices to inherit declared link styles. */=
+=0A            p=2C a=2C li=2C td=2C body=2C table=2C blockquote{-ms-tex=
+t-size-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows-=
+ and Webkit-based mobile platforms from changing declared text sizes. */=
+=0A            .ExternalClass=2C .ExternalClass p=2C .ExternalClass td=
+=2C .ExternalClass p=2C .ExternalClass span=2C .ExternalClass font{line-=
+height:100%;} /* Force Outlook.com to display line heights normally. */=
+=0A            a[x-apple-data-detectors]{color:inherit !important; text-=
+decoration:none !important; font-size:inherit !important; font-family:in=
+herit !important; font-weight:inherit !important; line-height:inherit !i=
+mportant;} /* Force iOS devices to heed link styles set in CSS. */=0A=0A=
+            /*////// EMAIL STYLES //////*/=0A            #bodyCell{paddi=
+ng-top:20px !important; padding-right:10px !important; padding-bottom:20=
+px !important; padding-left:10px !important;}=0A            .emailContai=
+ner{max-width:640px;}=0A            .footerContent a{color:#007C89; font=
+-weight:500; text-decoration:none;}=0A            .button a{text-decorat=
+ion:none;} /* Necessary for Outlook on Windows Phone */=0A=0A          =
+  @media screen and (min-width:768px){=0A                .emailContainer=
+{width:640px !important;}=0A            }=0A=0A            @media only s=
+creen and (max-width:480px){=0A                body{width:100% !importan=
+t; min-width:100% !important;}=0A                #bodyCell{padding-top:1=
+0px !important; padding-bottom:10px !important;}=0A                h1{fo=
+nt-size:26px !important; line-height:28px !important;}=0A              =
+  .footerContent p{border-bottom:1px solid #DEDDDC; font-size:13px !impo=
+rtant; padding-bottom:20px !important;}=0A                .utilityLink{b=
+order-bottom:1px solid #DEDDDC; display:block; font-size:13px !important=
+; padding-top:15px; padding-bottom:15px;}=0A                .mobileHide{=
+display:none; visibility:hidden;}=0A            }=0A        </style>=0A=
+    </head>=0A    <body bgcolor=3D"#EFEEEA">=0A        <center>=0A     =
+       <table align=3D"center" bgcolor=3D"#EFEEEA" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTab=
+le">=0A                <tr>=0A                    <td align=3D"center" s=
+tyle=3D"padding:10px;" valign=3D"top" id=3D"bodyCell">=0A              =
+          <span style=3D"color:#EFEEEA; display:none; font-size:0px; hei=
+ght:0px; visibility:hidden; width:0px;">We&rsquo;ve finished exporting t=
+he list=2C &lsquo;Shirdi Sai Dham Mailing List&rsquo;.</span>=0A       =
+                 <!--[if gte mso 9]>=0A                        <table al=
+ign=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D=
+"width:640px;" width=3D"640">=0A                        <tr>=0A        =
+                <td align=3D"center" valign=3D"top">=0A                =
+        <![endif]-->=0A                        <table align=3D"center" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"max-width:640px=
+;" width=3D"100%" class=3D"emailContainer">=0A                         =
+   <tr>=0A                                <td align=3D"center" valign=3D=
+"top">=0A                                    <!-- BEGIN BODY // -->=0A =
+                                   <table align=3D"center" bgcolor=3D"#F=
+FFFFF" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"backgro=
+und-color:#FFFFFF; border-radius:0;" width=3D"100%">=0A                =
+                    <tr>=0A                                        <td a=
+lign=3D"center" style=3D"padding-right:20px; padding-left:20px;" valign=
+=3D"top">=0A                                            <table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=0A             =
+                                       <tr>=0A                         =
+                               <td align=3D"left" valign=3D"top" style=
+=3D"padding-top:40px; padding-bottom:30px;">=0A                        =
+                                    <a href=3D"https://us15.mailchimp.co=
+m/mctx/click?url=3Dhttps%3A%2F%2Fwww.mailchimp.com%2F&xid=3D48be8224f0&u=
+id=3D69289545&pool=3D&subject=3D" target=3D"_blank" style=3D"text-decora=
+tion:none;"><img src=3D"https://cdn-images.mailchimp.com/template_images=
+/cxp_2018/md-lockup-dark@2x.png" alt=3D"Mailchimp" width=3D"150" class=
+=3D"logoImage" style=3D"border:0; color:#241C15; font-family:'Helvetica=
+ Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:24px; f=
+ont-weight:bold; height:auto !important; letter-spacing:-2px; line-heigh=
+t:100%; text-align:center; outline:none; text-decoration:none;" /></a>=
+=0A                                                        </td>=0A    =
+                                                </tr>=0A               =
+                                     =0A                               =
+                     <tr>=0A                                           =
+             <td style=3D"padding-bottom:20px;" valign=3D"top">=0A     =
+                                                       <h1 style=3D"colo=
+r:#241C15; font-family:Georgia=2C Times=2C 'Times New Roman'=2C serif; f=
+ont-size:28px; font-style:normal; font-weight:400; line-height:36px; let=
+ter-spacing:normal; margin:0; padding:0; text-align:left;">Your list exp=
+ort is complete.</h1>=0A                                               =
+         </td>=0A                                                    </t=
+r>=0A                                                    <tr>=0A       =
+                                                 <td style=3D"padding-bo=
+ttom:20px;" valign=3D"top">=0A                                         =
+                   <p style=3D"color:#241C15; font-family:'Helvetica Neu=
+e'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:16px; font-=
+weight:400; line-height:24px; padding-top:0; margin-top:0; text-align:le=
+ft;">The export of your list=2C <em>Shirdi Sai Dham Mailing List</em>=2C=
+ from the account <strong>Shirdi Sai Dham</strong> was successful. This=
+ export was requested by Shirdi Sai Dham  via the <strong>(IP: 73.11.216=
+.4 - Redmond=2C Wa Usa)</strong></p>=0A                                =
+                            <p style=3D"color:#241C15; font-family:'Helv=
+etica Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:16=
+px; font-weight:400; line-height:24px; padding-top:0; margin-top:0; text=
+-align:left;">If you want to delete this list=2C please download the exp=
+ort first; once the list is deleted=2C both are gone forever.</p>=0A   =
+                                                     </td>=0A          =
+                                          </tr>=0A                     =
+                               <tr>=0A                                 =
+                       <td align=3D"center" valign=3D"top" style=3D"padd=
+ing-bottom:60px;">=0A                                                  =
+          <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A  =
+                                                              <tr>=0A  =
+                                                                  <td al=
+ign=3D"center" bgcolor=3D"#007C89" class=3D"button"><a href=3D"https://u=
+s15.mailchimp.com/mctx/click?url=3Dhttps%3A%2F%2Fus15.admin.mailchimp.co=
+m%2Flists%2Fmembers%2Fdownload-export%3Fid%3Dccd0654533&xid=3D48be8224f0=
+&uid=3D69289545&pool=3D&subject=3D" target=3D"_blank" style=3D"border-ra=
+dius:0; border:1px solid #007C89; color:#FFFFFF; display:inline-block; f=
+ont-size:16px; font-family:'Helvetica Neue'=2C Helvetica=2C Arial=2C Ver=
+dana=2C sans-serif; font-weight:400; letter-spacing:.3px; padding:20px;=
+ text-decoration:none;">Download List Data</a>=0A                      =
+                                              </td>=0A                 =
+                                               </tr>=0A                =
+                                            </table>=0A                =
+                                        </td>=0A                       =
+                             </tr>=0A                                  =
+                  =0A                                                </t=
+able>=0A                                            </td>=0A           =
+                             </tr>=0A                                  =
+  </table>=0A                                    <!-- // END BODY -->=0A=
+                                </td>=0A                            </tr=
+>=0A                            <tr>=0A                                <=
+td align=3D"center" valign=3D"top">=0A                                 =
+   <!-- BEGIN FOOTER // -->=0A                                    <table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=0A   =
+                                     <tr>=0A                           =
+                 <td align=3D"center" valign=3D"top" class=3D"footerCont=
+ent" style=3D"color:#6A655F; font-family:'Helvetica Neue'=2C Helvetica=
+=2C Arial=2C Verdana=2C sans-serif; font-size:12px; font-weight:400; lin=
+e-height:24px; padding-top:40px; padding-bottom:40px; text-align:center;=
+">=0A                                                <p style=3D"color:#=
+6A655F; font-family:'Helvetica Neue'=2C Helvetica=2C Arial=2C Verdana=2C=
+ sans-serif; font-size:12px; font-weight:400; line-height:24px; padding-=
+top:0; margin:0; text-align:center;">&copy; 2001-2019 Mailchimp<sup>&reg=
+;</sup>=2C All Rights Reserved.<br />675 Ponce De Leon Ave NE &bull; Sui=
+te 5000 &bull; Atlanta=2C GA 30308 USA</p>=0A                          =
+                      <a href=3D"https://us15.mailchimp.com/mctx/click?u=
+rl=3Dhttps%3A%2F%2Fwww.mailchimp.com%2Fcontact%2F&xid=3D48be8224f0&uid=
+=3D69289545&pool=3D&subject=3D" target=3D"_blank" style=3D"color:#007C89=
+; font-weight:500; text-decoration:none !important;" class=3D"utilityLin=
+k">Contact Us</a><span class=3D"mobileHide">&nbsp;&nbsp;&bull;&nbsp;&nbs=
+p;</span><a href=3D"https://us15.mailchimp.com/mctx/click?url=3Dhttps%3A=
+%2F%2Fmailchimp.com%2Flegal%2Fterms%2F&xid=3D48be8224f0&uid=3D69289545&p=
+ool=3D&subject=3D" target=3D"_blank" style=3D"color:#007C89; font-weight=
+:500; text-decoration:none !important;" class=3D"utilityLink">Terms of U=
+se</a><span class=3D"mobileHide">&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><a=
+ href=3D"https://us15.mailchimp.com/mctx/click?url=3Dhttps%3A%2F%2Fmailc=
+himp.com%2Flegal%2Fprivacy%2F&xid=3D48be8224f0&uid=3D69289545&pool=3D&su=
+bject=3D" target=3D"_blank" style=3D"color:#007C89; font-weight:500; tex=
+t-decoration:none !important;" class=3D"utilityLink">Privacy Policy</a>=
+=0A                                            </td>=0A                =
+                        </tr>=0A                                    </ta=
+ble>=0A                                    <!-- // END FOOTER -->=0A   =
+                             </td>=0A                            </tr>=
+=0A                        </table>=0A                        <!--[if gt=
+e mso 9]>=0A                        </td>=0A                        </tr=
+>=0A                        </table>=0A                        <![endif]=
+-->=0A                    </td>=0A                </tr>=0A            </=
+table>=0A        </center>=0A    <img src=3D"https://us15.mailchimp.com/=
+mctx/opens?xid=3D48be8224f0&uid=3D69289545&pool=3Duser_facing&subject=3D=
+Mailchimp+List+Export+Complete" height=3D"1" width=3D"1"></body>=0A</htm=
+l>
+--_----------=_MCPart_187296196--
+

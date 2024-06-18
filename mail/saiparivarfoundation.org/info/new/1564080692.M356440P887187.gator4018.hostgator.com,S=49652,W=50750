@@ -1,0 +1,1098 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id MJkRETT6OV2TiQ0AUq51WA
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	for <info@saiparivarfoundation.org>; Thu, 25 Jul 2019 13:51:32 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Thu, 25 Jul 2019 13:51:32 -0500
+Received: from mail-pg1-f172.google.com ([209.85.215.172]:44452)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1hqipv-003vVl-V5
+	for info@saiparivarfoundation.org; Thu, 25 Jul 2019 13:51:32 -0500
+Received: by mail-pg1-f172.google.com with SMTP id i18so23477716pgl.11
+        for <info@saiparivarfoundation.org>; Thu, 25 Jul 2019 11:51:26 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:message-id:date:from
+         :reply-to:to:subject:mime-version:list-unsubscribe
+         :list-unsubscribe-post;
+        bh=4QLkeneT3P49sUxaIapWrSe4VC8hQf891ABaZvfn4W4=;
+        b=JA7dSwV3xdlFO0zCD2TVeDc/VPXJq1pg6S6oZ2RNqBd+DR9BYGBaadx7GPIakh8e4j
+         rvmxFxa1BELhxUGiMv8wc0bD4tpihRFre084RugwutNqW21nARSz2N/ZG/QjLPTdjgv0
+         y6qiMUMBUGNUkDapOmKuvOxi6jmtNdqTyK3enxXHWDHShPv+PRIBll9HYZfUiQbCoCbx
+         uatdUL4+Hi2hDL7/SKVI26jg3zdhtlgJZCuarvk9pUJv2dsX2fZF76dVRhJChrHPh82H
+         oOMuhGbRsOBUfbPU2Gh8IeaKxrO5xCb0YeGAkFp6+rthRTUwXlr6oTEqeRWGup3BFDu1
+         GeiQ==
+X-Gm-Message-State: APjAAAVG232XhCSkC9Jzbu1Hhv0r2SLBL5cFGdY8FiPKWzmrlRMBA97v
+	GGI4s58CGoRvCFg4Njf39hvueyNOLAO1vM9BAZanh0EGhDHp7CQ=
+X-Received: by 2002:a63:ab08:: with SMTP id p8mr90277644pgf.340.1564080680729;
+        Thu, 25 Jul 2019 11:51:20 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a17:90a:26c9:0:0:0:0 with SMTP id m67csp11389070pje;
+        Thu, 25 Jul 2019 11:51:18 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqyPZ2pJuyNj6/HjqSPULZiZnjVBf9a/08oaytXWVmrmf+OlmlZ86CI5J/BtET/Rn4ucmqJe
+X-Received: by 2002:a17:906:370c:: with SMTP id d12mr69183592ejc.140.1564080678761;
+        Thu, 25 Jul 2019 11:51:18 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1564080678; cv=none;
+        d=google.com; s=arc-20160816;
+        b=xLCYFuvaYB4tdYpCUirYJCtucJhsI4Xcyvnzk+EcBu/XmZx1QKL/QY32ueCNU3/wTq
+         cr1cYYosp1qKqc2HhKsqf2qSwxCylbxcGBadmqtORZEohxEnraqql1qt1CjQLCHuYUVp
+         fLkMC3uToL+kQb5NtzXDD0uFv5XiJb27PyzEs009tR1c1zEPaCHbt3eK2VSIc+n3Tkzi
+         WSCawlZSTaaQShWSK6uUNpzC5dBlULzTE6pFHV6JQzhG1FEbB8ocmzOBr2vCLekA0kN8
+         r6A+lc46WF+4Lh7I3jG2T/MXH2NjGfCp7IIq2ujfbC5SX5y9/lQizBVm9eVrhnNfUqoN
+         YbLA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe-post:list-unsubscribe:mime-version:subject:to
+         :reply-to:from:date:message-id:dkim-signature;
+        bh=4QLkeneT3P49sUxaIapWrSe4VC8hQf891ABaZvfn4W4=;
+        b=e8EqW9m+NyWsoExOQhQASj6mDLXHe148QimNDA2tjmbfZ3pmFRw0bWPyTp4KmO0m/A
+         pyamGsyOuvAHGtITJVo42Y9i7+n2yQ6Ns7MYkW7vgT7VMSyfmvNfivNW1wP1sWyuScwR
+         cxtkbzxn7QPgfuXSDhH5LA1WFHVd6xM87rBKoknaizLeivbTSvFEMurKwWAez7jruucO
+         fV9qQxzh1Q777WG9iQn84RVM7Oaf/WAC0/IEmwP6jDs14uvNgqDiisxVfz9YCdITILah
+         Cv5YpAO3YQJfExTK4/cgt0vyuyUzkz87zS1NoK9A4gT20JwVUcmE8Y54s56GPTRP7HCl
+         BPVg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@auth.ccsend.com header.s=1000073432 header.b=BwuDxbP5;
+       spf=pass (google.com: domain of alazqdqbnsgu3w5lkphoscw==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.236 as permitted sender) smtp.mailfrom="AlAzQDqBnSgu3w5lKpHOScw==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com"
+Received: from ccm236.constantcontact.com (ccm236.constantcontact.com. [208.75.123.236])
+        by mx.google.com with ESMTPS id e12si10788039edb.442.2019.07.25.11.51.17
+        for <SaiParivarFoundation@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 25 Jul 2019 11:51:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of alazqdqbnsgu3w5lkphoscw==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.236 as permitted sender) client-ip=208.75.123.236;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@auth.ccsend.com header.s=1000073432 header.b=BwuDxbP5;
+       spf=pass (google.com: domain of alazqdqbnsgu3w5lkphoscw==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.236 as permitted sender) smtp.mailfrom="AlAzQDqBnSgu3w5lKpHOScw==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com"
+Received: from [10.252.0.104] ([10.252.0.104:32784] helo=p2-jbemailsyndicator17.ctct.net)
+	by 10.249.243.20 (envelope-from <AlAzQDqBnSgu3w5lKpHOScw==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com>)
+	(ecelerity 4.2.1.52273 r(Core:4.2.1.11)) with ESMTP
+	id AE/EC-03094-52AF93D5; Thu, 25 Jul 2019 14:51:17 -0400
+DKIM-Signature: v=1; q=dns/txt; a=rsa-sha256; c=relaxed/relaxed; s=1000073432; d=auth.ccsend.com; h=date:mime-version:subject:X-Feedback-ID:message-id:from:reply-to:list-unsubscribe:list-unsubscribe-post:to; bh=4QLkeneT3P49sUxaIapWrSe4VC8hQf891ABaZvfn4W4=; b=BwuDxbP5Mk8knS+jQiXNsp49x76/jkIOOxK0W7N3UlpFDayH/43ARePErh3RToL5I+cKh/DdqwBKU05jIBJCq9y361NwvOun6kbpnrUCky8czA+ft9IjG6KVoXtIE5Po/9gvdHeyQjHj6aoYj8xm7edzYcGLhZ93zLysWYjxzUQ=
+Message-ID: <1132982095699.1103573720993.1659182514.0.411451JL.2002@scheduler.constantcontact.com>
+Date: Thu, 25 Jul 2019 14:51:17 -0400 (EDT)
+From: The Sophia Way <events@sophiaway.org>
+Reply-To: events@sophiaway.org
+To: SaiParivarFoundation@gmail.com
+Subject: Dear Friend, we have exciting news to share!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_264350427_1001800052.1564080677452"
+List-Unsubscribe: <https://visitor.constantcontact.com/do?p=un&m=001CLN_S13g0et-LAh2PzLdPA%3D%3D&se=001sdyEB58gEl5pHBscD5_RCQ%3D%3D&t=001EkZLEx15CcE%3D&llr=b6h6bzdab>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Campaign-Activity-ID: 940cd00e-a067-4a0b-b7c3-994aa4739273
+X-Channel-ID: df87a940-3fe5-11e7-be45-d4ae52843dc7
+X-Mailer: Roving Constant Contact 2012 (http://www.constantcontact.com)
+X-Return-Path-Hint: AlAzQDqBnSgu3w5lKpHOScw==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com
+X-Roving-Campaignid: 1132982095699
+X-Roving-Id: 1103573720993.1659182514
+X-Feedback-ID: df87a940-3fe5-11e7-be45-d4ae52843dc7:940cd00e-a067-4a0b-b7c3-994aa4739273:1103573720993:CTCT
+X-CTCT-ID: df3c9680-3fe5-11e7-be45-d4ae52843dc7
+
+------=_Part_264350427_1001800052.1564080677452
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+ St. Peter=E2=80=99s United Methodist Church gives a new home to our Emerge=
+ncy Shelter! August 20 - October 15 We are beyond ecstatic to share that St=
+. Peter's United Methodist Church has offered to host our emergency shelter=
+ from August 20 to October 15. Words cannot express our gratitude to the co=
+ngregation for their compassion and support for women experiencing homeless=
+ness. The women will have a place to have a hot meal and sleep safe at nigh=
+t. Thank you for your generous heart! St. Peter's United Methodist Church h=
+as responded to the needs of the community for many years. They recognize t=
+he great need in the community for people facing homelessness. As one of Th=
+e Sophia Way's original shelter partners, they continue to support the men'=
+s and family emergency shelter as well. In their words: St. Peter's United =
+Methodist Church has hosted The Sophia Way emergency shelter on many occasi=
+ons in the winter and in summer months. We have the space and we feel a res=
+ponsibility to help when we are able. Our Emergency Shelter will open at St=
+ Peter's United Methodist Church on the night of August 20. Are You Able To=
+ Help? Give Wish List Thank you for supporting our mission to help single a=
+dult women experiencing homelessness in King County move into housing. Our =
+Office The Sophia Way 11061 NE 2nd Street, Suite 223 Bellevue, WA 98004 Ph:=
+ 425-463-6285 Email: info@sophiaway.org Our Shelter Sophia=E2=80=99s Place =
+3032 Bellevue Way NE Bellevue, WA 98004 Ph: 425-896-7385 Bus Route: 249 FOL=
+LOW. LIKE. TAG. SHARE. =E2=80=8C =E2=80=8C =E2=80=8C The Sophia Way | 11061=
+ NE 2nd St., Suite 223, Bellevue, WA 98004 Unsubscribe SaiParivarFoundation=
+@gmail.com Update Profile | About Constant Contact Sent by events@sophiaway=
+.org in collaboration with Try email marketing for free today!
+------=_Part_264350427_1001800052.1564080677452
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]-->
+<style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 630px!important;
+max-width: 630px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 630px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style>
+<style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 0px 0px 0px 0px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.two-column.editor-col.OneColumnMobile ~ td.two-column.editor-col.OneColumnMobile {
+border-left: 0px;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #486CB4 !important; border-bottom: 1px solid #486CB4 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: 'Open Sans'; font-style: normal; font-weight: 400; src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+font-family: 'Dancing Script'; font-style: normal; font-weight: 400; src: local('Dancing Script Regular'), local('DancingScript-Regular'), url(https://fonts.gstatic.com/s/dancingscript/v9/If2RXTr6YS-zF4S-kcSWSVi_szLgiuEHiC4W.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style>
+</head>
+<body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #D1D9E3; margin: 0px; padding: 0px;" bgcolor="#D1D9E3">
+<table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%">
+<tr>
+<td class="preheader-container">
+<div>
+<div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+<span data-entity-ref="preheader"></span>
+</div>
+<img src="http://r20.rs6.net/on.jsp?ca=940cd00e-a067-4a0b-b7c3-994aa4739273&a=1103573720993&c=df3c9680-3fe5-11e7-be45-d4ae52843dc7&ch=df87a940-3fe5-11e7-be45-d4ae52843dc7" / alt="">
+</div>
+</td>
+</tr>
+<tr>
+<td class="template-shell-container" align="center">
+<div class="bgcolor" style="background-color: #D1D9E3;">
+<table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #D1D9E3;" bgcolor="#D1D9E3">
+<tbody>
+<tr>
+<td align="center">
+<table class="main-width" width="630" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 630px;">
+<tbody>
+<tr>
+<td class="layout" align="center" valign="top" style="padding: 15px 5px;">
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="layout-container-border" align="center" valign="top" style="background-color: #486CB4; padding: 0px;" bgcolor="#486CB4">
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #486CB4;" bgcolor="#486CB4">
+<tbody>
+<tr>
+<td class="layout-container" align="center" valign="top" style="background-color: #FFFFFF; padding: 0;" bgcolor="#FFFFFF">
+<div class="">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-image">
+<table class="editor-image editor-image  editor-image-vspace-on" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;">
+<div class="publish-container">
+<a href="http://r20.rs6.net/tn.jsp?f=001VjtsaRYSvv3RbBQ0hL2KqlHRZamCD1rqKTYrHFDEokzTuAet4k8wxGYbz31W1oSLbg_4GJ7IzsDHumIqwRBAdjglRMchy2FJxRSwZdq922KacOD1k7yb0E0ETSq35GP4JtxMj3879gT3GchV2-gawA==&c=N5SGTMmc08hVpVVwZFDsRKDbUy8KDn1jUpR5aB32QNBmhuJoMxdg-Q==&ch=2dVS3EinedX9K9MABKDmxyEA0amKFceDiima8j4li9XVZgbp6n9Fjw==">
+<img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="340" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/1af9e12f001/32a108e5-25c5-4908-a1e6-318499862880.png">
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-divider">
+<table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="" align="center" valign="top">
+<table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;">
+<tbody>
+<tr>
+<td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 10px 0px 9px;">
+<table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 94%; min-width: 94%; height: 1px;">
+<tbody>
+<tr>
+<td height="1" align="center" style="padding-bottom: 2px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #486CB4;" bgcolor="#486CB4">
+<div><img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="headline editor-col OneColumnMobile" width="100%" align="left" valign="top">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text headline-text" align="left" valign="top" style="font-family: Open Sans,sans-serif; font-size: 24px; color: #002E64; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div>St. Peter&#x2019;s United Methodist Church gives</div>
+<div>a new home to our Emergency Shelter!</div>
+<div>August 20 - October 15</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="feature-margin" align="left" valign="top" style="background-color: #FFFFFF; padding: 0px 20px;" bgcolor="#FFFFFF">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="feature editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(245, 245, 245);" bgcolor="F5F5F5">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text center-text feature-text" align="left" valign="top" style="font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;">
+<div><table class="editor-image OneColumnMobile" style="mso-table-rspace: 5.75pt;" align="right" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="mobile-hidden" width="15" height="1" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="15" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="image-cell " align="center" valign="top" style="padding: 0px;">
+<div class="publish-container">  <img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="244" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/1af9e12f001/363ae6de-b094-4a48-9117-0db1cb1b3644.png">
+</div>
+</td>
+</tr>
+<tr>
+<td class="mobile-hidden" width="5" height="5" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="mobile-hidden" height="5" align="center" valign="top" style="height: 5px; line-height: 1px; padding: 0px;">
+<img alt="" width="1" height="5" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class="text-container galileo-ap-content-editor"><div><div style="text-align: left;" align="left"><span style="font-size: 16px;">We are beyond ecstatic to share that St. Peter's United Methodist Church has offered to host our emergency shelter from August 20 to October 15. Words cannot express our gratitude to the congregation for their compassion and support for women experiencing homelessness. The women will have a place to have a hot meal and sleep safe at night.</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text " align="left" valign="top" style="line-height: 1.2; font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div style="text-align: center;" align="center"><span style="font-size: 36px; font-family: Dancing Script, cursive;">Thank you for your generous heart!</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="gl-contains-divider">
+<table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="divider-container" align="center" valign="top">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;">
+<tbody>
+<tr>
+<td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 10px 0px 0px;">
+<table style="width: 100%; min-width: 100%; height: 1px;" cellpadding="0" cellspacing="0" border="0" align="center">
+<tbody>
+<tr>
+<td height="1" align="center" style="padding-bottom: 2px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #486CB4;" bgcolor="#486CB4">
+<div><img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-image">
+<table class="editor-image editor-image  editor-image-vspace-on" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px;">
+<div class="publish-container">
+<a href="http://r20.rs6.net/tn.jsp?f=001VjtsaRYSvv3RbBQ0hL2KqlHRZamCD1rqKTYrHFDEokzTuAet4k8wxKrhjBXilkAhZIkwIMOZMiCX6lpxc2MNoalUb6CajquX5ewf2AEzxP3mX-tH7ObjsnYU41uXJX1zgwXzFldDnMgvlcuPefPjR6_aoEEFr6HvNbmXnnczfK7MuoUUCIZfbg==&c=N5SGTMmc08hVpVVwZFDsRKDbUy8KDn1jUpR5aB32QNBmhuJoMxdg-Q==&ch=2dVS3EinedX9K9MABKDmxyEA0amKFceDiima8j4li9XVZgbp6n9Fjw==">
+<img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="612" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/1af9e12f001/44cb7cdf-47e5-4720-868c-4a72e4f5c7a3.jpg">
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div><span style="font-size: 14px;">St. Peter's United Methodist Church has responded to the needs of the community for many years. They recognize the great need in the community for people facing homelessness. As one of The Sophia Way's original shelter partners, they continue to support the men's and family emergency shelter as well.</span></div>
+<div><br></div>
+<div><span style="font-size: 14px;">In their words: </span></div>
+<div><span style="font-size: 14px; font-style: italic; font-weight: bold;">St. Peter's United Methodist Church has hosted The Sophia Way emergency shelter on many occasions in the winter and in summer months. We have the space and we feel a responsibility to help when we are able.</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-divider">
+<table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="" align="center" valign="top">
+<table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;">
+<tbody>
+<tr>
+<td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 9px 0;">
+<table cellpadding="0" cellspacing="0" border="0" align="center" style="height: 1px; width: 94%; min-width: 94%;">
+<tbody>
+<tr>
+<td height="1" align="center" style="border-bottom-style: none; height: 1px; line-height: 1px; padding-bottom: 0px; background-color: #486CB4;" bgcolor="#486CB4">
+<div><img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(94, 129, 202);" bgcolor="5E81CA">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div style="text-align: center;" align="center"><span style="color: rgb(255, 255, 255); font-weight: bold;">Our Emergency Shelter will open at St Peter's United Methodist Church</span></div>
+<div style="text-align: center;" align="center"><span style="color: rgb(255, 255, 255); font-weight: bold;">on the night of August 20.</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="section-headline editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(94, 129, 202);" bgcolor="5E81CA">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text section-headline-text" align="left" valign="top" style="font-family: Open Sans,sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; font-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div>Are You Able To Help?</div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="50%" align="" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div><div class="column-resize-bar">
+<span class="line"></span>
+<span class="grabber"></span>
+</div></div>
+<div class="gl-contains-button">
+<table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td class="editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; display: block; color: #FFFFFF; text-decoration: none; padding: 10px 10px 10px 20px;">
+<table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; display: block; color: #FFFFFF; text-decoration: none; padding: 0px;">
+<table border="0" cellpadding="0" cellspacing="0" style="width: initial; moz-border-radius: 0px; border-radius: 0px; border-spacing: 0; background-color: #486CB4; min-width: initial; padding: 0; border: none;" bgcolor="#486CB4">
+<tbody>
+<tr>
+<td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; display: block; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;">
+<div>
+<div class="MainTextFullWidth"><a href="http://r20.rs6.net/tn.jsp?f=001VjtsaRYSvv3RbBQ0hL2KqlHRZamCD1rqKTYrHFDEokzTuAet4k8wxMO2ZFSo9lXxua4r8-MMf1Ychlbz-99eL2EkQCoeegLMyt8aP4fMbABhJUulG7zP7wIertkdoTY4KLYKOKVJzlr7BFOPhTuAcKvRfEyhODubQowm4LIS_kj6IKLq5tIGNzjgrREB5RGADg9HkhQ6X7yqlVFI5tLJOpmnIPJc7N90&c=N5SGTMmc08hVpVVwZFDsRKDbUy8KDn1jUpR5aB32QNBmhuJoMxdg-Q==&ch=2dVS3EinedX9K9MABKDmxyEA0amKFceDiima8j4li9XVZgbp6n9Fjw==" style="font-size: 24px; font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: bold; display: block; color: #FFFFFF; text-decoration: none;">Give</a></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=" editor-col OneColumnMobile" width="50%" align="" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div class="gl-contains-button">
+<table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td class="editor-button-container editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; display: block; color: #FFFFFF; text-decoration: none; padding: 10px 20px 10px 10px;">
+<table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; display: block; color: #FFFFFF; text-decoration: none; padding: 0px;">
+<table border="0" cellpadding="0" cellspacing="0" style="width: initial; moz-border-radius: 0px; border-radius: 0px; border-spacing: 0; background-color: #486CB4; min-width: initial; padding: 0; border: none;" bgcolor="#486CB4">
+<tbody>
+<tr>
+<td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bold; display: block; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;">
+<div>
+<div class="MainTextFullWidth"><a href="http://r20.rs6.net/tn.jsp?f=001VjtsaRYSvv3RbBQ0hL2KqlHRZamCD1rqKTYrHFDEokzTuAet4k8wxKrhjBXilkAhtWwitJ7ZDBgCPLeFS4yhWC8IEcWefg4kzx4aYqPly90nuI3spLqO720i3lnZcqsoOvLf2E8w14BPyUgX0JRe3u1AzWljYzWbftKyL7Rftb1ZVRy5BgJTf_NGWxKQUoFOMxe7gDBJ9M_kpJpxoJdQT2eukSsE1M6AcbGRnoX7Owc=&c=N5SGTMmc08hVpVVwZFDsRKDbUy8KDn1jUpR5aB32QNBmhuJoMxdg-Q==&ch=2dVS3EinedX9K9MABKDmxyEA0amKFceDiima8j4li9XVZgbp6n9Fjw==" style="font-size: 24px; font-family: Arial, Verdana, Helvetica, sans-serif; font-weight: bold; display: block; color: #FFFFFF; text-decoration: none;">Wish List</a></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-divider">
+<table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="divider-container" align="center" valign="top">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;">
+<tbody>
+<tr>
+<td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 0px 0px 10px;">
+<table style="width: 94%; min-width: 94%; height: 1px;" cellpadding="0" cellspacing="0" border="0" align="center">
+<tbody>
+<tr>
+<td height="1" align="center" style="padding-bottom: 2px; border-bottom-style: none; height: 1px; line-height: 1px; background-color: #486CB4;" bgcolor="#486CB4">
+<div><img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div style="text-align: center;" align="center"><span style="font-style: italic;">Thank you for supporting our mission to help single adult women experiencing homelessness in King County move into housing.</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div><div class="column-resize-bar">
+<span class="line"></span>
+<span class="grabber"></span>
+</div></div>
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text " align="left" valign="top" style="font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div><span style="font-size: 14px; font-weight: bold;">Our Office</span></div>
+<div><span style="font-size: 14px;">The Sophia Way</span></div>
+<div><span style="font-size: 14px;">11061 NE 2nd Street, Suite 223</span></div>
+<div><span style="font-size: 14px;">Bellevue, WA 98004</span></div>
+<div><span style="font-size: 14px;">Ph: 425-463-6285</span></div>
+<div>
+<span style="font-size: 14px;">Email: </span><a href="mailto:info@sophiaway.org" target="_blank" style="font-size: 14px; color: #486CB4; font-weight: bold; font-style: normal; text-decoration: none;">info@sophiaway.org</a>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class="content editor-col OneColumnMobile" width="50%" align="left" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text " align="left" valign="top" style="font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div><span style="font-size: 14px; font-weight: bold;">Our Shelter</span></div>
+<div><span style="font-size: 14px;">Sophia&#x2019;s Place</span></div>
+<div><span style="font-size: 14px;">3032 Bellevue Way NE</span></div>
+<div><span style="font-size: 14px;">Bellevue, WA 98004</span></div>
+<div><span style="font-size: 14px;">Ph: 425-896-7385</span></div>
+<div><span style="font-size: 14px;">Bus Route: 249</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="content editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text center-text" align="left" valign="top" style="font-family: Open Sans,sans-serif; font-size: 16px; color: #000000; text-align: center; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div>FOLLOW. LIKE. TAG. SHARE.</div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="gl-contains-social-button">
+<table class="editor-social" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td class=" social-container social-container" align="center" style="padding: 0px 20px 10px;">
+<div class="galileo-ap-content-editor">
+<a href="http://r20.rs6.net/tn.jsp?f=001VjtsaRYSvv3RbBQ0hL2KqlHRZamCD1rqKTYrHFDEokzTuAet4k8wxNES8t1injZj_Hnbw9MaV0ca8tdLY2F_eK4RRTMVIENyEborCqAaxLQiGh6f2EGHsHclfLwRPYeADReg1yoIEJSuAkwQ8cXQsKI_DQFzQMf4&c=N5SGTMmc08hVpVVwZFDsRKDbUy8KDn1jUpR5aB32QNBmhuJoMxdg-Q==&ch=2dVS3EinedX9K9MABKDmxyEA0amKFceDiima8j4li9XVZgbp6n9Fjw==" style="display: inline-block; text-decoration: none;">
+<img alt="Facebook" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-default-circle.png" style="display: inline-block; margin: 0; padding: 0;"> &#x200c;
+</a>
+<a href="http://r20.rs6.net/tn.jsp?f=001VjtsaRYSvv3RbBQ0hL2KqlHRZamCD1rqKTYrHFDEokzTuAet4k8wxFZLOvT_0nUv-7gIbHT1qxbimiUqrfcyMEKboKMoq0no4X4o_0wFENTcewxuAmcI8-M5yFd5bJHPce7_j_sjJP9MekSM00k86Yf67KahR7vF&c=N5SGTMmc08hVpVVwZFDsRKDbUy8KDn1jUpR5aB32QNBmhuJoMxdg-Q==&ch=2dVS3EinedX9K9MABKDmxyEA0amKFceDiima8j4li9XVZgbp6n9Fjw==" style="display: inline-block; text-decoration: none;">
+<img alt="Twitter" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-default-circle.png" style="display: inline-block; margin: 0; padding: 0;"> &#x200c;
+</a>
+<a href="http://r20.rs6.net/tn.jsp?f=001VjtsaRYSvv3RbBQ0hL2KqlHRZamCD1rqKTYrHFDEokzTuAet4k8wxNhxv442JrwrmpeNGT4aCjIPTW545Smy1bA7DfW4HqDxR8XOftfN9KrIxr9uocbR0jVo-IeLGb6JqFDrSvc2SsLBxKw_j0WMoi_Y3IHTxpyTtWWrZOo6AX0=&c=N5SGTMmc08hVpVVwZFDsRKDbUy8KDn1jUpR5aB32QNBmhuJoMxdg-Q==&ch=2dVS3EinedX9K9MABKDmxyEA0amKFceDiima8j4li9XVZgbp6n9Fjw==" style="display: inline-block; text-decoration: none;">
+<img alt="Instagram" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/instagram-visit-default-circle.png" style="display: inline-block; margin: 0; padding: 0;"> &#x200c;
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<table class="footer-container" width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #ffffff; margin-left: auto; margin-right: auto; table-layout: auto !important" bgcolor="#ffffff">
+  <tr>
+    <td width="100%" align="center" valign="top" style="width: 100%;">
+      <div class="footer-max-main-width" align="center" style="margin-left: auto; margin-right: auto; max-width: 100%;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="footer-layout" align="center" valign="top" style="padding: 16px 0px;">
+              <table class="footer-main-width" style="width: 580px;" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="footer-text" align="center" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 12px; padding: 4px 0px;">
+                    
+                    <span class="footer-column">The Sophia Way<span class="footer-mobile-hidden"> | </span></span><span class="footer-column">11061 NE 2nd St.<span class="footer-mobile-hidden">, </span></span><span class="footer-column">Suite 223<span class="footer-mobile-hidden">, </span></span><span class="footer-column"></span><span class="footer-column">Bellevue, WA 98004</span><span class="footer-column"></span>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td class="footer-row" align="center" valign="top" style="padding: 10px 0px;">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td class="footer-text" align="center" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 12px; padding: 4px 0px;">
+                          <a href="https://visitor.constantcontact.com/do?p=un&m=001CLN_S13g0et-LAh2PzLdPA%3D&ch=df87a940-3fe5-11e7-be45-d4ae52843dc7&ca=940cd00e-a067-4a0b-b7c3-994aa4739273" style="color: #5d5d5d">Unsubscribe SaiParivarFoundation@gmail.com</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="footer-text" align="center" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 12px; padding: 4px 0px;">
+                          <a href="https://visitor.constantcontact.com/do?p=oo&m=001CLN_S13g0et-LAh2PzLdPA%3D&ch=df87a940-3fe5-11e7-be45-d4ae52843dc7&ca=940cd00e-a067-4a0b-b7c3-994aa4739273" style="color: #5d5d5d">Update Profile</a> |
+                          
+                          <a class="footer-about-provider" href="http://www.constantcontact.com/legal/about-constant-contact" style="color: #5d5d5d">About Constant Contact</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="footer-text" align="center" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 12px; padding: 4px 0px;">
+                          Sent by
+                          
+                          <a href="mailto:events@sophiaway.org" style="color: #5d5d5d; text-decoration: none">events@sophiaway.org</a>
+                          
+
+                          
+                          
+                          <span class="footer-column">in collaboration with</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="footer-text" align="center" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 12px; padding: 4px 0px;">
+                    
+                    
+                    <table width="240" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td align="center" valign="top" style="padding: 0px 0px 3px 10px;">
+                          <a href="http://www.constantcontact.com/index.jsp?cc=nge&rmc=VF19_3GE" style="color: #5d5d5d; text-decoration: none">
+                            <img alt="Trusted Email from Constant Contact - Try it FREE today." width="211" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/ui/images1/logo_ctct_2x.png"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="footer-cta-text" align="center" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 9px;">
+                          <a href="http://www.constantcontact.com/index.jsp?cc=nge&rmc=VF19_3GE" style="color: #5d5d5d; text-decoration: none">Try email marketing for free today!</a>
+                        </td>
+                      </tr>
+                    </table>
+                    
+                    
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table></body>
+</html>
+
+------=_Part_264350427_1001800052.1564080677452--

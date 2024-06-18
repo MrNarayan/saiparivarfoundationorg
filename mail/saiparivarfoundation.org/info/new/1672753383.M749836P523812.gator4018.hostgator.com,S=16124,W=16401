@@ -1,0 +1,277 @@
+Return-Path: <awssales@arjunweb.in>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id kAkrLOcwtGMk/gcAUq51WA
+	(envelope-from <awssales@arjunweb.in>)
+	for <info@saiparivarfoundation.org>; Tue, 03 Jan 2023 07:43:03 -0600
+Return-path: <awssales@arjunweb.in>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Tue, 03 Jan 2023 07:43:03 -0600
+Received: from mail-ed1-f52.google.com ([209.85.208.52]:35468)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <awssales@arjunweb.in>)
+	id 1pChZH-002UJh-GU
+	for info@saiparivarfoundation.org;
+	Tue, 03 Jan 2023 07:43:03 -0600
+Received: by mail-ed1-f52.google.com with SMTP id i15so43877117edf.2
+        for <info@saiparivarfoundation.org>; Tue, 03 Jan 2023 05:42:58 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=arjunweb-in.20210112.gappssmtp.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=MFez7wdaJk5piw1KPyANDK3GAKC/BMB3mLRUubT8/C0=;
+        b=d3F179+MaB2mLNMyGmSqwQbfxCfNk0IDGJecW8nJzd10AXRxjKtH7TfQyJMdd4V0/q
+         /aMgar/QNPeop/kHTWIgne7l54Eygtk7GjCZqsl/x3pXT72Ubf+qyQknTsXPuB5tbnji
+         6DZxezDN2wewAT/LS/RMVV3AZexVGuqYC/XlAaMuDxvdghXDVT79j8CNYpAbu2MjBtHe
+         UL2YEfr6RXhPLAHMetnKtxYgBOVqZL7KyExzbsCdzHeUNOedHOmueOWZMGNP0B8cVGaU
+         TcdG/97kYjv2tN/iWYIBHEUO42oZEdC3pBvUm90FlP2q6kfREItBRzXFUQDgS8XxJz8K
+         R0Dw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=MFez7wdaJk5piw1KPyANDK3GAKC/BMB3mLRUubT8/C0=;
+        b=bRgTw0DesCFYSueyCc63zFH9WL3ts3J99vZrUvkjkDw+Wn7s7FSYHjm3cpz6UvoqNq
+         y57w9BBvAAjULbKtnmsqmrlUqOdvFQvyN83+hfJmulbHSbHj5NMkDR+3XakPE0TteD/V
+         z0ZpAgD9msKbMu95cwT9QFkzgrf99sQtlnus2K3WjZItb7ymokt9XgbpDPURxxsag/MP
+         l8O+ORAhX5myc2bd0t9hA6AGo7Bt5pvqo2uqJ8SmMXFv5mtXkH7ClOszz/M7ML9yTqPY
+         OMbZ/GBAkeQ8ZVQ6KvtlgR7QDUlG/UKWMZp81NkgEx7MVcMC2mOBoswq/N/Q3KAH9ed+
+         urzA==
+X-Gm-Message-State: AFqh2kqGzkbD+d4p0b+Y8mCbsv3Fn9sZD44ojrtDz1uzzJaCpw2d9UzU
+	40OR4kbPWKvNBI6OZ7N/cGI0Uc4jb1GeGBdJ18FbWN30tA6A4Qym
+X-Google-Smtp-Source: AMrXdXusbu1hTpRpIBQ0BEM92Ec7f7MaO31CgLnhfBFfOT3SVJb/KC1GfG237wF9Bhs6UOiSvV7H9Bp4bJBo+ENeiX8=
+X-Received: by 2002:aa7:d154:0:b0:489:8e7f:d3c8 with SMTP id
+ r20-20020aa7d154000000b004898e7fd3c8mr1725535edo.265.1672753371576; Tue, 03
+ Jan 2023 05:42:51 -0800 (PST)
+MIME-Version: 1.0
+From: "Arjun Web Solutions Pvt Ltd.," <awssales@arjunweb.in>
+Date: Tue, 3 Jan 2023 19:12:40 +0530
+Message-ID: <CAFr5M=j2iNhqNQw6iPnyv+hL+pSDHk0f4pbnk=C7D2BM1BGZuA@mail.gmail.com>
+Subject: Website proposal from Arjun Web Solutions Pvt Ltd.,
+To: info@saiparivarfoundation.org
+Content-Type: multipart/alternative; boundary="000000000000828f1b05f15c3e79"
+
+--000000000000828f1b05f15c3e79
+Content-Type: text/plain; charset="UTF-8"
+
+*Hi Sir/Madam,*
+
+*Greetings !!!*
+
+Representing Arjun Web Solutions Pvt Ltd, this is  Prasanna Jolad.
+
+With over 12 years in the industry, we are a team of developers with
+experience in offering solutions for the development of customized
+Websites,
+CRM applications & IOS-Android APPs, using the latest technologies.
+
+Our global testimonials point to our commitment to client satisfaction as
+the paramount objective.
+
+We would be glad if an opportunity can be extended with your esteemed
+organization.
+
+Our client-specific approach makes us accommodate the budget as per your
+project requirements.
+
+A dedicated developer will be assigned to handle the project requirements
+with a quick turnaround time.
+
+*We offer the following services.*
+
+      1. Professional Website Development
+      2. CRM Application
+      3. API Integration.
+      4. IOS & Android App Development
+      5. Digital Marketing
+      6. Maintenance Support.
+      7. Server, Hosting & Email support
+      8. Payment gateway integration
+      9. Graphic work like logo, brochure & flyers.
+     10. Dedicated Manpower support
+
+*Submitted herewith please find our portfolio for your reference.*
+
+*       1. *www.globalbigdataconference.com
+       *2.* www.v2innovationsinc.com
+       *3. *www.stormoverseas.com
+       *4.* www.k-techsystems.com
+       *5**. *www.virijallu.com
+  *     6. *www.garudavega.com
+*       7. *www.tama.org
+*       8. *www.mallina.org
+*       9. *www.kamalwatch.com
+*     10. *www.natsworld.org
+*      11. *www.goetc.in
+*      12. *www.rastra.in
+*      13. *www.fortworthhindutemple.org
+*      14. *www.triadhindutemple.com
+*      15. *www.virtussolutionsllc.com
+*      16. *www.ramrealtytrust.com
+*      17. *www.dispatchingmasters.com
+*      18. *www.sshomezone.com
+*      19. *paatasala.tana.org
+*     20. *events.tana.org
+
+
+Profile Link:-   *https://www.arjunweb.com/portfolio.html
+<https://www.arjunweb.com/portfolio.html>*
+
+For further information contact us:-
+
+PRASANNA JOLAD
+Business Development Manager.
+
+*For technical support call on:-*
+NARESH KINNERA
+Whatsapp & India no: 96766 42444
+Website URL:- www.arjunweb.com
+
+--000000000000828f1b05f15c3e79
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><font face=3D"georgia, serif"><b style=3D"color:rgb(0,0,0)=
+">Hi Sir/Madam,</b><br></font><div><b style=3D"color:rgb(0,0,0)"><font face=
+=3D"georgia, serif"><br></font></b></div><div><div><font face=3D"georgia, s=
+erif"><b>Greetings !!!</b><br></font></div><font face=3D"georgia, serif"><b=
+r>Representing Arjun Web Solutions Pvt Ltd, this is =C2=A0Prasanna Jolad.<b=
+r><br>With over 12 years in the industry, we are a team of developers with =
+experience in offering solutions for the development of customized Websites=
+,=C2=A0</font></div><div><font face=3D"georgia, serif">CRM applications &am=
+p;=C2=A0IOS-Android APPs, using the latest technologies.</font><div><font f=
+ace=3D"georgia, serif"><br>Our global testimonials point to our commitment =
+to client satisfaction as the paramount objective.<br><br>We would be glad =
+if an opportunity can be extended with your esteemed organization.<br><br>O=
+ur client-specific approach makes us accommodate the budget as per your pro=
+ject requirements.<br><br>A dedicated developer will be assigned to handle =
+the project requirements with a quick turnaround time.<br><br><b><font colo=
+r=3D"#444444">We offer the following services.</font></b></font></div><div>=
+<font face=3D"georgia, serif"><font color=3D"#444444" style=3D"font-family:=
+Arial,Helvetica,sans-serif"><b><br></b></font><font face=3D"Arial, Helvetic=
+a, sans-serif">=C2=A0 =C2=A0=C2=A0</font><font color=3D"#0b5394" style=3D"f=
+ont-family:Arial,Helvetica,sans-serif">=C2=A0=C2=A0</font><font color=3D"#0=
+00000">1.</font><font color=3D"#0b5394">=C2=A0Professional Website Developm=
+ent<br>=C2=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">2.</font><f=
+ont color=3D"#0b5394">=C2=A0CRM Application<br>=C2=A0 =C2=A0 =C2=A0</font><=
+font color=3D"#000000">=C2=A03.=C2=A0</font><font color=3D"#0b5394">API Int=
+egration.<br>=C2=A0 =C2=A0 =C2=A0</font><font color=3D"#000000">=C2=A04.</f=
+ont><font color=3D"#0b5394">=C2=A0IOS &amp; Android App Development<br>=C2=
+=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">5.</font><font color=
+=3D"#0b5394">=C2=A0Digital Marketing<br>=C2=A0 =C2=A0 =C2=A0=C2=A0</font><f=
+ont color=3D"#000000">6.</font><font color=3D"#0b5394">=C2=A0Maintenance Su=
+pport.<br>=C2=A0 =C2=A0 =C2=A0</font><font color=3D"#000000">=C2=A07.</font=
+><font color=3D"#0b5394">=C2=A0Server, Hosting &amp; Email support<br>=C2=
+=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">8.</font><font color=
+=3D"#0b5394">=C2=A0Payment gateway integration<br>=C2=A0 =C2=A0=C2=A0</font=
+><font color=3D"#000000">=C2=A0 9.</font><font color=3D"#0b5394">=C2=A0Grap=
+hic work like logo, brochure &amp; flyers.<br>=C2=A0 =C2=A0 =C2=A0</font><f=
+ont color=3D"#000000">10.</font><font color=3D"#0b5394">=C2=A0Dedicated Man=
+power support</font></font></div><div><font face=3D"georgia, serif"><b><br>=
+</b></font></div><div><b><font face=3D"georgia, serif">Submitted herewith p=
+lease find our portfolio for your reference.</font></b></div><div><b><font =
+face=3D"georgia, serif"><br></font></b></div><div><font face=3D"georgia, se=
+rif"><b>=C2=A0 =C2=A0 =C2=A0 =C2=A01.=C2=A0</b><a href=3D"http://www.global=
+bigdataconference.com/" rel=3D"noreferrer" style=3D"white-space:pre-wrap" t=
+arget=3D"_blank"><font color=3D"#0b5394">www.globalbigdataconference.com</f=
+ont></a></font></div><div><font face=3D"georgia, serif"><font color=3D"#0b5=
+394">=C2=A0 =C2=A0 =C2=A0 =C2=A0</font><b><font color=3D"#000000">2.</font>=
+</b><font color=3D"#0b5394">=C2=A0</font><a href=3D"http://www.v2innovation=
+sinc.com/" rel=3D"noreferrer" style=3D"color:rgb(11,83,148);white-space:pre=
+-wrap" target=3D"_blank">www.v2innovationsinc.com</a><br></font></div><div>=
+<font face=3D"georgia, serif"><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0</font><b><font color=3D"#000000">3.</font><font color=3D"#0b5394">=
+=C2=A0</font></b><a href=3D"http://www.stormoverseas.com/" rel=3D"noreferre=
+r" style=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"_blank">ww=
+w.stormoverseas.com</a><br></font></div><div><font face=3D"georgia, serif">=
+<font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0 =C2=A0</font><font color=3D"#0=
+00000"><b>4.</b>=C2=A0</font><a href=3D"http://www.k-techsystems.com/" rel=
+=3D"noreferrer" style=3D"color:rgb(11,83,148);white-space:pre-wrap" target=
+=3D"_blank">www.k-techsystems.com</a><br></font></div><div><font face=3D"ge=
+orgia, serif"><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0 =C2=A0</font><b>=
+<font color=3D"#000000">5</font></b><b><font color=3D"#000000">.</font><fon=
+t color=3D"#0b5394">=C2=A0</font></b><a href=3D"http://www.virijallu.com/" =
+rel=3D"noreferrer" style=3D"color:rgb(11,83,148);white-space:pre-wrap" targ=
+et=3D"_blank">www.virijallu.com</a></font></div><div><font face=3D"georgia,=
+ serif"><font color=3D"#0b5394">=C2=A0=C2=A0</font><b><font color=3D"#0b539=
+4">=C2=A0 =C2=A0 =C2=A0</font><font color=3D"#000000">6.</font><font color=
+=3D"#0b5394">=C2=A0</font></b><a href=3D"http://www.garudavega.com/" rel=3D=
+"noreferrer" style=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"=
+_blank">www.garudavega.com</a></font></div><div><font face=3D"georgia, seri=
+f"><b><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0 =C2=A0</font><font color=
+=3D"#000000">7.</font><font color=3D"#0b5394">=C2=A0</font></b><a href=3D"h=
+ttp://www.tama.org/" rel=3D"noreferrer" style=3D"color:rgb(11,83,148);white=
+-space:pre-wrap" target=3D"_blank">www.tama.org</a></font></div><div><font =
+face=3D"georgia, serif"><b><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0</font><font color=3D"#000000">8.</font><font color=3D"#0b5394">=C2=A0</=
+font></b><a href=3D"http://www.mallina.org/" rel=3D"noreferrer" style=3D"co=
+lor:rgb(11,83,148);white-space:pre-wrap" target=3D"_blank">www.mallina.org<=
+/a></font></div><div><b><font face=3D"georgia, serif"><font color=3D"#0b539=
+4">=C2=A0 =C2=A0 =C2=A0 =C2=A0</font><font color=3D"#000000">9.</font><font=
+ color=3D"#0b5394">=C2=A0</font></font></b><a href=3D"http://www.kamalwatch=
+.com/" rel=3D"noreferrer" style=3D"color:rgb(11,83,148);white-space:pre-wra=
+p" target=3D"_blank"><font face=3D"georgia, serif">www.kamalwatch.com</font=
+></a></div><div><font face=3D"georgia, serif"><b><font color=3D"#0b5394">=
+=C2=A0 =C2=A0 =C2=A0</font><font color=3D"#000000">10.=C2=A0</font></b><a h=
+ref=3D"http://www.natsworld.org/" rel=3D"noreferrer" style=3D"color:rgb(11,=
+83,148)" target=3D"_blank">www.natsworld.org</a></font></div><div><font fac=
+e=3D"georgia, serif"><b><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0=C2=A0<=
+/font><font color=3D"#000000">11.</font><font color=3D"#0b5394">=C2=A0</fon=
+t></b><a href=3D"http://www.goetc.in/" rel=3D"noreferrer" style=3D"color:rg=
+b(11,83,148);white-space:pre-wrap" target=3D"_blank">www.goetc.in</a></font=
+></div><div><font face=3D"georgia, serif"><b><font color=3D"#0b5394">=C2=A0=
+ =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">12.</font><font color=3D=
+"#0b5394">=C2=A0</font></b><a href=3D"http://www.rastra.in/" rel=3D"norefer=
+rer" style=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"_blank">=
+www.rastra.in</a></font></div><div><font face=3D"georgia, serif"><b><font c=
+olor=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">1=
+3.</font><font color=3D"#0b5394">=C2=A0</font></b><a href=3D"http://www.for=
+tworthhindutemple.org/" rel=3D"noreferrer" style=3D"color:rgb(11,83,148);wh=
+ite-space:pre-wrap" target=3D"_blank">www.fortworthhindutemple.org</a></fon=
+t></div><div><font face=3D"georgia, serif"><b><font color=3D"#0b5394">=C2=
+=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">14.</font><font color=
+=3D"#0b5394">=C2=A0</font></b><a href=3D"http://www.triadhindutemple.com/" =
+rel=3D"noreferrer" style=3D"color:rgb(11,83,148);white-space:pre-wrap" targ=
+et=3D"_blank">www.triadhindutemple.com</a></font></div><div><font face=3D"g=
+eorgia, serif"><b><font color=3D"#0b5394">=C2=A0 =C2=A0=C2=A0</font><font c=
+olor=3D"#000000">=C2=A0 15.</font><font color=3D"#0b5394">=C2=A0</font></b>=
+<a href=3D"http://www.virtussolutionsllc.com/" rel=3D"noreferrer" style=3D"=
+color:rgb(11,83,148);white-space:pre-wrap" target=3D"_blank">www.virtussolu=
+tionsllc.com</a></font></div><div><font face=3D"georgia, serif"><b><font co=
+lor=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">16=
+.</font><font color=3D"#0b5394">=C2=A0</font></b><a href=3D"http://www.ramr=
+ealtytrust.com/" rel=3D"noreferrer" style=3D"color:rgb(11,83,148);white-spa=
+ce:pre-wrap" target=3D"_blank">www.ramrealtytrust.com</a></font></div><div>=
+<font face=3D"georgia, serif"><b><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=
+=A0=C2=A0</font><font color=3D"#000000">17.</font><font color=3D"#0b5394">=
+=C2=A0</font></b><a href=3D"http://www.dispatchingmasters.com/" rel=3D"nore=
+ferrer" style=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"_blan=
+k">www.dispatchingmasters.com</a></font></div><div><font face=3D"georgia, s=
+erif"><b><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0=C2=A0</font><font col=
+or=3D"#000000">18.</font><font color=3D"#0b5394">=C2=A0</font></b><a href=
+=3D"http://www.sshomezone.com/" rel=3D"noreferrer" style=3D"color:rgb(11,83=
+,148);white-space:pre-wrap" target=3D"_blank">www.sshomezone.com</a></font>=
+</div><div><font face=3D"georgia, serif"><b><font color=3D"#0b5394">=C2=A0 =
+=C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">19.</font><font color=3D"=
+#0b5394">=C2=A0</font></b><a href=3D"http://paatasala.tana.org/" rel=3D"nor=
+eferrer" style=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"_bla=
+nk">paatasala.tana.org</a></font></div><div><font face=3D"georgia, serif"><=
+b><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0</font><font color=3D"#000000=
+">20.</font><font color=3D"#0b5394">=C2=A0</font></b><a href=3D"http://even=
+ts.tana.org/" rel=3D"noreferrer" style=3D"color:rgb(11,83,148);white-space:=
+pre-wrap" target=3D"_blank">events.tana.org</a></font></div><div><font face=
+=3D"georgia, serif"><br></font></div><div><font face=3D"georgia, serif"><br=
+></font></div><div><font face=3D"georgia, serif">Profile Link:-=C2=A0=C2=A0=
+<font color=3D"#0b5394">=C2=A0<u><a href=3D"https://www.arjunweb.com/portfo=
+lio.html" rel=3D"noreferrer noreferrer" target=3D"_blank">https://www.arjun=
+web.com/portfolio.html</a></u></font><br></font></div><div><font face=3D"ge=
+orgia, serif"><br></font></div><div><font face=3D"georgia, serif">For furth=
+er information contact us:-<br><br>PRASANNA JOLAD<br>Business Development M=
+anager.<br><br><b>For technical support call on:-</b><br>NARESH KINNERA<br>=
+Whatsapp &amp; India no: 96766 42444 =C2=A0<br>Website URL:-=C2=A0<a href=
+=3D"http://www.arjunweb.com/" rel=3D"noreferrer" target=3D"_blank"><font co=
+lor=3D"#0b5394">www.arjunweb.com</font></a></font></div></div></div>
+
+--000000000000828f1b05f15c3e79--

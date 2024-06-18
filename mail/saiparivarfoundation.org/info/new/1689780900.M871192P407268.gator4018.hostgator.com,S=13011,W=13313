@@ -1,0 +1,302 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id gJ41M6QCuGTkNgYAUq51WA
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	for <info@saiparivarfoundation.org>; Wed, 19 Jul 2023 10:35:00 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Wed, 19 Jul 2023 10:35:00 -0500
+Received: from mail-yb1-f172.google.com ([209.85.219.172]:44227)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1qM9Ce-001i7V-2O
+	for info@saiparivarfoundation.org;
+	Wed, 19 Jul 2023 10:35:00 -0500
+Received: by mail-yb1-f172.google.com with SMTP id 3f1490d57ef6-ccc462deca6so4709415276.0
+        for <info@saiparivarfoundation.org>; Wed, 19 Jul 2023 08:34:55 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1689780890; x=1690385690;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :dkim-signature:delivered-to:x-forwarded-for:x-forwarded-to
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=9CKCP2UmUIh7iiSUkY9jSjQd5E3FECoJH5gU1WJoqgc=;
+        b=Id1lxhruX/sD8TqUpMKsZrsBAh4mmTmu/6eX8f069O4AR2z25dbB6RlXdbciOt6uZC
+         Wk8h0Ch4CTsr7jMZzyLrqpobXRnlb4xzwHnsbTBTJO1Ex7Q+YifcUyNfP24FmgLF4NSS
+         /YsMSPhAfRlgHxNuDhFNpmNROFjfW4b/hYpUWZg4isERfWhpGUYPVkehxBxPyF8xiYvv
+         vVvssPY8jLajv9aquzbSOd90zhS8SfGeVPDR5IKeIkplSOBy/ZG78B2oPLz4PojYr0rd
+         7sbJ/kRZGpdGOvtl6iBzMqNuPZKWxVWZ7jEiaeOdFHp1DURsQI7VZlkCt7CgXNX2kjwo
+         h+WQ==
+X-Gm-Message-State: ABy/qLZl15AVbVC2pHgHhVOORsnsFll6aOGShdYTVMZOcM+p3LGBL5Fn
+	BfPCL/OXnU0+zFwSNHi89jlaOlrsv+rrib5QivJJd7/Nc+tcwrfn7Q==
+X-Received: by 2002:a25:42c7:0:b0:cb7:3aa8:c515 with SMTP id p190-20020a2542c7000000b00cb73aa8c515mr2717671yba.0.1689780890162;
+        Wed, 19 Jul 2023 08:34:50 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a05:7000:5c09:b0:4f4:bdc:7dcb with SMTP id e9csp4378570maz;
+        Wed, 19 Jul 2023 08:34:48 -0700 (PDT)
+X-Received: by 2002:a05:6808:1a:b0:3a3:9073:856f with SMTP id u26-20020a056808001a00b003a39073856fmr6442269oic.3.1689780888709;
+        Wed, 19 Jul 2023 08:34:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1689780888; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Srz3E6NHK7+vM6hi3AMQ+xQmCs8BjFECtvCrqSmGYMkj11S+vxgD18MHMY7wP9ruTk
+         5kggV/Jyk4yPZInrk1KmM0FROpfM21jOBEQlxT6A2ftA02HpHodhY+bE+sy0x6Go+/66
+         vt8ej6jiCGgPdd0zYeRT4yi77hN9lgei56sKJ7bissJcg8hhISkDciGRXFKkLa6tvHMv
+         Zlyi1pgmlar37on8bYzZwSuHYdB9lOHA4O3elBqepX4e8IAh82IwyBlv4BsdUcN2Otol
+         vRn2/4n4bRhm/zOKbRxSMZtKpNi7apUHTX0M+nV0Q6tDRzdYOO4rj9G+CRXYgKTzlTi9
+         2kpQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :dkim-signature;
+        bh=9CKCP2UmUIh7iiSUkY9jSjQd5E3FECoJH5gU1WJoqgc=;
+        fh=kyNgDEvasZaKLAWVRyWN5dQUMwOapBh7N6Zgj/Vnu+Q=;
+        b=DIh0iHIGwsiPmDcvarypWljZP9yMRHoStdxpUKETFGqACBk/fRCCIahHUkQUQD6sEP
+         qGkWeepaxx9IatkeDieA5+k7tWdrMM3eIQpbdipwU5izCc7Yg7dHXNB1Nn4/jjIggJAJ
+         66gk+VVYKRAutgaDfCflLeg2p4YRelnNiKwOQ+3gXVfI1KdxTifst6nb5uSWuGfU/39G
+         nEyWtvOhTyUj7mK07UcW/tMH91crt/R0vL1z7/5Q63Y3g7b1nfQRiTrW5abSpwmN8dCd
+         LWTB7/3crTbvQpQcWKBfRYnJ5Cc/ob1/qKuOkh1i5Yqq8NeDbrzcQjjmzjVHhx0+8kFD
+         V79Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@youtube.com header.s=20221208 header.b=PkhrSfat;
+       spf=pass (google.com: domain of 3mak4zaglfkkwx-anyuhhxdcdkn.lxvbjryjarejaoxdwmjcrxwpvjru.lxv@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3mAK4ZAgLFKkWX-aNYUhhXdcdKN.LXVbJRYJaReJaOXdWMJcRXWPVJRU.LXV@scoutcamp.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=youtube.com
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id m21-20020a05680806d500b003a39ae0efe4sor5057854oih.17.2023.07.19.08.34.48
+        for <saiparivarfoundation@gmail.com>
+        (Google Transport Security);
+        Wed, 19 Jul 2023 08:34:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3mak4zaglfkkwx-anyuhhxdcdkn.lxvbjryjarejaoxdwmjcrxwpvjru.lxv@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@youtube.com header.s=20221208 header.b=PkhrSfat;
+       spf=pass (google.com: domain of 3mak4zaglfkkwx-anyuhhxdcdkn.lxvbjryjarejaoxdwmjcrxwpvjru.lxv@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3mAK4ZAgLFKkWX-aNYUhhXdcdKN.LXVbJRYJaReJaOXdWMJcRXWPVJRU.LXV@scoutcamp.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=youtube.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=youtube.com; s=20221208; t=1689780888; x=1692372888;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=9CKCP2UmUIh7iiSUkY9jSjQd5E3FECoJH5gU1WJoqgc=;
+        b=PkhrSfat/VyFphXGOhDAe2lHhWT3ZyvJLHwhiS84jjeyYDHqXopXCO0T8sKq1Tyvtt
+         XYimG/R/FTTfiQpUVn8uTjOHCIFKr40IbV1GSgycNbIAMw455XygTQ47/5A/MqFVpgy1
+         dI4NRsYx4znayHb/nRWGVSHXoGCRqaFP5B6q+FvHbc/vCBWYmtODP3qNj8Tgkn5tG8VC
+         Dn+s2E+8ntehLD/SldEQODZl/YWzHr1MqSfXrFA1hV93x48ObdWuayKsWISFTJ48iYKV
+         yNzbL3Qi/bKCKT2Xvidp/pLrCR4fZA81hRwPT2ngeNi1S9OUV7Cl3taxGgIrsZZ6leJh
+         Zjtw==
+X-Google-Smtp-Source: APBJJlGacWPQH0T4PjFum1+6jKBL577hWUwArHTef1XhV001ZQrgTBvJ/81P9JZEiqx1P2YDg96j/cQ=
+MIME-Version: 1.0
+X-Received: by 2002:a05:6808:1302:b0:3a3:9992:ddb7 with SMTP id
+ y2-20020a056808130200b003a39992ddb7mr5657429oiv.6.1689780888189; Wed, 19 Jul
+ 2023 08:34:48 -0700 (PDT)
+Date: Wed, 19 Jul 2023 08:34:48 -0700
+Reply-To: YouTube <no-reply@youtube.com>
+X-Google-Id: 4078606
+Feedback-ID: P-186-0:C20152128:M110419227-en:gamma
+X-Notifications: 8a40686388e40000
+X-Notifications-Bounce-Info: AayBb5PEorbx4BiNuZwrOwh5pZEspX5rgPpsoRChT6Ku1VXZPotbb4MzwpPQPUdZ2Uvjm-u-d8b6IyROQmQ6ncN7OH_oR-Dj3hE6gyuncAJT8xCf7jzH37SbC6Ckpd8FdTUEzdb77ZKaypYoOvRUVui379rn3M44f-_D6BLHzrp9JhKx25Jo472D7ikHW_ls3AGsZ0Ruz5I0OKVClFzw1_RH0tsWcUFn3Serbd_lfkytFafVw7gp28OK9P0SplaoEtzILTdvOUgKHgsL0KmbnQx1xHbSeUY5wIYmUUbHeZj4j0vmVTq7UHagMHr7SlpnKN2Z1i4w_FgpkCqSj_5Pf8f52ElvkN7XZVnqoVbDbbQ6KzwsK2Q8OQTTIQT_5qVQS-wq7gNjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <e0f35c07e718eb4a462a4a5089c0331515fc7f83-20152128-110922175@google.com>
+Subject: A private video was shared with you
+From: YouTube <no-reply@youtube.com>
+To: saiparivarfoundation@gmail.com
+Content-Type: multipart/alternative; boundary="00000000000096bb8a0600d8c59c"
+
+--00000000000096bb8a0600d8c59c
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+Swaprakash Dash has shared a video with you on YouTube
+
+
+
+
+
+Dr CB Satpathy July13 Talk
+
+by Swaprakash Dash
+
+
+
+
+
+Help center
+
+
+
+
+
+
+
+
+Google LLC d/b/a YouTube, 901 Cherry Ave, San Bruno, CA 94066
+You received this email to provide information and updates around your  
+YouTube product or account.
+
+
+
+
+
+
+
+
+--00000000000096bb8a0600d8c59c
+Content-Type: text/html; charset="UTF-8"
+
+
+
+<html lang=en>
+
+<head>
+  <title>
+  A private video was shared with you
+  </title>
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+
+<body>
+  <table width=620 cellspacing=0 cellpadding=0 border=0 align=center><tr><td bgcolor=#F0F0F0>
+    <table width=578 cellspacing=0 cellpadding=0 border=0 align=center>
+      <tr>
+        <td height=16></td>
+      </tr>
+      <tr>
+        <td>
+          <img src=https://www.gstatic.com/youtube/img/branding/youtubelogo/2x/youtubelogo_60.png style="height: 30px;">
+        </td>
+      </tr>
+      <tr>
+        <td height=16></td>
+      </tr>
+
+      <tr>
+        <td align=left bgcolor=#FFFFFF>
+          <div style="border-style:solid; border-width:1px; border-color:#CCCCCC;">
+            <table width=578 cellspacing=0 cellpadding=0 border=0 align=center>
+              <tr>
+                <td height=22 colspan=3></td>
+              </tr>
+
+              <tr>
+                <td width=40></td>
+                <td width=498>
+                  <div style=font-family:arial,Arial,sans-serif;>
+  <table cellspacing=0 cellpadding=0 border=0>
+    <tr>
+        <td bgcolor=#FFFFFF align=left width=50>
+          <img src=https://yt3.ggpht.com/yti/AOXPAcVS0_2q5zpABVCE6cQIfq6b1HPMx989Qqxv-4azuw=s50-c-k-c0x00ffffff-no-rj height=50 width=50>
+        </td>
+        <td width=16></td>
+
+      <td>
+        <div style="font-family:arial,Arial,sans-serif; font-size:18px; color:#333333; line-height:24px;height:59">
+          <a href=https://www.youtube.com/channel/UCIOdZg9SFoT9653oDXyBaRw?feature=em-share_video_user style="text-decoration:none; color:#1C62B9;">Swaprakash Dash</a> has shared a video with you on YouTube
+        </div>
+      </td>
+    </tr>
+  </table>
+  <table cellspacing=0 cellpadding=0 border=0>
+    <tr><td height=22></td></tr>
+  </table>
+  <div style="border-bottom: 1px solid #E1E1E1;"></div>
+  <table cellspacing=0 cellpadding=0 border=0>
+    <tr><td height=22></td></tr>
+  </table>
+  <table cellspacing=0 cellpadding=0 border=0>
+    <tr>
+      <td width=498>
+        <a href=https://www.youtube.com/watch?v=CgsrLKeFTGA&amp;feature=em-share_video_user style="text-decoration:none; display:block;" class=nonplayable>
+          <img src=https://www.gstatic.com/youtube/img/email/video_thumbnail.jpg height=274 width=498>
+        </a>
+      </td>
+    </tr>
+  </table>
+  <table cellspacing=0 cellpadding=20 border=0>
+    <tr>
+      <td width=498>
+        <a href=https://www.youtube.com/watch?v=CgsrLKeFTGA&amp;feature=em-share_video_user style=text-decoration:none>
+          <div style="font-family:arial,Arial,sans-serif; font-size:15px; color:#333333; line-height:20px; font-weight:bold;">
+            Dr  C B Satpathy July13 Talk
+          </div>
+        </a>
+        <div style="font-family:arial,Arial,sans-serif; font-size:13px; color:#999999; line-height:20px;">
+          by
+          <a href=https://www.youtube.com/channel/UCIOdZg9SFoT9653oDXyBaRw?feature=em-share_video_user style="font-family:arial,Arial,sans-serif; font-size:13px; color:#999999; line-height:20px; text-decoration:none;">Swaprakash Dash</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+    <table cellspacing=0 cellpadding=0 border=0>
+      <tr><td height=16></td></tr>
+    </table>
+
+    <table cellspacing=0 cellpadding=0 border=0>
+      <tr>
+        <td width=498>
+          <div style="font-family:arial,Arial,sans-serif; font-size:13px; color:#333333; line-height:20px;">
+            
+          </div>
+        </td>
+      </tr>
+    </table>
+                  </div>
+                </td>
+                <td width=40></td>
+              </tr>
+
+              <tr>
+                <td height=22 colspan=3></td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td height=16></td>
+      </tr>
+      <tr>
+        <td align=center>
+          <table cellspacing=0 cellpadding=0 border=0 align=center>
+            <tr>
+              <td width=40></td>
+              <td width=498>
+                <div style="font-family:arial,Arial,sans-serif; font-size:11px; color:#999999; line-height:14px;">
+                  <a href=http://support.google.com/youtube/?hl=en style="text-decoration:none; color:#1C62B9;">Help center</a>
+                </div>
+              </td>
+              <td width=40></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td height=16></td>
+      </tr>
+      <tr>
+        <td align=left>
+          <table cellspacing=0 cellpadding=0 border=0 align=center>
+            <tr>
+              <td width=40></td>
+              <td width=498>
+                <div style="font-family:arial,Arial,sans-serif; font-size:11px; color:#999999; line-height:13px;">
+                  Google LLC d/b/a YouTube, 901 Cherry Ave, San Bruno, CA 94066
+                  <br>
+				  You received this email to provide information and updates around your YouTube product or account.
+                </div>
+              </td>
+              <td width=40></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height=22></td>
+      </tr>
+    </table>
+  </td></tr></table>
+  <img class=open_tracking_img src=https://www.youtube.com/gen_204 width=1 height=1>
+</body>
+</html>
+
+--00000000000096bb8a0600d8c59c--

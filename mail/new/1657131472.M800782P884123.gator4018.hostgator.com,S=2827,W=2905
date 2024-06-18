@@ -1,0 +1,78 @@
+Return-Path: <>
+Delivered-To: seasai10@gator4018.hostgator.com
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id +DoHL9DRxWKbfQ0AUq51WA
+	(envelope-from <>)
+	for <seasai10@gator4018.hostgator.com>; Wed, 06 Jul 2022 13:17:52 -0500
+Return-path: <>
+Envelope-to: seasai10@gator4018.hostgator.com
+Delivery-date: Wed, 06 Jul 2022 13:17:52 -0500
+Received: from mailnull by gator4018.hostgator.com with local (Exim 4.95)
+	id 1o99ay-004OK1-NS
+	for seasai10@gator4018.hostgator.com;
+	Wed, 06 Jul 2022 13:17:52 -0500
+X-Failed-Recipients: neelmahapatro@hotmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4018.hostgator.com>
+To: seasai10@gator4018.hostgator.com
+References: <E1o96cQ-003PMH-33@gator4018.hostgator.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1657131472-eximdsn-692499816
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1o99ay-004OK1-NS@gator4018.hostgator.com>
+Date: Wed, 06 Jul 2022 13:17:52 -0500
+
+--1657131472-eximdsn-692499816
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  neelmahapatro@hotmail.com
+    (ultimately generated from info@saiparivarfoundation.org)
+    host eig-east.smtp.a.cloudfilter.net [18.215.58.191]
+    SMTP error from remote mail server after end of data:
+    550 <seasai10@gator4018.hostgator.com> message rejected. AUP#SNDR
+
+--1657131472-eximdsn-692499816
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4018.hostgator.com
+
+Action: failed
+Final-Recipient: rfc822;info@saiparivarfoundation.org
+Status: 5.0.0
+Remote-MTA: dns; eig-east.smtp.a.cloudfilter.net
+Diagnostic-Code: smtp; 550 <seasai10@gator4018.hostgator.com> message rejected. AUP#SNDR
+
+--1657131472-eximdsn-692499816
+Content-type: message/rfc822
+
+Return-path: <seasai10@gator4018.hostgator.com>
+Received: from seasai10 by gator4018.hostgator.com with local (Exim 4.95)
+	(envelope-from <seasai10@gator4018.hostgator.com>)
+	id 1o96cQ-003PMH-33
+	for info@saiparivarfoundation.org;
+	Wed, 06 Jul 2022 10:07:10 -0500
+To: info@saiparivarfoundation.org
+Subject: Arati Registration
+X-PHP-Script: saiparivarfoundation.org/mail.php for 46.161.11.222
+X-PHP-Originating-Script: 33308:mail.php
+From: teenytinyroper@expressgopher.com
+Message-Id: <E1o96cQ-003PMH-33@gator4018.hostgator.com>
+Date: Wed, 06 Jul 2022 10:07:10 -0500
+
+ Hello Administrator, 
+ 
+ You got a new message from SaiParivarFoundation! 
+ 
+
+ From: Crytochula 
+ Phone: 89035805670 
+ Month: 9 
+ Message: Need money? Earn it without leaving your home. https://log.seamonkey.es/gotodate/go
+
+--1657131472-eximdsn-692499816--

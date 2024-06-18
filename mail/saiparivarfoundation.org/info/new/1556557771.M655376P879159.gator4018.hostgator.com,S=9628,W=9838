@@ -1,0 +1,210 @@
+Return-Path: <rubeena.webmaster88@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id 4NKKHMsvx1w3ag0AUq51WA
+	(envelope-from <rubeena.webmaster88@gmail.com>)
+	for <info@saiparivarfoundation.org>; Mon, 29 Apr 2019 12:09:31 -0500
+Return-path: <rubeena.webmaster88@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Mon, 29 Apr 2019 12:09:31 -0500
+Received: from mail-pl1-f194.google.com ([209.85.214.194]:46131)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <rubeena.webmaster88@gmail.com>)
+	id 1hL9mV-003u1i-6P
+	for info@saiparivarfoundation.org; Mon, 29 Apr 2019 12:09:31 -0500
+Received: by mail-pl1-f194.google.com with SMTP id bi2so574670plb.13
+        for <info@saiparivarfoundation.org>; Mon, 29 Apr 2019 10:09:26 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=message-id:from:to:subject:date:mime-version:thread-index
+         :content-language;
+        bh=3Uyx0w4LW9PDSGG5LtbWmv9rEaE8d1JRq7SV2uagunw=;
+        b=MZ78Yss9x89Qz5Uuf0exVN3QfgjMD+Ndi+XthHst/bspUbhssUI0AhR1BMeOSy1gou
+         sz8hyPnNa8XHGDy6PKPUPm/VGwZ25E0jzRy+bvAmqXHxDsLWUOneB1gebmQ+Xy34HkXP
+         OPH8FZ1TACssqpNGCuxdW7vecE1+92DpSHxgMB2YXwuFJqa1wqPnHSzYkV0Nvv/KwCIn
+         +ZJ69ITPzf06dNaaYJs2Tx09NKmdXJm60KVjjK6l1uC6qVUqlVa+7vkguxM5shvCyKAl
+         UF8kiBidmllDPLgk5yGSwxmO/FDraV8VDaIc0jXapW3ohGxwW/CVAnZVv3OCs7ErBzEJ
+         G8Mw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:message-id:from:to:subject:date:mime-version
+         :thread-index:content-language;
+        bh=3Uyx0w4LW9PDSGG5LtbWmv9rEaE8d1JRq7SV2uagunw=;
+        b=TDAI4rAAuSclq2APsXu0l+7lxUSjdnqbRJ4Atx3VfvdX6KHYA+SBPnqIPo/JrDziAm
+         7jL3dfoDpHjnJ8DoZJqcLhj04NTv6Sa19i49ocaPeXWbD+lstI21RNYQEvgF7jHD57RI
+         w0J+Xps1TLy13yF8r+oJSTxWD4q0wkbT+rSurbySjoMp0RwCEOa179e91nYLs9S3NS2Y
+         u7l8Rx+dLTCggrgEbgl1oKtgMwyd0LzbjrCVSjpCv0uMyMnQMXYp1cnas7A5IBK66jEr
+         qYXIcWOZv5Y9oXbPg0edhjTIAa9oZvgmdGvxe9rct6GxAaEVYTQjebtnFlkPChKsYfbN
+         G5PA==
+X-Gm-Message-State: APjAAAWxgyWbnoiuqTqJksm3QI1OT49aeu5nxvoKwrPSCsga7+job47L
+	iqJN3SaeuneDYbZOFmm6LXMmTmxW
+X-Google-Smtp-Source: APXvYqwhtLft2IigOuOMtpriDq23VaakTaYiV7bAFH01B6ubnnZviFP2nPC6z+MFJzdf8aQ8QVByAA==
+X-Received: by 2002:a17:902:e287:: with SMTP id cf7mr63580211plb.217.1556557760029;
+        Mon, 29 Apr 2019 10:09:20 -0700 (PDT)
+Received: from KaramatPC ([103.211.17.67])
+        by smtp.gmail.com with ESMTPSA id n67sm402210pfn.22.2019.04.29.10.09.18
+        for <info@saiparivarfoundation.org>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Mon, 29 Apr 2019 10:09:19 -0700 (PDT)
+Message-ID: <5cc72fbf.1c69fb81.d6c8e.13b2@mx.google.com>
+X-Google-Original-Message-ID: <036b01d4feae$42a57010$c7f05030$@webmaster88@gmail.com>
+From: "Rubeena" <rubeena.webmaster88@gmail.com>
+To: <info@saiparivarfoundation.org>
+Subject: Build Apps with the latest functionalities.
+Date: Mon, 29 Apr 2019 22:38:51 +0530
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_036C_01D4FEDC.5C5DAC10"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AdT+rZPUQxzaXe03S4yVG9/rNahhRQ==
+Content-Language: en-us
+X-Antivirus: Avast (VPS 190429-0, 04/29/2019), Outbound message
+X-Antivirus-Status: Clean
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_036C_01D4FEDC.5C5DAC10
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hi, www.saiparivarfoundation.org
+
+We have helped many clients in deploying apps to Apple & Google Play Store. 
+
+We Specialize in:  Travel portal apps / Restaurant Reservation apps &
+Ordering Apps / Local Food Delivery apps online booking apps / E-Commerce
+apps / Health & Wellness, Enterprise Mobility / GPS/Location-based
+Applications / IoT based android apps / Field Operations Apps / Education
+apps / Social Networking App / Financial App / lifestyle apps/PhotoMediaApps
+and all the other disciplines..
+
+Let me know if you are interested in our services. please give me your
+contact number /drop me an email/Skype ID, so that we can discuss the
+possible synergies between us. Thanks & Regards, 
+
+Rubeena,
+
+Note:  If you are not interested then you can reply with subject line of
+"No", you will never get any further notification by us.
+
+
+
+---
+This email has been checked for viruses by Avast antivirus software.
+https://www.avast.com/antivirus
+
+------=_NextPart_000_036C_01D4FEDC.5C5DAC10
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><META HTTP-EQUIV=3D"Content-Type" CONTENT=
+=3D"text/html; charset=3Dus-ascii"><meta name=3DGenerator content=3D"Micros=
+oft Word 12 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.m6868662130120194240ydpccb898edyiv7703007825ydpb6cc045amsonormal, li.m686=
+8662130120194240ydpccb898edyiv7703007825ydpb6cc045amsonormal, div.m68686621=
+30120194240ydpccb898edyiv7703007825ydpb6cc045amsonormal
+	{mso-style-name:m_6868662130120194240ydpccb898edyiv7703007825ydpb6cc045ams=
+onormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+=2EMsoChpDefault
+	{mso-style-type:export-only;}
+=2EMsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US><div class=3DWo=
+rdSection1><p class=3Dm6868662130120194240ydpccb898edyiv7703007825ydpb6cc04=
+5amsonormal style=3D'background:white'><span style=3D'font-family:"Cambria"=
+,"serif";color:black'>Hi, www.saiparivarfoundation.org<o:p></o:p></span></p=
+><p class=3Dm6868662130120194240ydpccb898edyiv7703007825ydpb6cc045amsonorma=
+l style=3D'background:white'><span style=3D'font-family:"Cambria","serif";c=
+olor:black'>We have helped many clients in deploying apps to Apple &amp; Go=
+ogle Play Store.&nbsp;<o:p></o:p></span></p><p class=3Dm6868662130120194240=
+ydpccb898edyiv7703007825ydpb6cc045amsonormal style=3D'background:white'><b>=
+<span style=3D'font-family:"Cambria","serif";color:black'>We Specialize in<=
+/span></b><span style=3D'font-family:"Cambria","serif";color:black'>:&nbsp;=
+ Travel portal apps / Restaurant Reservation apps &amp; Ordering Apps / Loc=
+al Food Delivery apps online booking apps / E-Commerce apps / Health &amp; =
+Wellness, Enterprise Mobility / GPS/Location-based Applications / IoT based=
+ android apps / Field Operations Apps / Education apps / Social Networking =
+App / Financial App / lifestyle apps/PhotoMediaApps and all the other disci=
+plines..<o:p></o:p></span></p><p class=3Dm6868662130120194240ydpccb898edyiv=
+7703007825ydpb6cc045amsonormal style=3D'background:white'><span style=3D'fo=
+nt-family:"Cambria","serif";color:black'>Let me know if you are interested =
+in our services. please give me your contact number /drop me an email/Skype=
+ ID, so that we can discuss the possible synergies between us. Thanks &amp;=
+ Regards, <o:p></o:p></span></p><p class=3Dm6868662130120194240ydpccb898edy=
+iv7703007825ydpb6cc045amsonormal style=3D'background:white'><span style=3D'=
+font-family:"Cambria","serif";color:black'>Rubeena,<o:p></o:p></span></p><p=
+ class=3DMsoNormal style=3D'line-height:12.65pt'><i><span style=3D'font-siz=
+e:12.0pt;font-family:"Cambria","serif";color:black'>Note:&nbsp; If you are =
+not interested then you can reply with subject line of &quot;<b>No</b>&quot=
+;, you will never get any further notification by us.</span></i><span style=
+=3D'font-size:12.0pt;font-family:"Cambria","serif";color:black'><o:p></o:p>=
+</span></p></div><div id=3D"DAB4FAD8-2DD7-40BB-A1B8-4E2AA1F9FDF2">
+<br /><br />
+<hr style=3D'border:none; color:#909090; background-color:#B0B0B0; height: =
+1px; width: 99%;' />
+<table style=3D'border-collapse:collapse;border:none;'>
+	<tr>
+		<td style=3D'border:none;padding:0px 15px 0px 8px'>
+			<a href=3D"https://www.avast.com/antivirus">
+				<img border=3D0 src=3D"https://static.avast.com/emails/avast-mail-stamp=
+=2Epng" alt=3D"Avast logo" />
+			</a>
+		</td>
+		<td>
+			<p style=3D'color:#3d4d5a; font-family:"Calibri","Verdana","Arial","Helv=
+etica"; font-size:12pt;'>
+				This email has been checked for viruses by Avast antivirus software.
+				<br><a href=3D"https://www.avast.com/antivirus">www.avast.com</a>
+			</p>
+		</td>
+	</tr>
+</table>
+<br />
+<a href=3D"#DAB4FAD8-2DD7-40BB-A1B8-4E2AA1F9FDF2" width=3D"1" height=3D"1">=
+ </a></div></body></html>
+------=_NextPart_000_036C_01D4FEDC.5C5DAC10--
+

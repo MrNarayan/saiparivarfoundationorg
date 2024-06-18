@@ -1,0 +1,1070 @@
+AWSTATS DATA FILE 7.6 (build 20161204)
+# If you remove this file, all statistics for date 201902 will be lost/reset.
+# Last config file used to build this data file was /home4/seasai10/tmp/awstats/awstats.saiparivarfoundation.org.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2022                
+POS_TIME 2707                
+POS_VISITOR 22257               
+POS_DAY 35935               
+POS_DOMAIN 3629                
+POS_LOGIN 4170                
+POS_ROBOT 4325                
+POS_WORMS 5389                
+POS_EMAILSENDER 5520                
+POS_EMAILRECEIVER 5663                
+POS_SESSION 36764               
+POS_SIDER 36973               
+POS_FILETYPES 5798                
+POS_DOWNLOADS 6043                
+POS_OS 6091                
+POS_BROWSER 6447                
+POS_SCREENSIZE 8126                
+POS_UNKNOWNREFERER 8200                
+POS_UNKNOWNREFERERBROWSER 8861                
+POS_ORIGIN 9337                
+POS_SEREFERRALS 9481                
+POS_PAGEREFS 9689                
+POS_SEARCHWORDS 10292               
+POS_KEYWORDS 10521               
+POS_MISC 2369                
+POS_ERRORS 10657               
+POS_CLUSTER 4026                
+POS_SIDER_404 10806               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20190301002113 456 115073 11035720527414
+FirstTime 20190201004934
+LastTime 20190228214803
+LastUpdate 20190301073329 456 0 455 0 0
+TotalVisits 448                 
+TotalUnique 302                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 359                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+AddToFavourites 0 109 0
+QuickTimeSupport 0 0 0
+TotalMisc 0 0 0
+JavaEnabled 0 0 0
+FlashSupport 0 0 0
+DirectorSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+RealPlayerSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 36 169 58038760 76 197 8542901
+1 57 177 34274941 70 142 891362
+2 38 134 19113008 100 161 854677
+3 42 146 29477430 68 150 646688
+4 39 194 41895563 99 181 866672
+5 19 126 20892943 36 111 789601
+6 27 59 776392 41 120 10803010
+7 28 106 13604621 67 119 2841456
+8 46 95 8727075 80 155 1231947
+9 24 66 17581167 32 83 579164
+10 21 85 25048815 60 110 9789386
+11 16 46 5646078 50 100 894048
+12 20 161 50266989 70 136 514003
+13 22 132 42109490 35 85 398811
+14 32 449 266728670 101 219 644606
+15 51 328 92817234 315 793 17489364
+16 28 160 55314859 88 193 1138971
+17 44 314 126401172 60 181 740351
+18 40 268 60947820 74 194 8619592
+19 42 466 183816711 122 309 1163909
+20 50 660 128390497 253 368 937350
+21 34 306 111868075 80 190 1361227
+22 14 107 39569127 80 168 1002380
+23 24 200 74425677 75 173 8250009
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 23
+us 609 4248 1393592726
+ca 55 251 23028547
+in 23 211 73337660
+gb 21 22 334351
+cn 19 128 11605563
+ru 18 18 180392
+hu 9 9 100135
+de 7 7 54862
+fr 6 6 60744
+zz 6 6 49885
+at 4 4 40496
+cl 3 3 30372
+bg 3 3 30372
+ua 2 2 20248
+se 1 1 10124
+dk 1 1 10124
+ie 1 28 5206017
+jp 1 1 10124
+pl 1 1 0
+ro 1 1 0
+lv 1 1 10124
+cz 1 1 10124
+nl 1 1 10124
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 23
+spider 454 6658114 20190228155609 0
+bingbot/ 362 6943196 20190228181554 0
+bingpreview 293 50064681 20190228191706 0
+Googlebot/ 146 1797131 20190228193938 0
+Baiduspider/ 46 780419 20190228203823 0
+bot[\s_+:,\.\;\/\\-] 37 383607 20190227024246 0
+YandexBot/ 29 292487 20190228002706 0
+Googlebot\-Image/ 27 11817110 20190227173844 0
+Apache\-HttpClient/ 15 151860 20190227225914 0
+no_user_agent 15 117828 20190228234720 0
+Uptimebot/ 13 0 20190228085612 0
+Exabot/ 12 0 20190226202354 0
+KomodiaBot/ 7 195462 20190220232209 0
+Mail\.RU_Bot/ 6 59776 20190223103309 0
+Python\-urllib/ 6 42592 20190216111034 0
+Applebot/ 3 26736 20190217231557 0
+DuckDuckGo\-Favicons\-Bot/ 3 30372 20190223011023 0
+archive\.org_bot 3 15763 20190203020404 0
+facebookexternalhit/ 3 20034 20190210001246 0
+(firefox/)([0-9]\.|[0-1][0]\.) 2 20248 20190216145505 0
+MojeekBot/ 1 10124 20190211192425 0
+baidu 1 10124 20190222215442 0
+YandexImages/ 1 0 20190227191232 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+jpeg 54 11237294 0 0
+gif 103 956767 0 0
+html 771 8194116 0 0
+php 5 1870 0 0
+png 554 1422548 0 0
+js 1541 30316930 0 0
+jpg 1092 1451542399 0 0
+Unknown 18 1313 0 0
+css 816 4059877 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 21
+Unknown 108 81
+win2003 11 9
+macosx10 7 7
+ios_ipad 15 1
+macosx12 90 30
+win10 1454 233
+winxp 11 11
+winunknown 1 1
+macosx7 67 5
+win8.1 42 5
+ios_iphone 1270 68
+win8 4 4
+winlong 40 2
+macosx 213 43
+macosx6 1 1
+macosx9 86 8
+linux 404 126
+macosx11 118 36
+winnt 14 3
+win7 480 94
+linuxandroid 518 26
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 80
+chrome48.0.2564.109 6 6
+chrome72.0.3626.119 61 2
+netscape 2 2
+msie9.0 221 37
+chrome45.0.2454.101 1 1
+firefox40.1 1 1
+chrome61.0.3163.100 12 12
+chrome71.0.3578.98 452 38
+opera36.0.2130.32 11 11
+chrome5.0.375.99 2 2
+firefox55.0 9 9
+chrome40.0.2214.93 3 3
+firefox53.0 1 1
+chrome12.0.742.112 1 1
+firefox47.0 10 10
+chrome35.0.1916.153 1 1
+chrome71.0.3578.99 76 3
+chrome72.0.3626.76 99 4
+chrome64.0.3282.186 14 14
+chrome65.0.3325.162 13 13
+Unknown 81 54
+opera53.0.2907.68 1 1
+chrome70.0.3538.67 17 1
+safari11.0 77 6
+chrome71.0.3578.80 4 4
+chrome34.0.1847.116 1 1
+safari10.0 34 3
+edge17 132 5
+iphone 80 5
+chrome65.0.3325.181 315 98
+firefox64.0 2 2
+edge16 2 2
+chrome58.0.3029.110 8 8
+chrome66.0.3359.181 44 44
+chrome72.0.3626.105 307 15
+firefox43.0 86 4
+firefox65.0 76 8
+edge18 32 1
+firefox58.0 4 4
+chrome63.0.3239.84 2 0
+chrome54.0.2840.99 1 1
+chrome72.0.3626.96 197 8
+chrome34.0.1847.131 1 1
+chrome60.0.3112.50 26 7
+chrome45.0.2454.94 2 2
+mozilla 38 38
+chrome41.0.2272.89 22 22
+chrome60.0.3112.101 1 1
+chrome68.0.3440.106 29 2
+chrome72.0.3626.109 366 21
+safari12.0.3 32 1
+firefox42.0 1 1
+firefox52.0 41 19
+firefox50.0 19 19
+firefox63.0 322 17
+firefox59.0 21 21
+firefox29.0 1 1
+msie5.0 14 3
+safari11.0.3 5 5
+chrome49.0.2623.75 2 2
+firefox60.0 28 1
+msie8.0 2 2
+chrome66.0.3359.117 2 2
+chrome49.0.2623.112 67 5
+safari12.0 548 34
+msie11.0 1 1
+chrome67.0.3396.87 2 2
+msie7.0 10 8
+chrome34.0.1847.137 2 2
+chrome70.0.3538.102 170 7
+opera10.51 1 1
+chrome26.0.1410.63 9 9
+chrome42.0.2311.152 1 1
+safari 608 29
+chrome62.0.3202.94 5 5
+chrome63.0.3239.132 8 8
+firefox48.0 3 3
+chrome70.0.3538.77 8 8
+chrome69.0.3497.100 36 36
+chrome11.0.654.0 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 14
+panscient.com 20190221005250
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20190210081918
+Go-http-client/1.1 20190228013628
+axios/0.16.1 20190211173857
+Mozilla/5.0_(compatible;_ips-agent) 20190222011819
+Mozilla/5.0_(compatible;_Dataprovider.com) 20190226010255
+python-requests/2.19.1 20190206230701
+python-requests/2.21.0 20190226090425
+Cpanel-HTTP-Client/1.0 20190210081917
+Dispatch/0.11.3 20190214094223
+Scrapy/1.5.1_(_https://scrapy.org) 20190217005547
+\ 20190205205703
+Mozilla_Firefox 20190222220239
+ia_archiver 20190215033838
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 11
+python-requests/2.7.0_CPython/2.7.13_Windows/10 20190217122623
+Go-http-client/1.1 20190228013628
+axios/0.16.1 20190211173857
+panscient.com 20190221005250
+Cpanel-HTTP-Client/1.0 20190210081917
+python-requests/2.19.1 20190206230701
+python-requests/2.21.0 20190226090425
+ia_archiver 20190215033838
+Dispatch/0.11.3 20190214094223
+Scrapy/1.5.1_(_https://scrapy.org) 20190217005547
+\ 20190205205703
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 448 598
+From1 6 6
+From2 96 152
+From3 34 34
+From4 210 4164
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 4
+www_google_co_in 2 2
+aolcom 1 1
+baidu 4 4
+www_google_com 89 145
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 11
+http://burger-imperia.com 7 7
+http://pizza-imperia.com 6 6
+http://hundejo.com 5 5
+http://saiamrithadhara.com/templesinus.html 3 3
+http://burger-tycoon.com 3 3
+https://www.facebook.com 3 3
+https://www.blog2019.top/quick-seo-traffic-building-tips-to-improve-your-blog/7707020/ 2 2
+https://m.yelp.com 2 2
+https://lm.facebook.com 1 1
+https://www.blog2019.top/quick-seo-traffic-building-tips-to-improve-your-blog/2942244/ 1 1
+http://www.marinetraffic.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 5
+dhp6 1
+greatlyqds 1
+attempt9kz 1
+magnetwyg 1
+mail.saiparivarfoundation.org 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 5
+mail.saiparivarfoundation.org 1
+magnetwyg 1
+dhp6 1
+greatlyqds 1
+attempt9kz 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+206 26 180520
+404 1740 1205478
+409 202 16683
+406 40 9040
+403 1036 142100
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 221
+/wp-content/files_mf/jsspwned.php 1 -
+/wp-content/themes/betheme/muffin-options/fields/upload/field_upload.php 1 -
+/wp-content/uploads/settingsimages/2019/02/en/jsspwned.php 25 -
+/wp-content/plugins/mobile-app-builder-by-wappress/server/images.php 1 -
+/wp-content/plugins/radykal-fancy-gallery/admin/jsspwned.php 1 -
+//wp-admin/setup-config.php 1 -
+/wp-content/themes/IncredibleWP/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+/wp-content/themes/betheme/muffin-options/fields/upload/Files/jsspwned.php 1 -
+/wp-content/plugins/php-event-calendar/server/file-uploader/jsspwned.php 2 -
+/wp-content/plugins/dzs-zoomsounds/admin/upload.php 1 -
+//data/common.inc.php 1 -
+/wp-content/themes/rarebird/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+/fckeditor/editor/filemanager/connectors/php/jsspwned.php 1 -
+/wp-content/plugins/lb-mixed-slideshow/gallery/1/jsspwned.php 1 -
+/wp-content/uploads/product_files/jsspwned.php 1 -
+/wp-content/plugins/pitchprint/uploader/ 1 -
+/wp-content/plugins/wp-mobile-detector/cache/settings_auto.php 1 -
+/wp-content/themes/satoshi/upload-file.php 1 -
+/js/f||location.pathname 1 -
+/blog/ 23 -
+/old/wp-admin/setup-config.php 1 -
+/media/hd.txt 1 -
+/site/wp-includes/wlwmanifest.xml 5 -
+/admin.php 1 -
+//includes/general.js 1 -
+/wp-content/plugins/omni-secure-files/plupload/examples/uploads//jsspwned.php 1 -
+/admin/login.php 3 -
+/libraries/sfn.php 1 -
+//new/wp-admin/install.php 1 -
+/images/prevnext_bg.html 1 http://saiparivarfoundation.org/css/camera.css
+/wp-content/plugins/mobile-friendly-app-builder-by-easytouch/server/images.php 1 -
+/license.php 2 -
+/wp-content/uploads/settingsimages/jsspwned.php 1 -
+//wp-admin/install.php 1 -
+//sites/default/files/hd.php 2 -
+/tmp/plupload/owned.html 1 -
+//.env 1 -
+/modules/mod_simplefileuploadv1.3/elements/udd.php 1 -
+/wp-content/plugins/work-the-flow-file-upload/public/assets/jQuery-File-Upload-9.5.0/server/php/index.php 1 http://saiparivarfoundation.org/wp-content/plugins/work-the-flow-file-upload/public/assets/jQuery-File-Upload-9.5.0/server/php/index.php
+/wp-content/plugins/wpstorecart/php/upload.php 1 -
+//cometchat/js/index.html 1 -
+/th1s_1s_a_4o4.html 28 http://www.google.com/url
+/wp-content/plugins/simple-ads-manager/jsspwned.php 1 -
+/images/prev_next.png 1 http://saiparivarfoundation.org/css/camera.css
+/wp-content/plugins/barclaycart/uploadify/jsspwned.php 1 -
+/sitemap.xml 3 -
+/wp-content/themes/pinboard/uploads/jsspwned.php 1 -
+/wp-content/themes/beach_apollo/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+/wp-content/plugins/asset-manager/upload.php 1 -
+/wp-content/plugins/dzs-zoomsounds/admin/upload/jsspwned.php 2 -
+/wp-content/plugins/wp-easy-gallery-pro/admin/php.php 1 http://saiparivarfoundation.org/wp-content/plugins/wp-easy-gallery-pro/admin/php.php
+/a 15 -
+/images/next.html 1 http://saiparivarfoundation.org/css/camera.css
+/wp-content/uploads/i-dump-uploads//jsspwned.php 1 -
+/wp-content/themes/pindol/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+/wp-content/uploads/headway/header-uploads//jsspwned.php 1 -
+/wp-content/themes/multimedia1/server/php/files/jsspwned.php 1 -
+/wp-content/plugins/wp-mobile-detector/resize.php 1 -
+/wp-content/plugins/wordpress-member-private-conversation/doupload.php 2 -
+/index.php/checkout/ 1 -
+/www 9 -
+/test/ 3 -
+//admin 1 -
+/mission.html%23whycharity 1 -
+/wp-content/plugins/inboundio-marketing/admin/partials/uploaded_csv/jsspwned.php 2 -
+//uploadify/uploadify.css 1 -
+/blog/administrator/index.php 1 -
+/new/wp-admin/setup-config.php 1 -
+/wp-content/themes/MoneyTheme/uploads/uploads/jsspwned.php 1 -
+/wp-content/plugins/zen-mobile-app-native/server/images.php 1 -
+/wp-content/plugins/woocommerce-custom-t-shirt-designer/includes/templates/template-white/designit/cs/uploadImage/$uploadfolder/jsspwned.php 1 -
+/wp-admin/admin-ajax.php 4 -
+/wp-content/plugins/wp-simple-cart/files/$uploadfolder/temporary/jsspwned.php 1 -
+/productlist.php 1 -
+/js/testurl 17 -
+/joomla/robots.txt 2 -
+/user/ 2 -
+/wp-content/plugins/i-dump-iphone-to-wordpress-photo-uploader/uploader.php 1 -
+/wp-content/jssor-slider/jssor-uploads/jsspwned.php 1 -
+/wp-content/themes/evolve/js/back-end/libraries/fileuploader/upload_handler.php 2 -
+/wp-admin/setup-config.php 2 -
+/WP/ 1 -
+/wp-admin/ 1 -
+/wp-content/plugins/wp-simple-cart/request/simple-cart-upload.php 1 -
+/components/com_sexycontactform/fileupload/shellcom.php 1 -
+//admin/login.php 6 -
+/wp-content/uploads/user_uploads/test/jsspwned.php 2 -
+/wp-content/plugins/peugeot-music-plugin/js/plupload/examples/uploads/jsspwned.php 2 -
+/horde/imp/test.php 3 -
+/magento_version 2 -
+//wp/wp-admin/install.php 1 -
+/resources.html 19 http://www.saiparivarfoundation.org
+/wp-content/plugins/mobile-friendly-app-builder-by-easytouch/jsspwned.php 1 -
+/administrator 1 -
+/wp-content/plugins/contus-video-galleryversion-10/upload1.php 1 -
+/xmlrpc.php 8 -
+/lwlko/ppnpn/lfmqh 1 -
+/wp-content/plugins/social-networking-e-commerce-1/images/uploads/jsspwned.php 1 -
+/wp-content/plugins/work-the-flow-file-upload/public/assets/jQuery-File-Upload-9.5.0/server/php/ 1 -
+/wp-content/themes/cuckootap/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+//data/admin/ver.txt 1 -
+/wp-content/uploads/assets/temp/jsspwned.php 1 -
+/wp-content/plugins/magic-fields/RCCWP_upload_ajax.php 1 -
+/wp-content/plugins/formcraft/file-upload/server/content/upload.php 1 -
+/wp-content/plugins/omni-secure-files/plupload/examples/upload.php 2 -
+/util/login.aspx 2 -
+/events.html 3 -
+/wp-content/plugins/social-networking-e-commerce-1/classes/views/social-options/form_cat_add.php 1 -
+/wp-content/themes/multimedia1/server/php/ 1 -
+/wp-content/plugins/omni-secure-files/plupload/examples/uploads/jsspwned.php 1 -
+/wp-content/plugins/wp-property/third-party/uploadify/jsspwned.php 1 -
+/wp-content/uploads/2019/02/jsspwned.php 2 -
+/wp-content/plugins/peugeot-music-plugin/js/plupload/examples/upload.php 2 -
+/wp-content/plugins/inboundio-marketing/admin/partials/csv_uploader.php 2 -
+/admin/images/cal_date_over.gif 3 -
+/apple-touch-icon-precomposed.png 2 -
+/wp-content/uploads/jsspwned.php 2 -
+/cms/wp-includes/wlwmanifest.xml 5 -
+//js/admin.js 1 -
+/Sai_Satcharitra.htm 1 -
+/wp-content/plugins/pitchprint/uploader/files/jsspwned.php 1 -
+//test/wp-admin/install.php 1 -
+/apple-touch-icon.png 2 -
+/wp-login.php 3 -
+/js/SaiBaba.js 273 http://www.saiparivarfoundation.org/
+//069.php 1 -
+/wp-content/plugins/php-event-calendar/server/file-uploader/ 2 -
+/website/ 1 -
+/wp-content/plugins/mm-forms-community/includes/doajaxfileupload.php 1 http://saiparivarfoundation.org/wp-content/plugins/mm-forms-community/includes/doajaxfileupload.php
+/wp-content/themes/ultimatum/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+/wp-content/plugins/cherry-plugin/admin/import-export/jsspwned.php 2 -
+/blog/wp-admin/setup-config.php 1 -
+/contactus.aspx 2 -
+/wp-content/plugins/zen-mobile-app-native/jsspwned.php 1 -
+/wp-admin/options-general.php 1 -
+/wp-content/uploads/wysija/themes/v5wysija/jsspwned.php 1 -
+/undefined 129 http://www.saiparivarfoundation.org/contacts.html
+/wp-content/satoshi/images/jsspwned.php 1 -
+/wp-content/themes/centum/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+/wp-content/jsspwned.php 1 -
+/wordpress/wp-admin/setup-config.php 1 -
+/demo/wp-admin/setup-config.php 1 -
+/images/btn_bg1.png 119 http://www.saiparivarfoundation.org/
+//admin/images/cal_date_over.gif 6 -
+/blog/wp-includes/wlwmanifest.xml 5 -
+/wp-content/plugins/sexy-contact-form/includes/fileupload/index.php 1 -
+/beta/ 1 -
+/wp-content/plugins/dzs-videowhisper/upload/jsspwned.php 1 -
+/wp-content/themes/konzept/includes/uploadify/upload.php 1 -
+/blog/robots.txt 25 -
+/backup/wp-admin/setup-config.php 1 -
+/install.php 2 -
+/wp-content/plugins/mobile-app-builder-by-wappress/jsspwned.php 1 -
+/wp-content/plugins/sexy-contact-form/includes/fileupload/files/ 1 -
+/wp-content/uploads/wpstorecart/jsspwned.php 1 -
+/typo3/index.php 3 http://saiparivarfoundation.org/typo3/index.php
+//js/uploadify/uploadify.css 1 -
+/ads.txt 2 -
+//templates/system/css/system.css 6 -
+/wp/ 23 -
+/wp/wp-includes/wlwmanifest.xml 5 -
+/.git/HEAD 4 -
+/wp-content/plugins/woocommerce-custom-t-shirt-designer/includes/templates/template-deep-gray/designit/cs/upload.php 1 -
+/wp-content/uploads/$year/$month/jsspwned.php 2 -
+/language/en-GB/en-GB.xml 1 -
+/wp-content/plugins/simple-ads-manager/sam-ajax-admin.php 1 -
+/wp-content/themes/Avada/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+/wp-content/themes/konzept/includes/uploadify/uploads/jsspwned.php 1 -
+/wordpress/ 23 -
+/msntv/zqowq/msntv/kuezk 1 -
+/wp-content/themes/library/visual-editor/lib/upload-header.php 1 -
+/components/com_sexycontactform/fileupload/index.php 1 -
+/site/ 1 -
+/wp-content/plugins/work-the-flow-file-upload/public/assets/jQuery-File-Upload-9.5.0/server/php/files/jsspwned.php 1 -
+/wp-content/plugins/dzs-videowhisper/upload.php 1 -
+/Jwlsjd_baaqifg.php 1 saiparivarfoundation.org
+/wordpress/wp-includes/wlwmanifest.xml 5 -
+/wp-content/plugins/webapp-builder/jsspwned.php 1 -
+/wp-admin/install.php 1 -
+/wp-content/themes/striking_r/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+/templates/system/css/system.css 3 -
+/joomla/administrator/index.php 1 -
+/wp-content/vuln.php 1 -
+/index.php 2 -
+/wp-content/plugins/contus-video-galleryversion-10/jsspwned.php 1 -
+/wp/wp-admin/setup-config.php 1 -
+/imp/test.php 3 -
+/wp-includes/wlwmanifest.xml 5 -
+/cms/wp-admin/ 2 -
+/wp-admin/admin-post.php 2 -
+/fckeditor/editor/filemanager/connectors/php/upload.php 2 -
+/wp-content/themes/dance-studio/core/libs/imperavi/tests/file_upload.php 1 -
+/wp-content/themes/designplus/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+/wp-content/uploads/uigen_YEAR/file.php 1 -
+/images/menu_bg1.png 218 http://www.saiparivarfoundation.org/
+/wp-content/themes/andre/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+/wp-content/themes/medicate/framework/plugins/revslider/temp/update_extract/revslider/jsspwned.php 1 -
+/images/back_all1.jpg 220 http://www.saiparivarfoundation.org/
+/wp-content/uploads/uigen_2015/jsspwned.php 1 -
+/wp-content/uploads/wpmp-previews/jsspwned.php 1 -
+/wp-content/themes/RightNow/includes/uploadify/upload_settings_image.php 1 -
+//wordpress/wp-admin/install.php 1 -
+/horde3/imp/test.php 3 -
+//old/wp-admin/install.php 1 -
+/oihfoe09fposf.php 2 saiparivarfoundation.org
+//blog/wp-admin/install.php 1 -
+/images/blank.html 1 http://saiparivarfoundation.org/css/camera.css
+/bitrix/admin/index.php 2 -
+/administrator/index.php 2 -
+/wp-content/plugins/webapp-builder/server/images.php 1 -
+/robots.txt 253 -
+/images/jdownloads/screenshots/hacked.gif 1 -
+/wp-admin/admin.php 3 -
+/SnkUk/ 2 -
+/wp-content/plugins/downloads-manager/upload/jsspwned.php 1 -
+//bk/wp-admin/install.php 1 -
+//sites/069.php 1 -
+/wp-content/plugins/radykal-fancy-gallery/admin/image-upload.php 1 -
+//fckeditor/editor/filemanager/connectors/php/upload.php 6 -
+//language/en-GB/en-GB.xml 1 -
+//backup/wp-admin/install.php 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 359
+52.165.150.117 35 35 354340 20190224121723
+52.165.166.139 26 26 263224 20190228162700
+34.76.1.5 18 40 629226 20190222182840
+192.185.5.167 15 15 1052 20190210081918
+144.217.99.65 14 348 26155974 20190225201107
+52.53.201.78 12 12 121488 20190227014605
+73.42.160.25 12 218 189473148 20190218141549
+167.114.117.176 10 10 110259 20190208023400
+60.191.38.77 10 10 101240 20190227210450
+100.35.75.170 10 10 105376 20190221005250
+37.17.172.132 9 9 100135 20190212030948
+192.3.160.28 9 9 89276 20190222160557
+185.207.177.233 9 9 89276 20190209211533
+198.46.222.73 9 9 89276 20190209170407
+193.36.239.34 9 9 89276 20190224015006
+52.165.148.51 9 9 91116 20190212123721
+184.154.139.48 8 19 123573 20190225155050
+65.153.250.122 8 86 25864162 20190218173335
+158.69.225.35 8 8 96561 20190226010256
+38.100.21.78 8 10 110662 20190227143249
+64.202.160.250 8 8 90011 20190213082627
+198.244.104.115 8 68 30853654 20190206174513
+122.162.174.148 8 56 22755116 20190205003505
+73.225.173.77 8 62 27882611 20190202013222
+68.2.50.114 8 66 35126232 20190211194441
+34.73.139.25 3 3 30372 20190221034957
+142.93.69.176 7 18 298969 20190226102207
+71.231.121.141 1 14 229314 20190209000253
+38.94.188.89 1 1 9156 20190214083854
+36.110.199.13 0 4 2472238 
+54.191.128.194 1 1 10124 20190218043234
+35.162.127.103 1 1 10124 20190215034558
+5.189.200.230 1 1 10124 20190219223958
+199.249.223.61 1 1 10124 20190214003211
+209.97.156.16 1 12 225570 20190214055544
+73.157.110.199 2 35 16996031 20190203220059
+73.157.101.98 1 34 17191927 20190226101215
+180.97.35.80 0 4 28973 
+66.70.247.194 2 2 20248 20190220043401
+50.35.125.170 1 3 30775 20190201215804
+54.202.15.48 1 1 10124 20190201044326
+54.187.83.132 1 1 10124 20190227003927
+14.215.176.20 0 4 165106 
+52.42.218.5 1 1 10124 20190217022244
+69.171.251.19 0 3 10684 
+180.163.220.5 0 7 128818 
+167.99.212.214 4 4 35505 20190228121857
+36.110.199.47 1 3 117596 20190217012049
+50.206.82.142 1 32 12489452 20190204190844
+142.93.71.22 1 12 225570 20190226032133
+35.185.98.199 2 2 10124 20190220110913
+64.246.165.180 1 1 10124 20190227160619
+3.92.207.77 1 1 10124 20190207204431
+45.63.100.141 1 1 10124 20190227133427
+46.246.40.214 1 1 10124 20190206131035
+167.220.100.86 1 28 5206017 20190207211026
+217.61.98.65 1 1 10124 20190214162225
+54.91.209.225 1 1 10124 20190211151034
+31.13.115.1 0 5 162897 
+107.77.97.26 1 31 12281560 20190221211939
+207.180.246.230 2 2 20248 20190219203151
+38.94.180.123 1 1 6209 20190214083854
+73.0.181.68 1 1 10124 20190219045018
+49.35.105.75 2 30 524404 20190206152720
+114.115.190.4 1 1 9156 20190204223150
+51.75.73.65 1 1 10124 20190220090112
+54.201.124.87 1 1 10124 20190207011049
+52.25.134.185 1 1 10124 20190221035216
+31.13.115.7 1 7 52375 20190205053516
+66.102.7.239 1 1 10124 20190226183333
+73.11.216.4 1 28 5206017 20190205014112
+73.109.93.102 0 4 94999 
+34.220.12.254 1 1 10124 20190213032143
+31.13.115.11 0 6 4777852 
+45.55.252.28 7 23 327452 20190219040205
+50.206.22.50 1 31 12281560 20190220075832
+199.249.223.75 1 1 10124 20190209051943
+142.93.184.136 7 23 327452 20190204111413
+38.145.79.148 1 1 10124 20190213193148
+45.40.127.217 1 1 10124 20190220225847
+31.13.115.9 0 3 97621 
+35.231.224.194 2 2 10124 20190208064507
+18.206.159.236 1 1 10124 20190201215908
+73.225.164.153 3 64 25019103 20190228140852
+34.222.251.182 1 28 5206017 20190219054005
+50.123.102.203 4 43 8033269 20190220020702
+185.104.120.3 3 3 30372 20190225080505
+75.126.32.186 1 1 10124 20190223195424
+54.36.189.105 1 1 10124 20190220093821
+138.197.64.38 7 18 298969 20190219030817
+24.17.59.52 1 32 12489452 20190228162715
+159.89.180.128 1 12 225570 20190202031813
+23.102.36.14 1 1 10124 20190208104909
+54.213.206.19 1 1 10124 20190228033500
+115.239.212.71 0 2 9449 
+184.58.216.84 1 32 12489452 20190214234038
+36.110.199.171 0 3 146579 
+24.16.158.227 1 30 9949487 20190222215238
+24.22.168.100 5 53 25136370 20190216192539
+78.46.149.17 1 1 10124 20190226090425
+24.19.220.248 2 34 8195702 20190204085712
+185.104.120.7 2 2 20248 20190220084542
+193.148.19.42 1 1 10124 20190219155238
+69.171.251.6 0 6 126231 
+159.65.175.177 7 23 327452 20190223235254
+67.170.32.39 1 32 12489452 20190217195050
+185.129.62.62 1 1 10124 20190227164338
+68.190.195.75 0 1 123587 
+14.215.176.21 0 8 27462 
+54.187.69.150 1 1 10124 20190225033804
+54.226.149.173 1 1 10124 20190211133606
+54.190.166.48 1 1 10124 20190228013628
+180.97.35.11 0 3 104484 
+107.242.121.5 0 22 4938558 
+3.92.235.87 1 1 10124 20190205171312
+174.254.196.103 3 37 5269264 20190214195940
+4.16.3.165 1 32 12489452 20190205171321
+172.58.43.154 1 30 7745982 20190221184221
+96.11.43.196 3 62 17826266 20190215162707
+54.187.211.57 1 1 10124 20190202033138
+109.241.14.228 1 1 0 20190204054946
+35.229.58.206 2 2 10124 20190224134503
+157.41.219.148 0 1 136790 
+72.52.111.47 7 7 70868 20190203112451
+209.141.53.185 3 3 30372 20190218130753
+54.149.242.62 1 1 10124 20190214043336
+61.0.238.17 1 1 0 20190201163942
+138.197.111.244 1 12 225570 20190210053237
+54.186.104.40 1 1 10124 20190218032401
+162.126.11.10 0 1 104298 
+174.21.111.218 2 31 9918616 20190226134759
+34.219.34.247 1 1 10124 20190226050121
+194.88.228.90 2 2 20248 20190222220239
+205.251.233.51 1 28 5206017 20190203231330
+34.222.147.14 1 1 10124 20190220043956
+173.252.95.9 1 14 275804 20190221030007
+3.84.163.241 1 1 10124 20190205171312
+63.146.72.130 5 67 33248739 20190215195933
+75.172.128.82 1 31 12281560 20190204122437
+162.222.169.79 3 37 10626926 20190224121346
+34.220.249.199 1 1 10124 20190208044026
+36.110.199.16 0 4 12886 
+206.29.176.53 1 3 30775 20190214193557
+31.13.115.4 0 3 16216 
+66.249.84.93 1 30 14772990 20190228214156
+173.193.191.205 1 1 10124 20190228051758
+115.239.212.72 0 6 87784 
+36.110.199.40 0 3 79827 
+24.17.206.77 1 36 21935397 20190214221712
+86.19.189.198 0 1 123587 
+109.70.100.25 1 1 10124 20190224230800
+116.203.66.155 2 2 20248 20190215200946
+159.89.178.195 7 23 327452 20190228193318
+97.119.120.93 1 28 5206017 20190225220336
+38.77.220.241 1 1 7210 20190214083854
+54.201.127.182 1 1 10124 20190201020148
+172.84.80.221 1 1 10124 20190201071935
+35.165.181.124 1 1 10124 20190220014003
+54.165.72.126 1 1 10124 20190208130903
+107.77.97.77 1 37 24267470 20190216154815
+52.25.214.239 1 1 10124 20190216034141
+69.171.251.23 0 4 17211 
+54.88.131.56 1 1 10124 20190207125834
+67.183.153.151 5 73 25280283 20190213204348
+145.239.209.12 1 1 10124 20190214091114
+67.183.155.128 0 2 4702475 
+14.215.176.149 1 6 62718 20190215072542
+173.252.95.23 0 2 180805 
+54.165.59.7 2 2 20248 20190215033838
+38.94.180.212 1 1 9015 20190214083854
+50.47.119.34 4 48 20574539 20190214045804
+149.28.253.78 1 1 10124 20190222144839
+34.219.61.15 1 1 10124 20190214030211
+35.156.224.187 6 6 60744 20190214110827
+69.171.251.15 0 3 93505 
+185.220.102.4 1 1 10124 20190220092807
+106.200.23.37 0 7 2489757 
+34.73.221.249 2 2 10124 20190216105703
+35.237.236.2 2 2 20248 20190208153214
+73.109.60.210 0 3 7074017 
+178.137.17.199 1 1 10124 20190215161227
+52.11.235.247 1 1 10124 20190226034502
+75.172.146.132 0 20 12263882 
+98.225.36.77 3 54 24502618 20190219205518
+198.255.44.98 1 1 10124 20190225070850
+144.217.60.239 1 1 10124 20190224024952
+184.154.139.24 2 6 38482 20190219155024
+54.184.219.100 1 1 10124 20190224034304
+106.223.241.71 0 1 104298 
+64.246.165.160 1 1 10124 20190206172153
+184.154.189.90 2 2 20248 20190215070820
+67.185.98.204 6 64 14541835 20190228184500
+115.239.212.65 0 3 10143 
+149.28.51.173 1 1 10124 20190216082202
+71.197.182.255 2 36 10539964 20190216030017
+69.171.251.11 0 4 215170 
+165.225.50.96 4 72 37024435 20190209151745
+180.163.220.66 1 21 5077199 20190206144032
+34.222.71.41 1 1 10124 20190208021520
+73.225.153.192 2 64 24978904 20190218213150
+142.4.219.91 4 106 20702890 20190225202400
+66.249.84.95 1 24 10141644 20190228195555
+180.97.35.10 1 3 28758 20190204085415
+51.15.117.50 3 3 30372 20190224233221
+195.3.144.185 1 1 10124 20190217005547
+50.123.103.185 2 36 17203923 20190214233933
+112.133.248.2 0 1 121676 
+172.58.43.13 1 31 12281560 20190222123722
+158.69.226.8 0 2 143468 
+159.203.121.1 7 18 298969 20190213074305
+70.39.235.208 2 2 20248 20190205104622
+66.133.109.36 3 3 261 20190210081918
+24.17.219.2 1 33 12492292 20190218181823
+69.171.251.25 1 8 4743216 20190209040846
+172.58.40.228 1 29 7608065 20190207185557
+66.102.7.252 1 1 10124 20190218140229
+129.56.30.173 3 3 30372 20190223070811
+106.223.65.31 0 2 208596 
+38.94.190.8 1 1 10124 20190214094223
+87.118.116.90 1 1 10124 20190217185445
+142.93.75.127 7 23 327452 20190209065225
+54.191.217.31 1 1 10124 20190209023858
+172.84.81.145 3 3 19513 20190216041300
+54.202.20.117 1 1 10124 20190205082323
+52.221.178.199 1 1 10124 20190228203829
+18.237.216.151 1 1 10124 20190219024435
+184.154.139.47 5 14 138243 20190227154848
+27.61.20.61 1 20 385713 20190214022337
+172.58.43.115 1 29 7608065 20190217124828
+216.158.235.185 1 1 10124 20190206230701
+52.173.241.248 1 1 10124 20190214040627
+172.58.43.11 1 32 12489452 20190217180959
+54.38.159.90 1 1 10124 20190220084549
+104.237.130.93 1 28 5206017 20190205205702
+193.169.254.80 2 2 20248 20190221065339
+69.58.178.58 3 3 28295 20190222011819
+52.8.68.197 1 1 10124 20190226072825
+23.252.52.194 0 3 7104523 
+184.154.139.46 6 18 188211 20190226154826
+109.70.100.19 2 2 20248 20190225060410
+52.26.52.36 1 1 10124 20190210014218
+217.82.83.53 3 3 30372 20190217134701
+182.75.169.34 5 47 17398935 20190225090436
+104.129.192.76 0 6 11985910 
+31.31.74.131 1 1 10124 20190224024809
+35.185.103.226 2 2 20248 20190202041257
+52.165.129.203 6 6 60744 20190206184808
+73.254.150.164 1 32 12489452 20190223153135
+35.231.170.242 2 2 10124 20190202202716
+172.84.81.64 1 1 10124 20190215030207
+180.97.35.5 0 3 72473 
+71.231.204.187 1 30 9949487 20190203191112
+52.66.198.168 4 4 40496 20190221083038
+172.58.43.30 0 10 21462361 
+54.69.110.105 1 1 10124 20190212021400
+172.56.42.59 1 32 12489452 20190204190632
+115.239.212.68 0 4 122176 
+172.58.44.179 1 28 5206017 20190228184116
+87.120.254.223 1 1 10124 20190209015902
+62.210.111.66 1 1 10124 20190227211331
+71.19.144.106 3 3 30372 20190224024747
+35.227.34.214 2 2 10124 20190212095955
+138.197.111.61 1 12 225570 20190206014401
+54.91.227.198 1 1 10124 20190211173857
+54.149.46.7 1 1 10124 20190207023131
+115.239.212.69 1 3 25734 20190226073427
+128.177.10.252 3 14 244709 20190220202906
+63.64.74.251 2 70 41072440 20190224140512
+5.254.40.3 1 1 0 20190213154901
+31.13.115.6 0 4 99056 
+191.101.107.60 1 1 10124 20190228041715
+173.252.95.21 0 4 7653 
+18.237.232.172 1 1 10124 20190203044015
+172.58.40.134 1 7 132978 20190203154136
+34.219.52.150 1 1 10124 20190209020653
+54.244.99.114 1 1 10124 20190221050200
+34.219.169.244 1 1 10124 20190206080429
+75.172.182.25 1 32 12489452 20190216171553
+166.70.207.2 1 1 10124 20190224024900
+157.230.111.173 4 4 40496 20190209015940
+107.77.97.87 1 32 12489452 20190228214803
+18.216.248.157 7 26 318226 20190222215046
+17.58.59.5 1 1 10124 20190227051726
+18.237.154.65 1 1 10124 20190222022727
+138.197.69.244 1 12 225570 20190222040414
+24.17.140.134 1 32 14612107 20190206234611
+158.69.124.228 2 2 17334 20190214144411
+24.16.99.26 5 44 20329021 20190225031449
+78.136.202.19 1 1 10124 20190213220359
+89.185.77.220 1 1 10124 20190206214106
+38.94.184.253 1 1 31685 20190214083854
+52.53.240.140 3 3 30372 20190201181304
+172.58.41.236 0 1 212797 
+54.39.188.215 3 3 30372 20190207152128
+71.231.176.154 2 39 17779564 20190218142342
+38.132.114.141 1 1 2121 20190219211450
+138.197.0.219 7 23 327452 20190214060901
+142.93.71.102 1 12 225570 20190218050702
+63.239.12.194 2 49 12879786 20190214145339
+36.110.199.49 0 3 146579 
+73.254.63.140 1 30 9949487 20190202155740
+139.162.72.149 1 1 10124 20190216130717
+54.189.159.91 1 1 10124 20190223015543
+54.202.231.67 1 1 10124 20190227020542
+54.218.238.248 1 1 10124 20190211020149
+106.51.16.94 4 43 29207241 20190215004827
+66.249.84.83 0 14 7423200 
+82.199.141.4 2 2 4242 20190220075051
+206.180.165.147 1 1 10124 20190211175119
+112.5.248.152 3 3 30372 20190211162427
+35.204.8.226 1 1 9156 20190227051323
+54.189.26.95 1 1 10124 20190205032408
+18.209.167.114 1 1 10124 20190205171129
+24.16.135.192 2 36 12869197 20190201152437
+66.249.84.85 1 9 4702164 20190210145312
+35.204.9.110 1 1 10124 20190226195923
+180.97.35.61 0 3 11271 
+34.216.112.65 1 1 10124 20190210044630
+69.87.100.1 1 17 390334 20190214045820
+66.249.84.87 1 12 5030435 20190210145251
+113.35.251.98 1 1 10124 20190221005100
+40.76.209.15 1 1 10124 20190208030441
+130.20.177.219 1 31 12281560 20190220194554
+24.16.69.236 1 32 12489452 20190214234224
+36.110.199.144 0 4 2472238 
+191.101.143.220 1 1 10124 20190207005521
+23.101.169.3 7 142 56078643 20190213144300
+185.193.125.168 1 1 10124 20190209015923
+103.67.188.205 0 1 121676 
+185.81.157.172 5 5 50620 20190221003744
+179.61.179.106 1 1 10124 20190228011135
+3.94.204.144 1 1 10124 20190211165909
+66.87.139.166 1 30 9949487 20190220200955
+178.171.88.41 1 1 10124 20190220232119
+172.58.41.119 0 6 11985910 
+54.212.202.84 1 1 10124 20190219035322
+172.58.43.81 1 32 12489452 20190221215829
+134.73.199.154 1 1 10124 20190225152345
+184.154.76.23 7 20 172223 20190228155604
+54.245.166.115 1 1 10124 20190222011928
+34.212.167.150 1 1 10124 20190227051921
+178.137.87.18 1 1 10124 20190215170545
+34.213.120.242 1 1 10124 20190217032254
+66.249.84.64 0 10 64270 
+109.70.100.24 1 1 10124 20190220094011
+173.252.95.12 0 3 9180 
+35.167.24.160 1 1 10124 20190203033006
+185.129.62.63 1 1 10124 20190220104205
+34.215.173.223 1 1 10124 20190204065412
+36.110.199.170 0 3 8279 
+36.110.199.156 0 3 11843 
+38.77.222.33 1 1 10124 20190214083853
+36.110.199.177 0 2 24855 
+34.222.115.110 1 1 10124 20190202044718
+107.77.97.109 1 32 12489452 20190228195623
+180.97.35.86 0 2 9327 
+73.7.161.163 4 37 5650597 20190226001207
+173.252.95.24 0 5 4732575 
+165.227.181.150 7 18 298969 20190207013917
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 28
+20190201 17 76 25396272 14
+20190202 23 119 38249268 14
+20190203 22 172 64630948 15
+20190204 27 195 53506903 13
+20190205 23 185 50981931 15
+20190206 26 184 51559176 17
+20190207 21 89 13243166 14
+20190208 26 58 12535432 15
+20190209 44 170 43104425 16
+20190210 30 75 17404529 14
+20190211 21 82 35467085 13
+20190212 9 12 295664 8
+20190213 41 227 69617689 20
+20190214 50 379 106956130 37
+20190215 26 204 80674956 16
+20190216 24 226 116145428 15
+20190217 19 130 33145756 17
+20190218 30 410 238905332 16
+20190219 28 105 18268925 15
+20190220 41 182 43156414 31
+20190221 29 150 38232577 16
+20190222 49 162 23682868 15
+20190223 17 71 24899742 9
+20190224 30 196 88431215 16
+20190225 36 581 89864350 12
+20190226 31 167 33718001 14
+20190227 21 25 363627 13
+20190228 33 322 95295305 18
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+30s-2mn 17
+15mn-30mn 3
+2mn-5mn 13
+5mn-15mn 5
+1h+ 2
+0s-30s 404
+30mn-1h 4
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 27
+/ 522 5203736 427 383
+/mission.html 55 503580 5 15
+/contacts.html 47 423705 5 16
+/pictures.html 44 1394140 1 10
+/about.html 42 302820 3 6
+/guruji.html 36 223524 1 4
+/Resources.html 21 136248 0 3
+/mail.php 5 1870 0 5
+/images/ 4 6363 4 4
+/.well-known/acme-challenge/4XMX5K5VJQ13ED8OFS2NESFZOQ6154MM 1 64 0 0
+/.well-known/acme-challenge/Q9_G-HN4P1WUTVELCROY_P78F6OSF63M 1 64 0 0
+/.well-known/acme-challenge/g2-4JVTfdREe9Bj4GdGhIhU1UNRwXmIVEbuWWoOZLrI 1 87 0 1
+/.well-known/acme-challenge/kEjG_smDndxYZckaE8PYDDYiXcrO5mr7Rw916ynAUT0 1 87 0 0
+/.well-known/acme-challenge/ZPZ0AJSA-JBO85MW60KS9WS4K-X4C2OM 1 64 0 0
+/.well-known/acme-challenge/KAASBEFQ1KWZ_X8NIAU52UR1VL29BTY2 1 64 1 0
+/.well-known/acme-challenge/N75K1MLN1WMOF2U7XJ-2HJKZ6EN63V00 1 64 0 0
+/.well-known/acme-challenge/3V_CP5SIZV8MXCFG22DUX4396DUW1WX3 1 64 0 0
+/.well-known/acme-challenge/dtjb2F-3Ipkfo4hm8p1m4YRo6NNFbyulLRRNYi5RWDU 1 87 0 1
+/.well-known/acme-challenge/QIUF56YSKJQEQ537WZ2CPGMZ8_AFOTVX 1 64 0 0
+/.well-known/acme-challenge/5tv57-CaozkoLc8nolyWrZAniTyFWrLNYhcWu7XRfFA 1 87 1 0
+/.well-known/acme-challenge/NMLS3IG63A6WC1OJO_IS_PAO91YUBTG0 1 64 0 0
+/.well-known/acme-challenge/O78L08Tovmc01rsEdc86Pk4-rBjAx3VppkkaKGqEj18 1 87 0 0
+/.well-known/acme-challenge/a3pcPf8cyPOtS51PYkzSqEAq60FlH6k4VKYy26pTmk4 1 87 0 0
+/.well-known/acme-challenge/AK5YT7MWA-GVKH4_K8G0-U0LIL410XVB 1 64 0 0
+/.well-known/acme-challenge/YOVY7NPXNJSODA7EK5V9PKC2X695E7JU 1 64 0 0
+/.well-known/acme-challenge/ZMACN9MO28ZRG-R_UPBI3VU5HPLQO0ER 1 64 0 0
+/.well-known/acme-challenge/-oX8xpfevBS9uv72gYnlPnqwNg2YgNJVBTWbJ2WC5fM 1 87 0 0
+END_SIDER

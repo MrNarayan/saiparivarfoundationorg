@@ -1,0 +1,719 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id 2GpFNqCFLF1LOA4AUq51WA
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	for <info@saiparivarfoundation.org>; Mon, 15 Jul 2019 08:54:40 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Mon, 15 Jul 2019 08:54:41 -0500
+Received: from mail-pg1-f179.google.com ([209.85.215.179]:36088)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1hn1RA-0040IF-Ed
+	for info@saiparivarfoundation.org; Mon, 15 Jul 2019 08:54:40 -0500
+Received: by mail-pg1-f179.google.com with SMTP id l21so7755536pgm.3
+        for <info@saiparivarfoundation.org>; Mon, 15 Jul 2019 06:54:35 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:dkim-signature:from
+         :reply-to:to:date:message-id:subject:mime-version;
+        bh=06+7Gm/HJ61UV4MRcEi9E7sVoRK0OQ2ti9o8GXZ+AYQ=;
+        b=rlY4bca7badl6bweZ1Jwj8VxrdznpXuXHxbr9AqedvD31DyoiG90siyqpTQFN56f+6
+         VOjezV5Zv8PZltNIIyySLgu33+eTdWZxKmFDAOMDnbqV1JlC9L4qTJkQJEnwed3Cpb0P
+         8rzo9aq9mQc35s825LHAR9mSFmOXguwaqfkiNkYol4En+Nt1Nsfx26PBUnQPCqrXRFTy
+         gdRryQ5NCGfT/rVJnb6I/yXPYzQZb2XJU9UNHMTXHnEqZ/NfGyGnYKhWv7GgJtHiOuVD
+         u9sWwzvWjE613qoI/nsPm5iXUteaXYzMhiqrxGrtj6PZV77/9+B+bKsP/OGoqfqKNMLa
+         5D3g==
+X-Gm-Message-State: APjAAAX4rcSvSYfWmjny5RrNDTiU3xDk1kkdIehhH0M1mR3ai7CRoYba
+	W0ETebjQkAHlW0xPT9V+QFG4QG7oLaGzsbBtUDOCfyJtJPHoc9U=
+X-Received: by 2002:a17:90a:8b98:: with SMTP id z24mr29810201pjn.77.1563198868723;
+        Mon, 15 Jul 2019 06:54:28 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a17:90a:26c9:0:0:0:0 with SMTP id m67csp4226668pje;
+        Mon, 15 Jul 2019 06:54:26 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqxIACrU6HdY+UEUhauhLnP12vOJD59WKA2rov+AGI+aWBum9WDUCELwD0cVu8v56A7H2jo8
+X-Received: by 2002:a81:57d0:: with SMTP id l199mr16133914ywb.179.1563198866574;
+        Mon, 15 Jul 2019 06:54:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1563198866; cv=none;
+        d=google.com; s=arc-20160816;
+        b=tN/MZO33YclqACD9qxO5Ev2ehUZPNkRGVU35C9vDqjetjsQl/rOs428P/S5OuNu8+4
+         edHTtRH4fWJ24wFsWroh3vbsSemVlpwQUM94VcXnSanvpjUMDCimX5Vi2+tXB3KHMDuB
+         XlsKyAn8kpmLclSxmzn6IB5UbMf6V/0EWoMcnIl0fr3+4nARRoxU4Yh7lY+IlRIGTND7
+         xtA+mYfxAOlAyWhMxc66clkiWgNImvlJq/R48HNcDF9/ojFdGOtMqKeZvYLb132ZmkE1
+         Is2qO5T5uCSCX5P4yNZnEorxShGq5OwwPhP5mXS96UOgTH4IIlvby3Nzn1MDStW9g0K7
+         B72Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:message-id:date:to:reply-to:from
+         :dkim-signature:dkim-signature;
+        bh=06+7Gm/HJ61UV4MRcEi9E7sVoRK0OQ2ti9o8GXZ+AYQ=;
+        b=xnXq+lx0vxQQ2bCtIEt6D9k4NPZ+ivV9wpEvDwnAuutZ0pPlkovZa5Op3R26WHfUwz
+         TjQgLPdi+szRPWJZXoJSnQAz3pM9KHMaIQeb8tF2CyyEQJm2bMc//GLPDOxMnRtPgjP8
+         SEMgmBZn2oRQamlVkHkwPYelcoydIVG3WIM54P11ErpW+UwI8cBGatBqCuo/T8dj97Lg
+         Qvn66XnDxFciuDi9acHb3m54cRq6EYCHf2u09chdbfT5tn/HPAP+PCEXee+VrT/xx3Rt
+         8whcFn5/R9h+mqCSbZYPpOabaKwHILV/TQle3tsB2xHP65vhCGqHRc9IVB6zspPozp8w
+         M51Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mailchimp.com header.s=k1 header.b=mWXywL8u;
+       dkim=pass header.i=@gmail.mctxapp.net header.s=k1 header.b=EjiXRye5;
+       spf=pass (google.com: domain of bounce-mcsys.us15_69289545.213271d423-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com designates 198.2.140.10 as permitted sender) smtp.mailfrom="bounce-mcsys.us15_69289545.213271d423-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mailchimp.com
+Received: from systemalerts8.mailchimp.com (systemalerts8.mailchimp.com. [198.2.140.10])
+        by mx.google.com with ESMTPS id h9si6725407ybp.68.2019.07.15.06.54.25
+        for <saiparivarfoundation@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 15 Jul 2019 06:54:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-mcsys.us15_69289545.213271d423-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com designates 198.2.140.10 as permitted sender) client-ip=198.2.140.10;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mailchimp.com header.s=k1 header.b=mWXywL8u;
+       dkim=pass header.i=@gmail.mctxapp.net header.s=k1 header.b=EjiXRye5;
+       spf=pass (google.com: domain of bounce-mcsys.us15_69289545.213271d423-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com designates 198.2.140.10 as permitted sender) smtp.mailfrom="bounce-mcsys.us15_69289545.213271d423-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mailchimp.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=mailchimp.com;
+ h=From:Reply-To:To:Date:Message-ID:Subject:MIME-Version:Content-Type;
+ i=confirm@mailchimp.com;
+ bh=06+7Gm/HJ61UV4MRcEi9E7sVoRK0OQ2ti9o8GXZ+AYQ=;
+ b=mWXywL8u2AIZw2Y7KS58vkX6nO5eUE0r3F7B5uU6IqFHjkA235hk3EmUWuEyN9/FL/AorBrVunQd
+   ghNPWO0PAKk81nTl26D9bhhmmz/FrIn+33vkVB/4ejGXdP+0a808ZyAIX4QfV2TY3yI1w6yQJ8xB
+   fBubRYJ4VUKJ5uuqroU=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=gmail.mctxapp.net;
+ h=From:Reply-To:To:Date:Message-ID:Subject:MIME-Version:Content-Type;
+ bh=06+7Gm/HJ61UV4MRcEi9E7sVoRK0OQ2ti9o8GXZ+AYQ=;
+ b=EjiXRye5TpjxjpKGaCK9R+I9JtSgIin7EdwaATSzN5wDeHLC9zLNnrYVOoPKQCKN4Ll0gxto1XN5
+   dQsmygc81adDSodH76d+9m5z8oBLAsZp4CVYyKx6E9nE+Vk9XErtKW23nFtTvSqfoFTzEGu7aNV+
+   9ALLFjXjtkTouoWyxyk=
+Received: from 127.0.0.1 (127.0.0.1) by systemalerts8.mailchimp.com id h5i2p42ddl4a for <saiparivarfoundation@gmail.com>; Mon, 15 Jul 2019 13:54:25 +0000 (envelope-from <bounce-mcsys.us15_69289545.213271d423-saiparivarfoundation=gmail.com@systemalerts8.mailchimp.com>)
+From: =?utf-8?Q?Mailchimp=20Support?= <confirm@mailchimp.com> 
+Reply-To: =?utf-8?Q?Mailchimp=20Support?= <confirm@mailchimp.com> 
+To:  <saiparivarfoundation@gmail.com> 
+Date: Mon, 15 Jul 2019 13:54:25 +0000 
+Message-ID: <88028fd5911e23c28ce0a8323233900f1c0.20190715135425@systemalerts8.mailchimp.com> 
+X-Mailer: MailChimp Mailer - **CID213271d423233900f1c0** 
+X-Campaign: mailchimp88028fd5911e23c28ce0a8323.213271d423 
+X-campaignid: mailchimp88028fd5911e23c28ce0a8323.213271d423 
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=88028fd5911e23c28ce0a8323&id=213271d423&e=233900f1c0 
+X-MC-User: 88028fd5911e23c28ce0a8323 
+X-Feedback-ID: 69289545:69289545.213271d423:us15:mc 
+X-Auto-Response-Suppress: OOF, AutoReply 
+X-Accounttype: ff 
+Subject: Weekly account summary from Mailchimp 
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_135913991"
+
+
+--_----------=_MCPart_135913991
+Content-Type: text/plain; charset="us-ascii"
+
+Weekly Account Summary
+July 08 - July 14, 2019
+
+Here are your weekly stats from Shirdi Sai Dham, as well as the percent change from your performance last week.
+
+[0.00%]
+0
+Campaign Clicks
+
+[+2.56%]
++23
+Audience Change
+
+
+
+--------------------
+View More Stats: https://us15.admin.mailchimp.com/?utm_source=mailchimp-app&utm_medium=email&utm_content=account-summary&utm_campaign=account
+--------------------
+
+
+
+
+
+Audience
+
+See who's new, who's moved on, and how your account is growing.
+
+Jul. 8-Jul. 14
+
++23
+Audience Change
+
+0
+Unsubscribes and Bounces
+
+920
+Total Audience
+
+------------------------------
+Tip: Share your sign up form on your social media platforms to turn followers into subscribers: https://eepurl.com/dygds6
+------------------------------
+
+
+
+Campaign Engagement
+
+
+No new activity to show.
+
+
+
+Boost Your Stats
+
+Visit our Knowledge Base to learn how to grow your audience (https://eepurl.com/dygdXf) and maximize subscriber engagement (https://eepurl.com/dygehP). Then check out your Dashboard to get a more complete view of your account health.
+
+--------------------
+Visit Dashboard: https://us15.admin.mailchimp.com/?utm_source=mailchimp-app&utm_medium=email&utm_content=account-summary&utm_campaign=account
+--------------------
+
+
+------------------------------
+https://www.mailchimp.com
+675 Ponce De Leon Ave NE Suite 5000 Atlanta, GA 30308 USA
+
+
+Contact Us [https://eepurl.com/cm-eOT]
+Terms of Use [https://eepurl.com/cm-faD]
+Privacy Policy [https://eepurl.com/cm-fAT]
+Turn off Notification [https://eepurl.com/cm-fPr]
+
+--_----------=_MCPart_135913991
+Content-Type: text/html; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>=0A<html>=0A    <head>=0A        <!-- trx_0004 -->=0A   =
+     <meta charset=3D"UTF-8">=0A        <meta name=3D"viewport" content=
+=3D"width=3Ddevice-width=2C initial-scale=3D1"/>=0A        <meta http-eq=
+uiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=0A        <title>Weekly a=
+ccount summary from Mailchimp</title>=0A=0A        <style type=3D"text/c=
+ss">=0A            /*////// RESET STYLES //////*/=0A            a{word-w=
+rap:break-word;}=0A            table{border-collapse:collapse;}=0A     =
+       h1=2C h2=2C h3=2C h4=2C h5=2C h6{display:block; margin:0; padding=
+:0;}=0A            img=2C a img{border:0; height:auto; outline:none; tex=
+t-decoration:none;}=0A            body=2C #bodyTable=2C #bodyCell{height=
+:100%; margin:0; padding:0; width:100%;}=0A=0A            /*////// CLIEN=
+T-SPECIFIC STYLES //////*/=0A            #outlook a{padding:0;} /* Force=
+ Outlook 2007 and up to provide a "view in browser" message. */=0A     =
+       @-ms-viewport{width:device-width;} /* Force IE "snap mode" to ren=
+der widths normally. */=0A            img{-ms-interpolation-mode:bicubic=
+;} /* Force IE to smoothly render resized images. */=0A            table=
+{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between=
+ tables in Outlook Desktop. */=0A            .ReadMsgBody{width:100%;} .=
+ExternalClass{width:100%;} /* Force Outlook.com to display emails at ful=
+l width. */=0A            p=2C a=2C li=2C td=2C blockquote{mso-line-heig=
+ht-rule:exactly;} /* Force Outlook Desktop to render line heights as the=
+y're originally set. */=0A            a[href^=3D"tel"]=2C a[href^=3D"sms=
+"]{color:inherit; cursor:default; text-decoration:none;} /* Force mobile=
+ devices to inherit declared link styles. */=0A            p=2C a=2C li=
+=2C td=2C body=2C table=2C blockquote{-ms-text-size-adjust:100%; -webkit=
+-text-size-adjust:100%;} /* Prevent Windows- and Webkit-based mobile pla=
+tforms from changing declared text sizes. */=0A            .ExternalClas=
+s=2C .ExternalClass p=2C .ExternalClass td=2C .ExternalClass p=2C .Exter=
+nalClass span=2C .ExternalClass font{line-height:100%;} /* Force Outlook=
+.com to display line heights normally. */=0A            a[x-apple-data-d=
+etectors]{color:inherit !important; text-decoration:none !important; fon=
+t-size:inherit !important; font-family:inherit !important; font-weight:i=
+nherit !important; line-height:inherit !important;} /* Force iOS devices=
+ to heed link styles set in CSS. */=0A=0A            /*////// EMAIL STYL=
+ES //////*/=0A            #bodyCell{padding-right:10px !important; paddi=
+ng-bottom:20px !important; padding-left:10px !important;}=0A           =
+ .emailContainer{max-width:600px;}=0A            .footerContent a{color:=
+#007C89; font-weight:500; text-decoration:none;}=0A            .button a=
+{text-decoration:none;} /* Necessary for Outlook on Windows Phone */=0A=
+=0A            @media screen and (min-width:768px){=0A                .e=
+mailContainer{width:600px !important;}=0A            }=0A=0A           =
+ @media only screen and (max-width:480px){=0A                body{width:=
+100% !important; min-width:100% !important;}=0A                h1{font-s=
+ize:26px !important; line-height:28px !important;}=0A                .mc=
+Image{height:auto !important; max-width:200px; width:100% !important;}=
+=0A                .footerContent p{border-bottom:1px solid #DEDDDC; fon=
+t-size:13px !important; padding-bottom:20px !important;}=0A            =
+    .utilityLink{border-bottom:1px solid #DEDDDC; display:block; font-si=
+ze:13px !important; padding-top:15px; padding-bottom:15px;}=0A         =
+       .mobileHide{display:none; visibility:hidden;}=0A            }=0A=
+        </style>=0A    </head>=0A    <body bgcolor=3D"#EFEEEA">=0A     =
+   <center>=0A            <span style=3D"color:#EFEEEA; display:none; fo=
+nt-size:0px; height:0px; visibility:hidden; width:0px;">We ran the numbe=
+rs. Here are last week's stats...</span>=0A            <table align=3D"c=
+enter" bgcolor=3D"#EFEEEA" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" height=3D"100%" width=3D"100%" id=3D"bodyTable">=0A                <=
+tr>=0A                    <td align=3D"center" style=3D"padding-right:10=
+px; padding-top:0; padding-left:10px;" valign=3D"top" id=3D"bodyCell">=
+=0A                        <!--[if gte mso 9]>=0A                      =
+  <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" style=3D"width:600px;" width=3D"600">=0A                        <tr>=
+=0A                        <td align=3D"center" valign=3D"top">=0A     =
+                   <![endif]-->=0A                        <table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"ma=
+x-width:600px;" width=3D"100%" class=3D"emailContainer">=0A            =
+                <tr>=0A                                <td align=3D"cent=
+er" valign=3D"top">=0A                                    <!-- BEGIN BOD=
+Y // -->=0A                                    <table align=3D"center" b=
+gcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"background-color:#FFFFFF; border-radius:0;" width=3D"100%">=0A    =
+                                    <tr>=0A                            =
+                <td align=3D"center" style=3D"padding-right:20px; paddin=
+g-bottom:30px; padding-left:20px;" valign=3D"top">=0A                  =
+                              <table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%">=0A                                       =
+             <tr>=0A                                                   =
+     <td align=3D"center" valign=3D"top" style=3D"padding-top:40px; padd=
+ing-bottom:40px;">=0A                                                  =
+          <a href=3D"https://www.mailchimp.com/?utm_source=3Dmailchimp-a=
+pp&utm_medium=3Demail&utm_content=3Daccount-summary&utm_campaign=3Daccou=
+nt" target=3D"_blank" style=3D"text-decoration:none;"><img alt=3D"Mailch=
+imp" src=3D"https://cdn-images.mailchimp.com/template_images/cxp_2018/mc=
+-freddie-dark@2x.png" width=3D"60" style=3D"border:0; color:#FFFFFF; fon=
+t-family:'Helvetica Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif=
+; font-size:12px; font-weight:400; height:auto; letter-spacing:-1px; pad=
+ding:0; margin:0; outline:none; text-align:center; text-decoration:none;=
+" /></a>=0A                                                        </td>=
+=0A                                                    </tr>=0A        =
+                                            <tr>=0A                    =
+                                    <td style=3D"padding-bottom:20px;" v=
+align=3D"top">=0A                                                      =
+      <h1 style=3D"color:#241C15; font-family:Georgia=2C Times=2C 'Times=
+ New Roman'=2C serif; font-size:28px; font-style:normal; font-weight:400=
+; line-height:36px; letter-spacing:normal; margin:0; padding:0; text-ali=
+gn:center;">Weekly Account Summary</h1>=0A                             =
+                           </td>=0A                                    =
+                </tr>=0A                                               =
+     <tr>=0A                                                        <td=
+ style=3D"padding-bottom:60px;" valign=3D"top">=0A                     =
+                                       <p style=3D"color:#241C15; font-f=
+amily:'Helvetica Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; f=
+ont-size:16px; font-weight:400; line-height:24px; padding:0; margin:0; t=
+ext-align:center;">July 08 - July 14=2C 2019</p>=0A                    =
+                                    </td>=0A                           =
+                         </tr>=0A                                      =
+              <tr>=0A                                                  =
+      <td style=3D"padding-bottom:40px;" valign=3D"top">=0A            =
+                                                <p style=3D"color:#241C1=
+5; font-family:'Helvetica Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans=
+-serif; font-size:16px; font-weight:400; line-height:24px; padding:0; ma=
+rgin:0; text-align:center;">Here are your weekly stats from <strong>Shir=
+di Sai Dham</strong>=2C as well as the percent change from your performa=
+nce last week.</p>=0A                                                  =
+      </td>=0A                                                    </tr>=
+=0A                                                    <tr>=0A         =
+                                               <td align=3D"center" vali=
+gn=3D"top" style=3D"font-size:0;">=0A                                  =
+                          <!--[if mso]>=0A                             =
+                               <table align=3D"center" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">=0A                                    =
+                        <tr>=0A                                        =
+                    <td align=3D"left" valign=3D"top" width=3D"220">=0A=
+                                                            <![endif]-->=
+=0A                                                            <div styl=
+e=3D"display:inline-block; max-width:220px; vertical-align:top; width:10=
+0%;">=0A                                                               =
+ <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" style=3D"max-width:220px;">=0A                         =
+                                           <tr>=0A                     =
+                                                   <td align=3D"center"=
+ valign=3D"top" style=3D"padding-bottom:40px;">=0A                     =
+                                                       <table align=3D"c=
+enter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=
+=0A                                                                    =
+            <tr>=0A                                                    =
+                                <td align=3D"center" valign=3D"top"  sty=
+le=3D"padding-bottom:15px;">=0A                                        =
+                                                =0A                    =
+                                                                    <!--=
+[if gte mso 9]>=0A                                                     =
+                                   <table align=3D"center" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" style=3D"width:65px" width=3D"65">=
+=0A                                                                    =
+                    <tr>=0A                                            =
+                                            <td align=3D"center" bgcolor=
+=3D"#FBCFBD" style=3D"padding-top:5px; padding-right:10px; padding-botto=
+m:5px; padding-left:10px;" valign=3D"top">=0A                          =
+                                                              <![endif]-=
+->=0A                                                                  =
+                      <p style=3D"background-color:#FBCFBD; border-colla=
+pse:separate; border-top:5px solid #FBCFBD; border-right:10px solid #FBC=
+FBD; border-bottom:5px solid #FBCFBD; border-left:10px solid #FBCFBD; bo=
+rder-radius:15px; color:#241C15; display:inline-block; font-family:'Helv=
+etica Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:14=
+px; font-weight:400; line-height:normal; margin:0; padding:0; text-align=
+:center;">0.00%</p>=0A                                                 =
+                                       <!--[if gte mso 9]>=0A          =
+                                                                       =
+       </td>=0A                                                        =
+                                </tr>=0A                               =
+                                                         </table>=0A   =
+                                                                       =
+              <![endif]-->=0A                                          =
+                                              =0A                      =
+                                                              </td>=0A =
+                                                                       =
+        </tr>=0A                                                       =
+                         <tr>=0A                                       =
+                                             <td valign=3D"top" style=3D=
+"padding-bottom:8px;">=0A                                              =
+                                          <p style=3D"color:#007C89; fon=
+t-family:'Helvetica Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif=
+; font-size:34px; font-weight:400; line-height:34px; padding:0; margin:0=
+; text-align:center;">0</p>=0A                                         =
+                                           </td>=0A                    =
+                                                            </tr>=0A   =
+                                                                       =
+      <tr>=0A                                                          =
+                          <td valign=3D"top">=0A                       =
+                                                                 <p styl=
+e=3D"color:#6A655F; font-family:'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C Verdana=2C sans-serif; font-size:16px; font-weight:400; line-height:=
+22px; padding:0; margin:0; text-align:center;">Campaign Clicks</p>=0A  =
+                                                                       =
+           </td>=0A                                                    =
+                            </tr>=0A                                   =
+                                         </table>=0A                   =
+                                                     </td>=0A          =
+                                                          </tr>=0A     =
+                                                           </table>=0A =
+                                                           </div>=0A   =
+                                                         <!--[if mso]>=
+=0A                                                            </td>=0A=
+                                                            <td align=3D=
+"left" valign=3D"top" width=3D"220">=0A                                =
+                            <![endif]-->=0A                            =
+                                <div style=3D"display:inline-block; max-=
+width:220px; vertical-align:top; width:100%;">=0A                      =
+                                          <table align=3D"left" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"max-w=
+idth:220px;">=0A                                                       =
+             <tr>=0A                                                   =
+                     <td align=3D"center" valign=3D"top" style=3D"paddin=
+g-bottom:40px;">=0A                                                    =
+                        <table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%">=0A                            =
+                                                    <tr>=0A            =
+                                                                       =
+ <td align=3D"center" valign=3D"top" style=3D"padding-bottom:15px;">=0A=
+                                                                       =
+                 =0A                                                   =
+                                     <!--[if gte mso 9]>=0A            =
+                                                                       =
+     <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"width:65px" width=3D"65">=0A                           =
+                                                             <tr>=0A   =
+                                                                       =
+              <td align=3D"center" bgcolor=3D"#D8EACC" style=3D"padding-=
+top:5px; padding-right:10px; padding-bottom:5px; padding-left:10px;" val=
+ign=3D"top">=0A                                                        =
+                                <![endif]-->=0A                        =
+                                                                <p style=
+=3D"background-color:#D8EACC; border-collapse:separate; border-top:5px s=
+olid #D8EACC; border-right:10px solid #D8EACC; border-bottom:5px solid #=
+D8EACC; border-left:10px solid #D8EACC; border-radius:15px; color:#241C1=
+5; display:inline-block; font-family:'Helvetica Neue'=2C Helvetica=2C Ar=
+ial=2C Verdana=2C sans-serif; font-size:14px; font-weight:400; line-heig=
+ht:normal; margin:0; padding:0; text-align:center;">+ +2.56%</p>=0A    =
+                                                                       =
+             <!--[if gte mso 9]>=0A                                    =
+                                                    </td>=0A           =
+                                                                       =
+      </tr>=0A                                                         =
+                               </table>=0A                             =
+                                                           <![endif]-->=
+=0A                                                                    =
+                    =0A                                                =
+                                    </td>=0A                           =
+                                                     </tr>=0A          =
+                                                                      <t=
+r>=0A                                                                  =
+                  <td valign=3D"top" style=3D"padding-bottom:8px;">=0A =
+                                                                       =
+                <p style=3D"color:#007C89; font-family:'Helvetica Neue'=
+=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:34px; font-we=
+ight:400; line-height:34px; padding:0; margin:0; text-align:center;">+23=
+</p>=0A                                                                =
+                    </td>=0A                                           =
+                                     </tr>=0A                          =
+                                                      <tr>=0A          =
+                                                                       =
+   <td valign=3D"top">=0A                                              =
+                                          <p style=3D"color:#6A655F; fon=
+t-family:'Helvetica Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif=
+; font-size:16px; font-weight:400; line-height:22px; padding:0; margin:0=
+; text-align:center;">Audience Change</p>=0A                           =
+                                                         </td>=0A      =
+                                                                       =
+   </tr>=0A                                                            =
+                </table>=0A                                            =
+                            </td>=0A                                   =
+                                 </tr>=0A                              =
+                                  </table>=0A                          =
+                                  </div>=0A                            =
+                                <!--[if mso]>=0A                       =
+                                     </td>=0A                          =
+                                  </tr>=0A                             =
+                               </table>=0A                             =
+                               <![endif]-->=0A                         =
+                               </td>=0A                                =
+                    </tr>=0A                                           =
+         =0A                                                    <tr>=0A=
+                                                        <td align=3D"cen=
+ter" valign=3D"top" style=3D"padding-bottom:80px;">=0A                 =
+                                           <table border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0">=0A                                         =
+                       <tr>=0A                                         =
+                           <td align=3D"center" bgcolor=3D"#007C89" clas=
+s=3D"button"><a href=3D"https://us15.admin.mailchimp.com/?utm_source=3Dm=
+ailchimp-app&utm_medium=3Demail&utm_content=3Daccount-summary&utm_campai=
+gn=3Daccount" target=3D"_blank" style=3D"border-radius:0; border:1px sol=
+id #007C89; color:#FFFFFF; display:inline-block; font-size:16px; font-fa=
+mily:'Helvetica Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; fo=
+nt-weight:400; letter-spacing:.3px; padding:20px; text-decoration:none;"=
+>View More Stats</a>=0A                                                =
+                    </td>=0A                                           =
+                     </tr>=0A                                          =
+                  </table>=0A                                          =
+              </td>=0A                                                 =
+   </tr>=0A                                                    =0A     =
+                                               <!-- AUDIENCE SECTION BEG=
+INS -->=0A                                                    <tr>=0A  =
+                                                      <td valign=3D"top"=
+ style=3D"padding-bottom:20px;">=0A                                    =
+                        <h2 style=3D"color:#241C15; font-family:'Helveti=
+ca Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:22px;=
+ font-style:normal; font-weight:400; line-height:24px; letter-spacing:no=
+rmal; margin:0; padding:0; text-align:center;">Audience</h2>=0A        =
+                                                </td>=0A               =
+                                     </tr>=0A                          =
+                          =0A                                          =
+          <tr>=0A                                                      =
+  <td valign=3D"top" style=3D"padding-bottom:30px;">=0A                =
+                                            <p style=3D"color:#241C15; f=
+ont-family:'Helvetica Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-ser=
+if; font-size:14px; font-weight:400; line-height:24px; padding:0; margin=
+:0; text-align:center;">See who's new=2C who's moved on=2C and how your=
+ account is growing.</p>=0A                                            =
+            </td>=0A                                                   =
+ </tr>=0A                                                    <tr>=0A   =
+                                                     <td valign=3D"top"=
+ style=3D"padding-bottom:30px;">=0A                                    =
+                        <p style=3D"color:#241C15; font-family:'Helvetic=
+a Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:18px;=
+ font-weight:400; line-height:24px; padding:0; margin:0; text-align:cent=
+er;">Jul. 8-Jul. 14</p>=0A                                             =
+           </td>=0A                                                    <=
+/tr>=0A                                                    <tr>=0A     =
+                                                   <td valign=3D"top" st=
+yle=3D"padding-bottom:8px;">=0A                                        =
+                    <p style=3D"color:#007C89; font-family:'Helvetica Ne=
+ue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:24px; font=
+-weight:400; line-height:32px; padding:0; margin:0; text-align:center;">=
++23</p>=0A                                                        </td>=
+=0A                                                    </tr>=0A        =
+                                            <tr>=0A                    =
+                                    <td valign=3D"top" style=3D"padding-=
+bottom:30px;">=0A                                                      =
+      <p style=3D"color:#6A655F; font-family:'Helvetica Neue'=2C Helveti=
+ca=2C Arial=2C Verdana=2C sans-serif; font-size:16px; font-weight:400; l=
+ine-height:22px; padding:0; margin:0; text-align:center;">Audience Chang=
+e</p>=0A                                                        </td>=0A=
+                                                    </tr>=0A           =
+                                         <tr>=0A                       =
+                                 <td valign=3D"top" style=3D"padding-bot=
+tom:8px;">=0A                                                          =
+  <p style=3D"color:#007C89; font-family:'Helvetica Neue'=2C Helvetica=
+=2C Arial=2C Verdana=2C sans-serif; font-size:24px; font-weight:400; lin=
+e-height:32px; padding:0; margin:0; text-align:center;">0</p>=0A       =
+                                                 </td>=0A              =
+                                      </tr>=0A                         =
+                           <tr>=0A                                     =
+                   <td valign=3D"top" style=3D"padding-bottom:30px;">=0A=
+                                                            <p style=3D"=
+color:#6A655F; font-family:'Helvetica Neue'=2C Helvetica=2C Arial=2C Ver=
+dana=2C sans-serif; font-size:16px; font-weight:400; line-height:22px; p=
+adding:0; margin:0; text-align:center;">Unsubscribes and Bounces</p>=0A=
+                                                        </td>=0A       =
+                                             </tr>=0A                  =
+                                  <tr>=0A                              =
+                          <td valign=3D"top" style=3D"padding-bottom:8px=
+;">=0A                                                            <p sty=
+le=3D"color:#007C89; font-family:'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C Verdana=2C sans-serif; font-size:24px; font-weight:400; line-height:=
+32px; padding:0; margin:0; text-align:center;">920</p>=0A              =
+                                          </td>=0A                     =
+                               </tr>=0A                                =
+                    <tr>=0A                                            =
+            <td valign=3D"top" style=3D"padding-bottom:40px;">=0A      =
+                                                      <p style=3D"color:=
+#6A655F; font-family:'Helvetica Neue'=2C Helvetica=2C Arial=2C Verdana=
+=2C sans-serif; font-size:16px; font-weight:400; line-height:22px; paddi=
+ng:0; margin:0; text-align:center;">Total Audience</p>=0A              =
+                                          </td>=0A                     =
+                               </tr>=0A                                =
+                    <!-- AUDIENCE SECTION ENDS -->=0A                  =
+                                  <!-- TIP 3 SECTION BEGINS -->=0A     =
+                                               <tr>=0A                 =
+                                       <td valign=3D"top" style=3D"paddi=
+ng-bottom:60px;">=0A                                                   =
+         <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" style=3D"border:1px solid #DEDDDC; border-colla=
+pse:separate; border-radius:0;">=0A                                    =
+                            <tr>=0A                                    =
+                                <td valign=3D"top" style=3D"padding:20px=
+;">=0A                                                                 =
+       <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%">=0A                                             =
+                               <tr>=0A                                 =
+                                               <td valign=3D"center" wid=
+th=3D"40">=0A                                                          =
+                          <img src=3D"https://cdn-images.mailchimp.com/t=
+emplate_images/icons/tip_lightbulb.png" alt=3D"lightbulb" height=3D"20"=
+ width=3D"20" style=3D"border:0; display:block; outline:0; vertical-alig=
+n:top;" />=0A                                                          =
+                      </td>=0A                                         =
+                                       <td valign=3D"top">=0A          =
+                                                                       =
+   <p style=3D"color:#241C15; font-family:'Helvetica Neue'=2C Helvetica=
+=2C Arial=2C Verdana=2C sans-serif; font-size:14px; font-weight:400; lin=
+e-height:24px; padding:0; margin:0; text-align:left;"><strong>Tip:</stro=
+ng> <a href=3D"https://mailchimp.com/help/share-your-signup-form/?utm_so=
+urce=3Dmailchimp-app&utm_medium=3Demail&utm_content=3Daccount-summary&ut=
+m_campaign=3Daccount" style=3D"color:#007C89; font-weight:500; text-deco=
+ration:none;">Share your signup form</a> on your social media platforms=
+ to turn followers into subscribers!</p>=0A                            =
+                                                    </td>=0A           =
+                                                                 </tr>=
+=0A                                                                    =
+    </table>=0A                                                        =
+            </td>=0A                                                   =
+             </tr>=0A                                                  =
+          </table>=0A                                                  =
+      </td>=0A                                                    </tr>=
+=0A                                                    <!-- TIP 3 SECTIO=
+N ENDS -->=0A                                                    =0A   =
+                                                 <!-- CAMPAIGNS SECTION=
+ BEGINS -->=0A                                                    <tr>=
+=0A                                                        <td valign=3D=
+"top" style=3D"padding-bottom:20px;">=0A                               =
+                             <h2 style=3D"color:#241C15; font-family:'He=
+lvetica Neue'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:=
+22px; font-style:normal; font-weight:400; line-height:24px; letter-spaci=
+ng:normal; margin:0; padding:0; text-align:center;">Campaign Engagement<=
+/h2>=0A                                                        </td>=0A=
+                                                    </tr>=0A           =
+                                         =0A                           =
+                         <!-- CAMPAIGNS EMPTY STATE -->=0A             =
+                                       <tr>=0A                         =
+                               <td valign=3D"top" style=3D"padding-botto=
+m:60px;">=0A                                                           =
+ <p style=3D"color:#6A655F; font-family:'Helvetica Neue'=2C Helvetica=2C=
+ Arial=2C Verdana=2C sans-serif; font-size:16px; font-weight:400; line-h=
+eight:22px; padding:0; margin:0; text-align:center;">No new activity to=
+ show.</p>=0A                                                        </t=
+d>=0A                                                    </tr>=0A      =
+                                              <!-- CAMPAIGNS EMPTY STATE=
+ ENDS -->=0A                                                    =0A    =
+                                                <!-- BOOST YOUR STATS BE=
+GINS -->=0A                                                    <tr>=0A =
+                                                       <td valign=3D"top=
+">=0A                                                            <table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=0A   =
+                                                             <tr>=0A   =
+                                                                 <td val=
+ign=3D"top" style=3D"padding-right:20px; padding-bottom:30px; padding-le=
+ft:20px;">=0A                                                          =
+              <h2 style=3D"color:#241C15; font-family:'Helvetica Neue'=
+=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:22px; font-st=
+yle:normal; font-weight:400; line-height:24px; letter-spacing:normal; ma=
+rgin:0; padding:0; text-align:center;">Boost Your Stats</h2>=0A        =
+                                                            </td>=0A   =
+                                                             </tr>=0A  =
+                                                              <tr>=0A  =
+                                                                  <td va=
+lign=3D"top" style=3D"padding-right:20px; padding-bottom:30px; padding-l=
+eft:20px;">=0A                                                         =
+               <p style=3D"color:#241C15; font-family:'Helvetica Neue'=
+=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:14px; font-we=
+ight:400; line-height:24px; padding-bottom:10px; margin:0; text-align:ce=
+nter;">Visit our Knowledge Base to learn how to  <a href=3D"https://mail=
+chimp.com/help/about-signup-form-options/?utm_source=3Dmailchimp-app&utm=
+_medium=3Demail&utm_content=3Daccount-summary&utm_campaign=3Daccount" st=
+yle=3D"color:#007C89; font-weight:500; text-decoration:none;">grow your=
+ audience</a>  and <a href=3D"https://mailchimp.com/help/about-subscribe=
+r-engagement/?utm_source=3Dmailchimp-app&utm_medium=3Demail&utm_content=
+=3Daccount-summary&utm_campaign=3Daccount" style=3D"color:#007C89; font-=
+weight:500; text-decoration:none;">maximize subscriber engagement</a>. T=
+hen check out your Dashboard to get a more complete view of your account=
+ health.</p>=0A                                                        =
+            </td>=0A                                                   =
+             </tr>=0A                                                  =
+              <tr>=0A                                                  =
+                  <td align=3D"center" valign=3D"top" style=3D"padding-r=
+ight:20px; padding-bottom:40px; padding-left:20px;">=0A                =
+                                                        <table border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0">=0A                            =
+                                                <tr>=0A                =
+                                                                <td alig=
+n=3D"center" bgcolor=3D"#007C89" class=3D"button"><a href=3D"https://us1=
+5.admin.mailchimp.com/?utm_source=3Dmailchimp-app&utm_medium=3Demail&utm=
+_content=3Daccount-summary&utm_campaign=3Daccount" target=3D"_blank" sty=
+le=3D"border-radius:0; border:1px solid #007C89; color:#FFFFFF; display:=
+inline-block; font-size:16px; font-family:'Helvetica Neue'=2C Helvetica=
+=2C Arial=2C Verdana=2C sans-serif; font-weight:400; letter-spacing:.3px=
+; padding:20px; text-decoration:none;">Visit Dashboard</a>=0A          =
+                                                                      </=
+td>=0A                                                                 =
+           </tr>=0A                                                    =
+                    </table>=0A                                        =
+                            </td>=0A                                   =
+                             </tr>=0A                                  =
+                          </table>=0A                                  =
+                      </td>=0A                                         =
+           </tr>=0A                                                    <=
+!-- BOOST YOUR STATS ENDS -->=0A                                       =
+         </table>=0A                                            </td>=0A=
+                                        </tr>=0A                       =
+             </table>=0A                                    <!-- // END=
+ BODY -->=0A                                </td>=0A                   =
+         </tr>=0A                            <tr>=0A                   =
+             <td align=3D"center" valign=3D"top">=0A                   =
+                 <!-- BEGIN FOOTER // -->=0A                           =
+         <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">=0A                                        <tr>=0A           =
+                                 <td align=3D"center" valign=3D"top" cla=
+ss=3D"footerContent" style=3D"color:#6A655F; font-family:'Helvetica Neue=
+'=2C Helvetica=2C Arial=2C Verdana=2C sans-serif; font-size:12px; font-w=
+eight:400; line-height:24px; padding-top:40px; padding-bottom:40px; text=
+-align:center;">=0A                                                <p st=
+yle=3D"color:#6A655F; font-family:'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C Verdana=2C sans-serif; font-size:12px; font-weight:400; line-height:=
+24px; padding-top:0; margin:0; text-align:center;">&copy; 2001-2019 Mail=
+chimp<sup>&reg;</sup>=2C All Rights Reserved.<br />675 Ponce De Leon Ave=
+ NE &bull; Suite 5000 &bull; Atlanta=2C GA 30308 USA</p>=0A            =
+                                    <a href=3D"https://www.mailchimp.com=
+/contact/?utm_source=3Dmailchimp-app&utm_medium=3Demail&utm_content=3Dac=
+count-summary&utm_campaign=3Daccount" target=3D"_blank" style=3D"color:#=
+007C89; font-weight:500; text-decoration:none;" class=3D"utilityLink">Co=
+ntact Us</a><span class=3D"mobileHide">&nbsp;&nbsp;&bull;&nbsp;&nbsp;</s=
+pan><a href=3D"https://mailchimp.com/legal/terms/?utm_source=3Dmailchimp=
+-app&utm_medium=3Demail&utm_content=3Daccount-summary&utm_campaign=3Dacc=
+ount" target=3D"_blank" style=3D"color:#007C89; font-weight:500; text-de=
+coration:none;" class=3D"utilityLink">Terms of Use</a><span class=3D"mob=
+ileHide">&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><a href=3D"https://mailchi=
+mp.com/legal/privacy/?utm_source=3Dmailchimp-app&utm_medium=3Demail&utm_=
+content=3Daccount-summary&utm_campaign=3Daccount" target=3D"_blank" styl=
+e=3D"color:#007C89; font-weight:500; text-decoration:none;" class=3D"uti=
+lityLink">Privacy Policy</a><br class=3D"mobileHide" />=0A             =
+                                   <a href=3D"https://admin.mailchimp.co=
+m/account/details/?utm_source=3Dmailchimp-app&utm_medium=3Demail&utm_con=
+tent=3Daccount-summary&utm_campaign=3Daccount#email-notifications" targe=
+t=3D"_blank" style=3D"color:#007C89; font-weight:500; text-decoration:no=
+ne;" class=3D"utilityLink">Turn off Notification</a>=0A                =
+                            </td>=0A                                   =
+     </tr>=0A                                    </table>=0A           =
+                         <!-- // END FOOTER -->=0A                     =
+           </td>=0A                            </tr>=0A                =
+        </table>=0A                        <!--[if gte mso 9]>=0A      =
+                  </td>=0A                        </tr>=0A             =
+           </table>=0A                        <![endif]-->=0A          =
+          </td>=0A                </tr>=0A            </table>=0A      =
+  </center>=0A    </body>=0A</html>=0A
+--_----------=_MCPart_135913991--
+

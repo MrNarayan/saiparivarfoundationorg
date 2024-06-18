@@ -1,0 +1,187 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id oAkoOH5qu2NPLw8AUq51WA
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	for <info@saiparivarfoundation.org>; Sun, 08 Jan 2023 19:14:38 -0600
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Sun, 08 Jan 2023 19:14:38 -0600
+Received: from mail-yb1-f182.google.com ([209.85.219.182]:35526)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1pEgkI-004FpK-R4
+	for info@saiparivarfoundation.org;
+	Sun, 08 Jan 2023 19:14:38 -0600
+Received: by mail-yb1-f182.google.com with SMTP id o75so7288060yba.2
+        for <info@saiparivarfoundation.org>; Sun, 08 Jan 2023 17:14:33 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :dkim-signature:delivered-to:x-gm-message-state:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=MYNcdV+6j+UQCAiDRzelAx84ukTTBuX/F9C0vLPub5I=;
+        b=s4+r1bGcbRpbdg+gRgFf/EZajK1Iier6cpMvyhLnu4mfuVEKAcH9vnBlc/ind3vWvi
+         MNGNAIu48vCmCkyzi7WKf4XcuxwGDuUv3ZVwPFhtk7kQNsOVPTRsPNAfdNOjn+tT7FaF
+         msgbLIJNZZbovlZCQG05VEMGRedKUIs9l4cyNMa88i4QLlZifcea0dxGIZGEWOBRGOQb
+         iGHyDxtB0vCJfvxIKWMnHDdhcB7N85nKrMDuhZZjNXUSmvfZKur8VWZWz/9TZGpuDWb9
+         9/JSavdsWGQDiB55xwPBxp8cj+WuPbRoqWPUhMbgxkY/CV6xLzCIxzi2R6/d5KrJVQVM
+         hBsQ==
+X-Gm-Message-State: AFqh2krM5gflOJjBbCS0+JEs69N/ejlcaf94nBqJW4jlgoEaeF01iC9m
+	Ic/9/5jV360GcB8D66lt90/Yl97wgU7gmYu6qhTkbtil6fZ1g6zjXw==
+X-Received: by 2002:a25:d785:0:b0:7be:f993:e097 with SMTP id o127-20020a25d785000000b007bef993e097mr95233ybg.518.1673226868295;
+        Sun, 08 Jan 2023 17:14:28 -0800 (PST)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a05:7000:8e0a:b0:3c1:1281:55c7 with SMTP id ji10csp2633278mab;
+        Sun, 8 Jan 2023 17:14:27 -0800 (PST)
+X-Received: by 2002:a92:da0d:0:b0:30d:8d09:2545 with SMTP id z13-20020a92da0d000000b0030d8d092545mr6280104ilm.8.1673226866862;
+        Sun, 08 Jan 2023 17:14:26 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1673226866; cv=none;
+        d=google.com; s=arc-20160816;
+        b=k9tNzIwXuUJSTZnghczc7EZ/9BmG4CM/PdKAehVfoUagadbtzCJ13nA+MKOC8JZI00
+         rDZxQzAaIFtDA62aCkNKvC31D2AL1EzPipvP25YRwo6yQ7x3hD8d4bCXTHB+wfOV1PZR
+         0LA+QTq7jOF3Bk/mL+wqpBdzjTWO0511Vs1YZLYgfy5C0LWc0Fjw3WpPoZbM4DXu+cVp
+         7VSUHrmE37uOzu2DuZGbbdlPo8a3vkZ4J6ynMXHdT8zUHuxNiqjLSKmXdou3XK/FCmYh
+         kDQVcEZyZyRo9rJG2vUj4f+Ugh2p6bSiDffwdLLMFRkUmM8u+OUdv6KptWEOVnuNYqAu
+         bDJg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :dkim-signature;
+        bh=MYNcdV+6j+UQCAiDRzelAx84ukTTBuX/F9C0vLPub5I=;
+        b=gKJFJkzldksIYZzLp7lmp3rW71XYSpep0zLS8j6gV+v9FDYAlsEwtfsMRjBc1y6vbo
+         p9GwfY/KEr54FUyTdqM49xXb3ubc5tkAvc2CfmGhzns6bgVcxpdFYIZxBWLnEZiL8Mao
+         XscIn7q/MmIWNpXJFzm0be7Ggd+6sxwNxHNr91dvns7gOn0NpkbiWGQGPEJEdrH3HB7b
+         hCKuKbV5diVrtF41lPuSz2d/s5kWufp6EL3nvb4pboVd6DcH78bOjp8HYQrt+MbGnYIQ
+         8f6ZPKCMGOAvPBpSlyZvNul9NJ5jCTlO7BO1MOFwddbftNyK1fHtSYpFly/xOyUxNnh9
+         b4sQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@google.com header.s=20210112 header.b=lcGIHLkJ;
+       spf=pass (google.com: domain of 3cmq7yw4kafk7ff7c5-efi5gcp7ff7c5.3fd@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3cmq7Yw4KAFk7FF7C5-EFI5GCP7FF7C5.3FD@scoutcamp.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id bp27-20020a056638441b00b003739cdc22bcsor2646303jab.117.2023.01.08.17.14.26
+        for <saiparivarfoundation@gmail.com>
+        (Google Transport Security);
+        Sun, 08 Jan 2023 17:14:26 -0800 (PST)
+Received-SPF: pass (google.com: domain of 3cmq7yw4kafk7ff7c5-efi5gcp7ff7c5.3fd@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@google.com header.s=20210112 header.b=lcGIHLkJ;
+       spf=pass (google.com: domain of 3cmq7yw4kafk7ff7c5-efi5gcp7ff7c5.3fd@scoutcamp.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3cmq7Yw4KAFk7FF7C5-EFI5GCP7FF7C5.3FD@scoutcamp.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20210112;
+        h=to:from:subject:message-id:feedback-id:reply-to:date:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=MYNcdV+6j+UQCAiDRzelAx84ukTTBuX/F9C0vLPub5I=;
+        b=lcGIHLkJzBX9LCWgQMEdPitFl7UIUim1bGdzM0haNIX9EC60yt3pouOo6s0QFLoilk
+         VjP5/RYU0W9bStAEpLKhdUoCcN0t1pWhaYTJ123zRSQasR4wtgZJTWSM9KaLQZcMeil3
+         s353Y6wxxspKXIXzSd7dTIcje2Bi4mVH5AgHYDPB7J186lUgglf/ynsK5v7UyrB+J4QN
+         xwDaDTmB1tAzQdcTSkwq3U9Ay9CoTG7INQ4v9zqp3yktmjAouPDL2vY5QZZs5llBVkY0
+         06bLje7wToRynnW0ZXm4IZjoOhreA/gfiBg1sUOHujmD3WNrT/qxKnmmKgLEkN4DJ4Jq
+         DD6Q==
+X-Google-Smtp-Source: AMrXdXthmYJJsCdU3IMY44OQlURwcDSzC2O6i8JOoCu3B37qg4XeuMiEwGoCKXvEsK9DlavMTOeu79M=
+MIME-Version: 1.0
+X-Received: by 2002:a05:6638:346b:b0:39e:56d9:8314 with SMTP id
+ q43-20020a056638346b00b0039e56d98314mr1687836jav.268.1673226866280; Sun, 08
+ Jan 2023 17:14:26 -0800 (PST)
+Date: Sun, 08 Jan 2023 17:14:26 -0800
+Reply-To: The Google Account Team <google-noreply@google.com>
+X-Google-Id: 4177876
+Feedback-ID: P-11-0:C20228186:M110633103-en:gamma
+X-Notifications: bade76a098d80000
+X-Notifications-Bounce-Info: ASdEo2H9mRPEQYUwI6jKfvZdOB1kN1OR_11zcIjvlXy5_YTgaWne5hnv-84iXzZOKGsCxRt8wCf0hEohvTcoPyXiuhfCMRdn9H_d4jLqAoqzemBS3Ua30O0TqcHJ6wPiYdvRY0vGAv1HW7MIAZLEEDv6qPEIFqX_ky_guDCJSQzScI6lKif-zlPeVZ2huw2E5YKv4MyZY7_IGiy3bjLf0aDESpw_oFzLMcbHTv_i3gNjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <82fb2c12a51c0402aac97ac0c6c814d9e6f27a30-20228186-111234361@google.com>
+Subject: [Reminder] You have Web & App Activity turned on
+From: The Google Account Team <google-noreply@google.com>
+To: saiparivarfoundation@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000fe481605f1ca7c65"
+
+--000000000000fe481605f1ca7c65
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+R29vZ2xlIGxvZ28NCg0KSGVsbG8gU2FpIFBhcml2YXIsDQoNClRvIHByb3RlY3QgeW91ciBwcml2
+YWN5LCB0aGlzIGlzIGEgcmVtaW5kZXIgdGhhdCB5b3UgaGF2ZSB5b3VyIFdlYiAmIEFwcCAgDQpB
+Y3Rpdml0eSBzZXR0aW5nIHR1cm5lZCBvbi4NCg0KV2ViICYgQXBwIEFjdGl2aXR5IGlzIGEgc2V0
+dGluZyB0aGF0IGxldHMgeW91IHNhdmUgdG8geW91ciBHb29nbGUgQWNjb3VudCAgDQp0aGUgdGhp
+bmdzIHlvdSBkbyBvbiBHb29nbGUgc2l0ZXMsIGFwcHMsIGFuZCBzZXJ2aWNlcywgaW5jbHVkaW5n
+IHlvdXIgIA0Kc2VhcmNoZXMgYW5kIGFzc29jaWF0ZWQgaW5mb3JtYXRpb24sIGxpa2UgbG9jYXRp
+b24gYW5kIGxhbmd1YWdlLiBJdCBjYW4gIA0KYWxzbyBnaXZlIHlvdSBtb3JlIHBlcnNvbmFsaXpl
+ZCBleHBlcmllbmNlcyBhY3Jvc3MgR29vZ2xlLCBsaWtlIGZhc3RlciAgDQpzZWFyY2hlcyBhbmQg
+YmV0dGVyIHJlY29tbWVuZGF0aW9ucy4NCg0KWW91J3JlIGluIGNvbnRyb2wNCg0KTm8gYWN0aW9u
+IGlzIHJlcXVpcmVkIG9uIHlvdXIgcGFydC4gWW91IGNhbiByZXZpZXcgeW91ciBhY3Rpdml0eSBh
+bmQgY2hhbmdlICANCnlvdXIgc2V0dGluZ3MgYW55dGltZS4gSWYgeW91J2QgbGlrZSB0byB0dXJu
+IG9mZiBXZWIgJiBBcHAgQWN0aXZpdHksIHJldmlldyAgDQphbmQgZGVsZXRlIHlvdXIgYWN0aXZp
+dHksIG9yIHR1cm4gb24gYXV0by1kZWxldGUsIHZpc2l0IE15IEFjdGl2aXR5Lg0KDQpGb3Igc3Rl
+cC1ieS1zdGVwIGluc3RydWN0aW9ucywgdmlzaXQgb3VyIFdlYiAmIEFwcCBBY3Rpdml0eSBIZWxw
+IENlbnRlci4NCg0KR29vZ2xlDQoNCg0KwqkgMjAyMyBHb29nbGUgTExDIDE2MDAgQW1waGl0aGVh
+dHJlIFBhcmt3YXksIE1vdW50YWluIFZpZXcsIENBIDk0MDQzDQoNCllvdSBoYXZlIHJlY2VpdmVk
+IHRoaXMgbWFuZGF0b3J5IGVtYWlsIGFubm91bmNlbWVudCB0byB1cGRhdGUgeW91IGFib3V0ICAN
+CmltcG9ydGFudCBpbmZvcm1hdGlvbiByZWxhdGVkIHRvIHlvdXIgR29vZ2xlIGFjY291bnQuDQoN
+Cg==
+--000000000000fe481605f1ca7c65
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!-- This contains CSS info, starts the body, and inserts the Google logo h=
+eader -->
+<span style=3D"font-family: Roboto, Arial, sans-serif; font-size: 14px; col=
+or: #000000;"> </span>
+<div style=3D"padding-top: 22px; padding-bottom: 8px; border-bottom-style: =
+solid; border-bottom-color: #dcdcdc; border-bottom-width: 1px" width=3D100%=
+><span style=3D"font-family: Roboto, Arial, sans-serif; font-size: 14px; co=
+lor: #000000;"><img alt=3D"Google logo" border=3D0 src=3Dhttp://www.gstatic=
+.com/images/branding/googlelogo/1x/googlelogo_color_120x48dp.png style=3D"d=
+isplay: block;" title=3DGoogle width=3D120> </span></div>
+<span style=3D"font-family: Roboto, Arial, sans-serif; font-size: 14px; col=
+or: #000000;"> <!-- This is the beginning of the subject --> </span>
+<!-- Please INSERT the relevant Consumer Comm BODY snippet -->
+<p>Hello Sai Parivar, </p>
+
+<p>To protect your privacy, this is a reminder that you have your Web &amp;=
+ App Activity setting turned on.</p>
+
+<p>Web &amp; App Activity is a setting that lets you save to your Google Ac=
+count the things you do on Google sites, apps, and services, including your=
+ searches and associated information, like location and language. It can al=
+so give you more personalized experiences across Google, like faster search=
+es and better recommendations.</p>
+
+<h3>You&#39;re in control</h3>
+
+<p><strong>No action is required on your part.</strong> You can review your=
+ activity and change your settings anytime. If you=E2=80=99d like to turn o=
+ff Web &amp; App Activity, review and delete your activity, or turn on auto=
+-delete, visit <a href=3Dhttps://notifications.google.com/g/p/AM0Ovepc7Rxqc=
+j8pdWnmp_vb7cFdhTHhqcyU9g07LNxbaXJ44B2HEVhdJxOfocWDinIY67cFM7JFtMidfYezCKpZ=
+NNJRoHwusj4VTRLsSWuj-EUwShMxCD0N2lOXlDMyMI9q_A8JFgL9cuLgUtUjwAeVc1QxEsHZpJR=
+imOkwMqrHV1T-hpXqNmkPzxJ_QnRW8K9B61zxh1p3nEHIbXbXvSzTDbToM0hjNH3kifARxY9IXf=
+MxFBkVUDOlaR0Dv-kGJryJ9KB2N1xGzWWpuYRFO11r-pM6XRzRu8s00rQdEfw83vshJPr8YN4BG=
+UZWVw target=3D_blank>My Activity</a>.</p>
+
+<p>For step-by-step instructions, visit our <a href=3Dhttps://notifications=
+.google.com/g/p/AM0Ovepw3iRKBHj2j8ouw6N9HDyNUNSfiU6Or7rW7fPDs23fsCKNbSy2HzZ=
+gYY0vpZjD9lyvVFXvQHEa1PPkYrKWdplBStCynktkQThsw7QsJxbnKhj4Vc9fFNXiZ3KfBBS1Mi=
+Cl8FKEtnw__SSOCM0ThqFFSV0hZK5GJyWHzOORgH1MWFFjUJ96A5a_EmYCAOO_D3jHAjf6GzpK0=
+bAAh9vXMVErnsty3yI target=3D_blank>Web &amp; App Activity Help Center</a>.<=
+/p>
+
+<p>Google</p>
+
+
+
+<!-- Finally, include the consumer footer. This also ends the body -->
+<div style=3D"font-size: 10px; color: #666666; padding-top: 8px; border-top=
+-style: solid; border-top-color: #dcdcdc; border-top-width: 1px">
+  <p>=C2=A9 2023=C2=A0 Google LLC=C2=A01600 Amphitheatre Parkway, Mountain =
+View, CA 94043</p>
+
+  <p><i>You have received this mandatory email announcement to update you a=
+bout important information related to your Google account.</i></p>
+</div>
+
+--000000000000fe481605f1ca7c65--

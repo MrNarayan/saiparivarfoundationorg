@@ -1,0 +1,78 @@
+Return-Path: <>
+Delivered-To: seasai10@gator4018.hostgator.com
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id yCFpKghOzGItzgEAUq51WA
+	(envelope-from <>)
+	for <seasai10@gator4018.hostgator.com>; Mon, 11 Jul 2022 11:21:28 -0500
+Return-path: <>
+Envelope-to: seasai10@gator4018.hostgator.com
+Delivery-date: Mon, 11 Jul 2022 11:21:28 -0500
+Received: from mailnull by gator4018.hostgator.com with local (Exim 4.95)
+	id 1oAwA4-001YVz-LX
+	for seasai10@gator4018.hostgator.com;
+	Mon, 11 Jul 2022 11:21:28 -0500
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4018.hostgator.com>
+To: seasai10@gator4018.hostgator.com
+References: <E1oAPUq-000Tly-C6@gator4018.hostgator.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1657556488-eximdsn-744620366
+MIME-Version: 1.0
+Subject: Warning: message 1oAPUq-000Tly-C6 delayed 24 hours
+Message-Id: <E1oAwA4-001YVz-LX@gator4018.hostgator.com>
+Date: Mon, 11 Jul 2022 11:21:28 -0500
+
+--1657556488-eximdsn-744620366
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+A message that you sent has not yet been delivered to one or more of its
+recipients after more than 24 hours on the queue on gator4018.hostgator.com.
+
+The message identifier is:     1oAPUq-000Tly-C6
+The subject of the message is: Arati Registration
+The date of the message is:    Sun, 10 Jul 2022 00:28:44 -0500
+
+The address to which the message has not yet been delivered is:
+
+  neelmahapatro@hotmail.com
+    (ultimately generated from info@saiparivarfoundation.org)
+    host 34.217.196.71 [34.217.196.71]
+    Delay reason: SMTP error from remote mail server after end of data:
+    421 <seasai10@gator4018.hostgator.com> blocked. AUP#BL
+
+No action is required on your part. Delivery attempts will continue for
+some time, and this warning may be repeated at intervals if the message
+remains undelivered. Eventually the mail delivery software will give up,
+and when that happens, the message will be returned to you.
+
+--1657556488-eximdsn-744620366
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4018.hostgator.com
+
+Action: delayed
+Final-Recipient: rfc822;info@saiparivarfoundation.org
+Status: 4.0.0
+Remote-MTA: dns; 34.217.196.71
+Diagnostic-Code: smtp; 421 <seasai10@gator4018.hostgator.com> blocked. AUP#BL
+
+--1657556488-eximdsn-744620366
+Content-type: text/rfc822-headers
+
+Return-path: <seasai10@gator4018.hostgator.com>
+Received: from seasai10 by gator4018.hostgator.com with local (Exim 4.95)
+	(envelope-from <seasai10@gator4018.hostgator.com>)
+	id 1oAPUq-000Tly-C6
+	for info@saiparivarfoundation.org;
+	Sun, 10 Jul 2022 00:28:44 -0500
+To: info@saiparivarfoundation.org
+Subject: Arati Registration
+X-PHP-Script: saiparivarfoundation.org/mail.php for 192.227.205.97
+X-PHP-Originating-Script: 33308:mail.php
+From: eric.jones.z.mail@gmail.com
+Message-Id: <E1oAPUq-000Tly-C6@gator4018.hostgator.com>
+Date: Sun, 10 Jul 2022 00:28:44 -0500
+
+
+--1657556488-eximdsn-744620366--

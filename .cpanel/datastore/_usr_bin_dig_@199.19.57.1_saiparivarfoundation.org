@@ -1,0 +1,21 @@
+
+; <<>> DiG 9.8.2rc1-RedHat-9.8.2-0.23.rc1.el6_5.1 <<>> @199.19.57.1 saiparivarfoundation.org
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 35845
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 2, ADDITIONAL: 0
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;saiparivarfoundation.org.	IN	A
+
+;; AUTHORITY SECTION:
+saiparivarfoundation.org. 86400	IN	NS	ns8036.hostgator.com.
+saiparivarfoundation.org. 86400	IN	NS	ns8035.hostgator.com.
+
+;; Query time: 148 msec
+;; SERVER: 199.19.57.1#53(199.19.57.1)
+;; WHEN: Sat Nov  8 14:53:18 2014
+;; MSG SIZE  rcvd: 97
+

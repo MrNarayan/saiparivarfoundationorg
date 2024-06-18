@@ -1,0 +1,71 @@
+Return-Path: <nishita.ark@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id KB7YLExVmmSnLQMAUq51WA
+	(envelope-from <nishita.ark@gmail.com>)
+	for <info@saiparivarfoundation.org>; Mon, 26 Jun 2023 22:19:40 -0500
+Return-path: <nishita.ark@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Mon, 26 Jun 2023 22:19:40 -0500
+Received: from mail-ot1-f44.google.com ([209.85.210.44]:56723)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <nishita.ark@gmail.com>)
+	id 1qDzEy-0011HF-KV
+	for info@saiparivarfoundation.org;
+	Mon, 26 Jun 2023 22:19:40 -0500
+Received: by mail-ot1-f44.google.com with SMTP id 46e09a7af769-6b7474b0501so1768752a34.1
+        for <info@saiparivarfoundation.org>; Mon, 26 Jun 2023 20:19:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1687835969; x=1690427969;
+        h=to:message-id:subject:date:mime-version:from
+         :content-transfer-encoding:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=aiy6cZFrJUIZqm42W/5MLxgwwWWauYFZJKn9TuBToIo=;
+        b=d82fWenm94u2F+qAyJDbvii3/16Dtsi6bcTxOxnAdfOtCXQJUgL16v8c56LMfwAVaP
+         ZYLBOH//8QT4i1hPLSOXCOVQqEz5uOAILFxpXU00qFWtdT7afBEzQ/TwuxK48KyQmY6f
+         KdJn5gfD+wCULqPRFNCJyoKN4Suj6r+iX6dhZYdxZvSfUTJytE6PMLj/K9Zsr5USsQfB
+         masCQ8TAmlAiQe8YPZHku5d6rEBjf9L93S6WdZTqDjigBc4+zV4Yy60DkN9niTzLCNf7
+         3qd0R8DzU/7DP9YGWhSCziY+VYuEYLMki7Hpk0+B6DhRjWZtN7FKjPknISbRVL5mVvYQ
+         9AEA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1687835969; x=1690427969;
+        h=to:message-id:subject:date:mime-version:from
+         :content-transfer-encoding:x-gm-message-state:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=aiy6cZFrJUIZqm42W/5MLxgwwWWauYFZJKn9TuBToIo=;
+        b=kUDWllddI2+/h9vHJLLPGtTafOMFnSr6/1KiWUnqwz4Rm0rmk1mMmKdwSlEWxAf9H9
+         +wX0IDAPDVu6915RWsQSzzSXfz8AmSCCvUGQL6K1AsP/AWbtKI2aXLoSc7ROrrgOZ6W6
+         no6DRUrea1B5PWNkiH+f3iB6bMH/lNOVUCEv0MgrnRqkQLEvVUgKbKu6A1OWPh4lYf8v
+         yO7RHFWHaAKLsp25i2/swRfUx/jSppDeXWDCSsjtGBPa7sQZwUllgGQUkHAv1L/JMI3r
+         Ncnl8/hr52e6fUoXBreOQhRXzPF5aw2F0ODVali7/9+Yx+EKmH/9IshzKm3QrLIIvnS5
+         DG4Q==
+X-Gm-Message-State: AC+VfDwyDo/iVv7Cub1BtxkuUsBZbVXMAU33EBeD5LAd0FdHbt2HEWbd
+	dTmr2WrjKpvMiSjFFqFtu8pk6bv4yaY=
+X-Google-Smtp-Source: ACHHUZ5nCyfipnFYXN39HVVvTb5xQ4vTQikqJ/BktFncaGr/fBvvFuk6c5uOuEa7b0hTyFEAGOK/Wg==
+X-Received: by 2002:a05:6358:e91b:b0:134:c984:ab87 with SMTP id gk27-20020a056358e91b00b00134c984ab87mr1326472rwb.4.1687835969244;
+        Mon, 26 Jun 2023 20:19:29 -0700 (PDT)
+Received: from smtpclient.apple (c-67-171-48-188.hsd1.wa.comcast.net. [67.171.48.188])
+        by smtp.gmail.com with ESMTPSA id c19-20020aa78813000000b00671aa6b4962sm3217710pfo.114.2023.06.26.20.19.28
+        for <info@saiparivarfoundation.org>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 26 Jun 2023 20:19:28 -0700 (PDT)
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+From: Nishita Ramakrishnan <nishita.ark@gmail.com>
+Mime-Version: 1.0 (1.0)
+Date: Mon, 26 Jun 2023 20:19:17 -0700
+Subject: Prasadham on 06-29-2023
+Message-Id: <3E1F467C-D08D-4DFA-823F-E63B882E2900@gmail.com>
+To: info@saiparivarfoundation.org
+X-Mailer: iPhone Mail (20D67)
+
+Hello,=20
+
+I=E2=80=99ve signed up for making prasadham on the Thursday (06-29-2023) and=
+ I=E2=80=99m trying to reach out and see what the requirements were. Can you=
+ please provide a contact for call/ text.
+
+Thanks,=20
+Nisha=20=

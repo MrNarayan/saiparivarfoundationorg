@@ -1,0 +1,507 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP id qKUdHASLRlsYegoAUq51WA
+	for <info@saiparivarfoundation.org>; Wed, 11 Jul 2018 17:56:04 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Wed, 11 Jul 2018 17:56:04 -0500
+Received: from mail-pl0-f47.google.com ([209.85.160.47]:42910)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1fdO1k-002t6T-5Y
+	for info@saiparivarfoundation.org; Wed, 11 Jul 2018 17:56:04 -0500
+Received: by mail-pl0-f47.google.com with SMTP id f4-v6so5589783plb.9
+        for <info@saiparivarfoundation.org>; Wed, 11 Jul 2018 15:55:57 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:message-id:date:from
+         :reply-to:to:subject:mime-version:list-unsubscribe
+         :list-unsubscribe-post;
+        bh=iFi51z0zfTKUz4VKVFIQvzbUrYky5KXLskQJXKrb94Q=;
+        b=YO/Og+7NbJGbEfGEIolZdv0NFBeptImn/8yyBTFfeY1fHryv4VEUw+I6J55OVEcOpP
+         x1M7cwp5XSd5WmqfYZUn7Emn3nPszdqfNS7pamKjV31f1qgk7Y8+cwcpdRBtw98s1e9J
+         PrXvCRPgYc+mzQJIXMzbDF25ZwPHVftiqlMBEtRiQX3Ihg2WR0SEv0eojhZv3MqgPg5N
+         RFR7LBFDBFKWZeGTimle4506AFDe6/d/EiNzjiyanQbCE9KC10CwD0XGcYAn8HL4GF1m
+         UVJkO3Wz1FZ4BSQM7a0CTiOuOFq7E4+yZGMjB4oojxHTGkjOrTvKZWxIPQZvKS8eu61t
+         0fDQ==
+X-Gm-Message-State: AOUpUlGS1NeGio2wNt/mdlUWaLKo9YI9BtOYtp6Ny8HzAySkSwq4uBbE
+	8Eji7UioBZJx6u9YYlApJD5oBZZZbH9yIIXzh88CSccirlcdAGQ=
+X-Received: by 2002:a17:902:988f:: with SMTP id s15-v6mr462824plp.95.1531349752042;
+        Wed, 11 Jul 2018 15:55:52 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a17:90a:2a81:0:0:0:0 with SMTP id j1-v6csp813590pjd;
+        Wed, 11 Jul 2018 15:55:50 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpd72PvhfwKT6vVgxLbw9azKndsu6ZyvxtzSRuSIaAvjUxpNlFO958Np3jCfnAuWMG0JMdpg
+X-Received: by 2002:ac8:3351:: with SMTP id u17-v6mr523654qta.126.1531349750690;
+        Wed, 11 Jul 2018 15:55:50 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1531349750; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Y864LmkoAQ9clKGFFl22IixzwWXheCa33/t00m5hPQ8fJIr/l55CMFneJAIDXjhKUr
+         wwgkKqOdRmfQCRtXHO3/WFs3GhJwr9s1OLyZKmc4bQEpkmSEhOLMt2JBC5Q94y/jZRKl
+         4rD6xFiXQnkRdfpi/cJ8Xa5+JVQeu9xT58nxs0xqb1jMso8lpVxEeNRERH/r4+ZEUcig
+         FqfdL5RgDYN82GELLEFy9sRjhI/t0Tqo0ije8XAJUOlID/3mEbyH8SPkfPNztX8XvrIS
+         hx2sXc6N0L1BDOCRL3/lThWThHhWDhK+Hr+CR5LudrYNYypfUp9LINnX2Zq1uqmnK60j
+         4OrQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe-post:list-unsubscribe:mime-version:subject:to
+         :reply-to:from:date:message-id:dkim-signature
+         :arc-authentication-results;
+        bh=iFi51z0zfTKUz4VKVFIQvzbUrYky5KXLskQJXKrb94Q=;
+        b=SfL4u/8wHlJT8UOHrhtWcWmr/4TR9pAMnqnINLTPW0W0nZ0JKrq9dtHevEzIi9sskp
+         /0jLYNg42/6ZTBUevAyqkrakZOejN94KKa46pIJ6ysSoUtxaPk5g1TL/de9b5Jslhjsc
+         hYatT2zo7jFQPHnV5+SZllnAnU4vpaf4nhMN2JVDPkgA//mlbjm+gaq+rRrWRritS/Sg
+         q8DlPfbCBqtxFXj83JtRAN8DHWf1qnPF0+alsy1KwK0Af27ve+Bo4rTJzPFIRiOfWan2
+         HGVajfnMEuBzranif2zZIePwwM3DnRj+JAkPfCs2vHcbCe7XbyNnosica0Uu4rDI+K9Z
+         XHVw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@auth.ccsend.com header.s=1000073432 header.b=MYO9nEif;
+       spf=pass (google.com: domain of av+yc7dwsqawvctrf6easpq==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.243 as permitted sender) smtp.mailfrom="Av+yC7DwSQaWvcTRF6eaSpQ==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com"
+Received: from ccm243.constantcontact.com (ccm243.constantcontact.com. [208.75.123.243])
+        by mx.google.com with ESMTPS id v5-v6si5085569qkg.8.2018.07.11.15.55.50
+        for <SaiParivarFoundation@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 11 Jul 2018 15:55:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of av+yc7dwsqawvctrf6easpq==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.243 as permitted sender) client-ip=208.75.123.243;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@auth.ccsend.com header.s=1000073432 header.b=MYO9nEif;
+       spf=pass (google.com: domain of av+yc7dwsqawvctrf6easpq==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.243 as permitted sender) smtp.mailfrom="Av+yC7DwSQaWvcTRF6eaSpQ==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com"
+Received: from [10.252.0.108] ([10.252.0.108:48205] helo=p2-jbemailsyndicator11.ctct.net)
+	by 10.249.245.20 (envelope-from <Av+yC7DwSQaWvcTRF6eaSpQ==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com>)
+	(ecelerity 4.2.1.52273 r(Core:4.2.1.11)) with ESMTP
+	id 24/B5-59723-6FA864B5; Wed, 11 Jul 2018 18:55:50 -0400
+DKIM-Signature: v=1; q=dns/txt; a=rsa-sha256; c=relaxed/relaxed; s=1000073432; d=auth.ccsend.com; h=date:mime-version:subject:X-Feedback-ID:message-id:from:reply-to:list-unsubscribe:list-unsubscribe-post:to; bh=iFi51z0zfTKUz4VKVFIQvzbUrYky5KXLskQJXKrb94Q=; b=MYO9nEif14B8MQKFcxMt5y1kdG656L/cGU0F2BjmfMCiUNa3YmFzRE1Xugjd1AqRAYCocJoEK+59t3XjLd6VAzxJXdddcwpPRXrsCSDUtoRR0un9kZoMnQDglX6NgdI7Xng4eLt3Y36KVSiLfyOOAH1BdevBH7nLIJVMZ0YdwB8=
+Message-ID: <1130926017451.1103573720993.1659182514.0.211855JL.2104@scheduler.constantcontact.com>
+Date: Wed, 11 Jul 2018 18:55:50 -0400 (EDT)
+From: The Sophia Way <volunteer@sophiaway.org>
+Reply-To: volunteer@sophiaway.org
+To: SaiParivarFoundation@gmail.com
+Subject: Join Us Tomorrow for our Volunteer Picnic!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_321717632_907234220.1531349749999"
+List-Unsubscribe: <https://visitor.constantcontact.com/do?p=un&m=001CLN_S13g0et-LAh2PzLdPA%3D%3D&se=001sdyEB58gEl5pHBscD5_RCQ%3D%3D&t=001EkZLEx15CcE%3D&llr=b6h6bzdab>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Campaign-Activity-ID: bfec82ec-3c12-41a5-af71-3445e9e692a5
+X-Channel-ID: df87a940-3fe5-11e7-be45-d4ae52843dc7
+X-Mailer: Roving Constant Contact 2012 (http://www.constantcontact.com)
+X-Return-Path-Hint: Av+yC7DwSQaWvcTRF6eaSpQ==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com
+X-Roving-Campaignid: 1130926017451
+X-Roving-Id: 1103573720993.1659182514
+X-Feedback-ID: df87a940-3fe5-11e7-be45-d4ae52843dc7:bfec82ec-3c12-41a5-af71-3445e9e692a5:1103573720993:CTCT
+X-CTCT-ID: df3c9680-3fe5-11e7-be45-d4ae52843dc7
+
+------=_Part_321717632_907234220.1531349749999
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Volunteer Appreciation Picnic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When
+Thursday, July 12, 2018 from 5:00 PM to 7:00 PM PDT
+Add to Calendar [http://r20.rs6.net/tn.jsp?f=001sx2KKMjTaeEd7VoCixT5PrrhU5woA6mWBx3lGxCanYLlcmaaiPrT5Hv259RN2ChmqefyJPqHe3BphatSsPUXBoTglbagx7yUaMdFpRZs_B-nUCzVZhasec8uaLD95OVcRT0g0JwXk5AS86a3Ml0kAM33PIBFiq8wZSYhOwz9boYmJTi01UFiTG00YqW_m2_hTEDjWlFX3QXdlJBT69iHSMm2XQ8qA5Y0LTYg1k46kqOO_huDJzskrhL2QgIE5z4WyxhnTs4puAw=&c=kj0pceGZg973tbLdTUjv0WqWlDuz3zUN3qWvouaCKZbbw_z_McsdLw==&ch=TqUJSlQVv8f-pEkoU8bWZ1967XflZrqJ5lbk-XkJOHKXbXEI3C-8TQ==]
+
+Where
+Crossroads Park
+16140 NE 8th St.
+Bellevue, WA 98008
+Driving Directions [http://r20.rs6.net/tn.jsp?f=001sx2KKMjTaeEd7VoCixT5PrrhU5woA6mWBx3lGxCanYLlcmaaiPrT5HiYmYbUQ5_9EMeyirC9gNiMfL0gEUNlRkvKPpM4ncu7YNVo6ItPRokxluKyOQWxTixLZDZnmvzwztvcqcAK2pd63N6bVQISsP1j5oMif_JInZPeU6aTaCMxzm8jmxzpjO7OqGMoRQ5JQ392LWuA65DyJyNRXakziVX2Wh35UgUTWGtDBM8Nwllej8YZySnFQxXqdagK4Pfy&c=kj0pceGZg973tbLdTUjv0WqWlDuz3zUN3qWvouaCKZbbw_z_McsdLw==&ch=TqUJSlQVv8f-pEkoU8bWZ1967XflZrqJ5lbk-XkJOHKXbXEI3C-8TQ==]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Greetings!
+Our Volunteer Appreciation Picnic is tomorrow, and we'd love to see you there!
+Please join us anytime between 5:00 and 7:00 PM at Crossroads Park in Bellevue for
+a nice, relaxing evening with good food and good company.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Get more information [http://events.r20.constantcontact.com/register/event?oeidk=a07efi8k2vuca0e08d7&c=df3c9680-3fe5-11e7-be45-d4ae52843dc7&ch=df87a940-3fe5-11e7-be45-d4ae52843dc7]
+
+Register Now! [http://events.r20.constantcontact.com/register/regform?oeidk=a07efi8k2vuca0e08d7&c=df3c9680-3fe5-11e7-be45-d4ae52843dc7&ch=df87a940-3fe5-11e7-be45-d4ae52843dc7]
+
+I can't make it [http://events.r20.constantcontact.com/register/decline?oeidk=a07efi8k2vuca0e08d7&c=df3c9680-3fe5-11e7-be45-d4ae52843dc7&ch=df87a940-3fe5-11e7-be45-d4ae52843dc7]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We'd love to see you there and show you our appreciation for your support! Whether
+you volunteer every week, on occasion, or would like to volunteer in the future,
+ we rely on great people like you! This is a family friendly event, so feel free
+ to bring kids, grandkids, partners, or friends. Food will include plenty of vegetarian,
+vegan, and gluten-free options.
+Please don't hesitate to contact me if you have any questions in the meantime. We'll
+see you tomorrow evening!
+
+Sincerely,
+
+Tara Noyes
+The Sophia Way
+volunteer@sophiaway.org
+425-463-6285
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+This email was sent to SaiParivarFoundation@gmail.com by volunteer@sophiaway.org.
+
+Update Profile/Email Address
+https://visitor.constantcontact.com/do?p=oo&m=001CLN_S13g0et-LAh2PzLdPA%3D%3D&ch=df87a940-3fe5-11e7-be45-d4ae52843dc7&ca=bfec82ec-3c12-41a5-af71-3445e9e692a5
+
+
+Instant removal with SafeUnsubscribe(TM)
+https://visitor.constantcontact.com/do?p=un&m=001CLN_S13g0et-LAh2PzLdPA%3D%3D&ch=df87a940-3fe5-11e7-be45-d4ae52843dc7&ca=bfec82ec-3c12-41a5-af71-3445e9e692a5
+
+
+Privacy Policy:
+http://www.constantcontact.com/legal/service-provider?cc=about-service-provider
+
+
+Online Marketing by
+Constant Contact(R)
+www.constantcontact.com
+
+
+The Sophia Way | 11061 NE 2nd St. | Suite 223 | Bellevue | WA | 98004
+------=_Part_321717632_907234220.1531349749999
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+<body topmargin=3D"0" leftmargin=3D"0" rightmargin=3D"0"><!--Copyright (c) =
+1996-2018 Constant Contact. All rights reserved.  Except as permitted under=
+ a separate
+written agreement with Constant Contact, neither the Constant Contact softw=
+are, nor any content that appears on any Constant Contact site,
+including but not limited to, web pages, newsletters, or templates may be r=
+eproduced, republished, repurposed, or distributed without the
+prior written permission of Constant Contact.  For inquiries regarding repr=
+oduction or distribution of any Constant Contact material, please
+contact legal@constantcontact.com.--><style>@media only screen and (max-wid=
+th:480px) {td[class~=3D"mobile-hidden"] {display: none !important;}}</style=
+><style>@media only screen and (max-width:480px) {table[class~=3D"HideInMob=
+ile"], img[class~=3D"HideInMobile"], td[class~=3D"HideInMobile"], span[clas=
+s~=3D"HideInMobile"] {display: none !important;}td[class~=3D"FooterColumn"]=
+, table[class~=3D"FooterColumn"], span[class~=3D"FooterColumn"] {display:bl=
+ock !important;}.FooterText {line-height: 1.6 !important;}}</style><style>b=
+lockquote .hideInRplyFwd, .WordSection1 .hideInRplyFwd, blockquote a[href*=
+=3D'https://visitor.constantcontact.com/do?p=3Dun&m=3D001CLN_S13g0et-LAh2Pz=
+LdPA%3D%3D&ch=3Ddf87a940-3fe5-11e7-be45-d4ae52843dc7&ca=3Dbfec82ec-3c12-41a=
+5-af71-3445e9e692a5'], .WordSection1 a[href*=3D'https://visitor.constantcon=
+tact.com/do?p=3Dun&m=3D001CLN_S13g0et-LAh2PzLdPA%3D%3D&ch=3Ddf87a940-3fe5-1=
+1e7-be45-d4ae52843dc7&ca=3Dbfec82ec-3c12-41a5-af71-3445e9e692a5'], #OLK_SRC=
+_BODY_SECTION .hideInRplyFwd, #OLK_SRC_BODY_SECTION a[href*=3D'https://visi=
+tor.constantcontact.com/do?p=3Dun&m=3D001CLN_S13g0et-LAh2PzLdPA%3D%3D&ch=3D=
+df87a940-3fe5-11e7-be45-d4ae52843dc7&ca=3Dbfec82ec-3c12-41a5-af71-3445e9e69=
+2a5'] { display: none !important; }</style><img src=3D"http://r20.rs6.net/o=
+n.jsp?a=3D1103573720993&r=3D3&c=3Ddf3c9680-3fe5-11e7-be45-d4ae52843dc7&d=3D=
+1130926017451&ch=3Ddf87a940-3fe5-11e7-be45-d4ae52843dc7&ca=3Dbfec82ec-3c12-=
+41a5-af71-3445e9e692a5&o=3Dhttps://imgssl.constantcontact.com/ui/images1/s.=
+gif" height=3D"1" width=3D"1"/>
+<div id=3D"rootDiv" align=3D"center">
+<table class=3D"body" style=3D"background-color:#ffffff;padding:0;margin:0;=
+" bgcolor=3D"#ffffff" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpad=
+ding=3D"0">
+<tr>
+    <td valign=3D"top" rowspan=3D"1" colspan=3D"1" align=3D"center">
+    <table class=3D"TemplateWidth" style=3D"width:600px;" border=3D"0" widt=
+h=3D"600" cellspacing=3D"0" cellpadding=3D"1">
+    <tr>
+        <td valign=3D"top" width=3D"100%" rowspan=3D"1" colspan=3D"1" align=
+=3D"left">
+       =20
+        </td>
+    </tr>
+    <tr>
+        <td class=3D"MainBorder" style=3D"background-color:#000000;padding:=
+1px;" bgcolor=3D"#000000" valign=3D"top" rowspan=3D"1" colspan=3D"1" align=
+=3D"left">
+        <table class=3D"MainBodyBG" style=3D"background-color:#FFFFFF;" bgc=
+olor=3D"#FFFFFF" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" id=3D"evm-header-container">
+        <tr>
+            <td width=3D"100%" rowspan=3D"1" colspan=3D"1" align=3D"center"=
+>
+            <table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0">
+            <tr>
+                <td class=3D"MainText" style=3D"color:#262727;font-size:12p=
+t;font-family:Arial,Helvetica,sans-serif;" rowspan=3D"1" colspan=3D"1" alig=
+n=3D"center"><img width=3D"600" src=3D"https://imgssl.constantcontact.com/c=
+ed/themes/np-volunteer/np-volunteer-emhdr.jpg"/></td>
+            </tr>
+            </table>
+            <table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" id=3D"content_LETTER.BLOCK8"><tr><td style=3D"color:#000000;" valig=
+n=3D"bottom" rowspan=3D"1" colspan=3D"1" align=3D"center"><img height=3D"17=
+0" vspace=3D"2" border=3D"0" name=3D"ACCOUNT.IMAGE.1297" hspace=3D"0" width=
+=3D"554" src=3D"http://files.constantcontact.com/1af9e12f001/bd73b3d1-5ade-=
+452d-9580-1ccc730120f1.jpg"/></td></tr></table><table class=3D"BlockMargin =
+EventTitleBG" style=3D"background-color:#5E81CA;margin-bottom:5px;" bgcolor=
+=3D"#5E81CA" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"5=
+">
+            <tr>
+                <td class=3D"CompanyName" style=3D"color:#FFFFFF;font-size:=
+18pt;font-family:Arial,Helvetica,sans-serif;" rowspan=3D"1" id=3D"evm-nonre=
+sp-event-title" colspan=3D"1" align=3D"center"><b>Volunteer Appreciation Pi=
+cnic</b></td>
+            </tr>
+            </table>
+            </td>
+        </tr>
+        </table>
+        <table class=3D"MainBodyBG" style=3D"background-color:#FFFFFF;" bgc=
+olor=3D"#FFFFFF" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0">
+        <tr>
+            <td class=3D"LeftColWidth" style=3D"width:205px;" valign=3D"top=
+" width=3D"205" rowspan=3D"1" colspan=3D"1" align=3D"left">
+            <table border=3D"0" width=3D"205" cellspacing=3D"0" cellpadding=
+=3D"0">
+            <tr>
+                <td class=3D"LeftColPad" style=3D"padding:0px;" valign=3D"t=
+op" width=3D"205" rowspan=3D"1" colspan=3D"1" align=3D"left">
+                <table class=3D"EventInfoBG BlockMargin" style=3D"backgroun=
+d-color:#5E81CA;margin-bottom:5px;" bgcolor=3D"#5E81CA" border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"5" id=3D"evm-lcol-container">
+                <tr>
+                    <td class=3D"EventInformationText" style=3D"color:#FFFF=
+FF;font-size:12pt;font-family:Arial,Helvetica,sans-serif;" rowspan=3D"1" id=
+=3D"evm-lcol-content" colspan=3D"1" align=3D"left">
+                    <div><span class=3D"EventInfoTitle" style=3D"color:#FFF=
+FFF;font-size:12pt;font-family:Arial,Helvetica,sans-serif;" id=3D"evm-lcol-=
+title-when"><b>When</b></span><br/>
+                    Thursday, July 12, 2018 from 5:00 PM to 7:00 PM PDT<br/=
+>
+                    <span class=3D"cc-calendar" style=3D"color:#FFFFFF;font=
+-size:12pt;font-family:Arial,Helvetica,sans-serif;"><a class=3D"cc-calendar=
+" style=3D"color:#FFFFFF;font-size:12pt;font-family:Arial,Helvetica,sans-se=
+rif;" shape=3D"rect" href=3D"http://r20.rs6.net/tn.jsp?f=3D001sx2KKMjTaeEd7=
+VoCixT5PrrhU5woA6mWBx3lGxCanYLlcmaaiPrT5Hv259RN2ChmqefyJPqHe3BphatSsPUXBoTg=
+lbagx7yUaMdFpRZs_B-nUCzVZhasec8uaLD95OVcRT0g0JwXk5AS86a3Ml0kAM33PIBFiq8wZSY=
+hOwz9boYmJTi01UFiTG00YqW_m2_hTEDjWlFX3QXdlJBT69iHSMm2XQ8qA5Y0LTYg1k46kqOO_h=
+uDJzskrhL2QgIE5z4WyxhnTs4puAw=3D&c=3Dkj0pceGZg973tbLdTUjv0WqWlDuz3zUN3qWvou=
+aCKZbbw_z_McsdLw=3D=3D&ch=3DTqUJSlQVv8f-pEkoU8bWZ1967XflZrqJ5lbk-XkJOHKXbXE=
+I3C-8TQ=3D=3D" alt=3D"http://events.r20.constantcontact.com/register/addtoc=
+alendar?oeidk=3Da07efi8k2vuca0e08d7" target=3D"_blank" title=3D"Add to Cale=
+ndar" id=3D"lnkAddToCalendar">Add to Calendar</a></span></div><div>&nbsp;</=
+div>                      =20
+                    <br/>
+                    <div class=3D"EventInfoTitle" style=3D"color:#FFFFFF;fo=
+nt-size:12pt;font-family:Arial,Helvetica,sans-serif;" id=3D"evm-lcol-title-=
+where"><b>Where</b></div>
+                    <b>Crossroads Park</b><br/>
+                    16140 NE 8th St.<br/>Bellevue, WA 98008<br/>
+                    <span style=3D"width:200px; height:200px; display:block=
+;"><a shape=3D"rect" href=3D"http://r20.rs6.net/tn.jsp?f=3D001sx2KKMjTaeEd7=
+VoCixT5PrrhU5woA6mWBx3lGxCanYLlcmaaiPrT5HiYmYbUQ5_9EMeyirC9gNiMfL0gEUNlRkvK=
+PpM4ncu7YNVo6ItPRokxluKyOQWxTixLZDZnmvzwztvcqcAK2pd63N6bVQISsP1j5oMif_JInZP=
+eU6aTaCMxzm8jmxzpjO7OqGMoRQ5JQ392LWuA65DyJyNRXakziVX2Wh35UgUTWGtDBM8Nwllej8=
+YZySnFQxXqdagK4Pfy&c=3Dkj0pceGZg973tbLdTUjv0WqWlDuz3zUN3qWvouaCKZbbw_z_Mcsd=
+Lw=3D=3D&ch=3DTqUJSlQVv8f-pEkoU8bWZ1967XflZrqJ5lbk-XkJOHKXbXEI3C-8TQ=3D=3D"=
+ alt=3D"http://maps.google.com/maps?daddr=3D16140 NE 8th St., Bellevue, WA,=
+ 98008, US" target=3D"_blank" title=3D"Driving Directions" id=3D"idDrivingD=
+ir"><img height=3D"200" width=3D"200" src=3D"https://api.tiles.virtualearth=
+.net/api/GetMap.ashx?ppl=3D24,,47.6174,-122.12425&z=3D12&h=3D200&w=3D200   =
+        "/></a></span>
+                    <a class=3D"cc-link-xsm" style=3D"font-size:10pt;" shap=
+e=3D"rect" href=3D"http://r20.rs6.net/tn.jsp?f=3D001sx2KKMjTaeEd7VoCixT5Prr=
+hU5woA6mWBx3lGxCanYLlcmaaiPrT5HiYmYbUQ5_9EMeyirC9gNiMfL0gEUNlRkvKPpM4ncu7YN=
+Vo6ItPRokxluKyOQWxTixLZDZnmvzwztvcqcAK2pd63N6bVQISsP1j5oMif_JInZPeU6aTaCMxz=
+m8jmxzpjO7OqGMoRQ5JQ392LWuA65DyJyNRXakziVX2Wh35UgUTWGtDBM8Nwllej8YZySnFQxXq=
+dagK4Pfy&c=3Dkj0pceGZg973tbLdTUjv0WqWlDuz3zUN3qWvouaCKZbbw_z_McsdLw=3D=3D&c=
+h=3DTqUJSlQVv8f-pEkoU8bWZ1967XflZrqJ5lbk-XkJOHKXbXEI3C-8TQ=3D=3D" alt=3D"ht=
+tp://maps.google.com/maps?daddr=3D16140 NE 8th St., Bellevue, WA, 98008, US=
+" target=3D"_blank" title=3D"Driving Directions" id=3D"idDrivingDir">Drivin=
+g Directions</a>
+                    </td>
+                </tr>
+                </table>
+                </td>
+            </tr>
+            </table>
+            </td>
+            <td class=3D"RightColWidth" style=3D"width:385px;" valign=3D"to=
+p" width=3D"385" rowspan=3D"1" colspan=3D"1" align=3D"left">
+            <table class=3D"RightColWidth" style=3D"width:385px;" border=3D=
+"0" width=3D"385" cellspacing=3D"0" cellpadding=3D"0">
+            <tr>
+                <td class=3D"LeftColPad" style=3D"padding:0px;" valign=3D"t=
+op" width=3D"100%" rowspan=3D"1" colspan=3D"1" align=3D"left">
+                <table class=3D"BlockMargin" style=3D"margin-bottom:5px;" b=
+order=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"5" id=3D"conten=
+t_LETTER.BLOCK5"><tr><td class=3D"MainText" style=3D"color:#262727;font-siz=
+e:12pt;font-family:Arial,Helvetica,sans-serif;" rowspan=3D"1" colspan=3D"1"=
+ align=3D"left" id=3D"evm-content-maintext"><b>Greetings!</b><br/><br/><div=
+><strong>Our Volunteer Appreciation Picnic is tomorrow, and we'd love to se=
+e you there!</strong></div><div><strong><br/></strong></div><div>Please joi=
+n us anytime between 5:00 and 7:00 PM at Crossroads Park in Bellevue for a =
+nice, relaxing evening with good food and good company.&nbsp;</div></td></t=
+r></table>
+                </td>
+            </tr>
+            <tr>
+                <td valign=3D"top" width=3D"100%" rowspan=3D"1" colspan=3D"=
+1" align=3D"left">
+                <table class=3D"BlockMargin" style=3D"margin-bottom:5px;" b=
+order=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"5">
+                <tr>
+                    <td class=3D"cc-register cc-link-sm" style=3D"color:#00=
+0000;font-size:12pt;font-family:Arial,Helvetica,sans-serif;" rowspan=3D"1" =
+colspan=3D"1" align=3D"center">
+                    <a class=3D"cc-register cc-link-sm" style=3D"color:#000=
+000;font-size:12pt;font-family:Arial,Helvetica,sans-serif;" shape=3D"rect" =
+href=3D"http://events.r20.constantcontact.com/register/event?oeidk=3Da07efi=
+8k2vuca0e08d7&c=3Ddf3c9680-3fe5-11e7-be45-d4ae52843dc7&ch=3Ddf87a940-3fe5-1=
+1e7-be45-d4ae52843dc7" target=3D"_blank" title=3D"Get more information" id=
+=3D"lnkMoreInfo">Get more information</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=3D"cc-register" style=3D"color:#000000;font-s=
+ize:14pt;font-family:Arial,Helvetica,sans-serif;" rowspan=3D"1" colspan=3D"=
+1" align=3D"center">
+                    <b><a class=3D"cc-register" style=3D"color:#000000;font=
+-size:14pt;font-family:Arial,Helvetica,sans-serif;" shape=3D"rect" href=3D"=
+http://events.r20.constantcontact.com/register/regform?oeidk=3Da07efi8k2vuc=
+a0e08d7&c=3Ddf3c9680-3fe5-11e7-be45-d4ae52843dc7&ch=3Ddf87a940-3fe5-11e7-be=
+45-d4ae52843dc7" target=3D"_blank" title=3D"Register Now!" id=3D"lnkRegiste=
+r">Register Now!</a></b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=3D"cc-register cc-link-xsm" style=3D"color:#0=
+00000;font-size:10pt;font-family:Arial,Helvetica,sans-serif;" rowspan=3D"1"=
+ colspan=3D"1" align=3D"center">
+                    <a class=3D"cc-register cc-link-xsm" style=3D"color:#00=
+0000;font-size:10pt;font-family:Arial,Helvetica,sans-serif;" shape=3D"rect"=
+ href=3D"http://events.r20.constantcontact.com/register/decline?oeidk=3Da07=
+efi8k2vuca0e08d7&c=3Ddf3c9680-3fe5-11e7-be45-d4ae52843dc7&ch=3Ddf87a940-3fe=
+5-11e7-be45-d4ae52843dc7" target=3D"_blank" title=3D"I can't make it" id=3D=
+"lnkDecline">I can't make it</a>
+                    </td>
+                </tr>
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign=3D"top" width=3D"100%" rowspan=3D"1" colspan=3D"=
+1" align=3D"left">
+                <table class=3D"BlockMargin" style=3D"margin-bottom:5px;" b=
+order=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"5" id=3D"conten=
+t_LETTER.BLOCK7"><tr><td class=3D"MainText" style=3D"color:#262727;font-siz=
+e:12pt;font-family:Arial,Helvetica,sans-serif;" rowspan=3D"1" colspan=3D"1"=
+ align=3D"left" id=3D"evm-content-maintext2">
+<div>We'd love to see you there and show you our appreciation for your supp=
+ort! Whether you volunteer every week, on occasion, or would like to volunt=
+eer in the future, we rely on great people like you! This is a family frien=
+dly event, so feel free to bring kids, grandkids, partners, or friends. Foo=
+d will include plenty of vegetarian, vegan, and gluten-free options.</div>
+<br/><div>Please don't hesitate to contact me if you have any questions in =
+the meantime. <em><strong>We'll see you tomorrow evening!</strong></em></di=
+v><div>&nbsp;</div><div><b>Sincerely,</b></div><div>&nbsp;</div><div>Tara N=
+oyes</div><div>The Sophia Way</div><div>volunteer@sophiaway.org</div><div>4=
+25-463-6285</div></td></tr></table>
+                </td>
+            </tr>
+            </table>
+            </td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    </table><br/>&nbsp;<br/>
+    </td>
+</tr>
+</table>
+</div>
+<div id=3D"footerContainer" align=3D"center" style=3D"background-color:#fff=
+fff;">
+<table style=3D"text-align:left;" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0">
+<tr>
+<td rowspan=3D"1" colspan=3D"1">
+<table style=3D"background-color:#ffffff;" border=3D"0" width=3D"100%" cell=
+spacing=3D"0" cellpadding=3D"0" id=3D"footerContainer"><tr><td class=3D"Hid=
+eInMobile" rowspan=3D"1" colspan=3D"1"><img height=3D"5" vspace=3D"0" borde=
+r=3D"0" hspace=3D"0" width=3D"1" src=3D"https://imgssl.constantcontact.com/=
+letters/images/sys/S.gif"/></td><td style=3D"background-color:#FFFFFF;" val=
+ign=3D"top" width=3D"610" rowspan=3D"1" colspan=3D"1" align=3D"center"><div=
+ style=3D"margin-left:auto;max-width:610px;margin-right:auto;" align=3D"cen=
+ter"><table style=3D"margin-left:auto;margin-right:auto;" border=3D"0" widt=
+h=3D"100%" cellspacing=3D"0" cellpadding=3D"0"><tr><td style=3D"padding:15p=
+x 10px 15px 10px;" valign=3D"top" width=3D"100%" rowspan=3D"1" colspan=3D"1=
+" align=3D"center"><table style=3D"margin-left:auto;margin-right:auto;" bor=
+der=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"><tr><td style=
+=3D"padding-bottom:15px;" valign=3D"top" width=3D"100%" rowspan=3D"1" colsp=
+an=3D"1" align=3D"center">
+<div style=3D"color:#5d5d5d;font-size:13px;font-family:Verdana,Geneva,sans-=
+serif;" align=3D"center" id=3D"LETTER.PHYSICALADDRESS"><span class=3D"Foote=
+rColumn">The Sophia Way<span class=3D"HideInMobile">,</span></span><span cl=
+ass=3D"FooterColumn"> 11061&nbsp;NE&nbsp;2nd&nbsp;St.<span class=3D"HideInM=
+obile">,</span></span><span class=3D"FooterColumn"> Suite&nbsp;223<span cla=
+ss=3D"HideInMobile">,</span></span><span class=3D"FooterColumn">&nbsp;Belle=
+vue<span class=3D"HideInMobile">,</span>&nbsp;WA&nbsp;98004</span></div></t=
+d></tr><tr><td valign=3D"top" width=3D"100%" rowspan=3D"1" colspan=3D"1" al=
+ign=3D"center"><table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpad=
+ding=3D"0"><tr><td style=3D"padding-bottom:5px;" valign=3D"top" width=3D"10=
+0%" rowspan=3D"1" colspan=3D"1" align=3D"center"><div class=3D"FooterText" =
+style=3D"color:#5d5d5d;font-size:12px;font-family:Verdana,Geneva,sans-serif=
+;line-height:1.4;"><a class=3D"hideInRplyFwd" style=3D"color:#5d5d5d;" shap=
+e=3D"rect" href=3D"https://visitor.constantcontact.com/do?p=3Dun&m=3D001CLN=
+_S13g0et-LAh2PzLdPA%3D%3D&ch=3Ddf87a940-3fe5-11e7-be45-d4ae52843dc7&ca=3Dbf=
+ec82ec-3c12-41a5-af71-3445e9e692a5" target=3D"_blank" id=3D"unsubscribeLink=
+"><span id=3D"unsubscribeLinkText">SafeUnsubscribe&trade;</span> SaiParivar=
+Foundation@gmail.com</a></div></td></tr></table><table border=3D"0" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0"><tr><td valign=3D"top" width=
+=3D"100%" rowspan=3D"1" colspan=3D"1" align=3D"center"><div class=3D"Footer=
+Text" style=3D"color:#5d5d5d;font-size:12px;font-family:Verdana,Geneva,sans=
+-serif;line-height:1.4;"><span class=3D"FooterColumn"><a class=3D"hideInRpl=
+yFwd" style=3D"color:#5d5d5d;" shape=3D"rect" href=3D"https://visitor.const=
+antcontact.com/do?p=3Doo&m=3D001CLN_S13g0et-LAh2PzLdPA%3D%3D&ch=3Ddf87a940-=
+3fe5-11e7-be45-d4ae52843dc7&ca=3Dbfec82ec-3c12-41a5-af71-3445e9e692a5" targ=
+et=3D"_blank" id=3D"updateProfileLink">Update Profile</a><span class=3D"Hid=
+eInMobile hideInRplyFwd">&nbsp;|&nbsp;</span></span><span class=3D"FooterCo=
+lumn"><a style=3D"color:#5d5d5d;" shape=3D"rect" href=3D"http://www.constan=
+tcontact.com/legal/service-provider?cc=3Dabout-service-provider" alt=3D"htt=
+p://www.constantcontact.com/legal/service-provider?cc=3Dabout-service-provi=
+der" target=3D"_blank" id=3D"privacyLink">About our service provider</a></s=
+pan></div></td></tr></table><table border=3D"0" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0"><tr><td style=3D"padding-top:5px;" valign=3D"top" =
+width=3D"100%" rowspan=3D"1" colspan=3D"1" align=3D"center"><div class=3D"F=
+ooterText" style=3D"color:#5d5d5d;font-size:12px;font-family:Verdana,Geneva=
+,sans-serif;">Sent by <a style=3D"color:#5d5d5d;" shape=3D"rect" href=3D"ma=
+ilto:volunteer@sophiaway.org" target=3D"_blank" id=3D"sentByEmailLink">volu=
+nteer@sophiaway.org</a> in collaboration with</div></td></tr></table></td><=
+/tr><tr><td style=3D"padding-top:20px;padding-bottom:20px;" valign=3D"top" =
+width=3D"100%" rowspan=3D"1" colspan=3D"1" align=3D"center"><table border=
+=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"><tr><td style=3D"=
+padding-bottom:5px;" valign=3D"top" width=3D"100%" rowspan=3D"1" colspan=3D=
+"1" align=3D"center"><div><a shape=3D"rect" href=3D"http://www.constantcont=
+act.com/index.jsp?cc=3DTEVP_Inv_002" target=3D"_blank" id=3D"footerLogoLink=
+"><img border=3D"0" width=3D"180" style=3D"display: block; height:auto !imp=
+ortant; max-width:100% !important;" alt=3D"Constant Contact" src=3D"https:/=
+/imgssl.constantcontact.com/ui/images1/ctct-logo.png"/></a></div></td></tr>=
+<tr><td valign=3D"top" width=3D"100%" rowspan=3D"1" colspan=3D"1" align=3D"=
+center"><table border=3D"0" width=3D"128" cellspacing=3D"0" cellpadding=3D"=
+0"><tr><td valign=3D"top" width=3D"100%" rowspan=3D"1" colspan=3D"1" align=
+=3D"left"><div style=3D"color:#184f8e;font-size:11px;font-family:Verdana,Ge=
+neva,sans-serif;"><a style=3D"color:#184f8e;text-decoration:none;font-size:=
+11px;font-family:Verdana,Geneva,sans-serif;" shape=3D"rect" href=3D"http://=
+www.constantcontact.com/index.jsp?cc=3DTEVP_Inv_002" target=3D"_blank" id=
+=3D"footerLogoTxtLink">Try it free today</a></div></td></tr></table></td></=
+tr></table></td></tr></table></td></tr></table></div></td><td class=3D"Hide=
+InMobile" rowspan=3D"1" colspan=3D"1"><img height=3D"5" vspace=3D"0" border=
+=3D"0" hspace=3D"0" width=3D"1" src=3D"https://imgssl.constantcontact.com/l=
+etters/images/sys/S.gif"/></td></tr></table>
+</td>
+</tr>
+</table>
+</div></body>
+
+------=_Part_321717632_907234220.1531349749999--

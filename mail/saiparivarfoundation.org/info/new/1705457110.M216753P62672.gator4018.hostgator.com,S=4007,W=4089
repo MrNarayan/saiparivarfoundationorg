@@ -1,0 +1,82 @@
+Return-Path: <surabhirk25@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id +ARlDNY1p2XQ9AAAUq51WA
+	(envelope-from <surabhirk25@gmail.com>)
+	for <info@saiparivarfoundation.org>; Tue, 16 Jan 2024 20:05:10 -0600
+Return-path: <surabhirk25@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Tue, 16 Jan 2024 20:05:10 -0600
+Received: from mail-ej1-f47.google.com ([209.85.218.47]:49358)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <surabhirk25@gmail.com>)
+	id 1rPvIj-000NX9-39
+	for info@saiparivarfoundation.org;
+	Tue, 16 Jan 2024 20:05:10 -0600
+Received: by mail-ej1-f47.google.com with SMTP id a640c23a62f3a-a277339dcf4so1172877866b.2
+        for <info@saiparivarfoundation.org>; Tue, 16 Jan 2024 18:05:04 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1705457098; x=1706061898; darn=saiparivarfoundation.org;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=WEUf+wq4gIR1+bhUGtsj5yZFaapnhjOBxagy9/VFu7A=;
+        b=IOG3YSxLt/2dMwblq67OPrItW7wZpJciLlHArD/fUIphoocFixdF0IZHaFQApzilJN
+         drMS6JVin+flV4THm0MOpMk+56fDA/SnLfvKdnfBLf+0kegOU7SvjdnfY0W9WIVtRK/1
+         7eoPQVz9HfLnp1Ikj7cn2yBEEnmRnSeFcBnbbtykRtvgg8rg0fQG+ZESBmEiu2Vi5gv5
+         gUkUES+oa2/+O7yxcQWpHBfqFqraenGlq9WuDn1uulFaRBXxDvddIERypubqKqBdt61s
+         ZwglqB+ERBY33FrabkyIGwVZIVTvlzw6RM4Bv7XTPH58FXgnKhn9MTKC8TckvwR+Cul5
+         kpqg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1705457098; x=1706061898;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=WEUf+wq4gIR1+bhUGtsj5yZFaapnhjOBxagy9/VFu7A=;
+        b=qf2cURNdp7mXVHMl1G/dOvAFA8v2hirHSHwOrz6JkqzgjdOfS+/SHVokdL7jroUgTb
+         HGgdYHpRNMiJfdCsYPE7pvIoDTtrTCDPGX2NzJzRYbNe24L/tlw1/OWSRStGQA7qh11J
+         dNRlriPhbvlJDaixIDYo8/U3xtRp1ZX30to9K+jD9ptfnycoqztImig2ELjBFIvHihE+
+         qVjlrNA2+qnsquScebIWiyD4c8qAdz3h1ynXu31TCMyaH6cpxvxeeipNTdPE9yxbohnI
+         1Lgz8ndTVxOu1mM7nhfXYPnSJk7M9aN2x5avenwO8LCe+erexsrCHJjw1wQKZyzM/Wrq
+         84WA==
+X-Gm-Message-State: AOJu0Yy8JkttWaPyX1FFPhUKM+MCAkTZ4lizhwcoqgQUjKLdYSz4t6cs
+	fZN9cPQbLm6mzp49OuhHslo7DFWrWSQVHdHUCSAKnmmq
+X-Google-Smtp-Source: AGHT+IGhgpzrBnEpWmE5AO8m0gfNB49QWi9KfnrrPiP8UfP8eVpbRb9yIUjTlUr0s9wxAr4KOvvrI4XwK/QqiMRbkas=
+X-Received: by 2002:a17:907:bca:b0:a29:51ca:9df with SMTP id
+ ez10-20020a1709070bca00b00a2951ca09dfmr2979678ejc.148.1705457097831; Tue, 16
+ Jan 2024 18:04:57 -0800 (PST)
+MIME-Version: 1.0
+From: surabhi r kurpad <surabhirk25@gmail.com>
+Date: Tue, 16 Jan 2024 18:04:46 -0800
+Message-ID: <CANWhiU27gx47OGPkiYLVkUAXoFNbhM5WbghgMOy3-H8z7TwK1w@mail.gmail.com>
+Subject: Is the temple open today
+To: info@saiparivarfoundation.org
+Content-Type: multipart/alternative; boundary="0000000000007ef5bf060f1aac51"
+
+--0000000000007ef5bf060f1aac51
+Content-Type: text/plain; charset="UTF-8"
+
+Hi
+
+I am writing to know if the temple is open today ? We are waiting in front
+of the temple and the door is locked
+
+We have prepared Prasad today for lord
+
+
+Regards ,
+Surabhi kurpad
+
+--0000000000007ef5bf060f1aac51
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"><br clear=3D"all">Hi=C2=A0</div><div dir=3D"auto"><br></d=
+iv><div dir=3D"auto">I am writing to know if the temple is open today ? We =
+are waiting in front of the temple and the door is locked</div><div dir=3D"=
+auto"><br></div><div dir=3D"auto">We have prepared Prasad today for lord=C2=
+=A0</div><div dir=3D"auto"><br></div><div dir=3D"auto"><br clear=3D"all"><d=
+iv dir=3D"auto"><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=
+=3D"gmail_signature">Regards , <br>Surabhi kurpad </div></div></div>
+
+--0000000000007ef5bf060f1aac51--

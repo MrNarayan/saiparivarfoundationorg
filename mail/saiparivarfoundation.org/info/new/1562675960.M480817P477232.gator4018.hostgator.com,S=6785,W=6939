@@ -1,0 +1,154 @@
+Return-Path: <lusi.f@aol.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id CHUgEviKJF0wSAcAUq51WA
+	(envelope-from <lusi.f@aol.com>)
+	for <info@saiparivarfoundation.org>; Tue, 09 Jul 2019 07:39:20 -0500
+Return-path: <lusi.f@aol.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Tue, 09 Jul 2019 07:39:20 -0500
+Received: from sonic309-13.consmr.mail.bf2.yahoo.com ([74.6.129.123]:38404)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <lusi.f@aol.com>)
+	id 1hkpOy-0028A1-3f
+	for info@saiparivarfoundation.org; Tue, 09 Jul 2019 07:39:20 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=aol.com; s=a2048; t=1562675949; bh=hj7EXra6jQt5yTYjbHZZ/864lIRvaUMwfV4wsOKChmY=; h=Date:From:Subject:References:From:Subject; b=Sx3zPTEhIpgzTGKDxs7PgmQHZou2v5lvzgL2kMXmyoAZTWx+T8pFDOINJwMT6NjI4FWt9UEgpVh4yD2m38tsTO1S98n3ADE15kbFdlD9qsK19MVdV2nNbrFEeNktKTXL6nPm2gA23ymQJgFvrCs6o2udcxV3bZxW46XOmyY4FYu3cg6ibMokOKBorfmV5Ld6eQGI08L9iLApSG6w44Z1P1tV+AR3mj47zxsvrWlC8PjkK7UQi1A4D23A7QlzK243MbK0IeKpuQvwRRkVVn9fU9WKYhOzvCD4LzVw11ox6oebbKJ9NUKR/QN9uf6uSotYQ7v566pML/SWjMZSAgKb+w==
+X-YMail-OSG: kuCUw70VM1m6hW5r_OldZf7UBFJRFwMai7zQe2kSAfRsC7d3HvPkfVTWnecfTdy
+ ebSuwSUXy2ga7wZVWTqBi5pC_qZoEDNA_0QRlafCE06u9K.5McpBlsLUSBW_utUephBdJFoyIVmu
+ EZ_twLMzFiCpD5QccKyVtHmM5ffAwnBZVFFKLyGO0rPfqCMKhCGIk.MoYQMu4jpD7jThAAIKOTEt
+ jYKPlsM9ZubpNKApgypkm9sp_B7yMYVRwhK7BwXJBf_hhSPfMosEUxpwMzKuomadxx7P0Um9mF1g
+ dQEGED7mSFiIZMy8FKH9bWLJtlAqdZNBNWFHnBWP1dFLH0NwAL8usgn6kQOhpP2uu7SofdJsL5P2
+ 5n84E.qoncAGJ6WILCSJARy.pFmZWq9jqhMudWJ9_z64_M6qM.Z05j5cypgWNNwGvwFR.haeEMJF
+ Xd0TVQStgsz0dhM5OIPCC3ABN.nY0xF4Hyt1hgYw0qwBuGRb5IRKwOGj3_kd4GUDmgJRAS4SLD3Q
+ d2OqoWxDbdf4xw86l38TfVmku2txQ7C6CfxgGJ0IqfzNHGgWNytEmui6ahkIWHEH9nMctamTuo.S
+ HW1PDdcHEdTPN4CcJ9ZWI1..JfTExjv3MLyjVYAuLq0QLBFNalA61mf3IEv4B0o6WXMJxCcET9Ao
+ OIIh89YEf7dNyHOaO.F.4v48N6nHHrilSz5iU3AuSMNqll2H9tRkVyks1MVTimzG965.Z5uPY4rk
+ ez1NJGj9jB.9DexwmeBdNyOg7SWex4jWq9h7hjm3H9y2xOEFki81VLe3I1D7nGie4TOkl9iHeUFm
+ _VyM5rDKq0QEYu3J2.2OaAC1vI8XLpY5fuHG3t2_s3rGRnSN4RdjOJgdLLVPADHLhaW7RKLJsHcg
+ n_MOwTSIlG_cQ4J1VFuXcEEebV7K7qDQnnl6g6PXgWNBZKV4_shjXQuL34V023d5xA6owzMcSMby
+ GMyRDuYSS2a0yptInYj9gjNxgTZig0HKoWYOjR6WrZHNlCc637fAGb0CZbQ5fWDmLn6i3dtIM3KB
+ mKgDcKVBEEgCMCsSaKZKxR9Z4C1P3YCXK2xd9Ce1EMgHVricQ9w4.ucEa.dHOTPKJ_mh8mtLkoS1
+ waVh2gUQh9iV4nQtJLSGzOYwH5w8.6o8jec7CMY8xPNwljehNupdB0UQMnM0vcWA4Bf6SislglNO
+ ts42Y6aTnC0tz119mqSQSHCYK27ZeA1o.abeMQb9z
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic309.consmr.mail.bf2.yahoo.com with HTTP; Tue, 9 Jul 2019 12:39:09 +0000
+Date: Tue, 9 Jul 2019 12:39:06 +0000 (UTC)
+From: Lusi Fox <lusi.f@aol.com>
+Message-ID: <584247792.3112966.1562675946226@mail.yahoo.com>
+Subject: Low Price Mobile Apps & Website Services
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_3112965_1199792603.1562675946225"
+References: <584247792.3112966.1562675946226.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.13913 aolwebmail Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240
+Content-Length: 3588
+
+------=_Part_3112965_1199792603.1562675946225
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello =C2=A0I hope you are doing well!
+We are an USA based reputed company in Mobile Application Development domai=
+nfor small and large businesses. We have developed applications for iOS,And=
+roid, Mac OS X, and other popular platforms for our clients scattered allar=
+ound the world.
+We specialize in:-
+
+1. iOS App Development & Android App Development.
+2. GPS/Location based Applications.
+3. Mobile App layout and UX design.
+4. Mobile Web Development, Mobile App Testing.
+5. Mobile Software Development.
+6. Custom App Development.
+7. Website Design & Development, Mobile Responsive, E-Commerce Websites,Cus=
+tom Programming, etc.
+
+If you are interested then please reply back to this email today and let me=
+send you link to our portfolio and vast gallery of our many happy customers=
+.Also, if you send me your detailed project specifications I will be more t=
+hanhappy to provide you with a flat rate price.
+
+I appreciate your time and consideration.
+
+Best Regards,Lusi Fox
+Business Consultant=C2=A0
+------=_Part_3112965_1199792603.1562675946225
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+<div style="color:;font: 10pt Helvetica Neue;">
+
+
+<div style="margin: 0in 0in 0pt;"><span lang="EN-IN" style='font-size:12.0pt;mso-fareast-font-family:&#10;"Times New Roman";mso-ansi-language:EN-IN'>Hello </span></div>
+
+
+
+<div style="margin: 0in 0in 0pt;"><span style='font-size:12.0pt;mso-fareast-font-family:&#10;"Times New Roman"'>&nbsp;</span></div>
+
+
+
+<div style="margin: 0in 0in 0pt;"><span lang="EN-IN" style='font-size:12.0pt;mso-fareast-font-family:&#10;"Times New Roman";mso-ansi-language:EN-IN'>I hope you are doing well!</span></div>
+
+
+
+<div style="margin: 0in 0in 0pt;"><span lang="EN-IN" style='font-size:12.0pt;mso-fareast-font-family:&#10;"Times New Roman";mso-ansi-language:EN-IN'><br>
+
+We are an USA based reputed company in Mobile Application Development domain
+for small and large businesses. We have developed applications for iOS,
+Android, Mac OS X, and other popular platforms for our clients scattered all
+around the world.</span></div>
+
+
+
+<div style="margin: 0in 0in 0pt;"><span lang="EN-IN" style='font-size:12.0pt;mso-fareast-font-family:&#10;"Times New Roman";mso-ansi-language:EN-IN'><br>
+
+We specialize in:-<br>
+
+<br>
+
+1. iOS App Development &amp; Android App Development.<br>
+
+2. GPS/Location based Applications.<br>
+
+3. Mobile App layout and UX design.<br>
+
+4. Mobile Web Development, Mobile App Testing.<br>
+
+5. Mobile Software Development.<br>
+
+6. Custom App Development.<br>
+
+7. Website Design &amp; Development, Mobile Responsive, E-Commerce Websites,
+Custom Programming, etc.<br>
+
+<br>
+
+If you are interested then please reply back to this email today and let me
+send you link to our portfolio and vast gallery of our many happy customers.
+Also, if you send me your detailed project specifications I will be more than
+happy to provide you with a flat rate price.<br>
+
+<br>
+
+I appreciate your time and consideration.<br>
+
+<br>
+
+Best Regards,</span></div>
+
+
+
+<div style="margin: 0in 0in 0pt;"><span style='font-family:"Helvetica Neue","serif";&#10;color:black'><font size="3">Lusi Fox</font></span><span lang="EN-IN" style='font-size:12.0pt;&#10;mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-IN'><br>
+
+Business Consultant</span></div>
+
+
+
+<div style="margin: 0in 0in 10pt;"><font face="Calibri" size="3">&nbsp;</font></div>
+
+
+</div>
+
+------=_Part_3112965_1199792603.1562675946225--

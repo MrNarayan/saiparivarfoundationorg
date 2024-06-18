@@ -1,0 +1,27 @@
+
+; <<>> DiG 9.8.2rc1-RedHat-9.8.2-0.23.rc1.el6_5.1 <<>> @192.185.5.14 saiparivarfoundation.org TXT
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 4710
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 2, ADDITIONAL: 2
+
+;; QUESTION SECTION:
+;saiparivarfoundation.org.	IN	TXT
+
+;; ANSWER SECTION:
+saiparivarfoundation.org. 14400	IN	TXT	"v=spf1 a mx include:websitewelcome.com ~all"
+
+;; AUTHORITY SECTION:
+saiparivarfoundation.org. 86400	IN	NS	ns8036.hostgator.com.
+saiparivarfoundation.org. 86400	IN	NS	ns8035.hostgator.com.
+
+;; ADDITIONAL SECTION:
+ns8035.hostgator.com.	14400	IN	A	192.185.5.14
+ns8036.hostgator.com.	14400	IN	A	192.185.5.131
+
+;; Query time: 0 msec
+;; SERVER: 192.185.5.14#53(192.185.5.14)
+;; WHEN: Sat Nov  8 14:53:18 2014
+;; MSG SIZE  rcvd: 185
+

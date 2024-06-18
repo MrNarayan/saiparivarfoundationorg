@@ -1,0 +1,74 @@
+Return-Path: <alinadavid3388@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id WJJZG/+eeWNuAgAAUq51WA
+	(envelope-from <alinadavid3388@gmail.com>)
+	for <info@saiparivarfoundation.org>; Sat, 19 Nov 2022 21:29:03 -0600
+Return-path: <alinadavid3388@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Sat, 19 Nov 2022 21:29:03 -0600
+Received: from mail-yb1-f171.google.com ([209.85.219.171]:39907)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <alinadavid3388@gmail.com>)
+	id 1owb0x-0002N9-Bz
+	for info@saiparivarfoundation.org;
+	Sat, 19 Nov 2022 21:29:03 -0600
+Received: by mail-yb1-f171.google.com with SMTP id y83so1937594yby.6
+        for <info@saiparivarfoundation.org>; Sat, 19 Nov 2022 19:28:58 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=XwDvjsbEtOuyW/0KgersT61LuHfGnAfb6i1Dbyk4Vo0=;
+        b=SLBdFxbbz4p0jir8uxirJ87SbAu8D+2L73KStvg52k3ATcogKIDzSeG90CSuI1acRk
+         Cr8FT5zDM5Fnu0qab2rqeL6JZZIcGyjOfEaDNyjjFFOjDCw6sNzRI+lRndpZro4N/iAM
+         ctva8CD+FrwiCPHgNmm8OqNN/5ClIKrmC6G1oXCfqd7i9kPB6piFCh6kO7gTsXEMDTYq
+         NWh4vkoxBrwrw4uLYC4H+pqwyltRZhP1z8/nsVOce+sCn2jeOFvQ169pi5wwGyQEhbMP
+         LaYdxouvsMwv+0a2F37hpMQpU/LAouy2/5AXq2yW0GTPPAyro0ArW/CJBmwxuzeREDj7
+         h78w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=XwDvjsbEtOuyW/0KgersT61LuHfGnAfb6i1Dbyk4Vo0=;
+        b=ysuY/WXuDjW5GBKPIbYS0j9MJLmF67OGTbG0UQTnunc/O8Zm8nQ2Dcy6W0VRFOcu1r
+         SAvE1n2zg5tR0O402+Nhj3yNN1qbnwVsmgIWj6Ip3tPAPnjQbbjKD9V3hrtXxBAFUHNf
+         lZ+ZvflIF1RhxxqL3EXfUVmTKPDuIVfNofOC/Zio+FwBCWBVWlOKeS/b4CeA1yxuk5IP
+         9VR4OiY0RoVwCckpJj8ntpKXf3jlfAhJYJptoLR0biPP20N5FP7J+UI6Gz+SiYbZ/Z39
+         nFOT6LH0tBhy3wpioxh5Jc1Zlda+wlGjBmRFnnQ1/2OSY8QoRtKFxNtG0YQztM00Nrdi
+         wKaw==
+X-Gm-Message-State: ANoB5pmhBND+2MvHfOx6CB+NmXbb7mb5BrTbkcCbZ+NDZLhE7hh5q6c4
+	EFtwcKV4knS6PDooswNT24xs4LdkY7w2FEWLWh0XIhzjWBvylQ==
+X-Google-Smtp-Source: AA0mqf5F+yMlpeWbtuWvtLwL+coTcpWUXZxPNZlDLCIezq/5XIJ1/+MCjzm8TdENKhHcNhy9lKwfv8Bv7lt9zAR8nhY=
+X-Received: by 2002:a25:ef4d:0:b0:6dd:ebd8:6204 with SMTP id
+ w13-20020a25ef4d000000b006ddebd86204mr1491015ybm.471.1668914932625; Sat, 19
+ Nov 2022 19:28:52 -0800 (PST)
+MIME-Version: 1.0
+From: Alina David <alinadavid3388@gmail.com>
+Date: Sun, 20 Nov 2022 08:28:40 +0500
+Message-ID: <CAFePaVVNYzmK7QPJjd-sc6isn3v3n5HJ4a7TyCSWF2Qk8ctTbA@mail.gmail.com>
+Subject: Advesting
+To: info@saiparivarfoundation.org
+Content-Type: multipart/alternative; boundary="000000000000b8348b05edde892b"
+
+--000000000000b8348b05edde892b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello, we would like to pay you to put our content on your page
+  Our brands are Nestl=C3=A9, Nike, Puma and Nissan, let me know if you hav=
+e any
+interest
+
+--000000000000b8348b05edde892b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"><div dir=3D"auto">Hello, we would like to pay you to put =
+our content on your page</div><div dir=3D"auto">=C2=A0 Our brands are Nestl=
+=C3=A9, Nike, Puma and Nissan, let me know if you have any interest</div></=
+div>
+
+--000000000000b8348b05edde892b--

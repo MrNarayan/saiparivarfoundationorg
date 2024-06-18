@@ -1,0 +1,90 @@
+Return-Path: <>
+Delivered-To: seasai10@gator4018.hostgator.com
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id eOtzBfs+KGOo5AgAUq51WA
+	(envelope-from <>)
+	for <seasai10@gator4018.hostgator.com>; Mon, 19 Sep 2022 05:05:47 -0500
+Return-path: <>
+Envelope-to: seasai10@gator4018.hostgator.com
+Delivery-date: Mon, 19 Sep 2022 05:05:47 -0500
+Received: from mailnull by gator4018.hostgator.com with local (Exim 4.95)
+	id 1oaDet-002gmu-0Z
+	for seasai10@gator4018.hostgator.com;
+	Mon, 19 Sep 2022 05:05:47 -0500
+X-Failed-Recipients: neelmahapatro@hotmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4018.hostgator.com>
+To: seasai10@gator4018.hostgator.com
+References: <E1oYZbY-0014xp-IZ@gator4018.hostgator.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1663581947-eximdsn-1093223470
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1oaDet-002gmu-0Z@gator4018.hostgator.com>
+Date: Mon, 19 Sep 2022 05:05:47 -0500
+
+--1663581947-eximdsn-1093223470
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  neelmahapatro@hotmail.com
+    (ultimately generated from info@saiparivarfoundation.org)
+    host 34.223.136.48 [34.223.136.48]
+    SMTP error from remote mail server after end of data:
+    421 aDeqoGJhKZ4ClaDeroC6VQ - <seasai10@gator4018.hostgator.com> sender rejected AUP#DNS:
+    retry timeout exceeded
+
+--1663581947-eximdsn-1093223470
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4018.hostgator.com
+
+Action: failed
+Final-Recipient: rfc822;info@saiparivarfoundation.org
+Status: 5.0.0
+Remote-MTA: dns; 34.223.136.48
+Diagnostic-Code: smtp; 421 aDeqoGJhKZ4ClaDeroC6VQ - <seasai10@gator4018.hostgator.com> sender rejected AUP#DNS: retry timeout exceeded
+
+--1663581947-eximdsn-1093223470
+Content-type: message/rfc822
+
+Return-path: <seasai10@gator4018.hostgator.com>
+Received: from seasai10 by gator4018.hostgator.com with local (Exim 4.95)
+	(envelope-from <seasai10@gator4018.hostgator.com>)
+	id 1oYZbY-0014xp-IZ
+	for info@saiparivarfoundation.org;
+	Wed, 14 Sep 2022 16:07:32 -0500
+To: info@saiparivarfoundation.org
+Subject: Arati Registration
+X-PHP-Script: saiparivarfoundation.org/mail.php for 156.146.63.147
+X-PHP-Originating-Script: 33308:mail.php
+From: mymail@mymails.cmo
+Message-Id: <E1oYZbY-0014xp-IZ@gator4018.hostgator.com>
+Date: Wed, 14 Sep 2022 16:07:32 -0500
+
+ Hello Administrator, 
+ 
+ You got a new message from SaiParivarFoundation! 
+ 
+
+ From: Gerardobog 
+ Phone: 89548191138 
+ Month: 4 
+ Message: The other day there was a very interesting leak from one of the Wall Street insiders. 
+He mistakenly sent a letter to the wrong person and that person managed to copy this information. 
+The letter spoke about the future of cryptocurrency and the fact that soon each person will be able to earn on cryptocurrency from $1,500 per day. 
+https://telegra.ph/Leak-from-Wall-Street-or-passive-income-from-1500-per-day-09-11 
+He was extremely concerned about this, since already now there is a trading robot that makes ordinary people millionaires around the world every day. 
+It is enough for a person to register on the site, make a deposit of at least $250 once, launch the trading robot and do nothing else (here is this trading robot). 
+https://telegra.ph/Leak-from-Wall-Street-or-passive-income-from-1500-per-day-09-11 
+And only to receive passive income from $1500 per day. 
+In the same letter, a Wall Street insider asked his man to denigrate the reputation of this trading robot that makes ordinary people millionaires. 
+The site of this trading robot has already announced a limited set of new users due to the negative advertising campaign of bad people from Wall Street who do not want us ordinary people to be rich and lack nothing. 
+Get on this train. Perhaps this is the only chance in your life to get rich and not need anything. 
+https://telegra.ph/Leak-from-Wall-Street-or-passive-income-from-1500-per-day-09-11
+
+--1663581947-eximdsn-1093223470--

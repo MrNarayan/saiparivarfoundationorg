@@ -1,0 +1,117 @@
+Return-Path: <BaronWei@yun-d.cn>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP id 2DAZOIMZuFxDUQ8AUq51WA
+	for <info@saiparivarfoundation.org>; Thu, 18 Apr 2019 01:30:27 -0500
+Return-path: <BaronWei@yun-d.cn>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Thu, 18 Apr 2019 01:30:28 -0500
+Received: from smtp5x01.east.net ([211.100.47.39]:57976)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.91)
+	(envelope-from <BaronWei@yun-d.cn>)
+	id 1hH0Z1-0008uE-KE
+	for info@saiparivarfoundation.org; Thu, 18 Apr 2019 01:30:27 -0500
+Received: from baronweipc (unknown [60.168.71.164])
+	by smtp5x01.east.net (Postfix) with ESMTPA id 97AC31200A3
+	for <info@saiparivarfoundation.org>; Thu, 18 Apr 2019 14:29:00 +0800 (CST)
+From: "Baron Wei"<BaronWei@yun-d.cn>
+To: info@saiparivarfoundation.org
+Subject: "saiparivarfoundation"
+Date: Thu, 18 Apr 2019 14:30:13 +0800
+Message-Id: <DM__190417195332_78620188423@smtp.yun-d.cn>
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_NextPart_19041719552157907402706_001"
+X-Priority: 1
+X-Mailer: DreamMail 4.6.9.2
+X-FangMail-Miltered: at emailwg with ID 5CB819B4.00A by FangMail milter!
+X-FangMail-Envelope: 1555569076/97AC31200A3/5CB819B4.00A/60.168.71.164/[60.168.71.164]/baronweipc/<BaronWei@yun-d.cn>
+X-FangMail-Bounce-Flag: 1555569076.5CB819B4.00A
+X-FangMail-Outinfo: 1555569076/5CB819B4.00A/97AC31200A3/baronwei@yun-d.cn/1
+
+------=_NextPart_19041719552157907402706_001
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_19041719552157907402706_002"
+
+
+------=_NextPart_19041719552157907402706_002
+Content-Type: text/plain; 
+	charset="GB2312"
+Content-Transfer-Encoding: base64
+
+RGVhciBTaXIvTWFkYW0sDQpXZSBhcmUgYSBkb21haW4gcmVnaXN0cmFyLiBXZSByZWNlaXZlZCBh
+cHBsaWNhdGlvbiByZXF1ZXN0IGZyb20gV251aW9uIEludGVybmF0aW9uYWwgTHRkLCB0aGV5IGFw
+cGx5IHRvIHJlZ2lzdGVyIHNhaXBhcml2YXJmb3VuZGF0aW9uIGFzIHRoZWlyIGJyYW5kIGFuZCB0
+b3AtbGV2ZWwgZG9tYWluIG5hbWVzLiB3ZSBmb3VuZCB0aGUgbWFpbiBib2R5IG9mIHRob3NlIGRv
+bWFpbiBuYW1lcyBpcyBzYW1lIGFzIHlvdXIgY29tcGFueSBuYW1lLiBJIGNvbmZpcm0gd2l0aCB5
+b3VyIGNvbXBhbnkgYWJvdXQgdGhlIHJlbGF0aW9uc2hpcCBiZXR3ZWVuIHlvdSB0d28gY29tcGFu
+aWVzLiBQbGVhc2UgbGV0IG1lIGtub3cgd2hldGhlciBvciBub3QgeW91IGF1dGhvcml6ZSB0aGVt
+IHRvIHJlZ2lzdGVyIHRob3NlIGRvbWFpbiBuYW1lcy4NClJpZ2h0IG5vdywgd2UgZG9uJ3QgcGFz
+cyB0aGVpciByZWdpc3RyYXRpb24gcmVxdWVzdC4gV2UgYXJlIGNvbmZpcm1pbmcgaXQgd2hldGhl
+ciBvciBub3QgeW91IGF1dGhvcml6ZSB0aGVtIHRvIHJlZ2lzdGVyIHRob3NlIGRvbWFpbiBuYW1l
+cy4uIGxvb2tpbmcgZm9yd2FyZCB0byB5b3VyIHJlcGx5LCB0aGFua3MuDQpCZXN0IFJlZ2FyZHMg
+DQoNCkJhcm9uIFdlaQ0KDQpUZWw6MDA4Ni01NTEgNjM0IDkxMSA5Mw0KRmF4OjAwODYtNTUxIDYz
+NCA5MTEgOTINCkFkZHJlc3M6Tm8uMjIwLFRpYW4gSGVuZyBCdWlsZGluZyxmYW5odSBSb2FkLEhl
+ZmVpIENoaW5hDQo=
+
+------=_NextPart_19041719552157907402706_002
+Content-Type: text/html; 
+	charset="GB2312"
+Content-Transfer-Encoding: base64
+
+PEhUTUw+PEhFQUQ+PFRJVExFPk1haWw8L1RJVExFPg0KPE1FVEEgbmFtZT1HRU5FUkFUT1IgDQpj
+b250ZW50PSJLc0RIVE1MRURMaWIub2N4LCBGcmVlV2FyZSBIVE1MIEVkaXRvciAxLjE2NC4yLCA/
+S3VydCBTZW5mZXIiPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PUdCMjMxMiIg
+aHR0cC1lcXVpdj1Db250ZW50LVR5cGU+PC9IRUFEPg0KPEJPRFkgc3R5bGU9IkZPTlQtU0laRTog
+MTJwdDsgRk9OVC1GQU1JTFk6IENhbGlicmkiIGxlZnRNYXJnaW49NSB0b3BNYXJnaW49NSANCiNm
+ZmZmZmY+DQo8UD5EZWFyIFNpci9NYWRhbSw8L1A+DQo8UD5XZSBhcmUgYSBkb21haW4gcmVnaXN0
+cmFyLiBXZSByZWNlaXZlZCBhcHBsaWNhdGlvbiByZXF1ZXN0IGZyb20gV251aW9uIA0KSW50ZXJu
+YXRpb25hbCBMdGQsIHRoZXkgYXBwbHkgdG8gcmVnaXN0ZXIgc2FpcGFyaXZhcmZvdW5kYXRpb24g
+YXMgdGhlaXIgYnJhbmQgDQphbmQgdG9wLWxldmVsIGRvbWFpbiBuYW1lcy4gd2UgZm91bmQgdGhl
+IG1haW4gYm9keSBvZiB0aG9zZSBkb21haW4gbmFtZXMgaXMgc2FtZSANCmFzIHlvdXIgY29tcGFu
+eSBuYW1lLiBJIGNvbmZpcm0gd2l0aCB5b3VyIGNvbXBhbnkgYWJvdXQgdGhlIHJlbGF0aW9uc2hp
+cCBiZXR3ZWVuIA0KeW91IHR3byBjb21wYW5pZXMuIFBsZWFzZSBsZXQgbWUga25vdyB3aGV0aGVy
+IG9yIG5vdCB5b3UgYXV0aG9yaXplIHRoZW0gdG8gDQpyZWdpc3RlciB0aG9zZSBkb21haW4gbmFt
+ZXMuPC9QPg0KPFA+UmlnaHQgbm93LCB3ZSBkb24ndCBwYXNzIHRoZWlyIHJlZ2lzdHJhdGlvbiBy
+ZXF1ZXN0LiBXZSBhcmUgY29uZmlybWluZyBpdCANCndoZXRoZXIgb3Igbm90IHlvdSBhdXRob3Jp
+emUgdGhlbSB0byByZWdpc3RlciB0aG9zZSBkb21haW4gbmFtZXMuLiBsb29raW5nIA0KZm9yd2Fy
+ZCB0byB5b3VyIHJlcGx5LCB0aGFua3MuPC9QPg0KPERJVj4NCjxESVY+DQo8RElWPjxGT05UIGZh
+Y2U9Q2FsaWJyaT4NCjxESVY+DQo8RElWPg0KPERJVj5CZXN0IFJlZ2FyZHMgPC9ESVY+DQo8RElW
+PiZuYnNwOzwvRElWPg0KPERJVj5CYXJvbiBXZWk8L0RJVj4NCjxESVY+Jm5ic3A7PC9ESVY+DQo8
+RElWPg0KPERJVj4NCjxESVY+VGVsOjAwODYtNTUxIDYzNCA5MTEgOTM8QlI+RmF4OjAwODYtNTUx
+IDYzNCA5MTEgOTI8QlI+QWRkcmVzczpOby4yMjAsVGlhbiANCkhlbmcgQnVpbGRpbmcsZmFuaHUg
+Um9hZCxIZWZlaSBDaGluYTwvRElWPg0KPERJVj48SU1HIGJvcmRlcj0wIGhzcGFjZT0wIGFsdD0i
+IiBzcmM9ImNpZDpBdHRyXzU1MjE1NzkyNDA2IiANCmFsaWduPWJhc2VsaW5lPjwvRElWPjwvRElW
+PjwvRElWPjwvRk9OVD48Rk9OVCANCmZhY2U9Q2FsaWJyaT48L0RJVj48L0RJVj48L0RJVj48L0ZP
+TlQ+PC9ESVY+PC9ESVY+PC9CT0RZPjwvSFRNTD4NCg==
+
+------=_NextPart_19041719552157907402706_002--
+
+------=_NextPart_19041719552157907402706_001
+Content-Type: image/png; 
+	name="YUN-D.png"
+Content-Transfer-Encoding: base64
+Content-ID: <Attr_55215792406>
+
+iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAXCAYAAAD6OvZrAAADnklEQVRoge1aMXLqMBB9/ncxk6Gh
+EZeAoaGjFicgJ0j5CzhBaD8dDWNfIm7SMAw+jL5k2bIkywYTbDMTvRkn8XqlXa2ed1eeBIwDHh49
+48/QDnj8TnjieQwCTzyPQdAD8VLspgHWcfeWPH6AeI0gWKOvbVLES3dTp+F4HSCY7jh9HPLO2SRJ
+270dj76hiBcuViD4xsVgWIzjnv9KDjg55HQ568lNzXIvhPfoGmWpDRdYkQQHnWHphVORgNTIx2HX
+7oXYfDGwz/4J7tEttB4vxNtEJLeTKqvp6YCEfuDfiiA5l8TL5GSFhSJeXhKD4nL1CjHW6vkUOz2D
+Zv2FNl4r7WWGkzbmIgPv51JPZb5m+9kcuSxrKYzWQfo11R3K+51dR7r3tDOln44e2ZineN4QXxfS
+Haa6/uWGvh1jK/at7TMdEWW8gLIou7myLQEj26slF7e5XNMDjdQ01y1hIFt21Z+DsGJI9ryY77pl
+RHtmQ9jS57bvb9vPx9TZ42sjVFwOG13pVhdpxMeIff63McyxT/r4zI62/irsmEWMAsYeN+tLG/L2
+EfuMmcTLHZATir+LyerkrIY4uo4jcJX5dCJbHt0i3k37NvRNlSSlkdA3N1IP6vN1m30y13Qf8eqf
+u8w5YtY0pjE5PGCfw/qcMsOSs2B/5Gk0PmKvyqmUf4uTh5Bjgjejv0vwPtJL3ZzrJDjfSre5zU8W
+YfI+uj9NV9DGfoiFah1SnA4TLGdifXscs1p8wiGhkOemrnRrfMrbnGor8zjk14oyNrJrOfPo2HvY
+NElL/TtQ+Y4XjolgGOLLNzB5Q6jJRWAyOV3CjB8BfxtE9jSu2jNBdjjRIciXj4smnERtydfOfnaC
+3x95j5TijHG2xhl/s8QLJ/vacn1d6VZ82nyAJu/4GwvSJqAfGzxjn8PNVzUm4djxBaNpkpb698Cd
+VkXNttJnndxR/12puLbHc9q3+gW71Br9wy37Vo+njaG8B1PjhF1CGa2Uwy50c5+tPkj6We21zBjY
+/dgjpc5qb9TeWn2j3ac39HhtS22VeA6imHLXhMUz/dIXweeKSuLCasLNceYi3D1drqvkTfZdxCvI
+7yCDY33P13UTT8Wi8hIVZMvnyWLwE+IxM441c5r+6T5UY9/WfiB+PDGBevwE4hPH6IDV9Qubzr+R
+Dgv/TwIvhGceKl4dnngvA3moIKvFUw4Vrw5faj0Ggc94HoPAE89jEHjieQwCTzyPQfAfRB3qtXbS
+ZBIAAAAASUVORK5CYII=
+
+------=_NextPart_19041719552157907402706_001--
+

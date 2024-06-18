@@ -1,0 +1,79 @@
+Return-Path: <>
+Delivered-To: seasai10@gator4018.hostgator.com
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id qMmlLhrg2WJbIAkAUq51WA
+	(envelope-from <>)
+	for <seasai10@gator4018.hostgator.com>; Thu, 21 Jul 2022 18:24:10 -0500
+Return-path: <>
+Envelope-to: seasai10@gator4018.hostgator.com
+Delivery-date: Thu, 21 Jul 2022 18:24:10 -0500
+Received: from mailnull by gator4018.hostgator.com with local (Exim 4.95)
+	id 1oEfWc-002Wni-Nt
+	for seasai10@gator4018.hostgator.com;
+	Thu, 21 Jul 2022 18:24:10 -0500
+X-Failed-Recipients: neelmahapatro@hotmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4018.hostgator.com>
+To: seasai10@gator4018.hostgator.com
+References: <E1oD5Rc-002LOi-F2@gator4018.hostgator.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1658445850-eximdsn-2132979703
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1oEfWc-002Wni-Nt@gator4018.hostgator.com>
+Date: Thu, 21 Jul 2022 18:24:10 -0500
+
+--1658445850-eximdsn-2132979703
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  neelmahapatro@hotmail.com
+    (ultimately generated from info@saiparivarfoundation.org)
+    host 34.223.136.48 [34.223.136.48]
+    SMTP error from remote mail server after end of data:
+    421 46.161.11.222 is listed on Cloudmark CSI-Global. Please visit:// https AUP#BL:
+    retry timeout exceeded
+
+--1658445850-eximdsn-2132979703
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4018.hostgator.com
+
+Action: failed
+Final-Recipient: rfc822;info@saiparivarfoundation.org
+Status: 5.0.0
+Remote-MTA: dns; 34.223.136.48
+Diagnostic-Code: smtp; 421 46.161.11.222 is listed on Cloudmark CSI-Global. Please visit:// https AUP#BL: retry timeout exceeded
+
+--1658445850-eximdsn-2132979703
+Content-type: message/rfc822
+
+Return-path: <seasai10@gator4018.hostgator.com>
+Received: from seasai10 by gator4018.hostgator.com with local (Exim 4.95)
+	(envelope-from <seasai10@gator4018.hostgator.com>)
+	id 1oD5Rc-002LOi-F2
+	for info@saiparivarfoundation.org;
+	Sun, 17 Jul 2022 09:40:28 -0500
+To: info@saiparivarfoundation.org
+Subject: Arati Registration
+X-PHP-Script: saiparivarfoundation.org/mail.php for 46.161.11.222
+X-PHP-Originating-Script: 33308:mail.php
+From: sdlk_brn@yahoo.com
+Message-Id: <E1oD5Rc-002LOi-F2@gator4018.hostgator.com>
+Date: Sun, 17 Jul 2022 09:40:28 -0500
+
+ Hello Administrator, 
+ 
+ You got a new message from SaiParivarFoundation! 
+ 
+
+ From: Crytochula 
+ Phone: 89037590544 
+ Month: 6 
+ Message: Robot is the best way for everyone who looks for financial independence. https://log.elletvweb.it/gotodate/go
+
+--1658445850-eximdsn-2132979703--

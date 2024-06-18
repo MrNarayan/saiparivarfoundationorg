@@ -1,0 +1,493 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP id UOvII983SFtGWQ0AUq51WA
+	for <info@saiparivarfoundation.org>; Fri, 13 Jul 2018 00:25:51 -0500
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Fri, 13 Jul 2018 00:25:51 -0500
+Received: from mail-pl0-f52.google.com ([209.85.160.52]:46992)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1fdqaV-003hGB-9m
+	for info@saiparivarfoundation.org; Fri, 13 Jul 2018 00:25:51 -0500
+Received: by mail-pl0-f52.google.com with SMTP id 30-v6so11666780pld.13
+        for <info@saiparivarfoundation.org>; Thu, 12 Jul 2018 22:25:46 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:dkim-signature:from
+         :reply-to:to:date:message-id:subject:mime-version;
+        bh=JHKZfUqNj5JIGQHnstrrfgdxHAi9P8fOJSW0q/QI1t4=;
+        b=k28jOcZWUjgsnmGNOmXEIdYphrReYrryDoC+Ce24HJmH9wVVDQw5kXq4gfiCSAo/+n
+         wmzIfZQchDP5sFH5yG5kPxzpFR6vI4616b/rn0KL30D1TcQzxtfLKgOSet0mEiI35GeC
+         1ItR6WpCsmOWhi2rlriNLOE8mhTj86au9/5X8hAJFkQdQxY12YNveVm1hBPzPmN6YkH3
+         7K1FMHdBqgUQAIwwIudxScS4JW1zXyqvsEaM9qllOCbuxKWWQ4gaj01wXKlqq1u6Ax73
+         ec9zG7N6niWXK2MZKpBKiYBik6hH6ufWMSZHlufd+dHNqfDGN6xpIS2EGZd6PrZB3zZY
+         glTg==
+X-Gm-Message-State: AOUpUlFZeblXFzmNSelXnBXOWO/CMi9/gbNajrmTUi7NtShmteG7xtg2
+	xAeFS3+Q5RA9Fd68W1EVPnida1bh8c/pFuQzsGvC8GawpfEJp2M=
+X-Received: by 2002:a17:902:be0d:: with SMTP id r13-v6mr4882200pls.299.1531459540281;
+        Thu, 12 Jul 2018 22:25:40 -0700 (PDT)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a17:90a:f08:0:0:0:0 with SMTP id 8-v6csp320962pjy;
+        Thu, 12 Jul 2018 22:25:39 -0700 (PDT)
+X-Google-Smtp-Source: AAOMgpdeH7ZOgKhvuyl6Yc7sJCVT3wU/vk78oq6G3GhUrH7B5r9DQ9VBIDS48f5wIioW5Sf0i0jC
+X-Received: by 2002:a25:af04:: with SMTP id a4-v6mr2751687ybh.336.1531459539039;
+        Thu, 12 Jul 2018 22:25:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1531459539; cv=none;
+        d=google.com; s=arc-20160816;
+        b=qnE8HgCd9bUIGy+K7/i39Lo38+hE+g1CmvQ9hB9Ik2Cp/W3V6kZcHyhctlKJkU+kd5
+         xoQJKE5p0Hk8CivbchxbOavU5oDwT6EUpU6HUylAqQDtbXaj76PsDUbSa0S2OAIPhDml
+         xrDCet+nfcM2VcZ3Zbkf4CkDZUhB7z/mr7RGlxpf06bInVQ4FCkLWsJ+8x6aW1GqzLxH
+         04vjqnhKASzCHwnhccqI5YN4Evhn2MZ/2d91u9mN/9pDk6QOBNXyB/aaMNZzpHSVB8V+
+         KRt0q6WhUBjl6VQ7aJXKc3GuBLIx+1Rey6/sGLyDZFLMUC+XtkfuToYpE3x0tofRbNEL
+         7L0A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:message-id:date:to:reply-to:from
+         :dkim-signature:dkim-signature:arc-authentication-results;
+        bh=JHKZfUqNj5JIGQHnstrrfgdxHAi9P8fOJSW0q/QI1t4=;
+        b=BOvrz4aWzidKfwe10Fi85QscoEvPOsNsIpa/3fxtxIpaTwQH3AQv7jT1keElrBVIqJ
+         W/3IuhgqH6wh5VTRsXyx9M2DUMGZhSh6+bvzxHQtsrQyCKHYzeWSTm+clULydGfmg0yo
+         NDqkN/G2pVRMJwOVEAF0CVT5/XWdVMTcOikOmnme9E/U4ky3KWf6ERN1dlESE7woT59U
+         4HSqbj2ksqPtW44oMlWqj5kfWAp1E9UGEemEDcCUl6f3VHDoljXKA6n/jp5H2JKtS8LY
+         JpzP2BPPrP5EiShS6cctyDe4OOMTnm7oEmFzTwxHNKLmuKjUL1E4wViCdfL6L5mNd/dO
+         rWjw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mailchimp.com header.s=k1 header.b="c/iVdXRE";
+       dkim=pass header.i=@gmail.mctxapp.net header.s=k1 header.b=bT0t7Wa7;
+       spf=pass (google.com: domain of bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net designates 198.2.140.10 as permitted sender) smtp.mailfrom="bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=mailchimp.com
+Received: from mail10.atl161.mctxapp.net (mail10.atl161.mctxapp.net. [198.2.140.10])
+        by mx.google.com with ESMTPS id n3-v6si1983807ywf.71.2018.07.12.22.25.38
+        for <saiparivarfoundation@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 12 Jul 2018 22:25:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net designates 198.2.140.10 as permitted sender) client-ip=198.2.140.10;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mailchimp.com header.s=k1 header.b="c/iVdXRE";
+       dkim=pass header.i=@gmail.mctxapp.net header.s=k1 header.b=bT0t7Wa7;
+       spf=pass (google.com: domain of bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net designates 198.2.140.10 as permitted sender) smtp.mailfrom="bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=mailchimp.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=mailchimp.com;
+ h=From:Reply-To:To:Date:Message-ID:Subject:MIME-Version:Content-Type;
+ i=confirm@mailchimp.com;
+ bh=JHKZfUqNj5JIGQHnstrrfgdxHAi9P8fOJSW0q/QI1t4=;
+ b=c/iVdXRE88BK/TwiNMeoma9i8S2vpLiZhTYNwdbyFrN47rnNbn6sGKHKsotl5sy6C19rivT4Uxhe
+   cPAnp9ygiRnviX4uqxy59xvqJc/qUNA0wPiUGMbJ1G3xX9ljkkrBXmHHDzFTYbQ8GO7Z+ZFlyivK
+   E61tYv8xYYndUvv5Bpg=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=gmail.mctxapp.net;
+ h=From:Reply-To:To:Date:Message-ID:Subject:MIME-Version:Content-Type;
+ bh=JHKZfUqNj5JIGQHnstrrfgdxHAi9P8fOJSW0q/QI1t4=;
+ b=bT0t7Wa72NPO0eCWhKoWugswxjj1Xon+sZWDzxSVxldINVfDVBdrHCzHPZbcPyGT1NWpHUrnv5Jl
+   YJPT6OoN7PnpGj99LL/9FQgt962Vj0XCT43s2tSXWLKh8SSXry0ybsjDwUFEum02X8gKVBW8Samb
+   USSnD7buibY9itckhqQ=
+Received: by mail10.atl161.mctxapp.net id h90rt42ddl49 for <saiparivarfoundation@gmail.com>; Fri, 13 Jul 2018 05:25:20 +0000 (envelope-from <bounce-69289545-0-saiparivarfoundation=gmail.com@mail10.atl161.mctxapp.net>)
+From: =?utf-8?Q?MailChimp=20Support?= <confirm@mailchimp.com> 
+Reply-To: =?utf-8?Q?MailChimp=20Support?= <confirm@mailchimp.com> 
+To:  <saiparivarfoundation@gmail.com> 
+Date: Fri, 13 Jul 2018 05:25:20 +0000 
+Message-ID: <88028fd5911e23c28ce0a83232cf9fd315e.20180713052520@mail10.atl161.mctxapp.net> 
+X-Mailer: MailChimp Mailer - **CID02cf9fd315e** 
+X-Campaign: mailchimp88028fd5911e23c28ce0a8323.0 
+X-campaignid: mailchimp88028fd5911e23c28ce0a8323.0 
+X-Report-Abuse: Please report abuse for this campaign here: http://www.mailchimp.com/abuse/abuse.phtml?u=88028fd5911e23c28ce0a8323&id=0&e=2cf9fd315e 
+X-MC-User: 88028fd5911e23c28ce0a8323 
+X-Feedback-ID: 69289545:69289545.0:us15:mc 
+X-Auto-Response-Suppress: OOF, AutoReply 
+X-Accounttype: ff 
+Subject: Daily List Status Update from MailChimp for: Shirdi Sai Dham 
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1580389771"
+
+
+--_----------=_MCPart_1580389771
+Content-Type: text/plain; charset="us-ascii"
+
+Here's a quick overview of your list.
+
+-------------------- 
+
+List Name: Shirdi Sai Dham
+
+New Subscribers: 0
+
+Unsubscribed: 1
+
+Total Subscribers: 558
+
+-------------------- 
+
+
+
+
+Here's who unsubscribed:
+
+ anugu.mounikar@gmail.com [https://us15.admin.mailchimp.com/lists/members/view?id=78115003]
+
+-------------------- 
+View Unsubscribes: https://us15.admin.mailchimp.com/lists/members/unsubscribed?id=14839#p:1-s:25-sc:22-sn:unsub_time
+-------------------- 
+
+
+---------------------------------------- 
+http://www.mailchimp.com
+675 Ponce De Leon Ave NE Suite 5000 Atlanta, GA 30308 USA
+
+Contact Us [http://www.mailchimp.com/contact/]
+Terms of Use [http://mailchimp.com/legal/terms/]
+Privacy Policy [http://mailchimp.com/legal/privacy/]
+Log In to MailChimp [https://login.mailchimp.com]
+--_----------=_MCPart_1580389771
+Content-Type: text/html; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>=0A<html>=0A    <head>=0A        <!-- trx_0056 -->=0A   =
+     <meta charset=3D"UTF-8">=0A        <meta name=3D"viewport" content=
+=3D"width=3Ddevice-width=2C initial-scale=3D1"/>=0A        <meta http-eq=
+uiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=0A        <title>Daily Li=
+st Status Update from MailChimp for: Shirdi Sai Dham</title>=0A=0A     =
+   <!--[if!mso]><!-->=0A        <link href=3D"https://fonts.googleapis.c=
+om/css?family=3DOpen+Sans:400=2C400i=2C600=2C600i" rel=3D"stylesheet">=
+=0A        <!--<![endif]-->=0A=0A        <style type=3D"text/css">=0A  =
+          /*////// RESET STYLES //////*/=0A            p{margin:1em 0;}=
+=0A            a{word-break:break-all;}=0A            table{border-colla=
+pse:collapse;}=0A            h1=2C h2=2C h3=2C h4=2C h5=2C h6{display:bl=
+ock; margin:0; padding:0;}=0A            img=2C a img{border:0; height:a=
+uto; outline:none; text-decoration:none;}=0A            body=2C #bodyTab=
+le=2C #bodyCell{height:100%; margin:0; padding:0; width:100%;}=0A=0A   =
+         /*////// CLIENT-SPECIFIC STYLES //////*/=0A            #outlook=
+ a{padding:0;} /* Force Outlook 2007 and up to provide a "view in browse=
+r" message. */=0A            @-ms-viewport{width:device-width;} /* Force=
+ IE "snap mode" to render widths normally. */=0A            img{-ms-inte=
+rpolation-mode:bicubic;} /* Force IE to smoothly render resized images.=
+ */=0A            table{mso-table-lspace:0pt; mso-table-rspace:0pt;} /*=
+ Remove spacing between tables in Outlook Desktop. */=0A            .Rea=
+dMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Outlook.com t=
+o display emails at full width. */=0A            p=2C a=2C li=2C td=2C b=
+lockquote{mso-line-height-rule:exactly;} /* Force Outlook Desktop to ren=
+der line heights as they're originally set. */=0A            a[href^=3D"=
+tel"]=2C a[href^=3D"sms"]{color:inherit; cursor:default; text-decoration=
+:none;} /* Force mobile devices to inherit declared link styles. */=0A =
+           p=2C a=2C li=2C td=2C body=2C table=2C blockquote{-ms-text-si=
+ze-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows- and=
+ Webkit-based mobile platforms from changing declared text sizes. */=0A=
+            .ExternalClass=2C .ExternalClass p=2C .ExternalClass td=2C .=
+ExternalClass p=2C .ExternalClass span=2C .ExternalClass font{line-heigh=
+t:100%;} /* Force Outlook.com to display line heights normally. */=0A  =
+          a[x-apple-data-detectors]{color:inherit !important; text-decor=
+ation:none !important; font-size:inherit !important; font-family:inherit=
+ !important; font-weight:inherit !important; line-height:inherit !import=
+ant;} /* Force iOS devices to heed link styles set in CSS. */=0A=0A    =
+        /*////// EMAIL STYLES //////*/=0A            #bodyCell{padding-t=
+op:20px !important; padding-right:10px !important; padding-bottom:20px !=
+important; padding-left:10px !important;}=0A            .emailContainer{=
+max-width:640px;}=0A            .footerContent a{color:#373737; font-wei=
+ght:normal; text-decoration:none;}=0A=0A            @media screen and (m=
+in-width:768px){=0A                .emailContainer{width:640px !importan=
+t;}=0A            }=0A=0A            @media only screen and (max-width:4=
+80px){=0A                body{width:100% !important; min-width:100% !imp=
+ortant;}=0A                #bodyCell{padding-top:10px !important; paddin=
+g-bottom:10px !important;}=0A                h1{font-size:26px !importan=
+t; line-height:28px !important;}=0A                .statBlock{width:100%=
+ !important;}=0A                .footerContent p{border-bottom:1px solid=
+ #E5E5E5; font-size:13px !important; padding-bottom:20px !important;}=0A=
+                .utilityLink{border-bottom:1px solid #E5E5E5; display:bl=
+ock; font-size:13px !important; padding-top:15px; padding-bottom:15px;}=
+=0A                .mobileHide{display:none; visibility:hidden;}=0A    =
+        }=0A        </style>=0A    </head>=0A    <body bgcolor=3D"#F2F2F=
+2">=0A        <center>=0A            <table align=3D"center" bgcolor=3D"=
+#F2F2F2" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%=
+" width=3D"100%" id=3D"bodyTable" role=3D"presentation">=0A            =
+    <tr>=0A                    <td align=3D"center" style=3D"padding:10p=
+x;" valign=3D"top" id=3D"bodyCell">=0A                        <span styl=
+e=3D"color:#F2F2F2; display:none; font-size:0px; height:0px; visibility:=
+hidden; width:0px;">Here's how "Shirdi Sai Dham" did today.</span>=0A  =
+                      <!--[if gte mso 9]>=0A                        <tab=
+le align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" sty=
+le=3D"width:640px;" width=3D"640">=0A                        <tr>=0A   =
+                     <td align=3D"center" valign=3D"top">=0A           =
+             <![endif]-->=0A                        <table align=3D"cent=
+er" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"max-width:=
+640px;" width=3D"100%" class=3D"emailContainer" role=3D"presentation">=
+=0A                            <tr>=0A                                <t=
+d align=3D"center" valign=3D"top">=0A                                  =
+  <!-- BEGIN BODY // -->=0A                                    <table al=
+ign=3D"center" bgcolor=3D"#FFFFFF" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"background-color:#FFFFFF; border-bottom:2px solid #=
+E5E5E5; border-radius:4px;" width=3D"100%" role=3D"presentation">=0A   =
+                                     <tr>=0A                           =
+                 <td align=3D"center" valign=3D"top" style=3D"padding-ri=
+ght:20px; padding-left:20px;">=0A                                      =
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation">=0A                                    =
+                <tr>=0A                                                =
+        <td align=3D"left" valign=3D"top" style=3D"padding-top:40px; pad=
+ding-bottom:30px;">=0A                                                 =
+           <a href=3D"http://www.mailchimp.com/" target=3D"_blank" title=
+=3D"MailChimp" style=3D"text-decoration:none;"><img src=3D"http://cdn-im=
+ages.mailchimp.com/template_images/logo_newscript_dark.png" alt=3D"MailC=
+himp" width=3D"150" class=3D"logoImage" style=3D"border:0; color:#000000=
+; font-family:'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C s=
+ans-serif; font-size:24px; font-weight:bold; height:auto !important; let=
+ter-spacing:-2px; line-height:115%; text-align:center; line-height:100%;=
+ outline:none; text-decoration:none;" /></a>=0A                        =
+                                </td>=0A                               =
+                     </tr>=0A                                          =
+      </table>=0A                                            </td>=0A  =
+                                      </tr>=0A                         =
+               <tr>=0A                                            <td st=
+yle=3D"border-bottom:2px solid #F2F2F2; padding-right:20px; padding-bott=
+om:30px; padding-left:20px;" valign=3D"top">=0A                        =
+                        <h1 style=3D"color:#606060; font-family:'Open Sa=
+ns'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif; font-size:2=
+8px; font-style:normal; font-weight:600; line-height:36px; letter-spacin=
+g:normal; margin:0; padding:0; text-align:left;">Here&rsquo;s a quick ov=
+erview of your list.</h1>=0A                                           =
+ </td>=0A                                        </tr>=0A              =
+                          <tr>=0A                                      =
+      <td align=3D"center" valign=3D"top" style=3D"border-bottom:2px sol=
+id #F2F2F2; padding-top:30px; padding-right:20px; padding-bottom:30px; p=
+adding-left:20px;">=0A                                                <t=
+able border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" rol=
+e=3D"presentation">=0A                                                 =
+   <tr>=0A                                                        <td st=
+yle=3D"padding-right:20px; padding-bottom:20px; padding-left:20px;" vali=
+gn=3D"top">=0A                                                         =
+   <h2 style=3D"color:#606060; font-family:'Open Sans'=2C 'Helvetica Neu=
+e'=2C Helvetica=2C Arial=2C sans-serif; font-size:22px; font-weight:400;=
+ line-height:32px; padding-top:0; margin-top:0; text-align:center;">Shir=
+di Sai Dham</h2>=0A                                                    =
+    </td>=0A                                                    </tr>=0A=
+                                                    <tr>=0A            =
+                                            <td align=3D"center" style=
+=3D"padding-top:0;" valign=3D"top">=0A                                 =
+                           <table align=3D"center" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%" role=3D"presentation">=0A                =
+                                                <tr>=0A                =
+                                                    <td align=3D"center"=
+ valign=3D"bottom">=0A                                                 =
+                       <!--[if (gte mso 9)]>=0A                        =
+                                                <table width=3D"100%">=
+=0A                                                                    =
+    <tr>=0A                                                            =
+            <td width=3D"200" valign=3D"top">=0A                       =
+                                                 <![endif]-->=0A       =
+                                                                 <div st=
+yle=3D"display:inline-block; padding:0; margin:0; text-align:center; wid=
+th:196px;" class=3D"statBlock">=0A                                     =
+                                       <table align=3D"left" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentatio=
+n">=0A                                                                 =
+               <tr>=0A                                                 =
+                                   <td style=3D"padding:15px; text-align=
+:center;">=0A                                                          =
+                              <a href=3D"https://us15.admin.mailchimp.co=
+m/lists/members?id=3D14839#p:1-s:25-sc:22-sn:optin_time" target=3D"_blan=
+k" style=3D"color:#237A91; font-family:'Open Sans'=2C 'Helvetica Neue'=
+=2C Helvetica=2C Arial=2C sans-serif; font-size:22px; font-weight:400; l=
+ine-height:32px; text-align:center; text-decoration:none;">0</a>=0A    =
+                                                                       =
+             <p style=3D"color:#606060; font-family:'Open Sans'=2C 'Helv=
+etica Neue'=2C Helvetica=2C Arial=2C sans-serif; font-size:16px; font-we=
+ight:400; line-height:24px; padding:0; margin:0; text-align:center;">Sub=
+scribed</p>=0A                                                         =
+                           </td>=0A                                    =
+                                            </tr>=0A                   =
+                                                         </table>=0A   =
+                                                                     </d=
+iv>=0A                                                                 =
+       <!--[if (gte mso 9)]>=0A                                        =
+                                </td>=0A                               =
+                                         <td width=3D"200" valign=3D"top=
+">=0A                                                                  =
+      <![endif]-->=0A                                                  =
+                      <div style=3D"display:inline-block; padding:0; mar=
+gin:0; text-align:center; width:196px;" class=3D"statBlock">=0A        =
+                                                                    <tab=
+le align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation">=0A                                    =
+                                            <tr>=0A                    =
+                                                                <td styl=
+e=3D"padding:15px; text-align:center;">=0A                             =
+                                                           <a href=3D"ht=
+tps://us15.admin.mailchimp.com/lists/members/unsubscribed?id=3D14839#p:1=
+-s:25-sc:22-sn:unsub_tim" target=3D"_blank" style=3D"color:#237A91; font=
+-family:'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif; font-size:22px; font-weight:400; line-height:32px; text-align:cente=
+r; text-decoration:none;">1</a>=0A                                     =
+                                                   <p style=3D"color:#60=
+6060; font-family:'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C sans-serif; font-size:16px; font-weight:400; line-height:24px; paddi=
+ng:0; margin:0; text-align:center;">Unsubscribed</p>=0A                =
+                                                                    </td=
+>=0A                                                                   =
+             </tr>=0A                                                  =
+                          </table>=0A                                  =
+                                      </div>=0A                        =
+                                                <!--[if (gte mso 9)]>=0A=
+                                                                       =
+ </td>=0A                                                              =
+          <td width=3D"200" valign=3D"top">=0A                         =
+                                               <![endif]-->=0A         =
+                                                               <div styl=
+e=3D"display:inline-block; padding:0; margin:0; text-align:center; width=
+:196px;" class=3D"statBlock">=0A                                       =
+                                     <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation=
+">=0A                                                                  =
+              <tr>=0A                                                  =
+                                  <td style=3D"padding:15px; text-align:=
+center;">=0A                                                           =
+                             <a href=3D"https://us15.admin.mailchimp.com=
+/lists/members?id=3D14839" target=3D"_blank" style=3D"color:#237A91; fon=
+t-family:'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-s=
+erif; font-size:22px; font-weight:400; line-height:32px; text-align:cent=
+er; text-decoration:none;">558</a>=0A                                  =
+                                                      <p style=3D"color:=
+#606060; font-family:'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Ari=
+al=2C sans-serif; font-size:16px; font-weight:400; line-height:24px; pad=
+ding:0; margin:0; text-align:center;">List Total</p>=0A                =
+                                                                    </td=
+>=0A                                                                   =
+             </tr>=0A                                                  =
+                          </table>=0A                                  =
+                                      </div>=0A                        =
+                                                <!--[if (gte mso 9)]>=0A=
+                                                                       =
+ </td>=0A                                                              =
+          </tr>=0A                                                     =
+                   </table>=0A                                         =
+                               <![endif]-->=0A                         =
+                                           </td>=0A                    =
+                                            </tr>=0A                   =
+                                         </table>=0A                   =
+                                     </td>=0A                          =
+                          </tr>=0A                                     =
+           </table>=0A                                            </td>=
+=0A                                        </tr>=0A                    =
+                    <tr>=0A                                            <=
+td align=3D"center" valign=3D"top" style=3D"padding-top:30px; padding-ri=
+ght:20px; padding-left:20px;">=0A                                      =
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation">=0A                                    =
+                =0A                                                   =
+ =0A                                                    <tr>=0A        =
+                                                <td valign=3D"top" style=
+=3D"padding-bottom:20px;">=0A                                          =
+                  <h3 style=3D"color:#606060; font-family:'Open Sans'=2C=
+ 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif; font-size:16px; f=
+ont-weight:600; line-height:24px; padding-top:0; margin-top:0; text-alig=
+n:left;">Who Unsubscribed:</h3>=0A                                     =
+                   </td>=0A                                            =
+        </tr>=0A                                                    =0A=
+                                                    <tr>=0A            =
+                                            <td align=3D"left" valign=3D=
+"top" style=3D"padding-bottom:30px;">=0A                               =
+                             <table align=3D"left" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation">=0A   =
+                                                             <tr>=0A   =
+                                                                 <td ali=
+gn=3D"left" valign=3D"top" width=3D"58">=0A                            =
+                                            <img src=3D"https://secure.g=
+ravatar.com/avatar/5aa612489d5df1c4553cb29dd2ddab83.jpg?s=3D50&d=3Dhttp%=
+3A%2F%2Fadmin.mailchimp.com%2Fimages%2Fdefault-profile.png" height=3D"48=
+" width=3D"48" style=3D"border:1px solid #F2F2F2; height:auto !important=
+; line-height:100%; outline:none !important; width:48px;">=0A          =
+                                                          </td>=0A     =
+                                                               <td align=
+=3D"left" valign=3D"top" style=3D"color:#606060; font-family:'Open Sans'=
+=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif; font-size:16px=
+; font-weight:400; line-height:24px; text-align:left;">=0A             =
+                                                           <a href=3D"ht=
+tps://us15.admin.mailchimp.com/lists/members/view?id=3D78115003" target=
+=3D"_blank" style=3D"color:#237A91;  word-break:break-all;">anugu.mounik=
+ar@gmail.com</a>=0A                                                    =
+                    =0A                                                =
+                    </td>=0A                                           =
+                     </tr>=0A                                          =
+                  </table>=0A                                          =
+              </td>=0A                                                 =
+   </tr>=0A                                                    =0A     =
+                                               <tr>=0A                 =
+                                       <td align=3D"center" style=3D"pad=
+ding-bottom:60px;" valign=3D"top">=0A                                  =
+                          <table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" role=3D"presentation">=0A                                    =
+                            <tr>=0A                                    =
+                                <td align=3D"center" valign=3D"middle">=
+=0A                                                                    =
+    <!--[if gte mso 9]>=0A                                             =
+                           <table align=3D"center" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" style=3D"width:250px" width=3D"250">=0A    =
+                                                                    <tr>=
+=0A                                                                    =
+    <td align=3D"center" bgcolor=3D"#606060" style=3D"padding:20px;" val=
+ign=3D"top">=0A                                                        =
+                <![endif]-->=0A                                        =
+                                <a href=3D"https://us15.admin.mailchimp.=
+com/lists/members/unsubscribed?id=3D14839#p:1-s:25-sc:22-sn:unsub_time"=
+ target=3D"_blank" style=3D"background-color:#606060; border-collapse:se=
+parate !important; border-top:20px solid #606060; border-right:20px soli=
+d #606060; border-bottom:20px solid #606060; border-left:20px solid #606=
+060; border-radius:3px; color:#FFFFFF; display:inline-block; font-family=
+:'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif; fo=
+nt-size:16px; font-weight:700; min-width:180px; text-decoration:none;">V=
+iew Unsubscribes</a>=0A                                                =
+                        <!--[if gte mso 9]>=0A                         =
+                                               </td>=0A                =
+                                                        </tr>=0A       =
+                                                                 </table=
+>=0A                                                                   =
+     <![endif]-->=0A                                                   =
+                 </td>=0A                                              =
+                  </tr>=0A                                             =
+               </table>=0A                                             =
+           </td>=0A                                                    <=
+/tr>=0A                                                    =0A         =
+                                       </table>=0A                     =
+                       </td>=0A                                        <=
+/tr>=0A                                    </table>=0A                 =
+                   <!-- // END BODY -->=0A                             =
+   </td>=0A                            </tr>=0A                        =
+    <tr>=0A                                <td align=3D"center" valign=
+=3D"top">=0A                                    <!-- BEGIN FOOTER // -->=
+=0A                                    <table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation">=0A      =
+                                  <tr>=0A                              =
+              <td align=3D"center" valign=3D"top" class=3D"footerContent=
+" style=3D"color:#484848; font-family:'Open Sans'=2C 'Helvetica Neue'=2C=
+ Helvetica=2C Arial=2C sans-serif; font-size:12px; font-weight:400; line=
+-height:24px; padding-top:40px; padding-bottom:40px; text-align:center;"=
+>=0A                                                <p style=3D"color:#4=
+84848; font-family:'Open Sans'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=
+=2C sans-serif; font-size:12px; font-weight:400; line-height:24px; paddi=
+ng-top:0; margin:0; text-align:center;">&copy; 2001-2018 MailChimp<sup>&=
+reg;</sup>=2C All Rights Reserved.<br />675 Ponce De Leon Ave NE &bull;=
+ Suite 5000 &bull; Atlanta=2C GA 30308 USA</p>=0A                      =
+                          <a href=3D"http://www.mailchimp.com/contact/"=
+ target=3D"_blank" style=3D"color:#373737; text-decoration:underline !im=
+portant;" class=3D"utilityLink">Contact Us</a><span class=3D"mobileHide"=
+>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><a href=3D"http://mailchimp.com/le=
+gal/terms/" target=3D"_blank" style=3D"color:#373737; text-decoration:un=
+derline !important;" class=3D"utilityLink">Terms of Use</a><span class=
+=3D"mobileHide">&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><a href=3D"http://m=
+ailchimp.com/legal/privacy/" target=3D"_blank" style=3D"color:#373737; t=
+ext-decoration:underline !important;" class=3D"utilityLink">Privacy Poli=
+cy</a><span class=3D"mobileHide">&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><a=
+ href=3D"https://us15.admin.mailchimp.com/lists/settings/defaults?id=3D1=
+4839#emails" target=3D"_blank" style=3D"color:#373737; text-decoration:u=
+nderline !important;" class=3D"utilityLink">Unsubscribe</a>=0A         =
+                                   </td>=0A                            =
+            </tr>=0A                                    </table>=0A    =
+                                <!-- // END FOOTER -->=0A              =
+                  </td>=0A                            </tr>=0A         =
+               </table>=0A                        <!--[if gte mso 9]>=0A=
+                        </td>=0A                        </tr>=0A       =
+                 </table>=0A                        <![endif]-->=0A    =
+                </td>=0A                </tr>=0A            </table>=0A=
+        </center>=0A    </body>=0A</html>=0A
+--_----------=_MCPart_1580389771--
+

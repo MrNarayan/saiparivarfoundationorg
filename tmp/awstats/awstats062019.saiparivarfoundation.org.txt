@@ -1,0 +1,1670 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 201906 will be lost/reset.
+# Last config file used to build this data file was /home4/seasai10/tmp/awstats/awstats.saiparivarfoundation.org.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2022                
+POS_TIME 2705                
+POS_VISITOR 39088               
+POS_DAY 57912               
+POS_DOMAIN 3643                
+POS_LOGIN 4211                
+POS_ROBOT 4366                
+POS_WORMS 5350                
+POS_EMAILSENDER 5481                
+POS_EMAILRECEIVER 5624                
+POS_SESSION 58815               
+POS_SIDER 59019               
+POS_FILETYPES 5759                
+POS_DOWNLOADS 6008                
+POS_OS 6056                
+POS_BROWSER 6372                
+POS_SCREENSIZE 8671                
+POS_UNKNOWNREFERER 8745                
+POS_UNKNOWNREFERERBROWSER 9373                
+POS_ORIGIN 9641                
+POS_SEREFERRALS 9786                
+POS_PAGEREFS 10052               
+POS_SEARCHWORDS 10667               
+POS_KEYWORDS 10858               
+POS_MISC 2369                
+POS_ERRORS 10962               
+POS_CLUSTER 4067                
+POS_SIDER_404 11133               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20190701001127 461 131674 18765267797324
+FirstTime 20190601005931
+LastTime 20190630230047
+LastUpdate 20190701093723 461 0 460 0 0
+TotalVisits 635                 
+TotalUnique 442                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 481                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+TotalMisc 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+FlashSupport 0 0 0
+RealPlayerSupport 0 0 0
+PDFSupport 0 0 0
+JavascriptDisabled 0 0 0
+AddToFavourites 0 0 0
+JavaEnabled 0 0 0
+DirectorSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 42 254 82997470 91 172 1328011
+1 42 410 149951770 74 197 2851359
+2 49 157 18190408 93 151 2673778
+3 56 163 18433103 37 82 2520073
+4 101 306 44584661 1138 1236 6194102
+5 41 81 5550855 81 150 499381
+6 41 139 39958482 93 154 252801
+7 15 32 131526 42 75 483947
+8 32 187 56077031 74 132 12130528
+9 38 202 42454423 39 120 2725135
+10 53 277 65309481 1071 1195 4416692
+11 21 180 37475201 30 80 2592398
+12 65 443 142781344 75 223 251483
+13 9 92 34789893 79 140 2658982
+14 51 493 156740264 51 183 236874
+15 91 690 192227584 303 824 7274380
+16 75 290 80258596 55 166 1348113
+17 36 363 124811794 58 203 618853
+18 52 398 136581506 64 277 28932096
+19 50 726 244555392 63 251 3261691
+20 46 691 285182838 60 270 2955151
+21 45 629 278918527 50 258 1057198
+22 34 428 150566672 53 161 2810295
+23 50 367 116578760 108 179 204517
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 25
+us 904 7129 2349853595
+gb 88 334 34726883
+ca 29 218 60031767
+ru 15 15 37025
+cz 11 51 22076746
+cn 11 28 165671
+de 11 11 86677
+in 10 114 27562516
+fr 9 9 50668
+zz 8 8 0
+lt 8 9 211687
+nl 6 6 31185
+za 5 5 40992
+at 4 4 6648
+cl 3 3 16772
+ua 3 14 245818
+br 2 2 20248
+gr 2 2 0
+sc 1 1 3324
+mu 1 1 10124
+md 1 1 0
+id 1 1 3324
+se 1 1 3324
+fj 1 30 9785797
+kr 0 1 136790
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 21
+spider 562 7415227 20190630155039 0
+bingbot/ 299 2561415 20190630233317 0
+bingpreview 219 32303953 20190626192233 0
+Googlebot/ 199 805585 20190630143236 0
+bot[\s_+:,\.\;\/\\-] 87 19502597 20190628162418 0
+(firefox/)([0-9]\.|[0-1][0]\.) 62 413235 20190630201053 0
+Baiduspider/ 38 132245 20190621182653 0
+Uptimebot/ 20 0 20190616233613 0
+Exabot/ 19 3330 20190630061737 0
+Applebot/ 19 55008 20190630053212 0
+YandexBot/ 17 55353 20190627125618 0
+Googlebot\-Image/ 16 19677480 20190628115915 0
+no_user_agent 13 97764 20190623063843 0
+curl 9 30372 20190621203251 0
+link 8 22449 20190610072244 0
+Mail\.RU_Bot/ 4 13302 20190629171005 0
+Dalvik/ 4 4293001 20190628185445 0
+DuckDuckGo\-Favicons\-Bot/ 3 9984 20190629070815 0
+crawl 2 20248 20190606023636 0
+YandexImages/ 1 121676 20190629073545 0
+Screaming[\x20]Frog[\x20]SEO[\x20]Spider/ 1 3324 20190620184210 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+Unknown 14 1057 0 0
+html 1118 4729612 0 0
+jpg 1912 2453822920 0 0
+css 1272 2100573 0 0
+gif 188 1727754 0 0
+js 2388 18653038 0 0
+png 1000 2647791 0 0
+php 3 834 0 0
+jpeg 103 21424002 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 18
+macosx11 63 41
+macosx12 133 28
+Unknown 241 171
+win10 1285 267
+macosx10 15 15
+ios_ipad 32 1
+win8.1 2 2
+linuxandroid 1693 96
+unix 34 2
+macosx6 1 1
+winxp 81 15
+winlong 24 5
+winnt 1 0
+win7 443 110
+macosx 371 59
+ios_iphone 3117 183
+linux 457 134
+win8 5 5
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 110
+firefox52.0 43 19
+firefox64.0 1 1
+firefox40.1 3 3
+firefox37.0 1 1
+chrome61.0.3163.100 4 4
+chrome63.0.3239.84 19 19
+chrome69.0.3497.92 47 7
+edge18 211 7
+chrome55.0.2883.75 1 1
+firefox42.0 1 1
+firefox66.0 78 6
+firefox56.0 1 1
+chrome75.0.3770.101 572 31
+safari11.0 39 4
+chrome74.0.3729.169 766 57
+chrome29.0.1547.57 1 1
+chrome66.0.3359.30 28 1
+chrome40.0.2214.93 1 1
+chrome72.0.3626.121 2 2
+chrome66.0.3359.126 30 1
+chrome75.0.3770.100 384 34
+chrome70.0.3538.77 11 11
+firefox62.0 3 3
+chrome41.0.2272.101 3 3
+safari10.0 35 3
+chrome52.0.2743.116 2 2
+firefox45.57.04 1 1
+chrome73.0.3683.86 110 4
+safari12.0 104 4
+chrome66.0.3359.139 9 8
+chrome57.0.2987.133 59 2
+chrome75.0.3770.67 32 1
+chrome64.0.3282.119 2 2
+chrome71.0.3578.99 1 0
+safari12.1.1 1577 89
+chrome60.0.3112.50 46 10
+firefox26.0 1 1
+mozilla 67 41
+chrome75.0.3770.89 52 6
+firefox59.0 30 30
+chrome65.0.3325.181 272 82
+safari10.1.2 2 2
+chrome41.0.2272.89 12 12
+firefox61.0 1 1
+chrome73.0.3683.88 33 1
+chrome71.0.3559.0 29 1
+chrome73.0.3683.90 145 9
+Unknown 143 143
+chrome74.0.3729.136 49 1
+netscape5.9 2 2
+firefox33.0 1 1
+chrome75.0.3770.80 1 0
+msie6.0 8 8
+safari12.1.2 110 11
+chrome69.0.3497.100 4 4
+chrome63.0.3239.132 62 62
+msie10.0 1 1
+chrome10.0.648.133 1 1
+chrome40.0.2214.85 6 6
+chrome70.0.3538.102 57 7
+chrome71.0.3578.80 7 7
+safari12.1 397 20
+firefox67.0 30 1
+chrome42.0.2311.152 1 1
+chrome71.0.3578.98 6 6
+firefox58.0 6 6
+chrome41.0.2228.0 1 1
+opera36.0.2130.32 2 2
+firefox57.0 2 2
+chrome75.0.3770.90 1 0
+chrome74.0.3694.0 28 1
+firefox48.0 2 2
+firefox47.0 5 5
+chrome64.0.3282.186 11 11
+chrome65.0.3325.162 16 16
+chrome61.0.3163.128 37 2
+chrome49.0.2623.75 4 4
+firefox65.0 4 4
+safari5.1 4 4
+msie9.0 127 34
+iphone 93 3
+netscape5.7 1 1
+safari 819 45
+chrome74.0.3729.131 51 6
+edge16 32 3
+chrome56.0.2924.87 44 3
+chrome70.0.3538.110 1 1
+safari11.0.3 8 8
+firefox60.0 6 2
+safari6.0.3 1 1
+chrome34.0.1847.116 2 2
+chrome66.0.3359.181 60 60
+safari9.0 58 4
+chrome67.0.3396.87 37 1
+safari12.0.2 1 1
+firefox40.0 1 1
+chrome66.0.3359.117 2 2
+firefox50.0 2 2
+chrome45.0.2454.94 1 1
+msie11.0 75 15
+opera54.0.2952.60 6 6
+chrome74.0.3729.157 431 22
+wap 48 4
+firefox17.0 69 3
+chrome39.0.2171.95 9 9
+chrome70.0.3538.64 75 9
+firefox43.0 18 1
+chrome62.0.3202.84 28 1
+firefox53.0 6 6
+chrome58.0.3029.110 5 5
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 11
+Mozilla/5.0_(compatible;_Qwantify/2.4w;__https://www.qwant.com/)/2.4w 20190628063832
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20190612095333
+Go-http-client/1.1 20190630044642
+Mozilla/5.0_(compatible;_Wappalyzer) 20190605165622
+Mozilla/5.7 20190611150103
+Dispatch/0.11.3 20190624150155
+ia_archiver 20190624085514
+Mozilla/5.9'\ 20190611150104
+Mozilla/5.0_(compatible;_Dataprovider.com) 20190618024114
+Cpanel-HTTP-Client/1.0 20190612095331
+colly_-_https://github.com/gocolly/colly 20190630152620
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 5
+Go-http-client/1.1 20190630044642
+Dispatch/0.11.3 20190624150155
+colly_-_https://github.com/gocolly/colly 20190630152620
+ia_archiver 20190624085514
+Cpanel-HTTP-Client/1.0 20190612095331
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 651 853
+From1 3 3
+From2 146 213
+From3 56 56
+From4 279 6873
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 7
+www_google_co_in 1 2
+baidu 1 1
+www_google_ca 1 1
+www_google_com 139 205
+bing 2 2
+www_google_cz 1 1
+r_search_yahoo_com 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 15
+http://www.shirdisaidham.org 29 29
+http://hundejo.com 4 4
+http://shirdisaidham.org 4 4
+http://pizza-imperia.com 4 4
+http://shirdisaidham.org/admin/ 3 3
+http://burger-imperia.com 2 2
+http://pizza-tycoon.com 2 2
+http://www.saiamrithadhara.com/otherlinks.html 1 1
+https://m.yelp.com 1 1
+https://l.facebook.com 1 1
+https://m.yelp.com 1 1
+https://www.facebook.com 1 1
+http://l.facebook.com/l.php 1 1
+http://www.ameblo.top/articles/29545072/ 1 1
+http://m.facebook.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 2
+dangeruya 1
+bellevue+sai+baba+temple 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 5
+temple 1
+sai 1
+bellevue 1
+dangeruya 1
+baba 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 7
+409 76 6225
+406 1061 239560
+500 7 5222
+405 2 1492
+206 40 212355
+403 171 22914
+404 3718 2252522
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 679
+/www 6 -
+//i.asp 2 https://www.baidu.com
+//img/css/xianf.asp 2 https://www.baidu.com
+//plus/xcnc/index.php 2 https://www.baidu.com
+//asy.asp 2 https://www.baidu.com
+//plus/shijian.php 2 https://www.baidu.com
+//ccx.asp 2 https://www.baidu.com
+//inc/myql.asp 2 https://www.baidu.com
+//ztxxw/images/images.asp 2 https://www.baidu.com
+//a.jsp 1 https://www.baidu.com
+//css/img/down.asp 2 https://www.baidu.com
+//plus/laobiao.php 2 https://www.baidu.com
+//admin/images/Sql.asp 2 https://www.baidu.com
+/blog/administrator/index.php 1 -
+//windows.asp 2 https://www.baidu.com
+/store/index.php/admin/ 1 -
+/robots.txt 210 -
+//gitshe.asp 2 https://www.baidu.com
+//sjurj54220.asp 2 https://www.baidu.com
+//5t/images/diy.asp 2 https://www.baidu.com
+//news_bak.asp 2 https://www.baidu.com
+/wp/ 6 -
+//Admin/images/Sql.asp 2 https://www.baidu.com
+//UploadFile/index.asp 2 https://www.baidu.com
+//Admin/images/cache.asp 4 https://www.baidu.com
+//inc/DA.asp 2 https://www.baidu.com
+//juhua/juhua.asp 2 https://www.baidu.com
+//plus/task/img/cache.asp 2 https://www.baidu.com
+//images/thumb.asp 2 https://www.baidu.com
+//Templates/test.asp 2 https://www.baidu.com
+//admin/images/cache.asp 4 https://www.baidu.com
+//sert/bnnr.asp 2 https://www.baidu.com
+//images/good/date.php 2 https://www.baidu.com
+//i.php 4 -
+/plus/moon.php 8 http://www.saiparivarfoundation.org/plus/moon.php
+//pass.asp 2 https://www.baidu.com
+//losc_css.asp 2 https://www.baidu.com
+//E.asp 2 https://www.baidu.com
+//dlxxy/Admin_.asp 2 https://www.baidu.com
+//kuw/confings.asp 4 https://www.baidu.com
+//.asp 4 https://www.baidu.com
+//s/5v10/v5she.asp 2 https://www.baidu.com
+//public/DA.asp 2 https://www.baidu.com
+//admin/Databackup/x.asp 2 https://www.baidu.com
+//upLoad/a.asp 2 https://www.baidu.com
+//userfiles/DA.asp 2 https://www.baidu.com
+//usshiuig/concon.asp 4 https://www.baidu.com
+//about/xm.asp 2 https://www.baidu.com
+//plus/djxx/index.php 2 https://www.baidu.com
+//sk/xiaoliang.asp 2 https://www.baidu.com
+/cms/wp-includes/wlwmanifest.xml 34 -
+//b.asp 2 https://www.baidu.com
+//zgens/return_url.asp 2 https://www.baidu.com
+//admin/nbgx/index.php 2 https://www.baidu.com
+//admin/dnhx/sdfg.asp 2 https://www.baidu.com
+//System/Images/check.asp 4 https://www.baidu.com
+//images/uploadfile.asp 2 https://www.baidu.com
+//uploads/2015/diretory.asp 4 https://www.baidu.com
+//volume/msbuild/index.asp 4 https://www.baidu.com
+//fdh/Reg.aspx 1 https://www.baidu.com
+/license.php 2 -
+//bosg.asp 2 https://www.baidu.com
+//admin/snhxg/Shijian.asp 2 https://www.baidu.com
+//zhihuiGuan.asp 2 https://www.baidu.com
+//data/plus/1120.asp 2 https://www.baidu.com
+//ewebeditor/include/hackseo.asp 2 https://www.baidu.com
+//inc/config.asp 14 https://www.baidu.com
+//dxyylc/md5.php 2 https://www.baidu.com
+//images/receipt/cache.asp 2 https://www.baidu.com
+//admin/sbxjg/zxng/Shijian.asp 2 https://www.baidu.com
+//js/inc/css/xianf.ASP 2 https://www.baidu.com
+//data/data/css.asp 2 https://www.baidu.com
+//images/link/cache.asp 2 https://www.baidu.com
+//images/cache.asp 6 https://www.baidu.com
+//tp.asp 2 https://www.baidu.com
+/util/login.aspx 1 -
+//jjh.asp 2 https://www.baidu.com
+//zixi.asp 4 https://www.baidu.com
+//images/diy.asp 2 https://www.baidu.com
+//osi.asp 2 https://www.baidu.com
+//base/admin/cache.asp 4 https://www.baidu.com
+//saa/index.asp 2 https://www.baidu.com
+//Code.asp 4 https://www.baidu.com
+//template/uploxsyad.asp 2 https://www.baidu.com
+//images/ad/index.asp 4 https://www.baidu.com
+//usergl/diy.asp 2 https://www.baidu.com
+//5t/fhd/diy.asp 2 https://www.baidu.com
+//whg.asp 2 https://www.baidu.com
+//editplus.asp 4 https://www.baidu.com
+//W.asp 2 https://www.baidu.com
+//daswf/concon.asp 4 https://www.baidu.com
+//admin/Image/cache.asp 4 https://www.baidu.com
+//bbs/xm.asp 2 https://www.baidu.com
+//546.asp 2 https://www.baidu.com
+//include/inc/date.php 2 https://www.baidu.com
+//img/DA.asp 2 https://www.baidu.com
+//list.asp 2 https://www.baidu.com
+//sdfsd.asp 2 https://www.baidu.com
+//images/com3.indexlx.asp 2 https://www.baidu.com
+//ly.asp 2 https://www.baidu.com
+//dfvdr.asp 3 https://www.baidu.com
+/,192.185.5.167 2 -
+//config.asp 2 https://www.baidu.com
+//diy.asp 2 https://www.baidu.com
+/undefined 233 -
+//5220521ll,lo.asp 2 https://www.baidu.com
+//shijian.asp 2 https://www.baidu.com
+//images/search_info_ico.gif.asp 2 https://www.baidu.com
+//siteweb.asp 2 https://www.baidu.com
+//soso/Inc/cache.asp 2 https://www.baidu.com
+//index.asp 2 https://www.baidu.com
+//user/Rss/nashandi.asp 2 https://www.baidu.com
+//nevvs7./index.asp 2 https://www.baidu.com
+//system/images/check.asp 2 https://www.baidu.com
+//xxcc.asp 4 https://www.baidu.com
+//xinwen.asp 2 https://www.baidu.com
+//en.asp 6 https://www.baidu.com
+/site/wp-includes/wlwmanifest.xml 34 -
+/resources.html 16 http://www.saiparivarfoundation.org
+/test/wp-admin/ 2 -
+//dxyylc/indesax.asp 2 https://www.baidu.com
+/magento/index.php/admin/ 1 -
+//images/css.asp 2 https://www.baidu.com
+//wspath./okd.asp 2 https://www.baidu.com
+/th1s_1s_a_4o4.html 30 http://www.google.com/url
+//log.asp 2 https://www.baidu.com
+//base/admin/check.asp 4 https://www.baidu.com
+//config/aspcms_config.asp 2 https://www.baidu.com
+//sitemap/templates/met/SqlIn.asp 4 https://www.baidu.com
+//type.php 2 -
+//wp-admin/install.php 2 -
+//images/img.asp 2 https://www.baidu.com
+//Customize.asp 2 https://www.baidu.com
+//adm1n/md5.asp 4 https://www.baidu.com
+//stlytime.asp 2 https://www.baidu.com
+//admin/sivog/SqlIn.asp 2 https://www.baidu.com
+//x.php 4 -
+//images/Reg.aspx 1 https://www.baidu.com
+//kaian/DA.asp 2 https://www.baidu.com
+//data/diy.asp 2 https://www.baidu.com
+//admin/images/style.aspx 1 https://www.baidu.com
+//com3.indexlx.asp 2 https://www.baidu.com
+//inc/iis.asp 2 https://www.baidu.com
+//data/DASA.asp 2 https://www.baidu.com
+//sd6/wr5/jty.aSpX 1 https://www.baidu.com
+//check.asp 2 https://www.baidu.com
+//xx.txt.asp 2 https://www.baidu.com
+//5t/fhd/Reg.aspx 1 https://www.baidu.com
+/'\"` 1 http://www.google.com/'\"`
+//images/img/cache.asp 4 https://www.baidu.com
+/connectors/system/phpthumb.php 1 -
+//xup.asp 2 https://www.baidu.com
+//ms.asp 2 https://www.baidu.com
+//nsimg77576.asp 2 https://www.baidu.com
+//plus/ivxl.php 2 https://www.baidu.com
+//x.asp 2 https://www.baidu.com
+//buep/sqzr.php 2 https://www.baidu.com
+//data/data.asp 2 https://www.baidu.com
+//images/star/ganyunwei.asp 2 https://www.baidu.com
+//Images/search_info_ico.gif.asp 4 https://www.baidu.com
+//codepage.asp 2 https://www.baidu.com
+/blog/wp-admin/ 2 -
+//av.asp 2 https://www.baidu.com
+//jg.asp 2 https://www.baidu.com
+//index.php 5 -
+//images/swfupload/images/uploadye.php 2 https://www.baidu.com
+//css.asp 2 https://www.baidu.com
+//ouissa/concon.asp 4 https://www.baidu.com
+//images/Thumb.asp 4 https://www.baidu.com
+//nuwz/DA.asp 2 https://www.baidu.com
+//zx.asp 2 https://www.baidu.com
+//runnan/wmiislog/index11.asp 4 https://www.baidu.com
+//all.asp 2 https://www.baidu.com
+/m/ 1 -
+/user/register/ 8 -
+//admin_login.asp 2 https://www.baidu.com
+//cni.asp 2 https://www.baidu.com
+/mdl_user/login.php 1 -
+//data/%23data.asp 2 https://www.baidu.com
+//login2.asp 2 https://www.baidu.com
+/vendor/phpunit/phpunit/src/Util/PHP/kill.php 1 -
+//userfiles/image/shell.asp/crazy5.jpg 2 https://www.baidu.com
+//news/jiuge.asp 2 https://www.baidu.com
+//wap.asp 2 https://www.baidu.com
+//images/Sql.asp 2 https://www.baidu.com
+//3q.asp 2 https://www.baidu.com
+//admin_website/Include/Logout.asp 2 https://www.baidu.com
+//new/zixun/web1.asp 2 https://www.baidu.com
+//admin/snhxc/date.php 2 https://www.baidu.com
+//whq.asp 2 https://www.baidu.com
+/admin/ 3 -
+//UploadFiles/DA.asp 2 https://www.baidu.com
+//vaf/vaf.jsp 1 https://www.baidu.com
+//xk_com.asp 2 https://www.baidu.com
+//aspnet_client/xm.asp 2 https://www.baidu.com
+/index.php/api/Uploadify/preview 8 http://www.saiparivarfoundation.org/index.php/api/Uploadify/preview
+/wp2/wp-includes/wlwmanifest.xml 1 -
+//upload/DA.asp 2 https://www.baidu.com
+//admin/d5.asp 2 https://www.baidu.com
+//jkjh/news.asp 2 https://www.baidu.com
+//Wap/Plus/martin.asp 2 https://www.baidu.com
+//dasefw/concon.asp 2 https://www.baidu.com
+//ing/css/admin_login.asp 2 https://www.baidu.com
+//sb.asp 4 https://www.baidu.com
+//1.asp 4 https://www.baidu.com
+/joomla/robots.txt 1 -
+/js/testurl 20 -
+//images/lurd/cache.asp 4 https://www.baidu.com
+/2017/wp-includes/wlwmanifest.xml 1 -
+//plus/images/index.php 2 https://www.baidu.com
+/admin/images/cal_date_over.gif 1 -
+//a/xm.asp 2 https://www.baidu.com
+/mobile 1 -
+//plus/DA.asp 2 https://www.baidu.com
+//data/index.asp 2 https://www.baidu.com
+//nevvs8./index.asp 2 https://www.baidu.com
+//hack.asp 6 https://www.baidu.com
+//sqzr.php 2 https://www.baidu.com
+//565.asp 2 https://www.baidu.com
+//5t/plus/diy.asp 2 https://www.baidu.com
+//images/DA.asp 2 https://www.baidu.com
+/.git/config 3 -
+/blog/ 6 -
+//imgs/img/xfw/xianf.asp 2 https://www.baidu.com
+//manage/image/Thumb.asp 2 https://www.baidu.com
+//cort/cc/wo.asp 2 https://www.baidu.com
+/wordpress/libs.php 2 -
+//Adin/Admin_.asp 4 https://www.baidu.com
+//dim.next.asp 2 https://www.baidu.com
+//daswff/concon.asp 4 https://www.baidu.com
+//xvghj/sdfg.php 2 https://www.baidu.com
+//long/css/css.asp 2 https://www.baidu.com
+//index.php/module/action/param1/%7B$%7Beval($_POST%5Bthinkphp%5D)%7D%7D 2 https://www.baidu.com
+//images/inc.asp 2 https://www.baidu.com
+//admin-manage/Databackup/mixian.asp 4 https://www.baidu.com
+//caip/DA.asp 2 https://www.baidu.com
+//data/images/1120.asp 2 https://www.baidu.com
+/wp-login.php 2 -
+//A-LlobetPics.rar.asp 2 https://www.baidu.com
+//Images/img/SqlIn.asp 2 https://www.baidu.com
+//vv..asp 2 https://www.baidu.com
+//mixlp22076.asp 2 https://www.baidu.com
+//4N8V33tN1aY0AaC5.php 3 -
+//xiaober.asp 2 https://www.baidu.com
+//11111.jsp 1 https://www.baidu.com
+/wordpress/wp-includes/wlwmanifest.xml 34 -
+//css/Reg.aspx 1 https://www.baidu.com
+//mobi/ 1 -
+//userr.asp 2 https://www.baidu.com
+//configa.asp 2 https://www.baidu.com
+//x.aspx 1 https://www.baidu.com
+//QQ535610269.asp 4 https://www.baidu.com
+//tests/bnnr.asp 2 https://www.baidu.com
+//board_img/editor/img.asp 2 https://www.baidu.com
+//inc1.asp 4 https://www.baidu.com
+//css/css.asp 2 https://www.baidu.com
+//plus/sdfg.php 2 https://www.baidu.com
+//dfsad/index.php 2 https://www.baidu.com
+//images/shijian/index.asp 2 https://www.baidu.com
+//userfiles/ali.asp 4 https://www.baidu.com
+//admin/lvke.asp 2 https://www.baidu.com
+//admin/sdngc/index.asp 2 https://www.baidu.com
+//yell/Admin_.asp 2 https://www.baidu.com
+//js/DA.asp 2 https://www.baidu.com
+//weki.asp 6 https://www.baidu.com
+//jiuuesd.asp 2 https://www.baidu.com
+//11m.asp 2 https://www.baidu.com
+//gpxcy94994.asp 2 https://www.baidu.com
+//zzz.asp 2 https://www.baidu.com
+//upload/uploaxsd.asp 2 https://www.baidu.com
+//rewwr.asp 2 https://www.baidu.com
+//xyt/images/1.asp 2 https://www.baidu.com
+//dgbv/jmnb/shijian.asp 2 https://www.baidu.com
+//admin/imageis/index.asp 2 https://www.baidu.com
+//ma1/index_.asp 2 https://www.baidu.com
+//Include/Const.asp 2 https://www.baidu.com
+//dxyylc/md5.asp 4 https://www.baidu.com
+/wp/wp-admin/ 2 -
+//utility/convert/data/config.inc.php 2 https://www.baidu.com
+//wenl.asp 2 https://www.baidu.com
+/plus/mytag_js.php 8 http://www.saiparivarfoundation.org/plus/mytag_js.php
+//admin/Admin_Ta.asp 2 https://www.baidu.com
+//ssd.asp 2 https://www.baidu.com
+//uploadfile/image/shell.asp/crazy7.jpg 2 https://www.baidu.com
+//img/xfw/xianf.asp 2 https://www.baidu.com
+//yjh.asp 2 https://www.baidu.com
+//tagsl/bnnr.asp 2 https://www.baidu.com
+//admin/Image/Thumb.asp 2 https://www.baidu.com
+//ddta/juhua.asp 2 https://www.baidu.com
+//admin/images/check.asp 4 https://www.baidu.com
+/downloader/ 2 http://shirdisaidham.org/downloader/
+//UserFiles/Image/shell.asp/crazy6.jpg 2 https://www.baidu.com
+/wp-admin/css/colors/blue/theme.php 2 -
+//gig89l.asp 2 https://www.baidu.com
+//gbk.asp 2 https://www.baidu.com
+//imgs/img/xf/xianf.asp 2 https://www.baidu.com
+//admin/xm.asp 2 https://www.baidu.com
+//statics/images/cache.asp 2 https://www.baidu.com
+//5t/data/Reg.aspx 1 https://www.baidu.com
+//imgevs/news.asp 2 https://www.baidu.com
+//Admin/xm.asp 2 https://www.baidu.com
+//data/Reg.aspx 1 https://www.baidu.com
+/blog/robots.txt 7 -
+//images/7.asp 2 https://www.baidu.com
+/joomla/administrator/index.php 1 -
+//jnh/1208.asp 2 https://www.baidu.com
+//jnh/confings.asp 4 https://www.baidu.com
+//kj.asp 2 https://www.baidu.com
+/templates/system/css/system.css 1 -
+//yishuihan/china-ysh.asp 2 https://www.baidu.com
+//images/iocn/cache.asp 2 https://www.baidu.com
+/downloader/index.php 1 -
+//wenjian/wiki.asp 2 https://www.baidu.com
+//config/AspCms_Config.asp 10 https://www.baidu.com
+/.env 2 -
+//data.asp 2 https://www.baidu.com
+//ckeditor/index.asp 2 https://www.baidu.com
+//hackl0s4r.asp 2 https://www.baidu.com
+/xmlrpc.php 5 -
+//conn.asp 2 https://www.baidu.com
+//htmm/DA.asp 2 https://www.baidu.com
+//v5she/v5she.asp 2 https://www.baidu.com
+//cg.asp 2 https://www.baidu.com
+//5t/images/Reg.aspx 1 https://www.baidu.com
+//date/js/v5/v5she.aSpX 1 https://www.baidu.com
+//images/imageis/xdmin.asp 2 https://www.baidu.com
+//c8.asp 2 https://www.baidu.com
+//inc/card.asp 2 https://www.baidu.com
+/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php 2 -
+//advs/xm.asp 2 https://www.baidu.com
+//images/SqlIn.asp 4 https://www.baidu.com
+//a/DASA.asp 2 https://www.baidu.com
+//Person/1/600.asp 2 https://www.baidu.com
+/wp-content/plugins/temp.php 2 -
+//news/DA.asp 2 https://www.baidu.com
+//admin/error.asp 2 https://www.baidu.com
+//editor/editor/Include/C1ass.asp 4 https://www.baidu.com
+//admin/snhxc/Shijian.asp 2 https://www.baidu.com
+//hot/confings.asp 2 https://www.baidu.com
+/sito/wp-includes/wlwmanifest.xml 1 -
+//stap.asp 2 https://www.baidu.com
+/NewsType.asp 1 -
+//grejhyt/news.asp 2 https://www.baidu.com
+//admin/snhxg/date.php 2 https://www.baidu.com
+//aaaaaaaaaaaaaa.asp 2 https://www.baidu.com
+/wordpress/ 6 -
+//wt.asp 2 https://www.baidu.com
+/ads.txt 1 -
+//images/isagmin/index.php 2 https://www.baidu.com
+//web.asp 2 https://www.baidu.com
+//jerry.asp 2 https://www.baidu.com
+//lcwm/news.asp 2 https://www.baidu.com
+//tt.asp 2 https://www.baidu.com
+//ppap/DA.asp 2 https://www.baidu.com
+//images/isagmin/index.asp 2 https://www.baidu.com
+//newsss/webers.asp 2 https://www.baidu.com
+//wnews./okd.asp 2 https://www.baidu.com
+//news/pics/20151103/tem1p_jm.PHP 2 https://www.baidu.com
+//xsoxs/juhua.asp 2 https://www.baidu.com
+//images/mager.asp 2 https://www.baidu.com
+/admin/login.php 1 -
+//hhb.asp 2 https://www.baidu.com
+//sin.asp 2 https://www.baidu.com
+//5t/css/Reg.aspx 2 https://www.baidu.com
+//boss/Image/Sql.asp 2 https://www.baidu.com
+//images/upload.asp 2 https://www.baidu.com
+//uploads/DA.asp 2 https://www.baidu.com
+//wisd.asp 2 https://www.baidu.com
+//se.coage.asp 2 https://www.baidu.com
+/fckeditor/editor/filemanager/connectors/php/upload.php 1 -
+//uploadfile/member/0/0x0.php 2 -
+//lc.asp 2 https://www.baidu.com
+//5t/data/diy.asp 2 https://www.baidu.com
+//plus/mcds.php 2 https://www.baidu.com
+//strs/md5.asp 2 https://www.baidu.com
+/wp1/wp-includes/wlwmanifest.xml 1 -
+//user.php 4 45ea207d7a2b68c49582d2d22adf953aads|a:2:{s:3:\"num\"
+//newa/DA.asp 2 https://www.baidu.com
+//e5f5g.asp 2 https://www.baidu.com
+//shell.asp 2 https://www.baidu.com
+//ver.asp 2 https://www.baidu.com
+/index.php/admin/ 1 -
+//coon.asp 2 https://www.baidu.com
+//data/img/css/xianf.ASP 2 https://www.baidu.com
+//Images/cache.asp 4 https://www.baidu.com
+//M2asK.asp 2 https://www.baidu.com
+/rss/catalog/notifystock/ 2 http://shirdisaidham.org/rss/catalog/notifystock/
+/administrator/index.php 1 -
+//CacheFlle.class.php 2 https://www.baidu.com
+//data/data/1120.asp 2 https://www.baidu.com
+//kaili/DA.asp 2 https://www.baidu.com
+//images/qq/common.asp 2 https://www.baidu.com
+/sitemap_index.xml 2 -
+//admin/Image/Sql.asp 2 https://www.baidu.com
+//mim.asp 2 https://www.baidu.com
+//css/diy.asp 2 https://www.baidu.com
+//Admin/Images/check.asp 4 https://www.baidu.com
+//nel.asp 2 https://www.baidu.com
+/news/wp-includes/wlwmanifest.xml 1 -
+//admin/sxchg/xsbvah/date.php 2 https://www.baidu.com
+//css/DA.asp 2 https://www.baidu.com
+//indx.asp 4 https://www.baidu.com
+//zxxw.asp 2 https://www.baidu.com
+//cms/DA.asp 2 https://www.baidu.com
+//installation/index.php 2 -
+//admin/snxb/index.asp 2 https://www.baidu.com
+//ffhxv57111.asp 2 https://www.baidu.com
+/Guru-Purnima-2019.JPG 3 http://www.saiparivarfoundation.org/
+/,184.168.131.241 2 -
+//mnbgf/index.php 2 https://www.baidu.com
+//userfiles/image/shell.asp/crazy2.jpg 2 https://www.baidu.com
+//newfile.asp 2 https://www.baidu.com
+//upload/uploxawad.asp 2 https://www.baidu.com
+//Edit/fsoimg/heo.asp 2 https://www.baidu.com
+//MIP/images/index.asp 2 https://www.baidu.com
+//Templates/f1kj/html/error.asp 2 https://www.baidu.com
+/wp/wp-content/themes/twentyfifteen/content.php 2 -
+//9tu.asp 2 https://www.baidu.com
+//sa.asp 2 https://www.baidu.com
+//bak.jsp 1 https://www.baidu.com
+//css/index.asp 2 https://www.baidu.com
+//hacklos4r.asp 2 https://www.baidu.com
+//images/temp/SqlIn.asp 2 https://www.baidu.com
+//rsgt/md5.asp 2 https://www.baidu.com
+//nsb.asp 2 https://www.baidu.com
+/images/menu_bg1.png 386 http://www.saiparivarfoundation.org/
+//conf1g.asp 2 https://www.baidu.com
+//yjryrf/news.asp 2 https://www.baidu.com
+//kinouea/concon.asp 4 https://www.baidu.com
+//md5.asp 4 https://www.baidu.com
+//plus/xnbg/index.php 2 https://www.baidu.com
+//images/imagex.asp 2 https://www.baidu.com
+/test/wp-includes/wlwmanifest.xml 1 -
+//rosoft/overfill/index.asp 4 https://www.baidu.com
+//jiuge.asp 2 https://www.baidu.com
+//aspsql.asp 2 https://www.baidu.com
+/store/downloader/index.php 1 -
+//northsoft/unlocker/index.asp 4 https://www.baidu.com
+//sitemap/templates/met/yjh.asp 2 https://www.baidu.com
+//dbhbf19911.asp 2 https://www.baidu.com
+/images/btn_bg1.png 233 http://www.saiparivarfoundation.org/
+//sd6/bc/jty.aSpX 1 https://www.baidu.com
+//news/confings.asp 2 https://www.baidu.com
+//userfiles/image/shell.asp/crazy4.jpg 2 https://www.baidu.com
+//5t/images/index.asp 2 https://www.baidu.com
+/js/SaiBaba.js 424 http://www.saiparivarfoundation.org/
+/magento_version 1 -
+/admin/index.php 1 -
+//include/code/mp.php 2 https://www.baidu.com
+//images/css/sqlin.asp 2 https://www.baidu.com
+//plug/collect/AspCms_CollectFun.asp 2 https://www.baidu.com
+//inc.asp 2 https://www.baidu.com
+//caonima.php 2 https://www.baidu.com
+//ff.asp 2 https://www.baidu.com
+/old/wp-admin/ 2 -
+//inuwuy/shuru.asp 4 https://www.baidu.com
+//image/check.asp 4 https://www.baidu.com
+//iislog.asp 2 https://www.baidu.com
+//ip_adminlogin/iug_suuv.asp 2 https://www.baidu.com
+//111.asp 2 https://www.baidu.com
+//CenterWeb/include/Informatases.asp 2 https://www.baidu.com
+//5t/plus/index.asp 2 https://www.baidu.com
+/admin_aspcms/_system/AspCms_SiteSetting.asp 16 http://www.saiparivarfoundation.org/admin_aspcms/_system/AspCms_SiteSetting.asp
+//imgers/news.asp 2 https://www.baidu.com
+//Images/hou.asp 2 https://www.baidu.com
+//2016/gou.asp 2 https://www.baidu.com
+/2018/wp-includes/wlwmanifest.xml 1 -
+//A.asp 2 https://www.baidu.com
+//config/AspCms_config.asp 2 https://www.baidu.com
+//images/lurd/check.asp 4 https://www.baidu.com
+//fdhy/diy.asp 2 https://www.baidu.com
+//guanli/Starup.asp 2 https://www.baidu.com
+//yc.asp 2 https://www.baidu.com
+/sitemap.html 1 -
+//918team.asp 2 https://www.baidu.com
+//Images/Thumb.asp 2 https://www.baidu.com
+//goj.asp 2 https://www.baidu.com
+//feuqv10290.asp 2 https://www.baidu.com
+/a 20 -
+//a.asp 8 https://www.baidu.com
+//z.asp 2 https://www.baidu.com
+//images/images/cache.asp 2 https://www.baidu.com
+/2016/wp-includes/wlwmanifest.xml 1 -
+//fdsg/index.asp 2 https://www.baidu.com
+//admin/Inc/Logout.asp 2 https://www.baidu.com
+//userfiles/image/shell.asp/crazy3.jpg 2 https://www.baidu.com
+/shop/index.php/admin/ 1 -
+//ujytjt/news.asp 2 https://www.baidu.com
+//tegs.asp 2 https://www.baidu.com
+//basedata/11.asp 2 https://www.baidu.com
+/website-sitemap.xml 2 -
+//admin_int.asp 2 https://www.baidu.com
+//administrator 2 -
+//images/isagml/index.php 2 https://www.baidu.com
+//admin/inc/jiuge.asp 2 https://www.baidu.com
+//imgst/bnnr.asp 2 https://www.baidu.com
+//manage/ewebeditor/SqlIn.asp 2 https://www.baidu.com
+//zptthf.asp 2 https://www.baidu.com
+//admin/imagies/Shijian.asp 2 https://www.baidu.com
+//igbyd39940.asp 2 https://www.baidu.com
+//huayu.asp 2 https://www.baidu.com
+//xms.asp 2 https://www.baidu.com
+//idr.asp 2 https://www.baidu.com
+//SqlIn.asp 2 https://www.baidu.com
+//wer.asp 4 https://www.baidu.com
+//images/imgs.asp 2 https://www.baidu.com
+/magento/errors/503.php 1 -
+/wp-admin/ 2 -
+//zhG.asp 2 https://www.baidu.com
+//pp.asp 2 https://www.baidu.com
+//images/date.php 2 https://www.baidu.com
+//manage/Images/Sql.asp 2 https://www.baidu.com
+//nevvs6./index.asp 2 https://www.baidu.com
+//admin2015.asp 2 https://www.baidu.com
+//comdiy.asp 2 https://www.baidu.com
+//imag/bbb.asp 2 https://www.baidu.com
+/shop/errors/503.php 1 -
+//user/login 2 -
+//images/isagml/index.asp 2 https://www.baidu.com
+//l0s4r.asp 6 https://www.baidu.com
+//sqzr.asp 2 https://www.baidu.com
+//Dom/Images/check.asp 4 https://www.baidu.com
+//june.asp 2 https://www.baidu.com
+/magento/downloader/index.php 1 -
+//Images/DA.asp 2 https://www.baidu.com
+/rss/order/new/ 2 http://shirdisaidham.org/rss/order/new/
+//fdhy/index.asp 2 https://www.baidu.com
+//7.asp 2 https://www.baidu.com
+//Templates/red.asp 2 https://www.baidu.com
+//inc/miandg/index.asp 2 https://www.baidu.com
+//admin/images/Thumb.asp 4 https://www.baidu.com
+//tianya/index.asp 2 https://www.baidu.com
+//Databackup/x.asp 2 https://www.baidu.com
+//d.php 2 -
+//plus/shic/index.php 2 https://www.baidu.com
+/shop/wp-includes/wlwmanifest.xml 1 -
+/user.php 16 45ea207d7a2b68c49582d2d22adf953aads|a:2:{s:3:\"num\"
+//rsitsware/shortcrut/index11.asp 4 https://www.baidu.com
+//fdsg/diy.asp 2 https://www.baidu.com
+//Thumb.asp 2 https://www.baidu.com
+//images/isxbg/date.php 2 https://www.baidu.com
+/media/wp-includes/wlwmanifest.xml 1 -
+//asp.asp 4 https://www.baidu.com
+//iisod.asp 2 https://www.baidu.com
+//plus/Reg.aspx 1 https://www.baidu.com
+//concnn.asp 2 https://www.baidu.com
+//plus/mytag_js.php 10 https://www.baidu.com
+//data/cache/log.asp 2 https://www.baidu.com
+//images/check.asp 4 https://www.baidu.com
+//l0s4rcom.asp 2 https://www.baidu.com
+/images/back_all1.jpg 391 http://www.saiparivarfoundation.org/
+//html/eIiy.asp 2 https://www.baidu.com
+/plus/download.php 8 http://www.saiparivarfoundation.org/plus/download.php
+//fhlch52910.asp 2 https://www.baidu.com
+//fdh/index.asp 2 https://www.baidu.com
+//djo.asp 2 https://www.baidu.com
+/wp/wp-includes/wlwmanifest.xml 34 -
+//wp-admin/setup-config.php 2 -
+//wp-login.php 2 -
+//me/index.asp 2 https://www.baidu.com
+//plus/date.php 2 https://www.baidu.com
+//condiy.asp 4 https://www.baidu.com
+/e/DoInfo/ecms.php 8 http://www.saiparivarfoundation.org/e/DoInfo/ecms.php
+//data/cache_template/rss.tpl.php 2 -
+//userfiles/media/ali.asp/ali.jpg 2 https://www.baidu.com
+//mews/news.asp 2 https://www.baidu.com
+//incdata/admin_inc_data.asp 2 https://www.baidu.com
+//admin/sdfg.asp 2 https://www.baidu.com
+//Ecms.asp 2 https://www.baidu.com
+//xinet/xinnet.asp 4 https://www.baidu.com
+//Pcalss/Plcss.asp 2 https://www.baidu.com
+/errors/503.php 1 -
+//imager.asp 2 https://www.baidu.com
+//houmen.asp 2 https://www.baidu.com
+/wp-includes/wlwmanifest.xml 32 -
+//5t/fhd/index.asp 2 https://www.baidu.com
+//admin/Image/check.asp 2 https://www.baidu.com
+//Shijian.asp 2 https://www.baidu.com
+//date/js/v5/v5she.asp 2 https://www.baidu.com
+//fdh/diy.asp 2 https://www.baidu.com
+//conn1.asp 2 https://www.baidu.com
+//weian/DA.asp 2 https://www.baidu.com
+//admin/image/cache.asp 2 https://www.baidu.com
+//12345.asp 4 https://www.baidu.com
+//admin/DA.asp 2 https://www.baidu.com
+//webdav.asp 2 https://www.baidu.com
+//images/css/Thumb.asp 4 https://www.baidu.com
+//_Temp/com.aspx 1 https://www.baidu.com
+//I_Inc/flash.asp 2 https://www.baidu.com
+//html/confings.asp 2 https://www.baidu.com
+//sbs.asp 2 https://www.baidu.com
+//xz.asp 2 https://www.baidu.com
+//SqlOut.asp 2 https://www.baidu.com
+//comad/coon.asp 2 https://www.baidu.com
+//editor/Include/C1ass.asp 4 https://www.baidu.com
+//wkwcy62868.asp 2 https://www.baidu.com
+//555.asp 2 https://www.baidu.com
+//plus/fcjh/index.php 2 https://www.baidu.com
+//is.test.jsp 1 https://www.baidu.com
+//yt.asp 2 https://www.baidu.com
+/2015/wp-includes/wlwmanifest.xml 1 -
+//lyq.asp 2 https://www.baidu.com
+//mytag_js.asp 2 https://www.baidu.com
+//js.asp 2 https://www.baidu.com
+//admin/sbxjg/zxng/date.php 2 https://www.baidu.com
+//nfpath./common.asp 2 https://www.baidu.com
+//images/images/img/cache.asp 2 https://www.baidu.com
+//css/ing/css/md5.asp 2 https://www.baidu.com
+//blog/ 1 http://saiparivarfoundation.org/
+//inc/miandg/index.php 2 https://www.baidu.com
+//inc/zcon.asp 2 https://www.baidu.com
+//shehuirenma.asp 2 https://www.baidu.com
+//test.asp 2 https://www.baidu.com
+//plus/sjng/index.php 2 https://www.baidu.com
+//sitemap.html 2 -
+//imagies/SqlIn.asp 2 https://www.baidu.com
+//admin/dnhx/sdfg.php 2 https://www.baidu.com
+//idicn81016.asp 2 https://www.baidu.com
+//kk.asp 2 https://www.baidu.com
+//xbb.asp 2 https://www.baidu.com
+//images/Shijian.asp 2 https://www.baidu.com
+//too.asp 2 https://www.baidu.com
+//netlink_Main/CheckCode/Sql.asp 2 https://www.baidu.com
+/sitemap.xml 3 -
+//images/css/thumb.asp 2 https://www.baidu.com
+//admin/Databackup/1.asp 4 https://www.baidu.com
+//WU014tHVFvVK2kdg.php 3 -
+//incdata/admin_inc.asp.asp 2 https://www.baidu.com
+//cache.asp 2 https://www.baidu.com
+//config/AspCms_Config.asp,ysh 2 https://www.baidu.com
+//admin/imagies/date.php 2 https://www.baidu.com
+//uploads/DASA.asp 2 https://www.baidu.com
+//jycpcx.asp 2 https://www.baidu.com
+//admin/Images/cache.asp 2 https://www.baidu.com
+//plug/vote/vote_SettingFun.asp 2 https://www.baidu.com
+//admin/shijian/Shijian.asp 2 https://www.baidu.com
+//Admin/Images/cache.asp 4 https://www.baidu.com
+//wordpress// 1 -
+/utility/convert/index.php 8 http://www.saiparivarfoundation.org/utility/convert/index.php
+//beijia.asp 2 https://www.baidu.com
+//1111.jsp 1 https://www.baidu.com
+//admin/sxchg/xsbvah/Shijian.asp 2 https://www.baidu.com
+//upload/manaxge.asp 2 https://www.baidu.com
+//bsm.asp 2 https://www.baidu.com
+//userfiles/image/shell.asp/crazy1.jpg 2 https://www.baidu.com
+/install.php 1 -
+//keda.asp 2 https://www.baidu.com
+//WebEdit/Images/shle.asp 2 https://www.baidu.com
+//imagas.asp 2 https://www.baidu.com
+/wordpress/wp-admin/ 2 -
+//kdatebase/index_.asp 2 https://www.baidu.com
+//zsgljs/news.asp 2 https://www.baidu.com
+//base/admin/Thumb.asp 2 https://www.baidu.com
+//Ac2.asp 2 https://www.baidu.com
+//data/DA.asp 2 https://www.baidu.com
+//jmnb/shijian.asp 2 https://www.baidu.com
+/index.php 7 http://www.saiparivarfoundation.org/index.php
+/blog/wp-includes/wlwmanifest.xml 33 -
+//data/s.asp 4 https://www.baidu.com
+//Somnus/Somnus.asp 4 https://www.baidu.com
+//admin/SqlIn.asp 2 https://www.baidu.com
+//Inedata/system.asp 2 https://www.baidu.com
+//concon.asp 4 https://www.baidu.com
+//newssaw/confings.asp 2 https://www.baidu.com
+//html/DA.asp 2 https://www.baidu.com
+//css/xm.asp 2 https://www.baidu.com
+//admin/cache.asp 2 https://www.baidu.com
+//zzy.asp 2 https://www.baidu.com
+//ltpnes/news.asp 2 https://www.baidu.com
+//imgnewsup/image/cache.asp 2 https://www.baidu.com
+/xxxxxx.php 1 -
+//is/test.jsp 1 https://www.baidu.com
+//eWebEditor/sysimage/cache.asp 2 https://www.baidu.com
+//admin/index.asp 2 https://www.baidu.com
+//Admin/Images/Sql.asp 2 https://www.baidu.com
+/website/wp-includes/wlwmanifest.xml 1 -
+//crazy.asp 2 https://www.baidu.com
+//sd6/ewt/dfh.asp 2 https://www.baidu.com
+/FCKeditor/editor/filemanager/connectors/asp/connector.asp 1 http://www.saiparivarfoundation.org/FCKeditor/editor/filemanager/connectors/asp/connector.asp
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 481
+52.173.241.248 60 60 199542 20190630230047
+51.89.5.55 53 53 536572 20190615021141
+52.165.148.51 37 37 123042 20190630184631
+3.215.190.103 30 30 88634 20190626045827
+35.170.52.102 22 22 75010 20190627165839
+3.214.21.251 21 21 62819 20190624025835
+35.175.245.211 20 20 68180 20190623045729
+35.190.193.225 18 40 209902 20190618030446
+3.81.216.73 14 14 47738 20190627045836
+205.251.233.179 12 95 34955140 20190616100053
+192.185.5.167 11 11 796 20190612095333
+54.242.121.191 10 10 34102 20190630152620
+184.154.139.24 10 28 260976 20190630155029
+144.217.73.217 10 10 110259 20190617163702
+193.36.239.166 9 9 21566 20190622143527
+47.31.94.145 9 75 14261521 20190630043743
+185.161.71.84 9 9 21566 20190617104247
+64.202.160.250 8 8 22449 20190618122629
+88.222.184.114 8 9 211687 20190603181418
+71.197.231.146 8 84 32359578 20190616000638
+50.125.30.74 8 55 17754296 20190607121628
+64.90.48.202 8 8 90011 20190603104944
+159.203.84.4 7 23 264504 20190611123821
+50.35.65.78 7 68 28220570 20190628235939
+24.19.235.237 7 65 27993012 20190608173614
+178.171.88.216 1 1 3324 20190626225301
+18.237.152.26 1 1 3324 20190602003044
+14.215.176.148 1 8 17124 20190619002511
+34.222.225.79 1 1 3324 20190607030210
+35.166.144.134 1 1 3324 20190611051625
+165.225.38.238 2 57 12486702 20190604102502
+174.216.32.207 1 38 24311678 20190627210033
+107.77.97.62 2 36 12677108 20190613032127
+54.186.251.26 1 1 3324 20190607040731
+69.171.251.41 1 15 4870179 20190614025525
+168.245.240.119 1 1 3330 20190630033836
+54.240.196.172 1 14 4743038 20190620182710
+51.15.238.90 2 55 7754107 20190606112106
+35.225.107.160 1 1 3286 20190603122502
+34.215.53.109 1 1 3324 20190620042343
+66.249.88.113 1 1 0 20190628191342
+51.158.71.242 1 28 5042327 20190618042157
+73.83.193.231 1 29 7444375 20190605174205
+34.215.64.0 1 1 3324 20190612022302
+34.219.56.52 1 1 3330 20190627060221
+50.35.85.233 1 30 7447215 20190620000824
+54.244.158.37 1 1 3324 20190617033722
+188.166.22.77 4 4 11905 20190629084335
+54.213.77.56 1 1 3324 20190621053256
+103.113.229.248 0 1 86515 
+73.140.152.170 2 60 17368089 20190622021708
+209.210.5.148 5 55 23024940 20190624125542
+73.157.62.100 1 34 17028237 20190613191816
+24.7.50.238 2 37 12885000 20190605165704
+35.197.247.165 1 1 3324 20190604184436
+172.58.173.136 4 53 38085998 20190628185445
+24.16.83.190 1 31 12146850 20190608180523
+103.10.227.130 0 1 121676 
+23.129.64.192 1 1 0 20190615101957
+34.212.39.99 1 1 3324 20190618045150
+73.11.216.4 4 126 59781850 20190627014425
+184.154.76.23 5 15 106992 20190629154931
+178.162.199.5 1 1 10141 20190629121315
+46.246.65.137 1 1 3324 20190601093553
+155.159.123.96 1 1 9015 20190624140051
+18.236.212.47 1 1 3324 20190613064422
+179.61.150.65 1 1 3324 20190606005649
+34.221.217.45 1 1 3324 20190621020412
+198.11.178.103 1 1 10124 20190621143940
+18.237.153.225 1 1 3324 20190605061933
+66.249.84.19 0 11 125801 
+191.96.241.204 1 1 3324 20190626204223
+78.46.94.83 1 1 7210 20190618062402
+81.173.112.207 2 2 19280 20190617050656
+3.218.250.51 1 1 10124 20190605184856
+24.19.251.174 1 32 12325768 20190630222804
+35.192.110.224 1 1 10124 20190603060834
+35.231.10.251 2 2 3324 20190613122109
+34.208.242.247 1 1 3324 20190621045528
+172.58.46.210 1 33 14656309 20190620195606
+54.190.183.82 1 1 3324 20190624034138
+129.110.242.94 2 36 5084334 20190625210858
+54.213.252.108 1 1 3324 20190625032028
+172.58.41.174 0 2 4702475 
+66.249.84.21 0 10 4971589 
+54.191.107.251 1 1 3330 20190630071525
+172.58.41.145 1 34 17028237 20190604232548
+107.77.97.129 1 31 12117870 20190609195351
+34.216.64.57 1 1 3324 20190610054627
+172.58.45.120 1 32 12325762 20190603142337
+34.73.49.206 2 2 3324 20190605094816
+52.33.189.193 1 1 3324 20190616024321
+67.182.158.90 1 13 4852110 20190630180827
+54.203.46.15 1 1 3330 20190628023901
+172.58.46.190 3 39 5087263 20190627195316
+34.245.163.207 0 2 4702475 
+82.82.33.199 1 1 10124 20190615145034
+17.58.59.4 1 1 3330 20190628060100
+107.77.97.97 3 38 12888494 20190620220858
+172.58.35.30 4 44 19241098 20190620193101
+64.246.165.200 1 1 3324 20190618231725
+54.190.135.148 1 1 3324 20190604052809
+54.201.204.99 1 1 3324 20190619055114
+172.58.45.136 2 40 12367775 20190628170616
+62.4.14.198 1 1 10124 20190613140843
+196.17.63.23 1 1 3324 20190623145246
+163.172.184.200 1 12 225570 20190605154558
+103.81.214.21 1 29 7444375 20190606065719
+47.18.96.136 0 1 121676 
+184.154.139.46 3 7 133435 20190628155041
+24.19.171.175 2 3 11240 20190604234714
+34.219.246.15 1 1 3324 20190609032642
+34.223.254.32 1 1 3324 20190614023843
+172.58.46.197 1 8 20268 20190621114231
+52.36.66.255 1 1 3324 20190623021021
+54.218.237.29 1 1 3324 20190602063747
+73.53.119.72 1 28 5042327 20190613100654
+172.58.45.214 0 1 207892 
+73.109.125.50 7 65 16710932 20190613012657
+208.54.147.131 5 63 19582122 20190621154011
+138.0.113.179 2 2 20248 20190610162226
+24.56.246.165 1 29 5045167 20190619214924
+47.8.170.195 0 1 136790 
+73.118.186.201 1 32 12325762 20190613221846
+167.99.212.214 1 1 3330 20190629070759
+66.249.84.64 5 71 29338574 20190626232517
+138.68.180.18 1 1 3324 20190603022453
+54.203.4.59 1 1 3324 20190609064402
+54.158.90.183 1 1 3324 20190612212025
+51.75.92.175 1 1 10124 20190602202753
+71.193.155.84 1 34 19222393 20190626211743
+166.216.157.112 1 28 5042327 20190620213931
+24.80.197.90 4 43 20089244 20190627065552
+104.196.216.71 2 2 3324 20190601075026
+159.89.45.46 7 23 264504 20190606055723
+172.58.41.164 0 1 2402048 
+54.149.195.250 1 1 3324 20190602032351
+3.17.154.51 7 26 112098 20190608012807
+172.58.45.133 1 6 53992 20190628155521
+34.222.0.21 1 1 3324 20190603053823
+67.182.170.71 1 29 7444375 20190613060442
+73.254.228.56 5 57 26393549 20190623152341
+96.66.228.97 2 40 13017847 20190630140815
+107.77.97.125 2 61 19770149 20190630192353
+172.58.43.175 2 57 14827636 20190628200905
+18.236.179.159 1 1 3324 20190626053154
+172.58.40.253 0 2 4702475 
+174.216.6.43 4 36 12348349 20190630201801
+35.227.97.73 2 2 3324 20190609113341
+97.113.184.142 1 29 7444375 20190623130732
+158.46.217.218 1 1 3324 20190620012942
+69.171.251.24 0 1 5460 
+34.208.89.171 1 1 3330 20190629060225
+24.22.169.210 1 31 12117870 20190613194109
+216.243.17.14 1 31 12146850 20190623195330
+130.76.24.15 1 33 12328602 20190604013430
+34.66.151.243 1 1 1874 20190603122503
+24.17.22.212 3 48 34113987 20190606123203
+18.237.156.157 1 1 3330 20190630044642
+51.158.101.81 2 55 7754107 20190606094102
+174.216.17.183 1 31 9993689 20190620215816
+27.62.96.14 5 77 19659318 20190616040529
+54.214.199.101 1 1 3330 20190629023350
+34.221.101.190 1 1 3324 20190618024012
+207.200.8.182 0 1 6678 
+3.89.199.37 1 1 10124 20190603184030
+69.175.97.170 1 1 3324 20190606145630
+23.100.232.233 2 40 14377170 20190602003803
+24.85.84.2 3 48 25088136 20190601083351
+35.226.122.61 1 1 2163 20190603122502
+23.129.64.213 1 1 0 20190615100905
+54.215.206.94 1 1 10124 20190601121623
+24.17.60.139 4 12 7432114 20190629013155
+172.92.131.80 2 37 12634080 20190628225903
+73.157.84.220 0 20 12240106 
+75.172.96.86 1 31 12117870 20190608150402
+142.93.180.69 1 12 82338 20190629034330
+35.222.129.147 1 1 3494 20190603122502
+104.155.140.233 5 101 22292547 20190603122516
+173.252.87.9 0 13 125974 
+52.37.245.132 1 1 3324 20190608033239
+34.216.235.197 1 1 3324 20190616073735
+67.183.158.205 2 32 9912308 20190629200348
+194.44.61.241 2 2 20248 20190619224927
+73.239.102.220 1 20 184417 20190629200606
+91.242.162.7 2 2 6824 20190627105419
+123.126.68.101 2 2 6660 20190628095706
+138.197.77.243 7 18 99583 20190603033753
+34.219.90.40 1 1 3324 20190607044803
+35.202.167.131 1 1 3324 20190603122503
+160.81.30.6 2 38 15256928 20190611172219
+18.237.78.58 1 1 3324 20190619020744
+34.220.54.156 1 1 3324 20190603061019
+51.38.162.236 3 3 30372 20190611150104
+62.210.254.18 1 1 3324 20190606221955
+172.58.45.238 1 32 12325768 20190628201951
+35.194.12.13 1 1 3324 20190603122505
+107.77.97.128 1 29 7444375 20190612235124
+138.197.73.88 1 12 82332 20190607081652
+73.140.122.79 4 47 24181585 20190614000030
+172.58.43.179 1 32 12325768 20190629170122
+73.221.151.238 1 33 16820345 20190610214842
+172.58.40.92 1 32 12325762 20190620203659
+73.169.247.45 2 37 21771713 20190628001909
+51.77.52.160 3 3 30372 20190622082630
+73.184.135.16 0 1 121676 
+64.233.172.149 1 1 3324 20190610144027
+24.17.219.193 1 28 5042327 20190616162722
+72.14.51.223 3 42 10699989 20190604120651
+66.249.84.95 5 57 10989674 20190626232432
+45.19.51.211 0 1 121676 
+174.127.231.74 1 36 21771707 20190609013713
+71.168.178.219 1 29 7444375 20190605212105
+198.100.146.132 1 1 3324 20190607050448
+73.225.173.90 3 46 19604999 20190630002243
+131.107.159.197 4 81 21881895 20190620150905
+185.139.68.114 1 1 0 20190630080032
+107.77.97.94 1 32 12325762 20190616190825
+104.236.63.51 7 23 264504 20190621193313
+23.129.64.167 1 1 0 20190615035614
+59.56.241.218 1 1 3324 20190617163911
+34.211.179.175 1 1 3324 20190624021336
+34.212.161.131 1 1 3324 20190615051626
+54.189.137.53 1 1 3324 20190618050434
+54.201.121.67 1 1 3330 20190629072255
+206.180.165.147 2 2 6648 20190620064715
+78.46.82.170 1 1 10124 20190616091055
+167.114.228.206 1 1 3330 20190628010044
+52.24.115.210 1 1 3324 20190613032530
+157.41.202.30 0 1 136790 
+34.220.13.247 1 1 3324 20190606042530
+34.212.38.78 1 1 3324 20190617055458
+131.107.174.188 1 29 7444375 20190612155913
+54.212.67.198 1 1 3324 20190625040439
+18.216.252.153 3 20 98262 20190630071434
+24.17.63.113 4 100 56149300 20190608192010
+35.237.42.86 2 2 3324 20190617163956
+51.68.152.26 3 3 30372 20190609150721
+54.186.98.29 1 1 3324 20190618043143
+66.70.228.168 1 1 0 20190615024122
+34.212.23.121 1 1 3324 20190622024730
+220.123.77.250 0 1 136790 
+107.77.97.64 1 34 17028243 20190630163527
+54.218.106.189 1 1 3324 20190622052133
+23.129.64.157 1 1 0 20190615073430
+106.204.33.7 0 1 123587 
+216.158.194.125 1 1 3324 20190615112010
+172.58.40.110 1 28 5042327 20190626142752
+159.65.175.177 7 23 264504 20190626221604
+50.27.240.60 1 32 14488272 20190614221913
+14.215.176.20 0 5 27269 
+191.101.76.139 1 1 10124 20190622002711
+51.254.121.158 1 1 3324 20190606135938
+172.58.45.234 1 29 7444381 20190627183912
+40.121.133.100 2 2 6648 20190603172452
+173.252.87.37 1 14 4910893 20190625035515
+159.65.241.136 1 12 82332 20190624151309
+71.197.160.186 1 32 12325768 20190627173708
+34.212.122.23 1 1 3324 20190614065832
+107.77.97.20 1 32 12325762 20190622205823
+18.236.252.110 1 1 3324 20190622040855
+194.228.59.165 7 47 22063450 20190630145728
+51.158.108.162 1 28 5042327 20190617234128
+178.17.170.135 1 1 0 20190615063753
+54.164.150.244 1 1 10124 20190605112326
+172.56.42.111 1 32 12325768 20190627194623
+34.209.41.231 1 1 3330 20190629012509
+23.129.64.168 1 1 0 20190615081708
+14.215.176.21 0 2 42497 
+107.77.97.90 0 1 2371928 
+73.109.61.81 5 48 17426800 20190627214703
+104.156.103.43 2 45 13503926 20190607083909
+107.77.97.112 1 33 12328602 20190613221630
+52.36.141.162 1 1 3324 20190626023207
+174.216.33.69 3 52 25493330 20190607212247
+136.243.144.81 1 1 0 20190610060014
+24.143.116.68 7 61 39017622 20190623211029
+73.109.63.122 6 52 11010809 20190613195550
+35.237.51.66 2 2 3324 20190621172534
+169.145.136.12 5 38 17580766 20190627183638
+172.58.45.179 4 53 20119489 20190627144033
+67.160.24.115 7 51 8524583 20190614154915
+34.218.238.194 1 1 3330 20190627014357
+159.69.43.108 1 29 7444375 20190618015729
+54.201.50.117 1 1 3330 20190630034744
+64.233.172.151 1 1 3330 20190629021705
+75.149.221.170 1 1 10141 20190628001425
+54.145.191.80 1 1 10124 20190603182200
+18.144.43.82 1 1 3324 20190604011309
+50.207.228.81 1 28 5042327 20190622090624
+174.216.13.156 1 28 5042327 20190613192708
+50.204.37.254 2 41 14739703 20190627114612
+52.37.173.227 1 1 3330 20190627022052
+73.109.62.95 1 8 9783182 20190603233552
+104.169.197.179 2 34 7737910 20190608150208
+184.154.139.48 5 14 219163 20190617154647
+185.136.156.195 2 2 5487 20190603004559
+23.25.138.25 2 33 7450138 20190603111917
+96.85.217.185 6 54 24665254 20190628140251
+109.70.100.26 2 2 0 20190615081224
+95.217.3.132 1 12 225570 20190603051122
+50.47.81.48 1 30 9816303 20190619174119
+73.109.103.237 4 50 20623039 20190627154655
+23.252.62.110 6 74 59107921 20190613213037
+172.58.43.84 1 27 2711786 20190630185451
+34.220.99.97 1 1 3324 20190626061333
+69.171.251.19 0 12 166688 
+73.157.46.137 1 42 14721774 20190613200230
+34.215.240.44 1 1 3330 20190628055839
+66.249.84.93 4 72 34248138 20190626232500
+67.183.134.168 1 55 19700663 20190625212722
+13.125.122.251 0 2 4702475 
+184.94.240.92 6 6 52980 20190624055010
+109.70.100.24 2 2 6648 20190604160933
+104.232.112.246 1 32 12325762 20190601140253
+172.58.43.38 1 28 5042333 20190630120303
+116.203.39.80 2 2 20248 20190608211017
+54.148.14.161 1 1 3324 20190603050543
+73.94.194.28 2 35 16826509 20190624205157
+54.202.120.33 1 1 3324 20190606035426
+54.240.196.188 0 14 299289 
+34.221.86.41 1 1 3324 20190619022359
+54.188.69.44 1 1 3324 20190612044706
+108.2.70.119 1 20 184417 20190620085045
+51.15.224.103 2 2 20248 20190603031458
+34.222.244.139 1 1 3324 20190625034700
+192.55.54.43 2 34 14699488 20190606130052
+13.250.1.85 0 2 4702475 
+144.76.162.206 1 1 9156 20190618062402
+52.38.239.234 1 1 3324 20190620033939
+73.254.174.63 1 33 12328602 20190602171817
+54.184.226.83 1 1 3330 20190628021342
+54.244.218.245 1 1 3324 20190622042131
+159.89.180.128 1 12 82332 20190611170512
+35.184.237.106 2 2 20248 20190614194516
+157.42.251.83 0 1 121676 
+24.17.207.137 3 44 24874234 20190621155429
+51.158.181.29 1 28 5042327 20190618024033
+212.83.146.233 1 1 10124 20190613120115
+172.58.40.236 0 13 24108610 
+184.154.139.47 7 20 250156 20190626154750
+34.210.51.209 1 1 3330 20190629021035
+172.58.43.36 1 33 12328602 20190613193751
+60.191.38.77 5 5 50620 20190606035402
+137.117.37.162 1 1 10124 20190612154524
+35.238.250.31 1 1 2918 20190603122502
+144.120.79.11 1 30 9785797 20190620195243
+104.248.4.116 7 18 99583 20190624004747
+35.192.67.91 1 1 2066 20190603122502
+18.237.12.251 1 1 3324 20190620033720
+155.159.104.51 1 1 9156 20190624134539
+54.149.121.172 1 1 3324 20190612075901
+212.47.231.104 1 1 10124 20190603033103
+107.242.121.8 3 23 7310867 20190628200833
+192.53.187.162 0 22 4948221 
+98.237.177.165 2 36 17239465 20190628201136
+35.231.247.101 2 2 3324 20190625175623
+172.58.35.58 3 39 12806459 20190627212649
+34.221.91.72 1 1 3324 20190626034114
+172.58.45.39 1 32 12325768 20190628205003
+34.222.100.22 1 1 3324 20190601023138
+45.46.41.131 0 1 123587 
+172.58.43.1 1 32 12325762 20190616222939
+23.129.64.156 1 1 0 20190615110202
+24.16.98.143 6 51 12152923 20190627154048
+34.218.210.47 1 1 3324 20190623060220
+159.203.42.143 1 1 3324 20190616040424
+155.159.103.110 1 1 10124 20190624150155
+73.109.92.198 1 33 12328602 20190617142522
+96.81.157.89 1 30 9785797 20190611143128
+13.86.36.69 1 29 7444375 20190607144642
+14.215.176.149 0 3 4706 
+34.222.164.149 1 1 3330 20190630013525
+51.15.228.152 1 1 3324 20190619232805
+73.157.110.136 3 43 6132385 20190613235437
+159.65.34.175 7 23 264504 20190616181107
+73.202.96.153 1 28 5042327 20190625041821
+207.224.248.162 1 29 5250219 20190613185830
+192.3.15.120 2 2 20248 20190613112035
+174.216.18.14 1 28 5042327 20190612214527
+3.92.54.250 1 1 10124 20190605190809
+34.219.9.153 1 1 3324 20190606053755
+198.23.202.21 1 1 10124 20190623082551
+73.221.0.56 1 30 7447215 20190609114552
+107.77.97.108 5 49 19830456 20190611102946
+169.145.136.44 3 20 5124904 20190627183634
+78.46.156.169 2 2 20248 20190618062402
+206.169.234.110 1 28 5042327 20190606142441
+18.237.208.131 1 1 3324 20190624054701
+66.249.84.17 1 11 7227232 20190613195355
+148.64.7.111 0 1 121676 
+172.58.43.157 1 30 9785797 20190609203606
+104.236.60.17 1 12 82332 20190620103511
+54.165.59.7 1 1 10124 20190624085514
+24.16.152.204 1 32 12325768 20190628200927
+107.77.97.27 1 32 12325768 20190627204313
+98.247.20.51 1 31 12117870 20190615191220
+40.90.221.151 1 30 9785797 20190617142934
+107.242.121.12 0 4 140236 
+107.242.121.5 1 32 12325768 20190628092938
+131.107.159.146 1 33 12328602 20190612161652
+66.102.7.243 1 1 3330 20190628193836
+54.202.44.115 1 1 3324 20190611040517
+178.128.233.222 2 2 0 20190624101636
+172.58.43.87 1 28 5042327 20190601220828
+75.172.171.111 1 32 12325762 20190620201125
+99.152.33.150 2 43 13313211 20190623181334
+173.193.191.202 1 1 3324 20190605164035
+165.227.183.159 7 18 99583 20190609101443
+35.162.61.178 1 1 3324 20190602044940
+116.203.28.255 2 2 20282 20190630153106
+155.159.121.163 1 1 6488 20190624142925
+91.242.162.75 2 2 6824 20190628063832
+18.237.197.234 1 1 3324 20190605043554
+73.109.28.91 1 33 12328602 20190616221031
+24.143.122.2 1 32 12325762 20190616151921
+173.252.87.18 0 1 5460 
+69.147.100.12 1 1 3324 20190601050459
+54.234.247.14 1 1 10124 20190605114204
+155.159.121.193 1 1 6209 20190624142252
+83.167.254.58 4 4 13296 20190615005654
+34.222.241.190 1 1 3324 20190621020652
+174.254.192.74 1 28 5042327 20190621220300
+38.94.188.100 1 1 7210 20190624121811
+52.22.154.188 2 2 6648 20190621190514
+76.121.154.226 1 29 7444375 20190616153045
+172.58.40.119 4 44 14869696 20190616225323
+62.138.0.47 1 1 3324 20190601142140
+75.172.106.68 3 53 25127201 20190626170041
+163.172.179.206 2 24 451140 20190605165620
+73.140.252.63 4 47 29535177 20190609201824
+66.249.83.77 1 1 3330 20190628203801
+58.22.64.174 2 2 13471 20190629180553
+52.33.244.201 1 1 3324 20190615033337
+67.61.222.221 1 32 12325762 20190611180324
+54.190.169.23 1 1 3324 20190624081706
+34.217.191.232 1 1 3324 20190610043725
+34.217.53.199 1 1 3324 20190625023507
+46.4.83.150 1 1 6209 20190618062402
+107.6.171.130 1 1 3330 20190627031645
+23.129.64.165 1 1 0 20190615024703
+24.18.146.244 4 41 16813708 20190629193718
+122.177.161.197 0 1 86515 
+24.17.211.150 0 13 4775655 
+24.17.219.144 1 32 12325768 20190627192719
+66.133.109.36 3 3 261 20190612095333
+51.77.109.48 2 2 20248 20190615185916
+66.96.214.58 1 1 0 20190621161106
+54.200.210.74 1 1 3324 20190604062918
+154.16.46.188 1 1 10124 20190622004752
+159.89.111.196 2 2 20248 20190621181304
+35.231.95.104 2 2 3324 20190617165249
+34.209.80.74 1 1 3324 20190608060603
+138.197.111.244 1 12 82332 20190603010133
+71.227.232.88 1 32 12325768 20190627192537
+173.193.191.205 1 1 3324 20190605163746
+54.245.166.16 1 1 3324 20190619060450
+35.237.242.5 2 2 3330 20190629182137
+107.77.97.56 1 28 5042327 20190603233546
+172.58.173.115 0 2 2539965 
+54.218.149.30 1 1 3324 20190626020514
+172.58.45.225 2 36 5084334 20190613143823
+23.129.64.155 1 1 0 20190615093637
+138.197.111.172 1 12 82332 20190616043753
+13.229.125.195 1 1 3324 20190604001543
+107.77.97.49 0 6 11985910 
+54.70.194.116 1 1 3330 20190627063228
+134.209.190.173 1 1 3324 20190601012013
+66.240.236.119 1 1 10124 20190610023900
+34.216.204.95 1 1 3324 20190601064721
+34.221.84.14 1 1 3324 20190620023317
+178.171.28.94 1 1 3324 20190612211451
+37.58.52.111 1 1 10141 20190627092603
+36.89.251.107 1 1 3324 20190625044400
+98.237.241.102 1 31 12117870 20190615101258
+54.202.42.167 1 1 3324 20190623015520
+134.209.55.152 1 1 10124 20190613173054
+54.71.162.138 1 1 3324 20190623064646
+38.94.176.132 1 1 10124 20190624121754
+51.77.129.159 1 27 2711780 20190618024113
+50.112.15.69 1 1 3330 20190628055708
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20190601 20 145 49849798 17
+20190602 22 110 36567282 14
+20190603 61 323 63099281 33
+20190604 22 182 47919083 16
+20190605 22 170 43008091 19
+20190606 35 294 81867631 23
+20190607 29 255 77640564 15
+20190608 27 294 116295935 12
+20190609 22 201 80814257 12
+20190610 15 48 16907920 12
+20190611 25 194 57610071 12
+20190612 35 206 64485242 17
+20190613 66 697 258336547 28
+20190614 44 200 54885413 15
+20190615 47 110 24827156 25
+20190616 43 462 124729119 21
+20190617 41 158 51594446 18
+20190618 51 184 20723044 22
+20190619 23 99 15137674 17
+20190620 39 462 138094895 25
+20190621 43 224 62229704 24
+20190622 30 148 34849176 16
+20190623 36 247 107824681 20
+20190624 50 165 54586230 29
+20190625 32 151 23002319 26
+20190626 34 206 62706262 21
+20190627 67 820 311301065 30
+20190628 51 557 226640730 29
+20190629 40 265 83561842 28
+20190630 63 421 114012123 39
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+30s-2mn 41
+5mn-15mn 12
+30mn-1h 4
+15mn-30mn 9
+2mn-5mn 16
+0s-30s 553
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 22
+/ 763 3515459 597 503
+/mission.html 111 426142 14 54
+/contacts.html 61 155025 8 28
+/about.html 55 190534 6 11
+/pictures.html 49 246211 1 11
+/guruji.html 47 117817 3 15
+/Resources.html 32 78424 4 9
+/mail.php 3 834 0 2
+/.well-known/acme-challenge/DSE-GCXS_K_KGRKI-M2K69STV1BWSNU2 1 64 0 0
+/.well-known/acme-challenge/Z4caEbdGMTnag0zQ2nmtOzeQ2-szptCVX3bKRWH3jm8 1 87 1 0
+/.well-known/acme-challenge/q1SzTh6QHKGKPYieR2oNLrxeulkj3i9aVEbqDyRPdNY 1 87 0 0
+/.well-known/acme-challenge/2BVXYZZUX5D76N83XNLPXBH7KPT-T9CR 1 64 0 0
+/.well-known/acme-challenge/-LTOQN9QE-AYUEGZ_TNMMKJFO1UGQV2K 1 64 0 0
+/.well-known/acme-challenge/ZKyVy-ZmpFEw83wuEG_ScbrNdtFZtw-rKxCPHwHviRQ 1 87 0 0
+/.well-known/acme-challenge/SYKGOEFV8QMOJQD-RVWSDKE-FTGKAOA4 1 64 0 0
+/.well-known/acme-challenge/1UNQEUka9xXs-S7xqm3ERExbzSMZsqfAADX8l0QHiJ4 1 87 0 1
+/.well-known/acme-challenge/5K8UMJFZY0JY2-WP1O6ASEERKRNCV8DP 1 64 1 0
+/.well-known/acme-challenge/MC1HNZOJ-1L2E9KL1J0OLK6ZRU7SK59R 1 64 0 0
+/.well-known/acme-challenge/FF5sElru0-5LNQ5HITlpy7BoeQb8_Z1c8el2AMR3GzM 1 87 0 0
+/.well-known/acme-challenge/4GTNXEPROOO-0BC4M5R2REZ45PWHMV3Z 1 64 0 0
+/.well-known/acme-challenge/vnYA3dsvUdaxNNxvno52Hvv3_IAhwJb_Js-FZuEhEvo 1 87 0 0
+/.well-known/acme-challenge/Iliu-PoOcJJT6OpF1cBK2RFJdFPtNhWxFOycA0MEnNI 1 87 0 1
+END_SIDER

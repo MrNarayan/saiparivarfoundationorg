@@ -1,0 +1,282 @@
+Return-Path: <prasanna.j@innovateindia.in>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id YM0SJPu/PmStBQcAUq51WA
+	(envelope-from <prasanna.j@innovateindia.in>)
+	for <info@saiparivarfoundation.org>; Tue, 18 Apr 2023 11:06:19 -0500
+Return-path: <prasanna.j@innovateindia.in>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Tue, 18 Apr 2023 11:06:19 -0500
+Received: from mail-ej1-f41.google.com ([209.85.218.41]:46174)
+	by gator4018.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <prasanna.j@innovateindia.in>)
+	id 1ponqV-001vWe-Bv
+	for info@saiparivarfoundation.org;
+	Tue, 18 Apr 2023 11:06:19 -0500
+Received: by mail-ej1-f41.google.com with SMTP id a640c23a62f3a-94a342f15e4so559290666b.0
+        for <info@saiparivarfoundation.org>; Tue, 18 Apr 2023 09:06:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=innovateindia-in.20221208.gappssmtp.com; s=20221208; t=1681833968; x=1684425968;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=fioutFNjMaQlQaAr7BxO72JJZ2+pdAYvstz9JEWPhak=;
+        b=qF/oQVCi7M8lYOCpp7MLH+3lzuapXobwEqUcAlG/XpIbtURYZ8defuw+V6XMVS1DLu
+         RzJODWxSKbEpmzqjgtWeiZaCXUMn+0Xii7sLCamfqlCctnGCZQ/X+ohSXLlpliPhhX7v
+         qkz3xRAlBGjg4GvdnNIwlor15WyoYT8al4S0zfHXnYBlvCt546GwAsvYbXeH+qXOBKam
+         CE4CMK9SGGlrEMb+enKtkXWnu5+kw4DSGXG8mbKEFS8sr1g22Uy+JbyQeL3XroBxPQ4o
+         brRQQOoYZsaYeH5bVINBpRYDZW+tdtJcjSaikzdGWXw7/Q367NYhFQ1GH2id9ZJvjo5/
+         OCaw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1681833968; x=1684425968;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=fioutFNjMaQlQaAr7BxO72JJZ2+pdAYvstz9JEWPhak=;
+        b=g9WKxGBY8U/f5tzRZtTiS2zyz+UAG1nK4ewOMUrDcLRkOIY9mFr/emH63yLI2fKJTB
+         SHOHH4c4JXH7Ivw8IdS1AbVCgBGQypD9mxDkqcbZeVTBzQpUgBYqj2aQoZ1G7b2rr+19
+         mC7ZZcot9cmXtWyxI3MOK5Z1PQlKOOLV07ZzALWPIeIwcjP2nqQATuxNmDHRhYJAYmmZ
+         rnhrgO3fy8hBpKHMXYc9ZJJvg6GZUAOMNzPwQAul9rhDJPN2winO7F44wkSL0+8zTbbI
+         VtqAn0s7g5EI15HqkUXqDfIZgW4dXFgwGeU/SGKAIzKD8x7qiw5flwtTBV8KWy+Pb969
+         15Ng==
+X-Gm-Message-State: AAQBX9f4jemmai83uLHM+YevEh1ZrNpKNVSq8cOmBh2pSlpJ30s8eXd3
+	MJxj3zbYNRkMIHE1fmxJdsYsBY/NAWSt83wQBm5ecg==
+X-Google-Smtp-Source: AKy350YnCl9jFkUTlYeMAUi+ZEbBCKwj7GgwBGoAaRmSFNGH1tmRrteKL9hgIzH4wIGv8jMhMoQqcuOf12Wto8urm2Q=
+X-Received: by 2002:a05:6402:197:b0:505:34c:eb38 with SMTP id
+ r23-20020a056402019700b00505034ceb38mr2451311edv.11.1681833967759; Tue, 18
+ Apr 2023 09:06:07 -0700 (PDT)
+MIME-Version: 1.0
+From: Prasanna Innovateteam <prasanna.j@innovateindia.in>
+Date: Tue, 18 Apr 2023 21:35:56 +0530
+Message-ID: <CAMx--ukYTHFL_uokDzVsxB4rRiuaGsHsSXQLCvo=uRt=Je=zag@mail.gmail.com>
+Subject: Website proposal from Innovate Software Solutions Pvt Ltd.,
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="0000000000003848a605f99e7c7f"
+Bcc: info@saiparivarfoundation.org
+
+--0000000000003848a605f99e7c7f
+Content-Type: text/plain; charset="UTF-8"
+
+*Hi Sir/Madam,*
+
+*Greetings !!!*
+
+Representing Innovate Software Solutions Pvt Ltd, this is  Prasanna Jolad.
+
+With over 12 years in the industry, we are a team of developers with
+experience in offering solutions for the development of customized
+Websites,
+CRM applications & IOS-Android APPs, using the latest technologies.
+
+Our global testimonials point to our commitment to client satisfaction as
+the paramount objective.
+
+We would be glad if an opportunity can be extended with your esteemed
+organization.
+
+Our client-specific approach makes us accommodate the budget as per your
+project requirements.
+
+A dedicated developer will be assigned to handle the project requirements
+with a quick turnaround time.
+
+*We offer the following services.*
+
+      *1.* Professional Website Development
+      *2.* CRM Application
+     * 3.* API Integration.
+      *4.* IOS & Android App Development
+      *5.* Digital Marketing
+      *6.* Maintenance Support.
+      *7.* Server, Hosting & Email support
+      *8.* Payment gateway integration
+     * 9.* Graphic work like logos, brochures & flyers.
+     *10.* Dedicated Manpower support
+
+*Submitted herewith please find our portfolio for your reference.*
+
+       *1. *www.globalbigdataconference.com
+       *2.* www.v2innovationsinc.com
+       *3. *www.iaecconsultants.com
+       *4.* www.k-techsystems.com
+       *5**. *www.virijallu.com
+  *     6. *www.garudavega.com
+*       7. *www.tama.org
+*       8. *www.mallina.org
+*       9. *www.kamalwatch.com
+*     10. *www.natsworld.org
+*      11. *www.goetc.in
+*      12. *www.rastra.in
+*      13. *www.fortworthhindutemple.org
+*      14. *www.triadhindutemple.com
+*      15. *www.virtussolutionsllc.com
+*      16. *www.ramrealtytrust.com
+*      17. *www.dispatchingmasters.com
+*      18. *www.sshomezone.com
+*      19. *paatasala.tana.org
+*     20. *events.tana.org
+
+Profile Link:-   *http://www.innovateindia.in/what-we-done.html
+<http://www.innovateindia.in/what-we-done.html>*
+
+For further information contact us:-
+
+PRASANNA JOLAD
+Business Development Manager.
+
+*For technical support call on:-*
+NARESH KINNERA
+Whatsapp & India no: 96766 42444
+Website URL:- www.innovateindia.in <http://www.arjunweb.com/>
+
+--0000000000003848a605f99e7c7f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><font face=3D"georgia, serif"><b style=3D"color:rgb(0,0,0)=
+">Hi Sir/Madam,</b><br></font><div><b style=3D"color:rgb(0,0,0)"><font face=
+=3D"georgia, serif"><br></font></b></div><div><div><font face=3D"georgia, s=
+erif"><b>Greetings !!!</b><br></font></div><font face=3D"georgia, serif"><b=
+r></font><font face=3D"georgia, serif">Representing=C2=A0</font><font face=
+=3D"georgia, serif"><font color=3D"#000000">Innovate Software Solutions</fo=
+nt>=C2=A0Pvt Ltd, this is =C2=A0Prasanna Jolad.</font><font face=3D"georgia=
+, serif"><br><br>With over 12 years in the industry, we are a team of devel=
+opers with experience in offering solutions for the development of customiz=
+ed Websites,=C2=A0</font></div><div><font face=3D"georgia, serif">CRM appli=
+cations &amp;=C2=A0IOS-Android APPs, using the latest technologies.</font><=
+div><font face=3D"georgia, serif"><br>Our global testimonials point to our =
+commitment to client satisfaction as the paramount objective.<br><br>We wou=
+ld be glad if an opportunity can be extended with your esteemed organizatio=
+n.<br><br>Our client-specific approach makes us accommodate the budget as p=
+er your project requirements.<br><br>A dedicated developer will be assigned=
+ to handle the project requirements with a quick turnaround time.<br><br><b=
+><font color=3D"#444444">We offer the following services.</font></b></font>=
+</div><div><font face=3D"georgia, serif"><font color=3D"#444444"><b><br></b=
+></font>=C2=A0 =C2=A0=C2=A0<font color=3D"#0b5394">=C2=A0=C2=A0</font><font=
+ color=3D"#000000"><b>1.</b></font><font color=3D"#0b5394">=C2=A0Profession=
+al Website Development</font></font></div><font face=3D"georgia, serif"><fo=
+nt color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#00000=
+0"><b>2.</b></font><font color=3D"#0b5394">=C2=A0CRM Application<br>=C2=A0 =
+=C2=A0 =C2=A0</font><font color=3D"#000000"><b>=C2=A03.</b>=C2=A0</font><fo=
+nt color=3D"#0b5394">API Integration.<br>=C2=A0 =C2=A0 =C2=A0</font><font c=
+olor=3D"#000000">=C2=A0<b>4.</b></font><font color=3D"#0b5394">=C2=A0IOS &a=
+mp; Android App Development<br>=C2=A0 =C2=A0 =C2=A0=C2=A0</font><font color=
+=3D"#000000"><b>5.</b></font><font color=3D"#0b5394"><b>=C2=A0</b>Digital M=
+arketing<br>=C2=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000"><b>6.<=
+/b></font><font color=3D"#0b5394">=C2=A0Maintenance Support.<br>=C2=A0 =C2=
+=A0 =C2=A0</font><font color=3D"#000000">=C2=A0<b>7.</b></font><font color=
+=3D"#0b5394">=C2=A0Server, Hosting &amp; Email support<br>=C2=A0 =C2=A0 =C2=
+=A0=C2=A0</font><font color=3D"#000000"><b>8.</b></font><font color=3D"#0b5=
+394">=C2=A0Payment gateway integration<br>=C2=A0 =C2=A0=C2=A0</font><font c=
+olor=3D"#000000">=C2=A0<b>=C2=A09.</b></font><font color=3D"#0b5394">=C2=A0=
+Graphic work like logos, brochures &amp; flyers.<br>=C2=A0 =C2=A0 =C2=A0</f=
+ont><font color=3D"#000000"><b>10.</b></font><font color=3D"#0b5394">=C2=A0=
+Dedicated Manpower support</font></font><div><font face=3D"georgia, serif">=
+<b><br></b></font></div><div><b><font face=3D"georgia, serif">Submitted her=
+ewith please find our portfolio for your reference.</font></b></div><div><b=
+><font face=3D"georgia, serif"><br></font></b></div><div><font face=3D"geor=
+gia, serif"><b>=C2=A0 =C2=A0 =C2=A0 =C2=A0</b><b>1.=C2=A0</b><a href=3D"htt=
+p://www.globalbigdataconference.com/" rel=3D"noreferrer noreferrer" style=
+=3D"white-space:pre-wrap" target=3D"_blank"><font color=3D"#0b5394">www.glo=
+balbigdataconference.com</font></a></font></div><div><font face=3D"georgia,=
+ serif"><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0 =C2=A0</font><b><font =
+color=3D"#000000">2.</font></b><font color=3D"#0b5394">=C2=A0</font><a href=
+=3D"http://www.v2innovationsinc.com/" rel=3D"noreferrer noreferrer" style=
+=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"_blank">www.v2inno=
+vationsinc.com</a><br></font></div><div><font face=3D"georgia, serif"><font=
+ color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0 =C2=A0</font><b><font color=3D"#000=
+000">3.</font><font color=3D"#0b5394">=C2=A0</font></b></font><a href=3D"ht=
+tp://www.iaecconsultants.com/" target=3D"_blank"><font color=3D"#0b5394">ww=
+w.iaecconsultants.com</font></a><font face=3D"georgia, serif"><br></font></=
+div><div><font face=3D"georgia, serif"><font color=3D"#0b5394">=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0</font><font color=3D"#000000"><b>4.</b>=C2=A0</font><a hr=
+ef=3D"http://www.k-techsystems.com/" rel=3D"noreferrer noreferrer" style=3D=
+"color:rgb(11,83,148);white-space:pre-wrap" target=3D"_blank">www.k-techsys=
+tems.com</a><br></font></div><div><font face=3D"georgia, serif"><font color=
+=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0 =C2=A0</font><b><font color=3D"#000000">5=
+</font></b><b><font color=3D"#000000">.</font><font color=3D"#0b5394">=C2=
+=A0</font></b><a href=3D"http://www.virijallu.com/" rel=3D"noreferrer noref=
+errer" style=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"_blank=
+">www.virijallu.com</a></font></div><div><font face=3D"georgia, serif"><fon=
+t color=3D"#0b5394">=C2=A0=C2=A0</font><b><font color=3D"#0b5394">=C2=A0 =
+=C2=A0 =C2=A0</font><font color=3D"#000000">6.</font><font color=3D"#0b5394=
+">=C2=A0</font></b><a href=3D"http://www.garudavega.com/" rel=3D"noreferrer=
+ noreferrer" style=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"=
+_blank">www.garudavega.com</a></font></div><div><font face=3D"georgia, seri=
+f"><b><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0 =C2=A0</font><font color=
+=3D"#000000">7.</font><font color=3D"#0b5394">=C2=A0</font></b><a href=3D"h=
+ttp://www.tama.org/" rel=3D"noreferrer noreferrer" style=3D"color:rgb(11,83=
+,148);white-space:pre-wrap" target=3D"_blank">www.tama.org</a></font></div>=
+<div><font face=3D"georgia, serif"><b><font color=3D"#0b5394">=C2=A0 =C2=A0=
+ =C2=A0 =C2=A0</font><font color=3D"#000000">8.</font><font color=3D"#0b539=
+4">=C2=A0</font></b><a href=3D"http://www.mallina.org/" rel=3D"noreferrer n=
+oreferrer" style=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"_b=
+lank">www.mallina.org</a></font></div><div><b><font face=3D"georgia, serif"=
+><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0 =C2=A0</font><font color=3D"#=
+000000">9.</font><font color=3D"#0b5394">=C2=A0</font></font></b><a href=3D=
+"http://www.kamalwatch.com/" rel=3D"noreferrer noreferrer" style=3D"color:r=
+gb(11,83,148);white-space:pre-wrap" target=3D"_blank"><font face=3D"georgia=
+, serif">www.kamalwatch.com</font></a></div><div><font face=3D"georgia, ser=
+if"><b><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0</font><font color=3D"#0=
+00000">10.=C2=A0</font></b><a href=3D"http://www.natsworld.org/" rel=3D"nor=
+eferrer noreferrer" style=3D"color:rgb(11,83,148)" target=3D"_blank">www.na=
+tsworld.org</a></font></div><div><font face=3D"georgia, serif"><b><font col=
+or=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">11.=
+</font><font color=3D"#0b5394">=C2=A0</font></b><a href=3D"http://www.goetc=
+.in/" rel=3D"noreferrer noreferrer" style=3D"color:rgb(11,83,148);white-spa=
+ce:pre-wrap" target=3D"_blank">www.goetc.in</a></font></div><div><font face=
+=3D"georgia, serif"><b><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0=C2=A0</=
+font><font color=3D"#000000">12.</font><font color=3D"#0b5394">=C2=A0</font=
+></b><a href=3D"http://www.rastra.in/" rel=3D"noreferrer noreferrer" style=
+=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"_blank">www.rastra=
+.in</a></font></div><div><font face=3D"georgia, serif"><b><font color=3D"#0=
+b5394">=C2=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">13.</font><=
+font color=3D"#0b5394">=C2=A0</font></b><a href=3D"http://www.fortworthhind=
+utemple.org/" rel=3D"noreferrer noreferrer" style=3D"color:rgb(11,83,148);w=
+hite-space:pre-wrap" target=3D"_blank">www.fortworthhindutemple.org</a></fo=
+nt></div><div><font face=3D"georgia, serif"><b><font color=3D"#0b5394">=C2=
+=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">14.</font><font color=
+=3D"#0b5394">=C2=A0</font></b><a href=3D"http://www.triadhindutemple.com/" =
+rel=3D"noreferrer noreferrer" style=3D"color:rgb(11,83,148);white-space:pre=
+-wrap" target=3D"_blank">www.triadhindutemple.com</a></font></div><div><fon=
+t face=3D"georgia, serif"><b><font color=3D"#0b5394">=C2=A0 =C2=A0=C2=A0</f=
+ont><font color=3D"#000000">=C2=A0 15.</font><font color=3D"#0b5394">=C2=A0=
+</font></b><a href=3D"http://www.virtussolutionsllc.com/" rel=3D"noreferrer=
+ noreferrer" style=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"=
+_blank">www.virtussolutionsllc.com</a></font></div><div><font face=3D"georg=
+ia, serif"><b><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0=C2=A0</font><fon=
+t color=3D"#000000">16.</font><font color=3D"#0b5394">=C2=A0</font></b><a h=
+ref=3D"http://www.ramrealtytrust.com/" rel=3D"noreferrer noreferrer" style=
+=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"_blank">www.ramrea=
+ltytrust.com</a></font></div><div><font face=3D"georgia, serif"><b><font co=
+lor=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">17=
+.</font><font color=3D"#0b5394">=C2=A0</font></b><a href=3D"http://www.disp=
+atchingmasters.com/" rel=3D"noreferrer noreferrer" style=3D"color:rgb(11,83=
+,148);white-space:pre-wrap" target=3D"_blank">www.dispatchingmasters.com</a=
+></font></div><div><font face=3D"georgia, serif"><b><font color=3D"#0b5394"=
+>=C2=A0 =C2=A0 =C2=A0=C2=A0</font><font color=3D"#000000">18.</font><font c=
+olor=3D"#0b5394">=C2=A0</font></b><a href=3D"http://www.sshomezone.com/" re=
+l=3D"noreferrer noreferrer" style=3D"color:rgb(11,83,148);white-space:pre-w=
+rap" target=3D"_blank">www.sshomezone.com</a></font></div><div><font face=
+=3D"georgia, serif"><b><font color=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0=C2=A0</=
+font><font color=3D"#000000">19.</font><font color=3D"#0b5394">=C2=A0</font=
+></b><a href=3D"http://paatasala.tana.org/" rel=3D"noreferrer noreferrer" s=
+tyle=3D"color:rgb(11,83,148);white-space:pre-wrap" target=3D"_blank">paatas=
+ala.tana.org</a></font></div><div><font face=3D"georgia, serif"><b><font co=
+lor=3D"#0b5394">=C2=A0 =C2=A0 =C2=A0</font><font color=3D"#000000">20.</fon=
+t><font color=3D"#0b5394">=C2=A0</font></b><a href=3D"http://events.tana.or=
+g/" rel=3D"noreferrer noreferrer" style=3D"color:rgb(11,83,148);white-space=
+:pre-wrap" target=3D"_blank">events.tana.org</a></font></div><div><font fac=
+e=3D"georgia, serif"><br></font></div><div><font face=3D"georgia, serif">Pr=
+ofile Link:-=C2=A0=C2=A0=C2=A0<u><a href=3D"http://www.innovateindia.in/wha=
+t-we-done.html" rel=3D"noreferrer noreferrer" target=3D"_blank"><font color=
+=3D"#0b5394">http://www.innovateindia.in/what-we-done.html</font></a></u><b=
+r></font></div><div><font face=3D"georgia, serif"><br></font></div><div><fo=
+nt face=3D"georgia, serif">For further information contact us:-<br><br>PRAS=
+ANNA JOLAD<br>Business Development Manager.<br><br><b>For technical support=
+ call on:-</b><br>NARESH KINNERA<br>Whatsapp &amp; India no: 96766 42444 =
+=C2=A0<br>Website URL:-=C2=A0<a href=3D"http://www.arjunweb.com/" rel=3D"no=
+referrer" target=3D"_blank"><font color=3D"#0b5394">www.innovateindia.in</f=
+ont></a></font></div></div></div>
+
+--0000000000003848a605f99e7c7f--

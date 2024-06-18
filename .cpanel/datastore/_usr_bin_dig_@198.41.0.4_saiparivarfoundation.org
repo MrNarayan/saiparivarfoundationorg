@@ -1,0 +1,39 @@
+
+; <<>> DiG 9.8.2rc1-RedHat-9.8.2-0.23.rc1.el6_5.1 <<>> @198.41.0.4 saiparivarfoundation.org
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 58033
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 6, ADDITIONAL: 12
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;saiparivarfoundation.org.	IN	A
+
+;; AUTHORITY SECTION:
+org.			172800	IN	NS	d0.org.afilias-nst.org.
+org.			172800	IN	NS	b2.org.afilias-nst.org.
+org.			172800	IN	NS	b0.org.afilias-nst.org.
+org.			172800	IN	NS	c0.org.afilias-nst.info.
+org.			172800	IN	NS	a2.org.afilias-nst.info.
+org.			172800	IN	NS	a0.org.afilias-nst.info.
+
+;; ADDITIONAL SECTION:
+d0.org.afilias-nst.org.	172800	IN	A	199.19.57.1
+d0.org.afilias-nst.org.	172800	IN	AAAA	2001:500:f::1
+b2.org.afilias-nst.org.	172800	IN	A	199.249.120.1
+b2.org.afilias-nst.org.	172800	IN	AAAA	2001:500:48::1
+b0.org.afilias-nst.org.	172800	IN	A	199.19.54.1
+b0.org.afilias-nst.org.	172800	IN	AAAA	2001:500:c::1
+c0.org.afilias-nst.info. 172800	IN	A	199.19.53.1
+c0.org.afilias-nst.info. 172800	IN	AAAA	2001:500:b::1
+a2.org.afilias-nst.info. 172800	IN	A	199.249.112.1
+a2.org.afilias-nst.info. 172800	IN	AAAA	2001:500:40::1
+a0.org.afilias-nst.info. 172800	IN	A	199.19.56.1
+a0.org.afilias-nst.info. 172800	IN	AAAA	2001:500:e::1
+
+;; Query time: 43 msec
+;; SERVER: 198.41.0.4#53(198.41.0.4)
+;; WHEN: Mon Feb  9 18:03:07 2015
+;; MSG SIZE  rcvd: 444
+

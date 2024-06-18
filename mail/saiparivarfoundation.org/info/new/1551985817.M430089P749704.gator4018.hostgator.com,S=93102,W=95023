@@ -1,0 +1,1921 @@
+Return-Path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP id sKWiFplsgVyIcAsAUq51WA
+	for <info@saiparivarfoundation.org>; Thu, 07 Mar 2019 13:10:17 -0600
+Return-path: <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Thu, 07 Mar 2019 13:10:17 -0600
+Received: from mail-pf1-f176.google.com ([209.85.210.176]:45241)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <saiparivarfoundation+caf_=info=saiparivarfoundation.org@gmail.com>)
+	id 1h1yPI-003Gi5-V8
+	for info@saiparivarfoundation.org; Thu, 07 Mar 2019 13:10:17 -0600
+Received: by mail-pf1-f176.google.com with SMTP id v21so12154716pfm.12
+        for <info@saiparivarfoundation.org>; Thu, 07 Mar 2019 11:10:11 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:message-id:date:from
+         :reply-to:to:subject:mime-version:list-unsubscribe
+         :list-unsubscribe-post;
+        bh=nKuuEi9UHEeLVYWciw+LLOazqI0G2js3Y+fDAYerrZY=;
+        b=okccjcJITDPsymr9tBtENx9jz+H04nmZGBfsTZ4noFTSr6Vj0BywW0HLRHh7t+/GHu
+         AIT9OhVSatkjXOUKrKGtWceYubLEV3+ju6+Bd7UBzUCI9eQHJPo6Q8Tx993tEMZfJgD6
+         +lVjXoE5AoHbRgr71lHEWEn6JNmM29gOIKpXA2mHLY3SdoyCGc+AUvcouMTgBHAuf8f3
+         kAt0O5j8zNTtOO03r5OMZwys9eATdw5dHYDV5URWAh3VZzh2DnF4IayksMCFFPz3gqVS
+         tv+ZIYspOt8hFeRe0z5djyEyFPP6OBxu/rnhY8BaFYgXzgbzyX3ELaSQsMxbD6uscYN6
+         UeTA==
+X-Gm-Message-State: APjAAAVJOMfTsMZQIraJpmuxTPz8ysod3LXvwl0QxX+CrpJER1IUPCg4
+	6eg/fzTgvYY03JDlgHjpL/CVY+piACsLrVLeV88gajxFOiTSLhc=
+X-Received: by 2002:a17:902:bf01:: with SMTP id bi1mr14045702plb.252.1551985805691;
+        Thu, 07 Mar 2019 11:10:05 -0800 (PST)
+X-Forwarded-To: info@saiparivarfoundation.org
+X-Forwarded-For: saiparivarfoundation@gmail.com info@saiparivarfoundation.org
+Delivered-To: saiparivarfoundation@gmail.com
+Received: by 2002:a17:90a:3787:0:0:0:0 with SMTP id v7-v6csp7523636pjb;
+        Thu, 7 Mar 2019 11:10:03 -0800 (PST)
+X-Google-Smtp-Source: APXvYqwWPcMD7xiRR6WSn7MdAXnkQvf8IDpWQNtbqLMpT/zSVj+kw7CsPanafECFY/P79t7ljMay
+X-Received: by 2002:a81:8906:: with SMTP id z6mr11219785ywf.328.1551985803295;
+        Thu, 07 Mar 2019 11:10:03 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1551985803; cv=none;
+        d=google.com; s=arc-20160816;
+        b=kuuu2JNBlW60Grjwb97vH91mM3hWKKkGmKBux6PYulJhEthYcAJ3k4/B9/aYaoNOmG
+         ywbn1ftzaK2XJTuGDwF00hWrhPJV9G5hemJ3LfHj7s+Pl3pwecgmtXWjLLvtW/0OVhvh
+         N7RbEyF+m5z6NIRmXqgG/vM/2/dV4dtiYIBQ1bXY365QiuiZSr2jjOt34iYvW4frqNJL
+         eFmgnz70K6XNZc6nd+Qov98827YKoDFcfUHc+D8aN/WJHMvFh8FCw6GnFQTs7qt4kKN+
+         90NAkvYO4R5yh1lQ1/cR0Vr5pE+Br35OHivvT15XdWfPP2TEeomBx26geLmB9B03QqZh
+         Q68g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe-post:list-unsubscribe:mime-version:subject:to
+         :reply-to:from:date:message-id:dkim-signature;
+        bh=nKuuEi9UHEeLVYWciw+LLOazqI0G2js3Y+fDAYerrZY=;
+        b=RR1YX46J7i1e95fxqYT6iRZdkvwK9h/tRu5GkrkMeBVgT5dq5U16ZR1fOS/XHKDf0D
+         qrA8LRSIv6SFOCHsPR4Hj9xx8sEWXiBHlys83zUp7TeaaVdHH0SSeezFpYSHenDyuO6b
+         6A+yIIK/Rac0R8FctxY2pIdTOqIP6sJxv7rURtz5NN/3yvgpfKhbxwEuCqGawKO2c8e7
+         7LNxLK5bI75re1DEmtjRm3M6bQsad+ecUAjFUF7rGsSGDOGI6SLToB/atFBI9sF9v8Uh
+         Pqo+SzjL79XO61mNS7JGJ6wLar6xOXXjkBUzzBA2fOEZEehPCbbrcaMh3tiXvzn5zoXs
+         a5Dg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@auth.ccsend.com header.s=1000073432 header.b=fxALbalo;
+       spf=pass (google.com: domain of afb0rylt/scgwh4jsmwttpw==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.140 as permitted sender) smtp.mailfrom="AfB0RylT/ScGWH4jsmWtTPw==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com"
+Received: from ccm140.constantcontact.com (ccm140.constantcontact.com. [208.75.123.140])
+        by mx.google.com with ESMTPS id 205si296375ywz.208.2019.03.07.11.10.02
+        for <SaiParivarFoundation@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 07 Mar 2019 11:10:03 -0800 (PST)
+Received-SPF: pass (google.com: domain of afb0rylt/scgwh4jsmwttpw==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.140 as permitted sender) client-ip=208.75.123.140;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@auth.ccsend.com header.s=1000073432 header.b=fxALbalo;
+       spf=pass (google.com: domain of afb0rylt/scgwh4jsmwttpw==_1103573720993_34epqd/leee+rdsuuoq9xw==@in.constantcontact.com designates 208.75.123.140 as permitted sender) smtp.mailfrom="AfB0RylT/ScGWH4jsmWtTPw==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com"
+Received: from [10.252.1.140] ([10.252.1.140:38056] helo=p2-jbemailsyndicator26.ctct.net)
+	by 10.249.246.20 (envelope-from <AfB0RylT/ScGWH4jsmWtTPw==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com>)
+	(ecelerity 4.2.1.52273 r(Core:4.2.1.11)) with ESMTP
+	id 48/7D-35629-A8C618C5; Thu, 07 Mar 2019 14:10:02 -0500
+DKIM-Signature: v=1; q=dns/txt; a=rsa-sha256; c=relaxed/relaxed; s=1000073432; d=auth.ccsend.com; h=date:mime-version:subject:X-Feedback-ID:message-id:from:reply-to:list-unsubscribe:list-unsubscribe-post:to; bh=nKuuEi9UHEeLVYWciw+LLOazqI0G2js3Y+fDAYerrZY=; b=fxALbalontXBfxFT5dIX9jACZF5NxHJNzO687hQtbVnhD80j3jmr/Uv9ve6YazZVamIF7JIwEIZJMJd6jBWTOV3JHyBxr3lsNbWDHLHnx9nWmZkTJsY1kjnTcIG4vA2U4ivhVczWEmhiN0tKaHAS2tj7kfVZfJE4MoJiSH0V6lY=
+Message-ID: <1132278116091.1103573720993.1659182514.0.831409JL.2002@scheduler.constantcontact.com>
+Date: Thu, 7 Mar 2019 14:10:02 -0500 (EST)
+From: The Sophia Way <events@sophiaway.org>
+Reply-To: events@sophiaway.org
+To: SaiParivarFoundation@gmail.com
+Subject: The Sophia Way - March 2019 Newsletter
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_41305699_722043767.1551985802518"
+List-Unsubscribe: <https://visitor.constantcontact.com/do?p=un&m=001CLN_S13g0et-LAh2PzLdPA%3D%3D&se=001sdyEB58gEl5pHBscD5_RCQ%3D%3D&t=001EkZLEx15CcE%3D&llr=b6h6bzdab>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Campaign-Activity-ID: 7c1d11ca-54ff-49c1-961f-88ec996b533f
+X-Channel-ID: df87a940-3fe5-11e7-be45-d4ae52843dc7
+X-Mailer: Roving Constant Contact 2012 (http://www.constantcontact.com)
+X-Return-Path-Hint: AfB0RylT/ScGWH4jsmWtTPw==_1103573720993_34epQD/lEee+RdSuUoQ9xw==@in.constantcontact.com
+X-Roving-Campaignid: 1132278116091
+X-Roving-Id: 1103573720993.1659182514
+X-Feedback-ID: df87a940-3fe5-11e7-be45-d4ae52843dc7:7c1d11ca-54ff-49c1-961f-88ec996b533f:1103573720993:CTCT
+X-CTCT-ID: df3c9680-3fe5-11e7-be45-d4ae52843dc7
+
+------=_Part_41305699_722043767.1551985802518
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+ March 2019 Embracing Change Embracing change and adapting to the new can b=
+e exciting, and very rewarding. As we bid farewell, with sadness and gratit=
+ude, to our executive director Angela Murray for her tremendous stewardship=
+ of steering the organization through the last four years, we also welcome =
+the opportunities that new leadership will bring to The Sophia Way. Under A=
+ngela's leadership, the organization grew its programs and expanded its ser=
+vices more than 100% to serve the rapidly increasing number of women in gre=
+ater need of support, shelter, and housing. Our empathetic and caring staff=
+, supported by our growing community of donors, volunteers, faith organizat=
+ions, cities, have helped house an average of 90 women/year in the past two=
+ years and provided shelter and support to more than 1000 women.  We have e=
+xciting things to look forward to, in particular, the new 24/7/365 emergenc=
+y shelter in Kirkland for women and families with children (the groundbreak=
+ing is coming up on April 10).  We are pleased to report that at our annual=
+ meeting in February, new board leaders were elected to serve this year - p=
+lease welcome Board Chair Maya Subramanian; Vice Chair Shelley Benson; Trea=
+surer Danielle Porter; and Secretary Angela Weber. We would also like to ac=
+knowledge and thank two board members, Aaron Hager and Gary Helling, who ar=
+e stepping down after years of service and contributions to our mission. Ou=
+r Board has also instituted the search for an interim executive director, w=
+ho will assist in developing the strategic role and qualities of our next l=
+eader with the vision to lead The Sophia Way to a new and expanded level. U=
+ntil the interim executive director is in place, the day-to-day administrat=
+ion will be managed by a strong leadership team =E2=80=93 Linda Benson, Dir=
+ector of Community Development, and Cynthia Brown, Director of Emergency Se=
+rvices. Linda will be overseeing the administrative responsibilities, and C=
+ynthia will be managing the programs. In this time of transition, the spiri=
+t and vision of our founder, Helen Leuzzi, continues to drive our work - to=
+ serve women experiencing homelessness in King County and move them into ho=
+using as soon as possible. We thank The Sophia Way community for their supp=
+ort and guidance in helping us support the women to have happier and health=
+ier lives. Grateful Thanks to Grace Lutheran Church Grace Lutheran Church o=
+f Bellevue has been a compassionate and committed supporter of The Sophia W=
+ay since we started in 2008. They=E2=80=99ve hosted our weekend shelter, an=
+d our Support Network meetings. They=E2=80=99ve donated quilts, meals, fina=
+ncial gifts, and more.   On March 2, they gave us one more gift =E2=80=93 a=
+ major farewell gift =E2=80=93 12.5% of the proceeds from the sale of their=
+ assets will be donated to The Sophia Way. The sale price is expected to be=
+ between $7 and $8 million. Grace Lutheran Church, after 70 years of worshi=
+p and service, held its final worship service on Sunday, March 3, 2019. The=
+y are selling their property and have identified more than 25 churches, com=
+munities, and nonprofit organizations as beneficiaries.   There are not eno=
+ugh words to thank the Grace Lutheran Church and its congregation. They hav=
+e been there for us and with us from the beginning. Congregation members Ga=
+il D'Alessio and Merrilee Kipfer have been our champions. We are immensely =
+grateful for their support in helping us better serve women experiencing ho=
+melessness. Their service to the community can be best summed from a quote =
+in their brochure from Pastor Olson that was printed in the bulletin of his=
+ first service: =E2=80=9CWhat makes a Church beautiful. It surely isn=E2=80=
+=99t walls or the paint. It is the beauty of our hearts expressed in goodwi=
+ll to others=E2=80=9D Thank you, Grace Lutheran Church for your beautiful h=
+eart!  Register for RiSE Together This work is hard, really hard. Angela Mu=
+rray joined The Sophia Way as Executive Director in April 2015. She played =
+a critical role in stabilizing the organization, growing its programs and o=
+utreach, building a strong, empowered team and instituting a caring work cu=
+lture that enabled the organization to better support the increasing number=
+ of women experiencing homelessness. In an interview with Sujata Agrawal, A=
+ngela reflects on her journey at The Sophia Way and shares some highlights.=
+ Excerpts: The organization=E2=80=99s greatest strengths are definitely, th=
+e staff and volunteers. This work is hard, really hard. Transparency, hones=
+ty, and clear communication about the challenges of this work to our stakeh=
+olders is paramount to the success of sustaining this work and to the well-=
+being of the leadership trying to accomplish the impossible.   The question=
+ we must constantly ask ourselves is: How can we as homeless service provid=
+ers, provide better-individualized care and access to resources? I firmly b=
+elieve that The Sophia Way will continue to step up as an advocate for our =
+women. Read Full Interview Shelter To Housing On Wednesday of last week, Ja=
+son Korneliussen, one of our case managers had the joyful task of helping a=
+ client move into her apartment. "She was able to move into her new apartme=
+nt, located in a tax credit senior community right here in Bellevue! Moreov=
+er, her church will be providing furniture for the unit free of charge! "M"=
+ began accessing our services when she entered our Night Shelter Program in=
+ December 2018. Thanks to RAP (Rental Assistance Program), we were able to =
+find her stable, permanent housing in less than three months." =EF=BB=BF Gi=
+fts of Warmth Mylene Dunphy and her daughter Victoria are part of a mother/=
+daughter organization called National Charity League-Emerald City with the =
+mission to help serve the community by giving their girls the opportunity t=
+o lead the process. They belong to the class of 2020, which includes a grou=
+p of 21 girls. Recently they put together 50 winter kits for the women serv=
+ed by The Sophia Way. Read Article Pause. Reflect. Progress. Cynthia Brown,=
+ Director of Emergency Services shares a late night email that she sent to =
+the staff at The Sophia Way Yes, I am emailing well after midnight. As I de=
+compress from a day where I have spoken and witnessed some very charged but=
+ necessary words, I stumbled upon this quotation: "Words are singularly the=
+ most powerful force available to humanity. We can choose to use this force=
+ constructively with words of encouragement, or destructively using words o=
+f despair. Words have energy and power with the ability to help, to heal, t=
+o hinder, to hurt, to harm, to humiliate and to humble." ~ Yehuda Berg Read=
+ More DONATE PROVIDE MEALS VOLUNTEER Thank you for supporting our mission t=
+o help single adult women experiencing homelessness in King County move int=
+o housing. Our Office The Sophia Way 11061 NE 2nd Street, Suite 223 Bellevu=
+e, WA 98004 Ph: 425-463-6285 Our Shelter Sophia=E2=80=99s Place 3032 Bellev=
+ue Way NE Bellevue, WA 98004 Ph: 425-896-7385 Bus Route: 249 https://sophia=
+way.org | info@sophiaway.org =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C The So=
+phia Way | 11061 NE 2nd St., Suite 223, Bellevue, WA 98004 Unsubscribe SaiP=
+arivarFoundation@gmail.com Update Profile | About our service provider Sent=
+ by events@sophiaway.org in collaboration with Try it free today
+------=_Part_41305699_722043767.1551985802518
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--[if gte mso 9]>
+<style id="ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]-->
+<style id="template-styles-head" data-premailer="ignore">
+.footer-main-width {
+width: 612px!important;
+max-width: 612px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* ==================================================
+CLIENT/BROWSER SPECIFIC OVERRIDES
+================================================== */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 612px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base div, [office365] .editor-image div { display: block !important; }
+</style>
+<style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !important;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.editor-divider {
+padding: 10px 0px 10px 0px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.editor-spacer td.spacer-height {
+padding-bottom: 9px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #486CB4 !important; border-bottom: 1px solid #486CB4 !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+td.editor-col .block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col .block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.column .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-left .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.column-right .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.split.column-right {
+margin-top: 10px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.action-block .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+.web-content .editor-text {
+padding-left: 10px !important; padding-right: 10px !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-button-inner {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.rsvp-inner {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+</style>
+</head>
+<body class="body" align="center" style="width: 100%; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #FAFAFA; margin: 0px; padding: 0px;" bgcolor="#FAFAFA">
+<table class="template-body" border="0" cellpadding="0" cellspacing="0" style="text-align: center; min-width: 100%;" width="100%">
+<tr>
+<td class="preheader-container">
+<div>
+<div id="preheader" style="display: none; font-size: 1px; color: transparent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+<span data-entity-ref="preheader"> </span>
+</div>
+<img src="http://r20.rs6.net/on.jsp?ca=7c1d11ca-54ff-49c1-961f-88ec996b533f&a=1103573720993&c=df3c9680-3fe5-11e7-be45-d4ae52843dc7&ch=df87a940-3fe5-11e7-be45-d4ae52843dc7" / alt="">
+</div>
+</td>
+</tr>
+<tr>
+<td class="template-shell-container" align="center">
+<div class="bgcolor" style="background-color: #FAFAFA;">
+<!--[if gte mso 9]>
+<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+<v:fill type="tile" src="https://mlsvc01-prod.s3.amazonaws.com/1af9e12f001/267b2137-6070-4f81-bb42-dca4f62771d8.png" color="#FAFAFA" ></v:fill>
+</v:background>
+<![endif]-->
+<table class="bgimage" width="100%" border="0" cellpadding="0" cellspacing="0" style="background: url('https://mlsvc01-prod.s3.amazonaws.com/1af9e12f001/267b2137-6070-4f81-bb42-dca4f62771d8.png') repeat top left;" background="https://mlsvc01-prod.s3.amazonaws.com/1af9e12f001/267b2137-6070-4f81-bb42-dca4f62771d8.png">
+<tbody>
+<tr>
+<td align="center">
+<table class="main-width" width="612" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 612px;">
+<tbody>
+<tr>
+<td class="layout" align="center" valign="top" style="padding: 15px 5px;">
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="layout-container-border" align="center" valign="top" style="background-color: #486CB4; padding: 1px;" bgcolor="#486CB4">
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #486CB4;" bgcolor="#486CB4">
+<tbody>
+<tr>
+<td class="layout-container" align="center" valign="top" style="background-color: #ffffff; padding: 0px;" bgcolor="#ffffff">
+<div class="">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-divider">
+<table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="" align="center" valign="top">
+<table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;">
+<tbody>
+<tr>
+<td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 0px;">
+<table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 100%; min-width: 100%; height: 1px;">
+<tbody>
+<tr>
+<td height="1" align="center" style="background-color: rgb(72, 108, 180); padding-bottom: 1px; border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="486CB4">
+<div><img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div style="text-align: right;" align="right"><span style="font-size: 16px; color: rgb(72, 108, 180); font-weight: bold; font-style: italic;">March 2019</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-image">
+<table class="editor-image editor-image" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td align="center" valign="top" style="padding-top: 0px; padding-bottom: 0px;">
+<div class="publish-container">
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAguOmmWvQpT3MQl-dIyy-A7Zil-bvY-7xbIfx1eSU0X3yIwfh1rvyD4CIijapnAIgP08jHeWGxevxMYNh-31BRT1g4av69TAf9ekAad2xKJSBps4x3xMblc2PU2a19kGcw==&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==">
+<img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="576" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/1af9e12f001/551d4ae8-57bd-4f57-82d5-9423e924708d.png">
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-spacer">
+<table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="" align="center" valign="top">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+<td class="spacer-base" width="100%" align="center" valign="top" style="padding-bottom: 19px; height: 1px; line-height: 1px;">
+<div><img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-divider">
+<table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="" align="center" valign="top">
+<table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;">
+<tbody>
+<tr>
+<td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 0px;">
+<table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 100%; min-width: 100%; height: 1px;">
+<tbody>
+<tr>
+<td height="1" align="center" style="background-color: rgb(72, 108, 180); padding-bottom: 2px; border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="486CB4">
+<div><img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="section-headline editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(72, 108, 180);" bgcolor="486CB4">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text section-headline-text" align="left" valign="top" style="line-height: 1; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; font-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div>Embracing Change</div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(235, 247, 250);" bgcolor="EBF7FA">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="line-height: 1.2; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px;">
+<div><table class="editor-image OneColumnMobile" style="mso-table-rspace: 5.75pt;" align="right" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="mobile-hidden" width="15" height="1" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="15" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="image-cell " align="center" valign="top" style="padding: 0px;">
+<div class="publish-container">
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAqXxNL5RVzy5-kC75pYO_iZU_P-m8nGcjLSOr_2eZFN6YBGvkCIGJSAl3j4Zsln_XaoTDB413Tc2uvAMmKm4yKRNPznyU2JIsfRJEsASvj9dasyanoOeR7OGfSn_xoZ5Z-ubauFAsxMTwIi7u8D_rdVQrO7LWtVQ-pxt361-qZ8TTXi-ENPNedo=&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="color: #60AAC7; font-weight: bold; font-style: normal; text-decoration: none;">
+<img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="287" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/1af9e12f001/8f61ead8-4dfe-48ce-9e03-49690a9fe834.png">
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="mobile-hidden" width="5" height="5" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="mobile-hidden" height="5" align="center" valign="top" style="height: 5px; line-height: 1px; padding: 0px;">
+<img alt="" width="1" height="5" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div>
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAlvoP6RkxpsbwWSEzjiMWOJIfn_966Ih5ndxV_iFAFTeZW1TJtSA-zCqnD-BqFjWndogW9UdUKKOqs1voES1GJOtBRHSuCwAj-QISHPFvEnzi6UJ8h59aDc=&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" target="_blank" style="color: #60AAC7; font-weight: bold; font-style: normal; text-decoration: none;">Embracing change</a> and adapting to the new can be exciting, and very rewarding.</div>
+<div><br></div>
+<div>As we bid farewell, with sadness and gratitude, to our executive director Angela Murray for her tremendous stewardship of steering the organization through the last four years, we also welcome the opportunities that new leadership will bring to The Sophia Way.</div>
+<div><br></div>
+<div>Under Angela's leadership, the organization grew its programs and expanded its services more than 100% to serve the rapidly increasing number of women in greater need of support, shelter, and housing. Our empathetic and caring staff, supported by our growing community of donors, volunteers, faith organizations, cities, have helped house an average of 90 women/year in the past two years and provided shelter and support to more than 1000 women.&#xa0;</div>
+<div><br></div>
+<div>We have exciting things to look forward to, in particular, the new 24/7/365 emergency shelter in Kirkland for women and families with children (the groundbreaking is coming up on April 10).&#xa0;</div>
+<div><br></div>
+<div>We are pleased to report that at our annual meeting in February, new board leaders were elected to serve this year - please welcome Board Chair Maya Subramanian; Vice Chair Shelley Benson; Treasurer Danielle Porter; and Secretary Angela Weber. We would also like to acknowledge and thank two board members, Aaron Hager and Gary Helling, who are stepping down after years of service and contributions to our mission.</div>
+<div><br></div>
+<div>Our Board has also instituted the search for an interim executive director, who will assist in developing the strategic role and qualities of our next leader with the vision to lead The Sophia Way to a new and expanded level.</div>
+<div><br></div>
+<div>Until the interim executive director is in place, the day-to-day administration will be managed by a strong leadership team &#x2013; Linda Benson, Director of Community Development, and Cynthia Brown, Director of Emergency Services. Linda will be overseeing the administrative responsibilities, and Cynthia will be managing the programs.</div>
+<div><br></div>
+<div>In this time of transition, the spirit and vision of our founder, Helen Leuzzi, continues to drive our work - to serve women experiencing homelessness in King County and move them into housing as soon as possible.</div>
+<div><br></div>
+<div>We thank The Sophia Way community for their support and guidance in helping us support the women to have happier and healthier lives.</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="section-headline editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(72, 108, 180);" bgcolor="486CB4">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text section-headline-text" align="left" valign="top" style="line-height: 1; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; font-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div>Grateful Thanks to Grace Lutheran Church</div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;">
+<div><table class="editor-image OneColumnMobile" style="mso-table-rspace: 5.75pt;" align="right" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="mobile-hidden" width="15" height="1" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="15" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="image-cell " align="center" valign="top" style="padding: 0px;">
+<div class="publish-container">
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAqXxNL5RVzy5-kC75pYO_iZU_P-m8nGcjLSOr_2eZFN6YBGvkCIGJSAl3j4Zsln_XaoTDB413Tc2uvAMmKm4yKRNPznyU2JIsfRJEsASvj9dasyanoOeR7OGfSn_xoZ5Z-ubauFAsxMTwIi7u8D_rdVQrO7LWtVQ-pxt361-qZ8TTXi-ENPNedo=&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="color: #60AAC7; font-weight: bold; font-style: normal; text-decoration: none;">
+<img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="267" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/1af9e12f001/1d74d2d0-d01a-4d19-9b58-066b34e3c9f1.jpg">
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="mobile-hidden" width="5" height="5" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="mobile-hidden" height="5" align="center" valign="top" style="height: 5px; line-height: 1px; padding: 0px;">
+<img alt="" width="1" height="5" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div>Grace Lutheran Church of Bellevue has been a compassionate and committed supporter of The Sophia Way since we started in 2008. They&#x2019;ve hosted our weekend shelter, and our Support Network meetings. They&#x2019;ve donated quilts, meals, financial gifts, and more.&#xa0;&#xa0;</div>
+<div><br></div>
+<div>On March 2, they gave us one more gift &#x2013; a major farewell gift &#x2013; 12.5% of the proceeds from the sale of their assets will be donated to The Sophia Way. The sale price is expected to be between $7 and $8 million.</div>
+<div><br></div>
+<div>Grace Lutheran Church, after 70 years of worship and service, held its final worship service on Sunday, March 3, 2019. They are selling their property and have identified more than 25 churches, communities, and nonprofit organizations as beneficiaries.&#xa0;&#xa0;</div>
+<div><br></div>
+<div>There are not enough words to thank the Grace Lutheran Church and its congregation. They have been there for us and with us from the beginning. Congregation members Gail D'Alessio and Merrilee Kipfer have been our champions. We are immensely grateful for their support in helping us better serve women experiencing homelessness.</div>
+<div><br></div>
+<div>Their service to the community can be best summed from a quote in their brochure from Pastor Olson that was printed in the bulletin of his first service: &#x201c;What makes a Church beautiful. It surely isn&#x2019;t walls or the paint. It is the beauty of our hearts expressed in goodwill to others&#x201d;</div>
+<div><br></div>
+<div>
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAlvoP6RkxpsbcCGpsvjCJyp6AQ5T3XGzmHH1sYbvutqwLB360C8ka1_k0s7p6qnIY8Jn-GMvgIYTZKqAzWlN0VUFUJ241KJtg68wW7tNOz-OHd6HggT3rXJr-FcfxMOkhuEwhyjBAU05&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" target="_blank" style="color: #60AAC7; font-weight: bold; font-style: normal; text-decoration: none;">Thank you, Grace Lutheran Church</a> for your beautiful heart!&#xa0;</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="section-headline editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(189, 60, 153);" bgcolor="BD3C99">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text section-headline-text" align="left" valign="top" style="line-height: 1; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; font-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div>Register for RiSE Together</div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-image">
+<table class="editor-image editor-image" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td align="center" valign="top" style="padding-top: 0px; padding-bottom: 0px;">
+<div class="publish-container">
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAlvoP6Rkxpsbe2Jpoxah8ySdl8K-ARq4rhPu4gvAFBQq169wJrvzachtoKzZdn0-uwsYPd8wUHsbGfaOgC_qYQ4Htd2_mmCWsWUkhYhpDr12htfkpT4qn2UM4zNF8tuQcmIR4f97G3aK&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==">
+<img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="600" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/1af9e12f001/df2b769f-0934-4886-8bbc-6047a9c7bba9.jpg">
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="section-headline editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(72, 108, 180);" bgcolor="486CB4">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text section-headline-text" align="left" valign="top" style="line-height: 1; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; font-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div>This work is hard, really hard.</div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;">
+<div><table class="editor-image OneColumnMobile" style="mso-table-rspace: 5.75pt;" align="left" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="image-cell " align="center" valign="top" style="padding: 0px;">
+<div class="publish-container">
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAqXxNL5RVzy5-kC75pYO_iZU_P-m8nGcjLSOr_2eZFN6YBGvkCIGJSAl3j4Zsln_XaoTDB413Tc2uvAMmKm4yKRNPznyU2JIsfRJEsASvj9dasyanoOeR7OGfSn_xoZ5Z-ubauFAsxMTwIi7u8D_rdVQrO7LWtVQ-pxt361-qZ8TTXi-ENPNedo=&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="color: #60AAC7; font-weight: bold; font-style: normal; text-decoration: none;">
+<img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="257" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/1af9e12f001/d27de67c-47f4-48bb-8e21-975fb7aad8cb.jpg">
+</a>
+</div>
+</td>
+<td class="mobile-hidden" width="15" height="1" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="15" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+<tr>
+<td class="mobile-hidden" height="5" align="center" valign="top" style="height: 5px; line-height: 1px; padding: 0px;">
+<img alt="" width="1" height="5" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="mobile-hidden" width="5" height="5" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div>Angela Murray joined The Sophia Way as Executive Director in April 2015. She played a critical role in stabilizing the organization, growing its programs and outreach, building a strong, empowered team and instituting a caring work culture that enabled the organization to better support the increasing number of women experiencing homelessness. In an interview with Sujata Agrawal, Angela reflects on her journey at The Sophia Way and shares some highlights. Excerpts:</div>
+<ul>
+<li><span style="font-style: italic;">The organization&#x2019;s greatest strengths are definitely, the staff and volunteers.</span></li>
+<li><span style="font-style: italic;">This work is hard, really hard. Transparency, honesty, and clear communication about the challenges of this work to our stakeholders is paramount to the success of sustaining this work and to the well-being of the leadership trying to accomplish the impossible.&#xa0;&#xa0;</span></li>
+<li><span style="font-style: italic;">The question we must constantly ask ourselves is: How can we as homeless service providers, provide better-individualized care and access to resources?</span></li>
+<li><span style="font-style: italic;">I firmly believe that The Sophia Way will continue to step up as an advocate for our women.</span></li>
+</ul>
+<div><br></div>
+<div><a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAlvoP6RkxpsbKY2P-aIk7aJpZRSVHQgxzeyLbd_82iL_fPq2_HbL-0-kSx0na5C4YJZYZBv3Eka-GhtmFq7kkbMYNYrjqdVwWVP5S3WNmQ_5cFcL14eNYToXVVue5Q9v1A==&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" target="_blank" style="font-size: 16px; color: rgb(69, 179, 202); text-decoration: underline; font-weight: bold; font-style: normal;">Read Full Interview</a></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="section-headline editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(72, 108, 180);" bgcolor="486CB4">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text section-headline-text" align="left" valign="top" style="line-height: 1; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; font-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div><span style="font-size: 26px; font-family: Calibri, Helvetica, Arial, sans-serif;">Shelter To Housing</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;">
+<div><table class="editor-image OneColumnMobile" style="mso-table-rspace: 5.75pt;" align="right" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="mobile-hidden" width="15" height="1" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="15" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="image-cell " align="center" valign="top" style="padding: 0px;">
+<div class="publish-container">
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAqXxNL5RVzy5-kC75pYO_iZU_P-m8nGcjLSOr_2eZFN6YBGvkCIGJSAl3j4Zsln_XaoTDB413Tc2uvAMmKm4yKRNPznyU2JIsfRJEsASvj9dasyanoOeR7OGfSn_xoZ5Z-ubauFAsxMTwIi7u8D_rdVQrO7LWtVQ-pxt361-qZ8TTXi-ENPNedo=&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="color: #60AAC7; font-weight: bold; font-style: normal; text-decoration: none;">
+<img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="250" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/1af9e12f001/5d16eb64-1291-48a4-b229-dc568a52eea3.png">
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="mobile-hidden" width="5" height="5" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="mobile-hidden" height="5" align="center" valign="top" style="height: 5px; line-height: 1px; padding: 0px;">
+<img alt="" width="1" height="5" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div>On Wednesday of last week, Jason Korneliussen, one of our case managers had the joyful task of helping a client move into her apartment.</div>
+<div><br></div>
+<div><span style="font-style: italic;">"She was able to move into her new apartment, located in a tax credit senior community right here in Bellevue! Moreover, her church will be providing furniture for the unit free of charge! "M" began accessing our services when she entered our Night Shelter Program in December 2018. Thanks to RAP (Rental Assistance Program), we were able to find her stable, permanent housing in less than three months."</span></div>
+<div><span style="font-style: italic;">&#xfeff;</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="section-headline editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(72, 108, 180);" bgcolor="486CB4">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text section-headline-text" align="left" valign="top" style="line-height: 1; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; font-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div><span style="color: rgb(255, 255, 255);">Gifts of Warmth</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;">
+<div><table class="editor-image OneColumnMobile" style="mso-table-rspace: 5.75pt;" align="right" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="mobile-hidden" width="15" height="1" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="15" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="image-cell " align="center" valign="top" style="padding: 0px;">
+<div class="publish-container">
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAqXxNL5RVzy5sZxU-TIae1PTtJ9H7QycwlVCRyf5GWm-LjL6in51RjAUZYSJ3-VRcR-cRm__dCYy0hmb5DIs5LYJs6gH6GT39TQNtbBCUp7J-prLY1MAX3uqECziEUEt9A==&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="color: #60AAC7; font-weight: bold; font-style: normal; text-decoration: none;">
+<img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="247" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/1af9e12f001/b00d0ce4-d7b2-4632-8cfe-33cac5a441a9.jpg">
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="mobile-hidden" width="5" height="5" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="mobile-hidden" height="5" align="center" valign="top" style="height: 5px; line-height: 1px; padding: 0px;">
+<img alt="" width="1" height="5" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div>Mylene Dunphy and her daughter Victoria are part of a mother/daughter organization called National Charity League-Emerald City with the mission to help serve the community by giving their girls the opportunity to lead the process.&#xa0;They belong to the class of 2020, which includes a group of 21 girls.&#xa0;Recently they put together 50 winter kits for the women served by The Sophia Way.</div>
+<div><br></div>
+<div><a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAlvoP6RkxpsbuTA0jVUStbpxCFe0RgxyqPBf3R0wK44uo4zu_9_GJDre880vwQwBkCpzUYIDfhiy54dPWg9Mb736xTA_inwJidIKKiav84rBDgn3TxtXYCs=&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" target="_blank" style="font-size: 16px; color: rgb(69, 179, 202); text-decoration: underline; font-weight: bold; font-style: normal;">Read Article</a></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="section-headline editor-col OneColumnMobile" width="100%" align="left" valign="top" style="background-color: rgb(72, 108, 180);" bgcolor="486CB4">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text section-headline-text" align="left" valign="top" style="line-height: 1; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; color: #ffffff; text-align: center; display: block; word-wrap: break-word; font-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div>Pause. Reflect. Progress.</div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px;">
+<div><table class="editor-image OneColumnMobile" style="mso-table-rspace: 5.75pt;" align="right" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="mobile-hidden" width="15" height="1" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="15" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="image-cell " align="center" valign="top" style="padding: 0px;">
+<div class="publish-container">
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAqXxNL5RVzy5-kC75pYO_iZU_P-m8nGcjLSOr_2eZFN6YBGvkCIGJSAl3j4Zsln_XaoTDB413Tc2uvAMmKm4yKRNPznyU2JIsfRJEsASvj9dasyanoOeR7OGfSn_xoZ5Z-ubauFAsxMTwIi7u8D_rdVQrO7LWtVQ-pxt361-qZ8TTXi-ENPNedo=&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="color: #60AAC7; font-weight: bold; font-style: normal; text-decoration: none;">
+<img alt="" class="" style="display: block; height: auto !important; max-width: 100% !important;" width="250" border="0" hspace="0" vspace="0" src="https://files.constantcontact.com/1af9e12f001/362a943e-de32-45c1-8195-8e1df3413d4b.png">
+</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="mobile-hidden" width="5" height="5" align="center" valign="top" style="height: 1px; line-height: 1px; padding: 0px;">
+<img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+<td class="mobile-hidden" height="5" align="center" valign="top" style="height: 5px; line-height: 1px; padding: 0px;">
+<img alt="" width="1" height="5" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/sys/S.gif" style="display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div>Cynthia Brown, Director of Emergency Services shares a late night email that she sent to the staff at The Sophia Way</div>
+<div><br></div>
+<div>
+<span style="font-style: italic;">Yes, I am emailing well after midnight.&#xa0;As I decompress from a day where I have spoken and witnessed some very charged but necessary words, I stumbled upon this quotation:</span> "Words are singularly the most powerful force available to humanity. We can choose to use this force constructively with words of encouragement, or destructively using words of despair. Words have energy and power with the ability to help, to heal, to hinder, to hurt, to harm, to humiliate and to humble." ~ Yehuda Berg</div>
+<div><br></div>
+<div><a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAlvoP6RkxpsbOhp0ZZny5qnmb5PjMOriJuN-U04TdAF1dw5LgJXu05hYtiVb8uVEufpLgqGid8SqXXjWfFF6Jqb5QsFC4R3hUwmmW_pdaexbLcpY1IgJX_Srobeay3booQ==&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" target="_blank" style="font-size: 16px; color: rgb(69, 179, 202); text-decoration: underline; font-weight: bold; font-style: normal;">Read More</a></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-divider">
+<table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="" align="center" valign="top">
+<table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;">
+<tbody>
+<tr>
+<td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 0px;">
+<table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 100%; min-width: 100%; height: 1px;">
+<tbody>
+<tr>
+<td height="1" align="center" style="background-color: rgb(72, 108, 180); padding-bottom: 1px; border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="486CB4">
+<div><img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-divider">
+<table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="" align="center" valign="top">
+<table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;">
+<tbody>
+<tr>
+<td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 0px;">
+<table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 100%; min-width: 100%; height: 1px;">
+<tbody>
+<tr>
+<td height="1" align="center" style="background-color: rgb(72, 108, 180); padding-bottom: 1px; border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="486CB4">
+<div><img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-spacer">
+<table class="editor-spacer" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="" align="center" valign="top">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody>
+<tr>
+<td class="spacer-base" width="100%" align="center" valign="top" style="padding-bottom: 13px; height: 1px; line-height: 1px;">
+<div><img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="29%" align="" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div><div class="column-resize-bar">
+<span class="line"></span>
+<span class="grabber"></span>
+</div></div>
+<div class="gl-contains-button">
+<table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td class="editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 10px 0px 10px 20px;">
+<table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 0px;">
+<table border="0" cellpadding="0" cellspacing="0" style="width: initial; moz-border-radius: 5px; border-radius: 5px; border-spacing: 0; background-color: #486CB4; min-width: initial; padding: 0; border: none;" bgcolor="#486CB4">
+<tbody>
+<tr>
+<td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;">
+<div>
+<div class="MainTextFullWidth"><a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAguOmmWvQpT3bVGkmY-A6jnNAajxusMgKzppoDbd1hFG9iQXGXA4WmEu91Rl8jat72x6C5zW_5DG5iIGLvZq4LORq3ZDYTIax42MAjDOh-TjaQSckGM90Ug=&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="font-size: 18px; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #FFFFFF; text-decoration: none;">DONATE</a></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=" editor-col OneColumnMobile" width="43%" align="" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div><div class="column-resize-bar">
+<span class="line"></span>
+<span class="grabber"></span>
+</div></div>
+<div class="gl-contains-button">
+<table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td class="editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 10px;">
+<table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 0px;">
+<table border="0" cellpadding="0" cellspacing="0" style="width: initial; moz-border-radius: 5px; border-radius: 5px; border-spacing: 0; background-color: #486CB4; min-width: initial; padding: 0; border: none;" bgcolor="#486CB4">
+<tbody>
+<tr>
+<td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;">
+<div>
+<div class="MainTextFullWidth"><a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAkFjclYhxC_DRtN1Z_S8qO-x-LTk-GCfJpVOt9yvoNjv1OuLMTT9pO_aIIc-k3AMdyvwY2p2IGcbY1Bq6Kq6RY2cqTnBwf0H5UEOODJs1e3h&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="font-size: 18px; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #FFFFFF; text-decoration: none;">PROVIDE MEALS</a></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=" editor-col OneColumnMobile" width="28%" align="" valign="top" style="background-color: rgb(255, 255, 255);" bgcolor="FFFFFF">
+<div class="gl-contains-button">
+<table class="editor-button" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td class="editor-button-container editor-button-container " style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 10px 20px 10px 0px;">
+<table class="galileo-ap-content-editor" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 0px;">
+<table border="0" cellpadding="0" cellspacing="0" style="width: initial; moz-border-radius: 5px; border-radius: 5px; border-spacing: 0; background-color: #486CB4; min-width: initial; padding: 0; border: none;" bgcolor="#486CB4">
+<tbody>
+<tr>
+<td align="center" valign="top" class="MainTextFullWidthTD" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: normal; color: #FFFFFF; text-decoration: none; padding: 9px 15px 10px;">
+<div>
+<div class="MainTextFullWidth"><a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAguOmmWvQpT3lF-JH31r0D18iHVwtyElfPMbTGRtywxhhcfVuigCcP75fCwbgXtGeQmZK3enkKGS9SJKplrLWBPAh8iQSMua_FpiSni9My1m&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="font-size: 18px; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #FFFFFF; text-decoration: none;">VOLUNTEER</a></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="line-height: 1.5; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div style="text-align: center;" align="center"><span style="font-size: 16px; color: rgb(72, 108, 180); font-weight: bold;">Thank you for supporting our mission to help single adult women experiencing homelessness in King County move into housing.</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="50%" align="" valign="top">
+<div><div class="column-resize-bar">
+<span class="line"></span>
+<span class="grabber"></span>
+</div></div>
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 10px 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div style="text-align: center;" align="center"><span style="font-size: 16px; font-weight: bold;">Our Office</span></div>
+<div style="text-align: center;" align="center"><span style="font-weight: bold;">The Sophia Way</span></div>
+<div style="text-align: center;" align="center">11061 NE 2nd Street, Suite 223</div>
+<div style="text-align: center;" align="center">Bellevue, WA 98004</div>
+<div style="text-align: center;" align="center">Ph: 425-463-6285</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=" editor-col OneColumnMobile" width="50%" align="" valign="top">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; line-height: 1.2; padding: 10px 20px 10px 10px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div>
+<div style="text-align: center;" align="center"><span style="font-size: 16px; font-weight: bold;">Our Shelter</span></div>
+<div style="text-align: center;" align="center"><span style="font-weight: bold;">Sophia&#x2019;s Place</span></div>
+<div style="text-align: center;" align="center">3032 Bellevue Way NE</div>
+<div style="text-align: center;" align="center">Bellevue, WA 98004</div>
+<div style="text-align: center;" align="center">Ph: 425-896-7385</div>
+<div style="text-align: center;" align="center">Bus Route: 249</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-text">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="editor-text editor-text " align="left" valign="top" style="line-height: 1.5; font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 14px; color: #000000; text-align: left; display: block; word-wrap: break-word; padding: 10px 20px;">
+<div></div>
+<div class="text-container galileo-ap-content-editor"><div><div style="text-align: center;" align="center">
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAtH7_Gcyiyf0qMO6gl-zny1544jVJakSsezAf3IPBFJUuZbWdvhqgw8C_aeDOgyRufSjBugDtLj-QEhLDy4U2h8rWwsdqlkj4Q==&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" target="_blank" style="font-size: 16px; color: #60AAC7; font-weight: bold; font-style: normal; text-decoration: none;">https://sophiaway.org</a> | <a href="mailto:info@sophiaway.org" target="_blank" style="font-size: 16px; color: #60AAC7; font-weight: bold; font-style: normal; text-decoration: none;">info@sophiaway.org</a>
+</div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-social-button">
+<table class="editor-social" width="100%" cellpadding="0" cellspacing="0" border="0" style="width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td class=" social-container" align="center" style="padding: 0px 20px 10px;">
+<div class="galileo-ap-content-editor">
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAqYq39Rm39E-Jn013PnKl8GAxXNchz7B2FP8ibLn7xEZwdESK6oWSOYiTzcIfOt9RbBVzWFgNHYThsxbnSbAnWmzmPdK1rvDvd87kJXQpiCJ&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="display: inline-block; text-decoration: none;">
+<img alt="Facebook" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/facebook-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> &#x200c;
+</a>
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAt5lB6cc5optLfodbROtedqLyw1bA61s0WhuF0daVtQLsUJOALXn0mufunxPd9wLcJGu0xZ9jvKK-4u4wtO2mMTFXkozoiuFLdRvC2YoY05b&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="display: inline-block; text-decoration: none;">
+<img alt="Twitter" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/twitter-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> &#x200c;
+</a>
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTAon-M92eIek2aqc17WAOjTlLz7PeLMaVAqZsl7zrTynoJHIbk5P8SiCMzhskgjRTlZonbeWM1G0ftIk83MVZv1PTLTWhxAUatNmZvLVv6XXINod5xD8fIB8=&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="display: inline-block; text-decoration: none;">
+<img alt="Instagram" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/instagram-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> &#x200c;
+</a>
+<a href="http://r20.rs6.net/tn.jsp?f=001kSfystSIPoQ0sjPEJyTuimLWClxEg7VEUurRBxHhusd72Ak0t1gTApYP9Dt5cHLQSMnjxbAWY2ipc3RoFuyHrVdGP7QPhkdJB2RW81H3LKs8ezCOIK0bQ33NiBS4-v7wnFuJMK6XYYU1n_3D2oJ7Dp6lOtRE16KB0iGU1-49HlDrW5gd51wWJA==&c=aVI1aW-THy6Pl-2DV6uccI6LgI8xKP-1Zea45po5Cq_QvCJ4Kd19OQ==&ch=gpqvzrojPdW6a1H40zXl-9qZCNaRliYSwmDVPbXLyrEQgsSeW6ZQ8g==" style="display: inline-block; text-decoration: none;">
+<img alt="LinkedIn" width="32" border="0" src="https://imgssl.constantcontact.com/galileo/images/templates/Galileo-SocialMedia/linkedin-visit-default.png" style="display: inline-block; margin: 0; padding: 0;"> &#x200c;
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="galileo-ap-layout-editor" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class=" editor-col OneColumnMobile" width="100%" align="" valign="top">
+<div class="gl-contains-divider">
+<table class="editor-divider" width="100%" cellpadding="0" cellspacing="0" border="0" style="min-width: 100%;">
+<tbody>
+<tr>
+<td class="" align="center" valign="top">
+<table width="100%" class="galileo-ap-content-editor" style="cursor: default; min-width: 100%;">
+<tbody>
+<tr>
+<td class="divider-base divider-solid" width="100%" align="center" valign="top" style="padding: 0px;">
+<table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 100%; min-width: 100%; height: 1px;">
+<tbody>
+<tr>
+<td height="1" align="center" style="background-color: rgb(72, 108, 180); padding-bottom: 1px; border-bottom-style: none; height: 1px; line-height: 1px;" bgcolor="486CB4">
+<div><img alt="" width="5" height="1" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/letters/images/1101116784221/S.gif" style="display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<table class="footer-container" width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #ffffff; margin-left: auto; margin-right: auto; table-layout: auto !important" bgcolor="#ffffff">
+  <tr>
+    <td width="100%" align="center" valign="top" style="width: 100%;">
+      <div class="footer-max-main-width" align="center" style="margin-left: auto; margin-right: auto; max-width: 100%;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="footer-layout" align="center" valign="top" style="padding: 16px 0px;">
+              <table class="footer-main-width" style="width: 580px;" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="footer-text" align="center" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 12px; padding: 4px 0px;">
+                    
+                    <span class="footer-column">The Sophia Way<span class="footer-mobile-hidden"> | </span></span><span class="footer-column">11061 NE 2nd St.<span class="footer-mobile-hidden">, </span></span><span class="footer-column">Suite 223<span class="footer-mobile-hidden">, </span></span><span class="footer-column"></span><span class="footer-column">Bellevue, WA 98004</span><span class="footer-column"></span>
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td class="footer-row" align="center" valign="top" style="padding: 10px 0px;">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td class="footer-text" align="center" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 12px; padding: 4px 0px;">
+                          <a href="https://visitor.constantcontact.com/do?p=un&m=001CLN_S13g0et-LAh2PzLdPA%3D&ch=df87a940-3fe5-11e7-be45-d4ae52843dc7&ca=7c1d11ca-54ff-49c1-961f-88ec996b533f" style="color: #5d5d5d">Unsubscribe SaiParivarFoundation@gmail.com</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="footer-text" align="center" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 12px; padding: 4px 0px;">
+                          <a href="https://visitor.constantcontact.com/do?p=oo&m=001CLN_S13g0et-LAh2PzLdPA%3D&ch=df87a940-3fe5-11e7-be45-d4ae52843dc7&ca=7c1d11ca-54ff-49c1-961f-88ec996b533f" style="color: #5d5d5d">Update Profile</a> |
+                          
+                          <a class="footer-about-provider" href="http://www.constantcontact.com/legal/service-provider?cc=about-service-provider" style="color: #5d5d5d">About our service provider</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="footer-text" align="center" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 12px; padding: 4px 0px;">
+                          Sent by
+                          
+                          <a href="mailto:events@sophiaway.org" style="color: #5d5d5d; text-decoration: none">events@sophiaway.org</a>
+                          
+
+                          
+                          
+                          <span class="footer-column">in collaboration with</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="footer-text" align="center" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 12px; padding: 4px 0px;">
+                    
+                    
+                    <table width="220" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td align="center" valign="top">
+                          <a href="http://www.constantcontact.com/index.jsp?cc=nge" style="color: #5d5d5d; text-decoration: none">
+                            <img alt="Trusted Email from Constant Contact - Try it FREE today." width="211" border="0" hspace="0" vspace="0" src="https://imgssl.constantcontact.com/ui/images1/logo_ctct_2x.png">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="footer-cta-text" align="left" valign="top" style="color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size: 12px; padding-left: 52px;">
+                          <a href="http://www.constantcontact.com/index.jsp?cc=nge" style="color: #5d5d5d; text-decoration: none">Try it free today</a>
+                        </td>
+                      </tr>
+                    </table>
+                    
+                    
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table></body>
+</html>
+
+------=_Part_41305699_722043767.1551985802518--

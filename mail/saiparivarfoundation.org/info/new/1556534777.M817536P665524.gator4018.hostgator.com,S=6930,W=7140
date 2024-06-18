@@ -1,0 +1,210 @@
+Return-Path: <website.thot.apps1@gmail.com>
+Delivered-To: info@saiparivarfoundation.org
+Received: from gator4018.hostgator.com
+	by gator4018.hostgator.com with LMTP
+	id 6JWwK/nVxly0JwoAUq51WA
+	(envelope-from <website.thot.apps1@gmail.com>)
+	for <info@saiparivarfoundation.org>; Mon, 29 Apr 2019 05:46:17 -0500
+Return-path: <website.thot.apps1@gmail.com>
+Envelope-to: info@saiparivarfoundation.org
+Delivery-date: Mon, 29 Apr 2019 05:46:17 -0500
+Received: from mail-pg1-f193.google.com ([209.85.215.193]:42906)
+	by gator4018.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.91)
+	(envelope-from <website.thot.apps1@gmail.com>)
+	id 1hL3nd-002q4J-HL
+	for info@saiparivarfoundation.org; Mon, 29 Apr 2019 05:46:17 -0500
+Received: by mail-pg1-f193.google.com with SMTP id p6so4956642pgh.9
+        for <info@saiparivarfoundation.org>; Mon, 29 Apr 2019 03:46:12 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=message-id:from:to:subject:date:mime-version:thread-index
+         :content-language;
+        bh=xulI8WaX6CTwXLOLfnj1rJzohzLyPr3L8wLRcmpBBeg=;
+        b=qUz1Ape7WsB4XWW+um9knZLaxcn/f9XOfN4qJt7wklztrDbsdkTH3M5OONGR9jMgj5
+         4zMqFrTHaDxQDswv1D3vge8g6uI0CS5eefVZEw0tmaa1dX3rsMrwTv5ELxmx1kU4/Zl8
+         foTDq1TqBcF0xECrd3LjLUPP+2KTLmklBfgQYHD1iqVaHWeJ6BlK+UTn41Q6V/TPWA/W
+         GoxMX5YyxlnNRNPdfYePpyhL+BIONszDe4yfvrJzS5uF/laWbnLuZk3kWhPgzykzb9sj
+         z65KM/P5Nc1l87qMuULrdjbUTUwmvufStQNTr9ic1yH5I6rFK1lfQEDm9INh+Fk3wSPq
+         uQUg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:message-id:from:to:subject:date:mime-version
+         :thread-index:content-language;
+        bh=xulI8WaX6CTwXLOLfnj1rJzohzLyPr3L8wLRcmpBBeg=;
+        b=CzsTbQCyt6GGj7zM+RXAK1a6qx2s09E2Tt94Q03dFzHel4dpwi2JSKDOuKt1iBT3O3
+         F1HFePK2tep6msNMjXHlpxm6iW/h04pAyHcYGUpkvsziZtJPsGFncaz5uapzhXpi4CcA
+         o+JXouS3OTGVaxuPCya+AOdE5ycwiEjZ1KS48doyK2kam5Ox5R1XiKME5a6u24m23fP1
+         abiGm3zp++P2enuJ2euIXHSiZO3c4o+3y47p1ikpU+MX65rb8tU0px37EI6wI8bJwf3B
+         WHcqMTEPkShjz17yIkqNnrqJXbNIMAUS2Ab5WczwV1QefOxcCOlua+FCkTvGMC/XQT8B
+         PO6Q==
+X-Gm-Message-State: APjAAAXemjN0U5KvVZXblybuDeEUSZlbSNfY39Njn8nNn8vUy/mxs8sP
+	xMCFnGaBQqOyoA+sNK8Hp6yvvCWN
+X-Google-Smtp-Source: APXvYqztgliQJGm4pQ4I8Oem9S4FV+yGh+dXtvQeyJSRcNmLuJW297DZDFC8M5PSdw5Oq84DQUJkWw==
+X-Received: by 2002:a63:2b03:: with SMTP id r3mr56925877pgr.105.1556534766181;
+        Mon, 29 Apr 2019 03:46:06 -0700 (PDT)
+Received: from L14JAGAN ([106.215.112.5])
+        by smtp.gmail.com with ESMTPSA id k7sm6893491pfk.93.2019.04.29.03.46.00
+        for <info@saiparivarfoundation.org>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Mon, 29 Apr 2019 03:46:05 -0700 (PDT)
+Message-ID: <5cc6d5ed.1c69fb81.e4f01.3176@mx.google.com>
+X-Google-Original-Message-ID: <0a7801d4fe78$bb1ae6a0$3150b3e0$@thot.apps1@gmail.com>
+From: "Joy Corion" <website.thot.apps1@gmail.com>
+To: <info@saiparivarfoundation.org>
+Subject: Mobile Apps Development & Maintenance work
+Date: Mon, 29 Apr 2019 16:15:00 +0530
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0A79_01D4FEA6.D4D322A0"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AdT+eIe5ZULNhg6SS8eyyoROWR0ktQ==
+Content-Language: en-us
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0A79_01D4FEA6.D4D322A0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hi info@saiparivarfoundation.org,
+
+ 
+
+We have helped many clients in deploying apps to Apple & Google Play Store.
+
+ 
+
+We all know that now day's users are crazy about mobile apps. Apps are
+available for everything.
+
+ 
+
+We Specialalize in:   Restaurant Reservation apps & Ordering Apps / Local
+Food Delivery apps online booking apps / E- Commerce apps /Bed and Food
+online booking apps
+
+ 
+
+I'd love to send you our past work and price sample for your review. Contact
+us: today and discuss your app idea, we give a quote mostly instantly after
+getting initial requirement specs.
+
+ 
+
+Thanks & Regards,
+
+Joy Corion
+
+
+------=_NextPart_000_0A79_01D4FEA6.D4D322A0
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+<meta name=3DGenerator content=3D"Microsoft Word 12 (filtered medium)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple>
+
+<div class=3DSection1>
+
+<p class=3DMsoNoSpacing><b>Hi info@saiparivarfoundation.org,</b></p>
+
+<p class=3DMsoNoSpacing>&nbsp;</p>
+
+<p class=3DMsoNoSpacing>We have helped many clients in deploying apps to =
+Apple
+&amp; Google Play Store.<o:p></o:p></p>
+
+<p class=3DMsoNoSpacing>&nbsp;</p>
+
+<p class=3DMsoNoSpacing>We all know that now day&#8217;s users are crazy =
+about
+mobile apps. Apps are available for everything.</p>
+
+<p class=3DMsoNoSpacing>&nbsp;</p>
+
+<p class=3DMsoNoSpacing><b>We Specialalize in:</b>&nbsp;&nbsp; <span
+style=3D'background:yellow;mso-highlight:yellow'>Restaurant Reservation =
+apps
+&amp; Ordering Apps / Local Food Delivery apps online booking apps / E-
+Commerce apps /<b>Bed and Food online booking apps</b></span></p>
+
+<p class=3DMsoNoSpacing>&nbsp;</p>
+
+<p class=3DMsoNoSpacing>I&#8217;d love to send you our past work and =
+price sample
+for your review. Contact us: today and discuss your app idea, we give a =
+quote
+mostly instantly after getting initial requirement specs.</p>
+
+<p class=3DMsoNoSpacing>&nbsp;</p>
+
+<p class=3DMsoNoSpacing>Thanks &amp; Regards,</p>
+
+<p class=3DMsoNormal>Joy Corion</p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_0A79_01D4FEA6.D4D322A0--
+
